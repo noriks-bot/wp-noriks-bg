@@ -27,7 +27,7 @@ PROČ LIDÉ VOLÍ STARTOVACÍ BALÍČEK?
 
 
 </strong><span style="font-weight:normal;">Marko - Zagreb</span></p>
-        <p class="description">Mnoho zákazníků začíná se startovacím balíčkem, protože si chtějí nejdřív ověřit, jak NORIKS sedí a jak se nosí. Jedno tričko a jedny boxerky stačí k rozhodnutí bez velké investice.
+        <p class="description">Много клиенти започват със стартовия пакет, защото искат първо да проверят как NORIKS пасва и се носи. Една тениска и един боксер са достатъчни за вземане на решение без голяма инвестиция.
 
 
 
@@ -36,12 +36,12 @@ PROČ LIDÉ VOLÍ STARTOVACÍ BALÍČEK?
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;" ><strong>"Po prvním nošení jsem si hned objednal další."
+    line-height: 1.2;" ><strong>"След първото носене веднага поръчах още.""
 
 
 
 </strong><span style="font-weight:normal;">Pavle - Split</span></p>
-        <p class="description">Více než 95 % zákazníků si po startovacím balíčku objedná znovu. Ne proto, že by to plánovali, ale protože už první den cítí rozdíl ve střihu, pohodlí a kvalitě.
+        <p class="description">Повече от 95% от клиентите поръчват отново след стартовия пакет. Не защото са го планирали, а защото усещат разликата в кройката, комфорта и качеството от първия ден.
 
 </p>
       </div>
@@ -109,7 +109,7 @@ PROČ LIDÉ VOLÍ STARTOVACÍ BALÍČEK?
 
 
 </strong></p>
-        <p class="description">Materiály jsou měkké, prodyšné a příjemné na pokožce, aniž by po praní ztrácely tvar. Už při prvním nošení je jasné, proč se tato kombinace rychle stává součástí každodenního šatníku.
+        <p class="description">Материалите са меки, дишащи и приятни за кожата, без да губят формата си след пране. Още при първото носене е ясно защо тази комбинация бързо става част от ежедневния гардероб.
 
 
 </p>
@@ -317,21 +317,21 @@ if (  has_term( array( 'tricka', 'orto-majice', 'mplouzoakia', 't-shirts', 'blou
       <div style="margin-left: 20px;" class="why-point">
         <p><strong>Navrženo pro skutečný život
 </strong></p>
-        <p class="description">Toto tričko je určené pro celodenní nošení - od rána do večera. Nevyžaduje žádné upravování ani přemýšlení, jednoduše dobře sedí v každé situaci.
+        <p class="description">Тази тениска е предназначена за целодневно носене - от сутрин до вечер. Не изисква никакви корекции или обмисляне, просто пасва добре във всяка ситуация.
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Střih, který rozumí tělu
+        <p><strong>Кройка, която разбира тялото
 </strong></p>
-        <p class="description">Střih byl vyvíjen tak, aby kopíroval linii těla bez stahování a zvýraznil to správné. Výsledkem je upravený, sebevědomý vzhled bez pocitu nepohodlí.
+        <p class="description">Кройката е разработена така, че да следва линията на тялото без стягане и да подчертае правилните области. Резултатът е спретнат, уверен вид без усещане за дискомфорт.
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
         <p><strong>Rozdíl poznáš už při prvním obléknutí
 </strong></p>
-        <p class="description">Materiál je na pokožce měkký, lehký a prodyšný. Už po prvním nošení je jasné, proč se toto tričko rychle stane tím, po kterém saháš nejčastěji.
+        <p class="description">Материалът е мек, лек и дишащ върху кожата. След първото носене е ясно защо тази тениска бързо се превръща в тази, към която посягаш най-често.
 </p>
       </div>
     </div>
