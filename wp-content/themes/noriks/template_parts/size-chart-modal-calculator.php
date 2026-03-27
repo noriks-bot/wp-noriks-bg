@@ -454,7 +454,7 @@ border: 1px solid #ccc;
     
 
     
-    30 dana jamstva na zamjenu veličine
+    30 дни гаранция за смяна на размера
 
          
    
@@ -510,7 +510,7 @@ border: 1px solid #ccc;
     
 
     
-     30 dana jamstva na zamjenu veličine
+     30 дни гаранция за смяна на размера
 
          
    
@@ -620,7 +620,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const baseSize = getBaseSize(height, weight);
             const bodyType = selectedInput.value;
             const finalSize = adjustSize(baseSize, bodyType);
-            resultDiv.innerHTML = `Preporučena veličina: <strong>${finalSize}</strong>`;
+            resultDiv.innerHTML = `Препоръчителен размер: <strong>${finalSize}</strong>`;
             resultDiv.style.display = "block";
             
             
@@ -681,4 +681,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 </script>
-

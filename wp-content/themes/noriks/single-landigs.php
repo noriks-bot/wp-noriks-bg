@@ -94,8 +94,8 @@ if (!function_exists('noriks_ensure_default_landing_offers')) {
         if (!$has_five) {
             $offers[] = array(
                 'quantity' => 5,
-                'title'    => '5 majic',
-                'subtitle' => 'Najveći paket za maksimalnu uštedu',
+                'title'    => '5 тениски',
+                'subtitle' => 'Най-големият пакет за максимална икономия',
                 'badge'    => '',
                 'selected' => false,
             );
@@ -398,7 +398,7 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
 
         $related_size_markup = '
                     <div class="related-product-size-options" id="related-product-sizes-rp-0">
-                      <span class="related-product-size-label">Veličina:</span>
+                      <span class="related-product-size-label">Размер:</span>
                       <div class="related-product-size-list">
                         <button type="button" class="related-product-size-button is-selected" data-size="S">S</button>
                         <button type="button" class="related-product-size-button" data-size="M">M</button>
@@ -445,8 +445,8 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             ),
             array(
                 '<img class="related-product-image" src="' . esc_url($boxers_image_url) . '" alt="NORIKS bokserice">',
-                'NORIKS crne bokserice',
-                'Mekane, elastične i udobne bokserice za nošenje kroz cijeli dan.',
+                'NORIKS черни боксерки',
+                'Меки, еластични и удобни боксерки за носене през целия ден.',
                 '7.99&#x20AC;',
                 '15.99&#x20AC;',
                 'var relatedProductsData = [{"id":"rp-0","name":"NORIKS crne bokserice","description":"Mekane, elastične i udobne bokserice za nošenje kroz cijeli dan.","price":7.99,"originalPrice":15.99,"discountPercentage":50,"wcId":981495,"imageUrl":"' . esc_js($boxers_image_url) . '"}];',
@@ -555,7 +555,7 @@ $target_product_id  = (int) get_post_meta(get_the_ID(), '_landigs_target_product
 $boxers_image_url   = trailingslashit(get_template_directory_uri()) . 'lander2/images/noriks_boxers_gif_1.gif';
 
 if (!$target_product_url) {
-    $target_product_url = home_url('/hr/product/noriks-majica/');
+    $target_product_url = home_url('/product/noriks-majica/');
 }
 
 if (!$target_product_id) {
@@ -570,11 +570,11 @@ $hide_secondary    = get_post_meta(get_the_ID(), '_landigs_hide_secondary', true
 $offer_options     = get_post_meta(get_the_ID(), '_landigs_offer_options', true);
 
 if ($primary_label === '') {
-    $primary_label = 'Boja';
+    $primary_label = 'Цвят';
 }
 
 if ($secondary_label === '') {
-    $secondary_label = 'Veličina';
+    $secondary_label = 'Размер';
 }
 
 if ($secondary_options === '') {
@@ -603,21 +603,21 @@ if (noriks_landigs_use_apparel_sizes($secondary_options)) {
 
 if ($primary_options === '') {
     $primary_options = implode("\n", array(
-        'Crna|#000000',
-        'Bijela|#f3f4f6',
-        'Siva|#9ca3af',
-        'Tamnoplava|#203240',
-        'Smeđa|#6b4f3a',
-        'Zelena|#556b2f',
+        'Черна|#000000',
+        'Бяла|#f3f4f6',
+        'Сива|#9ca3af',
+        'Тъмносиня|#203240',
+        'Кафява|#6b4f3a',
+        'Зелена|#556b2f',
     ));
 }
 
 if ($offer_options === '') {
     $offer_options = implode("\n", array(
-        '1|1 majica|Odličan ulazni paket|',
-        '2|2 majice|Najbolji omjer cijene i količine|NAJPOPULARNIJE',
-        '3|3 majice|Najveća ušteda po komadu|',
-        '5|5 majic|Najveći paket za maksimalnu uštedu|',
+        '1|1 тениска|Отличен стартов пакет|',
+        '2|2 тениски|Най-доброто съотношение цена и количество|НАЙ-ПОПУЛЯРНО',
+        '3|3 тениски|Най-голяма икономия на брой|',
+        '5|5 тениски|Най-големият пакет за максимална икономия|',
     ));
 }
 

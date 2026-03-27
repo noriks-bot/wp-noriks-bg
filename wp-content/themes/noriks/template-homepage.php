@@ -47,9 +47,9 @@ get_header(); ?>
 
   <div class="hero__content">
     <!--<p class="hero__eyebrow">NOVO: NORIKS </p>-->
-    <h1 class="hero__title">Majica koja rješava sve probleme.</h1>
+    <h1 class="hero__title">Тениска, която решава всеки ежедневен проблем.</h1>
 
-    <a class="hero__btn" href="/hr/shop">KUPUJTE SADA</a>
+    <a class="hero__btn" href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">ПАЗАРУВАЙ СЕГА</a>
   </div>
 </section>
 
@@ -203,7 +203,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="/hr/product-category/bokserice/">
+    <a class="collection-card" href="<?php echo esc_url( home_url( '/product-category/bokserice/' ) ); ?>">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -217,7 +217,7 @@ get_header(); ?>
             <h3 class="collection-card__name">Bokserice</h3>
           </div>
           <p class="collection-card__desc">
-          Mekane. Prozračne. Pouzdane.
+          Меки. Дишащи. Надеждни.
 
           </p>
         </div>
@@ -873,6 +873,4 @@ a:hover {
 	</div><!-- #primary -->
 <?php
 get_footer();
-
-
 

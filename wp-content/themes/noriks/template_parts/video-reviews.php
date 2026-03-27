@@ -1,6 +1,6 @@
 
 <section class="new-video-rewies">
-  <h2 class="new-video-rewies__title">Pogledajte kako drugi obožavaju svoje NORIKS bokserice</h2>
+  <h2 class="new-video-rewies__title">Виж как другите харесват своите NORIKS боксерки</h2>
 
   <div class="new-video-rewies__slider">
 
@@ -514,4 +514,3 @@ videoBoxes.forEach(box => {
   });
 });
 </script>
-

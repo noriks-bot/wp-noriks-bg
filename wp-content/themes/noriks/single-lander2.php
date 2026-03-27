@@ -223,7 +223,7 @@ get_header();
                         ">
                         <p class="announcement-bar__message">
                           <span>
-                            <a style="font-size: 1.2rem; "href="https://noriks.com/hr/product-category/bokserice/" title="">NORIKS • Udobnost i zdravlje na prvom mjestu</a>
+                            <a style="font-size: 1.2rem; "href="<?php echo esc_url( home_url( '/product-category/bokserice/' ) ); ?>" title="">NORIKS • Комфорт и грижа на първо място</a>
                           </span>
                         </p>
                       </div>
@@ -253,7 +253,7 @@ get_header();
                         ">
                         <p class="announcement-bar__message">
                           <span>
-                            <a style="margin-top: 15px; padding-bottom: 5px;display: block; color: #121212; font-size:1.1rem;" href="https://noriks.com/hr/product-category/bokserice/" title="">Članak Men Cub › Muško zdravlje › Donje rublje</a>
+                            <a style="margin-top: 15px; padding-bottom: 5px;display: block; color: #121212; font-size:1.1rem;" href="<?php echo esc_url( home_url( '/product-category/bokserice/' ) ); ?>" title="">Статия Men Club › Мъжко здраве › Бельо</a>
                           </span>
                         </p>
                       </div>
@@ -400,13 +400,13 @@ get_header();
               </div>
               <div style="width: 50%;"  class="image-with-text__text-item grid__item">
                 <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container color-scheme-template--19454951555210__multirow_Rmp8Af color-custom gradient">
-                  <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium"> ČLANAK </p>
-                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39"> Tvoje donje rublje moglo bi ozbiljno utjecati na tvoje zdravlje upravo sada</h2>
+                  <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium"> СТАТИЯ </p>
+                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39"> Твоето бельо може сериозно да влияе на здравето ти още сега</h2>
                   <div class="image-with-text__text rte body">
                     <p>Ako trenutno nosiš pamučne ili druge uobičajene bokserice, pažljivo pročitaj informacije na ovoj stranici.</p>
                     <p>Ako još uvijek nosiš tradicionalni pamuk ili, još gore, sintetičko rublje od poliestera, riskiraš ozbiljne zdravstvene probleme.</p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Provjeri dostupnost </a>
+                  <a href="<?php echo esc_url( home_url( '/product-category/bokserice/' ) ); ?>" class="button button--primary"> Провери наличността </a>
                 </div>
               </div>
             </div>
@@ -427,14 +427,14 @@ get_header();
               <div style="width: 50%;" class="image-with-text__text-item grid__item">
                 <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container color-scheme-template--19454951555210__multirow_Rmp8Af color-custom gradient">
                   <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium"></p>
-                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39"> Strašna istina: Što tvoje donje rublje radi tvom tijelu</h2>
+                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39"> Неприятната истина: какво прави бельото ти на тялото</h2>
                   <div class="image-with-text__text rte body">
                     <p>
                       <strong>1) Zadržavanje topline = Savršeno tlo za bakterije i gljivice</strong>
                     </p>
                     <p>Tvoje preponsko područje je već toplo i vlažno. Tradicionalne tkanine zadržavaju toplinu i vlagu, stvarajući idealno okruženje za razvoj bakterija i gljivica. Ovo nakupljanje topline može smanjiti proizvodnju sperme i potaknuti prekomjerni rast mikroorganizama.</p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Provjeri dostupnost </a>
+                  <a href="<?php echo esc_url( home_url( '/product-category/bokserice/' ) ); ?>" class="button button--primary"> Провери наличността </a>
                 </div>
               </div>
             </div>
@@ -457,7 +457,7 @@ get_header();
               <div style="width: 50%;" class="image-with-text__text-item grid__item">
                 <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container color-scheme-template--19454951555210__multirow_Rmp8Af color-custom gradient">
                   <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium"></p>
-                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39">Trenje i loša ventilacija = Oštećenja kože i rizik od infekcija </h2>
+                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39">Триене и лоша вентилация = раздразнения и риск от инфекции</h2>
                   <div class="image-with-text__text rte body">
                     <p>
                       <strong>2) Trenje i iritacija:</strong>Gruba vlakna mogu s vremenom uzrokovati mikrooštećenja i iritacije.
@@ -469,7 +469,7 @@ get_header();
                       <em>Bokserice NORIKS s ventilacijom i ultra mekim modal-om pomažu da koža ostane hladna, suha i zaštićena.</em>
                     </p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Provjeri dostupnost </a>
+                  <a href="<?php echo esc_url( home_url( '/product-category/bokserice/' ) ); ?>" class="button button--primary"> Провери наличността </a>
                 </div>
               </div>
             </div>
@@ -838,7 +838,7 @@ Individualni rezultati mogu se razlikovati. </em>
                 </h2>
               </div>
               <div style="margin-top: 15px;" class="rich-text__buttons">
-                <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary">Naruči sada i zaštiti svoje zdravlje</a>
+                <a href="<?php echo esc_url( home_url( '/product-category/bokserice/' ) ); ?>" class="button button--primary">Поръчай сега и защити здравето си</a>
               </div>
               <div class="rich-text__text rte">
                 <p>Više od 2.225.000 muškaraca već je prešlo na NORIKS. Ne čekaj da se pojave osipi, infekcije ili neugodni mirisi.</p>
@@ -1060,7 +1060,7 @@ Individualni rezultati mogu se razlikovati. </em>
                         ">
                         <p class="announcement-bar__message">
                           <span>
-                            <a style="font-size: 1.2rem;" href="https://noriks.com/hr/product-category/bokserice/" title="">70% popusta danas → 30-dnevno probno razdoblje bez rizika</a>
+                            <a style="font-size: 1.2rem;" href="<?php echo esc_url( home_url( '/product-category/bokserice/' ) ); ?>" title="">70% отстъпка днес → 30-дневен пробен период без риск</a>
                           </span>
                         </p>
                       </div>

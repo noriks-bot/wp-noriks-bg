@@ -46,18 +46,18 @@
 	<div class="top-header">
   <div class="marquee">
     <div class="marquee-content">
-      <span><a href="/hr/shop">Besplatna dostava za narudžbe iznad 70 €</a></span>
-      <span><a href="/hr/shop">30 dana bez rizika – probaj bez brige</a></span>
+      <span><a href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">Безплатна доставка за поръчки над 70 €</a></span>
+      <span><a href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">30 дни без риск – пробвай спокойно</a></span>
       <!--<span><a href="/hr/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
 
       <!-- DUPLICATED for seamless infinite loop -->
-      <span><a href="/hr/shop">Besplatna dostava za narudžbe iznad 70 €</a></span>
-      <span><a href="/hr/shop">30 dana bez rizika – probaj bez brige</a></span>
+      <span><a href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">Безплатна доставка за поръчки над 70 €</a></span>
+      <span><a href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">30 дни без риск – пробвай спокойно</a></span>
      <!-- <span><a href="/hr/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
       
        <!-- DUPLICATED for seamless infinite loop -->
-      <span><a href="/hr/shop">Besplatna dostava za narudžbe iznad 70 €</a></span>
-      <span><a href="/hr/shop">30 dana bez rizika – probaj bez brige</a></span>
+      <span><a href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">Безплатна доставка за поръчки над 70 €</a></span>
+      <span><a href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">30 дни без риск – пробвай спокойно</a></span>
      <!-- <span><a href="/hr/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
     </div>
   </div>

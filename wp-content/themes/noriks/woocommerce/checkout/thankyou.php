@@ -41,26 +41,26 @@ $upsell_is_majice = $has_only_bokserice;
 
 if ( $upsell_is_majice ) {
     $upsell_product_id = 250; // Crna majica (variable)
-    $upsell_name       = 'Crne Majice';
+    $upsell_name       = 'Черни тениски';
     $upsell_qty_prices = array( 1 => 12.99, 3 => 29.99, 6 => 39.99 );
-    $upsell_qty_names  = array( 1 => '1x Crna Majica', 3 => '3x Crne Majice', 6 => '6x Crnih Majica' );
+    $upsell_qty_names  = array( 1 => '1x Черна тениска', 3 => '3x Черни тениски', 6 => '6x Черни тениски' );
     $upsell_qty_images = array(
         1 => 'https://noriks.com/hr/wp-content/uploads/2025/09/black-1.jpg',
         3 => 'https://noriks.com/hr/wp-content/uploads/2025/09/black-3x.jpg',
         6 => 'https://noriks.com/hr/wp-content/uploads/2026/01/15xcrnamajica.png',
     );
-    $upsell_title_text = 'Dodaj majice sada – 50% popusta';
+    $upsell_title_text = 'Добави тениски сега – 50% отстъпка';
 } else {
     $upsell_product_id = 2781; // Crne Bokserice
-    $upsell_name       = 'Crne Bokserice';
+    $upsell_name       = 'Черни боксерки';
     $upsell_qty_prices = array( 1 => 7.99, 3 => 19.99, 5 => 29.99 );
-    $upsell_qty_names  = array( 1 => '1x Crne Bokserice', 3 => '3x Crne Bokserice', 5 => '5x Crnih Bokseric' );
+    $upsell_qty_names  = array( 1 => '1x Черни боксерки', 3 => '3x Черни боксерки', 5 => '5x Черни боксерки' );
     $upsell_qty_images = array(
         1 => 'https://noriks.com/hr/wp-content/uploads/2025/11/crne-boksarice-produktna.jpg',
         3 => 'https://noriks.com/hr/wp-content/uploads/2025/11/boksarice_3x_crne.png',
         5 => 'https://noriks.com/hr/wp-content/uploads/2026/01/boksarice_5x_crne.png',
     );
-    $upsell_title_text = 'Dodaj bokserice sada – 50% popusta';
+    $upsell_title_text = 'Добави боксерки сега – 50% отстъпка';
 }
 $upsell_product    = wc_get_product( $upsell_product_id );
 $upsell_image      = $upsell_qty_images[3];
@@ -449,8 +449,8 @@ body.woocommerce-order-received .woocommerce {
     <div style="width:80px;height:80px;border:4px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
-    <h1 style="color:#fff;font-family:'Roboto',sans-serif;font-size:28px;font-weight:700;margin:0;">Narudžba zaprimljena!</h1>
-    <p style="color:rgba(255,255,255,0.85);font-family:'Roboto',sans-serif;font-size:15px;margin:10px 0 0;">Broj narudžbe: #<?php echo $order->get_order_number(); ?></p>
+    <h1 style="color:#fff;font-family:'Roboto',sans-serif;font-size:28px;font-weight:700;margin:0;">Поръчката е приета!</h1>
+    <p style="color:rgba(255,255,255,0.85);font-family:'Roboto',sans-serif;font-size:15px;margin:10px 0 0;">Номер на поръчката: #<?php echo $order->get_order_number(); ?></p>
 </div>
 <script>(function(){var k='splash_<?php echo $order->get_id(); ?>';if(sessionStorage.getItem(k)){document.getElementById('order-splash').style.display='none';return;}sessionStorage.setItem(k,'1');setTimeout(function(){var s=document.getElementById('order-splash');s.style.opacity='0';setTimeout(function(){s.style.display='none';},600);},2000);})();</script>
 
@@ -461,10 +461,10 @@ body.woocommerce-order-received .woocommerce {
     <?php if ( $order->has_status( 'failed' ) ) : ?>
         <div class="ty-success" style="background:#fde8e8;">
             <div class="ty-success-icon" style="background:#dc3545;">✕</div>
-            <h1>Narudžba nije uspjela</h1>
-            <p>Banka je odbila transakciju. Pokušajte ponovno.</p>
+            <h1>Поръчката не беше успешна</h1>
+            <p>Банката отказа транзакцията. Опитайте отново.</p>
             <p style="margin-top:16px;">
-                <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" style="display:inline-block;background:#E8450E;color:#fff;padding:12px 32px;text-decoration:none;font-weight:700;">Pokušaj ponovno</a>
+                <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" style="display:inline-block;background:#E8450E;color:#fff;padding:12px 32px;text-decoration:none;font-weight:700;">Опитай отново</a>
             </p>
         </div>
     <?php else : ?>
@@ -472,9 +472,9 @@ body.woocommerce-order-received .woocommerce {
         <!-- ✅ Success -->
         <div class="ty-success">
             <div class="ty-success-icon">✓</div>
-            <h1>Vaša narudžba je zaprimljena!</h1>
-            <p>Potvrdu ste primili na <?php echo esc_html( $order->get_billing_email() ); ?></p>
-            <span class="ty-order-num">Narudžba #<?php echo $order->get_order_number(); ?></span>
+            <h1>Вашата поръчка е приета!</h1>
+            <p>Получихте потвърждение на <?php echo esc_html( $order->get_billing_email() ); ?></p>
+            <span class="ty-order-num">Поръчка #<?php echo $order->get_order_number(); ?></span>
         </div>
 
         <!-- ═══ STEP 1: VIGOSHOP UPSELL (COD only) ═══ -->
@@ -487,7 +487,7 @@ body.woocommerce-order-received .woocommerce {
 
                 <div class="tyuo_timer" style="position:relative;">
                     <div class="timer_wrapper">
-                        <div class="special_offer_txt">Zadnja prilika – ponuda ističe za</div>
+                        <div class="special_offer_txt">Последен шанс – офертата изтича след</div>
                         <div class="time" id="ty-timer">04:40</div>
                     </div>
                     <div class="title"><?php echo esc_html($upsell_title_text); ?></div>
@@ -496,11 +496,11 @@ body.woocommerce-order-received .woocommerce {
                 <div class="tyuo_middle_section">
                     <div class="sub_title">
                         <span class="sub_title__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.293" viewBox="0 0 15 11.293"><path d="M50.915,62.211,46.07,57.366a.44.44,0,0,1,0-.623L47.208,55.6a.44.44,0,0,1,.623,0l3.084,3.084a.441.441,0,0,0,.623,0l7.512-7.513a.44.44,0,0,1,.623,0l1.138,1.138a.44.44,0,0,1,0,.623l-9.273,9.274a.441.441,0,0,1-.623,0" transform="translate(-12.941 319.806)" fill="#47b426"></path></svg></span>
-                        Bez dodatne dostave – sve u jednom paketu
+                        Без допълнителна доставка – всичко в един пакет
                     </div>
                     <div class="clue_text">
                         <span class="clue_text__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14.333" viewBox="0 0 15 14.333"><path d="M6.885.383,5.1,4a.686.686,0,0,1-.517.375l-3.994.58a.686.686,0,0,0-.38,1.17L3.1,8.945a.686.686,0,0,1,.2.607L2.614,13.53a.686.686,0,0,0,1,.723l3.572-1.878a.686.686,0,0,1,.639,0l3.572,1.878a.686.686,0,0,0,1-.723l-.682-3.978a.686.686,0,0,1,.2-.607l2.89-2.817a.686.686,0,0,0-.38-1.17l-3.994-.58A.686.686,0,0,1,9.9,4L8.116.383a.686.686,0,0,0-1.23,0" fill="#47b426"></path></svg></span>
-                        Upotpuni kombinaciju i uštedi
+                        Допълни комплекта и спести
                     </div>
                 </div>
 
@@ -515,7 +515,7 @@ body.woocommerce-order-received .woocommerce {
                             $chk = $is_mid ? ' checked' : '';
                         ?>
                         <label class="ty-qty-btn<?php echo $cls; ?>" style="flex:1;text-align:center;padding:10px 0;border:2px solid <?php echo $border; ?>;border-radius:4px;font-weight:700;font-size:14px;cursor:pointer;background:<?php echo $bg; ?>;color:#000;">
-                            <input type="radio" name="ty_qty" value="<?php echo $q; ?>"<?php echo $chk; ?> style="display:none;"> <?php echo $q; ?>x kom
+                            <input type="radio" name="ty_qty" value="<?php echo $q; ?>"<?php echo $chk; ?> style="display:none;"> <?php echo $q; ?>x бр.
                         </label>
                         <?php endforeach; ?>
                     </div>

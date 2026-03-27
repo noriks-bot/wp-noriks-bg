@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) exit;
 // Output clean HTML directly - no wp_head(), no WP template
 ?>
 <!DOCTYPE html>
-<html lang="hr" >
+<html lang="bg" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -21,15 +21,15 @@ if (!defined('ABSPATH')) exit;
 	        <meta name="robots" content="noindex, nofollow"><link rel='dns-prefetch' href='//widget.trustpilot.com' />
 <link rel='dns-prefetch' href='//static.klaviyo.com' />
 <link rel='dns-prefetch' href='//js.braintreegateway.com' />
-<meta name="title" content="Dovršite kupnju" />
-<meta name="description" content="Sve što vam treba na jednom mjestu. Istražite veliki izbor proizvoda po najnižim cijenama. Kliknite sada i uživajte u najboljim ponudama i velikoj raznolikosti!" />
+<meta name="title" content="Завършете поръчката" />
+<meta name="description" content="Всичко, от което се нуждаете, на едно място. Разгледайте голям избор от продукти на отлични цени и се насладете на най-добрите оферти." />
 <meta name="image" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
-<meta property="og:locale" content="hr" />
+<meta property="og:locale" content="bg" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Dovršite kupnju" />
-<meta property="og:description" content="Sve što vam treba na jednom mjestu. Istražite veliki izbor proizvoda po najnižim cijenama. Kliknite sada i uživajte u najboljim ponudama i velikoj raznolikosti!" />
+<meta property="og:title" content="Завършете поръчката" />
+<meta property="og:description" content="Всичко, от което се нуждаете, на едно място. Разгледайте голям избор от продукти на отлични цени и се насладете на най-добрите оферти." />
 <meta property="og:image" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
-<meta property="og:image:alt" content="Vigoshop - Dovršite kupnju" />
+<meta property="og:image:alt" content="Noriks - Завършете поръчката" />
 <style id='classic-theme-styles-inline-css' type='text/css'>
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -173,14 +173,14 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <div class="before_form container container--xs">
 
   <form name="checkout" method="post" class="checkout woocommerce-checkout"
-        action="#" enctype="multipart/form-data" aria-label="Plaćanje">
+        action="#" enctype="multipart/form-data" aria-label="Плащане">
 
     
               <div class="col2-set" id="customer_details">
         <div class="col-1 clearfix">
           <div class="woocommerce-billing-fields">
   
-    <h3 class="checkout-billing-title">Plaćanje i Dostava</h3>
+    <h3 class="checkout-billing-title">Плащане и доставка</h3>
 
   
   
@@ -201,7 +201,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 	
 	
 		
-			<h3>Dodatne informacije</h3>
+			<h3>Допълнителна информация</h3>
 
 		
 		<div class="woocommerce-additional-fields__field-wrapper">
@@ -210,7 +210,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 	
 	<div id="custom_shipping">
 
-        <h3>Dostava</h3>
+        <h3>Доставка</h3>
     
         <ul class="shipping_method_custom">
 
@@ -238,7 +238,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <div class="delivery-from-eu-warehouse">
         <img decoding="async" class="delivery-from-eu-warehouse__icon"
             src="https://images.vigo-shop.com/general/flags/eu-warehouse.svg"><span
-            class="delivery-from-eu-warehouse__text">Skladište u EU</span>
+            class="delivery-from-eu-warehouse__text">Склад в ЕС</span>
     </div>
     </div>
 <div class="sup_outher_wrapper">
@@ -248,7 +248,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 <div class="vigo-gift__tooltip">
                     <div class="flex flex--autosize flex--middle">
                         <div class="flex__item down_arrow "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.061,12.354a1.5,1.5,0,0,0-2.122,0L13.5,14.793V6a1.5,1.5,0,0,0-3,0v8.793L8.061,12.354a1.5,1.5,0,0,0-2.122,2.121l3.586,3.586a3.5,3.5,0,0,0,4.95,0l3.586-3.586A1.5,1.5,0,0,0,18.061,12.354Z"/></svg></div>
-                        <div class="flex__item f--bold">  Dodajte u narudžbu</div>
+                        <div class="flex__item f--bold">  Добавете към поръчката</div>
                     </div>
                 </div>
                 <div class="flex sup_inner_wrapper">
@@ -258,20 +258,20 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                                 <label for="surprise_item_upsell_0" class=""></label>
                                 <input id="surprise_item_upsell_0" type="checkbox" class="checkbox-simple checkbox-simple--green val--bottom"  disabled/>
                             </div>
-                            <div class="f--l f--bold surprise_title">Proizvod iznenađenja</div>
+                            <div class="f--l f--bold surprise_title">Изненадващ продукт</div>
                             <div class="tag_wrapper">
                                 <div class="tag tag--red">
                                     <span class="woocommerce-Price-amount amount"><bdi>3,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>                                </div>
                             </div>
                         </div>
-                        <div class="f--m c--darkgray s-top--s">U vrijednosti između 5 € i 15 €.</div>
+                        <div class="f--m c--darkgray s-top--s">На стойност между 5 € и 15 €.</div>
                     </div>
                     <div class="vigo-checkout-gift__img">
                         <img decoding="async" class="img" src="https://images.vigo-shop.com/general/present_responsive.svg" alt="Gift icon">
                     </div>
                 </div>
                 <div class="c--darkgray remove_wrapper">
-                    <div class="remove_surprise vigo-checkout-total__trash hide"><svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.4286 1.15398H15.4286C15.7429 1.15398 16 1.41215 16 1.7309V2.88474C16 3.20334 15.7442 3.46166 15.4286 3.46166H0.571429C0.255857 3.46166 0 3.20334 0 2.88474V1.7309C0 1.41222 0.255857 1.15398 0.571429 1.15398H4.57143L4.98536 0.318892C5.08214 0.123461 5.27996 0 5.49643 0H10.5039C10.7204 0 10.9183 0.123461 11.015 0.318892L11.4286 1.15398ZM1.14286 16.7308C1.14286 17.6863 1.91071 18.4615 2.85714 18.4615H13.1429C14.0893 18.4615 14.8571 17.6863 14.8571 16.7308V4.61549H1.14286V16.7308ZM10.8571 7.50009C10.8571 7.17917 11.1107 6.92317 11.4286 6.92317C11.7464 6.92317 12 7.18008 12 7.50009V15.5769C12 15.897 11.7455 16.1539 11.4286 16.1539C11.1116 16.1539 10.8571 15.897 10.8571 15.5769V7.50009ZM8 6.92317C7.68214 6.92317 7.42857 7.17917 7.42857 7.50009V15.5769C7.42857 15.897 7.68304 16.1539 8 16.1539C8.31696 16.1539 8.57143 15.897 8.57143 15.5769V7.50009C8.57143 7.18008 8.31786 6.92317 8 6.92317ZM4 7.50009C4 7.17917 4.25357 6.92317 4.57143 6.92317C4.88929 6.92317 5.14286 7.18008 5.14286 7.50009V15.5769C5.14286 15.8979 4.88929 16.1539 4.57143 16.1539C4.25357 16.1539 4 15.897 4 15.5769V7.50009Z" /></svg>                        <span>Ukloni</span></div>
+                    <div class="remove_surprise vigo-checkout-total__trash hide"><svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.4286 1.15398H15.4286C15.7429 1.15398 16 1.41215 16 1.7309V2.88474C16 3.20334 15.7442 3.46166 15.4286 3.46166H0.571429C0.255857 3.46166 0 3.20334 0 2.88474V1.7309C0 1.41222 0.255857 1.15398 0.571429 1.15398H4.57143L4.98536 0.318892C5.08214 0.123461 5.27996 0 5.49643 0H10.5039C10.7204 0 10.9183 0.123461 11.015 0.318892L11.4286 1.15398ZM1.14286 16.7308C1.14286 17.6863 1.91071 18.4615 2.85714 18.4615H13.1429C14.0893 18.4615 14.8571 17.6863 14.8571 16.7308V4.61549H1.14286V16.7308ZM10.8571 7.50009C10.8571 7.17917 11.1107 6.92317 11.4286 6.92317C11.7464 6.92317 12 7.18008 12 7.50009V15.5769C12 15.897 11.7455 16.1539 11.4286 16.1539C11.1116 16.1539 10.8571 15.897 10.8571 15.5769V7.50009ZM8 6.92317C7.68214 6.92317 7.42857 7.17917 7.42857 7.50009V15.5769C7.42857 15.897 7.68304 16.1539 8 16.1539C8.31696 16.1539 8.57143 15.897 8.57143 15.5769V7.50009C8.57143 7.18008 8.31786 6.92317 8 6.92317ZM4 7.50009C4 7.17917 4.25357 6.92317 4.57143 6.92317C4.88929 6.92317 5.14286 7.18008 5.14286 7.50009V15.5769C5.14286 15.8979 4.88929 16.1539 4.57143 16.1539C4.25357 16.1539 4 15.897 4 15.5769V7.50009Z" /></svg>                        <span>Премахни</span></div>
                 </div>
 
             </div>
@@ -279,35 +279,35 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </div>
 </div>
 
-    <h3 class="payment-title">Način plaćanja</h3>
+    <h3 class="payment-title">Начин на плащане</h3>
     <div id="payment" class="woocommerce-checkout-payment">
 			<ul class="wc_payment_methods payment_methods methods">
 			<li class="wc_payment_method payment_method_cod">
   <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod"  checked='checked' data-order_button_text="" />
 
   <label for="payment_method_cod">
-    Plaćanje prilikom preuzimanja <span class="payment-fee-not-free"><span class="woocommerce-Price-amount amount">1,99<span class="woocommerce-Price-currencySymbol">&euro;</span></span></span><div class="hs-checkout__payment-method-cod-icon-container">
+    Плащане при доставка <span class="payment-fee-not-free"><span class="woocommerce-Price-amount amount">1,99<span class="woocommerce-Price-currencySymbol">&euro;</span></span></span><div class="hs-checkout__payment-method-cod-icon-container">
         <img decoding="async" class="hs-checkout__payment-method-cod-icon" src="https://images.vigo-shop.com/general/checkout/cod/uni_cash_on_delivery.svg" />
     </div>  </label>
   </li>
 <li class="wc_payment_method payment_method_braintree_credit_card">
-  <input id="payment_method_braintree_credit_card" type="radio" class="input-radio" name="payment_method" value="braintree_credit_card"  data-order_button_text="Naruči" />
+  <input id="payment_method_braintree_credit_card" type="radio" class="input-radio" name="payment_method" value="braintree_credit_card"  data-order_button_text="Поръчай" />
 
   <label for="payment_method_braintree_credit_card">
-    Kreditna kartica <span class="payment-fee-free">Besplatno</span><div class="sv-wc-payment-gateway-card-icons"><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-visa.svg" alt="visa" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-mastercard.svg" alt="mastercard" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-maestro.svg" alt="maestro" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /></div>  </label>
+    Кредитна карта <span class="payment-fee-free">Безплатно</span><div class="sv-wc-payment-gateway-card-icons"><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-visa.svg" alt="visa" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-mastercard.svg" alt="mastercard" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-maestro.svg" alt="maestro" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /></div>  </label>
       <div class="payment_box payment_method_braintree_credit_card" style="display:none;">
-      <fieldset id="wc-braintree-credit-card-credit-card-form" aria-label="Informacije o plaćanju"><legend style="display:none;">Informacije o plaćanju</legend><div class="wc-braintree-credit-card-new-payment-method-form js-wc-braintree-credit-card-new-payment-method-form"><input type="hidden" name="wc-braintree-credit-card-card-type" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-enabled" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-verified" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-order-total" value="21.98" />		<input type="hidden" id="wc_braintree_credit_card_payment_nonce" name="wc_braintree_credit_card_payment_nonce" />
+      <fieldset id="wc-braintree-credit-card-credit-card-form" aria-label="Информация за плащането"><legend style="display:none;">Информация за плащането</legend><div class="wc-braintree-credit-card-new-payment-method-form js-wc-braintree-credit-card-new-payment-method-form"><input type="hidden" name="wc-braintree-credit-card-card-type" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-enabled" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-verified" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-order-total" value="21.98" />		<input type="hidden" id="wc_braintree_credit_card_payment_nonce" name="wc_braintree_credit_card_payment_nonce" />
 		<input type="hidden" id="wc-braintree-credit-card-device-data" name="wc_braintree_device_data" />
 				<div class="form-row ">
 			<label for="wc-braintree-credit-card-context-hosted"></label>
 			<div id="wc-braintree-credit-card-context-hosted" class="" data-placeholder=""></div>
 		</div>
 				<div class="form-row form-row-wide wc-braintree-hosted-field-card-number-parent wc-braintree-hosted-field-parent">
-			<label for="wc-braintree-credit-card-account-number-hosted">Broj kartice<abbr class="required" title="required">&nbsp;*</abbr></label>
+			<label for="wc-braintree-credit-card-account-number-hosted">Номер на карта<abbr class="required" title="required">&nbsp;*</abbr></label>
 			<div id="wc-braintree-credit-card-account-number-hosted" class="js-sv-wc-payment-gateway-credit-card-form-inputjs-sv-wc-payment-gateway-credit-card-form-account-number wc-braintree-hosted-field-card-number wc-braintree-hosted-field" data-placeholder="•••• •••• •••• ••••"></div>
 		</div>
 				<div class="form-row form-row-first wc-braintree-hosted-field-card-expiry-parent wc-braintree-hosted-field-parent">
-			<label for="wc-braintree-credit-card-expiry-hosted">Datum isteka<abbr class="required" title="required">&nbsp;*</abbr></label>
+			<label for="wc-braintree-credit-card-expiry-hosted">Срок на валидност<abbr class="required" title="required">&nbsp;*</abbr></label>
 			<div id="wc-braintree-credit-card-expiry-hosted" class="js-sv-wc-payment-gateway-credit-card-form-inputjs-sv-wc-payment-gateway-credit-card-form-expiry wc-braintree-hosted-field-card-expiry wc-braintree-hosted-field" data-placeholder="MM/GG"></div>
 		</div>
 				<div class="form-row form-row-last wc-braintree-hosted-field-card-csc-parent wc-braintree-hosted-field-parent">
@@ -320,12 +320,12 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 		</style>    </div>
   </li>
 <li class="wc_payment_method payment_method_braintree_paypal">
-  <input id="payment_method_braintree_paypal" type="radio" class="input-radio" name="payment_method" value="braintree_paypal"  data-order_button_text="Naruči" />
+  <input id="payment_method_braintree_paypal" type="radio" class="input-radio" name="payment_method" value="braintree_paypal"  data-order_button_text="Поръчай" />
 
   <label for="payment_method_braintree_paypal">
-    PayPal <span class="payment-fee-free">Besplatno</span><img decoding="async" src="https://images.vigo-shop.com/general/checkout/paypal/PayPal.svg" alt="PayPal">  </label>
+    PayPal <span class="payment-fee-free">Безплатно</span><img decoding="async" src="https://images.vigo-shop.com/general/checkout/paypal/PayPal.svg" alt="PayPal">  </label>
       <div class="payment_box payment_method_braintree_paypal" style="display:none;">
-      <fieldset id="wc-braintree-paypal-paypal-form" aria-label="Informacije o plaćanju"><legend style="display:none;">Informacije o plaćanju</legend><div class="wc-braintree-paypal-new-payment-method-form js-wc-braintree-paypal-new-payment-method-form">		<input type="hidden" id="wc_braintree_paypal_payment_nonce" name="wc_braintree_paypal_payment_nonce" />
+      <fieldset id="wc-braintree-paypal-paypal-form" aria-label="Информация за плащането"><legend style="display:none;">Информация за плащането</legend><div class="wc-braintree-paypal-new-payment-method-form js-wc-braintree-paypal-new-payment-method-form">		<input type="hidden" id="wc_braintree_paypal_payment_nonce" name="wc_braintree_paypal_payment_nonce" />
 		<input type="hidden" id="wc-braintree-paypal-device-data" name="wc_braintree_device_data" />
 		<p class="form-row " id="wc-braintree-paypal-context_field" data-priority=""><span class="woocommerce-input-wrapper"><input type="hidden" class="input-hidden " name="wc-braintree-paypal-context" id="wc-braintree-paypal-context" value="shortcode"  /></span></p>
 		
@@ -347,23 +347,23 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 			</div>
 	
 		        <div id="hs-cod-checkout-prompt" style="display:none;">
-            <div class="cod-prompt-text">Dovršite narudžbu sada, <strong>platite pouzećem 🙂</strong></div>
+            <div class="cod-prompt-text">Завършете поръчката сега, <strong>платете при доставка 🙂</strong></div>
             <img decoding="async" class="cod-prompt-image" src="https://images.vigo-shop.com/general/checkout/cod/uni_cash_on_delivery.svg">
         </div>
 
 
                 <div id="hs-vat-tax-checkout-prompt">
-            <span class="tax-and-vat-checkout-claims">Nema dodatnih troškova za carinu</span>
-            <span class="tax-and-vat-checkout-claims">PDV je uključen u cijenu</span>
+            <span class="tax-and-vat-checkout-claims">Няма допълнителни митнически такси</span>
+            <span class="tax-and-vat-checkout-claims">ДДС е включен в цената</span>
         </div>
         <div id="pdf">
     <div class="pdf-title-container">
         <h3 class="pdf-title">
-            KUPITE E-KNJIGU<!--            <span class="green-label">-->
+            КУПЕТЕ Е-КНИГА<!--            <span class="green-label">-->
 <!--                --><!--            </span>-->
         </h3>
     </div>
-    <p class="pdf-description">Kada kupite e-knjigu, besplatno Vam dajemo troškove dostave.</p>
+    <p class="pdf-description">Когато купите е-книга, получавате безплатна доставка.</p>
 
     <div id="pdf-grid">
         <div class="table-grid">
@@ -375,15 +375,15 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <!--                <div class="top-price-label">-->
 <!--                    <span>--><!--</span>-->
 <!--                </div>-->
-                <label for="ebook_true">E-knjiga</label>
+                <label for="ebook_true">Е-книга</label>
             </div>
             <div id="pdf-select-false" class="cell-grid column-selected top">
                 <input type="radio" id="ebook_false"  name="ebook_offer" value="false" checked>
-                <label for="ebook_false">Ne želim e-knjigu</label>
+                <label for="ebook_false">Не желая е-книга</label>
             </div>
 
             <div class="cell-grid">
-                E-knjiga:
+                Е-книга:
             </div>
             <div class="cell-grid column-option">
                 <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
@@ -392,14 +392,14 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             </div>
 
             <div class="cell-grid">
-                Dostava:
+                Доставка:
             </div>
             <div class="cell-grid column-option">
-                Besplatno            </div>
+                Безплатно            </div>
             <div class="cell-grid column-selected">
                 <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
                         <div class="cell-grid">
-                Ukupna narudžba:
+                Обща поръчка:
             </div>
             <div class="cell-grid totals column-option bottom">
                 <span class="totals"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span></span>
@@ -410,14 +410,14 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </div>
     <p class="pdf-more-info">
         <img decoding="async" src="https://images.vigo-shop.com/general/checkout/pdf_info_icon.svg">
-        <u>Više informacija o e-knjizi</u>
+        <u>Повече информация за е-книгата</u>
     </p>
     <p class="pdf-more-info-description">
-        Odaberite našu e-knjigu i dobijte pristup trikovima koji mijenjaju život, savjetima za uštedu novca i vrhunskoj pogodnosti. Također štedite na otpremi. Odaberite e-knjigu za pametniju, lakšu i pristupačniju budućnost!</p>
+        Изберете нашата е-книга и получете достъп до полезни трикове, съвети за спестяване и допълнителни предимства. Освен това спестявате и от доставката.</p>
 </div>
 
 
-<h3 class="place-order-title" style="display: block;">Sažetak narudžbe</h3>
+<h3 class="place-order-title" style="display: block;">Обобщение на поръчката</h3>
 <div class="vigo-checkout-total order-total shop_table woocommerce-checkout-review-order-table">
     <div class="grid m-top--s review-all-products-container">
 
@@ -454,7 +454,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 
         <div class="vigo-checkout-total__sum flex flex--middle border_price">
         <div class="flex__item f--l">
-            Ukupni iznos: <span class="f--bold price_total_wrapper"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>        </div>
+            Обща сума: <span class="f--bold price_total_wrapper"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>        </div>
     </div>
 </div>
 
@@ -472,22 +472,22 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 
     
         <div id="order_review" class="woocommerce-checkout-review-order container container--xs bg--white">
-            <button type="submit" class="button alt button--l button--block button--green button--rounded button--green-gradient" name="woocommerce_checkout_place_order" id="place_order" data-value="Naruči" />Naruči</button></div><div class="checkout-warranty flex flex--center flex--middle">
+            <button type="submit" class="button alt button--l button--block button--green button--rounded button--green-gradient" name="woocommerce_checkout_place_order" id="place_order" data-value="Поръчай" />Поръчай</button></div><div class="checkout-warranty flex flex--center flex--middle">
     <div class="flex__item--autosize checkout-warranty__icon">
        <img decoding="async" src="https://images.vigo-shop.com/general/guarantee_money_back/satisfaction_icon_hr.png">
     </div>
     <div class="flex__item--autosize f--m checkout-warranty__text">
-        <strong>Kupujte bez brige </strong><br>
-        Povrat novca moguć u roku od 90 dana    </div>
+        <strong>Пазарувайте спокойно </strong><br>
+        Връщане на парите е възможно до 90 дни    </div>
 </div>
 
 <div class="agreed_terms_txt">
-    <span class="policy-agreement-obligation">Klikom na gumb <strong>Naruči</strong> pristajem na narudžbu uz obvezu plaćanja.</span> <br>
+    <span class="policy-agreement-obligation">С натискането na бутона <strong>Поръчай</strong> потвърждавам поръчка с ангажимент за плащане.</span> <br>
             <div class="terms-checkbox-and-links">
             <label class="checkbox">
                 <input type="checkbox" class="input-checkbox" name="agree_to_checkout_terms" id="agree_to_terms_checkbox" value="1">
             </label>
-            Pročitao sam i prihvaćam <a href="#" id="terms_conditions_link"> Opće uvjete prodaje </a> i <a href="#" id="withdrawal_policy_link"> pravo na odustajanje </a>.        </div>
+            Прочетох и приемам <a href="#" id="terms_conditions_link"> общите условия за продажба </a> и <a href="#" id="withdrawal_policy_link"> правото на отказ </a>.        </div>
     </div>
 
 <div id="terms-conditions-popup" class="checkout-popup" style="display: none;">
@@ -986,7 +986,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <div class="partial_inner_section">
             <img src="https://images.vigo-shop.com/general/banner_icons/delivery_icon.svg" alt="">
             <div class="text_wrapper">
-                Dostavlja: Paket24 Hrvatske pošte            </div>
+                Доставя се от: Paket24 Hrvatska pošta            </div>
         </div>
 
                     <div class="partial_inner_section">
@@ -1009,35 +1009,35 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                         <ul>
                                                             <li>
                                     <a href="https://vigoshop.hr/opci-uvjeti-poslovanja/"
-                                       class="button button--link c--gray">Opći uvjeti poslovanja</a>
+                                       class="button button--link c--gray">Общи условия</a>
                                 </li>
                                                             <li>
                                     <a href="https://vigoshop.hr/pravila-o-zastiti-privatnosti/"
-                                       class="button button--link c--gray">Pravila o zaštiti privatnosti</a>
+                                       class="button button--link c--gray">Политика за поверителност</a>
                                 </li>
                                                             <li>
                                     <a href="https://vigoshop.hr/pravila-o-kolacicima/"
-                                       class="button button--link c--gray">Pravila o kolačićima</a>
+                                       class="button button--link c--gray">Политика за бисквитките</a>
                                 </li>
                                                             <li>
                                     <a href="https://vigoshop.hr/pravo-na-odustajanje-od-kupnje/"
-                                       class="button button--link c--gray">Pravo na odustajanje od kupnje</a>
+                                       class="button button--link c--gray">Право на отказ от покупка</a>
                                 </li>
                                                             <li>
                                     <a href="https://vigoshop.hr/prituzbe-i-sporovi/"
-                                       class="button button--link c--gray">Pritužbe i sporovi</a>
+                                       class="button button--link c--gray">Жалби и спорове</a>
                                 </li>
                                                             <li>
                                     <a href="https://vigoshop.hr/zamjena-u-jamstvu/"
-                                       class="button button--link c--gray">Zamjena u jamstvu</a>
+                                       class="button button--link c--gray">Подмяна по гаранция</a>
                                 </li>
                                                             <li>
                                     <a href="https://vigoshop.hr/informacije-o-tvrtki/"
-                                       class="button button--link c--gray">Informacije o tvrtki</a>
+                                       class="button button--link c--gray">Информация за компанията</a>
                                 </li>
                                                             <li>
                                     <a href="https://manuals.hs-plus.com/hr?brand=vigoshop"
-                                       class="button button--link c--gray">Upute za upotrebu</a>
+                                       class="button button--link c--gray">Инструкции за употреба</a>
                                 </li>
                                                     </ul>
                     </div>
@@ -1047,7 +1047,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <a class="button button--link" id="scroll-to-top">
                         <div class="flex flex--autosize flex--middle flex--center">
                             <div class="flex__item back-top-icon"><svg viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M15.8654 2.30769H1.05769C0.473758 2.30769 0 1.79119 0 1.15409C0 0.516985 0.473758 0 1.05769 0H15.8654C16.4515 0 16.9231 0.516504 16.9231 1.15361C16.9231 1.79071 16.4493 2.30769 15.8654 2.30769ZM7.36833 8.30031L3.42706 12.3225C3.01302 12.7461 2.32115 12.7636 1.88252 12.3662C1.44298 11.9687 1.42157 11.3049 1.83561 10.8813L7.66581 4.93316C8.07847 4.50946 8.8445 4.50946 9.25726 4.93316L15.0874 10.8813C15.5014 11.3036 15.4803 11.968 15.0405 12.3644C14.8296 12.5557 14.5606 12.65 14.2916 12.65C14.0001 12.65 13.7132 12.5408 13.4959 12.3203L9.55464 8.30031V18.9501C9.55464 19.5297 9.06272 20 8.46149 20C7.86025 20 7.36833 19.5283 7.36833 18.9475V8.30031Z" /></svg></div>
-                            <div class="flex__item f--m c--lightgray scroll-to-top-text">Natrag na vrh</div>
+                            <div class="flex__item f--m c--lightgray scroll-to-top-text">Обратно нагоре</div>
                         </div>
                     </a>
                 </div>
@@ -1064,10 +1064,10 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M10.9107 7.38848H11.6071C12.3761 7.38848 13 8.04356 13 8.85098V14.701C13 15.5084 12.3761 16.1635 11.6071 16.1635H1.39286C0.623884 16.1635 0 15.5084 0 14.701V8.85098C0 8.04356 0.623884 7.38848 1.39286 7.38848H2.08929V5.19473C2.08929 2.64145 4.0683 0.563477 6.5 0.563477C8.9317 0.563477 10.9107 2.64145 10.9107 5.19473V7.38848ZM4.41071 5.19473V7.38848H8.58928V5.19473C8.58928 3.98512 7.65201 3.00098 6.5 3.00098C5.34799 3.00098 4.41071 3.98512 4.41071 5.19473Z" fill="white"/>
             </svg></div>
                             <div
-                                class="flex__item f--bold c--gray">100% sigurna kupnja</div>
+                                class="flex__item f--bold c--gray">100% сигурна покупка</div>
                         </div>
                         <div
-                            class="f--s c--gray">osigurano 256-bitnim šifriranjem</div>
+                            class="f--s c--gray">защитено с 256-битово криптиране</div>
                     </div>
                 </div>
             </div>
@@ -1075,7 +1075,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 <a class="button button--link" id="scroll-to-top">
                     <div class="flex flex--autosize flex--middle">
                         <div class="flex__item"><svg viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8654 2.30769H1.05769C0.473758 2.30769 0 1.79119 0 1.15409C0 0.516985 0.473758 0 1.05769 0H15.8654C16.4515 0 16.9231 0.516504 16.9231 1.15361C16.9231 1.79071 16.4493 2.30769 15.8654 2.30769ZM7.36833 8.30031L3.42706 12.3225C3.01302 12.7461 2.32115 12.7636 1.88252 12.3662C1.44298 11.9687 1.42157 11.3049 1.83561 10.8813L7.66581 4.93316C8.07847 4.50946 8.8445 4.50946 9.25726 4.93316L15.0874 10.8813C15.5014 11.3036 15.4803 11.968 15.0405 12.3644C14.8296 12.5557 14.5606 12.65 14.2916 12.65C14.0001 12.65 13.7132 12.5408 13.4959 12.3203L9.55464 8.30031V18.9501C9.55464 19.5297 9.06272 20 8.46149 20C7.86025 20 7.36833 19.5283 7.36833 18.9475V8.30031Z" fill="#99A0A7"/></svg></div>
-                        <div class="flex__item f--m c--lightgray">Natrag na vrh</div>
+                        <div class="flex__item f--m c--lightgray">Обратно нагоре</div>
                     </div>
                 </a>
             </div>
@@ -1103,7 +1103,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </div>
     <div class="footer-copyright bg--primary-dark c--white">
         <div class="footer-copyright__content">
-            <div class="t--center f--s c--gray">Copyright © 2018 - 2026 -  internetska trgovina Vigoshop (HS plus d.o.o)</div>
+            <div class="t--center f--s c--gray">Copyright © 2018 - 2026 - онлайн магазин Noriks (HS plus d.o.o)</div>
         </div>
     </div>
 </footer>
@@ -1119,8 +1119,8 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 <img id="close_terms_conditions" src="https://images.vigo-shop.com/general/remove.png" alt="Close">
             </div>
             <div class='mobile-notice-modal__head s-all--s'>
-                <div class="f--l f--bold c--darkgray">Trebate li pomoć pri kupnji?</div>
-                <div class="f--s c--gray">Za Vas smo dostupni svaki radni dan od <strong>07:00 - 19:00</strong>, a vikendom od <strong>08:00 - 18:00.</strong></div>
+                <div class="f--l f--bold c--darkgray">Нуждаете ли се от помощ при покупката?</div>
+                <div class="f--s c--gray">На разположение сме всеки работен ден от <strong>07:00 - 19:00</strong>, а през уикенда от <strong>08:00 - 18:00.</strong></div>
             </div>
                 <div class="mobile-notice-modal__body">
             <div class="flex flex--vertical">
@@ -1131,7 +1131,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                         <div class="flex flex--autosize flex--gaps">
                             <div class="flex__item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><linearGradient id="ge5urdfv4a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#66ff74"/><stop offset="1" stop-color="#00b822"/></linearGradient><clipPath id="1s5y4t255b"><path data-name="Rectangle 3641" style="fill:none" d="M0 0h17.171v17.296H0z"/></clipPath></defs><path data-name="Path 11937" d="M4 0h16a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" style="fill:#00b822"/><g data-name="Group 10478"><g data-name="Group 10477" style="clip-path:url(#1s5y4t255b)" transform="translate(3.415 3)"><path data-name="Path 11934" d="M8.594 1.484a7.093 7.093 0 1 1-3.846 13.052.142.142 0 0 0-.114-.018l-1.128.3L2.1 15.2l.377-1.406.29-1.084a.142.142 0 0 0-.021-.118 7.091 7.091 0 0 1 5.848-11.1m0-1.492a8.577 8.577 0 0 0-7.443 12.84.142.142 0 0 1 .014.108l-.123.459-.377 1.406L0 17.3l2.483-.665 1.406-.377.526-.141a.142.142 0 0 1 .1.013A8.577 8.577 0 1 0 8.594 0" style="fill:#fff"/><path data-name="Path 11935" d="M52.9 55.99a1.835 1.835 0 0 1 .8-.027.4.4 0 0 1 .293.226c.324.688.431.961.663 1.486a.986.986 0 0 1-.233 1.118 12.15 12.15 0 0 0-.333.316c-.168.179.9 2.308 3.106 2.9a.276.276 0 0 0 .284-.092c.223-.271.438-.554.659-.828a.4.4 0 0 1 .459-.118c.732.286.942.448 1.675.734a.378.378 0 0 1 .284.386 1.781 1.781 0 0 1-1.2 1.845 2.723 2.723 0 0 1-.462.076c-2.867.179-6.64-2.839-7.028-5.7A2.291 2.291 0 0 1 52.9 55.99" transform="translate(-47.575 -51.327)" style="fill:#fff"/></g></g></svg></div>
                             <div
-                                class="flex__item desktop_contact desktop_whatsapp_contact">Pošaljite nam Whatsapp poruku</div>
+                                class="flex__item desktop_contact desktop_whatsapp_contact">Изпратете ни съобщение в WhatsApp</div>
                             <div class="flex__item mobile_contact mobile_whatsapp_contact">
                                 <strong>Whatsapp</strong></div>
                         </div>
@@ -1140,7 +1140,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <a class="  flex__item t--no-decoration c--text s-all--s" href="tel:+385-1-3300-004">
                         <div class="flex flex--autosize flex--gaps">
                             <div class="flex__item"><svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"><path d="M18.298 13.0304L14.2715 11.3042C13.7973 11.0989 13.241 11.2374 12.9189 11.6374L11.2827 13.6346C8.71287 12.3729 6.62544 10.2833 5.36371 7.71585L7.36059 6.08161C7.75952 5.75577 7.89534 5.20253 7.69361 4.72829L5.96763 0.702075C5.74148 0.185903 5.18461 -0.0964881 4.63947 0.03005L0.8988 0.89281C0.369985 1.01341 0 1.47911 0 2.02312C0 11.3855 7.61494 19 16.9777 19C17.5221 19 17.9864 18.6301 18.1077 18.1012L18.9705 14.3608C19.0955 13.8171 18.8139 13.2531 18.298 13.0304Z"/></svg></div>
-                            <div class="flex__item desktop_contact desktop_phone_contact">Za naručivanje nazovite: <span class="phone-padding-top"><strong>01 3300 004</strong></span></div>
+                            <div class="flex__item desktop_contact desktop_phone_contact">За поръчки се обадете: <span class="phone-padding-top"><strong>01 3300 004</strong></span></div>
                             <div class="flex__item mobile_contact mobile_phone_contact">
                                 <strong>01 3300 004</strong></div>
                         </div>
@@ -1170,5 +1170,69 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </div>
         <link rel='stylesheet' id='check-client-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/check-client/css/check-client-8571deb0ef.css' type='text/css' media='all' />
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var replacements = new Map([
+    ['Ime', 'Име'],
+    ['Prezime', 'Фамилия'],
+    ['Unesite adresu na kojoj ćete biti između 8:00 i 16:00 sati.', 'Въведете адрес, на който ще бъдете между 8:00 и 16:00 часа.'],
+    ['Ulica', 'Улица'],
+    ['Kućni broj', 'Номер'],
+    ['Poštanski broj', 'Пощенски код'],
+    ['Grad', 'Град'],
+    ['Odaberite grad', 'Изберете град'],
+    ['Telefon', 'Телефон'],
+    ['Broj mobilnog telefona', 'Телефонен номер'],
+    ['E-mail adresa', 'Имейл адрес'],
+    ['Županija', 'Област'],
+    ['Odaberite opciju…', 'Изберете опция…'],
+    ['Hrvatska', 'България'],
+    ['(neobavezno)', '(по избор)'],
+    ['Sign me up to receive email updates and news', 'Искам да получавам новини и оферти по имейл'],
+    ['Sign up for exclusive offers and news via text messages', 'Запишете ме за ексклузивни оферти и новини чрез SMS'],
+    ['Napomene uz narudžbu', 'Бележки към поръчката'],
+    ['Bilješke o vašoj narudžbi.', 'Бележки за вашата поръчка.'],
+    ['srijeda, 18.3. - četvrtak, 19.3.', 'сряда, 18.3. - четвъртък, 19.3.'],
+    ['Opći uvjeti poslovanja', 'Общи условия'],
+    ['Pravila o zaštiti privatnosti', 'Политика за поверителност'],
+    ['Pravila o kolačićima', 'Политика за бисквитките'],
+    ['Pravo na odustajanje od kupnje', 'Право на отказ от покупка'],
+    ['Pritužbe i sporovi', 'Жалби и спорове'],
+    ['Zamjena u jamstvu', 'Подмяна по гаранция'],
+    ['Informacije o tvrtki', 'Информация за компанията'],
+    ['Upute za upotrebu', 'Инструкции за употреба'],
+    ['Spremite i ispišite', 'Запази и отпечатай'],
+    ['Dobro došli na web-mjesto', 'Добре дошли в уебсайта'],
+    ['Pošaljite nam Whatsapp poruku', 'Изпратете ни съобщение в WhatsApp'],
+    ['Za naručivanje nazovite:', 'За поръчки се обадете:'],
+    ['Plaćanje i Dostava', 'Плащане и доставка'],
+    ['Dodatne informacije', 'Допълнителна информация'],
+    ['Način plaćanja', 'Начин на плащане'],
+    ['Dostava', 'Доставка'],
+    ['Paket24 Hrvatske pošte', 'Paket24 Hrvatska pošta'],
+    ['Kupujte bez brige', 'Пазарувайте спокойно'],
+    ['Povrat novca moguć u roku od 90 dana', 'Връщане на парите е възможно до 90 дни'],
+    ['Natrag na vrh', 'Обратно нагоре'],
+    ['100% sigurna kupnja', '100% сигурна покупка'],
+    ['osigurano 256-bitnim šifriranjem', 'защитено с 256-битово криптиране']
+  ]);
+
+  var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  var nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(function (node) {
+    var text = node.nodeValue;
+    var trimmed = text.replace(/\s+/g, ' ').trim();
+    if (replacements.has(trimmed)) {
+      node.nodeValue = text.replace(trimmed, replacements.get(trimmed));
+    }
+  });
+
+  document.querySelectorAll('[placeholder]').forEach(function (el) {
+    var value = el.getAttribute('placeholder');
+    if (replacements.has(value)) el.setAttribute('placeholder', replacements.get(value));
+  });
+});
+</script>
 </body>
 </html>

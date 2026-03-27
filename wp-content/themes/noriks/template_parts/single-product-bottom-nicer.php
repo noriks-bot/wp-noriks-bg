@@ -19,17 +19,17 @@ if (  has_term( array( 'starter-paketi','orto-starter' ), 'product_cat', get_the
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-ZAŠTO LJUDI BIRAJU STARTER PAKET?
+ЗАЩО ХОРАТА ИЗБИРАТ СТАРТОВИЯ ПАКЕТ?
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;"  ><strong>“Uzeo sam jer nisam bio siguran hoće li mi odgovarati.” 
+    line-height: 1.2;"  ><strong>“Взех го, защото не бях сигурен дали ще ми пасне.” 
 
 
 
-</strong><span style="font-weight:normal;">Marko - Zagreb</span></p>
-        <p class="description">Mnogi kupci krenu sa starter paketom jer žele prvo vidjeti kako NORIKS stoji i kako se nosi. Jedna majica i jedne bokserice dovoljne su da bez velikog ulaganja donesu odluku.
+</strong><span style="font-weight:normal;">Марко - София</span></p>
+        <p class="description">Много клиенти избират стартовия пакет, защото първо искат да видят как стои NORIKS и как се носи. Една тениска и един чифт боксерки са достатъчни, за да вземеш решение без голяма инвестиция.
 
 
 
@@ -38,12 +38,12 @@ ZAŠTO LJUDI BIRAJU STARTER PAKET?
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;" ><strong>“Nakon prvog nošenja sam odmah naručio još.” 
+    line-height: 1.2;" ><strong>“След първото носене веднага поръчах още.” 
 
 
 
-</strong><span style="font-weight:normal;">Pavle - Split</span></p>
-        <p class="description">Više od 95% kupaca nakon starter paketa ponovno naruči. Ne zato što su planirali, nego zato što već prvi dan osjete razliku u kroju, udobnosti i kvaliteti.
+</strong><span style="font-weight:normal;">Павел - Пловдив</span></p>
+        <p class="description">Над 95% от клиентите поръчват отново след стартовия пакет. Не защото са го планирали, а защото още в първия ден усещат разликата в кройката, удобството и качеството.
 
 
 </p>
@@ -51,12 +51,12 @@ ZAŠTO LJUDI BIRAJU STARTER PAKET?
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;"  ><strong>“Materijal i fit su me uvjerili.” 
+    line-height: 1.2;"  ><strong>“Материята и кройката ме убедиха.” 
 
 
 
-</strong><span style="font-weight:normal;">Ante - Pula</span></p>
-        <p class="description">Majica i bokserice su mekane, lagane i ugodne na koži. Starter paket je najčešći razlog zašto NORIKS brzo postane dio svakodnevne garderobe.
+</strong><span style="font-weight:normal;">Антон - Варна</span></p>
+        <p class="description">Тениската и боксерките са меки, леки и приятни върху кожата. Стартовият пакет е най-честата причина NORIKS бързо да стане част от ежедневния гардероб.
 
 
 
@@ -83,38 +83,38 @@ ZAŠTO LJUDI BIRAJU STARTER PAKET?
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-KOMBINACIJA KOJA SE NOSI SVAKI DAN
+КОМБИНАЦИЯ, КОЯТО СЕ НОСИ ВСЕКИ ДЕН
 
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Dizajnirano za cjelodnevnu udobnost
+        <p><strong>Създадено за целодневен комфорт
 
 
 </strong></p>
-        <p class="description">Majica i bokserice napravljene su za nošenje od jutra do večeri, bez prilagođavanja i nelagode. Sve stoji na mjestu, ne steže i omogućuje slobodno kretanje tijekom cijelog dana.
+        <p class="description">Тениската и боксерките са създадени за носене от сутрин до вечер без корекции и дискомфорт. Всичко стои на мястото си, не стяга и позволява свободно движение през целия ден.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kroj koji radi s tijelom
+        <p><strong>Кройка, която работи с тялото
 
 
 </strong></p>
-        <p class="description">Kroj majice naglašava gornji dio tijela, dok bokserice pružaju dovoljno prostora i stabilnost bez podizanja. Rezultat je siguran, opušten osjećaj i uredan izgled u svakoj situaciji.
+        <p class="description">Кройката на тениската подчертава горната част на тялото, а боксерките дават достатъчно пространство и стабилност без набиране. Резултатът е уверен, спокоен комфорт и подреден вид във всяка ситуация.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kvaliteta koju osjetiš odmah
+        <p><strong>Качество, което усещаш веднага
 
 
 </strong></p>
-        <p class="description">Materijali su mekani, prozračni i ugodni na koži, bez gubitka oblika nakon pranja. Već pri prvom nošenju jasno je zašto ova kombinacija brzo postaje dio svakodnevne garderobe.
+        <p class="description">Материалите са меки, дишащи и приятни върху кожата, без да губят формата си след пране. Още при първото носене става ясно защо тази комбинация бързо влиза в ежедневния гардероб.
 
 
 </p>
@@ -143,39 +143,39 @@ KOMBINACIJA KOJA SE NOSI SVAKI DAN
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-NAJLAKŠI I NAJSIGURNIJI POČETAK
+НАЙ-ЛЕСНИЯТ И НАЙ-СИГУРЕН НАЧАЛЕН ИЗБОР
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Najmanji mogući rizik
+        <p><strong>Минимален риск
 
 
 </strong></p>
-        <p class="description">Zato što ti omogućuje da upoznaš kvalitetu bez velikog ulaganja.
-Umjesto da kupuješ više komada unaprijed, uzmeš jednu majicu i jedne bokserice — taman dovoljno da vidiš kako stoje, kako se nose i kako se osjeća materijal.
+        <p class="description">Защото ти позволява да опознаеш качеството без голяма инвестиция.
+Вместо да купуваш много бройки предварително, взимаш една тениска и един чифт боксерки — точно толкова, колкото да видиш как стоят, как се носят и как се усеща материята.
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Osmišljeno za prvi korak
+        <p><strong>Създадено за първата стъпка
 
 
 </strong></p>
-        <p class="description">Starter paket je osmišljen kao prvo iskustvo, ne kao zaliha.
-Dostupan je samo jednom po kupcu i po posebnoj cijeni, kako bi odluka bila jednostavna i bez razmišljanja.
+        <p class="description">Стартовият пакет е замислен като първо преживяване, а не като запас.
+Достъпен е само веднъж за всеки клиент и на специална цена, за да бъде решението лесно и без излишно чудене.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Iskustvo koje se ponavlja
+        <p><strong>Изживяване, което се повтаря
 
 
 </strong></p>
-        <p class="description">Većina muškaraca nakon toga nastavi s NORIKS-om jer shvati razliku u kroju, udobnosti i kvaliteti.
-Ali prvi korak je ovaj — najmanji rizik, najčišći dojam. 
+        <p class="description">Повечето мъже продължават с NORIKS, след като усетят разликата в кройката, удобството и качеството.
+Но първата стъпка е точно тази — минимален риск и най-чисто първо впечатление.
 
 </p>
       </div>
@@ -321,27 +321,27 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-        ZAŠTO ĆE TI OVA MAJICA POSTATI STANDARD?
+        ЗАЩО ТАЗИ ТЕНИСКА ЩЕ ТИ СТАНЕ СТАНДАРТ?
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Dizajnirana za stvarni život
+        <p><strong>Създадена за реалния живот
 </strong></p>
-        <p class="description">Ova majica napravljena je za cjelodnevno nošenje, od jutra do večeri. Ne traži prilagođavanje ni razmišljanje — jednostavno stoji dobro u svakoj situaciji.
+        <p class="description">Тази тениска е направена за носене през целия ден, от сутрин до вечер. Не изисква нагласяне и не те кара да мислиш за нея, просто стои добре във всяка ситуация.
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kroj koji razumije tijelo
+        <p><strong>Кройка, която разбира тялото
 </strong></p>
-        <p class="description">Kroj je razvijan da prati liniju tijela bez stezanja i naglašava ono što treba. Rezultat je uredan, samopouzdan izgled bez osjećaja nelagode.
+        <p class="description">Кройката е разработена така, че да следва линията на тялото без да стяга и да подчертава това, което трябва. Резултатът е подреден, уверен вид без усещане за дискомфорт.
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Osjeti razliku već pri prvom nošenju
+        <p><strong>Усети разликата още при първото носене
 </strong></p>
-        <p class="description">Materijal je mekan, lagan i prozračan na koži. Nakon prvog nošenja jasno je zašto ova majica brzo postaje ona koju najčešće biraš.
+        <p class="description">Материята е мека, лека и дишаща върху кожата. Още след първото носене става ясно защо тази тениска бързо се превръща в тази, която избираш най-често.
 </p>
       </div>
     </div>
@@ -409,13 +409,13 @@ endif;
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-        Fleksibilan rez za snažnije noge
+        Гъвкава кройка за по-силни крака
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Cjelodnevna udobnost
+        <p><strong>Комфорт през целия ден
 </strong></p>
-        <p class="description">Posebno dizajnirano za muškarce s debljim bedrima. Elastični i rastezljivi materijal pruža maksimalnu udobnost bez zatezanja ili neugodnog pojasa. Donje rublje ostaje na mjestu i ne podiže se, pa se možete slobodno kretati cijeli dan.</p>
+        <p class="description">Специално създадено за мъже с по-силни бедра. Еластичната и разтеглива материя дава максимален комфорт без стягане или неприятен натиск. Бельото стои на място и не се качва нагоре, така че можеш да се движиш свободно през целия ден.</p>
       </div>
 
     
@@ -445,13 +445,13 @@ endif;
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-       Manje trošenja i oštećenja
+       По-малко износване и повреди
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Super izdržljivo 💪
+        <p><strong>Супер издръжливо 💪
 </strong></p>
-        <p class="description">Zaboravite na stalnu kupovinu poderanog donjeg rublja. NORIKS šortsevi su napravljeni od jačeg materijala – traju duže i štede vam put u trgovinu.
+        <p class="description">Забрави за постоянното купуване на скъсано бельо. NORIKS боксерките са направени от по-здрав материал, издържат по-дълго и ти спестяват нови покупки.
 </p>
       </div>
 
@@ -460,9 +460,9 @@ endif;
         
         <p class="description">
         
-        ✅ Manje poderanja  <br/>
-        ✅ Manje znojenja  <br/>
-        ✅ Udobnost tijekom cijelog dana <br/>
+        ✅ По-малко късане  <br/>
+        ✅ По-малко изпотяване  <br/>
+        ✅ Комфорт през целия ден <br/>
                 
         </p>
       </div>
@@ -494,13 +494,13 @@ endif;
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-       Dovoljno prostora za sve
+       Достатъчно място за всичко
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Dečki, dopustite svom međunožju da slobodno diše!
+        <p><strong>Момчета, оставете всичко да диша свободно!
 </strong></p>
-        <p class="description">NORIKS donje rublje pruža podršku tijekom cijelog dana, a da pritom ne gubi oblik. Nebeski mekan Modal materijal rasteže se i savršeno pristaje na pravim mjestima. Prostor za vaše “gadžete” je prostraniji i fleksibilniji, pa se ne osjećate skučenima.</p>
+        <p class="description">NORIKS бельото дава подкрепа през целия ден, без да губи форма. Изключително мекият Modal материал се разтяга и прилепва отлично там, където трябва. Пространството е по-широко и по-гъвкаво, така че да не се чувстваш притиснат.</p>
       </div>
 
    
@@ -1482,7 +1482,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
               <div class="avatar">👤</div>
             <?php endif; ?>
             <div class="name"><?php echo esc_html($name); ?></div>
-            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Потвърдено','your-textdomain'); ?></span>
           </div>
           <div class="content"><?php echo esc_html($text); ?></div>
         </article>
@@ -1519,7 +1519,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
               <div class="avatar">👤</div>
             <?php endif; ?>
             <div class="name"><?php echo esc_html($name); ?></div>
-            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Потвърдено','your-textdomain'); ?></span>
           </div>
           <?php if (!empty($review['headline'])) : ?>
             <div class="headline"><?php echo esc_html($review['headline']); ?></div>
@@ -1614,7 +1614,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
           <div class="identity">
             ${avatarHtml(avatarUrl)}
             <div class="name">${esc(name)}</div>
-            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Потвърдено','your-textdomain'); ?></span>
           </div>
           ${headline ? `<div class="headline">${esc(headline)}</div>` : ''}
           <div class="content">${esc(text)}</div>
@@ -1966,5 +1966,3 @@ $faq_list3 = get_field('faq_list_3', 'option');
   });
 </script>
 		
-
-
