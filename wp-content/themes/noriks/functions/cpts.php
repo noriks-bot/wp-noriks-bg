@@ -238,11 +238,11 @@ function noriks_render_landigs_meta_box($post) {
     $offer_options      = get_post_meta($post->ID, '_landigs_offer_options', true);
 
     if ($primary_label === '') {
-        $primary_label = 'Boja';
+        $primary_label = 'Цвят';
     }
 
     if ($secondary_label === '') {
-        $secondary_label = 'Veličina';
+        $secondary_label = 'Размер';
     }
 
     if ($secondary_options === '') {
@@ -259,20 +259,20 @@ function noriks_render_landigs_meta_box($post) {
 
     if ($primary_options === '') {
         $primary_options = implode("\n", array(
-            'Crna|#000000',
-            'Bijela|#f3f4f6',
-            'Siva|#9ca3af',
-            'Tamnoplava|#203240',
-            'Smeđa|#6b4f3a',
-            'Zelena|#556b2f',
+            'Черна|#000000',
+            'Бяла|#f3f4f6',
+            'Сива|#9ca3af',
+            'Тъмносиня|#203240',
+            'Кафява|#6b4f3a',
+            'Зелена|#556b2f',
         ));
     }
 
     if ($offer_options === '') {
         $offer_options = implode("\n", array(
-            '1|1 majica|Odličan ulazni paket|',
-            '2|2 majice|Najbolji omjer cijene i količine|NAJPOPULARNIJE',
-            '3|3 majice|Najveća ušteda po komadu|',
+            '1|1 тениска|Отличен стартов пакет|',
+            '2|2 тениски|Най-доброто съотношение цена и количество|НАЙ-ПОПУЛЯРНО',
+            '3|3 тениски|Най-голяма икономия на брой|',
         ));
     }
 

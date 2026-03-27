@@ -99,8 +99,8 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
                     </svg>
                   </span>
                   <span class="wc-reserve-note__text">
-                    Molimo, požuri! Netko je upravo naručio jedan od proizvoda u tvojoj košarici. 
-                    Rezervacija vrijedi još samo <strong id="wc-reserve-timer">10:00</strong> minuta.
+                    Molya, pobarzay! Nyakoy toku-shto poracha edin ot produktite v tvoyata kolichka.
+                    Rezervatsiyata e validna oshte samo <strong id="wc-reserve-timer">10:00</strong> minuti.
                   </span>
                 </div>
                 
@@ -479,7 +479,7 @@ $img_id     = $display_obj->get_image_id();
 $upsell_img = $img_id ? wp_get_attachment_image_url( $img_id, 'woocommerce_thumbnail' ) : wc_placeholder_img_src('woocommerce_thumbnail');
 
 $desc = wp_strip_all_tags( $display_obj->get_short_description() );
-if ( ! $desc ) $desc = 'Odličen dodatek k tvoji narudžbi.';
+if ( ! $desc ) $desc = 'Otlichen produkt kam tvoyata porachka.';
 
 $price_pill = wp_strip_all_tags( wc_price( $display_obj->get_price() ) );
 
@@ -875,11 +875,11 @@ img.emoji {
 
         <div class="upsell-actions">
           <button type="button" class="upsell-add-btn" id="upsell-add-btn">
-            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'DODANO' : 'Dodaj u košaricu'; ?></span>
+            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'DOBAVENO' : 'Dobavi v kolichkata'; ?></span>
           </button>
 
           <button type="button" class="upsell-remove-btn" id="upsell-remove-btn" <?php echo $upsell_in_cart ? '' : 'style="display:none"'; ?>>
-        ️ <span>Odstrani</span>
+        ️ <span>Mahni</span>
           </button>
         </div>
 
@@ -888,7 +888,7 @@ img.emoji {
 
     <div class="upsell-loader" aria-hidden="true">
       <div class="upsell-loader__dots"><span></span><span></span><span></span></div>
-      <div class="upsell-loader__text">Obrađujem…</div>
+      <div class="upsell-loader__text">Obrabotvam...</div>
     </div>
   </div>
 
@@ -958,7 +958,7 @@ img.emoji {
       if (removeBtn) removeBtn.style.display = isAdded ? 'inline-flex' : 'none';
 
       setOptionsDisabled(isAdded);
-      if (btnText) btnText.textContent = isAdded ? 'DODANO' : 'Dodaj u košaricu';
+      if (btnText) btnText.textContent = isAdded ? 'DOBAVENO' : 'Dobavi v kolichkata';
     }
 
     function clearAttrHiddenInputs(){
@@ -1155,14 +1155,14 @@ img.emoji {
 
           if (type === 'variable') {
             if (!hasAllRequiredSelections()) {
-              alert('Odaberi sve opcije (npr. veličinu) prije dodavanja.');
+              alert('Izberi vsichki optsii predi dobavyane.');
               checkbox.checked = false;
               syncAddedUI(false);
               setBusy(false);
               return;
             }
             if (!varIdHidden.value) {
-              alert('Odabrana kombinacija nije dostupna. Probaj drugu opciju.');
+              alert('Izbranata kombinatsiya ne e nalichna. Opitai druga optsia.');
               checkbox.checked = false;
               syncAddedUI(false);
               setBusy(false);
@@ -1192,7 +1192,7 @@ img.emoji {
           if (!res.ok || data?.error) {
             checkbox.checked = false;
             syncAddedUI(false);
-            alert('Ne mogu dodati proizvod. Provjeri odabrane opcije (varijacije) i dostupnost.');
+            alert('Ne moga da dobavya produkta. Proveri izbranite optsii i nalichnostta.');
             setBusy(false);
             return;
           }
@@ -1220,7 +1220,7 @@ img.emoji {
         }
 
         if (!removeUrl) {
-          alert('Ne mogu ukloniti proizvod (ne mogu pronaći remove link u košarici).');
+          alert('Ne moga da mahna produkta ot kolichkata.');
           checkbox.checked = true;
           syncAddedUI(true);
           setBusy(false);
@@ -1256,7 +1256,7 @@ img.emoji {
 
       } catch(e){
         console.error(e);
-        alert('Nešto je pošlo po zlu. Pogledaj DevTools → Network.');
+        alert('Neshto se obarka. Proveri Network v DevTools.');
         checkbox.checked = !checkbox.checked;
         syncAddedUI();
         setBusy(false);
@@ -1303,4 +1303,3 @@ img.emoji {
 
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
-

@@ -558,15 +558,15 @@ body.woocommerce-order-received .woocommerce {
                             <?php if ( $upsell_variations ) : ?>
                                 <?php foreach ( $upsell_variations as $v ) : ?>
                                 <option value="<?php echo $v['id']; ?>" <?php selected( strtolower($v['size']), strtolower($customer_size) ); ?>>
-                                    Črna, <?php echo esc_html( $v['size'] ); ?>
+                                    Cherno, <?php echo esc_html( $v['size'] ); ?>
                                 </option>
                                 <?php endforeach; ?>
                             <?php else : ?>
-                                <option value="">Črna, S</option>
-                                <option value="">Črna, M</option>
-                                <option value="">Črna, L</option>
-                                <option value="">Črna, XL</option>
-                                <option value="">Črna, XXL</option>
+                                <option value="">Cherno, S</option>
+                                <option value="">Cherno, M</option>
+                                <option value="">Cherno, L</option>
+                                <option value="">Cherno, XL</option>
+                                <option value="">Cherno, XXL</option>
                             <?php endif; ?>
                         </select>
                     </div>
@@ -574,8 +574,8 @@ body.woocommerce-order-received .woocommerce {
                     <div class="ty-upsell-status" id="ty-upsell-status"></div>
 
                     <div class="buttons-section">
-                        <a class="pass-btn" id="ty-btn-skip">Ne želim</a>
-                        <div class="buy-btn" id="ty-btn-add" data-product-id="<?php echo esc_attr( $upsell_product_id ); ?>">DODAJ U NARUDŽBU</div>
+                        <a class="pass-btn" id="ty-btn-skip">Ne iskam</a>
+                        <div class="buy-btn" id="ty-btn-add" data-product-id="<?php echo esc_attr( $upsell_product_id ); ?>">DOBAVI KAM PORACHKATA</div>
                     </div>
                 </div>
 
@@ -589,15 +589,15 @@ body.woocommerce-order-received .woocommerce {
                 <div class="ty-grid-header" style="cursor:pointer;flex-direction:column;position:relative;">
                     <span class="ty-upsell-close" id="ty-step2-close" style="position:absolute;top:10px;right:12px;font-size:20px;color:#000;cursor:pointer;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-weight:300;">✕</span>
                     <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:8px;">
-                        <div style="font-size:15px;font-weight:400;color:#000;">Posebna ponuda ističe</div>
+                        <div style="font-size:15px;font-weight:400;color:#000;">Spetsialnata oferta izticha sled</div>
                         <div class="time" id="ty-timer-2" style="display:inline-block;background:#e22b26;color:#fff;padding:2px 10px;border-radius:4px;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;">05:00</div>
                     </div>
-                    <div style="font-size:20px;font-weight:700;color:#000;line-height:1.3;text-align:center;padding-top:10px;">Dodajte bilo koji proizvod s 50% popusta</div>
+                    <div style="font-size:20px;font-weight:700;color:#000;line-height:1.3;text-align:center;padding-top:10px;">Dobavi koyto i da e produkt s 50% otstapka</div>
                 </div>
                 <div class="ty-section-body open" id="ty-grid-body">
                 <div class="ty-section-body-inner" style="padding:0;">
                 <div class="ty-grid-trust">
-                    ✔ Sve šaljemo u istom paketu
+                    ✔ Izprashtame vsichko v edna pratka
                 </div>
                 <div class="ty-grid">
                     <?php foreach ( $grid_products as $gp ) :
@@ -644,8 +644,8 @@ body.woocommerce-order-received .woocommerce {
                     <?php endforeach; ?>
                 </div>
                 <div class="buttons-section">
-                    <a class="pass-btn" id="ty-grid-close">Ne želim</a>
-                    <div class="buy-btn" id="ty-grid-add-all">DODAJ K NARUDŽBI</div>
+                    <a class="pass-btn" id="ty-grid-close">Ne iskam</a>
+                    <div class="buy-btn" id="ty-grid-add-all">DOBAVI KAM PORACHKATA</div>
                 </div>
                 </div><!-- /ty-section-body-inner -->
                 </div><!-- /ty-section-body -->
@@ -657,7 +657,7 @@ body.woocommerce-order-received .woocommerce {
         <!-- 📋 Order items -->
         <div class="ty-section" id="ty-order-items-section">
             <div class="ty-section-header open" onclick="tyToggle(this)">
-                <span id="ty-order-items-header">Stavke narudžbe (<?php echo $order->get_item_count(); ?>)</span>
+                <span id="ty-order-items-header">Artikuli v porachkata (<?php echo $order->get_item_count(); ?>)</span>
                 <span class="ty-chevron">+</span>
             </div>
             <div class="ty-section-body open">
@@ -698,13 +698,13 @@ body.woocommerce-order-received .woocommerce {
         <!-- 📍 Address -->
         <div class="ty-section">
             <div class="ty-section-header open" onclick="tyToggle(this)">
-                <span>Adresa dostave</span>
+                <span>Adres za dostavka</span>
                 <span class="ty-chevron">+</span>
             </div>
             <div class="ty-section-body open">
                 <div class="ty-section-body-inner">
                     <div class="ty-row"><span class="ty-row-label">Ime</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() ); ?></span></div>
-                    <div class="ty-row"><span class="ty-row-label">Adresa</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_address_1() . ' ' . $order->get_billing_address_2() ); ?></span></div>
+                    <div class="ty-row"><span class="ty-row-label">Adres</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_address_1() . ' ' . $order->get_billing_address_2() ); ?></span></div>
                     <div class="ty-row"><span class="ty-row-label">Grad</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_postcode() . ' ' . $order->get_billing_city() ); ?></span></div>
                     <?php if ( $order->get_billing_phone() ) : ?>
                     <div class="ty-row"><span class="ty-row-label">Telefon</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_phone() ); ?></span></div>
@@ -723,7 +723,7 @@ body.woocommerce-order-received .woocommerce {
 
 <?php else : ?>
     <div class="ty-container">
-        <div class="ty-success"><h1>Narudžba</h1>
+        <div class="ty-success"><h1>Porachka</h1>
         <?php wc_get_template( 'checkout/order-received.php', array( 'order' => false ) ); ?>
         </div>
     </div>
@@ -832,7 +832,7 @@ body.woocommerce-order-received .woocommerce {
                     // Update item count in header by ID
                     var headerSpan = document.getElementById('ty-order-items-header');
                     if (headerSpan) {
-                        headerSpan.textContent = 'Stavke narudžbe (' + d.data.item_count + ')';
+                        headerSpan.textContent = 'Artikuli v porachkata (' + d.data.item_count + ')';
                     }
                     // Make sure section stays open
                     var section = document.getElementById('ty-order-items-section');
@@ -878,7 +878,7 @@ body.woocommerce-order-received .woocommerce {
         addBtn.addEventListener('click', function() {
             if (addBtn.disabled) return;
             addBtn.disabled = true;
-            addBtn.textContent = 'Dodajem...';
+            addBtn.textContent = 'Dobavyam...';
 
             var select = document.getElementById('ty-variation-select');
             var qtyRadio = document.querySelector('input[name="ty_qty"]:checked');
@@ -896,7 +896,7 @@ body.woocommerce-order-received .woocommerce {
             fetch(ajaxUrl, { method: 'POST', body: fd })
                 .then(function(r) { return r.json(); })
                 .then(function(d) {
-                    addBtn.textContent = '✓ DODANO';
+                    addBtn.textContent = '✓ DOBAVENO';
                     addBtn.classList.add('added');
                     // Remember in localStorage
                     var ak = 'ty_added_' + orderId;
@@ -916,7 +916,7 @@ body.woocommerce-order-received .woocommerce {
                 })
                 .catch(function() {
                     addBtn.disabled = false;
-                    addBtn.textContent = 'DODAJ U NARUDŽBU';
+                    addBtn.textContent = 'DOBAVI KAM PORACHKATA';
                 });
         });
     }
@@ -951,7 +951,7 @@ body.woocommerce-order-received .woocommerce {
                     closeAll();
                     return;
                 }
-                gridAddAll.textContent = 'Dodajem...';
+                gridAddAll.textContent = 'Dobavyam...';
                 gridAddAll.style.pointerEvents = 'none';
 
                 var promises = [];
@@ -996,7 +996,7 @@ body.woocommerce-order-received .woocommerce {
         if (mainBtn) {
             var mainPid = mainBtn.getAttribute('data-product-id');
             if (addedMap.hasOwnProperty(mainPid) || addedMap.hasOwnProperty(String(mainPid))) {
-                mainBtn.textContent = '✓ DODANO';
+                mainBtn.textContent = '✓ DOBAVENO';
                 mainBtn.classList.add('added');
                 mainBtn.disabled = true;
                 var mainDd = document.getElementById('ty-variation-select');
@@ -1035,7 +1035,7 @@ function removeUpsellItem(btn) {
                 document.querySelectorAll('.g-add-btn.added').forEach(function(gb) {
                     gb.disabled = false;
                     gb.classList.remove('added');
-                    gb.textContent = 'DODAJ';
+                    gb.textContent = 'DOBAVI';
                 });
                 // Refresh order items
                 var rfd = new FormData();
@@ -1049,14 +1049,14 @@ function removeUpsellItem(btn) {
                             if (itemsBody) itemsBody.innerHTML = d2.data.items_html;
                             var headerSpan = document.getElementById('ty-order-items-header');
                             if (headerSpan) {
-                                headerSpan.textContent = 'Stavke narudžbe (' + d2.data.item_count + ')';
+                                headerSpan.textContent = 'Artikuli v porachkata (' + d2.data.item_count + ')';
                             }
                         }
                     });
             } else {
                 btn.disabled = false;
                 btn.textContent = '✕';
-                alert(d.data || 'Greška');
+                alert(d.data || 'Greshka');
             }
         })
         .catch(function() {

@@ -9,6 +9,12 @@ function noriks_bg_translate_attribute_labels($translated_text, $text, $domain) 
         'Proceed to checkout'=> 'Към плащане',
         'View cart'          => 'Виж количката',
         'Add to cart'        => 'Добави в количката',
+        'Clear'              => 'Изчисти',
+        'Clear options'      => 'Изчисти опциите',
+        'Size'               => 'Размер',
+        'Veličina'           => 'Размер',
+        'Veličina majice'    => 'Размер на тениска',
+        'Veličina bokseric'  => 'Размер на боксерки',
     );
 
     return $translations[$text] ?? $translated_text;

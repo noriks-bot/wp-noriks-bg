@@ -66,7 +66,7 @@ global $product;
     </style>
 
 
- <section class=" features2" aria-label="Prednosti">
+ <section class=" features2" aria-label="Predimstva">
       <div class="features__row">
         <!-- 1) Truck -->
         
@@ -74,13 +74,13 @@ global $product;
           <div class="feature">
           
   <img src="<?php echo get_template_directory_uri(); ?>/img/cod_icon_.png" alt="Customer Support Icon" class="feature__icon info-icon">
-          <p class="feature__text">Plaćanje i pouzećem</p>
+          <p class="feature__text">Plashtane pri dostavka</p>
         </div>
         
         
         <div class="feature">
       <img src="https://noriks.com/hr/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
-          <p class="feature__text">Isprobajte 30 dana, bez rizika</p>
+          <p class="feature__text">Izprobvay 30 dni bez risk</p>
         </div>
         
         
@@ -90,7 +90,7 @@ global $product;
      
        
         <img src="https://noriks.com/hr/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
-          <p class="feature__text">Besplatna dostava za narudžbe iznad 70 €</p>
+          <p class="feature__text">Bezplatna dostavka za porachki nad 70 EUR</p>
         </div>
 
     
@@ -106,7 +106,7 @@ global $product;
 <div class="shipping-box">
   <h2 id="shipping-window" class="shipping-title"></h2>
   <p class="shipping-sub">
-    Naručite u sljedećih <span id="midnight-countdown" class="countdown"></span>
+    Porachay v sledvashtite <span id="midnight-countdown" class="countdown"></span>
   </p>
 </div>
 
@@ -133,7 +133,7 @@ global $product;
 
 <script>
   (function () {
-    const weekdays = ['nedjelja','ponedjeljak','utorak','srijeda','četvrtak','petak','subota'];
+    const weekdays = ['nedelya','ponedelnik','vtornik','sryada','chetvartak','petak','sabota'];
 
     // Helper to add business days (skip Saturday/Sunday)
     function addBusinessDays(date, days) {
@@ -159,7 +159,7 @@ global $product;
     }
 
     const windowEl = document.getElementById('shipping-window');
-    windowEl.textContent = `Dostava od ${weekdays[first.getDay()]}  ${formatDayMonth(first)} do ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
+    windowEl.textContent = `Dostavka mezhdu ${weekdays[first.getDay()]} ${formatDayMonth(first)} i ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
 
     // Countdown to midnight
     const cdEl = document.getElementById('midnight-countdown');
@@ -439,7 +439,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
         
         
         
-                Naše premium majice izrađene su od vrhunske mješavine 60% prstenasto predenog pamuka i 40% poliestera, što osigurava izuzetno mekanu tkaninu otpornu na gužvanje.  <br><br>NORIKS bokserice izrađene su od vrhunske mješavine 95% modala i 5% elastana, što osigurava izuzetno mekanu i elastičnu tkaninu koja se savršeno prilagođava tijelu. Elastičan pojas dizajniran je za optimalno pristajanje, pružajući udobnost bez stezanja i savršen izgled ispod odjeć   <br>
+                Nashite premium teniski sa izraboteni ot visokokachestvena smes ot 60% prastenno preden pamuk i 40% poliester, koeto osiguryava izklyuchitelno meka takan, ustoychiva na namachkvane. <br><br>NORIKS bokserite sa izraboteni ot premium smes ot 95% modal i 5% elastan, koeto osiguryava izklyuchitelno mek i elastichen plat, koyto se napasva perfektno po tyaloto. Elastichniyat kolan e sazdaden za optimalno prilyagane, bez pritisnene i s izchisten vid pod drehite.<br>
         
         <?php else: ?>
         
@@ -461,7 +461,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
      <!-- 2 - slika tablica velicina -->
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Tablice veličina</h3>
+        <h3>Tablica s razmeri</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
@@ -510,7 +510,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
         
         
         
-                         Perite boje s bojama.  Program za nježno pranje na hladnoj vodi.  Sušite ravno položeno ili u sušilici na niskoj temperaturi.  Ne izbjeljivati              
+                         Perete tsvetovete s podobni tsvetove. Nezhna programa s hladna voda. Sushete v ravno polozhenie ili v sushilnya na niska temperatura. Bez izbelvane.
         
         
           <?php else: ?>
@@ -529,8 +529,8 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
       </div>
       <div class="accordion-content">
        <p></p>
-       Toliko vjerujemo da će ti se NORIKS svidjeti da imaš <b data-stringify-type="bold">30 dana</b> za povrat ili besplatnu zamjenu.
-Bez papirologije, bez stresa – riješimo u par klikova. </p>
+       Tolkova silno vyarvame, che NORIKS shte ti haresa, che imash <b data-stringify-type="bold">30 dni</b> za vrashtane ili bezplatna zamyana.
+Bez dokumenti, bez stres - opravame vsichko samo s nyakolko klika. </p>
 
 <p>
     
@@ -544,7 +544,7 @@ Bez papirologije, bez stresa – riješimo u par klikova. </p>
     info@noriks.com
   </a>
 </p>
-<p>Samo nam napiši mail da želiš zamjenu i <b data-stringify-type="bold">odmah ćemo sve srediti.</b></p>
+<p>Prosto ni pishi po e-mail, che iskash zamyana, i <b data-stringify-type="bold">vednaga shte opravim vsichko.</b></p>
        
        
       </div>

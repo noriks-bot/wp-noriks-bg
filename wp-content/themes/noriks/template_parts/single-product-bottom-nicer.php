@@ -988,7 +988,7 @@ a:hover {
           
           <?php else: ?>
           
-          Nisi sam u potrazi za savršenim boksericama.
+          Не си сам в търсенето на перфектните боксерки.
           
           <?php endif; ?>
           

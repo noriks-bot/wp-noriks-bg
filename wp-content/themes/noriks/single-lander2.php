@@ -569,6 +569,52 @@ get_header();
   </div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var replacements = new Map([
+    ['ČLANAK', 'СТАТИЯ'],
+    ['Tihi ubojica: Skrivena istina o tvojim gaćama i zašto modal bokserice NORIKS čine sve druge opcije nebitnima', 'Тихият убиец: скритата истина за твоето бельо и защо modal боксерките NORIKS правят всички други варианти без значение'],
+    ['Napisao Ivan Horvat • Zadnje ažurirano: 10. listopada 2025', 'Написано от Ivan Horvat • Последна актуализация: 10 октомври 2025'],
+    ['Ako trenutno nosiš pamučne ili druge uobičajene bokserice, pažljivo pročitaj informacije na ovoj stranici.', 'Ако в момента носиш памучни или други обикновени боксерки, прочети внимателно информацията на тази страница.'],
+    ['Ako još uvijek nosiš tradicionalni pamuk ili, još gore, sintetičko rublje od poliestera, riskiraš ozbiljne zdravstvene probleme.', 'Ако все още носиш традиционен памук или, още по-зле, синтетично бельо от полиестер, рискуваш сериозни здравословни проблеми.'],
+    ['1) Zadržavanje topline = Savršeno tlo za bakterije i gljivice', '1) Задържане на топлина = идеална среда за бактерии и гъбички'],
+    ['Tvoje preponsko područje je već toplo i vlažno. Tradicionalne tkanine zadržavaju toplinu i vlagu, stvarajući idealno okruženje za razvoj bakterija i gljivica. Ovo nakupljanje topline može smanjiti proizvodnju sperme i potaknuti prekomjerni rast mikroorganizama.', 'Областта в слабините по природа е топла и влажна. Традиционните тъкани задържат топлина и влага, създавайки идеална среда за развитие на бактерии и гъбички. Това натрупване на топлина може да намали производството на сперма и да стимулира прекомерен растеж на микроорганизми.'],
+    ['2) Trenje i iritacija:', '2) Триене и раздразнение:'],
+    ['3) Slaba ventilacija:', '3) Слаба вентилация:'],
+    ['Bokserice NORIKS s ventilacijom i ultra mekim modal-om pomažu da koža ostane hladna, suha i zaštićena.', 'NORIKS боксерките с вентилация и ултра мек modal помагат кожата да остане хладна, суха и защитена.'],
+    ['Prije i poslije: Što se mijenja s NORIKS-om?', 'Преди и след: какво се променя с NORIKS?'],
+    ['Prije:', 'Преди:'],
+    ['Poslije:', 'След:'],
+    ['Zašto je NORIKS jedan od najsigurnijih izbora', 'Защо NORIKS е един от най-сигурните избори'],
+    ['Prirodna antimikrobna zaštita:', 'Естествена антимикробна защита:'],
+    ['Izvrsna prozračnost:', 'Отлична дишаемост:'],
+    ['Iznimna mekoća:', 'Изключителна мекота:'],
+    ['Regulacija temperature:', 'Регулация на температурата:'],
+    ['Zato NORIKS bokserice nisu samo luksuz, nego zdravstvena nužnost.', 'Затова NORIKS боксерките не са само лукс, а необходимост за здравето.'],
+    ['Kako NORIKS pomaže kod oštećenja kože', 'Как NORIKS помага при кожни увреждания'],
+    ['Naruči NORIKS', 'Поръчай NORIKS'],
+    ['Naruči sada', 'Поръчай сега'],
+    ['Pridruži se tisućama koji su već prešli • 70% popusta na prvu narudžbu', 'Присъедини се към хилядите, които вече избраха NORIKS • 70% отстъпка за първа поръчка'],
+    ['6-mjesečno jamstvo protiv rupa • 30-dnevno probno razdoblje bez rizika', '6-месечна гаранция срещу дупки • 30-дневен пробен период без риск'],
+    ['Više od 2.225.000 muškaraca već je prešlo na NORIKS. Ne čekaj da se pojave osipi, infekcije ili neugodni mirisi.', 'Над 2 225 000 мъже вече избраха NORIKS. Не чакай да се появят обриви, инфекции или неприятни миризми.'],
+    ['Ako želiš pročitati više recenzija i naručiti svoje bokserice, posjeti njihovu web stranicu.', 'Ако искаш да прочетеш още отзиви и да поръчаш своите боксерки, посети техния уебсайт.'],
+    ['Sva prava pridržana, NORIKS', 'Всички права запазени, NORIKS'],
+    ['Najbolje što muškarac može nositi.', 'Най-доброто, което един мъж може да носи.']
+  ]);
+
+  var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  var nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(function (node) {
+    var text = node.nodeValue;
+    var trimmed = text.replace(/\s+/g, ' ').trim();
+    if (replacements.has(trimmed)) {
+      node.nodeValue = text.replace(trimmed, replacements.get(trimmed));
+    }
+  });
+});
+</script>
+
 
         
     </div>

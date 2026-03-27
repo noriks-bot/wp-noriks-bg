@@ -33,29 +33,29 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php
 if ( ! empty( $order->get_billing_first_name() ) ) {
 	/* translators: %s: Customer first name */
-	printf( esc_html__( 'Hej  %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) );
+	printf( esc_html__( 'Zdravey %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) );
 } else {
-	printf( esc_html__( 'Hej ,', 'woocommerce' ) );
+	printf( esc_html__( 'Zdravey,', 'woocommerce' ) );
 }
 ?>
 </p>
 <?php if ( $email_improvements_enabled ) : ?>
 
 
-	<p style="color:black;">Tvoja narudžba je uspješno zaprimljena – hvala ti što si odabrao NORIKS!
+	<p style="color:black;">Tvoyata porachka e prieta uspeshno - blagodarim ti, che izbra NORIKS!
 	<br/>	<br/>
-	Sad pripremamo tvoj NORIKS proizvod i uskoro kreće na put.
+	Sega podgotvyame tvoya NORIKS produkt i skoro shte potegli kam teb.
     <br/><br/>
-    Samo udobnost i dobar osjećaj – cijeli dan.<br/><br/>
+    Samo udobstvo i dobro useshtane prez tseliya den.<br/><br/>
     
-    Javit ćemo ti čim tvoj paket krene prema tebi.<br/>
-    Ako ti bilo što zatreba – tu smo. 🙂<br/><br/>
+    Shte te uvedomim vednaga shtom pratkata tragne kam teb.<br/>
+    Ako imash nuzhda ot neshto - nie sme tuk. 🙂<br/><br/>
     
     
-    <strong>Ako ste se zabunili oko veličine, količine ili boje u narudžbi – bez brige!</strong><br/>
-    Odgovorite direktno na ovaj e-mail i javite nam što treba promijeniti prije slanja paketa. Rado ćemo sve brzo srediti.<br/><br/>
+    <strong>Ako si sgreshil za razmera, kolichestvoto ili tsveta v porachkata - bez pritesnenie!</strong><br/>
+    Otgovori direktno na tozi e-mail i ni pishi kakvo tryabva da promenim predi izprashtaneto. S radost shte opravim vsichko barzo.<br/><br/>
     
-    NORIKS tim
+    Ekipat na NORIKS
     </p>
 
 	
@@ -65,20 +65,20 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
 	<?php /* translators: %s: Order number */ ?>
 	
 		
-	<p style="color:black;">Tvoja narudžba je uspješno zaprimljena – hvala ti što si odabrao NORIKS!
+	<p style="color:black;">Tvoyata porachka e prieta uspeshno - blagodarim ti, che izbra NORIKS!
 	<br/>	<br/>
-Sad pripremamo tvoj NORIKS proizvod i uskoro kreće na put.
+Sega podgotvyame tvoya NORIKS produkt i skoro shte potegli kam teb.
     <br/><br/>
-    Samo udobnost i dobar osjećaj – cijeli dan.<br/><br/>
+    Samo udobstvo i dobro useshtane prez tseliya den.<br/><br/>
     
-    Javit ćemo ti čim tvoj paket krene prema tebi.<br/>
-    Ako ti bilo što zatreba – tu smo. 🙂<br/><br/>
+    Shte te uvedomim vednaga shtom pratkata tragne kam teb.<br/>
+    Ako imash nuzhda ot neshto - nie sme tuk. 🙂<br/><br/>
     
     
-    <strong>Ako ste se zabunili oko veličine, količine ili boje u narudžbi – bez brige!</strong><br/>
-    Odgovorite direktno na ovaj e-mail i javite nam što treba promijeniti prije slanja paketa. Rado ćemo sve brzo srediti.<br/><br/>
+    <strong>Ako si sgreshil za razmera, kolichestvoto ili tsveta v porachkata - bez pritesnenie!</strong><br/>
+    Otgovori direktno na tozi e-mail i ni pishi kakvo tryabva da promenim predi izprashtaneto. S radost shte opravim vsichko barzo.<br/><br/>
     
-    NORIKS tim
+    Ekipat na NORIKS
     </p>
 
 
