@@ -173,14 +173,14 @@ get_header(); ?>
   <div class="collections__header">
     <h2 class="collections__title">Kupujte po kolekciji</h2>
 
-    <a class="collections__cta" href="/hr/shop">
+    <a class="collections__cta" href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">
       Svi produkti <span aria-hidden="true">›</span>
     </a>
   </div>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="/hr/product-category/majice/">
+    <a class="collection-card" href="<?php echo esc_url( noriks_product_category_url( 'tees' ) ); ?>">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
@@ -203,7 +203,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="<?php echo esc_url( home_url( '/product-category/bokserice/' ) ); ?>">
+    <a class="collection-card" href="<?php echo esc_url( noriks_product_category_url( 'boxers' ) ); ?>">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -227,7 +227,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 3 -->
-    <a class="collection-card" href="/hr/product-category/kompleti/">
+    <a class="collection-card" href="<?php echo esc_url( noriks_product_category_url( 'sets' ) ); ?>">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-kompleti.jpeg"
@@ -251,7 +251,7 @@ Najbolja vrijednost po paketu.
     </a>
     
     <!-- Card 3 -->
-    <a class="collection-card" href="/hr/product-category/starter-paketi/">
+    <a class="collection-card" href="<?php echo esc_url( noriks_product_category_url( 'starter_packs' ) ); ?>">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"
@@ -587,7 +587,7 @@ a:hover {
       <?php echo get_field("homepage_section_2_t1"); ?>
     </h2>
 
-    <a class="collections__cta" href="/hr/shop">
+    <a class="collections__cta" href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">
       Svi produkti  <span aria-hidden="true">›</span>
     </a>
   </div>
@@ -669,10 +669,10 @@ a:hover {
                   if ( $alt_output == false ):
 
                     $current_product_id = $product->get_id();
-                    $is_boxers = has_term( array('bokserice','bokserice-sastavi-paket'), 'product_cat', $current_product_id );
+                    $is_boxers = noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), $current_product_id );
 
                     if ( $is_boxers ):
-                      if ( has_term('black-friday', 'product_cat', $current_product_id ) ):
+                      if ( noriks_has_product_cat( 'promo', $current_product_id ) ):
                         $topseler_text = "Black Friday ";
                       else:
                         $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ po boksericama";
@@ -873,4 +873,3 @@ a:hover {
 	</div><!-- #primary -->
 <?php
 get_footer();
-

@@ -46,23 +46,23 @@ function is_active_menu_item( $path ) {
 <nav class="category-menu">
   <ul>
     <li class="<?php echo is_shop() ? 'active' : ''; ?>">
-      <a href="/shop">Vsichki produkti</a>
+      <a href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">Vsichki produkti</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/majice') ? 'active' : ''; ?>">
-      <a href="/product-category/majice/">Teniski</a>
+    <li class="<?php echo noriks_is_product_category_or_child( 'tees' ) ? 'active' : ''; ?>">
+      <a href="<?php echo esc_url( noriks_product_category_url( 'tees' ) ); ?>">Teniski</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/bokserice') ? 'active' : ''; ?>">
-      <a href="/product-category/bokserice/">Bokseri</a>
+    <li class="<?php echo noriks_is_product_category_or_child( 'boxers' ) ? 'active' : ''; ?>">
+      <a href="<?php echo esc_url( noriks_product_category_url( 'boxers' ) ); ?>">Bokseri</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/kompleti') ? 'active' : ''; ?>">
-      <a href="/product-category/kompleti/">Komplekti</a>
+    <li class="<?php echo noriks_is_product_category_or_child( 'sets' ) ? 'active' : ''; ?>">
+      <a href="<?php echo esc_url( noriks_product_category_url( 'sets' ) ); ?>">Komplekti</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/carape') ? 'active' : ''; ?>">
-      <a href="/product-category/carape/">Chorapi</a>
+    <li class="<?php echo noriks_is_product_category_or_child( 'socks' ) ? 'active' : ''; ?>">
+      <a href="<?php echo esc_url( noriks_product_category_url( 'socks' ) ); ?>">Chorapi</a>
     </li>
   </ul>
 </nav>
@@ -313,34 +313,6 @@ function is_active_menu_item( $path ) {
 <!-- BANER DESKTOP + MOBILE -->
 
 <?php
-function is_product_category_or_child( $parent_slug ) {
-    if ( ! is_product_category() ) {
-        return false;
-    }
-
-    $current_term = get_queried_object();
-
-    if ( ! $current_term || empty( $current_term->term_id ) ) {
-        return false;
-    }
-
-    // If it's the parent itself
-    if ( $current_term->slug === $parent_slug ) {
-        return true;
-    }
-
-    // Get parent term by slug
-    $parent_term = get_term_by( 'slug', $parent_slug, 'product_cat' );
-
-    if ( ! $parent_term ) {
-        return false;
-    }
-
-    // Get all ancestors of current category
-    $ancestors = get_ancestors( $current_term->term_id, 'product_cat' );
-
-    return in_array( $parent_term->term_id, $ancestors );
-}
 ?>
 
 
@@ -359,31 +331,31 @@ if ( is_shop() ) {
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2"]');
 
 // CATEGORY: /bokserice + ALL CHILD CATEGORIES
-} elseif ( is_product_category_or_child('bokserice') ) {
+} elseif ( noriks_is_product_category_or_child( 'boxers' ) ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2-2-2"]');
 
 // CATEGORY GROUP
 } elseif (
-    is_product_category_or_child('bestsellers') ||
-    is_product_category_or_child('veliki-paketi') ||
-    is_product_category_or_child('starter-paketi')
+    noriks_is_product_category_or_child('bestsellers') ||
+    noriks_is_product_category_or_child('large_packs') ||
+    noriks_is_product_category_or_child('starter_packs')
 ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-3"]');
 
 // CATEGORY: /majice + children
-} elseif ( is_product_category_or_child('majice') ) {
+} elseif ( noriks_is_product_category_or_child( 'tees' ) ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2-2"]');
 
 // CATEGORY: /kompleti + children
-} elseif ( is_product_category_or_child('kompleti') ) {
+} elseif ( noriks_is_product_category_or_child( 'sets' ) ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset"]');
 
 // CATEGORY: /carape + children
-} elseif ( is_product_category_or_child('carape') ) {
+} elseif ( noriks_is_product_category_or_child( 'socks' ) ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2"]');
 

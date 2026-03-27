@@ -1,6 +1,6 @@
 
 <?php 
-if (  has_term( array( 'starter-paketi','orto-starter' ), 'product_cat', get_the_id() )  )   : 
+if ( noriks_has_product_cat( 'starter_packs', get_the_id() ) )   : 
 ?>
 
 
@@ -195,7 +195,7 @@ if (  has_term( array( 'starter-paketi','orto-starter' ), 'product_cat', get_the
 
 
 <?php 
-if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() )  ||  has_term( 'black-friday', 'product_cat', get_the_id() )) : 
+if ( noriks_has_product_cat( 'tees', get_the_id() ) || noriks_has_product_cat( 'promo', get_the_id() ) ) : 
 ?>
 
 
@@ -362,7 +362,7 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
 
 <!-- here we include new file BOXERIRICE-->
 
-<?php if ( has_term( array( 'bokserice', 'bokserice-sastavi-paket',  'orto-bokserice' ), 'product_cat', get_the_ID() )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
+<?php if ( noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), get_the_ID() ) && ! noriks_has_product_cat( 'promo', get_the_ID() ) ): ?>
 
 
 
@@ -560,14 +560,14 @@ endif;
 $products = array();
 
 // If current product is in category 'bokserice' → load all products from that category
-if ( has_term( array( 'bokserice', 'orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ) {
+if ( noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), get_the_ID() ) ) {
 
     // Get all products from category 'bokserice'
     $wc_products = wc_get_products( array(
         'limit'    => 8,
         'orderby'  => 'menu_order',
         'order'    => 'ASC',
-        'category' => array( 'bokserice' )
+        'category' => array( noriks_primary_term_slug( 'boxers' ) )
     ) );
 
     if ( ! empty( $wc_products ) ) {
@@ -859,7 +859,7 @@ a:hover {
 
                 if ($shirt_count != 1):
                   if ($alt_output == false):
-                    $is_boxers = has_term( array( 'bokserice', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
+                    $is_boxers = noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), $current_product_id );
 
                     if ($is_boxers):
                       $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ po boksericama";
@@ -982,7 +982,7 @@ a:hover {
       <!--<h4 style="" class="highlight"><?php echo get_field("singlepp_content_standard_reviews_t1","options"); ?></h4>-->
       <h1 style="color:black;     margin-bottom: 4px;">
           
-          <?php if ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ): ?>
+          <?php if ( ! noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), get_the_ID() ) ): ?>
           
           <?php echo get_field("singlepp_content_standard_reviews_t2","options"); ?>
           
@@ -1063,7 +1063,7 @@ a:hover {
 
   // Detect if current product belongs to bokserice group
   $current_product_id = (function_exists('is_product') && is_product()) ? get_queried_object_id() : get_the_id();
-  $is_bokserice_page  = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
+  $is_bokserice_page  = noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), $current_product_id );
 
   // Include review pools
   if ( ! $is_bokserice_page )  {
@@ -1132,7 +1132,7 @@ a:hover {
 
       $is_bokserice = false;
       if ( $product_id ) {
-          $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $product_id );
+          $is_bokserice = noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), $product_id );
       }
 
       $cache_key = $transient_key . ( $is_bokserice ? '_bokserice' : '_all' );
@@ -1153,13 +1153,13 @@ a:hover {
       ];
 
       if ( $is_bokserice ) {
-          $args['category'] = [ 'bokserice' ];
+          $args['category'] = [ noriks_primary_term_slug( 'boxers' ) ];
       } else {
           $args['tax_query'] = [
               [
                   'taxonomy' => 'product_cat',
                   'field'    => 'slug',
-                  'terms'    => [ 'bokserice' ],
+                  'terms'    => noriks_term_slugs( 'boxers' ),
                   'operator' => 'NOT IN',
               ],
           ];

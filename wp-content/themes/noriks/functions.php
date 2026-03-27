@@ -101,6 +101,132 @@ if ($webshop_language == "EN") {
 }
 /*  include language specific files */
 
+if ( ! function_exists( 'noriks_slug_groups' ) ) {
+	function noriks_slug_groups() {
+		return array(
+			'tees' => array( 'teniski', 'majice', 'majica', 'orto-majice', '1-komad-majice', 'singles' ),
+			'boxers' => array( 'bokseri', 'bokserice', 'boxerice', 'orto-bokserice', 'bokserice-sastavi-paket', '1-komad-bokserice', 'singles-boxers' ),
+			'socks' => array( 'chorapi', 'carape', 'zimske-carape' ),
+			'sets' => array( 'komplekti', 'kompleti', 'bundles' ),
+			'starter_packs' => array( 'startovi-paketi', 'starter-paketi', 'orto-starter' ),
+			'mixed_bundles' => array( 'teniski-i-bokseri-komplekti', 'majice-i-bokserice-paketi', 'orto-majica-bokserica' ),
+			'promo' => array( 'cherniya-petak', 'black-friday' ),
+			'bestsellers' => array( 'nai-prodavani', 'bestsellers' ),
+			'large_packs' => array( 'golemi-paketi', 'veliki-paketi' ),
+			'build_boxers_pack' => array( 'bokseri-po-izbor', 'bokserice-sastavi-paket' ),
+		);
+	}
+}
+
+if ( ! function_exists( 'noriks_term_slugs' ) ) {
+	function noriks_term_slugs( $key ) {
+		$groups = noriks_slug_groups();
+		return isset( $groups[ $key ] ) ? $groups[ $key ] : array( $key );
+	}
+}
+
+if ( ! function_exists( 'noriks_primary_term_slug' ) ) {
+	function noriks_primary_term_slug( $key ) {
+		$slugs = noriks_term_slugs( $key );
+		return reset( $slugs );
+	}
+}
+
+if ( ! function_exists( 'noriks_product_category_url' ) ) {
+	function noriks_product_category_url( $key ) {
+		return home_url( '/product-category/' . noriks_primary_term_slug( $key ) . '/' );
+	}
+}
+
+if ( ! function_exists( 'noriks_has_product_cat' ) ) {
+	function noriks_has_product_cat( $keys, $post_id = null ) {
+		$slugs = array();
+		foreach ( (array) $keys as $key ) {
+			$slugs = array_merge( $slugs, noriks_term_slugs( $key ) );
+		}
+		$slugs = array_values( array_unique( array_filter( $slugs ) ) );
+		return has_term( $slugs, 'product_cat', $post_id );
+	}
+}
+
+if ( ! function_exists( 'noriks_is_product_category_or_child' ) ) {
+	function noriks_is_product_category_or_child( $keys ) {
+		if ( ! is_product_category() ) {
+			return false;
+		}
+
+		$current_term = get_queried_object();
+		if ( ! $current_term || empty( $current_term->term_id ) ) {
+			return false;
+		}
+
+		foreach ( (array) $keys as $key ) {
+			foreach ( noriks_term_slugs( $key ) as $slug ) {
+				if ( $current_term->slug === $slug ) {
+					return true;
+				}
+
+				$parent_term = get_term_by( 'slug', $slug, 'product_cat' );
+				if ( ! $parent_term ) {
+					continue;
+				}
+
+				$ancestors = get_ancestors( $current_term->term_id, 'product_cat' );
+				if ( in_array( $parent_term->term_id, $ancestors, true ) ) {
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
+}
+
+if ( ! function_exists( 'noriks_run_bg_slug_migration' ) ) {
+	function noriks_run_bg_slug_migration() {
+		if ( get_option( 'noriks_bg_slug_migration_v1' ) ) {
+			return;
+		}
+
+		$migrations = array(
+			'majice'                    => 'teniski',
+			'bokserice'                 => 'bokseri',
+			'kompleti'                  => 'komplekti',
+			'carape'                    => 'chorapi',
+			'starter-paketi'            => 'startovi-paketi',
+			'bestsellers'               => 'nai-prodavani',
+			'veliki-paketi'             => 'golemi-paketi',
+			'black-friday'              => 'cherniya-petak',
+			'bokserice-sastavi-paket'   => 'bokseri-po-izbor',
+			'majice-i-bokserice-paketi' => 'teniski-i-bokseri-komplekti',
+		);
+
+		foreach ( $migrations as $old_slug => $new_slug ) {
+			$term = get_term_by( 'slug', $old_slug, 'product_cat' );
+			if ( ! $term || is_wp_error( $term ) ) {
+				continue;
+			}
+
+			$existing_new = get_term_by( 'slug', $new_slug, 'product_cat' );
+			if ( $existing_new && ! is_wp_error( $existing_new ) ) {
+				continue;
+			}
+
+			wp_update_term(
+				$term->term_id,
+				'product_cat',
+				array(
+					'slug' => $new_slug,
+				)
+			);
+		}
+
+		update_option( 'noriks_bg_slug_migration_v1', gmdate( 'c' ), false );
+	}
+}
+
+add_action( 'init', 'noriks_run_bg_slug_migration', 20 );
+
 /**
  * Assign the Storefront version to a var
  */

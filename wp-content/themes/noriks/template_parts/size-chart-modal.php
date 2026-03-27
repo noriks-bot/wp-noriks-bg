@@ -99,8 +99,8 @@
   <div  style="<?php if ( has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', get_the_ID() ) ): ?>  display: block; <?php endif; ?>"
         class="size-chart-left">
       
-      <?php if ( has_term( array( 'bokserice', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() )   && 
-       !has_term( 'black-friday', 'product_cat', get_the_ID() )   ): ?>
+      <?php if ( noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), get_the_ID() )   && 
+       ! noriks_has_product_cat( 'promo', get_the_ID() )   ): ?>
       
     <img
     
@@ -111,7 +111,7 @@
       
       
        
-      <?php elseif ( has_term( array( 'carape', 'zimske-carape	' ), 'product_cat', get_the_ID() ) ): ?>
+      <?php elseif ( noriks_has_product_cat( 'socks', get_the_ID() ) ): ?>
       
       
        <img

@@ -126,7 +126,7 @@ $grid_args = array(
 
 // Try bokserice/majice categories first
 $grid_products = array();
-foreach ( array( 'bokserice', 'boxerice', 'majice', 'majica' ) as $cat_slug ) {
+foreach ( array_merge( noriks_term_slugs( 'boxers' ), noriks_term_slugs( 'tees' ) ) as $cat_slug ) {
     $cat = get_term_by( 'slug', $cat_slug, 'product_cat' );
     if ( $cat ) {
         $grid_args['category'] = array( $cat_slug );

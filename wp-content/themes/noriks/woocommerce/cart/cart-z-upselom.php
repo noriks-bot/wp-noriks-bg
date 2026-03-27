@@ -373,7 +373,7 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
  */
 
 
-$TRIGGER_CATEGORY_SLUGS = array( 'bokserice', 'boxers', 'singles-boxers', 'orto-bokserice', 'majice-i-bokserice-paketi', 'black-friday' );
+$TRIGGER_CATEGORY_SLUGS = array_values( array_unique( array_merge( noriks_term_slugs( 'boxers' ), noriks_term_slugs( 'mixed_bundles' ), noriks_term_slugs( 'promo' ), array( 'boxers' ) ) ) );
 
 $UPSELL_ID_CAT  = 4154;  // ID1 (when category match)
 $UPSELL_ID_ELSE = 4162;  // ID2 (when NO category match) <-- change 999 to your real product id

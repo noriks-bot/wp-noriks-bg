@@ -149,8 +149,8 @@
                     </a>
                     <!--
                     <div class="dropdown-menu">
-                        <a href="/hr/product-category/bokserice-sastavi-paket/">Sastavi svoj paket</a>
-                        <a href="/hr/product-category/bokserice/">Gotovi paketi</a>
+                        <a href="<?php echo esc_url( noriks_product_category_url( 'build_boxers_pack' ) ); ?>">Sastavi svoj paket</a>
+                        <a href="<?php echo esc_url( noriks_product_category_url( 'boxers' ) ); ?>">Gotovi paketi</a>
                     </div>
                     -->
                 </div>
