@@ -1030,3 +1030,19 @@ add_filter('tiny_mce_plugins', function ($plugins) {
 
 // Custom side cart upsell modal (replaces YITH Quick View)
 include(get_template_directory() . '/functions/sidecart-upsell-modal.php');
+
+function noriks_term_group( $group ) {
+    $groups = array(
+        'tshirts'       => array( 'teniski', 'orto-majice' ),
+        'boxers'       => array( 'boksarki', 'komplekti-boksarki', 'orto-bokserice' ),
+        'boxers_build'       => array( 'komplekti-boksarki' ),
+        'sets'       => array( 'komplekti' ),
+        'socks'       => array( 'chorapi', 'zimni-chorapi' ),
+        'starter'       => array( 'startovi-paketi', 'orto-starter' ),
+        'ortho_combo'       => array( 'orto-majica-bokserica' ),
+        'ortho'       => array( 'orto' ),
+    );
+
+    return $groups[ $group ] ?? array();
+}
+
