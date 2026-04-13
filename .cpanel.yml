@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/noriks/devhr.noriks.com
+    - /bin/cp -R wp-content/themes/* $DEPLOYPATH/wp-content/themes/
+    - /bin/cp -R wp-content/plugins/* $DEPLOYPATH/wp-content/plugins/
