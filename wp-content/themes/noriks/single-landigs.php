@@ -94,8 +94,8 @@ if (!function_exists('noriks_ensure_default_landing_offers')) {
         if (!$has_five) {
             $offers[] = array(
                 'quantity' => 5,
-                'title'    => '5 тениски',
-                'subtitle' => 'Най-големият пакет за максимална икономия',
+                'title'    => '5 majic',
+                'subtitle' => 'Najveći paket za maksimalnu uštedu',
                 'badge'    => '',
                 'selected' => false,
             );
@@ -166,7 +166,9 @@ if (!function_exists('noriks_get_landing_override_styles')) {
         return '<style id="noriks-landigs-overrides">
 html.noriks-landings-pending .sct-hero__dyn-properties,
 html.noriks-landings-pending .choose-qty,
-html.noriks-landings-pending #dynamic-cart-variations-container {
+html.noriks-landings-pending #dynamic-cart-variations-container,
+html.noriks-landings-pending .add-to-cart-button-container,
+html.noriks-landings-pending .related-product-wrapper {
   opacity: 0 !important;
   visibility: hidden !important;
 }
@@ -184,6 +186,14 @@ html.noriks-landings-pending #dynamic-cart-variations-container {
   background: #fff !important;
   border: 2px solid #000 !important;
   box-shadow: none !important;
+}
+[data-tpl="stps"] .button-variation {
+  min-width: 3.85rem !important;
+  width: 3.85rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-inline: 0 !important;
 }
 [data-tpl="stps"] .button-variation.selected,
 [data-tpl="stps"] .button-variation[selected-option="true"] {
@@ -324,15 +334,44 @@ span.xoo-wsc-sp-atc a.noriks-upsell-btn:active {
 .xoo-wsc-sm-sales {
   display: none !important;
 }
+[data-tpl="stps"] .sct-experts .loockat-card__photo {
+  display: flex !important;
+  justify-content: center !important;
+}
+[data-tpl="stps"] .sct-experts .loockat-card__photo-img {
+  width: 50% !important;
+  max-width: 50% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+[data-tpl="stps"] .gallery-thumbs__item {
+  aspect-ratio: 1 / 1 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+}
+[data-tpl="stps"] .gallery-thumbs__item img {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  display: block !important;
+}
 </style>';
     }
 }
 
 if (!function_exists('noriks_customize_step_landing_markup')) {
-    function noriks_customize_step_landing_markup($markup, $landing_url, $cart_url, $home_url, $boxers_image_url) {
+    function noriks_customize_step_landing_markup($markup, $landing_url, $cart_url, $home_url, $boxers_image_url, $hero_image_url, $landing_image_urls, $review_image_urls, $purpose_image_urls) {
         $markup = preg_replace(
             '#<div class="loockat-slider__wrapper video">.*?</div>\s*</div>\s*<!-- SLIDER TWO -->#s',
             '<!-- SLIDER TWO -->',
+            $markup,
+            1
+        );
+
+        $markup = preg_replace(
+            '#<section class="section sct-ebook">.*?</section>#s',
+            '',
             $markup,
             1
         );
@@ -342,6 +381,8 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
                 'https://ortowp.noriks.com/product/stepease/',
                 'https://ortowp.noriks.com/cart/',
                 'https://ortowp.noriks.com/kosarica/?add-more=',
+                'https://ortowp.noriks.com/wp-content/uploads/2026/02/84d4e066ce333_stepease_PP-EN_-_si-2.jpg',
+                'https://images.hs-plus.com/assets/shared-images/84d4e066ce333_stepease_PP-EN_-_si-2.jpg',
                 'https://ortowp.noriks.com/splosni-pogoji-poslovanja/',
                 'https://ortowp.noriks.com/varnostna-politika/',
                 'https://ortowp.noriks.com/politika-uporabe-piskotkov/',
@@ -355,6 +396,8 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
                 esc_url($landing_url),
                 esc_url($cart_url),
                 esc_url($cart_url),
+                esc_url($hero_image_url),
+                esc_url($hero_image_url),
                 esc_url(home_url('/splosni-pogoji-poslovanja/')),
                 esc_url(home_url('/varnostna-politika/')),
                 esc_url(home_url('/politika-uporabe-piskotkov/')),
@@ -367,12 +410,60 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             $markup
         );
 
-        $markup = str_replace(
-            '<a class="header__logo" href="https://ortowp.noriks.com/">
-					<img class="header__logo-img" src="https://images.hs-plus.com/assets/STEPPER%20test-0/62260f0233272_logo-stepease-orange-bg.svg" alt="logo">
-				</a>',
-            '<a class="header__logo noriks-landing-logo-link" href="' . esc_url($home_url) . '"><span class="noriks-landing-logo-text">NORIKS</span></a><style>.noriks-landing-logo-link{display:flex !important;align-items:center;justify-content:center;text-decoration:none;width:8.125rem;min-height:2rem;margin:0 auto;opacity:1 !important;visibility:visible !important;}.noriks-landing-logo-text{display:inline-block !important;color:#111 !important;font-family:\'Roboto\',sans-serif !important;font-size:33px !important;font-weight:700 !important;letter-spacing:1.75px !important;line-height:1 !important;white-space:nowrap;opacity:1 !important;visibility:visible !important;}</style>',
-            $markup
+        $image_replacements = array(
+            'https://images.hs-plus.com/assets/shared-images/84d4e066ce333_stepease_PP-EN_-_si-2.jpg' => $hero_image_url,
+            'https://images.hs-plus.com/assets/shared-images/1b704871b6d6_stepease_PP-EN_-_si-5.jpg' => $landing_image_urls[1] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/shared-images/0db2e820e6db5_stepease_PP-EN_-_si.jpg' => $landing_image_urls[2] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/shared-images/04260de1979ae_stepease_PP-EN_-_si-1.jpg' => $landing_image_urls[3] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/shared-images/cc8b1fcd4471_stepease_PP-EN_-_si-7.jpg' => $landing_image_urls[4] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/shared-images/d82503b0fef5a_stepease_PP-EN_-_si-6.jpg' => $landing_image_urls[5] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/shared-images/f3f10485dce06_stepease_PP-EN_-_si-3.jpg' => $landing_image_urls[6] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/shared-images/2f514ac962b58_stepease_PP-EN_-_si-4.jpg' => $landing_image_urls[7] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/e07e5f3fd5613_stepease-animation.gif' => $landing_image_urls[1] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/a624d13e6cb5_comparison-before.jpg' => $landing_image_urls[2] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/11ec4acb45091_comparison-after.jpg' => $landing_image_urls[3] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/e54dd205a5d4e_purposes-1.jpg' => $purpose_image_urls[0] ?? ($landing_image_urls[0] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/3f3a362b9ef86_purposes-2.jpg' => $purpose_image_urls[1] ?? ($landing_image_urls[1] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/94d87998d13fd_purposes-3.jpg' => $purpose_image_urls[2] ?? ($landing_image_urls[2] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/b507d66504f75_purposes-4.jpg' => $purpose_image_urls[3] ?? ($landing_image_urls[3] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/8263da3f16fba_purposes-5.jpg' => $purpose_image_urls[4] ?? ($landing_image_urls[4] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/02df5692c8645_purposes-6.jpg' => $purpose_image_urls[5] ?? ($landing_image_urls[5] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/c565f489a2adc_purposes-7.jpg' => $purpose_image_urls[6] ?? ($landing_image_urls[6] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/97eea74cbf81_purposes-8.jpg' => $purpose_image_urls[7] ?? ($landing_image_urls[7] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/dc84ff1836158_review-autor-1.jpg' => $review_image_urls[0] ?? ($landing_image_urls[0] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/f5d8588d1923_review-autor-2.jpg' => $review_image_urls[1] ?? ($landing_image_urls[1] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/e48acee6b1eb3_review-autor-3.jpg' => $review_image_urls[2] ?? ($landing_image_urls[2] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/0585ca918b355_Stepease_worker.jpg' => $review_image_urls[3] ?? ($landing_image_urls[3] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/3e6a94a56376b_Stepease_nurse.jpg' => $review_image_urls[4] ?? ($landing_image_urls[4] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/cc70e89aec408_Stepease_service.jpg' => $review_image_urls[5] ?? ($landing_image_urls[5] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/94b5200db8b78_Stepease_runner.jpg' => $review_image_urls[6] ?? ($landing_image_urls[6] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/3896d617c56ae_Stepease_dog_walker.jpg' => $review_image_urls[0] ?? ($landing_image_urls[7] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/d9f0fad94b90a_doctor.jpg' => $review_image_urls[2] ?? ($landing_image_urls[2] ?? $hero_image_url),
+            'https://images.hs-plus.com/assets/shared-images/42c652c613426_batch_stepease_cover_SI.jpg' => $landing_image_urls[4] ?? $hero_image_url,
+            'https://images.hs-plus.com/assets/STEPPER%20test-0/f5c4995943c42_hero-2.jpg' => $landing_image_urls[5] ?? $hero_image_url,
+        );
+
+        $markup = str_replace(array_keys($image_replacements), array_map('esc_url', array_values($image_replacements)), $markup);
+
+        $markup = preg_replace(
+            '#<a class="header__logo"[^>]*>.*?</a>#s',
+            '<a class="header__logo noriks-landing-logo-link" href="' . esc_url($home_url) . '"><span class="noriks-landing-logo-text">NORIKS</span></a>',
+            $markup,
+            1
+        );
+
+        $markup = preg_replace(
+            '#<a class="footer__brand-link"[^>]*>.*?</a>#s',
+            '<a class="footer__brand-link noriks-landing-logo-link noriks-landing-logo-link--footer" href="' . esc_url($home_url) . '"><span class="noriks-landing-logo-text noriks-landing-logo-text--footer">NORIKS</span></a>',
+            $markup,
+            1
+        );
+
+        $markup = preg_replace(
+            '#</head>#i',
+            '<style>.noriks-landing-logo-link{display:inline-flex !important;align-items:center;justify-content:flex-start;text-decoration:none;opacity:1 !important;visibility:visible !important;}.noriks-landing-logo-link--footer{justify-content:flex-start;}.noriks-landing-logo-text{display:inline-block !important;color:#111 !important;font-family:Roboto,sans-serif !important;font-size:33px !important;font-weight:700 !important;letter-spacing:1.75px !important;line-height:1 !important;white-space:nowrap;opacity:1 !important;visibility:visible !important;}.noriks-landing-logo-text--footer{font-size:32px !important;color:#fff !important;}.header__logo-img,.footer__brand-link img,.footer__brand-logo{display:none !important;}</style></head>',
+            $markup,
+            1
         );
 
         $markup = preg_replace(
@@ -398,7 +489,7 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
 
         $related_size_markup = '
                     <div class="related-product-size-options" id="related-product-sizes-rp-0">
-                      <span class="related-product-size-label">Размер:</span>
+                      <span class="related-product-size-label">Veličina:</span>
                       <div class="related-product-size-list">
                         <button type="button" class="related-product-size-button is-selected" data-size="S">S</button>
                         <button type="button" class="related-product-size-button" data-size="M">M</button>
@@ -445,8 +536,8 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             ),
             array(
                 '<img class="related-product-image" src="' . esc_url($boxers_image_url) . '" alt="NORIKS bokserice">',
-                'NORIKS черни боксерки',
-                'Меки, еластични и удобни боксерки за носене през целия ден.',
+                'NORIKS crne bokserice',
+                'Mekane, elastične i udobne bokserice za nošenje kroz cijeli dan.',
                 '7.99&#x20AC;',
                 '15.99&#x20AC;',
                 'var relatedProductsData = [{"id":"rp-0","name":"NORIKS crne bokserice","description":"Mekane, elastične i udobne bokserice za nošenje kroz cijeli dan.","price":7.99,"originalPrice":15.99,"discountPercentage":50,"wcId":981495,"imageUrl":"' . esc_js($boxers_image_url) . '"}];',
@@ -469,27 +560,80 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             'STEPEASE&#xA0;|&#xA0;Masa&#x17E;ni vlo&#x17E;ki' => 'NORIKS&#xA0;|&#xA0;Majica',
             'STEPEASE | Masažni vložki' => 'NORIKS | Majica',
             '93% strank je ocenilo Stepease z odličnostjo' => '93% strank je ocenilo NORIKS z odličnostjo',
+            '93% strank je ocenilo NORIKS z odličnostjo' => '93% kupaca ocijenilo je NORIKS odličnim',
+            'Odli&#x10D;no 4,8&#xA0;|&#xA0;1169&#xA0;ocen' => 'Odlično 4,8 | 1169 ocjena',
+            'ocen kupcev' => 'ocjena kupaca',
             'Ali se STEPEASE prilegajo mojim &#x10D;evljem?' => 'Ali mi NORIKS majica odgovara?',
             'Ali se STEPEASE prilegajo mojim čevljem?' => 'Ali mi NORIKS majica odgovara?',
             'Kako dolgo zdr&#x17E;ijo vlo&#x17E;ki STEPEASE?' => 'Kako dolgo traju NORIKS majice?',
             'Kako dolgo zdržijo vložki STEPEASE?' => 'Kako dolgo traju NORIKS majice?',
-            'Spoznaj vlo&#x17E;ke STEPEASE &#x2013; popolno udobje za tvoja stopala.' => 'Spoznaj NORIKS majicu za vsakodnevnu udobnost.',
-            'Spoznaj vložke STEPEASE – popolno udobje za tvoja stopala.' => 'Spoznaj NORIKS majicu za svakodnevnu udobnost.',
+            'Domov' => 'Početna',
+            'Vsi izdelki' => 'Svi proizvodi',
+            'Koristne informacije' => 'Korisne informacije',
+            'Splo&#x161;ni pogoji poslovanja' => 'Opći uvjeti poslovanja',
+            'Splošni pogoji poslovanja' => 'Opći uvjeti poslovanja',
+            'Varnostna politika' => 'Sigurnosna politika',
+            'Politika uporabe pi&#x161;kotkov' => 'Politika kolačića',
+            'Politika uporabe piškotkov' => 'Politika kolačića',
+            'Pravica do odstopa od nakupa' => 'Pravo na odustanak od kupnje',
+            'Reklamacije in prito&#x17E;be' => 'Reklamacije i pritužbe',
+            'Reklamacije in pritožbe' => 'Reklamacije i pritužbe',
+            'Menjava v garanciji' => 'Zamjena u jamstvu',
+            'O podjetju' => 'O tvrtki',
+            'Po&#x161;ljite e-po&#x161;to na naslov:' => 'Pošaljite e-mail na adresu:',
+            'Prihranite' => 'Uštedite',
+            'Ponudba kmalu pote&#x10D;e' => 'Ponuda uskoro istječe',
+            'Ponudba kmalu poteče' => 'Ponuda uskoro istječe',
+            'Spoznaj vlo&#x17E;ke STEPEASE &#x2013; popolno udobje za tvoja stopala.' => 'Upoznaj NORIKS majicu za svakodnevnu udobnost.',
+            'Spoznaj vložke STEPEASE – popolno udobje za tvoja stopala.' => 'Upoznaj NORIKS majicu za svakodnevnu udobnost.',
             '✔ Takojšnje olajšanje ✔ Klinično preizkušeno ✔ Priporočajo podiatri' => '✔ Udoban kroj ✔ Kvalitetna izrada ✔ NORIKS stil',
             '✔ Takoj&#x161;nje olaj&#x161;anje ✔ Klini&#x10D;no preizku&#x161;eno ✔ Priporo&#x10D;ajo podiatri' => '✔ Udoban kroj ✔ Kvalitetna izrada ✔ NORIKS stil',
-            'Razlika, ki jo prina&#x161;a <span class="accent">STEPEASE</span>' => 'Razlika, ki jo prinaša <span class="accent">NORIKS</span>',
-            'Razlika, ki jo prinaša <span class="accent">STEPEASE</span>' => 'Razlika, ki jo prinaša <span class="accent">NORIKS</span>',
-            'Poglejte, kako drugi <span class="accent">obu&#x17E;ujejo svoje vlo&#x17E;ke STEPEASE</span>' => 'Poglejte, kako drugi <span class="accent">nose svoju NORIKS majicu</span>',
-            'Poglejte, kako drugi <span class="accent">obužujejo svoje vložke STEPEASE</span>' => 'Poglejte, kako drugi <span class="accent">nose svoju NORIKS majicu</span>',
-            'Kaj dela STEPEASE tako <span class="accent">posebne</span>?' => 'Kaj dela NORIKS tako <span class="accent">posebnim</span>?',
-            'Odkrijte, zakaj <span class="accent">strokovnjaki priporo&#x10D;ajo</span> STEPEASE' => 'Odkrijte, zakaj <span class="accent">kupci priporočajo</span> NORIKS',
-            'Odkrijte, zakaj <span class="accent">strokovnjaki priporočajo</span> STEPEASE' => 'Odkrijte, zakaj <span class="accent">kupci priporočajo</span> NORIKS',
-            'Spletna trgovina Stepease' => 'Spletna trgovina NORIKS',
+            'Poglejte, kako drugi' => 'Pogledajte kako drugi',
+            'Resni&#x10D;ne ocene resni&#x10D;nih uporabnikov' => 'Stvarne recenzije stvarnih kupaca',
+            'Resnične ocene resničnih uporabnikov' => 'Stvarne recenzije stvarnih kupaca',
+            'Razlika, ki jo prina&#x161;a <span class="accent">STEPEASE</span>' => 'Razlika koju donosi <span class="accent">NORIKS</span>',
+            'Razlika, ki jo prinaša <span class="accent">STEPEASE</span>' => 'Razlika koju donosi <span class="accent">NORIKS</span>',
+            'Razlika, ki jo prinaša' => 'Razlika koju donosi',
+            'Poglejte, kako drugi <span class="accent">obu&#x17E;ujejo svoje vlo&#x17E;ke STEPEASE</span>' => 'Pogledajte kako drugi <span class="accent">nose svoju NORIKS majicu</span>',
+            'Poglejte, kako drugi <span class="accent">obužujejo svoje vložke STEPEASE</span>' => 'Pogledajte kako drugi <span class="accent">nose svoju NORIKS majicu</span>',
+            'Kaj dela STEPEASE tako <span class="accent">posebne</span>?' => 'Što NORIKS čini tako <span class="accent">posebnim</span>?',
+            'Kaj dela NORIKS tako <span class="accent">posebnim</span>?' => 'Što NORIKS čini tako <span class="accent">posebnim</span>?',
+            'Odkrijte, zakaj <span class="accent">strokovnjaki priporo&#x10D;ajo</span> STEPEASE' => 'Otkrijte zašto <span class="accent">kupci preporučuju</span> NORIKS',
+            'Odkrijte, zakaj <span class="accent">strokovnjaki priporočajo</span> STEPEASE' => 'Otkrijte zašto <span class="accent">kupci preporučuju</span> NORIKS',
+            'Odkrijte, zakaj <span class="accent">kupci priporočajo</span> NORIKS' => 'Otkrijte zašto <span class="accent">kupci preporučuju</span> NORIKS',
+            'Spletna trgovina Stepease' => 'Web trgovina NORIKS',
             'var brand = \'Stepease\';' => 'var brand = \'NORIKS\';',
             'var brandSettings = {"name":"Stepease"};' => 'var brandSettings = {"name":"NORIKS"};',
-            'OrthoStep &raquo; STEPEASE Vir komentarjev' => 'NORIKS &raquo; NORIKS Vir komentarjev',
+            'OrthoStep &raquo; STEPEASE Vir komentarjev' => 'NORIKS &raquo; NORIKS Izvor recenzija',
             'name":"STEPEASE"' => 'name":"NORIKS"',
             'name":"STEPEASE - OrthoStep"' => 'name":"NORIKS - NORIKS"',
+            'Ve&#x10D; kot 200&#xA0;000 zadovoljnih strank' => 'Više od 200 000 zadovoljnih kupaca',
+            'Več kot 200 000 zadovoljnih strank' => 'Više od 200 000 zadovoljnih kupaca',
+            'Sledenje po&#x161;iljki z zavarovano dostavo' => 'Praćenje pošiljke s osiguranom dostavom',
+            'Sledenje pošiljki z zavarovano dostavo' => 'Praćenje pošiljke s osiguranom dostavom',
+            '90-dnevno jamstvo za vra&#x10D;ilo denarja' => '90-dnevno jamstvo povrata novca',
+            'Pravilna opora loka spodbuja bolj&#x161;o poravnavo hrbtenice.' => 'Dobro krojena majica pruža čišći izgled i bolju siluetu.',
+            'Pove&#x10D;ajte zmogljivost' => 'Poboljšajte dojam',
+            'Povečajte zmogljivost' => 'Poboljšajte dojam',
+            'Enostavno pranje' => 'Jednostavno održavanje',
+            'Ro&#x10D;no operite z milom in vodo.' => 'Perite prema uputama za dugotrajnu kvalitetu.',
+            'Izstopajte iz mno&#x17E;ice' => 'Istaknite se iz mase',
+            'Izstopajte iz množice' => 'Istaknite se iz mase',
+            'Ogled znamenitosti' => 'Razgledavanje',
+            'Dolge izmene' => 'Duge smjene',
+            'Dostava in po&#x161;iljanje' => 'Dostava i slanje',
+            'Dostava in pošiljanje' => 'Dostava i slanje',
+            'Politika vra&#x10D;il in povra&#x10D;il' => 'Politika povrata i refundacija',
+            'Politika vračil in povračil' => 'Politika povrata i refundacija',
+            'Popust za razli&#x10D;ne velikosti' => 'Popust za različite veličine',
+            'Popust za različne velikosti' => 'Popust za različite veličine',
+            'Na&#x161; popust lahko uporabite tudi za razli&#x10D;ne barve in velikosti!' => 'Naš popust možete iskoristiti i za različite boje i veličine!',
+            'Postopek:' => 'Postupak:',
+            'Dodajte eno velikost v ko&#x161;arico.' => 'Dodajte jednu veličinu u košaricu.',
+            'Dodajte &#x161;e drugo velikost v ko&#x161;arico.' => 'Dodajte još jednu veličinu u košaricu.',
+            'Popust za 2,&#xA0;3&#xA0;ali&#xA0;5&#xA0;parov se bo samodejno obra&#x10D;unal pri skupni ceni.' => 'Popust za 2, 3 ili 5 komada automatski će se obračunati u ukupnoj cijeni.',
+            'U&#x17E;ivajte v sledenju po&#x161;iljke z zavarovano dostavo v <strong>2&#x2013;3&#xA0;delovnih dneh.</strong> Za va&#x161;e udobje bo prilo&#x17E;ena &#x161;tevilka za sledenje.' => 'Uživajte u praćenju pošiljke s osiguranom dostavom u <strong>2–3 radna dana.</strong> Radi vaše sigurnosti bit će priložen broj za praćenje.',
+            'Prepri&#x10D;ani smo, da vam bo udobje vlo&#x17E;kov STEPEASE v&#x161;e&#x10D;. Zato ponujamo 90&#x2011;dnevno garancijo vra&#x10D;ila denarja brez tveganja. &#x10C;e ne boste popolnoma zadovoljni, nam preprosto pi&#x161;ite in uredili bomo vra&#x10D;ilo.' => 'Sigurni smo da će vam se svidjeti udobnost NORIKS majica. Zato nudimo 90-dnevno jamstvo povrata novca bez rizika. Ako ne budete potpuno zadovoljni, samo nam se javite i riješit ćemo povrat.',
             'Olaj&#x161;aj</span> bole&#x10D;ine v stopalih' => 'Istakni</span> svoj stil',
             'Olajšaj</span> bolečine v stopalih' => 'Istakni</span> svoj stil',
             'Prihodnost je </span>brez bole&#x10D;in v stopalih' => 'Budućnost je </span>u NORIKS majicama',
@@ -511,8 +655,8 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             'Kako dolgo zdržijo vložki?' => 'Kako dugo traju NORIKS majice?',
             'Priporo&#x10D;ajo podiatri' => 'Omiljen izbor kupaca',
             'Priporočajo podiatri' => 'Omiljen izbor kupaca',
-            'strokovnjaki priporo&#x10D;ajo' => 'kupci priporočajo',
-            'strokovnjaki priporočajo' => 'kupci priporočajo',
+            'strokovnjaki priporo&#x10D;ajo' => 'kupci preporučuju',
+            'strokovnjaki priporočajo' => 'kupci preporučuju',
             'Dolga leta sem se spopadal s plantarno fascio, a STEPEASE so vse spremenili. Podpora loku je neverjetna in bole&#x10D;ina je kon&#x10D;no izginila!' => 'Dugo sam tražio majicu koja mi stvarno dobro stoji, a NORIKS je konačno pogodio pravi kroj. Odmah se vidi razlika u izgledu i udobnosti.',
             'V slu&#x17E;bi ves dan stojim in ti vlo&#x17E;ki so mi re&#x161;ili noge. Ob koncu dneva me stopala ne bolijo ve&#x10D;.' => 'Majicu nosim cijeli dan na poslu i stvarno ostaje udobna od jutra do večeri. Kroj stoji odlično i nakon dugog dana izgleda uredno.',
             'Preizkusil sem ne&#x161;teto vlo&#x17E;kov, a nobeni se ne morejo primerjati s&#xA0;STEPEASE. Razlika v udobju in po&#x10D;utju je res opazna.' => 'Isprobao sam puno basic majica, ali NORIKS je daleko iznad svega što sam nosio prije. Materijal, kroj i osjećaj na tijelu su odmah primjetni.',
@@ -542,6 +686,14 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             'peti' => 'majici',
             'blazinica' => 'majica',
             'blazinice' => 'majice',
+            'Skladi&#x161;&#x10D;e v Sloveniji' => 'Skladište u Hrvatskoj',
+            'Skladišče v Sloveniji' => 'Skladište u Hrvatskoj',
+            'Slovensko skladi&#x161;&#x10D;e' => 'Hrvatsko skladište',
+            'Slovensko skladišče' => 'Hrvatsko skladište',
+            'Spletna trgovina NORIKS' => 'Web trgovina NORIKS',
+            'Vir komentarjev' => 'Izvor recenzija',
+            '<span> StepEase </span>' => '<span> NORIKS </span>',
+            'StepEase' => 'NORIKS',
         );
 
         $markup = str_replace(array_keys($text_replacements), array_values($text_replacements), $markup);
@@ -552,10 +704,40 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
 
 $target_product_url = get_post_meta(get_the_ID(), '_landigs_target_product_url', true);
 $target_product_id  = (int) get_post_meta(get_the_ID(), '_landigs_target_product_id', true);
-$boxers_image_url   = trailingslashit(get_template_directory_uri()) . 'lander2/images/noriks_boxers_gif_1.gif';
+$boxers_image_url   = 'https://noriks.com/bg/wp-content/uploads/2025/11/boksarice_3x_crne-600x600.png';
+$hero_image_url     = trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-majice-garancija.jpg';
+$landing_image_urls = array(
+    trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-shirt-1.jpg',
+    trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-shirt-2.jpg',
+    trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-shirt-3.jpg',
+    trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-shirt-4.jpg',
+    trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-shirt-5.jpg',
+    trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-shirt-6.jpg',
+    trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-shirt-7.jpg',
+    trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-shirt-8.png',
+);
+$review_image_urls = array(
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_41AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_39AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_29AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_30AM%20%281%29.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_45AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_52AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_50AM.jpeg',
+);
+$purpose_image_urls = array(
+    'https://noriks.com/bg/wp-content/uploads/2025/11/crna-in-siva-majica-vse-barve-gat-bundle-600x600.png',
+    'https://noriks.com/bg/wp-content/uploads/2025/11/crna-in-modra-majica-vse-barve-gat-bundle-600x600.png',
+    'https://noriks.com/bg/wp-content/uploads/2025/11/crna-in-bela-majica-vse-barve-gat-bundle-600x600.png',
+    'https://noriks.com/bg/wp-content/uploads/2025/11/bela-in-siva-majica-vse-barve-gat-bundle-600x600.png',
+    'https://noriks.com/bg/wp-content/uploads/2025/09/monochrome-3x-600x600.jpg',
+    'https://noriks.com/bg/wp-content/uploads/2025/09/city-6x-600x600.jpg',
+    'https://noriks.com/bg/wp-content/uploads/2025/09/everyday-6X-600x600.jpg',
+    'https://noriks.com/bg/wp-content/uploads/2025/09/urban-earth-6x-600x600.jpg',
+);
 
 if (!$target_product_url) {
-    $target_product_url = home_url('/product/noriks-majica/');
+    $target_product_url = home_url('/bg/product/noriks-majica/');
 }
 
 if (!$target_product_id) {
@@ -570,11 +752,11 @@ $hide_secondary    = get_post_meta(get_the_ID(), '_landigs_hide_secondary', true
 $offer_options     = get_post_meta(get_the_ID(), '_landigs_offer_options', true);
 
 if ($primary_label === '') {
-    $primary_label = 'Цвят';
+    $primary_label = 'Boja';
 }
 
 if ($secondary_label === '') {
-    $secondary_label = 'Размер';
+    $secondary_label = 'Veličina';
 }
 
 if ($secondary_options === '') {
@@ -603,21 +785,21 @@ if (noriks_landigs_use_apparel_sizes($secondary_options)) {
 
 if ($primary_options === '') {
     $primary_options = implode("\n", array(
-        'Черна|#000000',
-        'Бяла|#f3f4f6',
-        'Сива|#9ca3af',
-        'Тъмносиня|#203240',
-        'Кафява|#6b4f3a',
-        'Зелена|#556b2f',
+        'Crna|#000000',
+        'Bijela|#f3f4f6',
+        'Siva|#9ca3af',
+        'Tamnoplava|#203240',
+        'Smeđa|#6b4f3a',
+        'Zelena|#556b2f',
     ));
 }
 
 if ($offer_options === '') {
     $offer_options = implode("\n", array(
-        '1|1 тениска|Отличен стартов пакет|',
-        '2|2 тениски|Най-доброто съотношение цена и количество|НАЙ-ПОПУЛЯРНО',
-        '3|3 тениски|Най-голяма икономия на брой|',
-        '5|5 тениски|Най-големият пакет за максимална икономия|',
+        '1|1 majica|Odličan ulazni paket|',
+        '2|2 majice|Najbolji omjer cijene i količine|NAJPOPULARNIJE',
+        '3|3 majice|Najveća ušteda po komadu|',
+        '5|5 majic|Najveći paket za maksimalnu uštedu|',
     ));
 }
 
@@ -632,6 +814,7 @@ preg_match_all('/"sku":"([^"]+)"/', $source_markup, $sku_matches);
 $skus          = array_values(array_unique($sku_matches[1] ?? array()));
 
 $sku_map           = array();
+$variation_map     = array();
 $current_product   = 0;
 
 if (function_exists('wc_get_product_id_by_sku')) {
@@ -658,14 +841,60 @@ if (function_exists('wc_get_product_id_by_sku')) {
     }
 }
 
+$configured_product = $target_product_id ? wc_get_product($target_product_id) : null;
+
+if ($configured_product && $configured_product->is_type('variable')) {
+    $current_product = (int) $configured_product->get_id();
+
+    foreach ($configured_product->get_children() as $variation_id) {
+        $variation = wc_get_product($variation_id);
+        if (!$variation || !$variation->is_type('variation')) {
+            continue;
+        }
+
+        $color_slug = (string) $variation->get_attribute('pa_barva');
+        $size_slug  = (string) $variation->get_attribute('pa_velikost');
+        $color_name = $color_slug;
+        $size_name  = $size_slug;
+
+        if ($color_slug) {
+            $color_term = get_term_by('slug', $color_slug, 'pa_barva');
+            if ($color_term && !is_wp_error($color_term)) {
+                $color_name = $color_term->name;
+            }
+        }
+
+        if ($size_slug) {
+            $size_term = get_term_by('slug', $size_slug, 'pa_velikost');
+            if ($size_term && !is_wp_error($size_term)) {
+                $size_name = $size_term->name;
+            }
+        }
+
+        $variation_map[] = array(
+            'id'         => (int) $variation->get_id(),
+            'product_id' => (int) $current_product,
+            'barva'      => $color_slug,
+            'velikost'   => $size_slug,
+            'barvaLabel' => $color_name,
+            'sizeLabel'  => $size_name,
+            'attributes' => array_map('strval', $variation->get_variation_attributes()),
+        );
+    }
+}
+
+$is_simple_product = !($configured_product && $configured_product->is_type('variable'));
+
 $runtime_config = array(
     'landingUrl'       => $landing_url,
     'cartUrl'          => $cart_url,
     'homeUrl'          => $home_url,
     'productId'        => $target_product_id ?: $current_product,
     'targetProductUrl' => $target_product_url,
-    'simpleProduct'    => true,
+    'simpleProduct'    => $is_simple_product,
     'skuMap'           => $sku_map,
+    'variationMap'     => $variation_map,
+    'reviewFeedImages' => $review_image_urls,
     'optionGroups'     => array(
         'primary' => array(
             'label'   => $primary_label,
@@ -704,7 +933,7 @@ $markup = preg_replace('#<script type="text/javascript" src="https://ortowp\.nor
 $markup = preg_replace('#<script type="text/javascript" id="wc-order-attribution-js-extra">.*?</script>#s', '', $markup);
 $markup = preg_replace('#<script type="text/javascript" src="https://ortowp\.noriks\.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution\.min\.js\?ver=[^"]*" id="wc-order-attribution-js"></script>#', '', $markup);
 
-$markup = noriks_customize_step_landing_markup($markup, $landing_url, $cart_url, $home_url, $boxers_image_url);
+$markup = noriks_customize_step_landing_markup($markup, $landing_url, $cart_url, $home_url, $boxers_image_url, $hero_image_url, $landing_image_urls, $review_image_urls, $purpose_image_urls);
 
 $markup = preg_replace('/<html\b([^>]*)>/', '<html$1 class="noriks-landings-pending">', $markup, 1);
 

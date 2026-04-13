@@ -81,7 +81,7 @@ $topseler_text =  get_field("singlepp_bestseller_text", "options");
      if($alt_output == false): 
          
          
-         $is_boxers = noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), $current_product_id );
+         $is_boxers = has_term( array( 'bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
 
          
          if( $is_boxers ): 
@@ -89,7 +89,7 @@ $topseler_text =  get_field("singlepp_bestseller_text", "options");
             
           
          
-            if( noriks_has_product_cat( 'promo', $current_product_id ) ): 
+            if( has_term('black-friday', 'product_cat', $current_product_id ) ): 
              $topseler_text =  "Zimska ponuda"; 
              
             else:

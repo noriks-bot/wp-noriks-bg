@@ -1,6 +1,21 @@
 (function () {
   var config = window.noriksStepLandingConfig || {};
   var skuMap = config.skuMap || {};
+  var variationMap = config.variationMap || [];
+  var reviewFeedImages = config.reviewFeedImages || [];
+  var landingState = {
+    primaryName: null,
+    secondaryName: null,
+    offerQuantity: null
+  };
+
+  function normalizeValue(value) {
+    return String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "");
+  }
 
   function enableOptionButton(button) {
     button.disabled = false;
@@ -18,6 +33,82 @@
     button.classList.remove("button-variation-disabled");
     button.classList.remove("greyOut");
     button.classList.remove("hiddenvariation");
+  }
+
+  function allowedSecondaryNames() {
+    var groups = config.optionGroups || {};
+    var secondary = groups.secondary || {};
+    var options = secondary.options || [];
+
+    return options.map(function (option) {
+      return option && option.name ? option.name.trim() : "";
+    }).filter(Boolean);
+  }
+
+  function filterSourceVariationData() {
+    var allowedNames = allowedSecondaryNames();
+
+    if (!allowedNames.length) {
+      return;
+    }
+
+    var allowedSet = {};
+    allowedNames.forEach(function (name) {
+      allowedSet[normalizeValue(name)] = true;
+    });
+
+    if (typeof propertiesArr !== "undefined" && Array.isArray(propertiesArr)) {
+      propertiesArr.forEach(function (property) {
+        var propertyName = normalizeValue(property && (property.name || property.code));
+
+        if (propertyName !== "velikost" && propertyName !== "size") {
+          return;
+        }
+
+        if (Array.isArray(property.options)) {
+          property.options = property.options.filter(function (option) {
+            return !!allowedSet[normalizeValue(option && (option.name || option.code))];
+          });
+        }
+      });
+    }
+
+    if (typeof variationsArr !== "undefined" && Array.isArray(variationsArr)) {
+      variationsArr = variationsArr.filter(function (variation) {
+        var variationName = String((variation && variation.names) || "");
+        var parts = variationName.split(" ");
+        var sizePart = parts[parts.length - 1] || "";
+        return !!allowedSet[normalizeValue(sizePart)];
+      });
+    }
+  }
+
+  function pruneSizeTable() {
+    var allowedNames = allowedSecondaryNames();
+
+    if (!allowedNames.length) {
+      return;
+    }
+
+    var allowedSet = {};
+    allowedNames.forEach(function (name) {
+      allowedSet[normalizeValue(name)] = true;
+    });
+
+    document.querySelectorAll(".size-table tr").forEach(function (row, index) {
+      if (index === 0) {
+        return;
+      }
+
+      var firstCell = row.querySelector("td.first-column-cell");
+      if (!firstCell) {
+        return;
+      }
+
+      if (!allowedSet[normalizeValue(firstCell.textContent)]) {
+        row.remove();
+      }
+    });
   }
 
   function applyConfiguredOptionGroups() {
@@ -40,22 +131,32 @@
     if (primary.options && primary.options.length) {
       var primaryValue = document.getElementById("selected-color-variation-value");
       var primaryWrapper = root.querySelector(".color-variations-wrapper");
+      var currentPrimarySelection = landingState.primaryName;
+
+      if (!currentPrimarySelection && primaryValue && primaryValue.textContent.trim()) {
+        currentPrimarySelection = primaryValue.textContent.trim();
+      }
+
+      if (!currentPrimarySelection && primary.options[0]) {
+        currentPrimarySelection = primary.options[0].name || "";
+      }
 
       if (primaryValue) {
-        primaryValue.textContent = primary.options[0].name || "";
+        primaryValue.textContent = currentPrimarySelection || primary.options[0].name || "";
       }
 
       if (primaryWrapper) {
         primaryWrapper.innerHTML = "";
 
         primary.options.forEach(function (option, index) {
+          var isSelected = (option.name || "") === currentPrimarySelection || (!currentPrimarySelection && index === 0);
           var item = document.createElement("div");
           item.className = "color-variation";
 
           var button = document.createElement("button");
           button.type = "button";
-          button.className = "color-variation-button" + (index === 0 ? " selected" : "");
-          button.setAttribute("selected-option", index === 0 ? "true" : "false");
+          button.className = "color-variation-button" + (isSelected ? " selected" : "");
+          button.setAttribute("selected-option", isSelected ? "true" : "false");
           button.style.background = option.value || "#111111";
           button.title = option.name || "";
 
@@ -67,6 +168,7 @@
 
             button.classList.add("selected");
             button.setAttribute("selected-option", "true");
+            landingState.primaryName = option.name || "";
 
             if (primaryValue) {
               primaryValue.textContent = option.name || "";
@@ -97,6 +199,20 @@
     }
 
     if (secondary.options && secondary.options.length && secondaryButtons.length) {
+      var currentSecondarySelection = landingState.secondaryName;
+
+      if (!currentSecondarySelection) {
+        secondaryButtons.forEach(function (button) {
+          if (button.getAttribute("selected-option") === "true" && button.textContent.trim()) {
+            currentSecondarySelection = button.textContent.trim();
+          }
+        });
+      }
+
+      if (!currentSecondarySelection && secondary.options[0]) {
+        currentSecondarySelection = secondary.options[0].name || "";
+      }
+
       secondaryButtons.forEach(function (button, index) {
         var option = secondary.options[index];
 
@@ -108,25 +224,30 @@
         button.style.display = "";
         button.textContent = option.name || "";
         enableOptionButton(button);
-        button.classList.toggle("selected", index === 0);
-        button.setAttribute("selected-option", index === 0 ? "true" : "false");
+        var isSelected = (option.name || "") === currentSecondarySelection || (!currentSecondarySelection && index === 0);
+        button.classList.toggle("selected", isSelected);
+        button.setAttribute("selected-option", isSelected ? "true" : "false");
         button.removeAttribute("selected");
-        if (index === 0) {
+        if (isSelected) {
           button.setAttribute("selected", "selected");
         }
 
         button.onclick = null;
-        button.addEventListener("click", function () {
-          secondaryButtons.forEach(function (btn) {
-            btn.classList.remove("selected");
-            btn.setAttribute("selected-option", "false");
-            btn.removeAttribute("selected");
-          });
+        if (button.dataset.noriksBound !== "true") {
+          button.dataset.noriksBound = "true";
+          button.addEventListener("click", function () {
+            secondaryButtons.forEach(function (btn) {
+              btn.classList.remove("selected");
+              btn.setAttribute("selected-option", "false");
+              btn.removeAttribute("selected");
+            });
 
-          button.classList.add("selected");
-          button.setAttribute("selected-option", "true");
-          button.setAttribute("selected", "selected");
-        });
+            button.classList.add("selected");
+            button.setAttribute("selected-option", "true");
+            button.setAttribute("selected", "selected");
+            landingState.secondaryName = button.textContent.trim();
+          });
+        }
       });
     }
   }
@@ -148,6 +269,22 @@
       return;
     }
 
+    var currentOfferQuantity = landingState.offerQuantity;
+
+    if (!currentOfferQuantity) {
+      var currentChecked = document.querySelector("[id^='qty']:checked");
+      if (currentChecked) {
+        currentOfferQuantity = currentChecked.dataset.qty || currentChecked.value || currentChecked.id;
+      }
+    }
+
+    if (!currentOfferQuantity) {
+      var selectedOffer = offers.find(function (offer) {
+        return !!offer.selected;
+      });
+      currentOfferQuantity = selectedOffer ? String(selectedOffer.quantity) : null;
+    }
+
     rows.forEach(function (row, index) {
       var offer = offers[index];
       var input = row.querySelector("input[type='radio']");
@@ -166,7 +303,7 @@
 
       if (input) {
         input.dataset.qty = String(offer.quantity);
-        input.checked = !!offer.selected;
+        input.checked = String(offer.quantity) === String(currentOfferQuantity);
       }
 
       if (title) {
@@ -197,20 +334,28 @@
 
       if (label) {
         label.removeAttribute("onclick");
-        label.addEventListener("click", function () {
-          rows.forEach(function (innerRow) {
-            var innerInput = innerRow.querySelector("input[type='radio']");
-            if (innerInput) {
-              innerInput.checked = false;
+        if (label.dataset.noriksBound !== "true") {
+          label.dataset.noriksBound = "true";
+          label.addEventListener("click", function () {
+            rows.forEach(function (innerRow) {
+              var innerInput = innerRow.querySelector("input[type='radio']");
+              if (innerInput) {
+                innerInput.checked = false;
+              }
+            });
+
+            if (input) {
+              input.checked = true;
+              landingState.offerQuantity = input.dataset.qty || String(offer.quantity);
             }
+
+            syncBuyButtons();
           });
+        }
+      }
 
-          if (input) {
-            input.checked = true;
-          }
-
-          syncBuyButtons();
-        });
+      if (input && input.checked) {
+        landingState.offerQuantity = input.dataset.qty || String(offer.quantity);
       }
     });
   }
@@ -243,6 +388,28 @@
           }
         });
       });
+    });
+  }
+
+  function applyReviewFeedImages() {
+    if (!reviewFeedImages.length) {
+      return;
+    }
+
+    var reviewImages = document.querySelectorAll("#product__reviews .img__review");
+    if (!reviewImages.length) {
+      return;
+    }
+
+    reviewImages.forEach(function (img, index) {
+      var replacement = reviewFeedImages[index % reviewFeedImages.length];
+      if (!replacement) {
+        return;
+      }
+
+      if (img.getAttribute("src") !== replacement) {
+        img.setAttribute("src", replacement);
+      }
     });
   }
 
@@ -301,6 +468,45 @@
     return 1;
   }
 
+  function selectedPrimaryName() {
+    if (landingState.primaryName) {
+      return landingState.primaryName;
+    }
+
+    var primaryValue = document.getElementById("selected-color-variation-value");
+    return primaryValue ? primaryValue.textContent.trim() : "";
+  }
+
+  function selectedSecondaryName() {
+    if (landingState.secondaryName) {
+      return landingState.secondaryName;
+    }
+
+    var selectedButton = document.querySelector(".single-variation-container .button-variation[selected-option='true']");
+    return selectedButton ? selectedButton.textContent.trim() : "";
+  }
+
+  function selectedVariationMapping() {
+    if (!variationMap.length) {
+      return null;
+    }
+
+    var selectedColor = normalizeValue(selectedPrimaryName());
+    var selectedSize = normalizeValue(selectedSecondaryName());
+
+    for (var i = 0; i < variationMap.length; i += 1) {
+      var variation = variationMap[i];
+      var variationColor = normalizeValue(variation.barvaLabel || variation.barva);
+      var variationSize = normalizeValue(variation.sizeLabel || variation.velikost);
+
+      if (variationColor === selectedColor && variationSize === selectedSize) {
+        return variation;
+      }
+    }
+
+    return variationMap[0] || null;
+  }
+
   function addToCartUrl() {
     if (config.simpleProduct && config.productId) {
       var simpleUrl = new URL(config.targetProductUrl || config.homeUrl);
@@ -309,17 +515,18 @@
       return simpleUrl.toString();
     }
 
-    var variation = currentVariation();
-    if (!variation || !variation.sku || !skuMap[variation.sku] || !config.productId) {
+    var mapped = selectedVariationMapping();
+    if (!mapped || !config.productId) {
       return null;
     }
 
-    var mapped = skuMap[variation.sku];
     var url = new URL(config.homeUrl);
     url.searchParams.set("add-to-cart", String(config.productId));
     url.searchParams.set("variation_id", String(mapped.id));
-    url.searchParams.set("attribute_pa_barva", mapped.b || "");
-    url.searchParams.set("attribute_pa_velikost", mapped.v || "");
+    var mappedAttributes = mapped.attributes || {};
+    Object.keys(mappedAttributes).forEach(function (key) {
+      url.searchParams.set(key, mappedAttributes[key] || "");
+    });
     url.searchParams.set("quantity", String(selectedQuantity()));
     return url.toString();
   }
@@ -370,22 +577,24 @@
     var formData = new FormData();
     var quantity = selectedQuantity();
 
-    formData.append("action", "xoo_wsc_add_to_cart");
+    formData.append("action", "noriks_add_to_cart");
     formData.append("add-to-cart", String(config.productId));
+    formData.append("product_id", String(config.productId));
     formData.append("quantity", String(quantity));
 
     if (!config.simpleProduct) {
-      var variation = currentVariation();
-      var mapped = variation && variation.sku ? skuMap[variation.sku] : null;
+      var mapped = selectedVariationMapping();
 
       if (!mapped) {
         return null;
       }
 
-      formData.append("product_id", String(config.productId));
       formData.append("variation_id", String(mapped.id));
-      formData.append("attribute_pa_barva", mapped.b || "");
-      formData.append("attribute_pa_velikost", mapped.v || "");
+
+      var mappedAttributes = mapped.attributes || {};
+      Object.keys(mappedAttributes).forEach(function (key) {
+        formData.append(key, mappedAttributes[key] || "");
+      });
     }
 
     return formData;
@@ -399,7 +608,7 @@
   }
 
   function addToCartAjax(trigger) {
-    var endpoint = getAjaxEndpoint("xoo_wsc_add_to_cart");
+    var endpoint = window.woocommerce_params ? window.woocommerce_params.ajax_url : null;
     var payload = buildAddToCartPayload();
 
     if (!endpoint || !payload) {
@@ -451,14 +660,20 @@
   }
 
   function refresh() {
+    filterSourceVariationData();
     applyConfiguredOptionGroups();
     normalizeSecondaryButtons();
     applyConfiguredOffers();
+    pruneSizeTable();
     initRelatedProductSizes();
+    applyReviewFeedImages();
     rewriteAnchors();
     syncBuyButtons();
-
-    document.documentElement.classList.remove("noriks-landings-pending");
+    window.requestAnimationFrame(function () {
+      window.requestAnimationFrame(function () {
+        document.documentElement.classList.remove("noriks-landings-pending");
+      });
+    });
   }
 
   document.addEventListener("click", handleBuyClick, true);

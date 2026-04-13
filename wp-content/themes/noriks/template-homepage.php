@@ -47,9 +47,9 @@ get_header(); ?>
 
   <div class="hero__content">
     <!--<p class="hero__eyebrow">NOVO: NORIKS </p>-->
-    <h1 class="hero__title">Тениска, която решава всеки ежедневен проблем.</h1>
+    <h1 class="hero__title">Majica koja rješava sve probleme.</h1>
 
-    <a class="hero__btn" href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">ПАЗАРУВАЙ СЕГА</a>
+    <a class="hero__btn" href="/bg/shop">KUPUJTE SADA</a>
   </div>
 </section>
 
@@ -173,14 +173,14 @@ get_header(); ?>
   <div class="collections__header">
     <h2 class="collections__title">Kupujte po kolekciji</h2>
 
-    <a class="collections__cta" href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">
+    <a class="collections__cta" href="/bg/shop">
       Svi produkti <span aria-hidden="true">›</span>
     </a>
   </div>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="<?php echo esc_url( noriks_product_category_url( 'tees' ) ); ?>">
+    <a class="collection-card" href="/bg/product-category/majice/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
@@ -203,7 +203,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="<?php echo esc_url( noriks_product_category_url( 'boxers' ) ); ?>">
+    <a class="collection-card" href="/bg/product-category/bokserice/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -217,7 +217,7 @@ get_header(); ?>
             <h3 class="collection-card__name">Bokserice</h3>
           </div>
           <p class="collection-card__desc">
-          Меки. Дишащи. Надеждни.
+          Mekane. Prozračne. Pouzdane.
 
           </p>
         </div>
@@ -227,7 +227,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 3 -->
-    <a class="collection-card" href="<?php echo esc_url( noriks_product_category_url( 'sets' ) ); ?>">
+    <a class="collection-card" href="/bg/product-category/kompleti/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-kompleti.jpeg"
@@ -251,7 +251,7 @@ Najbolja vrijednost po paketu.
     </a>
     
     <!-- Card 3 -->
-    <a class="collection-card" href="<?php echo esc_url( noriks_product_category_url( 'starter_packs' ) ); ?>">
+    <a class="collection-card" href="/bg/product-category/starter-paketi/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"
@@ -587,7 +587,7 @@ a:hover {
       <?php echo get_field("homepage_section_2_t1"); ?>
     </h2>
 
-    <a class="collections__cta" href="<?php echo esc_url( home_url( '/shop/' ) ); ?>">
+    <a class="collections__cta" href="/bg/shop">
       Svi produkti  <span aria-hidden="true">›</span>
     </a>
   </div>
@@ -669,10 +669,10 @@ a:hover {
                   if ( $alt_output == false ):
 
                     $current_product_id = $product->get_id();
-                    $is_boxers = noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), $current_product_id );
+                    $is_boxers = has_term( array('bokserice','bokserice-sastavi-paket'), 'product_cat', $current_product_id );
 
                     if ( $is_boxers ):
-                      if ( noriks_has_product_cat( 'promo', $current_product_id ) ):
+                      if ( has_term('black-friday', 'product_cat', $current_product_id ) ):
                         $topseler_text = "Black Friday ";
                       else:
                         $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ po boksericama";
@@ -873,3 +873,6 @@ a:hover {
 	</div><!-- #primary -->
 <?php
 get_footer();
+
+
+

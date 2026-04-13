@@ -112,9 +112,9 @@ $wrapper_classes   = apply_filters(
         <!--
 	    <div class="my-buttons-wrapper">
 	          <span class="my-counter">1 / 1</span>
-	        <button type="button" class="my-btn prev" aria-label="Predishna snimka"><</button>
+	        <button type="button" class="my-btn prev" aria-label="Prethodna slika"><</button>
 	      
-	        <button type="button" class="my-btn next" aria-label="Sledvashta snimka">></button>
+	        <button type="button" class="my-btn next" aria-label="Sljedeća slika">></button>
 	    </div>
 	    -->
 
@@ -171,6 +171,7 @@ jQuery(document).ready(function($){
 });
 */
 </script>
+
 
 
 

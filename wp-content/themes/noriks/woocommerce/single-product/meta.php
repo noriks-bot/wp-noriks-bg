@@ -66,7 +66,7 @@ global $product;
     </style>
 
 
- <section class=" features2" aria-label="Predimstva">
+ <section class=" features2" aria-label="Prednosti">
       <div class="features__row">
         <!-- 1) Truck -->
         
@@ -74,13 +74,13 @@ global $product;
           <div class="feature">
           
   <img src="<?php echo get_template_directory_uri(); ?>/img/cod_icon_.png" alt="Customer Support Icon" class="feature__icon info-icon">
-          <p class="feature__text">Plashtane pri dostavka</p>
+          <p class="feature__text">Plaćanje i pouzećem</p>
         </div>
         
         
         <div class="feature">
-      <img src="https://noriks.com/hr/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
-          <p class="feature__text">Izprobvay 30 dni bez risk</p>
+      <img src="https://noriks.com/bg/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
+          <p class="feature__text">Isprobajte 30 dana, bez rizika</p>
         </div>
         
         
@@ -89,8 +89,8 @@ global $product;
         <div class="feature">
      
        
-        <img src="https://noriks.com/hr/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
-          <p class="feature__text">Bezplatna dostavka za porachki nad 70 EUR</p>
+        <img src="https://noriks.com/bg/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
+          <p class="feature__text">Besplatna dostava za narudžbe iznad 70 €</p>
         </div>
 
     
@@ -106,7 +106,7 @@ global $product;
 <div class="shipping-box">
   <h2 id="shipping-window" class="shipping-title"></h2>
   <p class="shipping-sub">
-    Porachay v sledvashtite <span id="midnight-countdown" class="countdown"></span>
+    Naručite u sljedećih <span id="midnight-countdown" class="countdown"></span>
   </p>
 </div>
 
@@ -133,7 +133,7 @@ global $product;
 
 <script>
   (function () {
-    const weekdays = ['nedelya','ponedelnik','vtornik','sryada','chetvartak','petak','sabota'];
+    const weekdays = ['nedjelja','ponedjeljak','utorak','srijeda','četvrtak','petak','subota'];
 
     // Helper to add business days (skip Saturday/Sunday)
     function addBusinessDays(date, days) {
@@ -159,7 +159,7 @@ global $product;
     }
 
     const windowEl = document.getElementById('shipping-window');
-    windowEl.textContent = `Dostavka mezhdu ${weekdays[first.getDay()]} ${formatDayMonth(first)} i ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
+    windowEl.textContent = `Dostava od ${weekdays[first.getDay()]}  ${formatDayMonth(first)} do ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
 
     // Countdown to midnight
     const cdEl = document.getElementById('midnight-countdown');
@@ -196,13 +196,13 @@ global $product;
 
 <?php 
 
-$is_singles_boxers = noriks_has_product_cat( 'boxers', $current_product_id );
+$is_singles_boxers = has_term( 'singles-boxers', 'product_cat', $current_product_id );
 
-$is_boxers = noriks_has_product_cat( array( 'boxers', 'build_boxers_pack' ), $current_product_id ) && ! noriks_has_product_cat( array( 'promo', 'mixed_bundles' ), $current_product_id );
+$is_boxers = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday', 'majice-i-bokserice-paketi	' ), 'product_cat', $current_product_id );
 
-$is_carape = noriks_has_product_cat( 'socks', $current_product_id );
+$is_carape = has_term( array( 'carape', 'zimske-carape' ), 'product_cat', $current_product_id );
 
-$is_mixed_bundle = noriks_has_product_cat( array( 'promo', 'mixed_bundles', 'starter_packs' ), $current_product_id );
+$is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	', 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id );
 
 ?>
 
@@ -435,11 +435,11 @@ $is_mixed_bundle = noriks_has_product_cat( array( 'promo', 'mixed_bundles', 'sta
         <?php echo get_field("singlepp_acc_t_1","options"); ?>
         
         
-        <?php elseif(  noriks_has_product_cat( array( 'starter_packs', 'mixed_bundles' ), $current_product_id )  ): ?>
+        <?php elseif(  has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id )  ): ?>
         
         
         
-                Nashite premium teniski sa izraboteni ot visokokachestvena smes ot 60% prastenno preden pamuk i 40% poliester, koeto osiguryava izklyuchitelno meka takan, ustoychiva na namachkvane. <br><br>NORIKS bokserite sa izraboteni ot premium smes ot 95% modal i 5% elastan, koeto osiguryava izklyuchitelno mek i elastichen plat, koyto se napasva perfektno po tyaloto. Elastichniyat kolan e sazdaden za optimalno prilyagane, bez pritisnene i s izchisten vid pod drehite.<br>
+                Naše premium majice izrađene su od vrhunske mješavine 60% prstenasto predenog pamuka i 40% poliestera, što osigurava izuzetno mekanu tkaninu otpornu na gužvanje.  <br><br>NORIKS bokserice izrađene su od vrhunske mješavine 95% modala i 5% elastana, što osigurava izuzetno mekanu i elastičnu tkaninu koja se savršeno prilagođava tijelu. Elastičan pojas dizajniran je za optimalno pristajanje, pružajući udobnost bez stezanja i savršen izgled ispod odjeć   <br>
         
         <?php else: ?>
         
@@ -461,7 +461,7 @@ $is_mixed_bundle = noriks_has_product_cat( array( 'promo', 'mixed_bundles', 'sta
      <!-- 2 - slika tablica velicina -->
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Tablica s razmeri</h3>
+        <h3>Tablica veličina</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
@@ -469,7 +469,7 @@ $is_mixed_bundle = noriks_has_product_cat( array( 'promo', 'mixed_bundles', 'sta
            <?php if( $is_boxers ): ?>
        
         
-          <img src="/hr/wp-content/uploads/2025/12/boxers_size.jpg">
+          <img src="/bg/wp-content/uploads/2025/12/boxers_size.jpg">
           
           
           
@@ -477,17 +477,17 @@ $is_mixed_bundle = noriks_has_product_cat( array( 'promo', 'mixed_bundles', 'sta
         <?php elseif(  $is_carape ): ?>
         
         
-                  <img src="/hr/wp-content/uploads/2025/11/Nogavice_tabela_velikosti.jpg">
+                  <img src="/bg/wp-content/uploads/2025/11/Nogavice_tabela_velikosti.jpg">
                   
     <?php elseif(  $is_mixed_bundle ): ?>
     
-     <img src="https://noriks.com/hr/wp-content/uploads/2025/08/Izdelek-brez-naslova-8-1-e1755177806475.png">
-<img src="/hr/wp-content/uploads/2025/12/boxers_size.jpg">
+     <img src="https://noriks.com/bg/wp-content/uploads/2026/04/hr_majice.jpeg">
+<img src="/bg/wp-content/uploads/2025/12/boxers_size.jpg">
         
           <?php else: ?>
       
       
-       <img src="https://noriks.com/hr/wp-content/uploads/2025/08/Izdelek-brez-naslova-8-1-e1755177806475.png">
+       <img src="https://noriks.com/bg/wp-content/uploads/2026/04/hr_majice.jpeg">
         
             
         <?php endif; ?>
@@ -506,11 +506,11 @@ $is_mixed_bundle = noriks_has_product_cat( array( 'promo', 'mixed_bundles', 'sta
         <?php echo get_field("singlepp_acc_t_2","options"); ?>
         
          
-        <?php elseif(  noriks_has_product_cat( array( 'starter_packs', 'mixed_bundles' ), $current_product_id )  ): ?>
+        <?php elseif(  has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id )  ): ?>
         
         
         
-                         Perete tsvetovete s podobni tsvetove. Nezhna programa s hladna voda. Sushete v ravno polozhenie ili v sushilnya na niska temperatura. Bez izbelvane.
+                         Perite boje s bojama.  Program za nježno pranje na hladnoj vodi.  Sušite ravno položeno ili u sušilici na niskoj temperaturi.  Ne izbjeljivati              
         
         
           <?php else: ?>
@@ -529,8 +529,8 @@ $is_mixed_bundle = noriks_has_product_cat( array( 'promo', 'mixed_bundles', 'sta
       </div>
       <div class="accordion-content">
        <p></p>
-       Tolkova silno vyarvame, che NORIKS shte ti haresa, che imash <b data-stringify-type="bold">30 dni</b> za vrashtane ili bezplatna zamyana.
-Bez dokumenti, bez stres - opravame vsichko samo s nyakolko klika. </p>
+       Toliko vjerujemo da će ti se NORIKS svidjeti da imaš <b data-stringify-type="bold">30 dana</b> za povrat ili besplatnu zamjenu.
+Bez papirologije, bez stresa – riješimo u par klikova. </p>
 
 <p>
     
@@ -544,7 +544,7 @@ Bez dokumenti, bez stres - opravame vsichko samo s nyakolko klika. </p>
     info@noriks.com
   </a>
 </p>
-<p>Prosto ni pishi po e-mail, che iskash zamyana, i <b data-stringify-type="bold">vednaga shte opravim vsichko.</b></p>
+<p>Samo nam napiši mail da želiš zamjenu i <b data-stringify-type="bold">odmah ćemo sve srediti.</b></p>
        
        
       </div>

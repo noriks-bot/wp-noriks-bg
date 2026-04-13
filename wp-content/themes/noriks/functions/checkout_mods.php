@@ -453,26 +453,26 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     // phone/email priorities already set above (10/20)
 
     // Labels, placeholders, required
-    $fields['billing']['billing_first_name']['label'] = 'Ime';
-    $fields['billing']['billing_first_name']['placeholder'] = 'Ime';
-    $fields['billing']['billing_last_name']['label'] = 'Prezime';
-    $fields['billing']['billing_last_name']['placeholder'] = 'Prezime';
-    $fields['billing']['billing_address_1']['label'] = 'Ulica';
-    $fields['billing']['billing_address_1']['placeholder'] = 'Ulica';
-    $fields['billing']['billing_address_2']['label'] = 'Kućni broj';
-    $fields['billing']['billing_address_2']['placeholder'] = 'Kućni broj';
+    $fields['billing']['billing_first_name']['label'] = 'Собствено име';
+    $fields['billing']['billing_first_name']['placeholder'] = 'Собствено име';
+    $fields['billing']['billing_last_name']['label'] = 'Фамилно име';
+    $fields['billing']['billing_last_name']['placeholder'] = 'Фамилно име';
+    $fields['billing']['billing_address_1']['label'] = 'Улица';
+    $fields['billing']['billing_address_1']['placeholder'] = 'Улица';
+    $fields['billing']['billing_address_2']['label'] = 'Номер';
+    $fields['billing']['billing_address_2']['placeholder'] = 'Номер';
     $fields['billing']['billing_address_2']['required'] = true;
-    $fields['billing']['billing_postcode']['label'] = 'Poštanski broj';
-    $fields['billing']['billing_postcode']['placeholder'] = 'Poštanski broj';
-    $fields['billing']['billing_city']['label'] = 'Grad';
-    $fields['billing']['billing_city']['placeholder'] = 'Odaberite grad';
+    $fields['billing']['billing_postcode']['label'] = 'Пощенски код';
+    $fields['billing']['billing_postcode']['placeholder'] = 'Пощенски код';
+    $fields['billing']['billing_city']['label'] = 'Град';
+    $fields['billing']['billing_city']['placeholder'] = 'Изберете град';
     $fields['billing']['billing_phone']['label'] = 'Telefon';
-    $fields['billing']['billing_phone']['placeholder'] = 'Broj mobilnog telefona';
+    $fields['billing']['billing_phone']['placeholder'] = 'Мобилен номер';
     $fields['billing']['billing_phone']['required'] = true;
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_phone']['description'] = '...';
-    $fields['billing']['billing_email']['label'] = 'E-mail adresa';
-    $fields['billing']['billing_email']['placeholder'] = 'E-mail adresa';
+    $fields['billing']['billing_email']['label'] = 'Имейл адрес';
+    $fields['billing']['billing_email']['placeholder'] = 'Имейл адрес';
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_email']['description'] = 'Za potvrdu narudžbe i praćenje pošiljke';
     $fields['billing']['billing_email']['required'] = true;
@@ -591,15 +591,11 @@ add_action('woocommerce_review_order_before_submit', function(){
             method:'POST',
             body:new URLSearchParams({coupon_code:code,security:'<?php echo wp_create_nonce("apply-coupon"); ?>'}),
             headers:{'Content-Type':'application/x-www-form-urlencoded'}
-        }).then(function(r){
-            var ok=r.ok;return r.text().then(function(html){return{ok:ok,html:html};});
-        }).then(function(res){
+        }).then(function(r){return r.text();}).then(function(html){
             msg.style.display='block';
-            var isError=!res.ok||res.html.indexOf('error')!==-1||res.html.indexOf('ne postoji')!==-1||res.html.indexOf('nije valjan')!==-1||res.html.indexOf('removed')!==-1;
-            if(isError){
+            if(html.indexOf('error')!==-1){
                 msg.style.background='#fde8e8';msg.style.color='#c00';
-                var txt=res.html.replace(/<[^>]*>/g,'').trim();
-                msg.innerHTML='❌ '+(txt||'Kupon kod nije valjan.');
+                msg.innerHTML=html.replace(/<[^>]*>/g,'')||'Kupon kod nije valjan.';
             }else{
                 msg.style.background='#e8fde8';msg.style.color='#080';
                 msg.innerHTML='✅ Kupon primijenjen!';

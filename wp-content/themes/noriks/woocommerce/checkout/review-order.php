@@ -31,8 +31,8 @@ defined( 'ABSPATH' ) || exit;
 
       <!-- Shipping -->
       <div class="c--darkgray review-section-container review-addons shipping_order_review">
-        <div class="review-addons-title"><div>Kurierska dostavka</div></div>
-        <div class="review-addons-price review-sale-price" id="noriks-shipping-price"><span style="display:inline-block;padding:3px 10px;border-radius:5px;background:#9ce79c;color:#228b22;font-size:14px;font-weight:500;">Bezplatno</span></div>
+        <div class="review-addons-title"><div>Paket24 Hrvatske pošte</div></div>
+        <div class="review-addons-price review-sale-price" id="noriks-shipping-price"><span style="display:inline-block;padding:3px 10px;border-radius:5px;background:#9ce79c;color:#228b22;font-size:14px;font-weight:500;">Besplatno</span></div>
       </div>
 
       <!-- Coupon discounts -->
@@ -60,7 +60,7 @@ defined( 'ABSPATH' ) || exit;
   </div>
   <div class="vigo-checkout-total__sum flex flex--middle border_price">
     <div class="flex__item f--l">
-      Obshta suma: <span class="f--bold price_total_wrapper"><?php wc_cart_totals_order_total_html(); ?></span>
+      Ukupni iznos: <span class="f--bold price_total_wrapper"><?php wc_cart_totals_order_total_html(); ?></span>
     </div>
   </div>
 </div>
