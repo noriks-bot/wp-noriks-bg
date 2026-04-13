@@ -223,7 +223,7 @@ get_header();
                         ">
                         <p class="announcement-bar__message">
                           <span>
-                            <a style="font-size: 1.2rem; "href="https://noriks.com/bg/product-category/bokserice/" title="">NORIKS • Udobje in zdravje na prvem mestu</a>
+                            <a style="font-size: 1.2rem; "href="https://noriks.com/bg/product-category/bokserice/" title="">NORIKS • Комфорт и здраве на първо място</a>
                           </span>
                         </p>
                       </div>
@@ -253,7 +253,7 @@ get_header();
                         ">
                         <p class="announcement-bar__message">
                           <span>
-                            <a style="margin-top: 15px; padding-bottom: 5px;display: block; color: #121212; font-size:1.1rem;" href="https://noriks.com/bg/product-category/bokserice/" title="">Članek Men Cub › Moško zdravje › Spodnje perilo</a>
+                            <a style="margin-top: 15px; padding-bottom: 5px;display: block; color: #121212; font-size:1.1rem;" href="https://noriks.com/bg/product-category/bokserice/" title="">Статия Men Cub › Мъжко здраве › Бельо</a>
                           </span>
                         </p>
                       </div>
@@ -406,7 +406,7 @@ get_header();
                     <p>Če trenutno nosiš bombažne ali druge običajne boksarice, pozorno preberi informacije na tej strani.</p>
                     <p>Če še vedno nosiš tradicionalni bombaž ali, še slabše, sintetično spodnje perilo iz poliestra, tvegaš resne težave.</p>
                   </div>
-                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Preveri razpoložljivost </a>
+                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Проверете наличността </a>
                 </div>
               </div>
             </div>
@@ -434,7 +434,7 @@ get_header();
                     </p>
                     <p>Tvoje intimno področje je že tako toplo in vlažno. Tradicionalne tkanine zadržujejo toploto in vlago ter ustvarjajo idealno okolje za razvoj bakterij in glivic. Takšno nabiranje toplote lahko zmanjša udobje in poslabša počutje.</p>
                   </div>
-                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Preveri razpoložljivost </a>
+                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Проверете наличността </a>
                 </div>
               </div>
             </div>
@@ -469,7 +469,7 @@ get_header();
                       <em>Боксерки NORIKS s ventilacijom i ultra mekim modal-om pomažu da koža ostane hladna, suha i zaštićena.</em>
                     </p>
                   </div>
-                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Preveri razpoložljivost </a>
+                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Проверете наличността </a>
                 </div>
               </div>
             </div>
@@ -612,7 +612,7 @@ get_header();
                       <strong>Zato boksarice NORIKS niso le razkošje, temveč potreba za dobro počutje.</strong>
                     </p>
                   </div>
-                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Preveri razpoložljivost </a>
+                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Проверете наличността </a>
                 </div>
               </div>
             </div>
@@ -640,7 +640,7 @@ get_header();
                     <p>Intimno področje je že tako toplo in vlažno. Tradicionalni bombaž in poliester zadržujeta toploto in vlago — prav to, kar bakterije in glivice potrebujejo za razmnoževanje.</p>
                     <p>Nakupljanje topline može smanjiti stvaranje sperme i negativno utjecati na muško reproduktivno zdravlje.</p>
                   </div>
-                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Kupi NORIKS </a>
+                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Купи NORIKS </a>
                 </div>
               </div>
             </div>
@@ -674,7 +674,7 @@ get_header();
                       <strong>-Toplinski osip (miliaria):</strong> Začepljeni kanalići znojnih žlijezda stvaraju bolne, svrbeće izbočine koje se mogu inficirati ako se češu.
                     </p>
                   </div>
-                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Preveri razpoložljivost </a>
+                  <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary"> Проверете наличността </a>
                 </div>
               </div>
             </div>
@@ -831,7 +831,7 @@ Individualni rezultati mogu se razlikovati. </em>
         <div class="rich-text content-container color-custom color-scheme-template--19454951555210__rich_text_d3HeA8 gradient rich-text--full-width content-container--full-width section-template--19454951555210__rich_text_d3HeA8-padding">
           <div class="rich-text__wrapper rich-text__wrapper--center page-width">
             <div class="rich-text__blocks center animate-item">
-              <h2 style="margin-top: 25px; font-size: 2.2rem; line-height:1.1;" class="rich-text__heading rte h1 title-with-highlight" style="--hightlight-color:#6d388b"> Pridruži se tisočem, ki so že zamenjali • 70% popusta na prvo naročilo </h2>
+              <h2 style="margin-top: 25px; font-size: 2.2rem; line-height:1.1;" class="rich-text__heading rte h1 title-with-highlight" style="--hightlight-color:#6d388b"> Присъединете се към хилядите, които вече направиха промяната • 70% отстъпка на първата поръчка </h2>
               <div class="rich-text__text rte">
                 <h2 class="second-h2" style=" font-size: 1.7rem; line-height:1.1;" >
                   <strong>6-mjesečno jamstvo protiv rupa • 30-dnevno probno razdoblje bez rizika</strong>
@@ -968,7 +968,7 @@ Individualni rezultati mogu se razlikovati. </em>
                 </p>
               </div>
               <div class="rich-text__buttons">
-                <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary">Preveri razpoložljivost >></a>
+                <a href="https://noriks.com/bg/product-category/bokserice/" class="button button--primary">Проверете наличността >></a>
               </div>
               <div class="rich-text__text rte">
                 <h6>
@@ -1060,7 +1060,7 @@ Individualni rezultati mogu se razlikovati. </em>
                         ">
                         <p class="announcement-bar__message">
                           <span>
-                            <a style="font-size: 1.2rem;" href="https://noriks.com/bg/product-category/bokserice/" title="">70% popusta danes → 30-dnevno preizkusno obdobje brez tveganja</a>
+                            <a style="font-size: 1.2rem;" href="https://noriks.com/bg/product-category/bokserice/" title="">70% отстъпка днес → 30-дневен пробен период без риск</a>
                           </span>
                         </p>
                       </div>
