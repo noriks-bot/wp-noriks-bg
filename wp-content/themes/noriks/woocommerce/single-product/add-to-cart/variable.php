@@ -66,7 +66,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 						
 						
 						<?php
-							if (  $attribute_name == 'Velikost bokseric'  )     {
+							if (  $attribute_name == 'Размер боксерки'  )     {
 						    
 						    
 						    
