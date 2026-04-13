@@ -281,7 +281,7 @@ function noriks_handle_add_upsell() {
     }
 
     $order = wc_get_order( $order_id );
-    if ( ! $order ) wp_send_json_error( 'Naročilo ni bilo najdeno' );
+    if ( ! $order ) wp_send_json_error( 'Поръчката не беше намерена' );
 
     // Only allow upsell on COD orders in primary-hold
     if ( $order->get_payment_method() !== 'cod' ) {

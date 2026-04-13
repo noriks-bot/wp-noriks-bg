@@ -41,7 +41,7 @@ $auto_reviews_ship = array(
     array("name" => "Hrvoje D.", "text" => "Po naročilu je šlo vse zelo hitro. Paket je bil pripravljen in poslan isti dan, prispel pa je že naslednji dan. Odlična izkušnja."),
     array("name" => "Nino T.", "text" => "Brza obrada naročila, odlično."),
     array("name" => "Ante H.", "text" => "Rijetko se vidi ovako profesionalna storitev."),
-    array("name" => "Goran J.", "text" => "Naročil sem v ponedeljek, paket pa je prispel že v sredo. Celoten postopek je bil preprost in pregleden. Zelo sem zadovoljen."),
+    array("name" => "Goran J.", "text" => "Поръчах в понеделник, а пратката пристигна още в сряда. Целият процес беше лесен и ясен. Много съм доволен."),
     array("name" => "Nikola T.", "text" => "Dostava je bila brža nego što sam očekivao. Dobio sam obavijest u svakoj fazi, što mi je ulilo povjerenje. Zelo profesionalna storitev."),
     array("name" => "Alen F.", "text" => "Paket stigao ranije."),
     array("name" => "Marko Z.", "text" => "Cijeli proces dostave bio je jednostavan."),

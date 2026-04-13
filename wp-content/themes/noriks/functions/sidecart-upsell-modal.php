@@ -193,7 +193,7 @@ function noriks_upsell_modal_markup() {
                     </select>
                 </div>
                 <div id="noriks-modal-attributes" class="noriks-modal-attributes"></div>
-                <div id="noriks-modal-error" class="noriks-modal-error" style="display:none;">Odaberite sve opcije</div>
+                <div id="noriks-modal-error" class="noriks-modal-error" style="display:none;">Избери всички опции</div>
                 <button id="noriks-modal-add" class="noriks-modal-add-btn">DODAJ U KOŠARICU</button>
             </div>
 

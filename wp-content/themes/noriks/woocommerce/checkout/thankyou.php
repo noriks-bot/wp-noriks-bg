@@ -41,13 +41,13 @@ $upsell_is_majice = $has_only_boksarice;
 
 if ( $upsell_is_majice ) {
     $upsell_product_id = 250; // Crna majica (variable)
-    $upsell_name       = 'Crne Majice';
+    $upsell_name       = 'Crne Тениски';
     $upsell_qty_prices = array( 1 => 12.99, 3 => 29.99, 6 => 39.99 );
-    $upsell_qty_names  = array( 1 => '1x Crna Majica', 3 => '3x Crne Majice', 6 => '6x Crnih Majica' );
+    $upsell_qty_names  = array( 1 => '1x Crna Majica', 3 => '3x Crne Тениски', 6 => '6x Crnih Majica' );
     $upsell_qty_images = array(
-        1 => 'https://noriks.com/si/wp-content/uploads/2025/09/black-1.jpg',
-        3 => 'https://noriks.com/si/wp-content/uploads/2025/09/black-3x.jpg',
-        6 => 'https://noriks.com/si/wp-content/uploads/2026/01/15xcrnamajica.png',
+        1 => 'https://noriks.com/bg/wp-content/uploads/2025/09/black-1.jpg',
+        3 => 'https://noriks.com/bg/wp-content/uploads/2025/09/black-3x.jpg',
+        6 => 'https://noriks.com/bg/wp-content/uploads/2026/01/15xcrnamajica.png',
     );
     $upsell_title_text = 'Dodaj majice zdaj – 50% popusta';
 } else {
@@ -56,9 +56,9 @@ if ( $upsell_is_majice ) {
     $upsell_qty_prices = array( 1 => 7.99, 3 => 19.99, 5 => 29.99 );
     $upsell_qty_names  = array( 1 => '1x Crne Boksarice', 3 => '3x Crne Boksarice', 5 => '5x Crnih Bokseric' );
     $upsell_qty_images = array(
-        1 => 'https://noriks.com/si/wp-content/uploads/2025/11/crne-boksarice-produktna.jpg',
-        3 => 'https://noriks.com/si/wp-content/uploads/2025/11/boksarice_3x_crne.png',
-        5 => 'https://noriks.com/si/wp-content/uploads/2026/01/boksarice_5x_crne.png',
+        1 => 'https://noriks.com/bg/wp-content/uploads/2025/11/crne-boksarice-produktna.jpg',
+        3 => 'https://noriks.com/bg/wp-content/uploads/2025/11/boksarice_3x_crne.png',
+        5 => 'https://noriks.com/bg/wp-content/uploads/2026/01/boksarice_5x_crne.png',
     );
     $upsell_title_text = 'Dodaj boksarice zdaj – 50% popusta';
 }
@@ -449,8 +449,8 @@ body.woocommerce-order-received .woocommerce {
     <div style="width:80px;height:80px;border:4px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
-    <h1 style="color:#fff;font-family:'Roboto',sans-serif;font-size:28px;font-weight:700;margin:0;">Naročilo prejeto!</h1>
-    <p style="color:rgba(255,255,255,0.85);font-family:'Roboto',sans-serif;font-size:15px;margin:10px 0 0;">Številka naročila: #<?php echo $order->get_order_number(); ?></p>
+    <h1 style="color:#fff;font-family:'Roboto',sans-serif;font-size:28px;font-weight:700;margin:0;">Поръчката е получена!</h1>
+    <p style="color:rgba(255,255,255,0.85);font-family:'Roboto',sans-serif;font-size:15px;margin:10px 0 0;">Номер на поръчката: #<?php echo $order->get_order_number(); ?></p>
 </div>
 <script>(function(){var k='splash_<?php echo $order->get_id(); ?>';if(sessionStorage.getItem(k)){document.getElementById('order-splash').style.display='none';return;}sessionStorage.setItem(k,'1');setTimeout(function(){var s=document.getElementById('order-splash');s.style.opacity='0';setTimeout(function(){s.style.display='none';},600);},2000);})();</script>
 
@@ -461,7 +461,7 @@ body.woocommerce-order-received .woocommerce {
     <?php if ( $order->has_status( 'failed' ) ) : ?>
         <div class="ty-success" style="background:#fde8e8;">
             <div class="ty-success-icon" style="background:#dc3545;">✕</div>
-            <h1>Naročilo ni uspelo</h1>
+            <h1>Поръчката не бе успешна</h1>
             <p>Banka je odbila transakciju. Pokušajte ponovno.</p>
             <p style="margin-top:16px;">
                 <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" style="display:inline-block;background:#E8450E;color:#fff;padding:12px 32px;text-decoration:none;font-weight:700;">Pokušaj ponovno</a>
@@ -474,7 +474,7 @@ body.woocommerce-order-received .woocommerce {
             <div class="ty-success-icon">✓</div>
             <h1>Vaše naročilo je bilo prejeto!</h1>
             <p>Potvrdu ste primili na <?php echo esc_html( $order->get_billing_email() ); ?></p>
-            <span class="ty-order-num">Naročilo #<?php echo $order->get_order_number(); ?></span>
+            <span class="ty-order-num">Поръчка #<?php echo $order->get_order_number(); ?></span>
         </div>
 
         <!-- ═══ STEP 1: VIGOSHOP UPSELL (COD only) ═══ -->
@@ -657,7 +657,7 @@ body.woocommerce-order-received .woocommerce {
         <!-- 📋 Order items -->
         <div class="ty-section" id="ty-order-items-section">
             <div class="ty-section-header open" onclick="tyToggle(this)">
-                <span id="ty-order-items-header">Postavke naročila (<?php echo $order->get_item_count(); ?>)</span>
+                <span id="ty-order-items-header">Артикули в поръчката (<?php echo $order->get_item_count(); ?>)</span>
                 <span class="ty-chevron">+</span>
             </div>
             <div class="ty-section-body open">
@@ -698,14 +698,14 @@ body.woocommerce-order-received .woocommerce {
         <!-- 📍 Address -->
         <div class="ty-section">
             <div class="ty-section-header open" onclick="tyToggle(this)">
-                <span>Naslov za dostavo</span>
+                <span>Адрес за доставка</span>
                 <span class="ty-chevron">+</span>
             </div>
             <div class="ty-section-body open">
                 <div class="ty-section-body-inner">
                     <div class="ty-row"><span class="ty-row-label">Ime</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() ); ?></span></div>
                     <div class="ty-row"><span class="ty-row-label">Adresa</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_address_1() . ' ' . $order->get_billing_address_2() ); ?></span></div>
-                    <div class="ty-row"><span class="ty-row-label">Grad</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_postcode() . ' ' . $order->get_billing_city() ); ?></span></div>
+                    <div class="ty-row"><span class="ty-row-label">Град</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_postcode() . ' ' . $order->get_billing_city() ); ?></span></div>
                     <?php if ( $order->get_billing_phone() ) : ?>
                     <div class="ty-row"><span class="ty-row-label">Telefon</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_phone() ); ?></span></div>
                     <?php endif; ?>
@@ -723,7 +723,7 @@ body.woocommerce-order-received .woocommerce {
 
 <?php else : ?>
     <div class="ty-container">
-        <div class="ty-success"><h1>Naročilo</h1>
+        <div class="ty-success"><h1>Поръчка</h1>
         <?php wc_get_template( 'checkout/order-received.php', array( 'order' => false ) ); ?>
         </div>
     </div>
@@ -762,7 +762,7 @@ body.woocommerce-order-received .woocommerce {
             localStorage.removeItem('ty_added_' + orderId);
             localStorage.removeItem(stepKey);
             localStorage.removeItem(key);
-            // Auto-open "Postavke naročila" and "Naslov za dostavo" sections
+            // Auto-open "Артикули в поръчката" and "Адрес за доставка" sections
             document.querySelectorAll('.ty-section .ty-section-header').forEach(function(h) {
                 if (!h.classList.contains('open')) {
                     h.classList.add('open');
@@ -832,7 +832,7 @@ body.woocommerce-order-received .woocommerce {
                     // Update item count in header by ID
                     var headerSpan = document.getElementById('ty-order-items-header');
                     if (headerSpan) {
-                        headerSpan.textContent = 'Postavke naročila (' + d.data.item_count + ')';
+                        headerSpan.textContent = 'Артикули в поръчката (' + d.data.item_count + ')';
                     }
                     // Make sure section stays open
                     var section = document.getElementById('ty-order-items-section');
@@ -1049,7 +1049,7 @@ function removeUpsellItem(btn) {
                             if (itemsBody) itemsBody.innerHTML = d2.data.items_html;
                             var headerSpan = document.getElementById('ty-order-items-header');
                             if (headerSpan) {
-                                headerSpan.textContent = 'Postavke naročila (' + d2.data.item_count + ')';
+                                headerSpan.textContent = 'Артикули в поръчката (' + d2.data.item_count + ')';
                             }
                         }
                     });

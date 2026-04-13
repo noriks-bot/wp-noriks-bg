@@ -11,7 +11,7 @@ $auto_reviews_en = array(
     array("name" => "Mislav L.", "text" => "Noriks boksarice izgledaju kakovostno čim ih primiš u ruku. Vse pohvale."),
     array("name" => "Petar G.", "text" => "Nosim jih že več tednov, brez muckanja in brez raztegovanja materiala."),
     array("name" => "Ante B.", "text" => "Popoln kroj, prate telo, ali ne stišću. Baš taman."),
-    array("name" => "Filip J.", "text" => "Nogavice se ne uvlače prema gore, što mi je ogroman plus."),
+    array("name" => "Filip J.", "text" => "Чорапи se ne uvlače prema gore, što mi je ogroman plus."),
     array("name" => "Nikola R.", "text" => "Noriks boksarice su mi postale prva opcija u ladici, vedno ih prvo uzmem."),
     array("name" => "Matija S.", "text" => "Nema neprijetnog znojenja, tkanina lijepo diše."),
     array("name" => "Domagoj K.", "text" => "Izgleda da će trajati dugo, šavovi su zelo uredni i čvrsti."),

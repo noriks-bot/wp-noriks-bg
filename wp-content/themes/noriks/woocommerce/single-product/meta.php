@@ -74,13 +74,13 @@ global $product;
           <div class="feature">
           
   <img src="<?php echo get_template_directory_uri(); ?>/img/cod_icon_.png" alt="Customer Support Icon" class="feature__icon info-icon">
-          <p class="feature__text">Plačilo tudi po povzetju</p>
+          <p class="feature__text">Плащане с наложен платеж</p>
         </div>
         
         
         <div class="feature">
-      <img src="https://noriks.com/si/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
-          <p class="feature__text">Isprobajte 30 dana, bez rizika</p>
+      <img src="https://noriks.com/bg/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
+          <p class="feature__text">Пробвай 30 дни без риск</p>
         </div>
         
         
@@ -89,8 +89,8 @@ global $product;
         <div class="feature">
      
        
-        <img src="https://noriks.com/si/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
-          <p class="feature__text">Brezplačna dostava za naročila nad 70 €</p>
+        <img src="https://noriks.com/bg/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
+          <p class="feature__text">Безплатна доставка за поръчки над 70 €</p>
         </div>
 
     
@@ -106,7 +106,7 @@ global $product;
 <div class="shipping-box">
   <h2 id="shipping-window" class="shipping-title"></h2>
   <p class="shipping-sub">
-    Naročite u sljedećih <span id="midnight-countdown" class="countdown"></span>
+    Поръчай в следващите <span id="midnight-countdown" class="countdown"></span>
   </p>
 </div>
 
@@ -469,7 +469,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
            <?php if( $is_boxers ): ?>
        
         
-          <img src="/si/wp-content/uploads/2025/12/boxers_size.jpg">
+          <img src="/bg/wp-content/uploads/2025/12/boxers_size.jpg">
           
           
           
@@ -477,17 +477,17 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
         <?php elseif(  $is_carape ): ?>
         
         
-                  <img src="/si/wp-content/uploads/2025/11/Nogavice_tabela_velikosti.jpg">
+                  <img src="/bg/wp-content/uploads/2025/11/Чорапи_tabela_velikosti.jpg">
                   
     <?php elseif(  $is_mixed_bundle ): ?>
     
-     <img src="https://noriks.com/si/wp-content/uploads/2026/04/hr_majice.jpeg">
-<img src="/si/wp-content/uploads/2025/12/boxers_size.jpg">
+     <img src="https://noriks.com/bg/wp-content/uploads/2026/04/hr_majice.jpeg">
+<img src="/bg/wp-content/uploads/2025/12/boxers_size.jpg">
         
           <?php else: ?>
       
       
-       <img src="https://noriks.com/si/wp-content/uploads/2026/04/hr_majice.jpeg">
+       <img src="https://noriks.com/bg/wp-content/uploads/2026/04/hr_majice.jpeg">
         
             
         <?php endif; ?>

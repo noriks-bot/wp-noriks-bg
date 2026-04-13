@@ -183,7 +183,7 @@ function noriks_ensure_default_step_landing() {
     }
 
     update_post_meta($post_id, '_landigs_target_product_id', 3421);
-    update_post_meta($post_id, '_landigs_target_product_url', home_url('/si/product/noriks-majica/'));
+    update_post_meta($post_id, '_landigs_target_product_url', home_url('/bg/product/noriks-majica/'));
     update_post_meta($post_id, '_landigs_primary_label', 'Barva');
     update_post_meta($post_id, '_landigs_primary_options', "Črna|#000000\nBela|#f5f5f5\nSiva|#9ca3af\nTemno modra|#243647\nRjava|#7c5a3c\nOlivna|#607d33");
     update_post_meta($post_id, '_landigs_secondary_label', 'Velikost');

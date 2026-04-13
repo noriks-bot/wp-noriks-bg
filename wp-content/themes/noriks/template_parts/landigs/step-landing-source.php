@@ -4309,7 +4309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<ul class="header__menu">
 					<li class="header__menu-item"><a class="header__menu-link link--nu" href="https://ortowp.noriks.com/">Domov</a></li>
 					<li class="header__menu-item"><a class="header__menu-link link--nu active" href="https://ortowp.noriks.com/trgovina/">Vlo&#x17E;ki</a></li>
-					<li class="header__menu-item"><a class="header__menu-link link--nu" href="https://ortowp.noriks.com/trgovina/">Vsi izdelki</a></li>
+					<li class="header__menu-item"><a class="header__menu-link link--nu" href="https://ortowp.noriks.com/trgovina/">Всички продукти</a></li>
 				</ul>
 				<a class="header__logo" href="https://ortowp.noriks.com/">
 					<img class="header__logo-img" src="https://images.hs-plus.com/assets/STEPPER%20test-0/62260f0233272_logo-stepease-orange-bg.svg" alt="logo">
@@ -8413,7 +8413,7 @@ setDeliveryDate();
 									</div>
 									<div class="loockat-card__info">
 										<img class="loockat-card__rating-img" src="https://images.hs-plus.com/assets/STEPPER%20test-0/223de4527c91b_stars-v2-5.svg" alt>
-										<h4 class="loockat-card__title">Gradbeni delavec</h4>
+										<h4 class="loockat-card__title">Градbeni delavec</h4>
 										<p class="loockat-card__text">Svoje dni pre&#x17E;ivim na betonskih tleh v delovnih &#x10D;evljih s kovinsko kapico. Ortopedski vlo&#x17E;ki z masa&#x17E;nimi to&#x10D;kami | STEPEASE odli&#x10D;no bla&#x17E;ijo udarce in nudijo podporo, kar zmanj&#x161;uje obremenitev stopal in sklepov. Presene&#x10D;en sem, koliko so mi pomagali &#x2013; o njih sem povedal vsem sodelavcem.</p>
 										<span class="loockat-card__name">Nino</span>
 									</div>
@@ -10005,8 +10005,8 @@ setDeliveryDate();
 
 			</div>
 			<button class="btn btn--bg sct-bar__btn" data-scroll=".scroll-target" data-scroll-offset="120"><span>Naro&#x10D;ite zdaj</span></button>
-			<!-- <button class="btn btn--bg sct-bar__btn" onclick="submitproductform()"><span>Naročite zdaj</span></button> -->
-			<!-- <a class="btn btn--bg sct-bar__btn" data-scroll=".scroll-target" data-scroll-offset="120" href="#">Naročite zdaj</a> -->
+			<!-- <button class="btn btn--bg sct-bar__btn" onclick="submitproductform()"><span>Поръчай сега</span></button> -->
+			<!-- <a class="btn btn--bg sct-bar__btn" data-scroll=".scroll-target" data-scroll-offset="120" href="#">Поръчай сега</a> -->
 		</div>
 	</section>
 
@@ -10594,7 +10594,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var buyers = [{"name":"Anita","place":"Trebnjega","sex":"f","q":1},{"name":"Alenka","place":"Stahovice ","sex":"f","q":1},{"name":"Maja","place":"Cerklje na Gorenjskem ","sex":"f","q":1},{"name":"Iris","place":"Murske Sobote ","sex":"f","q":1},{"name":"Sara","place":"Dobravlja","sex":"f","q":1},{"name":"Matejka","place":"Razkrižja","sex":"f","q":1},{"name":"Nina","place":"Kamnika","sex":"f","q":1},{"name":"Metka","place":"Vojnika","sex":"f","q":1},{"name":"Maja","place":"Škofje Loke","sex":"f","q":1},{"name":"Nataša","place":"Begunje pri Cerknici","sex":"f","q":1},{"name":"Milena","place":"Cerkelj","sex":"f","q":1},{"name":"Tanja","place":"Komna","sex":"f","q":1},{"name":"Marica","place":"Žužemberga","sex":"f","q":1}];
 
 /*   var dateValues = {
-    text: 'Naročiš sedaj dobiš v ',
+    text: 'Поръчай сега и ще получиш в ',
     days: ["nedeljo", "ponedeljek", "torek", "sredo", "\u010detrtek", "petek", "soboto"]
   }; */
 

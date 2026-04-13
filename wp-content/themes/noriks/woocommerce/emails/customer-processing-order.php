@@ -33,9 +33,9 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php
 if ( ! empty( $order->get_billing_first_name() ) ) {
 	/* translators: %s: Customer first name */
-	printf( esc_html__( 'Hej  %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) );
+	printf( esc_html__( 'Здравей  %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) );
 } else {
-	printf( esc_html__( 'Hej ,', 'woocommerce' ) );
+	printf( esc_html__( 'Здравей ,', 'woocommerce' ) );
 }
 ?>
 </p>
@@ -52,7 +52,7 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
     Če boš karkoli potreboval – tukaj smo. 🙂<br/><br/>
     
     
-    <strong>Če si se zmotil pri velikosti, količini ali barvi naročila – brez skrbi!</strong><br/>
+    <strong>Ако си объркал размера, количеството или цвета на поръчката – без притеснения!</strong><br/>
     Odgovori neposredno na ta e-mail in sporoči, kaj je treba spremeniti pred pošiljanjem paketa. Z veseljem bomo vse hitro uredili.<br/><br/>
     
     Ekipa NORIKS
@@ -75,7 +75,7 @@ Zdaj pripravljamo tvoj NORIKS izdelek in kmalu bo na poti.
     Če boš karkoli potreboval – tukaj smo. 🙂<br/><br/>
     
     
-    <strong>Če si se zmotil pri velikosti, količini ali barvi naročila – brez skrbi!</strong><br/>
+    <strong>Ако си объркал размера, количеството или цвета на поръчката – без притеснения!</strong><br/>
     Odgovori neposredno na ta e-mail in sporoči, kaj je treba spremeniti pred pošiljanjem paketa. Z veseljem bomo vse hitro uredili.<br/><br/>
     
     Ekipa NORIKS

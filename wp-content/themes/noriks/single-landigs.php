@@ -568,7 +568,7 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             'Kako dolgo zdr&#x17E;ijo vlo&#x17E;ki STEPEASE?' => 'Kako dolgo traju NORIKS majice?',
             'Kako dolgo zdržijo vložki STEPEASE?' => 'Kako dolgo traju NORIKS majice?',
             'Domov' => 'Početna',
-            'Vsi izdelki' => 'Svi proizvodi',
+            'Всички продукти' => 'Svi proizvodi',
             'Koristne informacije' => 'Koristne informacije',
             'Splo&#x161;ni pogoji poslovanja' => 'Splošni pogoji poslovanja',
             'Splošni pogoji poslovanja' => 'Splošni pogoji poslovanja',
@@ -668,12 +668,12 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             'Ortopedski vlo&#x17E;ki' => 'Majica',
             'Ortopedski vložki' => 'Majica',
             'vlo&#x17E;ki' => 'majice',
-            'Vlo&#x17E;ki' => 'Majice',
+            'Vlo&#x17E;ki' => 'Тениски',
             'vložki' => 'majice',
-            'Vložki' => 'Majice',
+            'Vložki' => 'Тениски',
             'stopal' => 'majic',
             'stopala' => 'majice',
-            'Stopala' => 'Majice',
+            'Stopala' => 'Тениски',
             'čevljem' => 'stilu',
             'čevljih' => 'kombinacijama',
             'čevlje' => 'outfite',
@@ -704,7 +704,7 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
 
 $target_product_url = get_post_meta(get_the_ID(), '_landigs_target_product_url', true);
 $target_product_id  = (int) get_post_meta(get_the_ID(), '_landigs_target_product_id', true);
-$boxers_image_url   = 'https://noriks.com/si/wp-content/uploads/2025/11/boksarice_3x_crne-600x600.png';
+$boxers_image_url   = 'https://noriks.com/bg/wp-content/uploads/2025/11/boksarice_3x_crne-600x600.png';
 $hero_image_url     = trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-majice-garancija.jpg';
 $landing_image_urls = array(
     trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-shirt-1.jpg',
@@ -717,27 +717,27 @@ $landing_image_urls = array(
     trailingslashit(get_template_directory_uri()) . 'assets/images/landigs/noriks-shirt-8.png',
 );
 $review_image_urls = array(
-    'https://noriks.com/si/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_41AM.jpeg',
-    'https://noriks.com/si/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_39AM.jpeg',
-    'https://noriks.com/si/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_29AM.jpeg',
-    'https://noriks.com/si/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_30AM%20%281%29.jpeg',
-    'https://noriks.com/si/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_45AM.jpeg',
-    'https://noriks.com/si/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_52AM.jpeg',
-    'https://noriks.com/si/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_50AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_41AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_39AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_29AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_30AM%20%281%29.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_45AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_52AM.jpeg',
+    'https://noriks.com/bg/wp-content/themes/noriks/auto_reviews/majice-slike/Generated%20Image%20January%2019%2C%202026%20-%2010_50AM.jpeg',
 );
 $purpose_image_urls = array(
-    'https://noriks.com/si/wp-content/uploads/2025/11/crna-in-siva-majica-vse-barve-gat-bundle-600x600.png',
-    'https://noriks.com/si/wp-content/uploads/2025/11/crna-in-modra-majica-vse-barve-gat-bundle-600x600.png',
-    'https://noriks.com/si/wp-content/uploads/2025/11/crna-in-bela-majica-vse-barve-gat-bundle-600x600.png',
-    'https://noriks.com/si/wp-content/uploads/2025/11/bela-in-siva-majica-vse-barve-gat-bundle-600x600.png',
-    'https://noriks.com/si/wp-content/uploads/2025/09/monochrome-3x-600x600.jpg',
-    'https://noriks.com/si/wp-content/uploads/2025/09/city-6x-600x600.jpg',
-    'https://noriks.com/si/wp-content/uploads/2025/09/everyday-6X-600x600.jpg',
-    'https://noriks.com/si/wp-content/uploads/2025/09/urban-earth-6x-600x600.jpg',
+    'https://noriks.com/bg/wp-content/uploads/2025/11/crna-in-siva-majica-vse-barve-gat-bundle-600x600.png',
+    'https://noriks.com/bg/wp-content/uploads/2025/11/crna-in-modra-majica-vse-barve-gat-bundle-600x600.png',
+    'https://noriks.com/bg/wp-content/uploads/2025/11/crna-in-bela-majica-vse-barve-gat-bundle-600x600.png',
+    'https://noriks.com/bg/wp-content/uploads/2025/11/bela-in-siva-majica-vse-barve-gat-bundle-600x600.png',
+    'https://noriks.com/bg/wp-content/uploads/2025/09/monochrome-3x-600x600.jpg',
+    'https://noriks.com/bg/wp-content/uploads/2025/09/city-6x-600x600.jpg',
+    'https://noriks.com/bg/wp-content/uploads/2025/09/everyday-6X-600x600.jpg',
+    'https://noriks.com/bg/wp-content/uploads/2025/09/urban-earth-6x-600x600.jpg',
 );
 
 if (!$target_product_url) {
-    $target_product_url = home_url('/si/product/noriks-majica/');
+    $target_product_url = home_url('/bg/product/noriks-majica/');
 }
 
 if (!$target_product_id) {
