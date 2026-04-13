@@ -1,6 +1,6 @@
 
 <section class="new-video-rewies">
-  <h2 class="new-video-rewies__title">Poglejte, kako drugi obožujejo svoje NORIKS boksarice</h2>
+  <h2 class="new-video-rewies__title">Вижте защо другите обичат своите NORIKS боксерки</h2>
 
   <div class="new-video-rewies__slider">
 
