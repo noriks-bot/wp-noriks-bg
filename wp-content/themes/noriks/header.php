@@ -46,19 +46,19 @@
 	<div class="top-header">
   <div class="marquee">
     <div class="marquee-content">
-      <span><a href="/bg/shop">Besplatna dostava za narudžbe iznad 70 €</a></span>
-      <span><a href="/bg/shop">30 dana bez rizika – probaj bez brige</a></span>
-      <!--<span><a href="/bg/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
+      <span><a href="/si/shop">Brezplačna dostava za naročila nad 70 €</a></span>
+      <span><a href="/si/shop">30 dni brez tveganja – preizkusi brez skrbi</a></span>
+      <!--<span><a href="/si/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
 
       <!-- DUPLICATED for seamless infinite loop -->
-      <span><a href="/bg/shop">Besplatna dostava za narudžbe iznad 70 €</a></span>
-      <span><a href="/bg/shop">30 dana bez rizika – probaj bez brige</a></span>
-     <!-- <span><a href="/bg/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
+      <span><a href="/si/shop">Brezplačna dostava za naročila nad 70 €</a></span>
+      <span><a href="/si/shop">30 dni brez tveganja – preizkusi brez skrbi</a></span>
+     <!-- <span><a href="/si/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
       
        <!-- DUPLICATED for seamless infinite loop -->
-      <span><a href="/bg/shop">Besplatna dostava za narudžbe iznad 70 €</a></span>
-      <span><a href="/bg/shop">30 dana bez rizika – probaj bez brige</a></span>
-     <!-- <span><a href="/bg/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
+      <span><a href="/si/shop">Brezplačna dostava za naročila nad 70 €</a></span>
+      <span><a href="/si/shop">30 dni brez tveganja – preizkusi brez skrbi</a></span>
+     <!-- <span><a href="/si/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
     </div>
   </div>
 </div>
@@ -135,8 +135,8 @@
                         
                     <!--
                     <div class="dropdown-menu">
-                        <a href="/bg/shop">Sastavi svoj paket</a>
-                        <a href="/bg/product-category/bundles/">Gotovi paketi</a>
+                        <a href="/si/shop">Sestavi svoj paket</a>
+                        <a href="/si/product-category/bundles/">Pripravljeni paketi</a>
                     </div>
                     -->
                 </div>
@@ -149,8 +149,8 @@
                     </a>
                     <!--
                     <div class="dropdown-menu">
-                        <a href="/bg/product-category/bokserice-sastavi-paket/">Sastavi svoj paket</a>
-                        <a href="/bg/product-category/bokserice/">Gotovi paketi</a>
+                        <a href="/si/product-category/bokserice-sastavi-paket/">Sestavi svoj paket</a>
+                        <a href="/si/product-category/bokserice/">Pripravljeni paketi</a>
                     </div>
                     -->
                 </div>
@@ -232,7 +232,7 @@
           
           
         <?php if ( class_exists( 'WooCommerce' ) ) : ?>
-            <a class="header-cart" href="/bg/cart">
+            <a class="header-cart" href="/si/cart">
                 <div class="cart-icon">
                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="23" viewBox="0 0 26 23">
                     <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAXCAYAAAAV1F8QAAACM0lEQVR4AbRVPYsaURS9M07AXgURixR+dbtbS9ZSEIv8AbUTxb+w6exFLURQWxUUooWi4AciiDGdFoqIhE2tVVZEcDLngUM2mxlnwjrMee+8e8+9h3m84fGk83l4uBfv7+5EnWWky8jn84mzbzOafZ8RuB4zXUaFQoEMgkCC8IHAb2KUzWZFh8NBx+ORARwxrWaavujx8ZMYj8dZz2QySQAWiCEHfg2ajAqFIhkMBppOpzDhJCMOHDHkrpkgf9UonU6LTqeTXl5+USgUQg0DOGLIQcOCKoOqkdfrFROJBCt/evpC6/WaYwtpAEdMogQNtOBKUDUqlUpsy5bLJaVSKdnk0gwx5LCFxWLxEv7nzFerVVHpcblcrMjj8ZCSBjmI3G63ogYevN1uh+6msFgsxPf7/ZuaoPlwOCS+1WqB3xSdTof4yWTC7XY7TUbn85m63S4DuJai/X6P/49jp240GmmpoWAwSH6/nwMCgYCmmvF4zHTMqNfrsYXasFgsqN1uy0dc2g5uPp+rlbDcpTczajS+NlhUZbBarW+yNpvtTezvQLPZ/IEYM3p+/vlZ+tOxVoTZbKZcLocLT5BEQj6fF00mk0SV381mQ9vt9iMUzAgERxCzGmKxGB0OhxMQjUbVpCw3GAzYjEE2kvYc66swGo0EXBVKgj97ykb1ep07nU5S+n1e9KrVavLhkY3QvlwuY3oXVCqVV31eGUUiEU66WwjHdrVa0f8AtZlMhsLhsPw1cPwNAAD//6RURXgAAAAGSURBVAMAUxNB668Ak78AAAAASUVORK5CYII=" x="0" y="0" width="26" height="23"/>

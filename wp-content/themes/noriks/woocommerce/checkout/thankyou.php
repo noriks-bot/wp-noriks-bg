@@ -2,7 +2,7 @@
 /**
  * Thankyou page — Post-purchase upsell with two-step flow
  *
- * Step 1: Single product offer (bokserice)
+ * Step 1: Single product offer (boksarice)
  * Step 2: 6-product grid (after "Ne želim" or after adding 1 item)
  *
  * Style: Red background, no border-radius, red buttons
@@ -14,9 +14,9 @@
 defined( 'ABSPATH' ) || exit;
 
 // ─── Upsell product config — detect what to offer ───
-// Check if order has ONLY bokserice (no majice, no komplet)
-$has_only_bokserice = true;
-$has_bokserice = false;
+// Check if order has ONLY boksarice (no majice, no komplet)
+$has_only_boksarice = true;
+$has_boksarice = false;
 foreach ( $order->get_items() as $item ) {
     $name = strtolower( $item->get_name() );
     $product = $item->get_product();
@@ -27,17 +27,17 @@ foreach ( $order->get_items() as $item ) {
     $cat_str = is_array($cats) ? strtolower(implode(' ', $cats)) : '';
     // Majica: category has "majic" OR name has "majic"
     $is_majica = ( strpos($cat_str, 'majic') !== false || strpos($name, 'majic') !== false );
-    // Bokserice: category has "boxer/bokser/orto" OR SKU has "box" OR name has "bokser/airflow"
+    // Boksarice: category has "boxer/bokser/orto" OR SKU has "box" OR name has "bokser/airflow"
     $is_boks = ( strpos($cat_str, 'boxer') !== false || strpos($cat_str, 'bokser') !== false || strpos($cat_str, 'orto') !== false || strpos($sku, 'box') !== false || strpos($name, 'bokser') !== false || strpos($name, 'airflow') !== false );
     // Komplet
     $is_komplet = ( strpos($name, 'komplet') !== false || strpos($cat_str, 'komplet') !== false );
-    if ( $is_boks ) $has_bokserice = true;
-    if ( $is_majica || $is_komplet ) $has_only_bokserice = false;
+    if ( $is_boks ) $has_boksarice = true;
+    if ( $is_majica || $is_komplet ) $has_only_boksarice = false;
 }
-if ( !$has_bokserice ) $has_only_bokserice = false;
+if ( !$has_boksarice ) $has_only_boksarice = false;
 
-// ONLY bokserice in order → upsell MAJICE, else → upsell BOKSERICE
-$upsell_is_majice = $has_only_bokserice;
+// ONLY boksarice in order → upsell MAJICE, else → upsell BOKSERICE
+$upsell_is_majice = $has_only_boksarice;
 
 if ( $upsell_is_majice ) {
     $upsell_product_id = 250; // Crna majica (variable)
@@ -45,22 +45,22 @@ if ( $upsell_is_majice ) {
     $upsell_qty_prices = array( 1 => 12.99, 3 => 29.99, 6 => 39.99 );
     $upsell_qty_names  = array( 1 => '1x Crna Majica', 3 => '3x Crne Majice', 6 => '6x Crnih Majica' );
     $upsell_qty_images = array(
-        1 => 'https://noriks.com/bg/wp-content/uploads/2025/09/black-1.jpg',
-        3 => 'https://noriks.com/bg/wp-content/uploads/2025/09/black-3x.jpg',
-        6 => 'https://noriks.com/bg/wp-content/uploads/2026/01/15xcrnamajica.png',
+        1 => 'https://noriks.com/si/wp-content/uploads/2025/09/black-1.jpg',
+        3 => 'https://noriks.com/si/wp-content/uploads/2025/09/black-3x.jpg',
+        6 => 'https://noriks.com/si/wp-content/uploads/2026/01/15xcrnamajica.png',
     );
-    $upsell_title_text = 'Dodaj majice sada – 50% popusta';
+    $upsell_title_text = 'Dodaj majice zdaj – 50% popusta';
 } else {
-    $upsell_product_id = 2781; // Crne Bokserice
-    $upsell_name       = 'Crne Bokserice';
+    $upsell_product_id = 2781; // Crne Boksarice
+    $upsell_name       = 'Crne Boksarice';
     $upsell_qty_prices = array( 1 => 7.99, 3 => 19.99, 5 => 29.99 );
-    $upsell_qty_names  = array( 1 => '1x Crne Bokserice', 3 => '3x Crne Bokserice', 5 => '5x Crnih Bokseric' );
+    $upsell_qty_names  = array( 1 => '1x Crne Boksarice', 3 => '3x Crne Boksarice', 5 => '5x Crnih Bokseric' );
     $upsell_qty_images = array(
-        1 => 'https://noriks.com/bg/wp-content/uploads/2025/11/crne-boksarice-produktna.jpg',
-        3 => 'https://noriks.com/bg/wp-content/uploads/2025/11/boksarice_3x_crne.png',
-        5 => 'https://noriks.com/bg/wp-content/uploads/2026/01/boksarice_5x_crne.png',
+        1 => 'https://noriks.com/si/wp-content/uploads/2025/11/crne-boksarice-produktna.jpg',
+        3 => 'https://noriks.com/si/wp-content/uploads/2025/11/boksarice_3x_crne.png',
+        5 => 'https://noriks.com/si/wp-content/uploads/2026/01/boksarice_5x_crne.png',
     );
-    $upsell_title_text = 'Dodaj bokserice sada – 50% popusta';
+    $upsell_title_text = 'Dodaj boksarice zdaj – 50% popusta';
 }
 $upsell_product    = wc_get_product( $upsell_product_id );
 $upsell_image      = $upsell_qty_images[3];
@@ -124,9 +124,9 @@ $grid_args = array(
     'type'    => array( 'simple', 'variable' ),
 );
 
-// Try bokserice/majice categories first
+// Try boksarice/majice categories first
 $grid_products = array();
-foreach ( array( 'bokserice', 'boxerice', 'majice', 'majica' ) as $cat_slug ) {
+foreach ( array( 'boksarice', 'boxerice', 'majice', 'majica' ) as $cat_slug ) {
     $cat = get_term_by( 'slug', $cat_slug, 'product_cat' );
     if ( $cat ) {
         $grid_args['category'] = array( $cat_slug );
@@ -449,8 +449,8 @@ body.woocommerce-order-received .woocommerce {
     <div style="width:80px;height:80px;border:4px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
-    <h1 style="color:#fff;font-family:'Roboto',sans-serif;font-size:28px;font-weight:700;margin:0;">Narudžba zaprimljena!</h1>
-    <p style="color:rgba(255,255,255,0.85);font-family:'Roboto',sans-serif;font-size:15px;margin:10px 0 0;">Broj narudžbe: #<?php echo $order->get_order_number(); ?></p>
+    <h1 style="color:#fff;font-family:'Roboto',sans-serif;font-size:28px;font-weight:700;margin:0;">Naročilo prejeto!</h1>
+    <p style="color:rgba(255,255,255,0.85);font-family:'Roboto',sans-serif;font-size:15px;margin:10px 0 0;">Številka naročila: #<?php echo $order->get_order_number(); ?></p>
 </div>
 <script>(function(){var k='splash_<?php echo $order->get_id(); ?>';if(sessionStorage.getItem(k)){document.getElementById('order-splash').style.display='none';return;}sessionStorage.setItem(k,'1');setTimeout(function(){var s=document.getElementById('order-splash');s.style.opacity='0';setTimeout(function(){s.style.display='none';},600);},2000);})();</script>
 
@@ -461,7 +461,7 @@ body.woocommerce-order-received .woocommerce {
     <?php if ( $order->has_status( 'failed' ) ) : ?>
         <div class="ty-success" style="background:#fde8e8;">
             <div class="ty-success-icon" style="background:#dc3545;">✕</div>
-            <h1>Narudžba nije uspjela</h1>
+            <h1>Naročilo ni uspelo</h1>
             <p>Banka je odbila transakciju. Pokušajte ponovno.</p>
             <p style="margin-top:16px;">
                 <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" style="display:inline-block;background:#E8450E;color:#fff;padding:12px 32px;text-decoration:none;font-weight:700;">Pokušaj ponovno</a>
@@ -472,9 +472,9 @@ body.woocommerce-order-received .woocommerce {
         <!-- ✅ Success -->
         <div class="ty-success">
             <div class="ty-success-icon">✓</div>
-            <h1>Vaša narudžba je zaprimljena!</h1>
+            <h1>Vaše naročilo je bilo prejeto!</h1>
             <p>Potvrdu ste primili na <?php echo esc_html( $order->get_billing_email() ); ?></p>
-            <span class="ty-order-num">Narudžba #<?php echo $order->get_order_number(); ?></span>
+            <span class="ty-order-num">Naročilo #<?php echo $order->get_order_number(); ?></span>
         </div>
 
         <!-- ═══ STEP 1: VIGOSHOP UPSELL (COD only) ═══ -->
@@ -496,7 +496,7 @@ body.woocommerce-order-received .woocommerce {
                 <div class="tyuo_middle_section">
                     <div class="sub_title">
                         <span class="sub_title__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.293" viewBox="0 0 15 11.293"><path d="M50.915,62.211,46.07,57.366a.44.44,0,0,1,0-.623L47.208,55.6a.44.44,0,0,1,.623,0l3.084,3.084a.441.441,0,0,0,.623,0l7.512-7.513a.44.44,0,0,1,.623,0l1.138,1.138a.44.44,0,0,1,0,.623l-9.273,9.274a.441.441,0,0,1-.623,0" transform="translate(-12.941 319.806)" fill="#47b426"></path></svg></span>
-                        Bez dodatne dostave – sve u jednom paketu
+                        Brez dodatne dostave – vse v enem paketu
                     </div>
                     <div class="clue_text">
                         <span class="clue_text__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14.333" viewBox="0 0 15 14.333"><path d="M6.885.383,5.1,4a.686.686,0,0,1-.517.375l-3.994.58a.686.686,0,0,0-.38,1.17L3.1,8.945a.686.686,0,0,1,.2.607L2.614,13.53a.686.686,0,0,0,1,.723l3.572-1.878a.686.686,0,0,1,.639,0l3.572,1.878a.686.686,0,0,0,1-.723l-.682-3.978a.686.686,0,0,1,.2-.607l2.89-2.817a.686.686,0,0,0-.38-1.17l-3.994-.58A.686.686,0,0,1,9.9,4L8.116.383a.686.686,0,0,0-1.23,0" fill="#47b426"></path></svg></span>
@@ -657,7 +657,7 @@ body.woocommerce-order-received .woocommerce {
         <!-- 📋 Order items -->
         <div class="ty-section" id="ty-order-items-section">
             <div class="ty-section-header open" onclick="tyToggle(this)">
-                <span id="ty-order-items-header">Stavke narudžbe (<?php echo $order->get_item_count(); ?>)</span>
+                <span id="ty-order-items-header">Postavke naročila (<?php echo $order->get_item_count(); ?>)</span>
                 <span class="ty-chevron">+</span>
             </div>
             <div class="ty-section-body open">
@@ -698,7 +698,7 @@ body.woocommerce-order-received .woocommerce {
         <!-- 📍 Address -->
         <div class="ty-section">
             <div class="ty-section-header open" onclick="tyToggle(this)">
-                <span>Adresa dostave</span>
+                <span>Naslov za dostavo</span>
                 <span class="ty-chevron">+</span>
             </div>
             <div class="ty-section-body open">
@@ -723,7 +723,7 @@ body.woocommerce-order-received .woocommerce {
 
 <?php else : ?>
     <div class="ty-container">
-        <div class="ty-success"><h1>Narudžba</h1>
+        <div class="ty-success"><h1>Naročilo</h1>
         <?php wc_get_template( 'checkout/order-received.php', array( 'order' => false ) ); ?>
         </div>
     </div>
@@ -762,7 +762,7 @@ body.woocommerce-order-received .woocommerce {
             localStorage.removeItem('ty_added_' + orderId);
             localStorage.removeItem(stepKey);
             localStorage.removeItem(key);
-            // Auto-open "Stavke narudžbe" and "Adresa dostave" sections
+            // Auto-open "Postavke naročila" and "Naslov za dostavo" sections
             document.querySelectorAll('.ty-section .ty-section-header').forEach(function(h) {
                 if (!h.classList.contains('open')) {
                     h.classList.add('open');
@@ -832,7 +832,7 @@ body.woocommerce-order-received .woocommerce {
                     // Update item count in header by ID
                     var headerSpan = document.getElementById('ty-order-items-header');
                     if (headerSpan) {
-                        headerSpan.textContent = 'Stavke narudžbe (' + d.data.item_count + ')';
+                        headerSpan.textContent = 'Postavke naročila (' + d.data.item_count + ')';
                     }
                     // Make sure section stays open
                     var section = document.getElementById('ty-order-items-section');
@@ -1049,7 +1049,7 @@ function removeUpsellItem(btn) {
                             if (itemsBody) itemsBody.innerHTML = d2.data.items_html;
                             var headerSpan = document.getElementById('ty-order-items-header');
                             if (headerSpan) {
-                                headerSpan.textContent = 'Stavke narudžbe (' + d2.data.item_count + ')';
+                                headerSpan.textContent = 'Postavke naročila (' + d2.data.item_count + ')';
                             }
                         }
                     });

@@ -100,7 +100,7 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
                   </span>
                   <span class="wc-reserve-note__text">
                     Molimo, požuri! Netko je upravo naručio jedan od proizvoda u tvojoj košarici. 
-                    Rezervacija vrijedi još samo <strong id="wc-reserve-timer">10:00</strong> minuta.
+                    Rezervacija velja samo še <strong id="wc-reserve-timer">10:00</strong> minut.
                   </span>
                 </div>
                 
@@ -479,7 +479,7 @@ $img_id     = $display_obj->get_image_id();
 $upsell_img = $img_id ? wp_get_attachment_image_url( $img_id, 'woocommerce_thumbnail' ) : wc_placeholder_img_src('woocommerce_thumbnail');
 
 $desc = wp_strip_all_tags( $display_obj->get_short_description() );
-if ( ! $desc ) $desc = 'Odličen dodatek k tvoji narudžbi.';
+if ( ! $desc ) $desc = 'Odličen dodatek k tvojemu naročilu.';
 
 $price_pill = wp_strip_all_tags( wc_price( $display_obj->get_price() ) );
 

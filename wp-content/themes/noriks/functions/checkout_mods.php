@@ -327,7 +327,7 @@ add_action( 'wp_footer', function() {
         $('form.checkout').css({'opacity':'0.4','pointer-events':'none','transition':'opacity 0.3s'});
       });
       $(document.body).on('checkout_error', function(){
-        $('#place_order').css('opacity','1').text('Naruči');
+        $('#place_order').css('opacity','1').text('Naroči');
         $('form.checkout').css({'opacity':'1','pointer-events':''});
       });
 
@@ -453,26 +453,26 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     // phone/email priorities already set above (10/20)
 
     // Labels, placeholders, required
-    $fields['billing']['billing_first_name']['label'] = 'Собствено име';
-    $fields['billing']['billing_first_name']['placeholder'] = 'Собствено име';
-    $fields['billing']['billing_last_name']['label'] = 'Фамилно име';
-    $fields['billing']['billing_last_name']['placeholder'] = 'Фамилно име';
-    $fields['billing']['billing_address_1']['label'] = 'Улица';
-    $fields['billing']['billing_address_1']['placeholder'] = 'Улица';
-    $fields['billing']['billing_address_2']['label'] = 'Номер';
-    $fields['billing']['billing_address_2']['placeholder'] = 'Номер';
+    $fields['billing']['billing_first_name']['label'] = 'Ime';
+    $fields['billing']['billing_first_name']['placeholder'] = 'Ime';
+    $fields['billing']['billing_last_name']['label'] = 'Prezime';
+    $fields['billing']['billing_last_name']['placeholder'] = 'Prezime';
+    $fields['billing']['billing_address_1']['label'] = 'Ulica';
+    $fields['billing']['billing_address_1']['placeholder'] = 'Ulica';
+    $fields['billing']['billing_address_2']['label'] = 'Kućni broj';
+    $fields['billing']['billing_address_2']['placeholder'] = 'Kućni broj';
     $fields['billing']['billing_address_2']['required'] = true;
-    $fields['billing']['billing_postcode']['label'] = 'Пощенски код';
-    $fields['billing']['billing_postcode']['placeholder'] = 'Пощенски код';
-    $fields['billing']['billing_city']['label'] = 'Град';
-    $fields['billing']['billing_city']['placeholder'] = 'Изберете град';
+    $fields['billing']['billing_postcode']['label'] = 'Poštanski broj';
+    $fields['billing']['billing_postcode']['placeholder'] = 'Poštanski broj';
+    $fields['billing']['billing_city']['label'] = 'Grad';
+    $fields['billing']['billing_city']['placeholder'] = 'Odaberite grad';
     $fields['billing']['billing_phone']['label'] = 'Telefon';
-    $fields['billing']['billing_phone']['placeholder'] = 'Мобилен номер';
+    $fields['billing']['billing_phone']['placeholder'] = 'Telefonska številka';
     $fields['billing']['billing_phone']['required'] = true;
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_phone']['description'] = '...';
-    $fields['billing']['billing_email']['label'] = 'Имейл адрес';
-    $fields['billing']['billing_email']['placeholder'] = 'Имейл адрес';
+    $fields['billing']['billing_email']['label'] = 'E-mail adresa';
+    $fields['billing']['billing_email']['placeholder'] = 'E-mail adresa';
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_email']['description'] = 'Za potvrdu narudžbe i praćenje pošiljke';
     $fields['billing']['billing_email']['required'] = true;
@@ -502,7 +502,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
  */
 add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
     if ( $key === 'billing_last_name' ) {
-        $field .= '<div class="form-row form-row-wide col-xs-12">Unesite adresu na kojoj ćete biti <b>između 8:00 i 16:00 sati</b>.</div>';
+        $field .= '<div class="form-row form-row-wide col-xs-12">Vnesite naslov, kjer boste dosegljivi <b>med 8:00 in 16:00</b>.</div>';
     }
     return $field;
 }, 10, 2 );
@@ -513,11 +513,11 @@ add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
  * Billing title
  */
 add_action( 'woocommerce_before_checkout_billing_form', function() {
-    echo '<h3 class="checkout-billing-title">Plaćanje i Dostava</h3>';
+    echo '<h3 class="checkout-billing-title">Plačilo in dostava</h3>';
 });
 
-add_filter( 'default_checkout_billing_country', function() { return 'HR'; });
-add_filter( 'woocommerce_order_button_text', function() { return 'Naruči'; });
+add_filter( 'default_checkout_billing_country', function() { return 'SI'; });
+add_filter( 'woocommerce_order_button_text', function() { return 'Naroči'; });
 
 /**
  * Payment gateway order: COD → Stripe → PayPal
@@ -540,7 +540,7 @@ add_action( 'woocommerce_cart_calculate_fees', function( $cart ) {
 
     $chosen_gateway = WC()->session->get( 'chosen_payment_method' );
     if ( $chosen_gateway === 'cod' ) {
-        $cart->add_fee( 'Plaćanje prilikom preuzimanja', 1.99, false );
+        $cart->add_fee( 'Plačilo po povzetju', 1.99, false );
     }
 });
 
@@ -576,7 +576,7 @@ add_action('woocommerce_review_order_before_submit', function(){
         </button>
         <div id="noriks-coupon-expanded" style="display:none;gap:8px;align-items:center;">
             <input type="text" id="noriks_coupon_code" placeholder="Kupon kod" style="flex:1;padding:10px 14px;border:1px solid #ccc;border-radius:6px;font-size:14px;" />
-            <button type="button" style="padding:10px 20px;background:#000;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;" onclick="noriksApplyCoupon()">Primijeni</button>
+            <button type="button" style="padding:10px 20px;background:#000;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;" onclick="noriksApplyCoupon()">Uporabi</button>
             <button type="button" style="padding:8px 10px;background:none;border:1px solid #ddd;border-radius:6px;font-size:14px;color:#999;cursor:pointer;line-height:1;" onclick="this.parentElement.style.display='none';document.getElementById('noriks-coupon-btn').style.display='inline-flex';">✕</button>
         </div>
         <div id="noriks-coupon-msg" style="display:none;margin-top:8px;padding:6px 10px;border-radius:4px;font-size:12px;"></div>
@@ -598,20 +598,20 @@ add_action('woocommerce_review_order_before_submit', function(){
                 msg.innerHTML=html.replace(/<[^>]*>/g,'')||'Kupon kod nije valjan.';
             }else{
                 msg.style.background='#e8fde8';msg.style.color='#080';
-                msg.innerHTML='✅ Kupon primijenjen!';
+                msg.innerHTML='✅ Kupon je bil uporabljen!';
                 document.getElementById('noriks_coupon_code').value='';
                 if(window.jQuery)jQuery('body').trigger('update_checkout');
             }
-            btn.textContent='Primijeni';btn.disabled=false;
+            btn.textContent='Uporabi';btn.disabled=false;
         }).catch(function(){
             msg.style.display='block';msg.style.background='#fde8e8';msg.style.color='#c00';
-            msg.textContent='Greška. Pokušajte ponovo.';btn.textContent='Primijeni';btn.disabled=false;
+            msg.textContent='Napaka. Poskusite znova.';btn.textContent='Uporabi';btn.disabled=false;
         });
     }
     </script>
     <?php
     endif;
-    echo '<h3 class="place-order-title" style="display:block;margin:15px 0 10px;">Sažetak narudžbe</h3>';
+    echo '<h3 class="place-order-title" style="display:block;margin:15px 0 10px;">Povzetek naročila</h3>';
     echo '<div class="vigo-checkout-total order-total shop_table" style="margin-bottom:20px;">';
     woocommerce_order_review();
     echo '</div>';

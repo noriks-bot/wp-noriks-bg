@@ -42,7 +42,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 					
 				//	var_dump($attribute_name);
 						
-						if ( $attribute_name == 'Choose your size' ||  $attribute_name == 'Size' || $attribute_name == 'Veličina'  || $attribute_name == 'Veličina majice'  )     {
+						if ( $attribute_name == 'Choose your size' ||  $attribute_name == 'Size' || $attribute_name == 'Velikost'  || $attribute_name == 'Velikost majice'  )     {
 						    
 						    
 						    
@@ -66,7 +66,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 						
 						
 						<?php
-							if (  $attribute_name == 'Veličina bokseric'  )     {
+							if (  $attribute_name == 'Velikost bokseric'  )     {
 						    
 						    
 						    

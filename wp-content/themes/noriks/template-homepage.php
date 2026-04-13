@@ -47,9 +47,9 @@ get_header(); ?>
 
   <div class="hero__content">
     <!--<p class="hero__eyebrow">NOVO: NORIKS </p>-->
-    <h1 class="hero__title">Majica koja rješava sve probleme.</h1>
+    <h1 class="hero__title">Majica, ki reši vse težave.</h1>
 
-    <a class="hero__btn" href="/bg/shop">KUPUJTE SADA</a>
+    <a class="hero__btn" href="/si/shop">KUPITE ZDAJ</a>
   </div>
 </section>
 
@@ -171,16 +171,16 @@ get_header(); ?>
   
   <section class="collections">
   <div class="collections__header">
-    <h2 class="collections__title">Kupujte po kolekciji</h2>
+    <h2 class="collections__title">Nakupuj po kolekciji</h2>
 
-    <a class="collections__cta" href="/bg/shop">
-      Svi produkti <span aria-hidden="true">›</span>
+    <a class="collections__cta" href="/si/shop">
+      Vsi izdelki <span aria-hidden="true">›</span>
     </a>
   </div>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="/bg/product-category/majice/">
+    <a class="collection-card" href="/si/product-category/majice/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
@@ -194,7 +194,7 @@ get_header(); ?>
             <h3 class="collection-card__name">Majice</h3>
           </div>
           <p class="collection-card__desc">
-           Udobnost cijeli dan. Bez stezanja.
+           Udobje ves dan. Brez zategovanja.
           </p>
         </div>
 
@@ -203,7 +203,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="/bg/product-category/bokserice/">
+    <a class="collection-card" href="/si/product-category/bokserice/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -217,7 +217,7 @@ get_header(); ?>
             <h3 class="collection-card__name">Bokserice</h3>
           </div>
           <p class="collection-card__desc">
-          Mekane. Prozračne. Pouzdane.
+          Mehke. Zračne. Zanesljive.
 
           </p>
         </div>
@@ -227,7 +227,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 3 -->
-    <a class="collection-card" href="/bg/product-category/kompleti/">
+    <a class="collection-card" href="/si/product-category/kompleti/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-kompleti.jpeg"
@@ -242,7 +242,7 @@ get_header(); ?>
        
           </div>
           <p class="collection-card__desc">
-Najbolja vrijednost po paketu.
+Najboljša vrednost v paketu.
           </p>
         </div>
 
@@ -251,7 +251,7 @@ Najbolja vrijednost po paketu.
     </a>
     
     <!-- Card 3 -->
-    <a class="collection-card" href="/bg/product-category/starter-paketi/">
+    <a class="collection-card" href="/si/product-category/starter-paketi/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"
@@ -587,8 +587,8 @@ a:hover {
       <?php echo get_field("homepage_section_2_t1"); ?>
     </h2>
 
-    <a class="collections__cta" href="/bg/shop">
-      Svi produkti  <span aria-hidden="true">›</span>
+    <a class="collections__cta" href="/si/shop">
+      Vsi izdelki  <span aria-hidden="true">›</span>
     </a>
   </div>
 
@@ -873,6 +873,5 @@ a:hover {
 	</div><!-- #primary -->
 <?php
 get_footer();
-
 
 

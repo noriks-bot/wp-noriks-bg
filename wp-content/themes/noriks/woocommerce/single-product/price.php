@@ -154,7 +154,7 @@ if( get_field('multipack_option_1', get_the_ID())  == true  ) {
         
         
         <section class="option-group">
- <!-- <h2 class="option-title">Boja</h2>-->
+ <!-- <h2 class="option-title">Barva</h2>-->
 
   <?php
   
@@ -170,7 +170,7 @@ if ( $is_singles_boxers ) {
     
 ?>
 
-<h2 class="option-title">Boja</h2>
+<h2 class="option-title">Barva</h2>
 
 
 <?php
@@ -194,7 +194,7 @@ if ( $is_singles_boxers ) {
     
     ?>
 
-<h2 class="option-title">Boja</h2>
+<h2 class="option-title">Barva</h2>
 
 
 <?php

@@ -70,6 +70,28 @@ function noriks_get_abandoned_carts($request) {
 }
 
 
+// Bulk cleanup abandoned carts that have orders
+add_action('rest_api_init', function() {
+    register_rest_route('noriks/v1', '/abandoned-carts/cleanup', array(
+        'methods' => 'POST',
+        'callback' => function($req) {
+            global $wpdb;
+            $table = $wpdb->prefix . 'cartflows_ca_cart_abandonment';
+            $body = json_decode($req->get_body(), true);
+            $ids = array_map('intval', $body['ids'] ?? []);
+            if (empty($ids)) return new WP_REST_Response(['error' => 'No IDs'], 400);
+            $cleaned = 0;
+            foreach ($ids as $id) {
+                if ($wpdb->update($table, ['order_status' => 'completed'], ['id' => $id, 'order_status' => 'abandoned'])) $cleaned++;
+            }
+            return new WP_REST_Response(['cleaned' => $cleaned, 'total' => count($ids)], 200);
+        },
+        'permission_callback' => function() {
+            return isset($_GET['key']) && $_GET['key'] === 'n0r1k5-c4rt-4cc355';
+        }
+    ));
+});
+
 
 
 /**
@@ -79,7 +101,7 @@ function noriks_get_abandoned_carts($request) {
 add_action('init', function () {
 	// Server-side redirect for NON-AJAX adds (highest priority wins)
 	add_filter('woocommerce_add_to_cart_redirect', function ($url) {
-		return home_url('/hr/cart/'); // or wc_get_cart_url()
+		return home_url('/si/cart/'); // or wc_get_cart_url()
 	}, 9999);
 });
  */
@@ -90,142 +112,18 @@ add_action('init', function () {
 $webshop_language = get_field("webshop_language", "options");
 
 if( $webshop_language == null  || $webshop_language == false  || $webshop_language == "" ) {
-  $webshop_language = "EN";
+  $webshop_language = "SI";
 }
 
 /*  include language specific files */
 if ($webshop_language == "EN") {
   include(get_template_directory() . '/functions/lang/en.php');
-} else {
-  include(get_template_directory() . '/functions/lang/bg.php');
+} else if ($webshop_language == "SI") {
+  include(get_template_directory() . '/functions/lang/si.php');
+} else if ($webshop_language == "HR") {
+  include(get_template_directory() . '/functions/lang/hr.php');
 }
 /*  include language specific files */
-
-if ( ! function_exists( 'noriks_slug_groups' ) ) {
-	function noriks_slug_groups() {
-		return array(
-			'tees' => array( 'teniski', 'majice', 'majica', 'orto-majice', '1-komad-majice', 'singles' ),
-			'boxers' => array( 'bokseri', 'bokserice', 'boxerice', 'orto-bokserice', 'bokserice-sastavi-paket', '1-komad-bokserice', 'singles-boxers' ),
-			'socks' => array( 'chorapi', 'carape', 'zimske-carape' ),
-			'sets' => array( 'komplekti', 'kompleti', 'bundles' ),
-			'starter_packs' => array( 'startovi-paketi', 'starter-paketi', 'orto-starter' ),
-			'mixed_bundles' => array( 'teniski-i-bokseri-komplekti', 'majice-i-bokserice-paketi', 'orto-majica-bokserica' ),
-			'promo' => array( 'cherniya-petak', 'black-friday' ),
-			'bestsellers' => array( 'nai-prodavani', 'bestsellers' ),
-			'large_packs' => array( 'golemi-paketi', 'veliki-paketi' ),
-			'build_boxers_pack' => array( 'bokseri-po-izbor', 'bokserice-sastavi-paket' ),
-		);
-	}
-}
-
-if ( ! function_exists( 'noriks_term_slugs' ) ) {
-	function noriks_term_slugs( $key ) {
-		$groups = noriks_slug_groups();
-		return isset( $groups[ $key ] ) ? $groups[ $key ] : array( $key );
-	}
-}
-
-if ( ! function_exists( 'noriks_primary_term_slug' ) ) {
-	function noriks_primary_term_slug( $key ) {
-		$slugs = noriks_term_slugs( $key );
-		return reset( $slugs );
-	}
-}
-
-if ( ! function_exists( 'noriks_product_category_url' ) ) {
-	function noriks_product_category_url( $key ) {
-		return home_url( '/product-category/' . noriks_primary_term_slug( $key ) . '/' );
-	}
-}
-
-if ( ! function_exists( 'noriks_has_product_cat' ) ) {
-	function noriks_has_product_cat( $keys, $post_id = null ) {
-		$slugs = array();
-		foreach ( (array) $keys as $key ) {
-			$slugs = array_merge( $slugs, noriks_term_slugs( $key ) );
-		}
-		$slugs = array_values( array_unique( array_filter( $slugs ) ) );
-		return has_term( $slugs, 'product_cat', $post_id );
-	}
-}
-
-if ( ! function_exists( 'noriks_is_product_category_or_child' ) ) {
-	function noriks_is_product_category_or_child( $keys ) {
-		if ( ! is_product_category() ) {
-			return false;
-		}
-
-		$current_term = get_queried_object();
-		if ( ! $current_term || empty( $current_term->term_id ) ) {
-			return false;
-		}
-
-		foreach ( (array) $keys as $key ) {
-			foreach ( noriks_term_slugs( $key ) as $slug ) {
-				if ( $current_term->slug === $slug ) {
-					return true;
-				}
-
-				$parent_term = get_term_by( 'slug', $slug, 'product_cat' );
-				if ( ! $parent_term ) {
-					continue;
-				}
-
-				$ancestors = get_ancestors( $current_term->term_id, 'product_cat' );
-				if ( in_array( $parent_term->term_id, $ancestors, true ) ) {
-					return true;
-				}
-			}
-		}
-
-		return false;
-	}
-}
-
-if ( ! function_exists( 'noriks_run_bg_slug_migration' ) ) {
-	function noriks_run_bg_slug_migration() {
-		if ( get_option( 'noriks_bg_slug_migration_v1' ) ) {
-			return;
-		}
-
-		$migrations = array(
-			'majice'                    => 'teniski',
-			'bokserice'                 => 'bokseri',
-			'kompleti'                  => 'komplekti',
-			'carape'                    => 'chorapi',
-			'starter-paketi'            => 'startovi-paketi',
-			'bestsellers'               => 'nai-prodavani',
-			'veliki-paketi'             => 'golemi-paketi',
-			'black-friday'              => 'cherniya-petak',
-			'bokserice-sastavi-paket'   => 'bokseri-po-izbor',
-			'majice-i-bokserice-paketi' => 'teniski-i-bokseri-komplekti',
-		);
-
-		foreach ( $migrations as $old_slug => $new_slug ) {
-			$term = get_term_by( 'slug', $old_slug, 'product_cat' );
-			if ( ! $term || is_wp_error( $term ) ) {
-				continue;
-			}
-
-			$existing_new = get_term_by( 'slug', $new_slug, 'product_cat' );
-			if ( $existing_new && ! is_wp_error( $existing_new ) ) {
-				continue;
-			}
-
-			wp_update_term(
-				$term->term_id,
-				'product_cat',
-				array(
-					'slug' => $new_slug,
-				)
-			);
-		}
-
-		update_option( 'noriks_bg_slug_migration_v1', gmdate( 'c' ), false );
-	}
-}
-
-add_action( 'init', 'noriks_run_bg_slug_migration', 20 );
 
 /**
  * Assign the Storefront version to a var
@@ -866,15 +764,58 @@ function custom_loop_columns() {
     return 4; // 4 products per row
 }
 
+function noriks_should_use_collection_gallery_image_for_loop($product_id) {
+    return noriks_get_collection_gallery_image_for_loop($product_id) > 0;
+}
+
+function noriks_get_collection_gallery_image_for_loop($product_id) {
+    if ( ! is_tax( 'collections' ) ) {
+        return 0;
+    }
+
+    $term = get_queried_object();
+    if ( ! ( $term instanceof WP_Term ) ) {
+        return 0;
+    }
+
+    $raw = get_term_meta( $term->term_id, 'noriks_collection_gallery_image_map', true );
+    if ( empty( $raw ) || ! function_exists( 'noriks_collection_order_ids_from_string' ) ) {
+        return 0;
+    }
+
+    if ( ! function_exists( 'noriks_collection_gallery_image_map_from_string' ) ) {
+        return 0;
+    }
+
+    $map = noriks_collection_gallery_image_map_from_string( $raw );
+    return isset( $map[ $product_id ] ) ? (int) $map[ $product_id ] : 0;
+}
 
 
 
 add_action( 'woocommerce_before_shop_loop_item_title', 'add_second_product_thumbnail', 11 );
 function add_second_product_thumbnail() {
     global $product;
+    if ( ! $product ) {
+        return;
+    }
+
+    $product_id = $product->get_id();
     $gallery = $product->get_gallery_image_ids();
-    if ( ! empty( $gallery ) ) {
-        $second = wp_get_attachment_image_src( $gallery[0], 'woocommerce_thumbnail' );
+    if ( empty( $gallery ) && ! noriks_should_use_collection_gallery_image_for_loop( $product_id ) ) {
+        return;
+    }
+
+    $secondary_image_id = 0;
+
+    if ( noriks_should_use_collection_gallery_image_for_loop( $product_id ) ) {
+        $secondary_image_id = get_post_thumbnail_id( $product_id );
+    } elseif ( ! empty( $gallery ) ) {
+        $secondary_image_id = (int) $gallery[0];
+    }
+
+    if ( $secondary_image_id ) {
+        $second = wp_get_attachment_image_src( $secondary_image_id, 'woocommerce_thumbnail' );
         if ( $second ) {
             echo '<img class="secondary-image" src="' . esc_url( $second[0] ) . '" alt="" />';
         }
@@ -989,6 +930,23 @@ function my_alt_loop_product_thumbnail() {
     }
 
     $product_id = $product->get_id();
+
+    if ( noriks_should_use_collection_gallery_image_for_loop( $product_id ) ) {
+        $selected_gallery_image_id = noriks_get_collection_gallery_image_for_loop( $product_id );
+        if ( $selected_gallery_image_id ) {
+            echo wp_get_attachment_image(
+                $selected_gallery_image_id,
+                'woocommerce_thumbnail',
+                false,
+                array(
+                    'class'   => 'attachment-woocommerce_thumbnail size-woocommerce_thumbnail',
+                    'loading' => 'lazy',
+                    'alt'     => esc_attr( $product->get_name() ),
+                )
+            );
+            return;
+        }
+    }
 
     // Get your ACF image field (adjust field name if needed)
     // If the field returns an image ID:

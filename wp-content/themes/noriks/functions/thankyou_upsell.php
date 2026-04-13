@@ -281,11 +281,11 @@ function noriks_handle_add_upsell() {
     }
 
     $order = wc_get_order( $order_id );
-    if ( ! $order ) wp_send_json_error( 'Narudžba nije pronađena' );
+    if ( ! $order ) wp_send_json_error( 'Naročilo ni bilo najdeno' );
 
     // Only allow upsell on COD orders in primary-hold
     if ( $order->get_payment_method() !== 'cod' ) {
-        wp_send_json_error( 'Upsell dostupan samo za plaćanje pouzećem' );
+        wp_send_json_error( 'Upsell je na voljo samo pri plačilu po povzetju' );
     }
     if ( $order->get_status() !== 'primary-hold' ) {
         wp_send_json_error( 'Vrijeme za dodavanje je isteklo' );

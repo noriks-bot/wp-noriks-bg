@@ -308,21 +308,21 @@ JS;
                 </div>
                 <button type="button" class="ibb-modal__close">×</button>
                 <div class="ibb-titlebar">
-                  <h2 class="ibb-heading">Odaberi <span class="ibb-step-num">1</span> 
+                  <h2 class="ibb-heading">Izberi <span class="ibb-step-num">1</span> 
                   
                    <?php if( $is_boxers ): ?>
-                  proizvod
+                  izdelek
                   <?php else: ?>
-                  majicu
+                  majico
                   <?php endif; ?>          
                   
                   </h2>
                   <p class="ibb-sub">
                       
                        <?php if( $is_boxers ): ?>
-                    <?php printf(__('Dodajte %1$d proizvod i dobit ćete paket za %2$s', 'ibb'), $slots, $bundle_price); ?>
+                    <?php printf(__('Dodajte %1$d izdelek in prejeli boste paket za %2$s', 'ibb'), $slots, $bundle_price); ?>
                      <?php else: ?>
-                      <?php printf(__('Dodajte %1$d majice i dobit ćete paket za %2$s', 'ibb'), $slots, $bundle_price); ?>
+                      <?php printf(__('Dodajte %1$d majic in prejeli boste paket za %2$s', 'ibb'), $slots, $bundle_price); ?>
                      <?php endif; ?>     
                     
                   </p>

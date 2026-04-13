@@ -131,12 +131,12 @@ add_action('woocommerce_before_add_to_cart_button', function() {
 
     //  Add your image URLs here
     $colors = [
-        'Crna' => '/hr/wp-content/uploads/2025/07/black-1.png',
-        'Bijela' => '/hr/wp-content/uploads/2025/07/white-1.png',
-        'Siva' =>  '/hr/wp-content/uploads/2025/07/gray-1.png',
-        'Tamnoplava' => '/hr/wp-content/uploads/2025/07/blue-1.png',
-        'Zelena' => '/hr/wp-content/uploads/2025/07/green-1.png',
-        'Bez' => '/hr/wp-content/uploads/2025/05/one-beige-1-1.png',
+        'Črna' => '/si/wp-content/uploads/2025/07/black-1.png',
+        'Bela' => '/si/wp-content/uploads/2025/07/white-1.png',
+        'Siva' =>  '/si/wp-content/uploads/2025/07/gray-1.png',
+        'Temno modra' => '/si/wp-content/uploads/2025/07/blue-1.png',
+        'Zelena' => '/si/wp-content/uploads/2025/07/green-1.png',
+        'Bež' => '/si/wp-content/uploads/2025/05/one-beige-1-1.png',
 
     ];
 

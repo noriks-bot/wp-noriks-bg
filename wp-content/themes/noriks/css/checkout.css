@@ -239,7 +239,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
 
 /* ===== Field descriptions via CSS ::after ===== */
 #billing_email_field::after {
-  content: 'Za potvarzhdenie na porachkata i prosyadyavane na pratkata';
+  content: 'Za potrditev naročila in sledenje pošiljki';
   display: block;
   font-size: 13px;
   color: #5f6061;
@@ -252,7 +252,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
   position: relative !important;
 }
 #billing_phone_field::after {
-  content: 'Primer: 0912345678' !important;
+  content: 'Primjer: 0912345678' !important;
   position: absolute !important;
   left: 0 !important;
   bottom: -20px !important;
@@ -261,7 +261,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
   line-height: 1.4 !important;
 }
 #billing_phone_field::before {
-  content: 'Za pomosht pri dostavkata' !important;
+  content: 'Za pomoć s dostavom' !important;
   position: absolute !important;
   right: 0 !important;
   bottom: -20px !important;
@@ -405,5 +405,5 @@ body.woocommerce-checkout .noriks-order-summary .review-product-info div {
   font-weight: 500 !important;
 }
 
-/* More space between total and Naruči button */
+/* More space between total and Naroči button */
 .noriks-order-summary .vigo-checkout-total__sum { margin-bottom: 10px !important; }

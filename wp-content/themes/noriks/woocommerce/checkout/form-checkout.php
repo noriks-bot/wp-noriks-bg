@@ -15,7 +15,7 @@ if ( WC()->cart->is_empty() ) return;
 <div class="before_form container container--xs">
 
 <form name="checkout" method="post" class="checkout woocommerce-checkout"
-      action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data" aria-label="Plaćanje">
+      action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data" aria-label="Plačilo">
 
   <div class="col2-set" id="customer_details">
     <div class="col-1 clearfix">
@@ -61,7 +61,7 @@ if ( WC()->cart->is_empty() ) return;
 
         <!-- COD prompt -->
         <div id="hs-cod-checkout-prompt" style="display:none;">
-          <div class="cod-prompt-text">Dovršite narudžbu sada, <strong>platite pouzećem 🙂</strong></div>
+          <div class="cod-prompt-text">Zaključite naročilo zdaj, <strong>plačajte po povzetju 🙂</strong></div>
           <img decoding="async" class="cod-prompt-image" src="https://images.vigo-shop.com/general/checkout/cod/uni_cash_on_delivery.svg">
         </div>
 
@@ -72,7 +72,7 @@ if ( WC()->cart->is_empty() ) return;
         </div>
 
         <!-- PAYMENT + ORDER SUMMARY + BUTTON — via WC hooks -->
-        <h3 class="payment-title">Način plaćanja</h3>
+        <h3 class="payment-title">Način plačanja</h3>
         <?php woocommerce_checkout_payment(); ?>
 
         <?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
@@ -98,12 +98,12 @@ if ( WC()->cart->is_empty() ) return;
 
 <!-- Terms -->
 <div class="agreed_terms_txt">
-  <span class="policy-agreement-obligation">Klikom na gumb <strong>Naruči</strong> pristajem na narudžbu uz obvezu plaćanja.</span><br>
+  <span class="policy-agreement-obligation">S klikom na gumb <strong>Naroči</strong> se strinjam z naročilom z obveznostjo plačila.</span><br>
   <div class="terms-checkbox-and-links">
     <label class="checkbox">
       <input type="checkbox" class="input-checkbox" name="agree_to_checkout_terms" id="agree_to_terms_checkbox" value="1">
     </label>
-    Pročitao sam i prihvaćam <a href="#" id="terms_conditions_link">Opće uvjete prodaje</a> i <a href="#" id="withdrawal_policy_link">pravo na odustajanje</a>.
+    Prebral sem in sprejemam <a href="#" id="terms_conditions_link">Splošne pogoje prodaje</a> i <a href="#" id="withdrawal_policy_link">pravico do odstopa od nakupa</a>.
   </div>
 </div>
 
