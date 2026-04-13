@@ -453,8 +453,8 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     // phone/email priorities already set above (10/20)
 
     // Labels, placeholders, required
-    $fields['billing']['billing_first_name']['label'] = 'Ime';
-    $fields['billing']['billing_first_name']['placeholder'] = 'Ime';
+    $fields['billing']['billing_first_name']['label'] = 'Име';
+    $fields['billing']['billing_first_name']['placeholder'] = 'Име';
     $fields['billing']['billing_last_name']['label'] = 'Фамилия';
     $fields['billing']['billing_last_name']['placeholder'] = 'Фамилия';
     $fields['billing']['billing_address_1']['label'] = 'Улица';
@@ -466,8 +466,8 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_postcode']['placeholder'] = 'Пощенски код';
     $fields['billing']['billing_city']['label'] = 'Град';
     $fields['billing']['billing_city']['placeholder'] = 'Избери град';
-    $fields['billing']['billing_phone']['label'] = 'Telefon';
-    $fields['billing']['billing_phone']['placeholder'] = 'Telefonska številka';
+    $fields['billing']['billing_phone']['label'] = 'Телефон';
+    $fields['billing']['billing_phone']['placeholder'] = 'Телефонен номер';
     $fields['billing']['billing_phone']['required'] = true;
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_phone']['description'] = '...';

@@ -7631,7 +7631,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						
         
           <div class="related-product-wrapper">
-            <span class="related-product-text">Kupi skupaj in prihrani:</span>
+            <span class="related-product-text">Купи заедно и спести:</span>
           
         <div class="related-product" id="related-product-rp-0">
           <div class="related-product-img-desc">
@@ -7678,7 +7678,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p>
                       <span class="add-purchase-text add-related" id="atc-text-rp-0">Dodaj k nakupu</span>
                       <span class="add-purchase-text remove-related" id="rfc-text-rp-0" style="display:none;">
-                      <span class="remove-upsell-icon"><img src="https://images.hs-plus.com/assets/shared-images/acedd549f8a4b_remove-from-cart.svg"></span>Odstrani</span>
+                      <span class="remove-upsell-icon"><img src="https://images.hs-plus.com/assets/shared-images/acedd549f8a4b_remove-from-cart.svg"></span>Премахни</span>
                     </p>
                   </span>
                 </label>
@@ -8082,7 +8082,7 @@ setDeliveryDate();
 							<summary>
 								<div class="acrd__heading">
 									<span class="material-symbols-outlined filled">package_2</span>
-									<span>Dostava in po&#x161;iljanje</span>
+									<span>Доставка и изпращане</span>
 								</div>
 							</summary>
 							<div class="acrd__body">
@@ -8819,11 +8819,11 @@ setDeliveryDate();
         <div class="review-modal-body">
             <!-- review-form -->
             <form id="review-form" action="https://diwpk57gr7.execute-api.eu-central-1.amazonaws.com/prod/submitReview" enctype="multipart/form-data" method="POST" target="formFrame">
-                <p><label class="review-form__label" for="name">Ime:</label></p>
-                <p><input class="review-form__input" name="name" type="text" maxlength="40" placeholder="Ime (javno vidno)" required></p>
+                <p><label class="review-form__label" for="name">Име:</label></p>
+                <p><input class="review-form__input" name="name" type="text" maxlength="40" placeholder="Име (видимо публично)" required></p>
                 <p><label class="review-form__label" for="email">E-mail:</label></p>
-                <p><input class="review-form__input" name="email" maxlength="60" type="email" placeholder="E-mail (ni javno viden)" required></p>
-                <p><label class="review-form__label">Ocena:</label></p>
+                <p><input class="review-form__input" name="email" maxlength="60" type="email" placeholder="Имейл (не е видим публично)" required></p>
+                <p><label class="review-form__label">Оценка:</label></p>
                 <div class="rate">
                     <input type="radio" id="star5" name="rate" value="5"><label for="star5" title="5">5 stars</label>
                     <input type="radio" id="star4" name="rate" value="4"><label for="star4" title="4">4 stars</label>

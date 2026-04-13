@@ -159,7 +159,7 @@ global $product;
     }
 
     const windowEl = document.getElementById('shipping-window');
-    windowEl.textContent = `Dostava od ${weekdays[first.getDay()]}  ${formatDayMonth(first)} do ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
+    windowEl.textContent = `Доставка от ${weekdays[first.getDay()]} ${formatDayMonth(first)} до ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
 
     // Countdown to midnight
     const cdEl = document.getElementById('midnight-countdown');

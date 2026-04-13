@@ -99,8 +99,8 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
                     </svg>
                   </span>
                   <span class="wc-reserve-note__text">
-                    Molimo, požuri! Netko je upravo naručio jedan od proizvoda u tvojoj košarici. 
-                    Rezervacija velja samo še <strong id="wc-reserve-timer">10:00</strong> minut.
+                    Моля, побързай! Някой току-що поръча един от продуктите в твоята количка.
+                    Резервацията е валидна само още <strong id="wc-reserve-timer">10:00</strong> минути.
                   </span>
                 </div>
                 
@@ -875,11 +875,11 @@ img.emoji {
 
         <div class="upsell-actions">
           <button type="button" class="upsell-add-btn" id="upsell-add-btn">
-            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'DODANO' : 'Dodaj u košaricu'; ?></span>
+            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'ДОБАВЕНО' : 'Добави в количката'; ?></span>
           </button>
 
           <button type="button" class="upsell-remove-btn" id="upsell-remove-btn" <?php echo $upsell_in_cart ? '' : 'style="display:none"'; ?>>
-        ️ <span>Odstrani</span>
+        ️ <span>Премахни</span>
           </button>
         </div>
 
@@ -888,7 +888,7 @@ img.emoji {
 
     <div class="upsell-loader" aria-hidden="true">
       <div class="upsell-loader__dots"><span></span><span></span><span></span></div>
-      <div class="upsell-loader__text">Obrađujem…</div>
+      <div class="upsell-loader__text">Обработва се…</div>
     </div>
   </div>
 
@@ -958,7 +958,7 @@ img.emoji {
       if (removeBtn) removeBtn.style.display = isAdded ? 'inline-flex' : 'none';
 
       setOptionsDisabled(isAdded);
-      if (btnText) btnText.textContent = isAdded ? 'DODANO' : 'Dodaj u košaricu';
+      if (btnText) btnText.textContent = isAdded ? 'ДОБАВЕНО' : 'Добави в количката';
     }
 
     function clearAttrHiddenInputs(){
@@ -1220,7 +1220,7 @@ img.emoji {
         }
 
         if (!removeUrl) {
-          alert('Ne mogu ukloniti proizvod (ne mogu pronaći remove link u košarici).');
+          alert('Не мога да премахна продукта (не намирам линка за премахване в количката).');
           checkbox.checked = true;
           syncAddedUI(true);
           setBusy(false);
@@ -1303,4 +1303,3 @@ img.emoji {
 
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
-

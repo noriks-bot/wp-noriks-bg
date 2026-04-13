@@ -32,7 +32,7 @@ if ( WC()->cart->is_empty() ) return;
 
         <!-- SHIPPING -->
         <div id="custom_shipping">
-          <h3>Dostava</h3>
+          <h3>Доставка</h3>
           <ul class="shipping_method_custom">
             <li class="standard-shipping shipping-tab">
               <input name="shipping_method[0]" data-index="0" id="shipping_method_0_standard_custom"
@@ -55,7 +55,7 @@ if ( WC()->cart->is_empty() ) return;
           </ul>
           <div class="delivery-from-eu-warehouse">
             <img decoding="async" class="delivery-from-eu-warehouse__icon" src="https://images.vigo-shop.com/general/flags/eu-warehouse.svg">
-            <span class="delivery-from-eu-warehouse__text">Skladište u EU</span>
+            <span class="delivery-from-eu-warehouse__text">Склад в ЕС</span>
           </div>
         </div>
 
