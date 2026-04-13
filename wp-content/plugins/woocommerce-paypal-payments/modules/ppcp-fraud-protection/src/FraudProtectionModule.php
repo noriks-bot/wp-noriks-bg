@@ -38,12 +38,17 @@ class FraudProtectionModule implements ServiceModule, ExtendingModule, Executabl
              * @psalm-suppress MissingClosureParamType
              * @psalm-suppress MissingClosureReturnType
              */
-            static function ($integrations) use ($container) {
+            static function ($integrations) {
                 // WC always creates a new instance here.
                 $integrations[] = RecaptchaIntegration::class;
                 return $integrations;
             }
         );
+        add_filter('woocommerce_generate_ppcp_recaptcha_log_html', function () use ($container): string {
+            $recaptcha = $container->get('fraud-protection.recaptcha');
+            assert($recaptcha instanceof Recaptcha);
+            return $recaptcha->render_settings_page_log();
+        });
         add_action('wp_enqueue_scripts', static function () use ($container): void {
             $recaptcha = $container->get('fraud-protection.recaptcha');
             assert($recaptcha instanceof Recaptcha);

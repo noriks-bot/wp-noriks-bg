@@ -269,6 +269,9 @@ class Cartflows_Ca_Email_Schedule {
 		$email_data->email_body    = filter_input( INPUT_POST, 'email_body', FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 		$email_data->email_subject = $helper_class->sanitize_text_filter( 'email_subject', 'POST' );
 		$email_data->email_body    = html_entity_decode( $email_data->email_body, ENT_COMPAT, 'UTF-8' );
+		$email_data->email_body    = preg_replace( '#<script\b[^>]*>[\s\S]*?<\/script>#i', '', $email_data->email_body );
+		$email_data->email_body    = preg_replace( '#\s+on[a-z]+\s*=\s*(?:"[^"]*"|\'[^\']*\'|[^\s>]*)#i', '', $email_data->email_body );
+		$email_data->email_body    = preg_replace( '#(href|src)\s*=\s*(["\'])\s*javascript:[^"\']*\2#i', '$1=$2$2', $email_data->email_body );
 		$email_data->other_fields  = maybe_serialize(
 			[
 				'wcf_first_name' => $current_user->user_firstname,

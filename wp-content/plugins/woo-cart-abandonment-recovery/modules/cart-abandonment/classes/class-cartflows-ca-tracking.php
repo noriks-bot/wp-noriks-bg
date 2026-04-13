@@ -548,6 +548,38 @@ class Cartflows_Ca_Tracking {
 	}
 
 	/**
+	 * Validates that a webhook URL is safe to use as an outbound HTTP target.
+	 *
+	 * Rejects non-HTTP/HTTPS schemes, loopback hostnames, and private/reserved
+	 * IP ranges to prevent Server-Side Request Forgery (SSRF).
+	 *
+	 * @param string $url The URL to validate.
+	 * @return bool True if the URL is safe to request, false otherwise.
+	 */
+	private function is_safe_webhook_url( $url ): bool {
+		if ( empty( $url ) || ! wp_http_validate_url( $url ) ) {
+			return false;
+		}
+
+		$host = strtolower( (string) wp_parse_url( $url, PHP_URL_HOST ) );
+
+		// Block loopback hostnames not caught by wp_http_validate_url().
+		if ( in_array( $host, array( 'localhost', '::1', '[::1]' ), true ) ) {
+			return false;
+		}
+
+		// Block private and reserved IP ranges (includes 169.254.x.x link-local
+		// used by AWS/GCP/Azure metadata services).
+		if ( filter_var( $host, FILTER_VALIDATE_IP )
+			&& ! filter_var( $host, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE )
+		) {
+			return false;
+		}
+
+		return true;
+	}
+
+	/**
 	 * Send zapier webhook.
 	 *
 	 * @param string $session_id   session id.
@@ -560,6 +592,10 @@ class Cartflows_Ca_Tracking {
 		if ( $checkout_details && wcf_ca()->utils->is_zapier_trigger_enabled() ) {
 			$trigger_details = [];
 			$url             = get_option( 'wcf_ca_zapier_cart_abandoned_webhook' );
+
+			if ( ! $this->is_safe_webhook_url( $url ) ) {
+				return;
+			}
 
 			$other_details                       = maybe_unserialize( $checkout_details->other_fields );
 			$trigger_details['first_name']       = $other_details['wcf_first_name'];
@@ -1091,14 +1127,49 @@ class Cartflows_Ca_Tracking {
 	}
 
 	/**
-	 *  Decode and get the original contents.
+	 * Decode a recovery token and return the original data array.
 	 *
-	 * @param string $token token.
+	 * Supports two formats for backward compatibility:
+	 *  - New (signed): base64( payload '|' hmac_sha256(payload) ) — HMAC verified; rejected if tampered.
+	 *  - Legacy:       base64( payload ) — no signature; accepted to keep existing emails working.
+	 *
+	 * @param string $token token from URL.
+	 * @return array Decoded data, or empty array if the token is invalid/tampered.
 	 */
 	public function wcf_decode_token( $token ) {
 		$token = sanitize_text_field( $token );
-		parse_str( base64_decode( urldecode( $token ) ), $token );
-		return $token;
+		// Use rawurldecode() instead of urldecode() so that base64's '+' character
+		// is preserved. PHP auto-decodes $_GET values, so by the time a token
+		// reaches this method it is already URL-decoded; calling urldecode() again
+		// would convert base64 '+' to a space, corrupting the string before
+		// base64_decode and causing HMAC verification to always fail.
+		$decoded = base64_decode( rawurldecode( $token ) );
+
+		if ( false === $decoded || '' === $decoded ) {
+			return [];
+		}
+
+		// New signed format: find the last '|' which separates payload from HMAC.
+		// http_build_query() never produces '|', so this is unambiguous.
+		$pipe_pos = strrpos( $decoded, '|' );
+		if ( false !== $pipe_pos ) {
+			$payload   = substr( $decoded, 0, $pipe_pos );
+			$signature = substr( $decoded, $pipe_pos + 1 );
+			$expected  = hash_hmac( 'sha256', $payload, wp_salt( 'auth' ) );
+
+			// Reject tampered tokens outright.
+			if ( ! hash_equals( $expected, $signature ) ) {
+				return [];
+			}
+
+			parse_str( $payload, $result );
+			return $result;
+		}
+
+		// Legacy format (no '|') — accepted during transition so existing
+		// recovery emails continue to work until they naturally expire.
+		parse_str( $decoded, $result );
+		return $result;
 	}
 
 	/**

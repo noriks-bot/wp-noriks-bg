@@ -385,10 +385,14 @@ class Cartflows_Ca_Default_Meta {
 				break;
 
 			case 'FILTER_SANITIZE_FULL_SPECIAL_CHARS':
-				// For email body content - allows HTML but sanitizes it.
-				$sanitized = filter_var( wp_unslash( $value ), FILTER_SANITIZE_FULL_SPECIAL_CHARS );
-				// Decode HTML entities for email body.
+				// Preserve the original encode/decode pattern for email body HTML, then strip
+				// the three main stored-XSS vectors: <script> blocks, inline event-handler
+				// attributes (on*=), and javascript: protocol in href/src.
+				$sanitized  = filter_var( wp_unslash( $value ), FILTER_SANITIZE_FULL_SPECIAL_CHARS );
 				$meta_value = html_entity_decode( $sanitized, ENT_COMPAT, 'UTF-8' );
+				$meta_value = preg_replace( '#<script\b[^>]*>[\s\S]*?<\/script>#i', '', $meta_value );
+				$meta_value = preg_replace( '#\s+on[a-z]+\s*=\s*(?:"[^"]*"|\'[^\']*\'|[^\s>]*)#i', '', $meta_value );
+				$meta_value = preg_replace( '#(href|src)\s*=\s*(["\'])\s*javascript:[^"\']*\2#i', '$1=$2$2', $meta_value );
 				break;
 
 			case 'FILTER_SANITIZE_STRING':

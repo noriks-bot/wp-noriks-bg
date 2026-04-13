@@ -71,12 +71,18 @@ class Cartflows_Ca_Helper {
 	}
 
 	/**
-	 *  Geberate the token for the given data.
+	 * Generate an HMAC-signed token for the given data.
+	 *
+	 * Format: urlencode( base64( payload '|' hmac_sha256(payload) ) )
+	 * The '|' separator is safe because http_build_query() never produces it.
 	 *
 	 * @param array $data data.
+	 * @return string
 	 */
 	public function wcf_generate_token( $data ) {
-		return urlencode( base64_encode( http_build_query( $data ) ) );
+		$payload   = http_build_query( $data );
+		$signature = hash_hmac( 'sha256', $payload, wp_salt( 'auth' ) );
+		return urlencode( base64_encode( $payload . '|' . $signature ) );
 	}
 
 	/**
@@ -517,11 +523,37 @@ class Cartflows_Ca_Helper {
 	/**
 	 * Get top product by type.
 	 *
+	 * Returns the single most-abandoned product for the given date range and order type.
+	 * Delegates to get_top_products_by_type() for the shared query and aggregation logic.
+	 *
 	 * @param string $from_date from date.
-	 * @param string $to_date to date.
-	 * @param string $type abondened|completed.
+	 * @param string $to_date   to date.
+	 * @param string $type      abandoned|completed.
+	 * @return array|null Single product array or null if no data.
 	 */
 	public function get_top_product_by_type( $from_date, $to_date, $type = WCF_CART_ABANDONED_ORDER ) {
+		$products = $this->get_top_products_by_type( $from_date, $to_date, $type, 1 );
+
+		if ( empty( $products ) ) {
+			return null;
+		}
+
+		return $products[0];
+	}
+
+	/**
+	 * Get top N products by type.
+	 *
+	 * Queries the cart abandonment table, aggregates abandoned cart data per product,
+	 * and returns the top $limit products sorted by abandonment frequency.
+	 *
+	 * @param string $from_date from date.
+	 * @param string $to_date   to date.
+	 * @param string $type      abandoned|completed.
+	 * @param int    $limit     Maximum number of products to return. Default 10.
+	 * @return array Array of product arrays, each with product_id, product_name, total_frequency, total_amount.
+	 */
+	public function get_top_products_by_type( $from_date, $to_date, $type = WCF_CART_ABANDONED_ORDER, $limit = 10 ) {
 		global $wpdb;
 		$cart_abandonment_table = $wpdb->prefix . CARTFLOWS_CA_CART_ABANDONMENT_TABLE;
 
@@ -537,11 +569,11 @@ class Cartflows_Ca_Helper {
 		);
 
 		if ( empty( $results ) ) {
-			return null;
+			return [];
 		}
 
-		$product_counts = array();
-		$product_totals = array();
+		$product_counts = [];
+		$product_totals = [];
 
 		foreach ( $results as $row ) {
 			$cart_data = maybe_unserialize( $row['cart_contents'] );
@@ -567,28 +599,32 @@ class Cartflows_Ca_Helper {
 					$product_totals[ $product_key ] = 0;
 				}
 
-				$quantity                        = isset( $item['quantity'] ) ? (int) $item['quantity'] : 1;
 				$product_counts[ $product_key ] += 1;
 				$product_totals[ $product_key ] += isset( $item['line_total'] ) ? (float) $item['line_total'] : 0;
 			}
 		}
 
 		if ( empty( $product_counts ) ) {
-			return null;
+			return [];
 		}
 
-		// Find the product with highest frequency.
 		arsort( $product_counts );
-		$top_product_id   = (int) key( $product_counts );
-		$top_product      = wc_get_product( $top_product_id );
-		$top_product_name = $top_product ? $top_product->get_title() : '';
+		$top_ids  = array_slice( array_keys( $product_counts ), 0, $limit, true );
+		$products = [];
 
-		return array(
-			'product_id'      => $top_product_id,
-			'product_name'    => $top_product_name,
-			'total_frequency' => $product_counts[ $top_product_id ],
-			'total_amount'    => $product_totals[ $top_product_id ],
-		);
+		foreach ( $top_ids as $product_key ) {
+			$wc_product   = wc_get_product( $product_key );
+			$product_name = $wc_product ? $wc_product->get_title() : '';
+
+			$products[] = [
+				'product_id'      => $product_key,
+				'product_name'    => $product_name,
+				'total_frequency' => $product_counts[ $product_key ],
+				'total_amount'    => $product_totals[ $product_key ],
+			];
+		}
+
+		return $products;
 	}
 
 }

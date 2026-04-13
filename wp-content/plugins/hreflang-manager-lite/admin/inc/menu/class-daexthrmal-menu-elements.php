@@ -965,7 +965,7 @@ class Daexthrmal_Menu_Elements {
 						<div class="daexthrmal-pro-features__description">
 							<?php
 							esc_html_e(
-								'Sync hreflang data across multiple websites, bulk import entries from a spreadsheet, unlock advanced tools like the Locale Selector and Hreflang Checker, add hreflang directly in the post editor, and more!',
+								'Sync hreflang data across multiple websites, bulk import entries from spreadsheets, unlock advanced tools like the Locale Selector and Hreflang Checker, implement hreflang in XML sitemaps, and more!',
 								'hreflang-manager-lite'
 							);
 							?>
@@ -1485,6 +1485,9 @@ class Daexthrmal_Menu_Elements {
 		// Display the Header Bar.
 		$this->header_bar();
 
+		// Allow the PluginNoticesManager class to add a notice below the header bar when needed.
+		do_action( 'daextpnm_after_header_bar' );
+
 		// Display the main content of the menu.
 		if ( 'crud' === $this->context ) {
 
@@ -1498,8 +1501,6 @@ class Daexthrmal_Menu_Elements {
 
 		}
 
-		// Display the Pro features section.
-		$this->display_pro_features();
 	}
 
 	/**

@@ -40,7 +40,7 @@ class Daexthrmal_Shared {
 	private function __construct() {
 
 		$this->data['slug'] = 'daexthrmal';
-		$this->data['ver']  = '1.13';
+		$this->data['ver']  = '1.17';
 		$this->data['dir']  = substr( plugin_dir_path( __FILE__ ), 0, -7 );
 		$this->data['url']  = substr( plugin_dir_url( __FILE__ ), 0, -7 );
 
@@ -2148,6 +2148,27 @@ class Daexthrmal_Shared {
 
 			}
 
+	}
+
+	/**
+	 * Get the post types with UI.
+	 *
+	 * @return array|string[]|WP_Post_Type[]
+	 */
+	public function get_post_types_with_ui() {
+
+		// Load the assets for the post editor.
+		$available_post_types_a = get_post_types(
+				array(
+						'public'  => true,
+						'show_ui' => true,
+				)
+		);
+
+		// Remove the "attachment" post type.
+		$available_post_types_a = array_diff( $available_post_types_a, array( 'attachment' ) );
+
+		return $available_post_types_a;
 	}
 
 }

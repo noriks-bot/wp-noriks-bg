@@ -3,7 +3,7 @@ Contributors: sujaypawar, wpcrafter
 Tags: woocommerce, cart abandonment, cart recovery
 Requires at least: 5.4
 Tested up to: 6.9
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -163,6 +163,10 @@ You can report the issue through our [Bug Bounty Program](https://brainstormforc
 4. General settings for Email, Webhook (Coupon Code), GDPR
 
 == Changelog ==
+
+= Version 2.1.1 - Wednesday, 18th March 2026 =
+- New: Added integration with the WordPress Abilities API.
+- Improvement: Strengthened the plugin's security.
 
 = Version 2.1.0 - Tuesday, 24th February 2026 =
 - Security Fix: Hardened the security of the plugin suggested by PatchStack.
