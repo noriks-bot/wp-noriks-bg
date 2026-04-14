@@ -133,7 +133,7 @@ global $product;
 
 <script>
   (function () {
-    const weekdays = ['nedjelja','ponedjeljak','utorak','srijeda','četvrtak','petak','subota'];
+    const weekdays = ['неделя','понеделник','вторник','сряда','четвъртък','петък','събота'];
 
     // Helper to add business days (skip Saturday/Sunday)
     function addBusinessDays(date, days) {

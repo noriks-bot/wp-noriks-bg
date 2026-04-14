@@ -47,7 +47,7 @@ if ( WC()->cart->is_empty() ) return;
                     <span class="shipping_method_delivery_price tag tag--red">
                       <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>
                     </span>
-                    <span class="delivery_img"><img decoding="async" class="hrvatska_posta standard" src="https://images.vigo-shop.com/general/curriers/home_small_paket24@2x.png"/></span>
+                    <span class="delivery_img"><img decoding="async" class="gls standard" src="<?php echo esc_url( WC()->plugin_url() . '/assets/images/shipping_providers/gls.png' ); ?>"/></span>
                   </div>
                 </div>
               </label>
@@ -67,8 +67,8 @@ if ( WC()->cart->is_empty() ) return;
 
         <!-- VAT -->
         <div id="hs-vat-tax-checkout-prompt">
-          <span class="tax-and-vat-checkout-claims">Nema dodatnih troškova za carinu</span>
-          <span class="tax-and-vat-checkout-claims">PDV je uključen u cijenu</span>
+          <span class="tax-and-vat-checkout-claims">Няма допълнителни разходи за мито</span>
+          <span class="tax-and-vat-checkout-claims">ДДС е включен в цената</span>
         </div>
 
         <!-- PAYMENT + ORDER SUMMARY + BUTTON — via WC hooks -->
@@ -114,7 +114,7 @@ if ( WC()->cart->is_empty() ) return;
 <script>
 jQuery(function($){
   /* Delivery dates — same logic as product page (meta.php) */
-  var days=['nedjelja','ponedjeljak','utorak','srijeda','četvrtak','petak','subota'];
+  var days=['неделя','понеделник','вторник','сряда','четвъртък','петък','събота'];
   function addBiz(d,n){var r=new Date(d);while(n>0){r.setDate(r.getDate()+1);if(r.getDay()!==0&&r.getDay()!==6)n--;}return r;}
   var now=new Date(),from=addBiz(now,2),to=addBiz(now,3);
   $('#js-delivery-dates').text(days[from.getDay()]+', '+from.getDate()+'.'+(from.getMonth()+1)+'. - '+days[to.getDay()]+', '+to.getDate()+'.'+(to.getMonth()+1)+'.');
