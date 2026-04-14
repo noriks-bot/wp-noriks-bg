@@ -1482,7 +1482,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
               <div class="avatar">👤</div>
             <?php endif; ?>
             <div class="name"><?php echo esc_html($name); ?></div>
-            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Потвърдено','your-textdomain'); ?></span>
           </div>
           <div class="content"><?php echo esc_html($text); ?></div>
         </article>
@@ -1519,7 +1519,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
               <div class="avatar">👤</div>
             <?php endif; ?>
             <div class="name"><?php echo esc_html($name); ?></div>
-            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Потвърдено','your-textdomain'); ?></span>
           </div>
           <?php if (!empty($review['headline'])) : ?>
             <div class="headline"><?php echo esc_html($review['headline']); ?></div>
@@ -1614,7 +1614,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
           <div class="identity">
             ${avatarHtml(avatarUrl)}
             <div class="name">${esc(name)}</div>
-            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Потвърдено','your-textdomain'); ?></span>
           </div>
           ${headline ? `<div class="headline">${esc(headline)}</div>` : ''}
           <div class="content">${esc(text)}</div>
