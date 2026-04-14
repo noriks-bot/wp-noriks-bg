@@ -471,8 +471,8 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_phone']['required'] = true;
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_phone']['description'] = '...';
-    $fields['billing']['billing_email']['label'] = 'E-mail adresa';
-    $fields['billing']['billing_email']['placeholder'] = 'E-mail adresa';
+    $fields['billing']['billing_email']['label'] = 'Имейл адрес';
+    $fields['billing']['billing_email']['placeholder'] = 'Имейл адрес';
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_email']['description'] = 'Za potvrdu narudžbe i praćenje pošiljke';
     $fields['billing']['billing_email']['required'] = true;
@@ -502,7 +502,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
  */
 add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
     if ( $key === 'billing_last_name' ) {
-        $field .= '<div class="form-row form-row-wide col-xs-12">Vnesite naslov, kjer boste dosegljivi <b>med 8:00 in 16:00</b>.</div>';
+        $field .= '<div class="form-row form-row-wide col-xs-12">Въведете адрес, на който ще бъдете на разположение <b>между 8:00 и 16:00</b>.</div>';
     }
     return $field;
 }, 10, 2 );

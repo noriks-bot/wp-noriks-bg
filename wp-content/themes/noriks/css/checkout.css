@@ -252,7 +252,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
   position: relative !important;
 }
 #billing_phone_field::after {
-  content: 'Primjer: 0912345678' !important;
+  content: 'Пример: 0912345678' !important;
   position: absolute !important;
   left: 0 !important;
   bottom: -20px !important;
@@ -261,7 +261,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
   line-height: 1.4 !important;
 }
 #billing_phone_field::before {
-  content: 'Za pomoć s dostavom' !important;
+  content: 'За помощ при доставката' !important;
   position: absolute !important;
   right: 0 !important;
   bottom: -20px !important;

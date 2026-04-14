@@ -321,13 +321,13 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-        ZAŠTO ĆE TI OVA MAJICA POSTATI STANDARD?
+        ЗАЩО ТАЗИ ТЕНИСКА ЩЕ СТАНЕ ТВОЯТ СТАНДАРТ?
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Dizajnirana za stvarni život
+        <p><strong>Създадена за реалния живот
 </strong></p>
-        <p class="description">Ova majica napravljena je za cjelodnevno nošenje, od jutra do večeri. Ne traži prilagođavanje ni razmišljanje — jednostavno stoji dobro u svakoj situaciji.
+        <p class="description">Тази тениска е създадена за целодневно носене, от сутрин до вечер. Не изисква нагласяне или мислене — просто стои добре във всяка ситуация.
 </p>
       </div>
 
@@ -777,7 +777,7 @@ a:hover {
 
 <section style="display:block; max-width:1440px; margin:0 auto; padding-bottom:30px;" class="most-popular">
   <div class="container" style="padding-left:10px; padding-right:10px;">
-    <h2 class="section-title" style="margin-bottom:20px;">Gotove kombinacije – jednostavno i brzo</h2>
+    <h2 class="section-title" style="margin-bottom:20px;">Готови комбинации – лесно и бързо</h2>
 
     <div class="products-grid slider-mobile">
       <?php foreach ($products as $index => $product): ?>

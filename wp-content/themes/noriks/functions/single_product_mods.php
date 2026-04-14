@@ -62,7 +62,7 @@ add_action( 'wp_footer', function () {
 	document.addEventListener('DOMContentLoaded', function () {
 	  var btn = document.querySelector('.storefront-sticky-add-to-cart__content-button');
 	  if (!btn) return;
-	  btn.textContent = 'Natrag na odabir';
+	  btn.textContent = 'Назад към избора';
 	  btn.setAttribute('href', '#title-buy-now'); // put your desired URL here
 	});
 	</script>
@@ -104,5 +104,4 @@ add_filter( 'woocommerce_single_product_carousel_options', function ( $options )
 
     return $options;
 } );
-
 
