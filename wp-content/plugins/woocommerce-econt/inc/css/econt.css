@@ -1,0 +1,329 @@
+
+.econt_shipping_to_door, .econt_shipping_to_office, .econt_shipping_to_machine, .econt_shipping_from_door, .econt_shipping_from_office, .econt_shipping_from_machine, .econt_shipping_cost, #econt_city_courier_field, .econt_shipping_post_code { display:none; }
+
+.econt_clear {clear:both; }
+
+#woocommerce_econt_shipping_method_live_description {
+	margin: 2px 0 5px;
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Center the loader */
+#econtLoader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ui-autocomplete-loading {
+  background: url('/wp-includes/images/spinner.gif') no-repeat !important;
+  background-position: right 10px center !important;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;   
+    padding: 4px 0;
+    margin: 0 0 10px 25px;
+    list-style: none;
+    background-color: #ffffff;
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.ui-state-hover, .ui-state-active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0088cc;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+}
+
+.econt-table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin:0;
+  padding:0;
+  width: 100%;
+}
+.econt-table tr {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+.econt-table th, .econt-table td {
+  padding: 10px;
+  text-align: center;
+}
+.econt-table th {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  .econt-table {
+    border: 0;
+  }
+  .econt-table thead {
+    display: none;
+  }
+  .econt-table tr {
+    border-bottom: 2px solid #ddd;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .econt-table td {
+    border-bottom: 1px dotted #ccc;
+    display: block;
+    font-size: 13px;
+    text-align: left;
+  }
+  .econt-table td:last-child {
+    border-bottom: 0;
+  }
+  .econt-table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.edit_econt_address, a.edit_econt_address::after  {
+  font-family: Dashicons;
+  content: '\f464';
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  vertical-align: top;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a.edit_econt_address {
+  width: 14px;
+  height: 0;
+  padding: 14px 0 0;
+  margin: 0 0 0 6px;
+  overflow: hidden;
+  position: relative;
+  color: #999;
+  border: 0;
+  float: right;
+}
+
+a.edit_econt_address:hover {
+    color: #000000;
+}
+
+#econt_door_postcode, #econt_offices_postcode, #econt_machines_postcode {
+    pointer-events: none;
+}
+
+/* fix a bug with some thames conflicting the office locator colorbox*/
+#cboxTitle {
+    z-index: -1;
+}
+
+@media (min-width: 768px) {
+#econt_door_street_field, #econt_door_quarter_field {
+  width: 60%;
+}
+
+#econt_offices_postcode_field, #econt_door_postcode_field, #econt_door_street_num_field, #econt_door_street_bl_field, #econt_machines_postcode_field, #econt_door_street_vh_field, #econt_door_street_et_field, #econt_door_street_ap_field {
+  width: 30%;
+}
+
+#econt_door_street_vh_field, #econt_door_street_et_field, #econt_door_street_ap_field {
+  float: left;
+}
+
+#econt_door_street_vh_field, #econt_door_street_et_field {
+  margin-right: 4.7% !important;
+}
+
+}
+
+/* wrap select2 checkout fields */
+.select2-selection--single {
+  height: 100% !important;
+}
+.select2-selection__rendered{
+  word-wrap: break-word !important;
+  text-overflow: inherit !important;
+  white-space: normal !important;
+}
+
+.econt_hide {
+  display: none!important;
+}
+
+.edit_econt_address, a.edit_econt_address::after, #edit_econt_address_user_checkout, a#edit_econt_address_user_checkout::after  {
+  font-family: Dashicons;
+  content: '\f464';
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  vertical-align: top;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a.edit_econt_address, a#edit_econt_address_user_checkout {
+  width: 14px;
+  height: 0;
+  padding: 14px 0 0;
+  margin: 0 0 0 6px;
+  overflow: hidden;
+  position: relative;
+  color: #999;
+  border: 0;
+  float: right;
+}
+
+a.edit_econt_address:hover {
+    color: #000000;
+}                            
+
+#econt_user_checkout_field {
+    cursor: pointer;
+}
+
+#econt_shipping_to_field {
+  overflow: hidden;
+}
+
+
+.econt_shipping_to label {
+  float: left;
+  clear: none;
+  padding: 2px 1em 0 0;
+}
+
+.econt_shipping_to_input {
+  float: left;
+  clear: none;
+  margin:  10px 5px 0 0;
+}
+
+@media (max-width: 532px) {
+  label[for=econt_shipping_to_buttons_DOOR]:first-child {
+      display: none !important;
+  }
+}
+
+#econt_shipping_to_buttons_field {
+  padding-bottom: 20px;
+}
+
+.select2-results__option.loading-results,
+.select2-results__option.select2-results__option--load-more {
+    background-image: url('/wp-admin/images/spinner.gif');
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    background-position: 10px 50%;
+}
+
+.econt_wc_orders_list { 
+  appearance: none; 
+  background-color: inherit; 
+  border: none; 
+  border-radius: 6px; 
+  box-shadow: none; 
+  box-sizing: initial; 
+  color: #2271b1; 
+  cursor: pointer; 
+  display: inline-block; 
+  font-weight: inherit; 
+  padding: 5px; 
+  position: relative; 
+  text-align: center; 
+  text-decoration: none; 
+  user-select: none; 
+  -webkit-user-select: none; 
+  touch-action: manipulation; 
+  vertical-align: middle; 
+  white-space: nowrap; 
+  margin: 5px; 
+  }
+
+  .econt_wc_orders_list:hover { 
+    background-color: #234182; 
+    color: #fff; 
+    cursor: pointer; 
+    margin: 5px; 
+  }
+
+.econt-colorbox-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.econt-colorbox-table th, .econt-colorbox-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.econt-colorbox-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}

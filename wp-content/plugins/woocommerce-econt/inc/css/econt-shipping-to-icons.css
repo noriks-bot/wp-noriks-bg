@@ -1,0 +1,234 @@
+#econt-title-text
+{
+	display:none !important;
+}
+
+label[for=econt_shipping_to_buttons_DOOR]:first-child {		
+	display:none !important; 
+}
+
+#econt_machines_field {
+	margin-bottom: 50px;
+}
+
+label[for=econt_shipping_to_buttons_OFFICE],
+label[for=econt_shipping_to_buttons_MACHINE],
+label[for=econt_shipping_to_buttons_DOOR]
+{
+		flex: 1;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    transition: all .3s ease;
+    object-fit: contain;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+    width: 200px;
+    margin: 0px 5px !important;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="radio"]:checked+label[for=econt_shipping_to_buttons_OFFICE]:after { 
+		content:" ✓";
+		font-size:26px;
+		color:black;
+		font-weight:700;
+		padding:10px;
+} 
+
+input[type="radio"]:checked+label[for=econt_shipping_to_buttons_DOOR]:after { 
+		content:" ✓";
+		font-size:22px;
+		color:black;
+		font-weight:700;
+		padding:10px;
+} 
+
+input[type="radio"]:checked+label[for=econt_shipping_to_buttons_MACHINE]:after { 
+		content:" ✓";
+		font-size:22px;
+		color:black;
+		font-weight:700;
+		padding:10px;
+} 
+
+#econt_shipping_to_buttons_field  input[type="radio"] {
+	display:none !important;
+}
+
+label[for=econt_shipping_to_buttons_DOOR]:after {
+		content:"";
+		font-size:18px;
+		font-weight:700;
+		text-align: right;
+}
+
+label[for=econt_shipping_to_buttons_OFFICE]:after {
+		content:"";
+		font-size:18px;
+		font-weight:700;
+		text-align: right;
+} 
+
+label[for=econt_shipping_to_buttons_OFFICE]:before 
+{
+		content:"";
+		 background-image: url("images/office.svg");
+		width:40px;
+		height:40px;
+		background-repeat: no-repeat;
+		float: inline-start;
+    padding-left: 10px;
+}
+
+label[for=econt_shipping_to_buttons_DOOR]:before {
+		content:"";
+		 background-image: url("images/local.svg");
+		width:40px;
+		height:40px;
+		background-repeat: no-repeat;
+	  float: inline-start;
+    padding-left: 10px;
+}
+
+label[for=econt_shipping_to_buttons_MACHINE]:before {
+		content:"";
+		 background-image: url("images/aps.svg");
+		width:40px;
+		height:40px;
+		background-repeat: no-repeat;
+		float: inline-start;
+    padding-left: 10px;
+}
+
+		background:black;
+		padding:10px;
+}
+
+#econt_shipping_to_buttons_field {
+    padding-bottom: 50px;
+}
+
+#econt_shipping_to_buttons_field  input[type="radio"] {
+	display:none !important;
+}
+
+label[for=mrejanet_choose_courier_local_pickup]:before 
+{
+		content:"Взимане от магазин ";
+		font-size:18px;
+		line-height:1.1;
+		color:black;
+		font-weight:700;
+		padding:10px;
+		
+}
+
+.econt_shipping_to_buttons_field {
+	display: none !important;
+}
+
+.econt_office_locator_map {
+	width:auto;
+}
+
+input[type="radio"]:checked+label[for=econt_shipping_to_buttons_OFFICE],
+input[type="radio"]:checked+label[for=econt_shipping_to_buttons_DOOR],
+input[type="radio"]:checked+label[for=econt_shipping_to_buttons_MACHINE]
+
+
+  {
+		content:" ";
+		font-size:18px;
+		color:black;
+		font-weight:700;
+		border: 2px solid #000 !important;
+		background: white;
+		border-radius:10px;
+		height:70px;
+		line-height:1;
+		display: flex;
+    justify-content: center;
+} 
+
+@media only screen and (min-width: 800px) {
+	
+#econt_custom_checkout_field
+.woocommerce-input-wrapper {
+		display: flex;
+    flex-direction: row;
+}
+	
+}
+
+@media only screen and (max-width: 960px) {
+
+label[for=econt_shipping_to_buttons_OFFICE], label[for=econt_shipping_to_buttons_MACHINE], label[for=econt_shipping_to_buttons_DOOR] {
+    flex: 1;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    transition: all .3s ease;
+    object-fit: contain;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+    width: 100%;
+    margin: 5px 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+	
+#econt_custom_checkout_field
+.woocommerce-input-wrapper {
+		display: flex;
+    flex-direction: column;
+}
+		
+label[for=econt_shipping_to_buttons_DOOR]:nth-child(2) {
+    order:2!important;
+		margin-top:5px !important;
+		margin-bottom:5px !important;
+}
+		
+}
+
+label[for=econt_shipping_to_buttons_OFFICE]:hover, label[for=econt_shipping_to_buttons_MACHINE]:hover, label[for=econt_shipping_to_buttons_DOOR]:hover
+  {
+		cursor:pointer;
+} 
+
+
+
+label[for=econt_shipping_to_buttons_OFFICE]:nth-child(4) {
+     order: 1 !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px !important;
+}
+
+label[for=econt_shipping_to_buttons_MACHINE]:nth-child(6) {
+    order: 3 !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px !important;
+}
+
+label[for=econt_shipping_to_buttons_DOOR]:nth-child(2) {
+    order: 2 !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px !important;
+}

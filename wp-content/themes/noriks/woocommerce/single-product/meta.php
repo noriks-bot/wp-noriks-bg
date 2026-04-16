@@ -202,7 +202,7 @@ $is_boxers = has_term( array( 'boksarki','orto-bokserice', 'komplekti-boksarki' 
 
 $is_carape = has_term( array( 'chorapi', 'zimni-chorapi' ), 'product_cat', $current_product_id );
 
-$is_mixed_bundle = has_term( array( 'black-friday', 'komplekti-teniski-i-boksarki', 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id );
+$is_mixed_bundle = has_term( array( 'komplekti', 'komplekti-teniski-i-boksarki', 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id );
 
 ?>
 
@@ -439,7 +439,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'komplekti-teniski-i-boksark
         
         
         
-                Naše premium majice izrađene su od vrhunske mješavine 60% prstenasto predenog pamuka i 40% poliestera, što osigurava izuzetno mekanu tkaninu otpornu na gužvanje.  <br><br>NORIKS bokserice izrađene su od vrhunske mješavine 95% modala i 5% elastana, što osigurava izuzetno mekanu i elastičnu tkaninu koja se savršeno prilagođava tijelu. Elastičan pojas dizajniran je za optimalno pristajanje, pružajući udobnost bez stezanja i savršen izgled ispod odjeć   <br>
+                Нашите първокласни тениски са изработени от първокласна смес от 60% пръстенопреден памук и 40% полиестер, което гарантира изключително мека и устойчива на намачкване материя. <br><br>Боксерките NORIKS са изработени от първокласна смес от 95% модал и 5% еластан, което гарантира изключително мека и еластична материя, която се адаптира перфектно към тялото. Еластичната талия е проектирана за оптимално прилягане, осигурявайки комфорт без стягане и перфектен външен вид под дрехите. <br>
         
         <?php else: ?>
         
@@ -469,7 +469,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'komplekti-teniski-i-boksark
            <?php if( $is_boxers ): ?>
        
         
-          <img src="/bg/wp-content/uploads/2025/12/boxers_size.jpg">
+          <img src="https://noriks.com/bg/wp-content/uploads/2026/04/bokserice_bg.jpg">
           
           
           
@@ -477,17 +477,17 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'komplekti-teniski-i-boksark
         <?php elseif(  $is_carape ): ?>
         
         
-                  <img src="/bg/wp-content/uploads/2025/11/Чорапи_tabela_velikosti.jpg">
+                  <img src="https://noriks.com/bg/wp-content/uploads/2026/04/nogavice_bg.jpg">
                   
     <?php elseif(  $is_mixed_bundle ): ?>
     
-     <img src="https://noriks.com/bg/wp-content/uploads/2026/04/hr_majice.jpeg">
-<img src="/bg/wp-content/uploads/2025/12/boxers_size.jpg">
+     <img src="https://noriks.com/bg/wp-content/uploads/2026/04/tablica_Bg.jpg">
+<img src="https://noriks.com/bg/wp-content/uploads/2026/04/bokserice_bg.jpg">
         
           <?php else: ?>
       
       
-       <img src="https://noriks.com/bg/wp-content/uploads/2026/04/hr_majice.jpeg">
+       <img src="https://noriks.com/bg/wp-content/uploads/2026/04/tablica_Bg.jpg">
         
             
         <?php endif; ?>
@@ -510,7 +510,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'komplekti-teniski-i-boksark
         
         
         
-                         Perite boje s bojama.  Program za nježno pranje na hladnoj vodi.  Sušite ravno položeno ili u sušilici na niskoj temperaturi.  Ne izbjeljivati              
+                         Перете цветовете с цветовете. Деликатно циклиране в студена вода. Сушете на хоризонтално положение или в сушилня с ниска температура. Не избелвайте.       
         
         
           <?php else: ?>
@@ -544,7 +544,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'komplekti-teniski-i-boksark
     info@noriks.com
   </a>
 </p>
-<p>Samo nam napiši mail da želiš zamjenu i <b data-stringify-type="bold">odmah ćemo sve srediti.</b></p>
+<p>Просто ни изпратете имейл, в който кажете, че искате замяна и <b data-stringify-type="bold">ние ще се погрижим за това веднага.</b></p>
        
        
       </div>

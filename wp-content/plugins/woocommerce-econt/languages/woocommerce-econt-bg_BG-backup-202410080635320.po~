@@ -1,0 +1,2374 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Econt Express WooCommerce shipping method v1.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-12 16:21+0000\n"
+"PO-Revision-Date: 2024-10-08 06:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: Български\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Language: Bulgarian\n"
+"X-Poedit-Country: BULGARIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes\n"
+"Language: bg_BG\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2"
+
+#: inc/class-checkout-econt.php:816
+msgid " (to be calculated)"
+msgstr " (цената предстои да бъде изчислена)"
+
+#: admin/view/html-order-edit-address-view.php:35
+#: admin/view/html-order-edit-address-view.php:41 inc/class-ajax-econt.php:72
+#: inc/class-ajax-econt.php:95 inc/class-checkout-econt.php:473
+#: inc/class-checkout-econt.php:488 inc/class-checkout-econt.php:658
+#: inc/class-checkout-econt.php:671 inc/class-mysql-econt.php:2762
+#: inc/class-mysql-econt.php:2770
+msgid " address: "
+msgstr " адрес: "
+
+#: inc/class-ajax-econt.php:72 inc/class-ajax-econt.php:95
+msgid " o.c.: "
+msgstr "о.к.:"
+
+#: admin/class-sm-econt.php:569
+msgid ""
+"\"24 часа Еконт - Автоматична пощенска станция\" (АПС) е устройство, с което "
+"сами изпращате и получавате пратки денонощно, без почивен ден.  Научете "
+"повече на: <a href=\"http://www.econt.com/24-chasa-econt-aps/\" "
+"target=\"_blank\">http://www.econt.com/24-chasa-econt-aps/</a>"
+msgstr ""
+
+#: admin/class-sm-econt.php:1069
+msgid "+ Add Row"
+msgstr "+ Добавете ред"
+
+#: admin/class-sm-econt.php:319 admin/view/html-order-view.php:303
+msgid ", other: "
+msgstr ", друго: "
+
+#: inc/class-ajax-econt.php:72 inc/class-ajax-econt.php:95
+msgid ", phone: "
+msgstr ", телефон:"
+
+#: admin/class-sm-econt.php:319 admin/view/html-order-view.php:303
+msgid ", q.: "
+msgstr ",кв.: "
+
+#: admin/class-sm-econt.php:319 admin/view/html-order-view.php:303
+msgid ", t./v. "
+msgstr ", г./с. "
+
+#: admin/class-sm-econt.php:541
+msgid ""
+"0 = no \"DV\", 1 = Always \"DV\", 2...n =  The cost above which \"DV\" will "
+"be enabled"
+msgstr ""
+"0 = без обявена стойност, 1 = винаги да се използва обаявена стойност, 2...n "
+"= Стойност над която ще се активира обявена стойност."
+
+#. translators: name, order number, loading number
+#: inc/class-mysql-econt.php:2003
+msgid ""
+"<p>Hi %1$s,</p><p>Your order #%2$s is ready to be sent with a way-bill "
+"number <strong>%3$s</strong> with the courier company Econt Express. You can "
+"track the movement of the shipment from the button below.</p>"
+msgstr ""
+"<p>Здравейте %1$s,</p><p>Вашата поръчка #%2$s е готова за изпращане с номер "
+"на товарителница <strong>%3$s</strong> с куриерска фирма Еконт Експрес. "
+"Можете да проследите движението на пратката от бутона по-долу.</p>"
+
+#. translators: order number, loading number
+#: inc/class-mysql-econt.php:2001
+msgid ""
+"<p>Your order #%1$s is ready to be sent with a way-bill number <strong>"
+"%2$s</strong> with the courier company Econt Express. You can track the "
+"movement of the shipment by clicking the button below.</p>"
+msgstr ""
+"<p>Вашата поръчка #%1$s е готова за изпращане с товарителница номер <strong>"
+"%2$s</strong> с куриерска фирма Еконт Експрес. Можете да проследите "
+"движението на пратката, като натиснете бутона по-долу.</p>"
+
+#: admin/class-sm-econt.php:650
+msgid "Ability to return the item already purchased"
+msgstr "Възможност за връщане на вече закупените продукти"
+
+#: admin/class-sm-econt.php:653
+msgid "Ability to return the item already purchased:"
+msgstr "Възможност за връщане на вече закупените продукти:"
+
+#: admin/class-sm-econt.php:617 admin/view/html-order-view.php:638
+msgid "Accept"
+msgstr "преглед"
+
+#: admin/view/html-order-view.php:855
+msgid "add"
+msgstr "добави"
+
+#: admin/view/html-order-view.php:234 inc/class-checkout-econt.php:355
+msgid "after"
+msgstr "след"
+
+#: admin/class-sm-econt.php:1056 admin/class-sm-econt.php:1095
+msgid "All"
+msgstr "Всички"
+
+#: admin/view/html-order-view.php:586 admin/view/html-order-view.php:599
+msgid "amount: "
+msgstr "сума: "
+
+#: admin/view/html-order-edit-address-view.php:135
+#: inc/class-checkout-econt.php:337
+msgid "ap. num"
+msgstr "ап. №"
+
+#: inc/class-checkout-econt.php:337
+#: inc/view/html-my-account-address-view.php:133
+msgid "ap. num."
+msgstr "ап. №"
+
+#: admin/view/html-order-edit-address-view.php:135
+msgid "ap. num.:"
+msgstr "ап. №:"
+
+#: admin/view/html-order-edit-address-view.php:67
+msgid "Apartment num"
+msgstr "Апартамент №"
+
+#: inc/class-mysql-econt.php:2796
+msgid "apartment:"
+msgstr "апартамент:"
+
+#: admin/view/html-order-edit-address-view.php:10
+#: admin/view/html-order-edit-address-view.php:41
+#: inc/class-checkout-econt.php:290
+#: inc/view/html-my-account-address-view.php:114
+msgid "APS"
+msgstr "АПС"
+
+#: admin/class-sm-econt.php:1314 admin/class-sm-econt.php:1318
+msgid "APS Town"
+msgstr "АПС Населено място"
+
+#: admin/class-sm-econt.php:506
+msgid "Are you going to use an agreement for CD"
+msgstr "Ще използвате ли споразумение за събиране на наложен платеж"
+
+#: admin/view/html-order-view.php:567
+msgid "Are you going to use an agreement for CD:"
+msgstr "Ще използвате ли споразумение за събиране на наложен платеж:"
+
+#: admin/class-sm-econt.php:580 admin/class-sm-econt.php:583
+msgid "Attach a service acknowledgment"
+msgstr "Обратна разписка."
+
+#: admin/class-sm-econt.php:587 admin/class-sm-econt.php:590
+msgid "Attach a service acknowledgment/bill of goods"
+msgstr "Стокова разписка."
+
+#: admin/view/html-order-view.php:717
+msgid "Attach a service acknowledgment/bill of goods:"
+msgstr "Стокова разписка:"
+
+#: admin/view/html-order-view.php:645
+msgid "Attach a service acknowledgment:"
+msgstr "Обратна разписка:"
+
+#: admin/class-sm-econt.php:622 admin/class-sm-econt.php:625
+msgid "Attach a time priority"
+msgstr "Час за приоритет"
+
+#: admin/class-sm-econt.php:645
+msgid "Attached to the parcel"
+msgstr "приложен в пратката"
+
+#: admin/class-sm-econt.php:715
+msgid "Auto Refresh Data"
+msgstr "Автоматично обновяване на данни"
+
+#: admin/class-sm-econt.php:721
+msgid "Auto Refresh Data International"
+msgstr "Автоматично обновяване на международни данни"
+
+#: admin/class-sm-econt.php:763
+msgid "Autocomplete AJAX delay"
+msgstr "Забавяне на AJAX за автоматично довършване"
+
+#: admin/class-sm-econt.php:724
+msgid "Automatically Refresh Econt Express Cities in Romania and Greece."
+msgstr ""
+"Автоматично обновяване на базата данни за градове на Еконт Експрес в Румъния "
+"и Гърция. "
+
+#: admin/class-sm-econt.php:718
+msgid ""
+"Automatically Refresh Econt Express Ofices, Cities, Streets once a day. WP "
+"Cron must be enabled."
+msgstr ""
+"Автоматично обновяване на базата данни за Офиси, Градове и Улици на Еконт "
+"Експрес веднъж на ден. WP-Cron трябва да е включен."
+
+#: admin/view/html-order-view.php:232 inc/class-checkout-econt.php:355
+msgid "before"
+msgstr "преди"
+
+#: inc/class-checkout-econt.php:327
+#: inc/view/html-my-account-address-view.php:130
+msgid "bl. num."
+msgstr "бл. №"
+
+#: admin/view/html-order-edit-address-view.php:129
+msgid "bl. num.:"
+msgstr "бл. №:"
+
+#: admin/view/html-order-view.php:1064
+msgid "Blank no"
+msgstr "PDF-a за товарителницата без бланка:"
+
+#: admin/view/html-order-view.php:1191
+msgid "blank no"
+msgstr "PDF-a за товарителницата без бланка:"
+
+#: admin/view/html-order-view.php:1058
+msgid "Blank yes"
+msgstr "PDF-a за товарителницата върху бланка:"
+
+#: admin/view/html-order-view.php:1185
+msgid "blank yes"
+msgstr "PDF-a за товарителницата върху бланка:"
+
+#: admin/view/html-order-edit-address-view.php:129
+#: inc/class-checkout-econt.php:327
+#: inc/view/html-my-account-address-view.php:130
+msgid "blok num"
+msgstr "бл. №"
+
+#: admin/class-sm-econt.php:261 admin/view/html-order-view.php:399
+msgid "Bonus points"
+msgstr "Бонус точки"
+
+#: admin/view/html-order-edit-address-view.php:52
+msgid "Building num"
+msgstr "блок №"
+
+#: admin/class-sm-econt.php:1010
+msgid "Bulgaria"
+msgstr "България"
+
+#: admin/view/html-order-view.php:913
+msgid "Calculate Shipping Cost"
+msgstr "Изчисли стойността на доставка"
+
+#: admin/class-order-econt.php:446
+msgid "Calculate Shipping Cost."
+msgstr "Изчисли стойността на доставка."
+
+#: inc/class-mysql-econt.php:2181
+msgid "calculating"
+msgstr "изчислява се"
+
+#: admin/class-pm-econt.php:71
+msgid ""
+"Card payment in which the amount is saved in your account. It will only be "
+"withdrawn when you accept your shipment. If you refuse or return it "
+"immediately, the amount of the imposed payment will be released and will be "
+"at your disposal again."
+msgstr ""
+"Плащане с карта, при което сумата се резервира по сметката ви. Сумата ще "
+"бъде изтеглена, след като приемете пратката. Ако откажете пратката или "
+"върнете веднага, сумата от наложения платеж се освобождава и отново е на "
+"ваше разположение."
+
+#: admin/class-sm-econt.php:187 admin/view/html-order-view.php:392
+msgid "Cash"
+msgstr "В брой"
+
+#: admin/view/html-order-view.php:579
+msgid "Cash on delivery"
+msgstr "Плащане при доставка:"
+
+#: admin/view/html-order-view.php:1149
+msgid "Cash on delivery get sum"
+msgstr "Събрана сума от наложен платеж по пратката:"
+
+#: admin/view/html-order-view.php:1153
+msgid "Cash on delivery get time"
+msgstr "Време на предаване на пратката към клиента:"
+
+#: admin/view/html-order-view.php:1157
+msgid "Cash on delivery send sum"
+msgstr "Изплатена сума на наложния платеж по пратката:"
+
+#: admin/view/html-order-view.php:1161
+msgid "Cash on delivery send time"
+msgstr "Време на изплащане на наложения платеж:"
+
+#: admin/class-sm-econt.php:730
+msgid "Checkout \"shipping to\" field style"
+msgstr "Стил на полето \"изпращане до\" в Чекаут"
+
+#: admin/class-sm-econt.php:727
+msgid "Checkout \"shipping to\" style"
+msgstr "Стил на \"изпращане до\" в Чекаут"
+
+#: admin/class-sm-econt.php:368
+msgid "Checkout description"
+msgstr "Описание на чекаут"
+
+#: admin/class-sm-econt.php:739
+#| msgid "Checkout tooltips"
+msgid "Checkout Tooltips"
+msgstr "Чекaут Tooltips"
+
+#: admin/view/html-order-view.php:667 admin/view/html-order-view.php:791
+#: admin/view/html-order-view.php:832
+msgid "choose"
+msgstr "изберете"
+
+#: admin/class-sm-econt.php:678
+msgid "Choose custom instructions for services"
+msgstr "Изберете указания за услуги"
+
+#: admin/class-sm-econt.php:1387
+msgid "Choose Econt Express APS if you want to be able to send from APS"
+msgstr "Изберете Еконт Експрес АПС, ако искате да можете да изпращате от АПС"
+
+#: admin/class-sm-econt.php:1351
+#| msgid ""
+#| "Choose Econt Express APS town postcode if you want to be able to send "
+#| "from office"
+msgid ""
+"Choose Econt Express APS town postcode if you want to be able to send from "
+"APS"
+msgstr ""
+"Изберете пощенски код на градът, в който е АПС, от който искате да можете да "
+"изпращате"
+
+#: admin/class-sm-econt.php:1269
+msgid "Choose Econt Express office if you want to be able to send from office"
+msgstr "Изберете Еконт Експрес офис ако желаете да изпращате от офис."
+
+#: admin/class-sm-econt.php:1328
+msgid ""
+"Choose Econt Express office town if you want to be able to send from APS"
+msgstr ""
+"Изберете град на офис на Еконт Експрес ако искате да можете да изпращате от "
+"АПС"
+
+#: admin/class-sm-econt.php:1210
+msgid ""
+"Choose Econt Express office town if you want to be able to send from office"
+msgstr "Изберете град Ако желаете да изпращате от офис на Еконт Експрес."
+
+#: admin/class-sm-econt.php:1233
+msgid ""
+"Choose Econt Express office town postcode if you want to be able to send "
+"from office"
+msgstr ""
+"Изберете Еконт експрес офис пощенски код ако желаете да изпращате от офис."
+
+#: admin/class-sm-econt.php:664
+msgid "Choose give custom instructions"
+msgstr "Изберете указания за предаване"
+
+#: admin/class-sm-econt.php:671
+msgid "Choose return custom instructions"
+msgstr "Изберете указания за връщане"
+
+#: admin/class-sm-econt.php:657
+msgid "Choose take custom instructions"
+msgstr "За пратката ще се използват ли указания за приемане:"
+
+#: admin/class-sm-econt.php:492
+msgid "Choose the way you pay."
+msgstr "Изберете начина, по който желате да плащате."
+
+#: admin/view/html-order-view.php:504
+msgid "Choose the way you pay:"
+msgstr "Изберете начина, по който желаете да плащате:"
+
+#: admin/class-sm-econt.php:681
+msgid "Chose custom instructions for services"
+msgstr "Изберете указания за услуги"
+
+#: admin/class-sm-econt.php:548
+msgid ""
+"Chose from where you will send your goods by default: Econt Office or your "
+"address."
+msgstr "Изберете от къде ще изпращате поръчките по подразбиране. "
+
+#: admin/class-sm-econt.php:667
+msgid "Chose give custom instructions"
+msgstr "Изберете указания за предаване"
+
+#: admin/class-sm-econt.php:674
+msgid "Chose return custom instructions"
+msgstr "Изберете указания"
+
+#: admin/class-sm-econt.php:660
+msgid "Chose take custom instructions"
+msgstr "Изберете указания за приемане"
+
+#: admin/class-sm-econt.php:362
+msgid "Chose title image style."
+msgstr "Изберете стил на заглавното изображение."
+
+#: admin/view/html-order-view.php:527 admin/view/html-order-view.php:535
+#: admin/view/html-order-view.php:543
+msgid "cm"
+msgstr ""
+
+#: admin/class-sm-econt.php:419
+msgid "Contact Person"
+msgstr "Лице за контакт"
+
+#: admin/class-sm-econt.php:1032
+msgid "Country"
+msgstr "Държава"
+
+#: admin/class-order-econt.php:528
+msgid "Create Econt loadings"
+msgstr "Създаване на Еконт товарителници"
+
+#: admin/view/html-order-view.php:444 admin/view/html-order-view.php:914
+msgid "Create Loading"
+msgstr "Създай товарителница"
+
+#: admin/class-order-econt.php:265
+#| msgid "prepare loading"
+msgid "create loading"
+msgstr "подгответе пратка"
+
+#: admin/class-sm-econt.php:615 admin/class-sm-econt.php:618
+msgid "Customer can pay after accepting or testing the goods"
+msgstr "Клиентите могат да платят след преглед или тест на поръчката."
+
+#: admin/class-sm-econt.php:366
+msgid "Customer Message"
+msgstr "Съобщение за клиента"
+
+#: admin/class-pm-econt.php:95 admin/class-sm-econt.php:361
+msgid "Dark"
+msgstr "Тъмно"
+
+#: admin/class-sm-econt.php:538
+msgid "Declared Value"
+msgstr "Обявена стойност"
+
+#: admin/view/html-order-view.php:592
+msgid "Declared Value:"
+msgstr "Обявена стойност:"
+
+#: admin/class-sm-econt.php:545
+msgid "Default send from"
+msgstr "По подразбиране ще изпращате от"
+
+#: admin/view/html-order-view.php:1237
+msgid "Delete loading"
+msgstr "Изтрий товарителницата"
+
+#: admin/view/html-order-view.php:1054 admin/view/html-order-view.php:1181
+msgid "Delivery attempt count"
+msgstr "Брой опити за разнос на пратката:"
+
+#: inc/class-checkout-econt.php:342
+msgid "Delivery Days"
+msgstr "Ден за разнос:"
+
+#: admin/view/html-order-view.php:800
+msgid "Delivery Days:"
+msgstr "Ден за разнос:"
+
+#: admin/class-pm-econt.php:30
+msgid ""
+"DEMO MODE ENABLED. In demo mode, you can use the card number "
+"4341792000000044 with any CVC, a valid expiration date and dynamic password "
+"111111."
+msgstr ""
+"ВКЛЮЧЕН Е ДЕМО РЕЖИМ. В демо режим можете да използвате карта номер "
+"4341792000000044  с всеки CVC, валидна дата на изтичане и динамична парола "
+"111111."
+
+#: admin/class-pm-econt.php:100
+msgid "Description"
+msgstr "Описание"
+
+#: admin/view/html-order-view.php:905
+msgid "Description:"
+msgstr "Описание:"
+
+#: admin/class-order-econt.php:504
+msgid "destroying the shipment"
+msgstr "унищожаване на пратката"
+
+#: admin/class-sm-econt.php:645
+msgid "Digital"
+msgstr "електронен"
+
+#: admin/view/html-order-view.php:833
+msgid "digital"
+msgstr "електронен"
+
+#: admin/class-order-econt.php:495
+msgid "disposition for change of shipping conditions"
+msgstr "разпореждане за промяна на условията по пратката"
+
+#: admin/class-sm-econt.php:547 admin/view/html-order-edit-address-view.php:4
+msgid "Door"
+msgstr "Адрес"
+
+#: admin/class-sm-econt.php:729
+msgid "dropdown"
+msgstr "падащо меню"
+
+#: inc/class-checkout-econt.php:559 inc/class-checkout-econt.php:713
+#: inc/view/html-checkout-user-view.php:63
+#: inc/view/html-my-account-address-view.php:43
+msgid "Econt Apartment:"
+msgstr "Апартамент №:"
+
+#: inc/class-checkout-econt.php:486 inc/class-checkout-econt.php:670
+#: inc/view/html-checkout-user-view.php:39
+#: inc/view/html-my-account-address-view.php:26
+msgid "Econt APS:"
+msgstr "АПС:"
+
+#: inc/class-mysql-econt.php:2770
+msgid "Econt APS: "
+msgstr "АПС:"
+
+#: inc/class-checkout-econt.php:519 inc/class-checkout-econt.php:688
+#: inc/view/html-checkout-user-view.php:57
+#: inc/view/html-my-account-address-view.php:35
+msgid "Econt Building Num.:"
+msgstr "Блок №:"
+
+#: inc/class-checkout-econt.php:365
+msgid "Econt Customer Shipping Cost"
+msgstr "Цена на доставка с Еконт, която ще се заплати от получателя"
+
+#: inc/class-checkout-econt.php:543 inc/class-checkout-econt.php:703
+#: inc/view/html-checkout-user-view.php:59
+#: inc/view/html-my-account-address-view.php:39
+msgid "Econt Entrance:"
+msgstr "Вход №:"
+
+#: admin/class-order-econt.php:78 admin/class-order-econt.php:80
+msgid "Econt Express - Order Viewer"
+msgstr "Еконт Експрес - Товарителница"
+
+#: admin/class-sm-econt.php:1373 admin/class-sm-econt.php:1377
+msgid "Econt Express APS"
+msgstr "АПС"
+
+#: admin/class-sm-econt.php:1345 admin/class-sm-econt.php:1349
+msgid "Econt Express APS Postcode"
+msgstr "Пощенски код на АПС"
+
+#: admin/class-sm-econt.php:1255 admin/class-sm-econt.php:1259
+msgid "Econt Express Office"
+msgstr "Еконт Експрес офис"
+
+#: admin/class-sm-econt.php:1227 admin/class-sm-econt.php:1231
+msgid "Econt Express Office Postcode"
+msgstr "Еконт Експрес Офис пощенски код"
+
+#: admin/class-sm-econt.php:387
+msgid "Econt Express password."
+msgstr "Еконт Експрес парола."
+
+#: admin/class-sm-econt.php:354
+msgid "Econt Express Shipping Method"
+msgstr "Доставка с Еконт Експрес"
+
+#. translators: shipping to text
+#: admin/view/html-order-edit-address-view.php:26
+msgid "Econt Express shipping to %s"
+msgstr "Еконт Експрес изпращане до %s"
+
+#: admin/class-sm-econt.php:381
+msgid ""
+"Econt Express username. I do not have username in e-Econt, I want to <a "
+"href=\"https://ee.econt.com/load_direct.php?target=Register\" "
+"target=\"_blank\">register</a>."
+msgstr ""
+"Еконт Експрес потребителско име. Нямам потребителско име в е-Еконт, искам да "
+"се <a href=\"https://ee.econt.com/load_direct.php?target=Register\" "
+"target=\"_blank\">регистрирам</a>."
+
+#: admin/class-order-econt.php:87
+msgid "Econt Express Woocommerce"
+msgstr "Еконт Експрес Woocommerce"
+
+#. Plugin Name of the plugin
+msgid "Econt Express WooCommerce shipping method"
+msgstr "Еконт Експрес WooCommerce метод за доставка"
+
+#: woocommerce-econt.php:81
+msgid ""
+"Econt Express WooCommerce shipping method requires WooCommerce. Please "
+"activate WooCommerce."
+msgstr ""
+"Методът на доставка на Econt Express WooCommerce изисква WooCommerce. Моля, "
+"активирайте WooCommerce."
+
+#: inc/class-checkout-econt.php:551 inc/class-checkout-econt.php:708
+#: inc/view/html-checkout-user-view.php:61
+#: inc/view/html-my-account-address-view.php:41
+msgid "Econt Floor:"
+msgstr "Етаж №:"
+
+#: admin/class-order-econt.php:236
+msgid "Econt Loading"
+msgstr "Еконт пратка"
+
+#: inc/class-checkout-econt.php:471 inc/class-checkout-econt.php:657
+#: inc/view/html-checkout-user-view.php:32
+#: inc/view/html-my-account-address-view.php:23
+msgid "Econt office:"
+msgstr "Офис:"
+
+#: inc/class-mysql-econt.php:2762
+msgid "Econt office: "
+msgstr "Офис:"
+
+#: inc/class-checkout-econt.php:567 inc/class-checkout-econt.php:718
+#: inc/view/html-checkout-user-view.php:65
+#: inc/view/html-my-account-address-view.php:45
+msgid "Econt Other:"
+msgstr "Друго:"
+
+#: inc/class-checkout-econt.php:503 inc/class-checkout-econt.php:654
+#: inc/class-checkout-econt.php:667 inc/class-checkout-econt.php:679
+#: inc/view/html-checkout-user-view.php:45
+#: inc/view/html-my-account-address-view.php:29
+msgid "Econt Postcode:"
+msgstr "Пощенски код:"
+
+#: inc/class-checkout-econt.php:511 inc/class-checkout-econt.php:683
+#: inc/view/html-checkout-user-view.php:51
+#: inc/view/html-checkout-user-view.php:53
+#: inc/view/html-my-account-address-view.php:31
+#: inc/view/html-my-account-address-view.php:127
+msgid "Econt Quarter:"
+msgstr "Квартал:"
+
+#: inc/class-ajax-econt.php:302
+msgid "Econt shipping address has been changed by "
+msgstr "Адресът за доставка с Еконт беше променен от "
+
+#: inc/class-checkout-econt.php:576 inc/class-checkout-econt.php:723
+msgid "Econt Shipping Cost:"
+msgstr "Цена за доставка с Еконт:"
+
+#: admin/class-sm-econt.php:35
+msgid "Econt Shipping Method"
+msgstr "Доставка с Еконт Експрес"
+
+#: inc/class-checkout-econt.php:535 inc/class-checkout-econt.php:698
+#: inc/view/html-checkout-user-view.php:55
+#: inc/view/html-my-account-address-view.php:37
+msgid "Econt Street Num.:"
+msgstr "Улица №:"
+
+#: inc/class-checkout-econt.php:527 inc/class-checkout-econt.php:693
+#: inc/view/html-checkout-user-view.php:47
+#: inc/view/html-checkout-user-view.php:49
+#: inc/view/html-my-account-address-view.php:33
+msgid "Econt Street:"
+msgstr "Улица:"
+
+#: inc/class-checkout-econt.php:367
+msgid "Econt Total Shipping Cost"
+msgstr "Обща цена на доставка с Еконт Експрес"
+
+#: inc/class-checkout-econt.php:367
+msgid "Econt Total Shipping Cost:"
+msgstr "Обща цена за доставка с Еконт:"
+
+#: inc/class-checkout-econt.php:465 inc/class-checkout-econt.php:480
+#: inc/class-checkout-econt.php:497 inc/class-checkout-econt.php:651
+#: inc/class-checkout-econt.php:664 inc/class-checkout-econt.php:676
+#: inc/view/html-checkout-user-view.php:30
+#: inc/view/html-checkout-user-view.php:37
+#: inc/view/html-checkout-user-view.php:44
+#: inc/view/html-my-account-address-view.php:22
+#: inc/view/html-my-account-address-view.php:25
+#: inc/view/html-my-account-address-view.php:28
+msgid "Econt Town:"
+msgstr "Населено място:"
+
+#: admin/class-pm-econt.php:24 admin/class-pm-econt.php:85
+msgid "EcontPay"
+msgstr ""
+
+#: admin/view/html-order-view.php:436 inc/view/html-checkout-user-view.php:20
+#: inc/view/html-checkout-user-view.php:22
+#: inc/view/html-my-account-address-view.php:9
+#: inc/view/html-my-account-address-view.php:11
+#: inc/view/html-my-account-address-view.php:53
+#: inc/view/html-my-account-address-view.php:55
+msgid "Edit"
+msgstr "редактирай"
+
+#: admin/class-sm-econt.php:433
+msgid "email"
+msgstr "имейл"
+
+#: inc/class-mysql-econt.php:1999
+msgid "Email for shipment tracking details"
+msgstr "Имейл за подробности за проследяване на пратката"
+
+#: admin/class-sm-econt.php:339
+msgid "Enable Econt Express Shipping Method"
+msgstr "Включете Еконт Експрес"
+
+#: admin/class-pm-econt.php:77
+msgid "Enable Pay with Econt"
+msgstr "Включете Плащане с Еконт"
+
+#: admin/class-sm-econt.php:776
+msgid "Enable shipping zones support"
+msgstr "Включете поддръжка на Зони за доставка"
+
+#: admin/class-sm-econt.php:779
+msgid ""
+"Enable shipping zones support. If you choose \"Yes\" after saving the "
+"changes, be sure to create Shipping Zones from \"WooCommerce>Settings>"
+"Shipping\" and add the Econt delivery method to the Shipping Zones in which "
+"you want to deliver with Econt."
+msgstr ""
+"Включете поддръжка на Зони за доставка. Ако изберете \"Да\", след като "
+"запазите запазите промените не забравяйте да създадете Зони за доставка от "
+"\"WooCommerce>Настройки>Доставка\" и да добавите метода за доставка с Еконт "
+"в Зоните за доставка, в който желаете да доставяте с Еконт. "
+
+#: admin/class-pm-econt.php:76 admin/class-sm-econt.php:337
+msgid "Enable/Disable"
+msgstr "Включете/Изключете"
+
+#: inc/class-checkout-econt.php:365
+msgid "Enter Customer Shipping Cost"
+msgstr "Въведете цена на доставка с Еконт, която ще се заплати от получателя"
+
+#: admin/view/html-order-edit-address-view.php:137
+#: inc/class-checkout-econt.php:339
+#: inc/view/html-my-account-address-view.php:134
+msgid "Enter other adress info"
+msgstr "Въведете пояснения за адрес"
+
+#: admin/view/html-order-edit-address-view.php:126
+#: admin/view/html-order-edit-address-view.php:128
+#: inc/class-checkout-econt.php:321
+#: inc/view/html-my-account-address-view.php:126
+msgid "Enter your quarter"
+msgstr "Въведете квартал"
+
+#: inc/class-checkout-econt.php:324
+#: inc/view/html-my-account-address-view.php:129
+msgid "Enter your quarter name"
+msgstr "Въведете името на квартала си"
+
+#: admin/view/html-order-edit-address-view.php:121
+#: admin/view/html-order-edit-address-view.php:123
+#: inc/class-checkout-econt.php:312
+#: inc/view/html-my-account-address-view.php:121
+#: inc/view/html-my-account-address-view.php:122
+msgid "Enter your street"
+msgstr "Въведете улица"
+
+#: inc/class-checkout-econt.php:315
+#: inc/view/html-my-account-address-view.php:124
+msgid "Enter your street name"
+msgstr "Въведете името на улицата си"
+
+#: admin/view/html-order-edit-address-view.php:99
+#: admin/view/html-order-edit-address-view.php:107
+#: admin/view/html-order-edit-address-view.php:116
+#: admin/view/html-order-view.php:482 inc/class-checkout-econt.php:249
+#: inc/class-checkout-econt.php:284 inc/class-checkout-econt.php:306
+#: inc/view/html-my-account-address-view.php:103
+#: inc/view/html-my-account-address-view.php:104
+#: inc/view/html-my-account-address-view.php:111
+#: inc/view/html-my-account-address-view.php:112
+#: inc/view/html-my-account-address-view.php:118
+#: inc/view/html-my-account-address-view.php:119
+msgid "Enter your town"
+msgstr "Въведете населено място"
+
+#: admin/view/html-order-edit-address-view.php:131
+#: inc/class-checkout-econt.php:331
+#: inc/view/html-my-account-address-view.php:131
+msgid "entr. num"
+msgstr "вх. №"
+
+#: inc/class-checkout-econt.php:331
+#: inc/view/html-my-account-address-view.php:131
+msgid "entr. num."
+msgstr "вх. №"
+
+#: admin/view/html-order-edit-address-view.php:131
+msgid "entr. num.:"
+msgstr "вх. №:"
+
+#: admin/view/html-order-edit-address-view.php:61
+msgid "Entrance num"
+msgstr "Вход №"
+
+#: inc/class-mysql-econt.php:2790
+msgid "entrance:"
+msgstr "вход:"
+
+#: admin/view/html-order-view.php:881
+msgid "Envelope number:"
+msgstr "Номер на плик:"
+
+#: inc/class-ajax-econt.php:374 inc/class-ajax-econt.php:379
+msgid "ERROR:"
+msgstr "ГРЕШКА:"
+
+#: admin/view/html-order-view.php:167 admin/view/html-order-view.php:177
+#: admin/view/html-order-view.php:961 inc/class-mysql-econt.php:1437
+#: inc/class-mysql-econt.php:1438 inc/class-mysql-econt.php:2688
+msgid "error_connect"
+msgstr "грешка_при_свързването"
+
+#: inc/class-mysql-econt.php:802
+msgid "error_connect - profile data"
+msgstr ""
+
+#: inc/class-mysql-econt.php:911
+msgid "error_connect cities_zones"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1076
+msgid "error_connect_cities"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1153
+msgid "error_connect_cities_intl"
+msgstr ""
+
+#: inc/class-mysql-econt.php:969
+msgid "error_connect_cities_quarters"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1183
+msgid "error_connect_cities_quarters_intl"
+msgstr ""
+
+#: inc/class-mysql-econt.php:940
+msgid "error_connect_cities_regions"
+msgstr ""
+
+#: inc/class-mysql-econt.php:998
+msgid "error_connect_cities_streets"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1213
+msgid "error_connect_cities_streets_intl"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1107
+msgid "error_connect_city_offices"
+msgstr ""
+
+#: inc/class-mysql-econt.php:881
+msgid "error_connect_countries"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1039
+msgid "error_connect_offices"
+msgstr ""
+
+#: admin/view/html-order-view.php:1092 admin/view/html-order-view.php:1211
+#: inc/class-ajax-econt.php:391
+msgid "Event"
+msgstr "Събитие"
+
+#: admin/view/html-order-view.php:776
+msgid "Express City Courier"
+msgstr "Експресен градски куриер:"
+
+#: inc/class-checkout-econt.php:346
+msgid "Express city courier"
+msgstr "Експресен градски куриер"
+
+#: admin/view/html-order-view.php:787
+msgid "Express City Courier Type"
+msgstr "Тип ескпресен градски куриер"
+
+#: admin/class-sm-econt.php:757
+msgid "Fast AJAX"
+msgstr "Бърз AJAX"
+
+#: admin/view/html-order-edit-address-view.php:133
+#: inc/class-checkout-econt.php:334
+#: inc/view/html-my-account-address-view.php:132
+msgid "fl. num"
+msgstr "ет. №"
+
+#: inc/class-checkout-econt.php:334
+#: inc/view/html-my-account-address-view.php:132
+msgid "fl. num."
+msgstr "ет. №"
+
+#: admin/view/html-order-edit-address-view.php:133
+msgid "fl. num.:"
+msgstr "ет. №:"
+
+#: admin/view/html-order-edit-address-view.php:64
+msgid "Floor num"
+msgstr "Етаж номер"
+
+#: inc/class-mysql-econt.php:2793
+msgid "floor:"
+msgstr "етаж:"
+
+#: admin/class-order-econt.php:498
+msgid "forwarding the shipment"
+msgstr "препращане на пратката"
+
+#: inc/class-mysql-econt.php:2647
+msgid "free shipping"
+msgstr "безплатна доставка"
+
+#: admin/class-sm-econt.php:524
+msgid "Free shipping above this count of items"
+msgstr "Безплатна доставка при брой на продукти по-голям от:"
+
+#: admin/class-sm-econt.php:1144 admin/class-sm-econt.php:1148
+msgid "Free shipping above this sum"
+msgstr "Безплатна доставка над тази сума"
+
+#: admin/class-sm-econt.php:531
+msgid "Free shipping above this weight"
+msgstr "Безплатна доставка над въведеното тегло в кг."
+
+#: admin/class-sm-econt.php:527
+msgid ""
+"Free shipping for orders above this count of items if you whrite down 0 "
+"there will be no free shipping."
+msgstr ""
+"Безплатна доставка за поръчки с брой продукти над въведената стойност. Ако "
+"въведете 0 няма да има безплатна доставка."
+
+#: admin/class-sm-econt.php:1152
+msgid ""
+"Free shipping for orders above this sum if you whrite down 0 there will be "
+"no free shipping."
+msgstr ""
+"Безплатна доставка за поръчки над тази сума. Ако въведете 0 няма да има "
+"безплатна доставка."
+
+#: admin/class-sm-econt.php:534
+msgid ""
+"Free shipping for orders above this weight in kg if you whrite down 0 there "
+"will be no free shipping."
+msgstr ""
+"Безплатна доставка за поръчки с тегло над въведената стойност. Ако въведете "
+"0 няма да има безплатна доставка."
+
+#: admin/class-sm-econt.php:513
+msgid "Free shipping to Econt Office and APS"
+msgstr "Безплатна доставка до офис на Еконт и АПС"
+
+#: admin/view/html-order-view.php:456
+msgid "from default door"
+msgstr "от адрес по подразбиране"
+
+#: admin/view/html-order-view.php:457
+msgid "from default machine"
+msgstr "от АПС по подразбиране."
+
+#: admin/view/html-order-view.php:455
+msgid "from default office"
+msgstr "от офис по подразбиране"
+
+#: admin/view/html-order-view.php:458
+msgid "from door"
+msgstr "от адрес"
+
+#: admin/view/html-order-view.php:459
+msgid "from office"
+msgstr "от офис"
+
+#: inc/class-checkout-econt.php:601
+msgid "Generate loading to return the received order:"
+msgstr "Подгответе товарителница за връщане на доставена поръчка:"
+
+#: inc/class-checkout-econt.php:602
+msgid "Generate return loading"
+msgstr "Генерирайте товарителница за връщане"
+
+#: admin/class-sm-econt.php:1011
+msgid "Greece"
+msgstr "Гърция"
+
+#: admin/view/html-order-view.php:540
+msgid "Height:"
+msgstr "Височина:"
+
+#: admin/class-sm-econt.php:769
+msgid "Hide Quarter Fields in Checkout"
+msgstr "Скрийте полетата за въвеждане на квартал в Чекаут"
+
+#: admin/class-sm-econt.php:772
+msgid "Hide quarter fields in the shipping to address form in Checkout."
+msgstr ""
+"Скрийте полетата за въвеждане на квартал във формата за изпращане до адрес в "
+"Чекаут"
+
+#: admin/class-sm-econt.php:692 admin/class-sm-econt.php:696
+msgid "Hide Shipping description in cart page"
+msgstr "Скрийте описанието за доставка в страницата на количката"
+
+#: admin/view/html-order-view.php:686
+msgid "hour"
+msgstr "час"
+
+#. Author URI of the plugin
+msgid "https://mreja.net"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://mreja.net/produkt/woocommerce-econt-express-shipping-plugin/"
+msgstr ""
+
+#: admin/class-sm-econt.php:729
+msgid "icons"
+msgstr "икони"
+
+#: admin/class-sm-econt.php:509
+msgid ""
+"If you are going to use and agreement for collecting your cashe on delivery "
+"please select it."
+msgstr ""
+"Ако ще използвате споразумение за събиране на наложените платежи, моля, "
+"изберете го."
+
+#: admin/class-order-econt.php:458
+msgid "If you want to edit the address click the pencil on the right"
+msgstr ""
+"Ако желаете да редактирате адреса за доставка, кликнете върху молива вдясно"
+
+#: admin/class-sm-econt.php:604
+msgid ""
+"If you want to receive sms notification when the shipment is delivered to "
+"the recipient please write down the phone number to which the SMS is going "
+"to be send. If you leave this field blank this service wont be activated."
+msgstr ""
+"Ако желаете да получавате SMS известие, когато доставката е доставена на "
+"получателя, моля запишете телефонния номер, на който ще бъде изпратен SMS. "
+"Ако оставите това поле празно, тази услуга няма да бъде активирана."
+
+#: admin/view/html-order-edit-address-view.php:137
+#: inc/class-checkout-econt.php:339
+#: inc/view/html-my-account-address-view.php:134
+msgid "If your address is not in the list please type it here:"
+msgstr "Ако адресът Ви го няма в списъка, моля, попълнете го тук:"
+
+#: admin/class-sm-econt.php:346
+msgid "image"
+msgstr "изображение"
+
+#: inc/class-mysql-econt.php:1988
+msgid "Important Upgrade Notice:"
+msgstr "Важно съобщение за ъпгрейд:"
+
+#: admin/view/html-order-view.php:233 inc/class-checkout-econt.php:355
+msgid "in"
+msgstr "в"
+
+#: admin/class-sm-econt.php:1007
+msgid "In COD"
+msgstr "към НП"
+
+#: admin/class-sm-econt.php:685 admin/class-sm-econt.php:688
+msgid "Include Shipping Cost to Total"
+msgstr "Добавяне на цената за доставка към общата цена на поръчката."
+
+#: admin/view/html-order-view.php:740
+msgid "Instructions give:"
+msgstr "Инструкции при получаване:"
+
+#: admin/view/html-order-view.php:752
+msgid "Instructions return:"
+msgstr "Инструкции при връщане:"
+
+#: admin/view/html-order-view.php:764
+msgid "Instructions Services:"
+msgstr "Инструкции за услуги:"
+
+#: admin/view/html-order-view.php:728
+msgid "Instructions take:"
+msgstr "Инструкции при предаване:"
+
+#. Description of the plugin
+msgid "Integrate Econt Express in WooCommerce and ship your goods."
+msgstr "Интегрирайте Еконт Експрес в Woocommerce и изпращайте вашите стоки."
+
+#: inc/class-mysql-econt.php:1551
+msgid ""
+"Invalid city name, street name or quarter name. Please start typing in the "
+"box , wait until the list appear and select city name, street name or "
+"quarter name from the list."
+msgstr ""
+"Невалидно име на град, име на улица или име на квартал. Моля, започнете да "
+"пишете в полето, изчакайте, докато се появи списъкът и изберете име на град, "
+"име на улица или име на квартал от списъка."
+
+#: admin/view/html-order-view.php:706
+msgid "Invoice before Cash on Delivery:"
+msgstr "Предай фактура преди плащане на наложения платеж:"
+
+#: admin/view/html-order-view.php:897
+msgid "Invoice number and date /NNNNNNNNNN dd.mm.yyyy/:"
+msgstr "Номер на фактура и дата /НННННННННН дд.мм.гггг/:"
+
+#: admin/view/html-order-view.php:990 admin/view/html-order-view.php:1117
+msgid "Is imported"
+msgstr "Задействана:"
+
+#: inc/class-ajax-econt.php:390
+msgid "Is it a return receipt movement"
+msgstr "Движение на обратна разписка ли е"
+
+#: admin/view/html-order-view.php:1091 admin/view/html-order-view.php:1210
+msgid "Is receipt"
+msgstr "Движение на обратна разписка ли е"
+
+#: admin/view/html-order-view.php:519
+msgid "kg"
+msgstr ""
+
+#: admin/view/html-order-view.php:524
+msgid "Length:"
+msgstr "Дължина:"
+
+#: admin/class-pm-econt.php:96 admin/class-sm-econt.php:361
+msgid "Light"
+msgstr "Светло"
+
+#: admin/view/html-order-view.php:828
+msgid "List Type:"
+msgstr "Тип списък:"
+
+#: admin/class-sm-econt.php:374
+msgid "live"
+msgstr "Реална"
+
+#: admin/class-sm-econt.php:372
+msgid "Live or test?"
+msgstr "Реална или Тестова среда?"
+
+#: admin/view/html-order-view.php:834
+msgid "loading"
+msgstr "приложен в пратката"
+
+#: admin/view/html-order-view.php:971
+msgid "Loading Details"
+msgstr "Подробности за товарителницата"
+
+#: admin/class-order-econt.php:265
+msgid "loading form"
+msgstr "форма за товарителница"
+
+#: inc/class-ajax-econt.php:282
+msgid "loading is canceled"
+msgstr "товарителницата е отказана"
+
+#: inc/class-mysql-econt.php:721
+msgid "loading is not canceled."
+msgstr "товарителницата не е отказана."
+
+#: admin/view/html-order-view.php:1113
+msgid "Loading Number"
+msgstr "Номер на товарителница"
+
+#: admin/class-order-econt.php:441 admin/view/html-order-view.php:967
+#: admin/view/html-order-view.php:974
+msgid "Loading number:"
+msgstr "номер на товарителница:"
+
+#: admin/class-order-econt.php:440
+msgid "Loading PDF link:"
+msgstr "линк към товарителницата в PDF формат:"
+
+#: admin/view/html-order-view.php:981
+msgid "Loading shipping cost to be paid by the customer:"
+msgstr "Цена за доставка, която ще плати получателя:"
+
+#: admin/view/html-order-view.php:978
+msgid "Loading shipping cost:"
+msgstr "Цена за доставка:"
+
+#: admin/class-order-econt.php:426
+msgid "Loading... Please, wait."
+msgstr "Зарежда се...Моля, изчакайте. "
+
+#: admin/class-pm-econt.php:89
+msgid "Logo"
+msgstr "Лого"
+
+#: admin/class-sm-econt.php:547
+msgid "Machine"
+msgstr "АПС"
+
+#: admin/class-sm-econt.php:760
+msgid ""
+"Make addresses searches faster by executing AJAX request directly. Some "
+"hosting providers may restict this method and additional configuration to be "
+"required."
+msgstr ""
+"Направи изпълнението на AJAX заявките за търсене на адреси за доставка "
+"директно за по-висока скорост. Някои хостинг доставчици може да са наложили "
+"рестрикции на този метод и да е необходимо допълнително конфигуриране на "
+"хостинг сървъра.  "
+
+#. Author of the plugin
+msgid "MrejaNet"
+msgstr ""
+
+#: admin/view/html-order-view.php:1093 admin/view/html-order-view.php:1212
+#: inc/class-ajax-econt.php:392
+msgid "Name"
+msgstr "Име"
+
+#: admin/class-sm-econt.php:412
+msgid "Name of sender company ot person"
+msgstr "Име на фирма или имената на физическото лице като подател"
+
+#: admin/view/html-order-view.php:1109
+msgid "Next Parcels"
+msgstr "Последвали пратки:"
+
+#: admin/class-sm-econt.php:248 admin/class-sm-econt.php:263
+#: admin/class-sm-econt.php:270 admin/class-sm-econt.php:277
+#: admin/class-sm-econt.php:284 admin/class-sm-econt.php:501
+#: admin/class-sm-econt.php:515 admin/class-sm-econt.php:554
+#: admin/class-sm-econt.php:561 admin/class-sm-econt.php:568
+#: admin/class-sm-econt.php:575 admin/class-sm-econt.php:582
+#: admin/class-sm-econt.php:589 admin/class-sm-econt.php:596
+#: admin/class-sm-econt.php:610 admin/class-sm-econt.php:624
+#: admin/class-sm-econt.php:631 admin/class-sm-econt.php:638
+#: admin/class-sm-econt.php:645 admin/class-sm-econt.php:652
+#: admin/class-sm-econt.php:687 admin/class-sm-econt.php:694
+#: admin/class-sm-econt.php:701 admin/class-sm-econt.php:717
+#: admin/class-sm-econt.php:723 admin/class-sm-econt.php:735
+#: admin/class-sm-econt.php:741 admin/class-sm-econt.php:747
+#: admin/class-sm-econt.php:753 admin/class-sm-econt.php:759
+#: admin/class-sm-econt.php:771 admin/class-sm-econt.php:778
+#: admin/class-sm-econt.php:785 admin/view/html-order-view.php:247
+#: admin/view/html-order-view.php:254 admin/view/html-order-view.php:261
+#: admin/view/html-order-view.php:268 admin/view/html-order-view.php:385
+#: admin/view/html-order-view.php:804
+msgid "No"
+msgstr "Не"
+
+#: admin/view/html-order-view.php:195 admin/view/html-order-view.php:212
+#: admin/view/html-order-view.php:552 admin/view/html-order-view.php:584
+#: admin/view/html-order-view.php:596 admin/view/html-order-view.php:610
+#: admin/view/html-order-view.php:621 admin/view/html-order-view.php:649
+#: admin/view/html-order-view.php:710 admin/view/html-order-view.php:721
+#: admin/view/html-order-view.php:780 admin/view/html-order-view.php:818
+#: admin/view/html-order-view.php:994 admin/view/html-order-view.php:1121
+#: inc/class-ajax-econt.php:414
+msgid "no"
+msgstr "не"
+
+#: admin/class-order-econt.php:460
+msgid "No results found"
+msgstr "Няма намерени резултати"
+
+#: admin/class-sm-econt.php:617 admin/view/html-order-view.php:637
+msgid "None"
+msgstr "няма"
+
+#: admin/view/html-order-edit-address-view.php:70
+msgid "Notes"
+msgstr "Бележки"
+
+#: inc/class-mysql-econt.php:2799
+msgid "notes:"
+msgstr "бележки:"
+
+#: inc/class-mysql-econt.php:2780 inc/class-mysql-econt.php:2787
+msgid "num.:"
+msgstr "номер:"
+
+#: admin/class-sm-econt.php:629 admin/class-sm-econt.php:632
+msgid "offer the customer a choice of day for delivery"
+msgstr "Предложете на клиентите Ви избор на ден за разнос"
+
+#: admin/class-sm-econt.php:636 admin/class-sm-econt.php:639
+msgid "offer the customer partial delivery"
+msgstr "Възможност за частична доставка"
+
+#: admin/class-sm-econt.php:552 admin/class-sm-econt.php:555
+msgid "Offer your clients delivery to door"
+msgstr "Предложете на вашите клиенти изпращане до адрес."
+
+#: admin/class-sm-econt.php:566
+msgid "Offer your clients delivery to Econt machine offices"
+msgstr "Предложете на вашите клиенти изпращане до Еконт Експрес АПС"
+
+#: admin/class-sm-econt.php:559 admin/class-sm-econt.php:562
+msgid "Offer your clients delivery to Econt offices"
+msgstr "Предложете на вашите клиенти изпращане до офис на Еконт Експрес."
+
+#: admin/class-sm-econt.php:573 admin/class-sm-econt.php:576
+msgid ""
+"Offer your customers express city courier delivery up to 60, 90 or 120 "
+"minutes"
+msgstr ""
+"Предложете на вашите клиенти услугата експресен градски куриер - доставка до "
+"60, 90 или 120 мин. в рамките на града."
+
+#: admin/class-sm-econt.php:516
+msgid "Offer your customers free shipping to Econt Office and APS."
+msgstr "Предложете на клиентите си безплатна доставка до офис на Еконт и АПС."
+
+#: admin/class-sm-econt.php:547 admin/view/html-order-edit-address-view.php:7
+#: admin/view/html-order-edit-address-view.php:35
+#: admin/view/html-order-edit-address-view.php:103
+#: admin/view/html-order-edit-address-view.php:110
+#: admin/view/html-order-view.php:485 inc/class-checkout-econt.php:255
+#: inc/view/html-my-account-address-view.php:107
+msgid "Office"
+msgstr "Офис"
+
+#: admin/class-sm-econt.php:733
+#| msgid "office locator"
+msgid "Office locator"
+msgstr "Офис локатор"
+
+#: admin/class-sm-econt.php:1196 admin/class-sm-econt.php:1200
+msgid "Office Town"
+msgstr "Населено място за Еконт офис"
+
+#: admin/class-sm-econt.php:745
+msgid "Optimize Scripts Loading"
+msgstr "Оптимизиране на зареждането на скриптове"
+
+#: inc/view/html-my-account-address-view.php:129
+msgid "optional"
+msgstr "незадължително"
+
+#: admin/class-sm-econt.php:1028
+msgid "Order Cost Above:"
+msgstr "Стойност на поръчката над:"
+
+#: admin/view/html-order-view.php:889
+msgid "Order number:"
+msgstr "Номер на поръчката:"
+
+#: admin/view/html-order-view.php:1050 admin/view/html-order-view.php:1177
+msgid "Other amount due"
+msgstr "Дължима сума от 3-та страна:"
+
+#: admin/view/html-order-edit-address-view.php:101
+#: admin/view/html-order-edit-address-view.php:109
+#: admin/view/html-order-edit-address-view.php:119
+#: admin/view/html-order-view.php:484 inc/class-checkout-econt.php:252
+#: inc/class-checkout-econt.php:287 inc/class-checkout-econt.php:309
+#: inc/view/html-my-account-address-view.php:114
+#: inc/view/html-my-account-address-view.php:121
+msgid "p.c."
+msgstr "п.к."
+
+#: admin/class-sm-econt.php:319 admin/view/html-order-view.php:303
+msgid "p.c. "
+msgstr "п.к. "
+
+#: inc/class-ajax-econt.php:45
+#| msgid "pc.: "
+msgid "p.c.: "
+msgstr "п.к.:"
+
+#: admin/view/html-order-view.php:559
+msgid "Pack count:"
+msgstr "Брой пакети:"
+
+#: admin/view/html-order-view.php:813
+msgid "Partial Delivery:"
+msgstr "Частична доставка:"
+
+#: admin/class-sm-econt.php:385
+msgid "Password"
+msgstr "Парола"
+
+#: admin/view/html-order-view.php:633
+msgid "Pay after:"
+msgstr "Плати след:"
+
+#. translators: payment token
+#: admin/class-pm-econt.php:206
+msgid "Pay with Econt successful<br/>Unnique payment token from Econt:  %1$s"
+msgstr ""
+"Плащането с Еконт е успещно<br/>Уникален payment token от  Еконт:  %1$s"
+
+#: admin/class-sm-econt.php:485 admin/class-sm-econt.php:488
+msgid "Payment side"
+msgstr "Платец"
+
+#: admin/view/html-order-view.php:493
+msgid "Payment Side:"
+msgstr "Платец:"
+
+#: admin/view/html-order-view.php:1071 admin/view/html-order-view.php:1198
+msgid "PDF URL"
+msgstr "PDF-a за товарителницата:"
+
+#: admin/view/html-order-view.php:1079
+msgid "PDF URL 10x15"
+msgstr "PDF-a за товарителницата 10x15:"
+
+#: admin/view/html-order-view.php:1075
+msgid "PDF URL 10x9"
+msgstr "PDF-a за товарителницата 10x9:"
+
+#: admin/class-sm-econt.php:426
+msgid "phone"
+msgstr "телефон"
+
+#: admin/view/html-order-view.php:624
+msgid "phone number: "
+msgstr "телефонен номер:"
+
+#: inc/class-mysql-econt.php:1501
+msgid "Please fill all Econt Express APS fields."
+msgstr "Моля, попълнете всички полета на АПС Еконт Експрес."
+
+#: inc/class-mysql-econt.php:1493
+msgid "Please fill all Econt Express office fields."
+msgstr "Моля, попълнете всички полета за офис на Еконт Експрес."
+
+#: inc/class-mysql-econt.php:1510 inc/class-mysql-econt.php:1518
+#: inc/class-mysql-econt.php:1528
+msgid ""
+"Please fill atleast Econt Express town, street name and street number fields."
+msgstr ""
+"Моля, попълнете поне полетата за град, име на улица и номер на Еконт Експрес."
+
+#: inc/class-mysql-econt.php:1557
+msgid "Please fill Econt Express fields."
+msgstr "Моля, попълнете полетата на Еконт Експрес."
+
+#: admin/class-order-econt.php:455
+msgid ""
+"Please fill in the name of your locality and select from the results below."
+msgstr ""
+"Моля, попълнете името на вашето населено място и изберете от резултатите по-"
+"долу."
+
+#: admin/class-order-econt.php:456
+msgid ""
+"Please fill in the name of your quarter and select from the results below."
+msgstr ""
+"Моля попълнете името на вашия квартал и изберете от резултатите по-долу."
+
+#: admin/class-order-econt.php:457
+msgid ""
+"Please fill in the name of your street or boulevard and select from the "
+"results below."
+msgstr ""
+"Моля попълнете името на вашата улица или булевард и изберете от резултатите "
+"по-долу."
+
+#: admin/class-sm-econt.php:414
+msgid ""
+"Please fill the details with which you subscribe in Econt Express system. "
+"Personal name or company name."
+msgstr ""
+"Тук попълнете данните с които фигурирате в системата на Еконт Експрес и с "
+"които сте сключили договора. Името на Фирмата или имената Ви като физическо "
+"лице ако сте регистрирани така."
+
+#: admin/class-pm-econt.php:94 admin/class-sm-econt.php:184
+#: admin/class-sm-econt.php:196 admin/class-sm-econt.php:1167
+#: admin/class-sm-econt.php:1169 admin/class-sm-econt.php:1250
+#: admin/class-sm-econt.php:1285 admin/class-sm-econt.php:1287
+#: admin/class-sm-econt.php:1368
+msgid "please select"
+msgstr "моля изберете"
+
+#: admin/class-order-econt.php:468
+#: admin/view/html-order-edit-address-view.php:87
+#: admin/view/html-order-edit-address-view.php:104
+#: admin/view/html-order-edit-address-view.php:112
+#: admin/view/html-order-view.php:486 inc/class-checkout-econt.php:222
+#: inc/class-checkout-econt.php:255 inc/class-checkout-econt.php:290
+#: inc/class-checkout-econt.php:346 inc/class-checkout-econt.php:355
+#: inc/class-checkout-econt.php:358
+#: inc/view/html-my-account-address-view.php:87
+#: inc/view/html-my-account-address-view.php:108
+#: inc/view/html-my-account-address-view.php:115
+msgid "please select..."
+msgstr "моля, изберете..."
+
+#: admin/view/html-order-view.php:431
+msgid ""
+"Please, add weight to the products in the list then you'll able to create "
+"Econt Express loading."
+msgstr ""
+"Моля, въведете тегло на продуктите в списъка и след това ще можете да "
+"генерирате товарителница."
+
+#: admin/view/html-order-edit-address-view.php:36
+#: admin/view/html-order-edit-address-view.php:42
+#: admin/view/html-order-edit-address-view.php:47
+msgid "Postcode"
+msgstr "Пощенски код"
+
+#: admin/view/html-order-view.php:665
+msgid "priority time"
+msgstr "Час за приоритет:"
+
+#: inc/class-checkout-econt.php:358
+msgid "Priority time hour"
+msgstr "Приоритетен час на доставка"
+
+#: inc/class-checkout-econt.php:355
+msgid "Priority time type"
+msgstr "Тип приоритет за време на доставка"
+
+#: admin/view/html-order-view.php:434 admin/view/html-order-view.php:845
+msgid "product id"
+msgstr "id на продукт"
+
+#: admin/view/html-order-view.php:434 admin/view/html-order-view.php:846
+msgid "product name"
+msgstr "име на продукт"
+
+#: admin/view/html-order-view.php:848
+msgid "product price"
+msgstr "цена на продукта"
+
+#: admin/view/html-order-view.php:847
+msgid "product weight"
+msgstr "тегло на продукта"
+
+#: admin/view/html-order-view.php:433
+msgid "Products without weight:"
+msgstr "Продукти без въведено тегло:"
+
+#: admin/view/html-order-view.php:865
+msgid "qty"
+msgstr "количество"
+
+#: admin/view/html-order-edit-address-view.php:49
+#: admin/view/html-order-edit-address-view.php:128
+msgid "Quarter"
+msgstr "Квартал"
+
+#: admin/view/html-order-edit-address-view.php:126
+#: inc/class-checkout-econt.php:321
+#: inc/view/html-my-account-address-view.php:126
+msgid "Quarter (Please, start typing and select from results.)"
+msgstr "Квартал"
+
+#: inc/class-checkout-econt.php:324
+#: inc/view/html-my-account-address-view.php:129
+msgid "Quarter name"
+msgstr "Име на квартал"
+
+#: inc/class-mysql-econt.php:2777
+msgid "quarter:"
+msgstr "квартал:"
+
+#: admin/class-sm-econt.php:729
+msgid "radio buttons"
+msgstr "радио бутони"
+
+#: admin/class-sm-econt.php:487
+msgid "Receiver"
+msgstr "Получател"
+
+#: admin/view/html-order-view.php:497
+msgid "receiver"
+msgstr "получател"
+
+#: admin/view/html-order-view.php:1046 admin/view/html-order-view.php:1173
+msgid "Receiver amount due"
+msgstr "Дължима сума от получателя:"
+
+#: admin/view/html-order-view.php:1022
+msgid "Receiver cd get sum"
+msgstr "Събрана сума от наложен платеж по пратката:"
+
+#: admin/view/html-order-view.php:1026
+msgid "Receiver cd get time "
+msgstr "Време на събиране на наложения платеж: "
+
+#: admin/view/html-order-view.php:1030
+msgid "Receiver cd send sum"
+msgstr "Изплатена сума на наложния платеж по пратката:"
+
+#: admin/view/html-order-view.php:1034
+msgid "Receiver cd send time"
+msgstr "Време на изплащане на наложения платеж:"
+
+#: admin/view/html-order-view.php:1010
+msgid "Receiver Courier"
+msgstr "Служител предал пратката:"
+
+#: admin/view/html-order-view.php:1137
+msgid "Receiver courier"
+msgstr "Служител предал пратката:"
+
+#: admin/view/html-order-view.php:1014
+msgid "Receiver Courier phone"
+msgstr "Телефон на служителя предал пратката:"
+
+#: admin/view/html-order-view.php:1141
+msgid "Receiver courier phone"
+msgstr "Телефон на служителя предал пратката:"
+
+#: admin/view/html-order-view.php:1002 admin/view/html-order-view.php:1129
+msgid "Receiver person"
+msgstr "Лице получило пратката:"
+
+#: admin/view/html-order-view.php:1133
+msgid "Receiver person Phone"
+msgstr "Телефон на получателя:"
+
+#: admin/view/html-order-view.php:1006
+msgid "Receiver person phone"
+msgstr "Телефон на получателя:"
+
+#: admin/view/html-order-view.php:1018
+msgid "Receiver Time"
+msgstr "Време на предаване на пратката към клиента:"
+
+#: admin/view/html-order-view.php:1145
+msgid "Receiver time"
+msgstr "Време на предаване на пратката към клиента:"
+
+#: admin/class-pm-econt.php:25
+msgid "Redirects to Econt online payment form"
+msgstr "Пренасочва към онлайн форма за плащане на Еконт"
+
+#: admin/class-order-econt.php:427 admin/class-sm-econt.php:395
+#: admin/class-sm-econt.php:401
+msgid "Refresh"
+msgstr "Обновете информацията"
+
+#: admin/class-sm-econt.php:393
+msgid "Refresh Data"
+msgstr "Обнови данни"
+
+#: admin/class-sm-econt.php:399
+msgid "Refresh Data International"
+msgstr "Обнови международни данни"
+
+#: inc/class-ajax-econt.php:152 inc/class-ajax-econt.php:166
+#: inc/class-ajax-econt.php:189
+msgid "refresh data success"
+msgstr "успешно обновяване на информацията"
+
+#: admin/class-sm-econt.php:402
+msgid "Refresh Econt Express Cities in Romania and Greece."
+msgstr "Обновете базата данни за градове на Еконт Експрес в Румъния и Гърция."
+
+#: admin/class-sm-econt.php:396
+msgid "Refresh Econt Express Ofices, Cities, Streets."
+msgstr "Обновете базата данни за Офиси, Градове и Улици на Еконт Експрес."
+
+#: admin/class-sm-econt.php:405 admin/class-sm-econt.php:407
+msgid "Refresh Profile"
+msgstr "Синхронизиране на профила"
+
+#: inc/class-ajax-econt.php:45
+msgid "region"
+msgstr "област"
+
+#: admin/view/html-order-view.php:868 admin/view/html-order-view.php:1358
+msgid "remove"
+msgstr "премахни"
+
+#: admin/class-sm-econt.php:1069
+msgid "Remove selected Row(s)"
+msgstr "Премахнете избрания Ред (Редове)"
+
+#: admin/view/html-order-view.php:915 admin/view/html-order-view.php:1240
+msgid "Request for courier"
+msgstr "Заявете куриер"
+
+#: inc/view/html-my-account-address-view.php:69
+#: inc/view/html-my-account-address-view.php:86
+#: inc/view/html-my-account-address-view.php:103
+#: inc/view/html-my-account-address-view.php:106
+#: inc/view/html-my-account-address-view.php:107
+#: inc/view/html-my-account-address-view.php:111
+#: inc/view/html-my-account-address-view.php:114
+#: inc/view/html-my-account-address-view.php:118
+#: inc/view/html-my-account-address-view.php:121
+#: inc/view/html-my-account-address-view.php:124
+msgid "required"
+msgstr "задължително"
+
+#: admin/class-sm-econt.php:748
+msgid ""
+"Restrict the loading of plugin's scripts and styles website wide and allow "
+"them to load only in Checkout, Cart, My Account and backend pages."
+msgstr ""
+"Ограничете зареждането на скриптовете и стиловете на плъгина в целия уебсайт "
+"и разрешете да се зареждат само в Checkout, Cart, My Account и backend "
+"страници."
+
+#: admin/class-order-econt.php:501
+msgid "return the shipment"
+msgstr "връщане на пратката"
+
+#: admin/class-sm-econt.php:1012
+msgid "Romania"
+msgstr "Румъния"
+
+#: admin/view/html-order-edit-address-view.php:142
+msgid "save address"
+msgstr "запази адреса"
+
+#: admin/class-sm-econt.php:751
+msgid "Save last entered address"
+msgstr "Запазване на последния въведен адрес"
+
+#: admin/class-sm-econt.php:754
+msgid "Save last entered address in browser local storage."
+msgstr ""
+"Запазване на последния въведен адрес в local storage на браузъра на "
+"посетителя."
+
+#: admin/class-order-econt.php:463
+msgid "Searching for a locality..."
+msgstr "Търсене на населено място…"
+
+#: admin/class-order-econt.php:466
+msgid "Searching for a neighborhood..."
+msgstr "Търсене на квартал…"
+
+#: admin/class-order-econt.php:461
+msgid "Searching for an office..."
+msgstr "Търсене на офис…"
+
+#: admin/class-order-econt.php:464
+msgid "Searching for APS…"
+msgstr "Търсене на АПС…"
+
+#: inc/class-checkout-econt.php:290
+#: inc/view/html-my-account-address-view.php:114
+msgid "Select APS"
+msgstr "Изберете АПС"
+
+#: admin/view/html-order-edit-address-view.php:103
+#: admin/view/html-order-edit-address-view.php:111
+#: admin/view/html-order-view.php:485 inc/class-checkout-econt.php:255
+msgid "Select office"
+msgstr "Изберете Офис"
+
+#: admin/class-sm-econt.php:597
+msgid ""
+"Send SMS to receiver's phone number when the shipment has arrived at the "
+"office from which it has to be taken or the shipment is taken by a courier "
+"for delivery when the shipping is to address."
+msgstr ""
+"Изпратете SMS на телефонния номер на получателя, когато пратката е "
+"пристигнала в офиса, от който трябва да бъде взета или пратката е взета от "
+"куриер за доставка, когато доставката е на адреса."
+
+#: admin/class-sm-econt.php:699
+msgid "Send tracking email"
+msgstr "Изпрати имейл за проследяване"
+
+#: admin/class-sm-econt.php:702
+msgid "Send tracking email when the way-bill is created."
+msgstr ""
+"Изпрати имейл за проследяване на пратката при създаването на товарителницата."
+" "
+
+#: admin/view/html-order-view.php:451
+msgid "Send:"
+msgstr "Изпратете:"
+
+#: admin/class-sm-econt.php:487
+msgid "Sender"
+msgstr "Изпращач"
+
+#: admin/view/html-order-view.php:498
+msgid "sender"
+msgstr "изпращач"
+
+#: admin/class-sm-econt.php:440
+msgid "Sender Address"
+msgstr "Адрес на изпращача"
+
+#: admin/view/html-order-view.php:466
+msgid "Sender Address:"
+msgstr "Адрес на изпращач:"
+
+#: admin/view/html-order-view.php:1042 admin/view/html-order-view.php:1169
+msgid "Sender amount due"
+msgstr "Дължима сума от подателя:"
+
+#: admin/view/html-order-view.php:479
+msgid "Sender Office:"
+msgstr "Офис на изпращач:"
+
+#: admin/class-order-econt.php:429
+msgid ""
+"services that you can use when sending by APS are: \\n- cash (when using the "
+"agreement to collect COD) \\n- receipt \\n- bidirectional shipment \\n- Hour "
+"priority (when sending to address) \\n- Review  \\n- View and test \\n- "
+"review, test and choice"
+msgstr ""
+"услугите, които можете да използвате при изпращане чрез АПС, са: \\ n- в "
+"брой (при използване на споразумението за събиране на НП) \\ n- разписка \\ "
+"n- двупосочна пратка \\ n- Приоритет за час (при изпращане до адрес) \\ n- "
+"Преглед \\ n - Преглед и тест \\ n- преглед, тест и избор"
+
+#: admin/class-order-econt.php:521
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/class-sm-econt.php:1006
+msgid "Shared"
+msgstr "Споделен"
+
+#: admin/class-sm-econt.php:36
+msgid "Ship you goods with Econt Express"
+msgstr "Доставяйте вашите продукти с Еконт Експрес"
+
+#: inc/class-checkout-econt.php:593
+msgid "Shipment tracking"
+msgstr "Проследяване на пратка"
+
+#: inc/class-ajax-econt.php:386
+msgid "Shipment tracking - waybill No:"
+msgstr "Проследяване на товарителница №:"
+
+#: inc/class-checkout-econt.php:592
+msgid "Shipment tracking details:"
+msgstr "Детайли за проследяване на пратка:"
+
+#: inc/class-mysql-econt.php:2015
+msgid "shipment tracking for order #"
+msgstr "проследяване на пратката за поръчка #"
+
+#: admin/class-order-econt.php:445
+msgid "Shipping Cost:"
+msgstr "Цена на доставка:"
+
+#: admin/class-sm-econt.php:1016 admin/class-sm-econt.php:1020
+msgid "Shipping Payments"
+msgstr "Плащане на цената за доставка"
+
+#: admin/view/html-order-edit-address-view.php:86
+#: inc/class-checkout-econt.php:238 inc/class-checkout-econt.php:243
+#: inc/view/html-my-account-address-view.php:69
+#: inc/view/html-my-account-address-view.php:86
+msgid "Shipping to"
+msgstr "Изпращане до"
+
+#: admin/class-sm-econt.php:369
+msgid "Shipping your goods with Econt Express."
+msgstr "Доставка на продуктите Ви с Еконт Експрес."
+
+#: admin/class-sm-econt.php:786
+msgid "Show billing country field in Checkout."
+msgstr "Показване на поле за избор на държава за доставка в Чекаут."
+
+#: admin/class-sm-econt.php:783
+msgid "Show country field in Checkout"
+msgstr "Показване на поле за избор на държава в Чекаут"
+
+#: admin/class-sm-econt.php:742
+#| msgid ""
+#| "Show informational tooltips on hover shipping fileds in Checkout page."
+msgid "Show informational Tooltips on hover shipping fileds in Checkout page."
+msgstr ""
+"Показване на информационни подсказки в полетата за доставка при задържане на "
+"мишката в страницата за плащане."
+
+#: admin/class-sm-econt.php:736
+msgid "Show map with offices and APTs in Checkout for easy selection."
+msgstr ""
+"Показване на интерактивна карта с офиси и АПС в Чекаут страницата за по-"
+"лесен избор."
+
+#: admin/view/html-order-view.php:548
+msgid "Size under 60cm:"
+msgstr "Размер на пратката под 60cm:"
+
+#: admin/class-sm-econt.php:594
+msgid "SMS notification"
+msgstr "SMS известяване"
+
+#: admin/view/html-order-view.php:606
+msgid "SMS notification:"
+msgstr "SMS известяване:"
+
+#: admin/class-sm-econt.php:601
+msgid "SMS on delivery"
+msgstr "SMS при доставка"
+
+#: admin/view/html-order-view.php:617 admin/view/html-order-view.php:698
+msgid "SMS on delivery:"
+msgstr "SMS при доставка:"
+
+#: admin/class-order-econt.php:462
+msgid "Start typing and select from the results"
+msgstr "Започнете да въвеждате и изберете от резултатите"
+
+#: admin/class-order-econt.php:459
+msgid "Start typing…"
+msgstr "Започнете да въвеждате…"
+
+#: admin/view/html-order-view.php:998 admin/view/html-order-view.php:1125
+msgid "Storage"
+msgstr "Името на офиса или линията, в която в момента се намира пратката:"
+
+#: inc/class-checkout-econt.php:318
+#: inc/view/html-my-account-address-view.php:125
+msgid "str. num."
+msgstr "ул. №"
+
+#: admin/view/html-order-edit-address-view.php:124
+msgid "str. num.:"
+msgstr "ул. №:"
+
+#: admin/view/html-order-edit-address-view.php:55
+#: admin/view/html-order-edit-address-view.php:121
+#: admin/view/html-order-edit-address-view.php:123
+msgid "Street"
+msgstr "Улица"
+
+#: inc/class-checkout-econt.php:312
+#: inc/view/html-my-account-address-view.php:121
+msgid "Street (Please, start typing and select from results.)"
+msgstr "Улица"
+
+#: inc/class-checkout-econt.php:315
+#: inc/view/html-my-account-address-view.php:124
+msgid "Street name"
+msgstr "Име на улица"
+
+#: admin/view/html-order-edit-address-view.php:58
+msgid "Street num"
+msgstr "Ул. №"
+
+#: admin/view/html-order-edit-address-view.php:124
+#: inc/class-checkout-econt.php:318
+#: inc/view/html-my-account-address-view.php:125
+msgid "street num"
+msgstr "ул. №"
+
+#: admin/class-order-econt.php:465
+msgid "Street Search…"
+msgstr "Търсене на улица…"
+
+#: inc/class-mysql-econt.php:2784
+msgid "street:"
+msgstr "улица:"
+
+#: admin/class-sm-econt.php:643 admin/class-sm-econt.php:646
+msgid "Submission of packing list"
+msgstr "Подаване на опис"
+
+#: admin/class-sm-econt.php:408
+msgid "Sync customer profile settings with Econt Express API."
+msgstr ""
+"Синхронизиране на плъгина с данните от профила Ви в системата на Еконт "
+"Експрес. Използва се ако сте сменили профла си в <a href=\"https://ee.econt."
+"com\" target=\"_blank\">ee.econt.com</a> или сте правили промени по "
+"настройките му също и ако имате нови споразунемия."
+
+#: admin/class-sm-econt.php:617 admin/view/html-order-view.php:639
+msgid "Test"
+msgstr "тест"
+
+#: admin/class-sm-econt.php:374
+msgid "test"
+msgstr "Тест"
+
+#: admin/class-order-econt.php:437
+msgid ""
+"Test environment (If you choose a test environment, all requests will be "
+"sent to the test system ECONT); <br> NOTE: User names and passwords on both "
+"systems are different, so if you do not have a username and password for the "
+"test system - choose \"live\" from the dropdown menu."
+msgstr ""
+"Тестова среда (Ако се избере Тестова среда, всички заявки ще се пращат към "
+"тестовата система на ЕКОНТ);<br>ВНИМАНИЕ: Потребителските имена и пароли за "
+"двете системи са различни, затова ако не разполагате с потребителско име и "
+"парола за тестовата система – изберете „Реална“ от падащото меню."
+
+#: admin/class-sm-econt.php:346
+msgid "text"
+msgstr "текст"
+
+#: inc/class-onupdate-econt.php:64
+msgid ""
+"Thanks for installing WooCommerce Econt Shipping Plugin, please read the <a "
+"href=\"https://mreja.net/plugin_info.php?plugin=wooecont&type=install&ver=1."
+"1.0&lang=en\" target=\"_blank\">configuration instructions</a> before you "
+"continue."
+msgstr ""
+"Благодаря, че инсталирахте плъгина за доставка с Еконт Експрес, моля, "
+"прочетете <a href=\"https://mreja.net/plugin_info.php?"
+"plugin=wooecont&type=install&ver=1.1.0&lang=bg\" target=\"_blank\">"
+"инструкцията за конфигуриране</a> преди да продължите."
+
+#: inc/class-onupdate-econt.php:51
+msgid ""
+"Thanks for updating WooCommerce Econt Shipping Plugin, please read the <a "
+"href=\"https://mreja.net/plugin_info.php?plugin=wooecont&type=update&ver=1.1."
+"0&lang=en\" target=\"_blank\">upgrade notes</a> before you continue."
+msgstr ""
+"Благодаря, че обновихте плъгина за доставка с Еконт Експрес, моля, прочетете "
+"<a href=\"https://mreja.net/plugin_info.php?"
+"plugin=wooecont&type=update&ver=1.1.0&lang=bg\" target=\"_blank\">"
+"информацията за новата версия</a> преди да продължите."
+
+#. translators: site url
+#: inc/class-mysql-econt.php:2006
+msgid "Thanks for using %s"
+msgstr "Благодарим ви, че използвате %s"
+
+#: admin/class-sm-econt.php:443
+msgid ""
+"The addresses are taken from your Econt Express profile at http://ee.econt."
+"com. Choose one if you want to be able to send from your door."
+msgstr ""
+"Адресите се взимат от профила Ви в портала на Еконт Експрес на адрес:  http:"
+"//ee.econt.com. Изберете от падащото меню ако желаете да изпращате от адрес."
+
+#: inc/view/html-checkout-user-view.php:41
+msgid "The APS is closed or it's identifier is changed. Please select office."
+msgstr "АПС е затворен или идентификаторът му е сменен. Моля, изберете АПС."
+
+#: admin/class-sm-econt.php:1029
+msgid "The customer will pay for shipping to door:"
+msgstr "Клиентът ще заплати за доставка до адрес:"
+
+#: admin/class-sm-econt.php:1030
+msgid "The customer will pay for shipping to office or APS"
+msgstr "Клиентът ще заплати за доставка до Еконт Експрес офис или АПС:"
+
+#: admin/class-order-econt.php:436
+msgid ""
+"The default is set to live work environment, enter your: <br> -Username to "
+"access e-Econt; <br> -Password to access e-Econt; <br> -Click on the button "
+"\"Update information\" and wait until downloaded the necessary information "
+"from servers Econt. New fields with different settings of the module will "
+"appear."
+msgstr ""
+"По подразбиране е зададена Реaлна среда за работа, въведете си:<br>-"
+"Потребителско име за достъп до e-Econt;<br>-Парола за достъп до e-Econt;<br>-"
+"Кликнете на бутона \"Обновете информацията\", и изчакайте докато се изтегли "
+"нужната информация от сървърите на Еконт и се появят нови полета с различни "
+"настройки на модула"
+
+#: admin/class-sm-econt.php:766
+msgid ""
+"The delay in miliseconds of AJAX requests in Checkout autocomplete fields. "
+"This setting is usefull for stores hosted on hosting servers with limited "
+"resources and load restrictions but if it is too heigh it can affect "
+"negative the Checkout User Exprerience. If you are not sure leave blank or "
+"enter 250"
+msgstr ""
+"Забавянето в милисекунди на AJAX заявките в полетата за автоматично "
+"попълване в Чекаут. Тази настройка е полезна за магазини хоствани на хостинг "
+"сървъри с ограничени ресурси и ограничения за натоварване, но ако е твърде "
+"висока може да повлияе отрицателно на потребителското изживяване в Чекаут "
+"страницата. Ако не сте сигурни, оставете празно или въведете 250"
+
+#: admin/class-sm-econt.php:712
+msgid "The email address of the tracking email sender."
+msgstr "Имейл адресът на изпращача на имейла за проследяване. "
+
+#: inc/class-checkout-econt.php:455
+msgid "The goods will be shipped to:"
+msgstr "Поръчката ще бъде изпратена до:"
+
+#: admin/class-sm-econt.php:707
+msgid "The name of the tracking email sender."
+msgstr "Името на изпращача на имейла за проследяване."
+
+#: inc/view/html-checkout-user-view.php:34
+msgid ""
+"The office is closed or it's identifier is changed. Please select office."
+msgstr ""
+"Офисът е затворен или идентификаторът му е сменен. Моля, изберете офис."
+
+#: admin/class-sm-econt.php:353
+msgid "This controls the title which the user sees during checkout."
+msgstr "Това поле се показва на клиентите при чекаут."
+
+#: admin/class-sm-econt.php:347
+msgid ""
+"This setting controls the type of title (text or image) which the user sees "
+"during checkout."
+msgstr ""
+"Тази опция контролира вида на заглавието (текст или изображение), което "
+"потребителят вижда по време на приключване на поръчката."
+
+#: admin/view/html-order-view.php:1090 admin/view/html-order-view.php:1209
+#: inc/class-ajax-econt.php:389
+msgid "Time"
+msgstr "Време на събитието"
+
+#: admin/class-pm-econt.php:83 admin/class-sm-econt.php:351
+msgid "Title"
+msgstr "Заглавие"
+
+#: admin/class-sm-econt.php:359
+msgid "Title image"
+msgstr "Заглавно изображение"
+
+#: admin/class-sm-econt.php:344
+msgid "Title type"
+msgstr "Тип заглавие"
+
+#: admin/class-sm-econt.php:608
+msgid ""
+"To add the service of delivering an invoice before paying cash on delivery"
+msgstr "Предай фактура преди плащане на наложения платеж"
+
+#: admin/class-sm-econt.php:611
+msgid ""
+"To add the service of delivering an invoice before paying cash on delivery:"
+msgstr "Предай фактура преди плащане на наложения платеж"
+
+#: admin/view/html-order-edit-address-view.php:95
+#: inc/class-checkout-econt.php:230
+#: inc/view/html-my-account-address-view.php:79
+#: inc/view/html-my-account-address-view.php:99
+msgid "to APS"
+msgstr "до АПС"
+
+#: admin/view/html-order-edit-address-view.php:89
+#: inc/class-checkout-econt.php:224
+#: inc/view/html-my-account-address-view.php:71
+#: inc/view/html-my-account-address-view.php:89
+msgid "to door"
+msgstr "до адрес"
+
+#: admin/view/html-order-edit-address-view.php:92
+#: inc/class-checkout-econt.php:227
+#: inc/view/html-my-account-address-view.php:75
+#: inc/view/html-my-account-address-view.php:94
+msgid "to office"
+msgstr "до офис"
+
+#: admin/class-sm-econt.php:1150
+msgid "to office only"
+msgstr "само до офис"
+
+#: admin/class-order-econt.php:439
+msgid "Total Shipping Cost to be paid by customer:"
+msgstr "Цена за доставка за плащане от клиента:"
+
+#: admin/class-order-econt.php:438
+msgid "Total Shipping Cost:"
+msgstr "Обща цена за доставка:"
+
+#: admin/view/html-order-view.php:1038
+msgid "Total sum"
+msgstr "Стойност на пратката:"
+
+#: admin/view/html-order-view.php:1165
+msgid "total sum"
+msgstr "Стойност на пратката:"
+
+#: admin/view/html-order-edit-address-view.php:34
+#: admin/view/html-order-edit-address-view.php:40
+#: admin/view/html-order-edit-address-view.php:46
+#: admin/view/html-order-edit-address-view.php:99
+#: admin/view/html-order-edit-address-view.php:107
+#: admin/view/html-order-edit-address-view.php:116
+#: admin/view/html-order-view.php:482
+msgid "Town"
+msgstr "Населено място"
+
+#: inc/class-checkout-econt.php:249 inc/class-checkout-econt.php:284
+#: inc/class-checkout-econt.php:306
+#: inc/view/html-my-account-address-view.php:103
+#: inc/view/html-my-account-address-view.php:111
+#: inc/view/html-my-account-address-view.php:118
+msgid "Town (Please, start typing and select from results.)"
+msgstr "Населено място"
+
+#: inc/class-mysql-econt.php:2004
+msgid "Track shipment"
+msgstr "Проследяване на пратката"
+
+#: admin/view/html-order-view.php:1085 admin/view/html-order-view.php:1204
+msgid "Tracking"
+msgstr "Проследяване на пратката"
+
+#: admin/class-order-econt.php:263 admin/class-order-econt.php:467
+msgid "tracking"
+msgstr "проследяване"
+
+#: admin/class-sm-econt.php:710
+msgid "Tracking email \"From\" address"
+msgstr "Имейл за проследяване \"От\" адрес"
+
+#: admin/class-sm-econt.php:705
+msgid "Tracking email \"From\" name"
+msgstr "Имейл за проследяване \"От\" име"
+
+#: admin/class-order-econt.php:510
+msgid "tracking event"
+msgstr "проследяване на събитие"
+
+#: admin/class-order-econt.php:492
+msgid "transfer to an office"
+msgstr "предаване в офис"
+
+#: admin/class-order-econt.php:483
+msgid "transmission to a client"
+msgstr "предаване към клиент"
+
+#: admin/class-order-econt.php:489
+msgid "transmission to a route line"
+msgstr "предаване към маршрутна линия"
+
+#: admin/class-order-econt.php:486
+msgid "transmission to courier"
+msgstr "предаване към куриер"
+
+#: admin/class-sm-econt.php:1031
+msgid "Type"
+msgstr "Тип"
+
+#: admin/class-order-econt.php:507
+msgid "unsuccessful delivery attempt"
+msgstr "неуспешен опит за доставка"
+
+#: admin/view/html-order-view.php:794 inc/class-checkout-econt.php:346
+msgid "up to 120 minutes"
+msgstr "до 120 минути"
+
+#: admin/view/html-order-view.php:792 inc/class-checkout-econt.php:346
+msgid "up to 60 minutes"
+msgstr "до 60 минути"
+
+#: admin/view/html-order-view.php:793 inc/class-checkout-econt.php:346
+msgid "up to 90 minutes"
+msgstr "до 90 минути"
+
+#: admin/view/html-order-edit-address-view.php:142
+#: inc/view/html-my-account-address-view.php:138
+msgid "update address"
+msgstr "обнови адреса"
+
+#: admin/class-sm-econt.php:379
+msgid "username"
+msgstr "потребител"
+
+#: admin/view/html-order-view.php:1060 admin/view/html-order-view.php:1066
+#: admin/view/html-order-view.php:1072 admin/view/html-order-view.php:1076
+#: admin/view/html-order-view.php:1080 admin/view/html-order-view.php:1187
+#: admin/view/html-order-view.php:1193 admin/view/html-order-view.php:1199
+msgid "View"
+msgstr "Преглед"
+
+#: admin/class-sm-econt.php:260 admin/view/html-order-view.php:398
+msgid "Voucher"
+msgstr "Ваучер"
+
+#: inc/class-checkout-econt.php:274 inc/class-checkout-econt.php:349
+msgid "We offer our customers partial delivery."
+msgstr "Ние предлагане на нашите клиенти частична доставка."
+
+#: admin/view/html-order-view.php:516
+msgid "Weight:"
+msgstr "Тегло:"
+
+#: admin/class-order-econt.php:428
+msgid ""
+"When sending by APS and activate the service payment on delivery (COD) is "
+"required can use the agreement to collect cash!"
+msgstr ""
+"При изпращане по АПС и активиране на наложен платеж (НП) се изисква да "
+"използвате споразумението за събиране на пари в брой!"
+
+#: admin/class-sm-econt.php:495
+msgid ""
+"When the shipping is payed by the sender if you pay on credit please chose "
+"your client number or Cash, Bonus points and Voucher"
+msgstr ""
+"Когато пратката се плаща от изпращача, ако плащате на кредит, моля, изберете "
+"номера на споразумение или в брой, с бонус точки и ваучер."
+
+#: admin/view/html-order-view.php:532
+msgid "Width:"
+msgstr "Ширина:"
+
+#: admin/class-sm-econt.php:499 admin/class-sm-econt.php:502
+msgid "Will you allow Cash on delivery"
+msgstr "Разрешавате ли плащане при доставка?"
+
+#: inc/class-mysql-econt.php:1429
+msgid "with priority: "
+msgstr "с приоритет:"
+
+#: admin/view/html-order-view.php:701
+msgid "write phone number"
+msgstr "въведете телефонен номер"
+
+#: admin/class-sm-econt.php:501 admin/class-sm-econt.php:515
+#: admin/class-sm-econt.php:554 admin/class-sm-econt.php:561
+#: admin/class-sm-econt.php:568 admin/class-sm-econt.php:575
+#: admin/class-sm-econt.php:582 admin/class-sm-econt.php:589
+#: admin/class-sm-econt.php:596 admin/class-sm-econt.php:610
+#: admin/class-sm-econt.php:624 admin/class-sm-econt.php:631
+#: admin/class-sm-econt.php:638 admin/class-sm-econt.php:652
+#: admin/class-sm-econt.php:687 admin/class-sm-econt.php:694
+#: admin/class-sm-econt.php:701 admin/class-sm-econt.php:717
+#: admin/class-sm-econt.php:723 admin/class-sm-econt.php:735
+#: admin/class-sm-econt.php:741 admin/class-sm-econt.php:747
+#: admin/class-sm-econt.php:753 admin/class-sm-econt.php:759
+#: admin/class-sm-econt.php:771 admin/class-sm-econt.php:778
+#: admin/class-sm-econt.php:785
+msgid "Yes"
+msgstr "Да"
+
+#: admin/view/html-order-view.php:195 admin/view/html-order-view.php:212
+#: admin/view/html-order-view.php:553 admin/view/html-order-view.php:583
+#: admin/view/html-order-view.php:597 admin/view/html-order-view.php:611
+#: admin/view/html-order-view.php:622 admin/view/html-order-view.php:650
+#: admin/view/html-order-view.php:711 admin/view/html-order-view.php:722
+#: admin/view/html-order-view.php:781 admin/view/html-order-view.php:819
+#: admin/view/html-order-view.php:992 admin/view/html-order-view.php:1119
+#: inc/class-ajax-econt.php:412
+msgid "yes"
+msgstr "да"
+
+#: admin/view/html-order-view.php:838
+msgid "You must print an inventory shipping list and attach it to the loading."
+msgstr ""
+"Трябва да принтирате списък с изпращаните артикули и да го прикрепите към "
+"пратката."
+
+#: admin/class-sm-econt.php:435
+msgid "Your email address"
+msgstr "Вашият имейл адрес"
+
+#: admin/class-sm-econt.php:421
+msgid "Your Name"
+msgstr "Вашето име (две имена)"
+
+#: admin/class-sm-econt.php:428
+msgid "Your Phone registered in Econt Express account"
+msgstr "Вашият телефон регистриран в профила Ви в  Еконт Експрес."

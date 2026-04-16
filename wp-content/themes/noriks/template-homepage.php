@@ -180,7 +180,7 @@ get_header(); ?>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="/bg/product-category/majice/">
+    <a class="collection-card" href="/bg/product-category/teniski/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
@@ -203,7 +203,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="/bg/product-category/bokserice/">
+    <a class="collection-card" href="/bg/product-category/boksarki/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -227,7 +227,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 3 -->
-    <a class="collection-card" href="/bg/product-category/kompleti/">
+    <a class="collection-card" href="/bg/product-category/komplekti/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-kompleti.jpeg"
@@ -251,7 +251,7 @@ get_header(); ?>
     </a>
     
     <!-- Card 3 -->
-    <a class="collection-card" href="/bg/product-category/starter-paketi/">
+    <a class="collection-card" href="https://noriks.com/bg/product-category/komplekti/?yith_wcan=1&product_cat=startovi-paketi&orderby=popularity">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"

@@ -99,26 +99,26 @@
   <div  style="<?php if ( has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', get_the_ID() ) ): ?>  display: block; <?php endif; ?>"
         class="size-chart-left">
       
-      <?php if ( has_term( array( 'bokserice', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() )   && 
+      <?php if ( has_term( array( 'boksarki', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() )   && 
        !has_term( 'black-friday', 'product_cat', get_the_ID() )   ): ?>
       
     <img
     
     style="margin-top: 70px;margin-bottom: 70px;"
     
-      src="/bg/wp-content/uploads/2025/12/boxers_size.jpg"
+      src="https://noriks.com/bg/wp-content/uploads/2026/04/bokserice_bg.jpg"
       alt="Size Guide">
       
       
        
-      <?php elseif ( has_term( array( 'carape', 'zimske-carape	' ), 'product_cat', get_the_ID() ) ): ?>
+      <?php elseif ( has_term( array( 'chorapi', 'zimske-carape	' ), 'product_cat', get_the_ID() ) ): ?>
       
       
        <img
     
     style="margin-top: 70px;margin-bottom: 70px;"
     
-      src="/bg/wp-content/uploads/2025/11/Чорапи_tabela_velikosti.jpg"
+      src="https://noriks.com/bg/wp-content/uploads/2026/04/nogavice_bg.jpg"
       alt="Size Guide">
       
       
@@ -130,7 +130,7 @@
     
     style="margin-top: 35px;margin-bottom: 0px;"
     
-      src="https://noriks.com/bg/wp-content/uploads/2026/04/hr_majice.jpeg"
+      src="https://noriks.com/bg/wp-content/uploads/2026/04/tablica_Bg.jpg"
       alt="Size Guide">
       
       
@@ -138,7 +138,7 @@
     
     style="margin-top: 0px;margin-bottom: 0px;"
     
-      src="/bg/wp-content/uploads/2025/12/boxers_size.jpg"
+      src="https://noriks.com/bg/wp-content/uploads/2026/04/bokserice_bg.jpg"
       alt="Size Guide">
      
       
@@ -150,7 +150,7 @@
     
     style="margin-top: 70px;margin-bottom: 70px;"
     
-      src="https://noriks.com/bg/wp-content/uploads/2026/04/hr_majice.jpeg"
+      src="https://noriks.com/bg/wp-content/uploads/2026/04/tablica_Bg.jpg"
       alt="Size Guide">
       
       <?php endif; ?>

@@ -1,0 +1,1944 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Econt Express WooCommerce shipping method\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-10 06:42+0000\n"
+"PO-Revision-Date: 2023-03-13 11:41+0000\n"
+"Last-Translator: \n"
+"Language-Team: Greek\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.1.1\n"
+"X-Domain: woocommerce-econt"
+
+#: inc/class-checkout-econt.php:771
+msgid " (to be calculated)"
+msgstr "(να υπολογιστεί)"
+
+#: admin/view/html-order-edit-address-view.php:32
+#: admin/view/html-order-edit-address-view.php:38
+#: inc/class-checkout-econt.php:432 inc/class-checkout-econt.php:447
+#: inc/class-checkout-econt.php:613 inc/class-checkout-econt.php:626
+#: inc/class-checkout-econt.php:802 inc/class-checkout-econt.php:810
+msgid " address: "
+msgstr ""
+
+#: admin/class-sm-econt.php:502
+msgid ""
+"\"24 часа Еконт - Автоматична пощенска станция\" (АПС) е устройство, с което "
+"сами изпращате и получавате пратки денонощно, без почивен ден.  Научете "
+"повече на: <a href=\"http://www.econt.com/24-chasa-econt-aps/\" "
+"target=\"_blank\">http://www.econt.com/24-chasa-econt-aps/</a>"
+msgstr ""
+
+#: admin/class-sm-econt.php:728
+msgid "+ Add Row"
+msgstr ""
+
+#: admin/class-order-econt.php:395 admin/class-sm-econt.php:268
+msgid ", other: "
+msgstr ", Αλλα:"
+
+#: admin/class-order-econt.php:395 admin/class-sm-econt.php:268
+msgid ", q.: "
+msgstr ""
+
+#: admin/class-order-econt.php:395 admin/class-sm-econt.php:268
+msgid ", t./v. "
+msgstr ""
+
+#: admin/class-sm-econt.php:474
+msgid ""
+"0 = no \"DV\", 1 = Always \"DV\", 2...n =  The cost above which \"DV\" will "
+"be enabled"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1872
+msgid ""
+"<p>Hi %1$s,</p><p>Your order #%2$s is ready to be sent with a way-bill "
+"number <strong>%3$s</strong> with the courier company Econt Express. You can "
+"track the movement of the shipment from the button below.</p>"
+msgstr ""
+"<p>Γεια σου %1$s, </p><p>Η παραγγελία σας #%2$s είναι έτοιμη να αποσταλεί με "
+"τον αριθμό αποστολής <strong>%3$s</strong> με την εταιρεία ταχυμεταφορών "
+"Econt Express. Μπορείτε να παρακολουθείτε την κίνηση της αποστολής από το "
+"παρακάτω κουμπί.</p>\n"
+
+#: inc/class-mysql-econt.php:1871
+msgid ""
+"<p>Your order #%1$s is ready to be sent with a way-bill number <strong>"
+"%2$s</strong> with the courier company Econt Express. You can track the "
+"movement of the shipment by clicking the button below.</p>"
+msgstr ""
+"<p>Η παραγγελία σας #%1$s είναι έτοιμη να αποσταλεί με τον αριθμό αποστολής "
+"<strong>%2$s</strong> με την εταιρεία ταχυμεταφορών Econt Express. Μπορείτε "
+"να παρακολουθείτε την κίνηση της αποστολής από το παρακάτω κουμπί.</p>"
+
+#: admin/class-sm-econt.php:583
+msgid "Ability to return the item already purchased"
+msgstr ""
+
+#: admin/class-sm-econt.php:586
+msgid "Ability to return the item already purchased:"
+msgstr ""
+
+#: admin/class-sm-econt.php:550 admin/view/html-order-view.php:200
+msgid "Accept"
+msgstr ""
+
+#: admin/view/html-order-view.php:417
+msgid "add"
+msgstr ""
+
+#: admin/class-order-econt.php:326 inc/class-checkout-econt.php:325
+msgid "after"
+msgstr ""
+
+#: admin/view/html-order-view.php:148 admin/view/html-order-view.php:161
+msgid "amount: "
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:194
+#: inc/class-checkout-econt.php:307
+msgid "ap. num"
+msgstr "αριθμός διαμερίσματος"
+
+#: inc/class-checkout-econt.php:307
+msgid "ap. num."
+msgstr "αριθμός διαμερίσματος"
+
+#: admin/view/html-order-edit-address-view.php:194
+msgid "ap. num.:"
+msgstr "αριθμός διαμερίσματος:"
+
+#: admin/view/html-order-edit-address-view.php:64
+msgid "Apartment num"
+msgstr "αριθμός διαμερίσματος"
+
+#: inc/class-checkout-econt.php:836
+msgid "apartment:"
+msgstr "Διαμέρισμα:"
+
+#: admin/view/html-order-edit-address-view.php:10
+#: admin/view/html-order-edit-address-view.php:38
+#: inc/class-checkout-econt.php:263
+msgid "APS"
+msgstr ""
+
+#: admin/class-sm-econt.php:933 admin/class-sm-econt.php:937
+msgid "APS Town"
+msgstr ""
+
+#: admin/class-sm-econt.php:439
+msgid "Are you going to use an agreement for CD"
+msgstr ""
+
+#: admin/view/html-order-view.php:129
+msgid "Are you going to use an agreement for CD:"
+msgstr ""
+
+#: admin/class-sm-econt.php:513 admin/class-sm-econt.php:516
+msgid "Attach a service acknowledgment"
+msgstr ""
+
+#: admin/class-sm-econt.php:520 admin/class-sm-econt.php:523
+msgid "Attach a service acknowledgment/bill of goods"
+msgstr ""
+
+#: admin/view/html-order-view.php:279
+msgid "Attach a service acknowledgment/bill of goods:"
+msgstr ""
+
+#: admin/view/html-order-view.php:207
+msgid "Attach a service acknowledgment:"
+msgstr ""
+
+#: admin/class-sm-econt.php:555 admin/class-sm-econt.php:558
+msgid "Attach a time priority"
+msgstr ""
+
+#: admin/class-sm-econt.php:578
+msgid "Attached to the parcel"
+msgstr ""
+
+#: admin/class-sm-econt.php:648
+msgid "Auto Refresh Data"
+msgstr ""
+
+#: admin/class-sm-econt.php:654
+msgid "Auto Refresh Data International"
+msgstr ""
+
+#: admin/class-sm-econt.php:657
+msgid "Automatically Refresh Econt Express Cities in Romania and Greece."
+msgstr ""
+
+#: admin/class-sm-econt.php:651
+msgid ""
+"Automatically Refresh Econt Express Ofices, Cities, Streets once a day. WP "
+"Cron must be enabled."
+msgstr ""
+
+#: admin/class-order-econt.php:324 inc/class-checkout-econt.php:325
+msgid "before"
+msgstr ""
+
+#: inc/class-checkout-econt.php:297
+msgid "bl. num."
+msgstr "αριθμός μπλοκ"
+
+#: admin/view/html-order-edit-address-view.php:188
+msgid "bl. num.:"
+msgstr "αριθμός μπλοκ:"
+
+#: admin/view/html-order-view.php:626
+msgid "Blank no"
+msgstr ""
+
+#: admin/view/html-order-view.php:753
+msgid "blank no"
+msgstr ""
+
+#: admin/view/html-order-view.php:620
+msgid "Blank yes"
+msgstr ""
+
+#: admin/view/html-order-view.php:747
+msgid "blank yes"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:188
+#: inc/class-checkout-econt.php:297
+msgid "blok num"
+msgstr "αριθμός μπλοκ"
+
+#: admin/class-order-econt.php:491 admin/class-sm-econt.php:210
+msgid "Bonus points"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:49
+msgid "Building num"
+msgstr "Αριθμός κτισίματος"
+
+#: admin/view/html-order-view.php:475
+msgid "Calculate Shipping Cost"
+msgstr ""
+
+#: admin/class-order-econt.php:746
+msgid "Calculate Shipping Cost."
+msgstr ""
+
+#: inc/class-mysql-econt.php:2053
+msgid "calculating"
+msgstr ""
+
+#: admin/class-pm-econt.php:48
+msgid ""
+"Card payment in which the amount is saved in your account. It will only be "
+"withdrawn when you accept your shipment. If you refuse or return it "
+"immediately, the amount of the imposed payment will be released and will be "
+"at your disposal again."
+msgstr ""
+
+#: admin/class-order-econt.php:484 admin/class-sm-econt.php:136
+msgid "Cash"
+msgstr ""
+
+#: admin/view/html-order-view.php:141
+msgid "Cash on delivery"
+msgstr ""
+
+#: admin/view/html-order-view.php:711
+msgid "Cash on delivery get sum"
+msgstr ""
+
+#: admin/view/html-order-view.php:715
+msgid "Cash on delivery get time"
+msgstr ""
+
+#: admin/view/html-order-view.php:719
+msgid "Cash on delivery send sum"
+msgstr ""
+
+#: admin/view/html-order-view.php:723
+msgid "Cash on delivery send time"
+msgstr ""
+
+#: admin/class-sm-econt.php:301
+msgid "Checkout description"
+msgstr ""
+
+#: admin/view/html-order-view.php:229 admin/view/html-order-view.php:353
+#: admin/view/html-order-view.php:394
+msgid "choose"
+msgstr ""
+
+#: admin/class-sm-econt.php:611
+msgid "Choose custom instructions for services"
+msgstr ""
+
+#: admin/class-sm-econt.php:1006
+msgid "Choose Econt Express APS if you want to be able to send from APS"
+msgstr ""
+
+#: admin/class-sm-econt.php:970
+msgid ""
+"Choose Econt Express APS town postcode if you want to be able to send from "
+"APS"
+msgstr ""
+
+#: admin/class-sm-econt.php:888
+msgid "Choose Econt Express office if you want to be able to send from office"
+msgstr ""
+
+#: admin/class-sm-econt.php:947
+msgid ""
+"Choose Econt Express office town if you want to be able to send from APS"
+msgstr ""
+
+#: admin/class-sm-econt.php:829
+msgid ""
+"Choose Econt Express office town if you want to be able to send from office"
+msgstr ""
+
+#: admin/class-sm-econt.php:852
+msgid ""
+"Choose Econt Express office town postcode if you want to be able to send "
+"from office"
+msgstr ""
+
+#: admin/class-sm-econt.php:597
+msgid "Choose give custom instructions"
+msgstr ""
+
+#: admin/class-sm-econt.php:604
+msgid "Choose return custom instructions"
+msgstr ""
+
+#: admin/class-sm-econt.php:590
+msgid "Choose take custom instructions"
+msgstr ""
+
+#: admin/class-sm-econt.php:425
+msgid "Choose the way you pay."
+msgstr ""
+
+#: admin/view/html-order-view.php:90
+msgid "Choose the way you pay:"
+msgstr ""
+
+#: admin/class-sm-econt.php:614
+msgid "Chose custom instructions for services"
+msgstr ""
+
+#: admin/class-sm-econt.php:481
+msgid ""
+"Chose from where you will send your goods by default: Econt Office or your "
+"address."
+msgstr ""
+
+#: admin/class-sm-econt.php:600
+msgid "Chose give custom instructions"
+msgstr ""
+
+#: admin/class-sm-econt.php:607
+msgid "Chose return custom instructions"
+msgstr ""
+
+#: admin/class-sm-econt.php:593
+msgid "Chose take custom instructions"
+msgstr ""
+
+#: admin/class-sm-econt.php:352
+msgid "Contact Person"
+msgstr ""
+
+#: admin/class-order-econt.php:825
+msgid "Create Econt loadings"
+msgstr ""
+
+#: admin/view/html-order-view.php:30 admin/view/html-order-view.php:476
+msgid "Create Loading"
+msgstr ""
+
+#: admin/class-order-econt.php:619
+msgid "create loading"
+msgstr ""
+
+#: admin/class-sm-econt.php:548 admin/class-sm-econt.php:551
+msgid "Customer can pay after accepting or testing the goods"
+msgstr ""
+
+#: admin/class-sm-econt.php:299
+msgid "Customer Message"
+msgstr ""
+
+#: admin/class-pm-econt.php:72
+msgid "Dark"
+msgstr ""
+
+#: admin/class-sm-econt.php:471
+msgid "Declared Value"
+msgstr ""
+
+#: admin/view/html-order-view.php:154
+msgid "Declared Value:"
+msgstr ""
+
+#: admin/class-sm-econt.php:478
+msgid "Default send from"
+msgstr ""
+
+#: admin/view/html-order-view.php:799
+msgid "Delete loading"
+msgstr ""
+
+#: admin/view/html-order-view.php:616 admin/view/html-order-view.php:743
+msgid "Delivery attempt count"
+msgstr ""
+
+#: inc/class-checkout-econt.php:312
+msgid "Delivery Days"
+msgstr ""
+
+#: admin/view/html-order-view.php:362
+msgid "Delivery Days:"
+msgstr ""
+
+#: admin/class-pm-econt.php:28
+msgid ""
+"DEMO MODE ENABLED. In demo mode, you can use the card number "
+"4341792000000044 with any CVC, a valid expiration date and dynamic password "
+"111111."
+msgstr ""
+
+#: admin/class-pm-econt.php:77
+msgid "Description"
+msgstr ""
+
+#: admin/view/html-order-view.php:467
+msgid "Description:"
+msgstr ""
+
+#: admin/class-order-econt.php:801
+msgid "destroying the shipment"
+msgstr ""
+
+#: admin/class-sm-econt.php:578
+msgid "Digital"
+msgstr ""
+
+#: admin/view/html-order-view.php:395
+msgid "digital"
+msgstr ""
+
+#: admin/class-order-econt.php:792
+msgid "disposition for change of shipping conditions"
+msgstr ""
+
+#: admin/class-sm-econt.php:480 admin/view/html-order-edit-address-view.php:4
+msgid "Door"
+msgstr ""
+
+#: inc/class-checkout-econt.php:518 inc/class-checkout-econt.php:668
+msgid "Econt Apartment:"
+msgstr "Διαμέρισμα:"
+
+#: inc/class-checkout-econt.php:445 inc/class-checkout-econt.php:625
+msgid "Econt APS:"
+msgstr ""
+
+#: inc/class-checkout-econt.php:810
+msgid "Econt APS: "
+msgstr ""
+
+#: inc/class-checkout-econt.php:478 inc/class-checkout-econt.php:643
+msgid "Econt Building Num.:"
+msgstr "Αριθμός κτισίματος:"
+
+#: inc/class-checkout-econt.php:333
+msgid "Econt Customer Shipping Cost"
+msgstr ""
+
+#: inc/class-checkout-econt.php:502 inc/class-checkout-econt.php:658
+msgid "Econt Entrance:"
+msgstr "Πάτωμα:"
+
+#: inc/class-checkout-econt.php:181
+msgid "Econt Express"
+msgstr ""
+
+#: admin/class-order-econt.php:79 admin/class-order-econt.php:81
+msgid "Econt Express - Order Viewer"
+msgstr ""
+
+#: admin/class-sm-econt.php:992 admin/class-sm-econt.php:996
+msgid "Econt Express APS"
+msgstr ""
+
+#: admin/class-sm-econt.php:964 admin/class-sm-econt.php:968
+msgid "Econt Express APS Postcode"
+msgstr ""
+
+#: admin/class-sm-econt.php:874 admin/class-sm-econt.php:878
+msgid "Econt Express Office"
+msgstr "Γραφείο"
+
+#: admin/class-sm-econt.php:846 admin/class-sm-econt.php:850
+msgid "Econt Express Office Postcode"
+msgstr ""
+
+#: admin/class-sm-econt.php:320
+msgid "Econt Express password."
+msgstr ""
+
+#: inc/class-checkout-econt.php:410 inc/class-checkout-econt.php:600
+msgid "Econt Express shipping data"
+msgstr "Δεδομένα αποστολής Econt Express"
+
+#: admin/class-sm-econt.php:294
+msgid "Econt Express Shipping Method"
+msgstr ""
+
+#: admin/class-order-econt.php:742
+msgid "Econt Express shipping price:"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:24
+#, php-format
+msgid "Econt Express shipping to %s"
+msgstr ""
+
+#: admin/class-sm-econt.php:314
+msgid ""
+"Econt Express username. I do not have username in e-Econt, I want to <a "
+"href=\"https://ee.econt.com/load_direct.php?target=Register\" "
+"target=\"_blank\">register</a>."
+msgstr ""
+
+#: admin/class-order-econt.php:88
+msgid "Econt Express Woocommerce"
+msgstr ""
+
+#. Plugin Name of the plugin
+msgid "Econt Express WooCommerce shipping method"
+msgstr ""
+
+#: inc/class-checkout-econt.php:510 inc/class-checkout-econt.php:663
+msgid "Econt Floor:"
+msgstr ""
+
+#: admin/class-order-econt.php:590
+msgid "Econt Loading"
+msgstr ""
+
+#: inc/class-checkout-econt.php:430 inc/class-checkout-econt.php:612
+msgid "Econt office:"
+msgstr "Γραφείο:"
+
+#: inc/class-checkout-econt.php:802
+msgid "Econt office: "
+msgstr "Γραφείο:"
+
+#: inc/class-checkout-econt.php:526 inc/class-checkout-econt.php:673
+msgid "Econt Other:"
+msgstr "Αλλα:"
+
+#: inc/class-checkout-econt.php:462 inc/class-checkout-econt.php:609
+#: inc/class-checkout-econt.php:622 inc/class-checkout-econt.php:634
+msgid "Econt Postcode:"
+msgstr "ΤΑΧΥΔΡΟΜΙΚΟΣ ΚΩΔΙΚΟΣ:"
+
+#: inc/class-checkout-econt.php:470 inc/class-checkout-econt.php:638
+msgid "Econt Quarter:"
+msgstr ""
+
+#: inc/class-ajax-econt.php:284
+msgid "Econt shipping address has been changed by "
+msgstr ""
+
+#: inc/class-checkout-econt.php:535 inc/class-checkout-econt.php:678
+msgid "Econt Shipping Cost:"
+msgstr "Κόστος αποστολής:"
+
+#: admin/class-sm-econt.php:34
+msgid "Econt Shipping Method"
+msgstr ""
+
+#: inc/class-checkout-econt.php:494 inc/class-checkout-econt.php:653
+msgid "Econt Street Num.:"
+msgstr "αριθμός δρόμου:"
+
+#: inc/class-checkout-econt.php:486 inc/class-checkout-econt.php:648
+msgid "Econt Street:"
+msgstr "Δρόμος:"
+
+#: inc/class-checkout-econt.php:335
+msgid "Econt Total Shipping Cost"
+msgstr ""
+
+#: inc/class-checkout-econt.php:335
+msgid "Econt Total Shipping Cost:"
+msgstr ""
+
+#: inc/class-checkout-econt.php:424 inc/class-checkout-econt.php:439
+#: inc/class-checkout-econt.php:456 inc/class-checkout-econt.php:606
+#: inc/class-checkout-econt.php:619 inc/class-checkout-econt.php:631
+msgid "Econt Town:"
+msgstr "Τοποθεσία:"
+
+#: admin/class-pm-econt.php:22 admin/class-pm-econt.php:62
+msgid "EcontPay"
+msgstr ""
+
+#: admin/view/html-order-view.php:22
+msgid "Edit"
+msgstr ""
+
+#: admin/class-sm-econt.php:366
+msgid "email"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1870
+msgid "Email for shipment tracking details"
+msgstr "Email για λεπτομέρειες παρακολούθησης αποστολής"
+
+#: admin/class-sm-econt.php:286
+msgid "Enable Econt Express Shipping Method"
+msgstr ""
+
+#: admin/class-pm-econt.php:54
+msgid "Enable Pay with Econt"
+msgstr ""
+
+#: admin/class-sm-econt.php:668
+msgid "Enable shipping zones support"
+msgstr ""
+
+#: admin/class-sm-econt.php:671
+msgid ""
+"Enable shipping zones support. If you choose \"Yes\" after saving the "
+"changes, be sure to create Shipping Zones from \"WooCommerce>Settings>"
+"Shipping\" and add the Econt delivery method to the Shipping Zones in which "
+"you want to deliver with Econt."
+msgstr ""
+
+#: admin/class-pm-econt.php:53 admin/class-sm-econt.php:284
+msgid "Enable/Disable"
+msgstr ""
+
+#: inc/class-checkout-econt.php:333
+msgid "Enter Customer Shipping Cost"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:196
+#: inc/class-checkout-econt.php:309
+msgid "Enter other adress info"
+msgstr "Εισαγάγετε άλλες πληροφορίες διεύθυνσης"
+
+#: admin/view/html-order-edit-address-view.php:185
+#: admin/view/html-order-edit-address-view.php:187
+#: inc/class-checkout-econt.php:291
+msgid "Enter your quarter"
+msgstr ""
+
+#: inc/class-checkout-econt.php:294
+msgid "Enter your quarter name"
+msgstr "Εισαγάγετε το όνομα του τριμήνου σας"
+
+#: admin/view/html-order-edit-address-view.php:180
+#: admin/view/html-order-edit-address-view.php:182
+#: inc/class-checkout-econt.php:282
+msgid "Enter your street"
+msgstr ""
+
+#: inc/class-checkout-econt.php:285
+msgid "Enter your street name"
+msgstr "Εισαγάγετε το όνομα της οδού σας"
+
+#: admin/view/html-order-edit-address-view.php:96
+#: admin/view/html-order-edit-address-view.php:167
+#: admin/view/html-order-edit-address-view.php:175
+#: admin/view/html-order-view.php:68 inc/class-checkout-econt.php:235
+#: inc/class-checkout-econt.php:256 inc/class-checkout-econt.php:276
+msgid "Enter your town"
+msgstr "Μπείτε στην πόλη σας"
+
+#: admin/view/html-order-edit-address-view.php:190
+#: inc/class-checkout-econt.php:301
+msgid "entr. num"
+msgstr "αριθμός εισόδου"
+
+#: inc/class-checkout-econt.php:301
+msgid "entr. num."
+msgstr "αριθμός εισόδου"
+
+#: admin/view/html-order-edit-address-view.php:190
+msgid "entr. num.:"
+msgstr "αριθμός εισόδου:"
+
+#: admin/view/html-order-edit-address-view.php:58
+msgid "Entrance num"
+msgstr "αριθμός εισόδου"
+
+#: inc/class-checkout-econt.php:830
+msgid "entrance:"
+msgstr "Πάτωμα:"
+
+#: admin/view/html-order-view.php:443
+msgid "Envelope number:"
+msgstr ""
+
+#: admin/class-order-econt.php:263 admin/class-order-econt.php:273
+#: admin/view/html-order-view.php:523 inc/class-mysql-econt.php:1425
+#: inc/class-mysql-econt.php:1426 inc/class-mysql-econt.php:2508
+msgid "error_connect"
+msgstr ""
+
+#: inc/class-mysql-econt.php:799
+msgid "error_connect - profile data"
+msgstr ""
+
+#: inc/class-mysql-econt.php:908
+msgid "error_connect cities_zones"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1069
+msgid "error_connect_cities"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1144
+msgid "error_connect_cities_intl"
+msgstr ""
+
+#: inc/class-mysql-econt.php:966
+msgid "error_connect_cities_quarters"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1174
+msgid "error_connect_cities_quarters_intl"
+msgstr ""
+
+#: inc/class-mysql-econt.php:937
+msgid "error_connect_cities_regions"
+msgstr ""
+
+#: inc/class-mysql-econt.php:995
+msgid "error_connect_cities_streets"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1204
+msgid "error_connect_cities_streets_intl"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1100
+msgid "error_connect_city_offices"
+msgstr ""
+
+#: inc/class-mysql-econt.php:878
+msgid "error_connect_countries"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1034
+msgid "error_connect_offices"
+msgstr ""
+
+#: admin/view/html-order-view.php:654 admin/view/html-order-view.php:773
+msgid "Event"
+msgstr ""
+
+#: admin/view/html-order-view.php:338
+msgid "Express City Courier"
+msgstr ""
+
+#: inc/class-checkout-econt.php:316
+msgid "Express city courier"
+msgstr ""
+
+#: admin/view/html-order-view.php:349
+msgid "Express City Courier Type"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:192
+#: inc/class-checkout-econt.php:304
+msgid "fl. num"
+msgstr "αριθμός ορόφου"
+
+#: inc/class-checkout-econt.php:304
+msgid "fl. num."
+msgstr "αριθμός ορόφου"
+
+#: admin/view/html-order-edit-address-view.php:192
+msgid "fl. num.:"
+msgstr "αριθμός ορόφου:"
+
+#: admin/view/html-order-edit-address-view.php:61
+msgid "Floor num"
+msgstr "αριθμός ορόφου"
+
+#: inc/class-checkout-econt.php:833
+msgid "floor:"
+msgstr ""
+
+#: admin/class-order-econt.php:795
+msgid "forwarding the shipment"
+msgstr ""
+
+#: inc/class-mysql-econt.php:2467
+msgid "free shipping"
+msgstr ""
+
+#: admin/class-sm-econt.php:457
+msgid "Free shipping above this count of items"
+msgstr ""
+
+#: admin/class-sm-econt.php:763 admin/class-sm-econt.php:767
+msgid "Free shipping above this sum"
+msgstr ""
+
+#: admin/class-sm-econt.php:464
+msgid "Free shipping above this weight"
+msgstr ""
+
+#: admin/class-sm-econt.php:460
+msgid ""
+"Free shipping for orders above this count of items if you whrite down 0 "
+"there will be no free shipping."
+msgstr ""
+
+#: admin/class-sm-econt.php:771
+msgid ""
+"Free shipping for orders above this sum if you whrite down 0 there will be "
+"no free shipping."
+msgstr ""
+
+#: admin/class-sm-econt.php:467
+msgid ""
+"Free shipping for orders above this weight in kg if you whrite down 0 there "
+"will be no free shipping."
+msgstr ""
+
+#: admin/class-sm-econt.php:446
+msgid "Free shipping to Econt Office and APS"
+msgstr ""
+
+#: admin/view/html-order-view.php:42
+msgid "from default door"
+msgstr ""
+
+#: admin/view/html-order-view.php:43
+msgid "from default machine"
+msgstr ""
+
+#: admin/view/html-order-view.php:41
+msgid "from default office"
+msgstr ""
+
+#: admin/view/html-order-view.php:44
+msgid "from door"
+msgstr ""
+
+#: admin/view/html-order-view.php:45
+msgid "from office"
+msgstr ""
+
+#: inc/class-checkout-econt.php:558
+msgid "Generate loading to return the received order:"
+msgstr ""
+
+#: inc/class-checkout-econt.php:559
+msgid "Generate return loading"
+msgstr ""
+
+#: admin/class-sm-econt.php:661
+msgid "Hide Quarter Fields in Checkout"
+msgstr ""
+
+#: admin/class-sm-econt.php:664
+msgid "Hide quarter fields in the shipping to address form in Checkout."
+msgstr ""
+
+#: admin/class-sm-econt.php:625 admin/class-sm-econt.php:629
+msgid "Hide Shipping description in cart page"
+msgstr ""
+
+#: admin/view/html-order-view.php:248
+msgid "hour"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://mreja.net"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://mreja.net/produkt/woocommerce-econt-express-shipping-plugin/"
+msgstr ""
+
+#: admin/class-sm-econt.php:442
+msgid ""
+"If you are going to use and agreement for collecting your cashe on delivery "
+"please select it."
+msgstr ""
+
+#: admin/class-sm-econt.php:537
+msgid ""
+"If you want to receive sms notification when the shipment is delivered to "
+"the recipient please write down the phone number to which the SMS is going "
+"to be send. If you leave this field blank this service wont be activated."
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:196
+#: inc/class-checkout-econt.php:309
+msgid "If your address is not in the list please type it here:"
+msgstr "Εάν η διεύθυνσή σας δεν είναι στη λίστα, πληκτρολογήστε την εδώ:"
+
+#: inc/class-mysql-econt.php:1859
+msgid "Important Upgrade Notice:"
+msgstr ""
+
+#: admin/class-order-econt.php:325 inc/class-checkout-econt.php:325
+msgid "in"
+msgstr ""
+
+#: admin/class-sm-econt.php:618 admin/class-sm-econt.php:621
+msgid "Include Shipping Cost to Total"
+msgstr ""
+
+#: admin/view/html-order-view.php:302
+msgid "Instructions give:"
+msgstr ""
+
+#: admin/view/html-order-view.php:314
+msgid "Instructions return:"
+msgstr ""
+
+#: admin/view/html-order-view.php:326
+msgid "Instructions Services:"
+msgstr ""
+
+#: admin/view/html-order-view.php:290
+msgid "Instructions take:"
+msgstr ""
+
+#. Description of the plugin
+msgid "Integrate Econt Express in WooCommerce and ship your goods."
+msgstr ""
+
+#: inc/class-mysql-econt.php:1535
+msgid ""
+"Invalid city name, street name or quarter name. Please start typing in the "
+"box , wait until the list appear and select city name, street name or "
+"quarter name from the list."
+msgstr ""
+
+#: admin/view/html-order-view.php:268
+msgid "Invoice before Cash on Delivery:"
+msgstr ""
+
+#: admin/view/html-order-view.php:459
+msgid "Invoice number and date /NNNNNNNNNN dd.mm.yyyy/:"
+msgstr ""
+
+#: admin/view/html-order-view.php:552 admin/view/html-order-view.php:679
+msgid "Is imported"
+msgstr ""
+
+#: admin/view/html-order-view.php:653 admin/view/html-order-view.php:772
+msgid "Is receipt"
+msgstr ""
+
+#: admin/class-pm-econt.php:73
+msgid "Light"
+msgstr ""
+
+#: admin/view/html-order-view.php:390
+msgid "List Type:"
+msgstr ""
+
+#: admin/class-sm-econt.php:307
+msgid "live"
+msgstr ""
+
+#: admin/class-sm-econt.php:305
+msgid "Live or test?"
+msgstr ""
+
+#: admin/view/html-order-view.php:396
+msgid "loading"
+msgstr ""
+
+#: admin/view/html-order-view.php:533
+msgid "Loading Details"
+msgstr ""
+
+#: inc/class-ajax-econt.php:273
+msgid "loading is canceled"
+msgstr ""
+
+#: inc/class-mysql-econt.php:718
+msgid "loading is not canceled."
+msgstr ""
+
+#: admin/view/html-order-view.php:675
+msgid "Loading Number"
+msgstr ""
+
+#: admin/class-order-econt.php:741 admin/view/html-order-view.php:529
+#: admin/view/html-order-view.php:536
+msgid "Loading number:"
+msgstr ""
+
+#: admin/class-order-econt.php:740
+msgid "Loading PDF link:"
+msgstr ""
+
+#: admin/view/html-order-view.php:543
+msgid "Loading shipping cost to be paid by the customer:"
+msgstr ""
+
+#: admin/view/html-order-view.php:540
+msgid "Loading shipping cost:"
+msgstr ""
+
+#: admin/class-order-econt.php:730
+msgid "Loading... Please, wait."
+msgstr ""
+
+#: admin/class-pm-econt.php:66
+msgid "Logo"
+msgstr ""
+
+#: admin/class-sm-econt.php:480
+msgid "Machine"
+msgstr ""
+
+#. Author of the plugin
+msgid "MrejaNet"
+msgstr ""
+
+#: admin/view/html-order-view.php:655 admin/view/html-order-view.php:774
+msgid "Name"
+msgstr ""
+
+#: admin/class-sm-econt.php:345
+msgid "Name of sender company ot person"
+msgstr ""
+
+#: admin/view/html-order-view.php:671
+msgid "Next Parcels"
+msgstr ""
+
+#: admin/class-order-econt.php:339 admin/class-order-econt.php:346
+#: admin/class-order-econt.php:353 admin/class-order-econt.php:360
+#: admin/class-order-econt.php:477 admin/class-sm-econt.php:197
+#: admin/class-sm-econt.php:212 admin/class-sm-econt.php:219
+#: admin/class-sm-econt.php:226 admin/class-sm-econt.php:233
+#: admin/class-sm-econt.php:434 admin/class-sm-econt.php:448
+#: admin/class-sm-econt.php:487 admin/class-sm-econt.php:494
+#: admin/class-sm-econt.php:501 admin/class-sm-econt.php:508
+#: admin/class-sm-econt.php:515 admin/class-sm-econt.php:522
+#: admin/class-sm-econt.php:529 admin/class-sm-econt.php:543
+#: admin/class-sm-econt.php:557 admin/class-sm-econt.php:564
+#: admin/class-sm-econt.php:571 admin/class-sm-econt.php:578
+#: admin/class-sm-econt.php:585 admin/class-sm-econt.php:620
+#: admin/class-sm-econt.php:627 admin/class-sm-econt.php:634
+#: admin/class-sm-econt.php:650 admin/class-sm-econt.php:656
+#: admin/class-sm-econt.php:663 admin/class-sm-econt.php:670
+#: admin/class-sm-econt.php:677 admin/view/html-order-view.php:366
+msgid "No"
+msgstr ""
+
+#: admin/class-order-econt.php:291 admin/class-order-econt.php:308
+#: admin/view/html-order-view.php:114 admin/view/html-order-view.php:146
+#: admin/view/html-order-view.php:158 admin/view/html-order-view.php:172
+#: admin/view/html-order-view.php:183 admin/view/html-order-view.php:211
+#: admin/view/html-order-view.php:272 admin/view/html-order-view.php:283
+#: admin/view/html-order-view.php:342 admin/view/html-order-view.php:380
+#: admin/view/html-order-view.php:556 admin/view/html-order-view.php:683
+msgid "no"
+msgstr ""
+
+#: admin/class-order-econt.php:757
+msgid "No results found"
+msgstr "Δεν βρέθηκαν αποτελέσματα"
+
+#: admin/class-sm-econt.php:550 admin/view/html-order-view.php:199
+msgid "None"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:67
+msgid "Notes"
+msgstr "σημειώσεις"
+
+#: inc/class-checkout-econt.php:839
+msgid "notes:"
+msgstr "σημειώσεις:"
+
+#: inc/class-checkout-econt.php:820 inc/class-checkout-econt.php:827
+msgid "num.:"
+msgstr ""
+
+#: admin/class-sm-econt.php:562 admin/class-sm-econt.php:565
+msgid "offer the customer a choice of day for delivery"
+msgstr ""
+
+#: admin/class-sm-econt.php:569 admin/class-sm-econt.php:572
+msgid "offer the customer partial delivery"
+msgstr ""
+
+#: admin/class-sm-econt.php:485 admin/class-sm-econt.php:488
+msgid "Offer your clients delivery to door"
+msgstr ""
+
+#: admin/class-sm-econt.php:499
+msgid "Offer your clients delivery to Econt machine offices"
+msgstr ""
+
+#: admin/class-sm-econt.php:492 admin/class-sm-econt.php:495
+msgid "Offer your clients delivery to Econt offices"
+msgstr ""
+
+#: admin/class-sm-econt.php:506 admin/class-sm-econt.php:509
+msgid ""
+"Offer your customers express city courier delivery up to 60, 90 or 120 "
+"minutes"
+msgstr ""
+
+#: admin/class-sm-econt.php:449
+msgid "Offer your customers free shipping to Econt Office and APS."
+msgstr ""
+
+#: admin/class-sm-econt.php:480 admin/view/html-order-edit-address-view.php:7
+#: admin/view/html-order-edit-address-view.php:32
+#: admin/view/html-order-edit-address-view.php:164
+#: admin/view/html-order-edit-address-view.php:170
+#: admin/view/html-order-view.php:71 inc/class-checkout-econt.php:243
+msgid "Office"
+msgstr "Γραφείο"
+
+#: admin/view/html-order-edit-address-view.php:101
+#: inc/view/html-checkout-view.php:2
+msgid "office locator"
+msgstr ""
+
+#: admin/class-sm-econt.php:815 admin/class-sm-econt.php:819
+msgid "Office Town"
+msgstr ""
+
+#: admin/class-sm-econt.php:705
+msgid "Order Cost Above:"
+msgstr ""
+
+#: admin/view/html-order-view.php:451
+msgid "Order number:"
+msgstr ""
+
+#: admin/view/html-order-view.php:612 admin/view/html-order-view.php:739
+msgid "Other amount due"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:98
+#: admin/view/html-order-edit-address-view.php:169
+#: admin/view/html-order-edit-address-view.php:178
+#: admin/view/html-order-view.php:70 inc/class-checkout-econt.php:238
+#: inc/class-checkout-econt.php:259 inc/class-checkout-econt.php:279
+msgid "p.c."
+msgstr ""
+
+#: admin/class-order-econt.php:395 admin/class-sm-econt.php:268
+msgid "p.c. "
+msgstr ""
+
+#: inc/class-ajax-econt.php:45
+msgid "p.c.: "
+msgstr ""
+
+#: admin/view/html-order-view.php:121
+msgid "Pack count:"
+msgstr ""
+
+#: admin/view/html-order-view.php:375
+msgid "Partial Delivery:"
+msgstr ""
+
+#: admin/class-sm-econt.php:318
+msgid "Password"
+msgstr ""
+
+#: admin/view/html-order-view.php:195
+msgid "Pay after:"
+msgstr ""
+
+#: admin/class-pm-econt.php:188
+#, php-format
+msgid "Pay with Econt successful<br/>Unnique payment token from Econt:  %1$s"
+msgstr ""
+
+#: admin/class-sm-econt.php:418 admin/class-sm-econt.php:421
+msgid "Payment side"
+msgstr ""
+
+#: admin/view/html-order-view.php:79
+msgid "Payment Side:"
+msgstr ""
+
+#: admin/view/html-order-view.php:633 admin/view/html-order-view.php:760
+msgid "PDF URL"
+msgstr ""
+
+#: admin/view/html-order-view.php:641
+msgid "PDF URL 10x15"
+msgstr ""
+
+#: admin/view/html-order-view.php:637
+msgid "PDF URL 10x9"
+msgstr ""
+
+#: admin/class-sm-econt.php:359
+msgid "phone"
+msgstr ""
+
+#: admin/view/html-order-view.php:186
+msgid "phone number: "
+msgstr ""
+
+#: inc/class-mysql-econt.php:1485
+msgid "Please fill all Econt Express APS fields."
+msgstr ""
+
+#: inc/class-mysql-econt.php:1477
+msgid "Please fill all Econt Express office fields."
+msgstr ""
+
+#: inc/class-mysql-econt.php:1494 inc/class-mysql-econt.php:1502
+#: inc/class-mysql-econt.php:1512
+msgid ""
+"Please fill atleast Econt Express town, street name and street number fields."
+msgstr ""
+
+#: inc/class-mysql-econt.php:1541
+msgid "Please fill Econt Express fields."
+msgstr ""
+
+#: admin/class-order-econt.php:753
+msgid ""
+"Please fill in the name of your locality and select from the results below."
+msgstr ""
+"Συμπληρώστε το όνομα της περιοχής σας και επιλέξτε από τα παρακάτω "
+"αποτελέσματα."
+
+#: admin/class-order-econt.php:754
+msgid ""
+"Please fill in the name of your quarter and select from the results below."
+msgstr ""
+
+#: admin/class-order-econt.php:755
+msgid ""
+"Please fill in the name of your street or boulevard and select from the "
+"results below."
+msgstr ""
+
+#: admin/class-sm-econt.php:347
+msgid ""
+"Please fill the details with which you subscribe in Econt Express system. "
+"Personal name or company name."
+msgstr ""
+
+#: admin/class-pm-econt.php:71 admin/class-sm-econt.php:133
+#: admin/class-sm-econt.php:145 admin/class-sm-econt.php:786
+#: admin/class-sm-econt.php:788 admin/class-sm-econt.php:869
+#: admin/class-sm-econt.php:904 admin/class-sm-econt.php:906
+#: admin/class-sm-econt.php:987
+msgid "please select"
+msgstr "Παρακαλώ επιλέξτε"
+
+#: admin/class-order-econt.php:765
+#: admin/view/html-order-edit-address-view.php:84
+#: admin/view/html-order-edit-address-view.php:165
+#: admin/view/html-order-edit-address-view.php:172
+#: admin/view/html-order-view.php:72 inc/class-checkout-econt.php:217
+#: inc/class-checkout-econt.php:243 inc/class-checkout-econt.php:263
+#: inc/class-checkout-econt.php:316 inc/class-checkout-econt.php:325
+#: inc/class-checkout-econt.php:328
+msgid "please select..."
+msgstr "Παρακαλώ επιλέξτε…"
+
+#: admin/view/html-order-view.php:17
+msgid ""
+"Please, add weight to the products in the list then you'll able to create "
+"Econt Express loading."
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:33
+#: admin/view/html-order-edit-address-view.php:39
+#: admin/view/html-order-edit-address-view.php:44
+msgid "Postcode"
+msgstr "ΤΑΧΥΔΡΟΜΙΚΟΣ ΚΩΔΙΚΟΣ"
+
+#: admin/view/html-order-view.php:227
+msgid "priority time"
+msgstr ""
+
+#: inc/class-checkout-econt.php:328
+msgid "Priority time hour"
+msgstr ""
+
+#: inc/class-checkout-econt.php:325
+msgid "Priority time type"
+msgstr ""
+
+#: admin/view/html-order-view.php:20 admin/view/html-order-view.php:407
+msgid "product id"
+msgstr ""
+
+#: admin/view/html-order-view.php:20 admin/view/html-order-view.php:408
+msgid "product name"
+msgstr ""
+
+#: admin/view/html-order-view.php:410
+msgid "product price"
+msgstr ""
+
+#: admin/view/html-order-view.php:409
+msgid "product weight"
+msgstr ""
+
+#: admin/view/html-order-view.php:19
+msgid "Products without weight:"
+msgstr ""
+
+#: admin/view/html-order-view.php:427
+msgid "qty"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:46
+#: admin/view/html-order-edit-address-view.php:187
+msgid "Quarter"
+msgstr "Τέταρτο"
+
+#: admin/view/html-order-edit-address-view.php:185
+#: inc/class-checkout-econt.php:291
+msgid "Quarter (Please, start typing and select from results.)"
+msgstr ""
+
+#: inc/class-checkout-econt.php:294
+msgid "Quarter name"
+msgstr "Όνομα τετάρτου"
+
+#: inc/class-checkout-econt.php:817
+msgid "quarter:"
+msgstr "Τέταρτο:"
+
+#: admin/class-sm-econt.php:420
+msgid "Receiver"
+msgstr ""
+
+#: admin/view/html-order-view.php:83
+msgid "receiver"
+msgstr ""
+
+#: admin/view/html-order-view.php:608 admin/view/html-order-view.php:735
+msgid "Receiver amount due"
+msgstr ""
+
+#: admin/view/html-order-view.php:584
+msgid "Receiver cd get sum"
+msgstr ""
+
+#: admin/view/html-order-view.php:588
+msgid "Receiver cd get time "
+msgstr ""
+
+#: admin/view/html-order-view.php:592
+msgid "Receiver cd send sum"
+msgstr ""
+
+#: admin/view/html-order-view.php:596
+msgid "Receiver cd send time"
+msgstr ""
+
+#: admin/view/html-order-view.php:572
+msgid "Receiver Courier"
+msgstr ""
+
+#: admin/view/html-order-view.php:699
+msgid "Receiver courier"
+msgstr ""
+
+#: admin/view/html-order-view.php:576
+msgid "Receiver Courier phone"
+msgstr ""
+
+#: admin/view/html-order-view.php:703
+msgid "Receiver courier phone"
+msgstr ""
+
+#: admin/view/html-order-view.php:564 admin/view/html-order-view.php:691
+msgid "Receiver person"
+msgstr ""
+
+#: admin/view/html-order-view.php:695
+msgid "Receiver person Phone"
+msgstr ""
+
+#: admin/view/html-order-view.php:568
+msgid "Receiver person phone"
+msgstr ""
+
+#: admin/view/html-order-view.php:580
+msgid "Receiver Time"
+msgstr ""
+
+#: admin/view/html-order-view.php:707
+msgid "Receiver time"
+msgstr ""
+
+#: admin/class-pm-econt.php:23
+msgid "Redirects to Econt online payment form"
+msgstr ""
+
+#: admin/class-order-econt.php:731 admin/class-sm-econt.php:328
+#: admin/class-sm-econt.php:334
+msgid "Refresh"
+msgstr ""
+
+#: admin/class-sm-econt.php:326
+msgid "Refresh Data"
+msgstr ""
+
+#: admin/class-sm-econt.php:332
+msgid "Refresh Data International"
+msgstr ""
+
+#: inc/class-ajax-econt.php:143 inc/class-ajax-econt.php:157
+#: inc/class-ajax-econt.php:180
+msgid "refresh data success"
+msgstr ""
+
+#: admin/class-sm-econt.php:335
+msgid "Refresh Econt Express Cities in Romania and Greece."
+msgstr ""
+
+#: admin/class-sm-econt.php:329
+msgid "Refresh Econt Express Ofices, Cities, Streets."
+msgstr ""
+
+#: admin/class-sm-econt.php:338 admin/class-sm-econt.php:340
+msgid "Refresh Profile"
+msgstr ""
+
+#: admin/view/html-order-view.php:430 admin/view/html-order-view.php:920
+msgid "remove"
+msgstr ""
+
+#: admin/class-sm-econt.php:728
+msgid "Remove selected Row(s)"
+msgstr ""
+
+#: admin/view/html-order-view.php:477 admin/view/html-order-view.php:802
+msgid "Request for courier"
+msgstr ""
+
+#: admin/class-order-econt.php:798
+msgid "return the shipment"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:199
+msgid "save address"
+msgstr ""
+
+#: admin/class-order-econt.php:760
+msgid "Searching for a locality..."
+msgstr "Αναζήτηση τοποθεσίας..."
+
+#: admin/class-order-econt.php:763
+msgid "Searching for a neighborhood..."
+msgstr ""
+
+#: admin/class-order-econt.php:758
+msgid "Searching for an office..."
+msgstr ""
+
+#: admin/class-order-econt.php:761
+msgid "Searching for APS…"
+msgstr ""
+
+#: inc/class-checkout-econt.php:263
+msgid "Select APS"
+msgstr "Επιλέξτε Αυτόματος ταχυδρομικός σταθμός"
+
+#: admin/view/html-order-edit-address-view.php:164
+#: admin/view/html-order-edit-address-view.php:171
+#: admin/view/html-order-view.php:71 inc/class-checkout-econt.php:243
+msgid "Select office"
+msgstr "Επιλέξτε γραφείο"
+
+#: admin/class-sm-econt.php:530
+msgid ""
+"Send SMS to receiver's phone number when the shipment has arrived at the "
+"office from which it has to be taken or the shipment is taken by a courier "
+"for delivery when the shipping is to address."
+msgstr ""
+
+#: admin/class-sm-econt.php:632
+msgid "Send tracking email"
+msgstr ""
+
+#: admin/class-sm-econt.php:635
+msgid "Send tracking email when the way-bill is created."
+msgstr ""
+
+#: admin/view/html-order-view.php:37
+msgid "Send:"
+msgstr ""
+
+#: admin/class-sm-econt.php:420
+msgid "Sender"
+msgstr ""
+
+#: admin/view/html-order-view.php:84
+msgid "sender"
+msgstr ""
+
+#: admin/class-sm-econt.php:373
+msgid "Sender Address"
+msgstr ""
+
+#: admin/view/html-order-view.php:52
+msgid "Sender Address:"
+msgstr ""
+
+#: admin/view/html-order-view.php:604 admin/view/html-order-view.php:731
+msgid "Sender amount due"
+msgstr ""
+
+#: admin/view/html-order-view.php:65
+msgid "Sender Office:"
+msgstr ""
+
+#: admin/class-order-econt.php:733
+msgid ""
+"services that you can use when sending by APS are: \\n- cash (when using the "
+"agreement to collect COD) \\n- receipt \\n- bidirectional shipment \\n- Hour "
+"priority (when sending to address) \\n- Review  \\n- View and test \\n- "
+"review, test and choice"
+msgstr ""
+
+#: admin/class-order-econt.php:818
+msgid "Settings"
+msgstr ""
+
+#: admin/class-sm-econt.php:35
+msgid "Ship you goods with Econt Express"
+msgstr ""
+
+#: inc/class-checkout-econt.php:550
+msgid "Shipment tracking"
+msgstr "Παρακολούθηση αποστολής"
+
+#: inc/class-checkout-econt.php:549
+msgid "Shipment tracking details:"
+msgstr "Λεπτομέρειες παρακολούθησης αποστολής"
+
+#: inc/class-mysql-econt.php:1883
+msgid "shipment tracking for order #"
+msgstr "παρακολούθηση αποστολής για παραγγελία #"
+
+#: admin/class-order-econt.php:745
+msgid "Shipping Cost:"
+msgstr "Κόστος αποστολής:"
+
+#: admin/class-sm-econt.php:699
+msgid "Shipping Payments"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:83
+#: inc/class-checkout-econt.php:229
+msgid "Shipping to"
+msgstr "Αποστολή σε"
+
+#: admin/class-sm-econt.php:302
+msgid "Shipping your goods with Econt Express."
+msgstr ""
+
+#: admin/class-sm-econt.php:678
+msgid "Show billing country field in Checkout."
+msgstr ""
+
+#: admin/class-sm-econt.php:675
+msgid "Show country field in Checkout"
+msgstr ""
+
+#: admin/view/html-order-view.php:110
+msgid "Size under 60cm:"
+msgstr ""
+
+#: admin/class-sm-econt.php:527
+msgid "SMS notification"
+msgstr ""
+
+#: admin/view/html-order-view.php:168
+msgid "SMS notification:"
+msgstr ""
+
+#: admin/class-sm-econt.php:534
+msgid "SMS on delivery"
+msgstr ""
+
+#: admin/view/html-order-view.php:179 admin/view/html-order-view.php:260
+msgid "SMS on delivery:"
+msgstr ""
+
+#: admin/class-order-econt.php:759
+msgid "Start typing and select from the results"
+msgstr "Ξεκινήστε να πληκτρολογείτε και επιλέξτε από τα αποτελέσματα"
+
+#: admin/class-order-econt.php:756
+msgid "Start typing…"
+msgstr ""
+
+#: admin/view/html-order-view.php:560 admin/view/html-order-view.php:687
+msgid "Storage"
+msgstr ""
+
+#: inc/class-checkout-econt.php:288
+msgid "str. num."
+msgstr "αριθμός δρόμου"
+
+#: admin/view/html-order-edit-address-view.php:183
+msgid "str. num.:"
+msgstr "αριθμός δρόμου:"
+
+#: admin/view/html-order-edit-address-view.php:52
+#: admin/view/html-order-edit-address-view.php:180
+#: admin/view/html-order-edit-address-view.php:182
+msgid "Street"
+msgstr "Δρόμος"
+
+#: inc/class-checkout-econt.php:282
+msgid "Street (Please, start typing and select from results.)"
+msgstr ""
+
+#: inc/class-checkout-econt.php:285
+msgid "Street name"
+msgstr "όνομα δρόμου"
+
+#: admin/view/html-order-edit-address-view.php:55
+msgid "Street num"
+msgstr "αριθμός δρόμου"
+
+#: admin/view/html-order-edit-address-view.php:183
+#: inc/class-checkout-econt.php:288
+msgid "street num"
+msgstr "αριθμός δρόμου"
+
+#: admin/class-order-econt.php:762
+msgid "Street Search…"
+msgstr ""
+
+#: inc/class-checkout-econt.php:824
+msgid "street:"
+msgstr "Δρόμος:"
+
+#: admin/class-sm-econt.php:576 admin/class-sm-econt.php:579
+msgid "Submission of packing list"
+msgstr ""
+
+#: admin/class-sm-econt.php:341
+msgid "Sync customer profile settings with Econt Express API."
+msgstr ""
+
+#: admin/class-sm-econt.php:550 admin/view/html-order-view.php:201
+msgid "Test"
+msgstr ""
+
+#: admin/class-sm-econt.php:307
+msgid "test"
+msgstr ""
+
+#: admin/class-order-econt.php:737
+msgid ""
+"Test environment (If you choose a test environment, all requests will be "
+"sent to the test system ECONT); <br> NOTE: User names and passwords on both "
+"systems are different, so if you do not have a username and password for the "
+"test system - choose \"live\" from the dropdown menu."
+msgstr ""
+
+#: inc/class-onupdate-econt.php:64
+msgid ""
+"Thanks for installing WooCommerce Econt Shipping Plugin, please read the <a "
+"href=\"https://mreja.net/plugin_info.php?plugin=wooecont&type=install&ver=1."
+"1.0&lang=en\" target=\"_blank\">configuration instructions</a> before you "
+"continue."
+msgstr ""
+
+#: inc/class-onupdate-econt.php:51
+msgid ""
+"Thanks for updating WooCommerce Econt Shipping Plugin, please read the <a "
+"href=\"https://mreja.net/plugin_info.php?plugin=wooecont&type=update&ver=1.1."
+"0&lang=en\" target=\"_blank\">upgrade notes</a> before you continue."
+msgstr ""
+
+#: inc/class-mysql-econt.php:1874
+msgid "Thanks for using %s"
+msgstr ""
+
+#: admin/class-sm-econt.php:376
+msgid ""
+"The addresses are taken from your Econt Express profile at http://ee.econt."
+"com. Choose one if you want to be able to send from your door."
+msgstr ""
+
+#: admin/class-sm-econt.php:706
+msgid "The customer will pay for shipping to door:"
+msgstr ""
+
+#: admin/class-sm-econt.php:707
+msgid "The customer will pay for shipping to office or APS"
+msgstr ""
+
+#: admin/class-order-econt.php:736
+msgid ""
+"The default is set to live work environment, enter your: <br> -Username to "
+"access e-Econt; <br> -Password to access e-Econt; <br> -Click on the button "
+"\"Update information\" and wait until downloaded the necessary information "
+"from servers Econt. New fields with different settings of the module will "
+"appear."
+msgstr ""
+
+#: admin/class-sm-econt.php:645
+msgid "The email address of the tracking email sender."
+msgstr ""
+
+#: inc/class-checkout-econt.php:414
+msgid "The goods will be shipped to:"
+msgstr "ΤΑ ΕΜΠΟΡΕΥΜΑΤΑ ΘΑ ΑΠΟΣΤΟΛΟΥΝ ΣΤΟ:"
+
+#: admin/class-sm-econt.php:640
+msgid "The name of the tracking email sender."
+msgstr ""
+
+#: admin/class-sm-econt.php:293
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: admin/view/html-order-view.php:652 admin/view/html-order-view.php:771
+msgid "Time"
+msgstr ""
+
+#: admin/class-pm-econt.php:60 admin/class-sm-econt.php:291
+msgid "Title"
+msgstr ""
+
+#: admin/class-sm-econt.php:541
+msgid ""
+"To add the service of delivering an invoice before paying cash on delivery"
+msgstr ""
+
+#: admin/class-sm-econt.php:544
+msgid ""
+"To add the service of delivering an invoice before paying cash on delivery:"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:92
+#: inc/class-checkout-econt.php:225
+msgid "to APS"
+msgstr "στον ΑTΣ"
+
+#: admin/view/html-order-edit-address-view.php:86
+#: inc/class-checkout-econt.php:219
+msgid "to door"
+msgstr "στη διεύθυνση"
+
+#: admin/view/html-order-edit-address-view.php:89
+#: inc/class-checkout-econt.php:222
+msgid "to office"
+msgstr "στο γραφείο"
+
+#: admin/class-sm-econt.php:769
+msgid "to office only"
+msgstr ""
+
+#: admin/class-order-econt.php:739
+msgid "Total Shipping Cost to be paid by customer:"
+msgstr ""
+
+#: admin/class-order-econt.php:738
+msgid "Total Shipping Cost:"
+msgstr ""
+
+#: admin/view/html-order-view.php:600
+msgid "Total sum"
+msgstr ""
+
+#: admin/view/html-order-view.php:727
+msgid "total sum"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:31
+#: admin/view/html-order-edit-address-view.php:37
+#: admin/view/html-order-edit-address-view.php:43
+#: admin/view/html-order-edit-address-view.php:96
+#: admin/view/html-order-edit-address-view.php:167
+#: admin/view/html-order-edit-address-view.php:175
+#: admin/view/html-order-view.php:68
+msgid "Town"
+msgstr "Τοποθεσία"
+
+#: inc/class-checkout-econt.php:235 inc/class-checkout-econt.php:256
+#: inc/class-checkout-econt.php:276
+msgid "Town (Please, start typing and select from results.)"
+msgstr ""
+"Πόλη (Παρακαλώ, ξεκινήστε να πληκτρολογείτε και επιλέξτε από τα αποτελέσματα."
+")"
+
+#: inc/class-mysql-econt.php:1873
+msgid "Track shipment"
+msgstr "Παρακολούθηση αποστολής"
+
+#: admin/view/html-order-view.php:647 admin/view/html-order-view.php:766
+msgid "Tracking"
+msgstr ""
+
+#: admin/class-order-econt.php:617 admin/class-order-econt.php:764
+msgid "tracking"
+msgstr ""
+
+#: admin/class-sm-econt.php:643
+msgid "Tracking email \"From\" address"
+msgstr ""
+
+#: admin/class-sm-econt.php:638
+msgid "Tracking email \"From\" name"
+msgstr ""
+
+#: admin/class-order-econt.php:807
+msgid "tracking event"
+msgstr ""
+
+#: admin/class-order-econt.php:789
+msgid "transfer to an office"
+msgstr ""
+
+#: admin/class-order-econt.php:780
+msgid "transmission to a client"
+msgstr ""
+
+#: admin/class-order-econt.php:786
+msgid "transmission to a route line"
+msgstr ""
+
+#: admin/class-order-econt.php:783
+msgid "transmission to courier"
+msgstr ""
+
+#: admin/class-order-econt.php:804
+msgid "unsuccessful delivery attempt"
+msgstr ""
+
+#: admin/view/html-order-view.php:356 inc/class-checkout-econt.php:316
+msgid "up to 120 minutes"
+msgstr ""
+
+#: admin/view/html-order-view.php:354 inc/class-checkout-econt.php:316
+msgid "up to 60 minutes"
+msgstr ""
+
+#: admin/view/html-order-view.php:355 inc/class-checkout-econt.php:316
+msgid "up to 90 minutes"
+msgstr ""
+
+#: admin/view/html-order-edit-address-view.php:199
+msgid "update address"
+msgstr ""
+
+#: admin/class-sm-econt.php:312
+msgid "username"
+msgstr ""
+
+#: admin/view/html-order-view.php:622 admin/view/html-order-view.php:628
+#: admin/view/html-order-view.php:634 admin/view/html-order-view.php:638
+#: admin/view/html-order-view.php:642 admin/view/html-order-view.php:749
+#: admin/view/html-order-view.php:755 admin/view/html-order-view.php:761
+msgid "View"
+msgstr ""
+
+#: admin/class-order-econt.php:490 admin/class-sm-econt.php:209
+msgid "Voucher"
+msgstr ""
+
+#: inc/class-checkout-econt.php:246 inc/class-checkout-econt.php:319
+msgid "We offer our customers partial delivery."
+msgstr ""
+
+#: admin/view/html-order-view.php:102
+msgid "Weight:"
+msgstr ""
+
+#: admin/class-order-econt.php:732
+msgid ""
+"When sending by APS and activate the service payment on delivery (COD) is "
+"required can use the agreement to collect cash!"
+msgstr ""
+
+#: admin/class-sm-econt.php:428
+msgid ""
+"When the shipping is payed by the sender if you pay on credit please chose "
+"your client number or Cash, Bonus points and Voucher"
+msgstr ""
+
+#: admin/class-sm-econt.php:432 admin/class-sm-econt.php:435
+msgid "Will you allow Cash on delivery"
+msgstr ""
+
+#: inc/class-mysql-econt.php:1417
+msgid "with priority: "
+msgstr ""
+
+#: admin/view/html-order-view.php:263
+msgid "write phone number"
+msgstr ""
+
+#: admin/class-sm-econt.php:434 admin/class-sm-econt.php:448
+#: admin/class-sm-econt.php:487 admin/class-sm-econt.php:494
+#: admin/class-sm-econt.php:501 admin/class-sm-econt.php:508
+#: admin/class-sm-econt.php:515 admin/class-sm-econt.php:522
+#: admin/class-sm-econt.php:529 admin/class-sm-econt.php:543
+#: admin/class-sm-econt.php:557 admin/class-sm-econt.php:564
+#: admin/class-sm-econt.php:571 admin/class-sm-econt.php:585
+#: admin/class-sm-econt.php:620 admin/class-sm-econt.php:627
+#: admin/class-sm-econt.php:634 admin/class-sm-econt.php:650
+#: admin/class-sm-econt.php:656 admin/class-sm-econt.php:663
+#: admin/class-sm-econt.php:670 admin/class-sm-econt.php:677
+msgid "Yes"
+msgstr ""
+
+#: admin/class-order-econt.php:291 admin/class-order-econt.php:308
+#: admin/view/html-order-view.php:115 admin/view/html-order-view.php:145
+#: admin/view/html-order-view.php:159 admin/view/html-order-view.php:173
+#: admin/view/html-order-view.php:184 admin/view/html-order-view.php:212
+#: admin/view/html-order-view.php:273 admin/view/html-order-view.php:284
+#: admin/view/html-order-view.php:343 admin/view/html-order-view.php:381
+#: admin/view/html-order-view.php:554 admin/view/html-order-view.php:681
+msgid "yes"
+msgstr ""
+
+#: admin/view/html-order-view.php:400
+msgid "You must print an inventory shipping list and attach it to the loading."
+msgstr ""
+
+#: admin/class-sm-econt.php:368
+msgid "Your email address"
+msgstr ""
+
+#: admin/class-sm-econt.php:354
+msgid "Your Name"
+msgstr ""
+
+#: admin/class-sm-econt.php:361
+msgid "Your Phone registered in Econt Express account"
+msgstr ""
