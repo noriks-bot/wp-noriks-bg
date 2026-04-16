@@ -49,7 +49,7 @@ if ( $upsell_is_majice ) {
         3 => 'https://noriks.com/bg/wp-content/uploads/2025/09/black-3x.jpg',
         6 => 'https://noriks.com/bg/wp-content/uploads/2026/01/15xcrnamajica.png',
     );
-    $upsell_title_text = 'Dodaj majice zdaj – 50% popusta';
+    $upsell_title_text = 'Добави тениски сега – 50% намаление';
 } else {
     $upsell_product_id = 2781; // Crne Boksarice
     $upsell_name       = 'Crne Boksarice';
@@ -60,7 +60,7 @@ if ( $upsell_is_majice ) {
         3 => 'https://noriks.com/bg/wp-content/uploads/2025/11/boksarice_3x_crne.png',
         5 => 'https://noriks.com/bg/wp-content/uploads/2026/01/boksarice_5x_crne.png',
     );
-    $upsell_title_text = 'Dodaj boksarice zdaj – 50% popusta';
+    $upsell_title_text = 'Добави боксерки сега – 50% намаление';
 }
 $upsell_product    = wc_get_product( $upsell_product_id );
 $upsell_image      = $upsell_qty_images[3];
@@ -496,11 +496,11 @@ body.woocommerce-order-received .woocommerce {
                 <div class="tyuo_middle_section">
                     <div class="sub_title">
                         <span class="sub_title__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.293" viewBox="0 0 15 11.293"><path d="M50.915,62.211,46.07,57.366a.44.44,0,0,1,0-.623L47.208,55.6a.44.44,0,0,1,.623,0l3.084,3.084a.441.441,0,0,0,.623,0l7.512-7.513a.44.44,0,0,1,.623,0l1.138,1.138a.44.44,0,0,1,0,.623l-9.273,9.274a.441.441,0,0,1-.623,0" transform="translate(-12.941 319.806)" fill="#47b426"></path></svg></span>
-                        Brez dodatne dostave – vse v enem paketu
+                        Без допълнителна доставка – всичко в един пакет
                     </div>
                     <div class="clue_text">
                         <span class="clue_text__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14.333" viewBox="0 0 15 14.333"><path d="M6.885.383,5.1,4a.686.686,0,0,1-.517.375l-3.994.58a.686.686,0,0,0-.38,1.17L3.1,8.945a.686.686,0,0,1,.2.607L2.614,13.53a.686.686,0,0,0,1,.723l3.572-1.878a.686.686,0,0,1,.639,0l3.572,1.878a.686.686,0,0,0,1-.723l-.682-3.978a.686.686,0,0,1,.2-.607l2.89-2.817a.686.686,0,0,0-.38-1.17l-3.994-.58A.686.686,0,0,1,9.9,4L8.116.383a.686.686,0,0,0-1.23,0" fill="#47b426"></path></svg></span>
-                        Upotpuni kombinaciju i uštedi
+                        Допълни комбинацията и спести
                     </div>
                 </div>
 
@@ -558,15 +558,15 @@ body.woocommerce-order-received .woocommerce {
                             <?php if ( $upsell_variations ) : ?>
                                 <?php foreach ( $upsell_variations as $v ) : ?>
                                 <option value="<?php echo $v['id']; ?>" <?php selected( strtolower($v['size']), strtolower($customer_size) ); ?>>
-                                    Črna, <?php echo esc_html( $v['size'] ); ?>
+                                    Черно, <?php echo esc_html( $v['size'] ); ?>
                                 </option>
                                 <?php endforeach; ?>
                             <?php else : ?>
-                                <option value="">Črna, S</option>
-                                <option value="">Črna, M</option>
-                                <option value="">Črna, L</option>
-                                <option value="">Črna, XL</option>
-                                <option value="">Črna, XXL</option>
+                                <option value="">Черно, S</option>
+                                <option value="">Черно, M</option>
+                                <option value="">Черно, L</option>
+                                <option value="">Черно, XL</option>
+                                <option value="">Черно, XXL</option>
                             <?php endif; ?>
                         </select>
                     </div>
@@ -574,8 +574,8 @@ body.woocommerce-order-received .woocommerce {
                     <div class="ty-upsell-status" id="ty-upsell-status"></div>
 
                     <div class="buttons-section">
-                        <a class="pass-btn" id="ty-btn-skip">Ne želim</a>
-                        <div class="buy-btn" id="ty-btn-add" data-product-id="<?php echo esc_attr( $upsell_product_id ); ?>">DODAJ U NARUDŽBU</div>
+                        <a class="pass-btn" id="ty-btn-skip">Не желая</a>
+                        <div class="buy-btn" id="ty-btn-add" data-product-id="<?php echo esc_attr( $upsell_product_id ); ?>">ДОБАВИ КЪМ ПОРЪЧКАТА</div>
                     </div>
                 </div>
 
@@ -589,15 +589,15 @@ body.woocommerce-order-received .woocommerce {
                 <div class="ty-grid-header" style="cursor:pointer;flex-direction:column;position:relative;">
                     <span class="ty-upsell-close" id="ty-step2-close" style="position:absolute;top:10px;right:12px;font-size:20px;color:#000;cursor:pointer;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-weight:300;">✕</span>
                     <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:8px;">
-                        <div style="font-size:15px;font-weight:400;color:#000;">Posebna ponuda ističe</div>
+                        <div style="font-size:15px;font-weight:400;color:#000;">Специалната оферта изтича след</div>
                         <div class="time" id="ty-timer-2" style="display:inline-block;background:#e22b26;color:#fff;padding:2px 10px;border-radius:4px;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;">05:00</div>
                     </div>
-                    <div style="font-size:20px;font-weight:700;color:#000;line-height:1.3;text-align:center;padding-top:10px;">Dodajte bilo koji proizvod s 50% popusta</div>
+                    <div style="font-size:20px;font-weight:700;color:#000;line-height:1.3;text-align:center;padding-top:10px;">Добавете любов продукт с 50% намаление</div>
                 </div>
                 <div class="ty-section-body open" id="ty-grid-body">
                 <div class="ty-section-body-inner" style="padding:0;">
                 <div class="ty-grid-trust">
-                    ✔ Sve šaljemo u istom paketu
+                    ✔ Всичко изпращаме в един пакет
                 </div>
                 <div class="ty-grid">
                     <?php foreach ( $grid_products as $gp ) :
@@ -624,7 +624,7 @@ body.woocommerce-order-received .woocommerce {
                     ?>
                     <div class="ty-grid-item">
                         <img src="<?php echo esc_url( $gp_img_url ); ?>" alt="<?php echo esc_attr( $gp->get_name() ); ?>">
-                        <div class="g-category">BOKSERICE</div>
+                        <div class="g-category">БОКСЕРКИ</div>
                         <div class="g-name"><?php echo esc_html( $gp->get_name() ); ?></div>
                         <div class="g-price-old"><?php echo number_format( $gp_price, 2, ',', '.' ); ?>€</div>
                         <div class="g-price-new"><?php echo number_format( $gp_sale, 2, ',', '.' ); ?>€</div>
@@ -638,14 +638,14 @@ body.woocommerce-order-received .woocommerce {
                         <button class="g-add-btn g-select-btn"
                                 data-product-id="<?php echo $gp->get_id(); ?>"
                                 data-sale-price="<?php echo $gp_sale; ?>">
-                            IZBERI
+                            ИЗБЕРИ
                         </button>
                     </div>
                     <?php endforeach; ?>
                 </div>
                 <div class="buttons-section">
-                    <a class="pass-btn" id="ty-grid-close">Ne želim</a>
-                    <div class="buy-btn" id="ty-grid-add-all">DODAJ K NARUDŽBI</div>
+                    <a class="pass-btn" id="ty-grid-close">Не желая</a>
+                    <div class="buy-btn" id="ty-grid-add-all">ДОБАВИ КЪМ ПОРЪЧКАТА</div>
                 </div>
                 </div><!-- /ty-section-body-inner -->
                 </div><!-- /ty-section-body -->
@@ -878,7 +878,7 @@ body.woocommerce-order-received .woocommerce {
         addBtn.addEventListener('click', function() {
             if (addBtn.disabled) return;
             addBtn.disabled = true;
-            addBtn.textContent = 'Dodajem...';
+            addBtn.textContent = 'Добавям...';
 
             var select = document.getElementById('ty-variation-select');
             var qtyRadio = document.querySelector('input[name="ty_qty"]:checked');
@@ -916,7 +916,7 @@ body.woocommerce-order-received .woocommerce {
                 })
                 .catch(function() {
                     addBtn.disabled = false;
-                    addBtn.textContent = 'DODAJ U NARUDŽBU';
+                    addBtn.textContent = 'ДОБАВИ КЪМ ПОРЪЧКАТА';
                 });
         });
     }
@@ -929,7 +929,7 @@ body.woocommerce-order-received .woocommerce {
                 var el = this;
                 if (el.classList.contains('selected')) {
                     el.classList.remove('selected');
-                    el.textContent = 'IZBERI';
+                    el.textContent = 'ИЗБЕРИ';
                     el.style.background = '#000';
                 } else {
                     el.classList.add('selected');
@@ -951,7 +951,7 @@ body.woocommerce-order-received .woocommerce {
                     closeAll();
                     return;
                 }
-                gridAddAll.textContent = 'Dodajem...';
+                gridAddAll.textContent = 'Добавям...';
                 gridAddAll.style.pointerEvents = 'none';
 
                 var promises = [];
@@ -1035,7 +1035,7 @@ function removeUpsellItem(btn) {
                 document.querySelectorAll('.g-add-btn.added').forEach(function(gb) {
                     gb.disabled = false;
                     gb.classList.remove('added');
-                    gb.textContent = 'DODAJ';
+                    gb.textContent = 'ДОБАВИ';
                 });
                 // Refresh order items
                 var rfd = new FormData();
@@ -1056,7 +1056,7 @@ function removeUpsellItem(btn) {
             } else {
                 btn.disabled = false;
                 btn.textContent = '✕';
-                alert(d.data || 'Greška');
+                alert(d.data || 'Грешка');
             }
         })
         .catch(function() {

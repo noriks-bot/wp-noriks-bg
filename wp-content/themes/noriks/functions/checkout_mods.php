@@ -315,15 +315,15 @@ add_action( 'wp_footer', function() {
     <script id="noriks-checkout-validation">
     jQuery(function($){
       var messages = {
-        required: '\u2715 Obavezna informacija',
-        billing_address_2: '\u2715 Ukoliko nemate kućni broj upišite BB',
+        required: '\u2715 Задължителна информация',
+        billing_address_2: '\u2715 Ако нямате номер, напишете ББ',
       };
       var submitted = false; /* only validate after first submit attempt */
       /* Set submitted=true when WC native button is clicked */
       $('form.checkout').on('checkout_place_order', function(){ submitted = true; });
       $(document).on('click', '#place_order', function(){
         submitted = true;
-        $(this).css('opacity','0.6').text('Obrada...');
+        $(this).css('opacity','0.6').text('Обработка...');
         $('form.checkout').css({'opacity':'0.4','pointer-events':'none','transition':'opacity 0.3s'});
       });
       $(document.body).on('checkout_error', function(){
@@ -372,13 +372,13 @@ add_action( 'wp_footer', function() {
 
         /* Email format */
         if (isEmail && val && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
-          showError($row, '\u2715 Unesite ispravnu e-mail adresu');
+          showError($row, '\u2715 Въведете валиден имейл адрес');
           return false;
         }
 
         /* Phone format (at least 6 digits) */
         if (isPhone && val && val.replace(/\D/g,'').length < 6) {
-          showError($row, '\u2715 Unesite ispravan broj telefona');
+          showError($row, '\u2715 Въведете валиден телефонен номер');
           return false;
         }
 
@@ -476,7 +476,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_email']['description'] = 'Za potvrdu narudžbe i praćenje pošiljke';
     $fields['billing']['billing_email']['required'] = true;
-    $fields['billing']['billing_country']['default'] = 'HR';
+    $fields['billing']['billing_country']['default'] = 'BG';
     unset( $fields['billing']['billing_company'] );
 
     // Vigoshop CSS classes
@@ -516,7 +516,7 @@ add_action( 'woocommerce_before_checkout_billing_form', function() {
     echo '<h3 class="checkout-billing-title">Плащане и доставка</h3>';
 });
 
-add_filter( 'default_checkout_billing_country', function() { return 'SI'; });
+add_filter( 'default_checkout_billing_country', function() { return 'BG'; });
 add_filter( 'woocommerce_order_button_text', function() { return 'Поръчай'; });
 
 /**
@@ -572,11 +572,11 @@ add_action('woocommerce_review_order_before_submit', function(){
     ?>
     <div class="noriks-coupon-wrap" style="margin:12px 0 16px;">
         <button type="button" id="noriks-coupon-btn" style="display:inline-flex;align-items:center;gap:5px;padding:10px 12px;background:#fff;border:1px solid #ddd;border-radius:4px;font-size:13px;color:#333;cursor:pointer;font-weight:500;line-height:1;" onclick="this.style.display='none';document.getElementById('noriks-coupon-expanded').style.display='flex';">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z'%3E%3C/path%3E%3Cline x1='7' y1='7' x2='7.01' y2='7'%3E%3C/line%3E%3C/svg%3E" style="width:14px;height:14px;vertical-align:middle;" /><span style="vertical-align:middle;">Unesi kupon kod</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z'%3E%3C/path%3E%3Cline x1='7' y1='7' x2='7.01' y2='7'%3E%3C/line%3E%3C/svg%3E" style="width:14px;height:14px;vertical-align:middle;" /><span style="vertical-align:middle;">Въведете код за купон</span>
         </button>
         <div id="noriks-coupon-expanded" style="display:none;gap:8px;align-items:center;">
-            <input type="text" id="noriks_coupon_code" placeholder="Kupon kod" style="flex:1;padding:10px 14px;border:1px solid #ccc;border-radius:6px;font-size:14px;" />
-            <button type="button" style="padding:10px 20px;background:#000;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;" onclick="noriksApplyCoupon()">Uporabi</button>
+            <input type="text" id="noriks_coupon_code" placeholder="Код за купон" style="flex:1;padding:10px 14px;border:1px solid #ccc;border-radius:6px;font-size:14px;" />
+            <button type="button" style="padding:10px 20px;background:#000;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;" onclick="noriksApplyCoupon()">Приложи</button>
             <button type="button" style="padding:8px 10px;background:none;border:1px solid #ddd;border-radius:6px;font-size:14px;color:#999;cursor:pointer;line-height:1;" onclick="this.parentElement.style.display='none';document.getElementById('noriks-coupon-btn').style.display='inline-flex';">✕</button>
         </div>
         <div id="noriks-coupon-msg" style="display:none;margin-top:8px;padding:6px 10px;border-radius:4px;font-size:12px;"></div>
@@ -595,17 +595,17 @@ add_action('woocommerce_review_order_before_submit', function(){
             msg.style.display='block';
             if(html.indexOf('error')!==-1){
                 msg.style.background='#fde8e8';msg.style.color='#c00';
-                msg.innerHTML=html.replace(/<[^>]*>/g,'')||'Kupon kod nije valjan.';
+                msg.innerHTML=html.replace(/<[^>]*>/g,'')||'Невалиден код за купон.';
             }else{
                 msg.style.background='#e8fde8';msg.style.color='#080';
-                msg.innerHTML='✅ Kupon je bil uporabljen!';
+                msg.innerHTML='✅ Купонът е приложен!';
                 document.getElementById('noriks_coupon_code').value='';
                 if(window.jQuery)jQuery('body').trigger('update_checkout');
             }
-            btn.textContent='Uporabi';btn.disabled=false;
+            btn.textContent='Приложи';btn.disabled=false;
         }).catch(function(){
             msg.style.display='block';msg.style.background='#fde8e8';msg.style.color='#c00';
-            msg.textContent='Napaka. Poskusite znova.';btn.textContent='Uporabi';btn.disabled=false;
+            msg.textContent='Грешка. Опитайте отново.';btn.textContent='Приложи';btn.disabled=false;
         });
     }
     </script>
@@ -650,6 +650,6 @@ add_filter('woocommerce_checkout_posted_data', function($data){
  */
 add_action('woocommerce_checkout_process', function(){
     if ( empty( $_POST['billing_address_2'] ) ) {
-        wc_add_notice( 'Molimo unesite kućni broj.', 'error' );
+        wc_add_notice( 'Моля, въведете номер.', 'error' );
     }
 });

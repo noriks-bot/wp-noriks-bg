@@ -47,7 +47,7 @@ if ( WC()->cart->is_empty() ) return;
                     <span class="shipping_method_delivery_price tag tag--red">
                       <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>
                     </span>
-                    <span class="delivery_img"><img decoding="async" class="gls standard" src="<?php echo esc_url( WC()->plugin_url() . '/assets/images/shipping_providers/gls.png' ); ?>"/></span>
+                    <span class="delivery_img"><img decoding="async" class="ekont standard" src="https://images.vigo-shop.com/general/curriers/ekont.png"/></span>
                   </div>
                 </div>
               </label>
@@ -72,7 +72,7 @@ if ( WC()->cart->is_empty() ) return;
         </div>
 
         <!-- PAYMENT + ORDER SUMMARY + BUTTON — via WC hooks -->
-        <h3 class="payment-title">Način plačanja</h3>
+        <h3 class="payment-title">Начин на плащане</h3>
         <?php woocommerce_checkout_payment(); ?>
 
         <?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
@@ -92,18 +92,18 @@ if ( WC()->cart->is_empty() ) return;
     <img decoding="async" src="https://images.vigo-shop.com/general/guarantee_money_back/satisfaction_icon_hr.png">
   </div>
   <div class="flex__item--autosize f--m checkout-warranty__text">
-    <strong>Kupujte bez brige </strong><br>Povrat novca moguć u roku od 90 dana
+    <strong>Пазарувайте без грижи </strong><br>Възстановяване на парите е възможно до 90 дни
   </div>
 </div>
 
 <!-- Terms -->
 <div class="agreed_terms_txt">
-  <span class="policy-agreement-obligation">S klikom na gumb <strong>Поръчай</strong> se strinjam z naročilom z obveznostjo plačila.</span><br>
+  <span class="policy-agreement-obligation">С натискане на бутона <strong>Поръчай</strong> потвърждавам поръчката със задължение за плащане.</span><br>
   <div class="terms-checkbox-and-links">
     <label class="checkbox">
       <input type="checkbox" class="input-checkbox" name="agree_to_checkout_terms" id="agree_to_terms_checkbox" value="1">
     </label>
-    Prebral sem in sprejemam <a href="#" id="terms_conditions_link">Splošne pogoje prodaje</a> i <a href="#" id="withdrawal_policy_link">pravico do odstopa od nakupa</a>.
+    Прочетох и приемам <a href="#" id="terms_conditions_link">Общите условия за продажба</a> и <a href="#" id="withdrawal_policy_link">правото на отказ</a>.
   </div>
 </div>
 
