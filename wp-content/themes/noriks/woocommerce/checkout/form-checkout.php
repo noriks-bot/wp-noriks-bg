@@ -46,7 +46,7 @@ if ( WC()->cart->is_empty() ) return;
                   </div>
                   <div class="inner-wrapper-img">
                     <span class="shipping_method_delivery_price tag tag--red"><?php $ship = (float) WC()->cart->get_shipping_total(); echo $ship > 0 ? wc_price($ship) : 'Безплатно'; ?></span>
-                    <span class="delivery_img"><img decoding="async" class="ekont standard" src="https://images.vigo-shop.com/general/curriers/ekont.png"/></span>
+                    <span class="delivery_img"><img decoding="async" class="ekont standard" src="<?php echo get_template_directory_uri(); ?>/img/ekont.svg"/></span>
                   </div>
                 </div>
               </label>
