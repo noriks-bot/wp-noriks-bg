@@ -63,6 +63,16 @@ add_action( 'wp_enqueue_scripts', function() {
     $file = $dir . '/css/checkout.css';
     wp_enqueue_style( 'noriks-checkout', $uri . '/css/checkout.css', $prev, file_exists($file) ? md5_file($file) : '1' );
 
+    // Econt checkout JS
+    $econt_js = $dir . '/js/econt-checkout.js';
+    wp_enqueue_script(
+        'noriks-econt-checkout',
+        $uri . '/js/econt-checkout.js',
+        array( 'jquery' ),
+        file_exists( $econt_js ) ? filemtime( $econt_js ) : '1',
+        true
+    );
+
 }, 9999 );
 
 /**
@@ -445,10 +455,10 @@ add_filter( 'body_class', function( $classes ) {
 });
 
 /**
- * WC checkout field config — match vigoshop HR layout
+ * WC checkout field config — match vigoshop BG layout with Econt office
  */
 add_filter( 'woocommerce_checkout_fields', function( $fields ) {
-    // Order — match vigoshop: name → address → phone → email
+    // Order — match vigoshop: phone → email → name → address → econt → postcode/city
     $fields['billing']['billing_phone']['priority']       = 10;
     $fields['billing']['billing_email']['priority']       = 20;
     $fields['billing']['billing_first_name']['priority']  = 30;
@@ -457,6 +467,37 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_address_2']['priority']   = 60;
     $fields['billing']['billing_postcode']['priority']    = 70;
     $fields['billing']['billing_city']['priority']        = 80;
+
+    // ── Econt Office fields (shown when delivery type = econt) ──
+    $fields['billing']['billing_econt_office_city'] = array(
+        'label'       => false,
+        'placeholder' => 'Въведете населено място',
+        'type'        => 'select',
+        'required'    => false, // validated conditionally via JS + PHP
+        'class'       => array( 'form-row', 'col-xs-12', 'col-xs-12', 'form-group', 'col-xs-12', 'noriks-econt-field' ),
+        'input_class' => array( 'select', 'form-input' ),
+        'priority'    => 65,
+        'options'     => array( '' => 'Въведете населено място' ),
+        'custom_attributes' => array(
+            'data-allow_clear'  => 'true',
+            'data-placeholder'  => 'Въведете населено място',
+        ),
+    );
+
+    $fields['billing']['billing_econt_office'] = array(
+        'label'       => false,
+        'placeholder' => 'Изберете Офис',
+        'type'        => 'select',
+        'required'    => false,
+        'class'       => array( 'form-row', 'col-xs-12', 'col-xs-12', 'form-group', 'col-xs-12', 'noriks-econt-field' ),
+        'input_class' => array( 'select', 'form-input' ),
+        'priority'    => 66,
+        'options'     => array( '' => 'Изберете Офис' ),
+        'custom_attributes' => array(
+            'data-allow_clear'  => 'true',
+            'data-placeholder'  => 'Изберете Офис',
+        ),
+    );
     // phone/email priorities already set above (10/20)
 
     // Labels, placeholders, required
@@ -625,6 +666,49 @@ add_action('woocommerce_review_order_before_submit', function(){
 });
 
 /**
+ * When econt delivery type is selected, remove 'required' from address fields
+ * and add it to econt fields (server-side WC field validation).
+ */
+add_filter( 'woocommerce_checkout_fields', function( $fields ) {
+    $delivery_type = isset( $_POST['billing_delivery_type'] ) ? sanitize_text_field( $_POST['billing_delivery_type'] ) : '';
+    if ( $delivery_type !== 'econt' ) return $fields;
+
+    // Make address fields not required when econt
+    foreach ( array( 'billing_address_1', 'billing_address_2', 'billing_city', 'billing_postcode' ) as $key ) {
+        if ( isset( $fields['billing'][ $key ] ) ) {
+            $fields['billing'][ $key ]['required'] = false;
+        }
+    }
+    // Make econt fields required when econt
+    if ( isset( $fields['billing']['billing_econt_office_city'] ) ) {
+        $fields['billing']['billing_econt_office_city']['required'] = true;
+    }
+    if ( isset( $fields['billing']['billing_econt_office'] ) ) {
+        $fields['billing']['billing_econt_office']['required'] = true;
+    }
+    return $fields;
+}, 30 );
+
+/**
+ * When econt delivery type is selected, set billing address to the econt office
+ * so WC has a valid address for the order.
+ */
+add_action( 'woocommerce_checkout_create_order', function( $order ) {
+    $delivery_type = isset( $_POST['billing_delivery_type'] ) ? sanitize_text_field( $_POST['billing_delivery_type'] ) : 'home';
+    if ( $delivery_type !== 'econt' ) return;
+
+    $city   = isset( $_POST['billing_econt_office_city'] ) ? sanitize_text_field( $_POST['billing_econt_office_city'] ) : '';
+    $office = isset( $_POST['billing_econt_office'] )      ? sanitize_text_field( $_POST['billing_econt_office'] )      : '';
+
+    if ( $city ) {
+        $order->set_billing_city( $city );
+        $order->set_billing_address_1( 'Офис Еконт: ' . $office );
+        $order->set_billing_address_2( '' );
+        $order->set_billing_postcode( '' );
+    }
+}, 5 );
+
+/**
  * Copy ALL billing fields to shipping on checkout
  * Ensures shipping address = billing address (name, address, phone, etc.)
  */
@@ -653,10 +737,136 @@ add_filter('woocommerce_checkout_posted_data', function($data){
 });
 
 /**
- * Validate billing_address_2 (kućni broj) is required
+ * Validate billing_address_2 (къщн номер) — only required for home/boxnow delivery
  */
 add_action('woocommerce_checkout_process', function(){
-    if ( empty( $_POST['billing_address_2'] ) ) {
+    $delivery_type = isset( $_POST['billing_delivery_type'] ) ? sanitize_text_field( $_POST['billing_delivery_type'] ) : 'home';
+
+    if ( $delivery_type !== 'econt' && empty( $_POST['billing_address_2'] ) ) {
         wc_add_notice( 'Моля, въведете номер.', 'error' );
     }
+
+    // Validate econt fields when econt delivery type is selected
+    if ( $delivery_type === 'econt' ) {
+        if ( empty( $_POST['billing_econt_office_city'] ) ) {
+            wc_add_notice( 'Моля, изберете населено място.', 'error' );
+        }
+        if ( empty( $_POST['billing_econt_office'] ) ) {
+            wc_add_notice( 'Моля, изберете офис на Еконт.', 'error' );
+        }
+    }
 });
+
+/**
+ * Save Econt + delivery type fields to order meta
+ */
+add_action( 'woocommerce_checkout_update_order_meta', function( $order_id ) {
+    if ( ! empty( $_POST['billing_delivery_type'] ) ) {
+        update_post_meta( $order_id, '_billing_delivery_type', sanitize_text_field( $_POST['billing_delivery_type'] ) );
+    }
+    if ( ! empty( $_POST['billing_econt_office_city'] ) ) {
+        update_post_meta( $order_id, '_billing_econt_office_city', sanitize_text_field( $_POST['billing_econt_office_city'] ) );
+    }
+    if ( ! empty( $_POST['billing_econt_office'] ) ) {
+        update_post_meta( $order_id, '_billing_econt_office', sanitize_text_field( $_POST['billing_econt_office'] ) );
+    }
+} );
+
+/**
+ * Show Econt + delivery type fields in WC admin order details
+ */
+add_filter( 'woocommerce_admin_billing_fields', function( $fields ) {
+    $fields['delivery_type'] = array(
+        'label' => 'Метод на доставка',
+        'show'  => false,
+    );
+    $fields['econt_office_city'] = array(
+        'label' => 'Град (Еконт)',
+        'show'  => false,
+    );
+    $fields['econt_office'] = array(
+        'label' => 'Офис Еконт (код)',
+        'show'  => false,
+    );
+    return $fields;
+} );
+
+/**
+ * Delivery type selector + Econt fields CSS
+ */
+add_action( 'wp_head', function() {
+    if ( ! is_checkout() ) return;
+    ?>
+    <style id="noriks-delivery-type-css">
+    /* ===== DELIVERY TYPE SELECTOR ===== */
+    #noriks-delivery-type-container {
+      margin: 0 0 16px !important;
+    }
+    .hs-delivery-type-container.bg-econt .container__title {
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      color: #232f3e !important;
+      margin-bottom: 8px !important;
+    }
+    .hs-delivery-type-container.bg-econt .container__buttons {
+      display: flex !important;
+      gap: 8px !important;
+      flex-wrap: wrap !important;
+    }
+    .hs-delivery-type-container.bg-econt .delivery-type {
+      flex: 1 1 0 !important;
+      min-width: 80px !important;
+      border: 2px solid #e3e6e8 !important;
+      border-radius: 8px !important;
+      cursor: pointer !important;
+      transition: border-color 0.15s, background 0.15s !important;
+      background: #fff !important;
+    }
+    .hs-delivery-type-container.bg-econt .delivery-type:hover {
+      border-color: #47b426 !important;
+    }
+    .hs-delivery-type-container.bg-econt .delivery-type.active {
+      border-color: #47b426 !important;
+      background: #f2feee !important;
+    }
+    .hs-delivery-type-container.bg-econt .delivery-type-inner {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 12px 8px !important;
+      gap: 6px !important;
+      text-align: center !important;
+    }
+    .hs-delivery-type-container.bg-econt .delivery-type-inner p {
+      margin: 0 !important;
+      font-size: 12px !important;
+      font-weight: 600 !important;
+      color: #232f3e !important;
+      line-height: 1.3 !important;
+    }
+    .hs-delivery-type-container.bg-econt .delivery-type-inner img {
+      width: 32px !important;
+      height: 32px !important;
+      object-fit: contain !important;
+    }
+
+    /* ===== ECONT FIELDS ===== */
+    #billing_econt_office_city_field,
+    #billing_econt_office_field {
+      display: none !important; /* shown via JS when econt is selected */
+    }
+    #billing_econt_office_city_field select,
+    #billing_econt_office_field select {
+      width: 100% !important;
+      padding: 10px 14px !important;
+      border: 1px solid #ccc !important;
+      border-radius: 6px !important;
+      font-size: 14px !important;
+      color: #232f3e !important;
+      background: #fff !important;
+      appearance: auto !important;
+    }
+    </style>
+    <?php
+}, 10 );
