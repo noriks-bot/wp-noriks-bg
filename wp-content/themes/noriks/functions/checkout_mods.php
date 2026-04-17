@@ -505,15 +505,15 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_first_name']['placeholder'] = 'Име';
     $fields['billing']['billing_last_name']['label'] = 'Фамилия';
     $fields['billing']['billing_last_name']['placeholder'] = 'Фамилия';
-    $fields['billing']['billing_address_1']['label'] = 'Улица';
-    $fields['billing']['billing_address_1']['placeholder'] = 'Улица';
+    $fields['billing']['billing_address_1']['label'] = 'Улица и номер';
+    $fields['billing']['billing_address_1']['placeholder'] = 'Улица и номер';
     $fields['billing']['billing_address_2']['label'] = 'Номер';
     $fields['billing']['billing_address_2']['placeholder'] = 'Номер';
     $fields['billing']['billing_address_2']['required'] = true;
     $fields['billing']['billing_postcode']['label'] = 'Пощенски код';
     $fields['billing']['billing_postcode']['placeholder'] = 'Пощенски код';
     $fields['billing']['billing_city']['label'] = 'Град';
-    $fields['billing']['billing_city']['placeholder'] = 'Избери град';
+    $fields['billing']['billing_city']['placeholder'] = 'Град';
     $fields['billing']['billing_phone']['label'] = 'Телефон';
     $fields['billing']['billing_phone']['placeholder'] = 'Телефонен номер';
     $fields['billing']['billing_phone']['required'] = true;
@@ -530,10 +530,10 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     // Vigoshop CSS classes
     $fields['billing']['billing_first_name']['class'] = array('form-row','form-row-first','form-group','col-xs-12','validate-required');
     $fields['billing']['billing_last_name']['class']  = array('form-row','form-row-last','form-group','col-xs-12','validate-required');
-    $fields['billing']['billing_address_1']['class']  = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required');
-    $fields['billing']['billing_address_2']['class']  = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required');
-    $fields['billing']['billing_postcode']['class']   = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required','validate-postcode');
-    $fields['billing']['billing_city']['class']       = array('form-row','form-row-wide','dropdown','form-group','col-xs-12','validate-required');
+    $fields['billing']['billing_address_1']['class']  = array('form-row','form-row-first','address-field','form-group','col-xs-12','validate-required');
+    $fields['billing']['billing_address_2']['class']  = array('form-row','form-row-last','address-field','form-group','col-xs-12','validate-required');
+    $fields['billing']['billing_postcode']['class']   = array('form-row','form-row-first','address-field','form-group','col-xs-12','validate-required','validate-postcode');
+    $fields['billing']['billing_city']['class']       = array('form-row','form-row-last','dropdown','form-group','col-xs-12','validate-required');
     $fields['billing']['billing_phone']['class']      = array('form-row','form-row-wide','form-group','col-xs-12','validate-required','validate-phone');
     $fields['billing']['billing_email']['class']      = array('form-row','form-row-wide','form-group','col-xs-12','validate-email');
 
