@@ -252,7 +252,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
   position: relative !important;
 }
 #billing_phone_field::after {
-  content: 'Пример: 0912345678' !important;
+  content: 'Пример: 0881234567' !important;
   position: absolute !important;
   left: 0 !important;
   bottom: -20px !important;
