@@ -205,7 +205,7 @@ body.woocommerce-checkout #payment .wc_payment_method > label img {
 }
 /* Fee badges — "Besplatno" for card & PayPal, price for COD */
 body.woocommerce-checkout #payment .wc_payment_method > label::after {
-  content: 'Безплатно' !important;
+  content: 'Безплатни' !important;
   display: inline-block !important;
   padding: 3px 10px !important;
   margin-left: auto !important;

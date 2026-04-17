@@ -20,34 +20,6 @@ if ( WC()->cart->is_empty() ) return;
   <div class="col2-set" id="customer_details">
     <div class="col-1 clearfix">
       <div class="woocommerce-billing-fields">
-
-        <!-- DELIVERY TYPE SELECTOR -->
-        <div class="hs-delivery-type-container bg-econt" id="noriks-delivery-type-container">
-          <div class="container__title">Метод на доставка</div>
-          <div class="container__buttons">
-            <div class="delivery-type hs-delivery-home active" data-type="home">
-              <div class="delivery-type-inner">
-                <p>Домашна доставка</p>
-                <img decoding="async" src="https://images.vigo-shop.com/general/checkout/home_icon.svg" alt="home-icon">
-              </div>
-            </div>
-            <div class="delivery-type hs-delivery-postoffice" data-type="econt">
-              <div class="delivery-type-inner">
-                <p>Офис на Еконт</p>
-                <img decoding="async" src="https://images.vigo-shop.com/general/checkout/postoffice_icon.svg" alt="post-office-icon">
-              </div>
-            </div>
-            <div class="delivery-type hs-delivery-machine" data-type="boxnow">
-              <div class="delivery-type-inner">
-                <p>BoxNow автомат</p>
-                <img decoding="async" src="https://images.vigo-shop.com/general/checkout/machine_icon.svg" alt="boxnow-icon">
-              </div>
-            </div>
-          </div>
-          <input type="hidden" name="billing_delivery_type" id="billing_delivery_type" value="home">
-        </div>
-        <!-- /DELIVERY TYPE SELECTOR -->
-
         <div class="woocommerce-billing-fields__field-wrapper">
           <?php do_action( 'woocommerce_checkout_billing' ); ?>
         </div>
@@ -116,10 +88,10 @@ if ( WC()->cart->is_empty() ) return;
 <!-- Warranty -->
 <div class="checkout-warranty flex flex--center flex--middle">
   <div class="flex__item--autosize checkout-warranty__icon">
-    <img decoding="async" src="https://images.vigo-shop.com/general/guarantee_money_back/satisfaction_icon_hr.png">
+    <img decoding="async" src="https://images.vigo-shop.com/general/guarantee_money_back/satisfaction_icon_bg.png">
   </div>
   <div class="flex__item--autosize f--m checkout-warranty__text">
-    <strong>Пазарувайте без грижи </strong><br>Възстановяване на парите е възможно до 90 дни
+    <strong>Купете без притеснения </strong><br>Възстановяване на сумата е възможно в срок до 90 дни
   </div>
 </div>
 

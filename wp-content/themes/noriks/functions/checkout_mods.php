@@ -476,7 +476,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
         'required'    => false, // validated conditionally via JS + PHP
         'class'       => array( 'form-row', 'col-xs-12', 'col-xs-12', 'form-group', 'col-xs-12', 'noriks-econt-field' ),
         'input_class' => array( 'select', 'form-input' ),
-        'priority'    => 65,
+        'priority'    => 85,
         'options'     => array( '' => 'Въведете населено място' ),
         'custom_attributes' => array(
             'data-allow_clear'  => 'true',
@@ -491,7 +491,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
         'required'    => false,
         'class'       => array( 'form-row', 'col-xs-12', 'col-xs-12', 'form-group', 'col-xs-12', 'noriks-econt-field' ),
         'input_class' => array( 'select', 'form-input' ),
-        'priority'    => 66,
+        'priority'    => 86,
         'options'     => array( '' => 'Изберете Офис' ),
         'custom_attributes' => array(
             'data-allow_clear'  => 'true',
@@ -515,7 +515,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_city']['label'] = 'Град';
     $fields['billing']['billing_city']['placeholder'] = 'Град';
     $fields['billing']['billing_phone']['label'] = 'Телефон';
-    $fields['billing']['billing_phone']['placeholder'] = 'Телефонен номер';
+    $fields['billing']['billing_phone']['placeholder'] = 'Номер на мобилен телефон';
     $fields['billing']['billing_phone']['required'] = true;
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_phone']['description'] = '...';
@@ -544,6 +544,43 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
 
     return $fields;
 }, 20 );
+
+/**
+ * Inject delivery type selector after billing_email field
+ * Matches vigoshop HTML order: phone → email → delivery type → name → address
+ */
+add_filter( 'woocommerce_form_field_email', function( $field, $key ) {
+    if ( $key !== 'billing_email' ) return $field;
+
+    $delivery_html = '<div class="form-row form-row-wide col-xs-12">
+    <div class="hs-delivery-type-container bg-econt" id="noriks-delivery-type-container">
+      <div class="container__title">Метод на доставка</div>
+      <div class="container__buttons">
+        <div class="delivery-type hs-delivery-home active" data-type="home">
+          <div class="delivery-type-inner">
+            <p>Домашна доставка</p>
+            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/home_icon.svg" alt="home-icon">
+          </div>
+        </div>
+        <div class="delivery-type hs-delivery-postoffice" data-type="econt">
+          <div class="delivery-type-inner">
+            <p>Офис на Еконт</p>
+            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/postoffice_icon.svg" alt="post-office-icon">
+          </div>
+        </div>
+        <div class="delivery-type hs-delivery-machine" data-type="boxnow">
+          <div class="delivery-type-inner">
+            <p>BoxNow автомат</p>
+            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/machine_icon.svg" alt="boxnow-icon">
+          </div>
+        </div>
+      </div>
+      <input type="hidden" name="billing_delivery_type" id="billing_delivery_type" value="home">
+    </div>
+    </div>';
+
+    return $field . $delivery_html;
+}, 10, 2 );
 
 /**
  * Address hint after last name
@@ -589,6 +626,17 @@ add_action( 'woocommerce_cart_calculate_fees', function( $cart ) {
     $chosen_gateway = WC()->session->get( 'chosen_payment_method' );
     if ( $chosen_gateway === 'cod' ) {
         $cart->add_fee( 'Наложен платеж', 1.99, false );
+    }
+});
+
+/**
+ * Save billing_delivery_type to session on AJAX update_order_review
+ * So review-order.php can read the correct label during AJAX re-renders
+ */
+add_action( 'woocommerce_checkout_update_order_review', function( $posted_data ) {
+    parse_str( $posted_data, $data );
+    if ( isset( $data['billing_delivery_type'] ) && WC()->session ) {
+        WC()->session->set( 'billing_delivery_type', sanitize_text_field( $data['billing_delivery_type'] ) );
     }
 });
 

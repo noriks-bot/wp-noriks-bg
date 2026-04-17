@@ -30,8 +30,30 @@ defined( 'ABSPATH' ) || exit;
       <?php endforeach; ?>
 
       <!-- Shipping -->
+      <?php
+        // Dynamic shipping label based on delivery type
+        $delivery_type = isset( $_POST['billing_delivery_type'] ) ? sanitize_text_field( $_POST['billing_delivery_type'] ) : '';
+        if ( empty( $delivery_type ) ) {
+            $delivery_type = WC()->session ? WC()->session->get( 'billing_delivery_type', 'home' ) : 'home';
+        }
+        if ( $delivery_type === 'econt' ) {
+            $shipping_label = 'Офис на Еконт';
+        } elseif ( $delivery_type === 'boxnow' ) {
+            $shipping_label = 'BoxNow автомат';
+        } else {
+            // Get label from WC shipping methods if available
+            $shipping_label = 'Доставка с Еконт';
+            $packages = WC()->shipping ? WC()->shipping()->get_packages() : array();
+            if ( ! empty( $packages ) ) {
+                $chosen = WC()->session ? WC()->session->get( 'chosen_shipping_methods', array() ) : array();
+                if ( isset( $chosen[0] ) && isset( $packages[0]['rates'][ $chosen[0] ] ) ) {
+                    $shipping_label = $packages[0]['rates'][ $chosen[0] ]->get_label();
+                }
+            }
+        }
+      ?>
       <div class="c--darkgray review-section-container review-addons shipping_order_review">
-        <div class="review-addons-title"><div>Еконт</div></div>
+        <div class="review-addons-title"><div><?php echo esc_html( $shipping_label ); ?></div></div>
         <div class="review-addons-price review-sale-price" id="noriks-shipping-price">
           <?php
             $ship = (float) WC()->cart->get_shipping_total();
