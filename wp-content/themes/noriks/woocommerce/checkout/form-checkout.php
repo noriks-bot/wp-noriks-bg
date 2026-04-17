@@ -31,6 +31,7 @@ if ( WC()->cart->is_empty() ) return;
       <div class="woocommerce-additional-fields">
 
         <!-- SHIPPING -->
+        <?php WC()->cart->calculate_totals(); ?>
         <div id="custom_shipping">
           <h3>Доставка</h3>
           <ul class="shipping_method_custom">
@@ -44,9 +45,7 @@ if ( WC()->cart->is_empty() ) return;
                     <strong class="hs-custom-date" id="js-delivery-dates"></strong>
                   </div>
                   <div class="inner-wrapper-img">
-                    <span class="shipping_method_delivery_price tag tag--red">
-                      <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>
-                    </span>
+                    <span class="shipping_method_delivery_price tag tag--red"><?php $ship = (float) WC()->cart->get_shipping_total(); echo $ship > 0 ? wc_price($ship) : 'Безплатно'; ?></span>
                     <span class="delivery_img"><img decoding="async" class="ekont standard" src="https://images.vigo-shop.com/general/curriers/ekont.png"/></span>
                   </div>
                 </div>
