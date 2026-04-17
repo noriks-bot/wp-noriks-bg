@@ -184,9 +184,12 @@
     /* ── Init ── */
 
     function init() {
-        // Delivery type button clicks
+        // Delivery type button clicks (delegated + custom event)
         $(document).on('click', '.delivery-type', function () {
             var type = $(this).data('type');
+            if (type) setDeliveryType(type);
+        });
+        $(document).on('noriks-delivery-change', '.delivery-type', function (e, type) {
             if (type) setDeliveryType(type);
         });
 

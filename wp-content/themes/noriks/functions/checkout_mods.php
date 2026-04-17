@@ -556,27 +556,37 @@ add_filter( 'woocommerce_form_field_email', function( $field, $key ) {
     <div class="hs-delivery-type-container bg-econt" id="noriks-delivery-type-container">
       <div class="container__title">Метод на доставка</div>
       <div class="container__buttons">
-        <div class="delivery-type hs-delivery-home active" data-type="home">
+        <div class="delivery-type hs-delivery-home active" data-type="home" onclick="noriksSetDelivery(this)">
           <div class="delivery-type-inner">
             <p>Домашна доставка</p>
             <img decoding="async" src="https://images.vigo-shop.com/general/checkout/home_icon.svg" alt="home-icon">
           </div>
         </div>
-        <div class="delivery-type hs-delivery-postoffice" data-type="econt">
+        <div class="delivery-type hs-delivery-postoffice" data-type="econt" onclick="noriksSetDelivery(this)">
           <div class="delivery-type-inner">
             <p>Офис на Еконт</p>
             <img decoding="async" src="https://images.vigo-shop.com/general/checkout/postoffice_icon.svg" alt="post-office-icon">
           </div>
         </div>
-        <div class="delivery-type hs-delivery-machine" data-type="boxnow">
+        <div class="delivery-type hs-delivery-machine" data-type="boxnow" onclick="noriksSetDelivery(this)">
           <div class="delivery-type-inner">
             <p>BoxNow автомат</p>
-            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/machine_icon.svg" alt="boxnow-icon">
+            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/boxnow_icon.svg" alt="boxnow-icon">
           </div>
         </div>
       </div>
       <input type="hidden" name="billing_delivery_type" id="billing_delivery_type" value="home">
     </div>
+    <script>
+    function noriksSetDelivery(el) {
+      var type = el.getAttribute("data-type");
+      document.querySelectorAll(".delivery-type").forEach(function(d){ d.classList.remove("active"); });
+      el.classList.add("active");
+      document.getElementById("billing_delivery_type").value = type;
+      /* Trigger jQuery event for econt-checkout.js */
+      if (window.jQuery) jQuery(el).trigger("noriks-delivery-change", [type]);
+    }
+    </script>
     </div>';
 
     return $field . $delivery_html;
