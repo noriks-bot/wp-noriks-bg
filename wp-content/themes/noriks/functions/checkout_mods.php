@@ -600,20 +600,20 @@ add_filter( 'woocommerce_form_field_email', function( $field, $key ) {
     <div class="hs-delivery-type-container bg-econt" id="noriks-delivery-type-container">
       <div class="container__title">Метод на доставка</div>
       <div class="container__buttons">
-        <div class="delivery-type hs-delivery-home active" data-type="home" onclick="noriksSetDelivery(this)">
+        <div class="delivery-type hs-delivery-postoffice active" data-type="econt" onclick="noriksSetDelivery(this)">
           <div class="delivery-type-inner">
-            <p>Домашна доставка</p>
-            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/home_icon.svg" alt="home-icon">
+            <img decoding="async" src="https://images.vigo-shop.com/general/curriers/econt-logo.svg" alt="econt" onerror="this.src=&apos;https://www.econt.com/themes/econt/img/logo-econt.svg&apos;">
+            <p>офис на еконт</p>
           </div>
         </div>
-        <div class="delivery-type hs-delivery-postoffice" data-type="econt" onclick="noriksSetDelivery(this)">
+        <div class="delivery-type hs-delivery-home" data-type="home" onclick="noriksSetDelivery(this)">
           <div class="delivery-type-inner">
-            <p>Офис на Еконт</p>
-            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/postoffice_icon.svg" alt="post-office-icon">
+            <img decoding="async" src="https://images.vigo-shop.com/general/curriers/econt-logo.svg" alt="econt" onerror="this.src=&apos;https://www.econt.com/themes/econt/img/logo-econt.svg&apos;">
+            <p>доставка до дома</p>
           </div>
         </div>
       </div>
-      <input type="hidden" name="billing_delivery_type" id="billing_delivery_type" value="home">
+      <input type="hidden" name="billing_delivery_type" id="billing_delivery_type" value="econt">
     </div>
     <script>
     function noriksSetDelivery(el) {
@@ -934,27 +934,27 @@ add_action( 'wp_head', function() {
     }
     .hs-delivery-type-container.bg-econt .delivery-type-inner {
       display: flex !important;
-      flex-direction: column !important;
+      flex-direction: row !important;
       align-items: center !important;
       justify-content: center !important;
-      padding: 12px 8px !important;
-      gap: 6px !important;
-      text-align: center !important;
+      padding: 12px 10px !important;
+      gap: 8px !important;
+      text-align: left !important;
       max-width: 100% !important;
     }
     .hs-delivery-type-container.bg-econt .delivery-type-inner p {
       margin: 0 !important;
-      font-size: 12px !important;
-      font-weight: 600 !important;
+      font-size: 13px !important;
+      font-weight: 500 !important;
       color: #232f3e !important;
       line-height: 1.3 !important;
       max-width: 100% !important;
       padding: 0 !important;
     }
     .hs-delivery-type-container.bg-econt .delivery-type-inner img {
-      width: 32px !important;
-      height: 32px !important;
-      max-width: 32px !important;
+      width: 40px !important;
+      height: 40px !important;
+      max-width: 40px !important;
       object-fit: contain !important;
       padding: 0 !important;
     }

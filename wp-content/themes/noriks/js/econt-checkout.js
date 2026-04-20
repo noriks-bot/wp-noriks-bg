@@ -200,13 +200,8 @@
         });
 
         // Set initial state based on hidden input (survives WC update_checkout re-render)
-        var initialType = $('#billing_delivery_type').val() || 'home';
-        setDeliveryType(initialType, true);
-
-        // If econt was already selected and data is cached, populate
-        if (initialType === 'econt' && econtOfficesData) {
-            populateCities();
-        }
+        var initialType = $('#billing_delivery_type').val() || 'econt';
+        setDeliveryType(initialType);
     }
 
     $(document).ready(function () {
@@ -216,8 +211,8 @@
     // Re-init after WC AJAX checkout update
     $(document.body).on('updated_checkout', function () {
         // Restore delivery type from hidden input
-        var type = $('#billing_delivery_type').val() || 'home';
-        setDeliveryType(type, true);
+        var type = $('#billing_delivery_type').val() || 'econt';
+        setDeliveryType(type, type === 'econt' && econtOfficesData ? false : true);
 
         // Re-populate econt dropdowns if econt was selected and data is cached
         if (type === 'econt' && econtOfficesData) {
