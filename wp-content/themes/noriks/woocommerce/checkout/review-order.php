@@ -14,14 +14,14 @@ defined( 'ABSPATH' ) || exit;
         $attrs = '';
         if ( !empty($cart_item['variation']) ) {
           $parts = array();
-          foreach ($cart_item['variation'] as $k=>$v) $parts[] = wc_attribute_label(str_replace('attribute_','',$k)).': '.$v;
+          foreach ($cart_item['variation'] as $k=>$v) $parts[] = wc_attribute_label(str_replace('attribute_','',$k)).': '.urldecode($v);
           $attrs = implode(', ',$parts);
         }
       ?>
       <div class="c--darkgray review-section-container">
         <div class="review-product-info">
           <div><?php echo esc_html($qty.'x '.$_product->get_name()); ?></div>
-          <?php if ($attrs): ?><div class="review-product-info__attributes"><?php echo esc_html($attrs); ?></div><?php endif; ?>
+          <?php if ($attrs): ?><div class="review-product-info__attributes" style="font-size:12px;color:#888;"><?php echo esc_html(urldecode($attrs)); ?></div><?php endif; ?>
         </div>
         <div class="info-price">
           <span class="review-sale-price"><?php echo WC()->cart->get_product_subtotal($_product,$qty); ?></span>
