@@ -512,6 +512,103 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_postcode']['priority']    = 70;
     $fields['billing']['billing_city']['priority']        = 80;
 
+    // ── Home delivery fields (shown when delivery type = home) ──
+    // Keep old address fields but make non-required (populated from home fields before submit)
+    $fields['billing']['billing_address_1']['required'] = false;
+    $fields['billing']['billing_address_2']['required'] = false;
+    $fields['billing']['billing_postcode']['required'] = false;
+    $fields['billing']['billing_city']['required'] = false;
+
+    $fields['billing']['billing_home_city'] = array(
+        'label'       => 'Населено място',
+        'placeholder' => 'Въведете населено място',
+        'type'        => 'select',
+        'required'    => false,
+        'class'       => array( 'form-row', 'form-row-wide', 'form-group', 'col-xs-12', 'noriks-home-field' ),
+        'input_class' => array( 'select', 'form-input' ),
+        'priority'    => 45,
+        'options'     => array( '' => 'Въведете населено място' ),
+        'custom_attributes' => array(
+            'data-allow_clear'  => 'true',
+            'data-placeholder'  => 'Въведете населено място',
+        ),
+    );
+
+    $fields['billing']['billing_home_quarter'] = array(
+        'label'       => 'Квартал',
+        'placeholder' => 'ПОСОЧЕТЕ КВАРТАЛ',
+        'type'        => 'select',
+        'required'    => false,
+        'class'       => array( 'form-row', 'form-row-wide', 'form-group', 'col-xs-12', 'noriks-home-field' ),
+        'input_class' => array( 'select', 'form-input' ),
+        'priority'    => 46,
+        'options'     => array( '' => 'ПОСОЧЕТЕ КВАРТАЛ' ),
+        'custom_attributes' => array(
+            'data-allow_clear'  => 'true',
+            'data-placeholder'  => 'ПОСОЧЕТЕ КВАРТАЛ',
+        ),
+    );
+
+    $fields['billing']['billing_home_street_name'] = array(
+        'label'       => 'Улица',
+        'placeholder' => 'Улица',
+        'type'        => 'text',
+        'required'    => false,
+        'class'       => array( 'form-row', 'form-row-wide', 'form-group', 'col-xs-12', 'noriks-home-field' ),
+        'input_class' => array( 'input-text', 'form-input' ),
+        'priority'    => 47,
+    );
+
+    $fields['billing']['billing_home_block'] = array(
+        'label'       => 'бл. №',
+        'placeholder' => 'бл. №',
+        'type'        => 'text',
+        'required'    => false,
+        'class'       => array( 'form-row', 'form-row-first', 'form-group', 'col-xs-12', 'noriks-home-field' ),
+        'input_class' => array( 'input-text', 'form-input' ),
+        'priority'    => 48,
+    );
+
+    $fields['billing']['billing_home_street_number'] = array(
+        'label'       => 'ул. №',
+        'placeholder' => 'ул. №',
+        'type'        => 'text',
+        'required'    => false,
+        'class'       => array( 'form-row', 'form-row-last', 'form-group', 'col-xs-12', 'noriks-home-field' ),
+        'input_class' => array( 'input-text', 'form-input' ),
+        'priority'    => 49,
+    );
+
+    $fields['billing']['billing_home_entrance'] = array(
+        'label'       => 'вх. №',
+        'placeholder' => 'вх. №',
+        'type'        => 'text',
+        'required'    => false,
+        'class'       => array( 'form-row', 'form-group', 'col-xs-12', 'noriks-home-field', 'noriks-home-three-col' ),
+        'input_class' => array( 'input-text', 'form-input' ),
+        'priority'    => 50,
+    );
+
+    $fields['billing']['billing_home_floor'] = array(
+        'label'       => 'ет. №',
+        'placeholder' => 'ет. №',
+        'type'        => 'text',
+        'required'    => false,
+        'class'       => array( 'form-row', 'form-group', 'col-xs-12', 'noriks-home-field', 'noriks-home-three-col' ),
+        'input_class' => array( 'input-text', 'form-input' ),
+        'priority'    => 51,
+    );
+
+    $fields['billing']['billing_home_apartment'] = array(
+        'label'       => 'ап. №',
+        'placeholder' => 'ап. №',
+        'type'        => 'text',
+        'required'    => false,
+        'class'       => array( 'form-row', 'form-group', 'col-xs-12', 'noriks-home-field', 'noriks-home-three-col' ),
+        'input_class' => array( 'input-text', 'form-input' ),
+        'priority'    => 52,
+    );
+
     // ── Econt Office fields (shown when delivery type = econt) ──
     $fields['billing']['billing_econt_office_city'] = array(
         'label'       => false,
@@ -772,23 +869,84 @@ add_action('woocommerce_review_order_before_submit', function(){
  */
 add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $delivery_type = isset( $_POST['billing_delivery_type'] ) ? sanitize_text_field( $_POST['billing_delivery_type'] ) : '';
-    if ( $delivery_type !== 'econt' ) return $fields;
 
-    // Make address fields not required when econt
-    foreach ( array( 'billing_address_1', 'billing_address_2', 'billing_city', 'billing_postcode' ) as $key ) {
-        if ( isset( $fields['billing'][ $key ] ) ) {
-            $fields['billing'][ $key ]['required'] = false;
+    if ( $delivery_type === 'econt' ) {
+        // Make address fields not required when econt
+        foreach ( array( 'billing_address_1', 'billing_address_2', 'billing_city', 'billing_postcode' ) as $key ) {
+            if ( isset( $fields['billing'][ $key ] ) ) {
+                $fields['billing'][ $key ]['required'] = false;
+            }
+        }
+        // Make econt fields required when econt
+        if ( isset( $fields['billing']['billing_econt_office_city'] ) ) {
+            $fields['billing']['billing_econt_office_city']['required'] = true;
+        }
+        if ( isset( $fields['billing']['billing_econt_office'] ) ) {
+            $fields['billing']['billing_econt_office']['required'] = true;
+        }
+        // Home fields not required
+        foreach ( array( 'billing_home_city', 'billing_home_quarter', 'billing_home_street_name', 'billing_home_block', 'billing_home_street_number', 'billing_home_entrance', 'billing_home_floor', 'billing_home_apartment' ) as $key ) {
+            if ( isset( $fields['billing'][ $key ] ) ) {
+                $fields['billing'][ $key ]['required'] = false;
+            }
+        }
+    } elseif ( $delivery_type === 'home' ) {
+        // Make home fields required
+        if ( isset( $fields['billing']['billing_home_city'] ) ) {
+            $fields['billing']['billing_home_city']['required'] = true;
+        }
+        if ( isset( $fields['billing']['billing_home_street_name'] ) ) {
+            $fields['billing']['billing_home_street_name']['required'] = true;
+        }
+        // Econt fields not required
+        if ( isset( $fields['billing']['billing_econt_office_city'] ) ) {
+            $fields['billing']['billing_econt_office_city']['required'] = false;
+        }
+        if ( isset( $fields['billing']['billing_econt_office'] ) ) {
+            $fields['billing']['billing_econt_office']['required'] = false;
+        }
+        // Old address fields not required
+        foreach ( array( 'billing_address_1', 'billing_address_2', 'billing_city', 'billing_postcode' ) as $key ) {
+            if ( isset( $fields['billing'][ $key ] ) ) {
+                $fields['billing'][ $key ]['required'] = false;
+            }
         }
     }
-    // Make econt fields required when econt
-    if ( isset( $fields['billing']['billing_econt_office_city'] ) ) {
-        $fields['billing']['billing_econt_office_city']['required'] = true;
-    }
-    if ( isset( $fields['billing']['billing_econt_office'] ) ) {
-        $fields['billing']['billing_econt_office']['required'] = true;
-    }
+
     return $fields;
 }, 30 );
+
+/**
+ * When home delivery type is selected, map home fields to billing address
+ */
+add_action( 'woocommerce_checkout_create_order', function( $order ) {
+    $delivery_type = isset( $_POST['billing_delivery_type'] ) ? sanitize_text_field( $_POST['billing_delivery_type'] ) : 'home';
+    if ( $delivery_type !== 'home' ) return;
+
+    $city_name    = isset( $_POST['billing_home_city_name'] ) ? sanitize_text_field( $_POST['billing_home_city_name'] ) : '';
+    $postcode     = isset( $_POST['billing_home_city_postcode'] ) ? sanitize_text_field( $_POST['billing_home_city_postcode'] ) : '';
+    $street       = isset( $_POST['billing_home_street_name'] ) ? sanitize_text_field( $_POST['billing_home_street_name'] ) : '';
+    $street_num   = isset( $_POST['billing_home_street_number'] ) ? sanitize_text_field( $_POST['billing_home_street_number'] ) : '';
+    $block        = isset( $_POST['billing_home_block'] ) ? sanitize_text_field( $_POST['billing_home_block'] ) : '';
+    $entrance     = isset( $_POST['billing_home_entrance'] ) ? sanitize_text_field( $_POST['billing_home_entrance'] ) : '';
+    $floor        = isset( $_POST['billing_home_floor'] ) ? sanitize_text_field( $_POST['billing_home_floor'] ) : '';
+    $apartment    = isset( $_POST['billing_home_apartment'] ) ? sanitize_text_field( $_POST['billing_home_apartment'] ) : '';
+
+    $addr1_parts = array();
+    if ( $street ) $addr1_parts[] = 'ул. ' . $street;
+    if ( $street_num ) $addr1_parts[] = '№ ' . $street_num;
+    if ( $block ) $addr1_parts[] = 'бл. ' . $block;
+
+    $addr2_parts = array();
+    if ( $entrance ) $addr2_parts[] = 'вх. ' . $entrance;
+    if ( $floor ) $addr2_parts[] = 'ет. ' . $floor;
+    if ( $apartment ) $addr2_parts[] = 'ап. ' . $apartment;
+
+    $order->set_billing_address_1( implode( ', ', $addr1_parts ) );
+    $order->set_billing_address_2( implode( ', ', $addr2_parts ) );
+    if ( $city_name ) $order->set_billing_city( $city_name );
+    if ( $postcode ) $order->set_billing_postcode( $postcode );
+}, 5 );
 
 /**
  * When econt delivery type is selected, set billing address to the econt office
@@ -843,8 +1001,14 @@ add_filter('woocommerce_checkout_posted_data', function($data){
 add_action('woocommerce_checkout_process', function(){
     $delivery_type = isset( $_POST['billing_delivery_type'] ) ? sanitize_text_field( $_POST['billing_delivery_type'] ) : 'home';
 
-    if ( $delivery_type !== 'econt' && empty( $_POST['billing_address_2'] ) ) {
-        wc_add_notice( 'Моля, въведете номер.', 'error' );
+    // Validate home delivery fields
+    if ( $delivery_type === 'home' ) {
+        if ( empty( $_POST['billing_home_city'] ) ) {
+            wc_add_notice( 'Моля, изберете населено място.', 'error' );
+        }
+        if ( empty( $_POST['billing_home_street_name'] ) ) {
+            wc_add_notice( 'Моля, въведете улица.', 'error' );
+        }
     }
 
     // Validate econt fields when econt delivery type is selected
@@ -871,6 +1035,17 @@ add_action( 'woocommerce_checkout_update_order_meta', function( $order_id ) {
     if ( ! empty( $_POST['billing_econt_office'] ) ) {
         update_post_meta( $order_id, '_billing_econt_office', sanitize_text_field( $_POST['billing_econt_office'] ) );
     }
+    // Home delivery fields
+    $home_fields = array(
+        'billing_home_city', 'billing_home_quarter', 'billing_home_street_name',
+        'billing_home_block', 'billing_home_street_number',
+        'billing_home_entrance', 'billing_home_floor', 'billing_home_apartment',
+    );
+    foreach ( $home_fields as $field ) {
+        if ( ! empty( $_POST[ $field ] ) ) {
+            update_post_meta( $order_id, '_' . $field, sanitize_text_field( $_POST[ $field ] ) );
+        }
+    }
 } );
 
 /**
@@ -887,6 +1062,38 @@ add_filter( 'woocommerce_admin_billing_fields', function( $fields ) {
     );
     $fields['econt_office'] = array(
         'label' => 'Офис Еконт (код)',
+        'show'  => false,
+    );
+    $fields['home_city'] = array(
+        'label' => 'Населено място (дом)',
+        'show'  => false,
+    );
+    $fields['home_quarter'] = array(
+        'label' => 'Квартал',
+        'show'  => false,
+    );
+    $fields['home_street_name'] = array(
+        'label' => 'Улица',
+        'show'  => false,
+    );
+    $fields['home_block'] = array(
+        'label' => 'Блок №',
+        'show'  => false,
+    );
+    $fields['home_street_number'] = array(
+        'label' => 'Ул. №',
+        'show'  => false,
+    );
+    $fields['home_entrance'] = array(
+        'label' => 'Вход №',
+        'show'  => false,
+    );
+    $fields['home_floor'] = array(
+        'label' => 'Етаж №',
+        'show'  => false,
+    );
+    $fields['home_apartment'] = array(
+        'label' => 'Апартамент №',
         'show'  => false,
     );
     return $fields;
@@ -920,6 +1127,36 @@ add_action( 'wp_head', function() {
     }
     #noriks-delivery-buttons .delivery-type.active:hover {
       background: #f2feee !important;
+    }
+
+    /* ===== HOME DELIVERY FIELDS ===== */
+    /* Initial state: hidden. JS shows them when home delivery type is selected */
+    .noriks-home-field {
+      display: none;
+    }
+    /* 3-column layout for entrance/floor/apartment */
+    .noriks-home-three-col {
+      width: 33.33% !important;
+      float: left !important;
+      padding-right: 8px !important;
+      box-sizing: border-box !important;
+    }
+    .noriks-home-three-col:last-of-type {
+      padding-right: 0 !important;
+    }
+    /* Clear float after 3-col row */
+    #billing_home_apartment_field {
+      margin-bottom: 0 !important;
+    }
+    #billing_home_apartment_field + .form-row {
+      clear: both !important;
+    }
+    /* Hide old address fields by default (JS controls visibility) */
+    #billing_address_1_field,
+    #billing_address_2_field,
+    #billing_city_field,
+    #billing_postcode_field {
+      display: none;
     }
 
     /* ===== ECONT FIELDS ===== */
