@@ -520,7 +520,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_city']['required'] = false;
 
     $fields['billing']['billing_home_city'] = array(
-        'label'       => 'Населено място',
+        'label'       => '&nbsp;',
         'placeholder' => 'Въведете населено място',
         'type'        => 'select',
         'required'    => false,
@@ -535,7 +535,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     );
 
     $fields['billing']['billing_home_quarter'] = array(
-        'label'       => 'Квартал',
+        'label'       => '&nbsp;',
         'placeholder' => 'ПОСОЧЕТЕ КВАРТАЛ',
         'type'        => 'select',
         'required'    => false,
@@ -1134,6 +1134,11 @@ add_action( 'wp_head', function() {
     .noriks-home-field {
       display: none;
     }
+    /* Hide labels for home select fields (placeholder in <option> is enough) */
+    #billing_home_city_field > label,
+    #billing_home_quarter_field > label {
+      display: none !important;
+    }
     /* Unified select + input styling for home delivery fields */
     .noriks-home-field select,
     .noriks-home-field input[type="text"] {
@@ -1173,6 +1178,11 @@ add_action( 'wp_head', function() {
     }
     .noriks-home-field .select2-container .select2-selection__arrow {
       height: 50px !important;
+    }
+    /* Also hide labels for econt office selects */
+    #billing_econt_office_city_field > label,
+    #billing_econt_office_field > label {
+      display: none !important;
     }
     /* 3-column layout for entrance/floor/apartment */
     .noriks-home-three-col {
