@@ -602,13 +602,13 @@ add_filter( 'woocommerce_form_field_email', function( $field, $key ) {
       <div class="container__buttons">
         <div class="delivery-type hs-delivery-postoffice active" data-type="econt" onclick="noriksSetDelivery(this)">
           <div class="delivery-type-inner">
-            <img decoding="async" src="https://images.vigo-shop.com/general/curriers/econt-logo.svg" alt="econt" onerror="this.src=&apos;https://www.econt.com/themes/econt/img/logo-econt.svg&apos;">
+            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/postoffice_icon.svg" alt="econt-office">
             <p>офис на еконт</p>
           </div>
         </div>
         <div class="delivery-type hs-delivery-home" data-type="home" onclick="noriksSetDelivery(this)">
           <div class="delivery-type-inner">
-            <img decoding="async" src="https://images.vigo-shop.com/general/curriers/econt-logo.svg" alt="econt" onerror="this.src=&apos;https://www.econt.com/themes/econt/img/logo-econt.svg&apos;">
+            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/home_icon.svg" alt="home-delivery">
             <p>доставка до дома</p>
           </div>
         </div>
@@ -923,7 +923,7 @@ add_action( 'wp_head', function() {
       cursor: pointer !important;
       transition: border-color 0.15s, background 0.15s !important;
       background: #fff !important;
-      height: auto !important;
+      height: 69px !important;
     }
     .hs-delivery-type-container.bg-econt .delivery-type:hover {
       border-color: #47b426 !important;
@@ -937,26 +937,27 @@ add_action( 'wp_head', function() {
       flex-direction: row !important;
       align-items: center !important;
       justify-content: center !important;
-      padding: 12px 10px !important;
-      gap: 8px !important;
+      padding: 10px 8px !important;
+      gap: 6px !important;
       text-align: left !important;
-      max-width: 100% !important;
+      max-width: 75% !important;
+      margin: 0 auto !important;
     }
     .hs-delivery-type-container.bg-econt .delivery-type-inner p {
       margin: 0 !important;
-      font-size: 13px !important;
-      font-weight: 500 !important;
+      font-size: 15px !important;
+      font-weight: 400 !important;
       color: #232f3e !important;
-      line-height: 1.3 !important;
+      line-height: 1.2 !important;
       max-width: 100% !important;
-      padding: 0 !important;
+      padding-left: 1% !important;
     }
     .hs-delivery-type-container.bg-econt .delivery-type-inner img {
-      width: 40px !important;
-      height: 40px !important;
-      max-width: 40px !important;
+      width: 33% !important;
+      max-width: 50px !important;
+      height: auto !important;
       object-fit: contain !important;
-      padding: 0 !important;
+      padding: 5px !important;
     }
 
     /* ===== ECONT FIELDS ===== */
