@@ -599,15 +599,15 @@ add_filter( 'woocommerce_form_field_email', function( $field, $key ) {
     $delivery_html = '<div class="form-row form-row-wide col-xs-12">
     <div id="noriks-delivery-type-container">
       <div style="font-size:1.3rem;font-weight:700;margin-bottom:0.5em;color:#232f3e;">Метод на доставка</div>
-      <div style="display:flex;flex-direction:row;gap:6px;margin-bottom:12px;">
-        <div class="delivery-type active" data-type="econt" onclick="noriksSetDelivery(this)" style="flex:1;display:flex;align-items:center;justify-content:center;height:69px;border-radius:4px;cursor:pointer;padding:0;background:#f2feee;outline:2px solid #47b426;">
-          <div style="display:flex;align-items:center;justify-content:center;max-width:80%;gap:4px;">
+      <div id="noriks-delivery-buttons" style="display:flex !important;flex-direction:row !important;gap:6px;margin-bottom:12px;flex-wrap:nowrap !important;">
+        <div class="delivery-type active" data-type="econt" onclick="noriksSetDelivery(this)" style="width:50% !important;display:flex !important;align-items:center;justify-content:center;height:69px;border-radius:4px;cursor:pointer;padding:0;background:#f2feee;outline:2px solid #47b426;flex:none !important;margin:0 !important;">
+          <div style="display:flex;align-items:center;justify-content:center;gap:6px;">
             <img decoding="async" src="https://images.vigo-shop.com/general/checkout/postoffice_icon.svg" alt="econt-office" style="width:40px;height:40px;object-fit:contain;flex-shrink:0;">
             <span style="font-size:15px;line-height:1.2;color:#232f3e;">офис на еконт</span>
           </div>
         </div>
-        <div class="delivery-type" data-type="home" onclick="noriksSetDelivery(this)" style="flex:1;display:flex;align-items:center;justify-content:center;height:69px;border-radius:4px;cursor:pointer;padding:0;background:#fff;outline:1px solid #cbcacb;">
-          <div style="display:flex;align-items:center;justify-content:center;max-width:80%;gap:4px;">
+        <div class="delivery-type" data-type="home" onclick="noriksSetDelivery(this)" style="width:50% !important;display:flex !important;align-items:center;justify-content:center;height:69px;border-radius:4px;cursor:pointer;padding:0;background:#fff;outline:1px solid #cbcacb;flex:none !important;margin:0 !important;">
+          <div style="display:flex;align-items:center;justify-content:center;gap:6px;">
             <img decoding="async" src="https://images.vigo-shop.com/general/checkout/home_icon.svg" alt="home-delivery" style="width:40px;height:40px;object-fit:contain;flex-shrink:0;">
             <span style="font-size:15px;line-height:1.2;color:#232f3e;">доставка до дома</span>
           </div>
@@ -899,15 +899,26 @@ add_action( 'wp_head', function() {
     if ( ! is_checkout() ) return;
     ?>
     <style id="noriks-delivery-type-css">
-    /* ===== DELIVERY TYPE SELECTOR — all inline styles, no external CSS dependency ===== */
-    #noriks-delivery-type-container .delivery-type {
+    /* ===== DELIVERY TYPE SELECTOR — override vendor CSS that forces width:100% + column ===== */
+    #noriks-delivery-buttons {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+    }
+    #noriks-delivery-buttons .delivery-type {
+      width: 50% !important;
+      flex: none !important;
       pointer-events: auto !important;
+      display: flex !important;
+      height: 69px !important;
+      margin: 0 !important;
+      border: none !important;
       transition: background 0.15s, outline 0.15s !important;
     }
-    #noriks-delivery-type-container .delivery-type:hover {
+    #noriks-delivery-buttons .delivery-type:hover {
       background: #f5f5f5 !important;
     }
-    #noriks-delivery-type-container .delivery-type.active:hover {
+    #noriks-delivery-buttons .delivery-type.active:hover {
       background: #f2feee !important;
     }
 
