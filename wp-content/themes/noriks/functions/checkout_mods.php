@@ -612,12 +612,6 @@ add_filter( 'woocommerce_form_field_email', function( $field, $key ) {
             <img decoding="async" src="https://images.vigo-shop.com/general/checkout/postoffice_icon.svg" alt="post-office-icon">
           </div>
         </div>
-        <div class="delivery-type hs-delivery-machine" data-type="boxnow" onclick="noriksSetDelivery(this)">
-          <div class="delivery-type-inner">
-            <p>BoxNow автомат</p>
-            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/boxnow_icon.svg" alt="boxnow-icon">
-          </div>
-        </div>
       </div>
       <input type="hidden" name="billing_delivery_type" id="billing_delivery_type" value="home">
     </div>
@@ -915,14 +909,21 @@ add_action( 'wp_head', function() {
       gap: 8px !important;
       flex-wrap: wrap !important;
     }
-    .hs-delivery-type-container.bg-econt .delivery-type {
+    /* Override vigoshop vendor CSS that sets pointer-events:none on delivery buttons */
+    .hs-delivery-type-container.bg-econt .delivery-type,
+    .hs-delivery-type-container.bg-econt .delivery-type.active,
+    .hs-delivery-type-container.bg-econt .delivery-type.enabled {
+      pointer-events: auto !important;
+      opacity: 1 !important;
       flex: 1 1 0 !important;
       min-width: 80px !important;
       border: 2px solid #e3e6e8 !important;
+      outline: none !important;
       border-radius: 8px !important;
       cursor: pointer !important;
       transition: border-color 0.15s, background 0.15s !important;
       background: #fff !important;
+      height: auto !important;
     }
     .hs-delivery-type-container.bg-econt .delivery-type:hover {
       border-color: #47b426 !important;
@@ -939,6 +940,7 @@ add_action( 'wp_head', function() {
       padding: 12px 8px !important;
       gap: 6px !important;
       text-align: center !important;
+      max-width: 100% !important;
     }
     .hs-delivery-type-container.bg-econt .delivery-type-inner p {
       margin: 0 !important;
@@ -946,17 +948,22 @@ add_action( 'wp_head', function() {
       font-weight: 600 !important;
       color: #232f3e !important;
       line-height: 1.3 !important;
+      max-width: 100% !important;
+      padding: 0 !important;
     }
     .hs-delivery-type-container.bg-econt .delivery-type-inner img {
       width: 32px !important;
       height: 32px !important;
+      max-width: 32px !important;
       object-fit: contain !important;
+      padding: 0 !important;
     }
 
     /* ===== ECONT FIELDS ===== */
+    /* Initial state: hidden. JS shows them when econt delivery type is selected */
     #billing_econt_office_city_field,
     #billing_econt_office_field {
-      display: none !important; /* shown via JS when econt is selected */
+      display: none;
     }
     #billing_econt_office_city_field select,
     #billing_econt_office_field select {
