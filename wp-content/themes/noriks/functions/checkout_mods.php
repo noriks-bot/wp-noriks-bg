@@ -1134,6 +1134,46 @@ add_action( 'wp_head', function() {
     .noriks-home-field {
       display: none;
     }
+    /* Unified select + input styling for home delivery fields */
+    .noriks-home-field select,
+    .noriks-home-field input[type="text"] {
+      width: 100% !important;
+      height: 50px !important;
+      padding: 12px 14px !important;
+      border: 1px solid #ccc !important;
+      border-radius: 6px !important;
+      font-size: 14px !important;
+      color: #232f3e !important;
+      background: #fff !important;
+      box-sizing: border-box !important;
+      appearance: auto !important;
+      -webkit-appearance: auto !important;
+      line-height: 1.4 !important;
+      font-family: inherit !important;
+    }
+    .noriks-home-field select:focus,
+    .noriks-home-field input[type="text"]:focus {
+      border-color: #232f3e !important;
+      outline: none !important;
+    }
+    /* Select2 override for home selects */
+    .noriks-home-field .select2-container .select2-selection--single {
+      height: 50px !important;
+      border: 1px solid #ccc !important;
+      border-radius: 6px !important;
+      padding: 0 14px !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+    .noriks-home-field .select2-container .select2-selection__rendered {
+      line-height: 50px !important;
+      padding-left: 0 !important;
+      font-size: 14px !important;
+      color: #232f3e !important;
+    }
+    .noriks-home-field .select2-container .select2-selection__arrow {
+      height: 50px !important;
+    }
     /* 3-column layout for entrance/floor/apartment */
     .noriks-home-three-col {
       width: 33.33% !important;
