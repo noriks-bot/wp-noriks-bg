@@ -28,8 +28,14 @@
     function setDeliveryType(type, skipLoad) {
         $('#billing_delivery_type').val(type);
 
-        $('.delivery-type').removeClass('active');
-        $('.delivery-type[data-type="' + type + '"]').addClass('active');
+        $('#noriks-delivery-type-container .delivery-type').removeClass('active').css({
+            'background': '#fff',
+            'outline': '1px solid #cbcacb'
+        });
+        $('#noriks-delivery-type-container .delivery-type[data-type="' + type + '"]').addClass('active').css({
+            'background': '#f2feee',
+            'outline': '2px solid #47b426'
+        });
 
         if (type === 'econt') {
             $(ADDRESS_FIELDS.join(',')).hide();

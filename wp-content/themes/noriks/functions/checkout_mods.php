@@ -597,19 +597,19 @@ add_filter( 'woocommerce_form_field_email', function( $field, $key ) {
     if ( $key !== 'billing_email' ) return $field;
 
     $delivery_html = '<div class="form-row form-row-wide col-xs-12">
-    <div class="hs-delivery-type-container bg-econt" id="noriks-delivery-type-container">
-      <div class="container__title">Метод на доставка</div>
-      <div class="container__buttons">
-        <div class="delivery-type hs-delivery-postoffice active" data-type="econt" onclick="noriksSetDelivery(this)">
-          <div class="delivery-type-inner">
-            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/postoffice_icon.svg" alt="econt-office">
-            <p>офис на еконт</p>
+    <div id="noriks-delivery-type-container">
+      <div style="font-size:1.3rem;font-weight:700;margin-bottom:0.5em;color:#232f3e;">Метод на доставка</div>
+      <div style="display:flex;flex-direction:row;gap:6px;margin-bottom:12px;">
+        <div class="delivery-type active" data-type="econt" onclick="noriksSetDelivery(this)" style="flex:1;display:flex;align-items:center;justify-content:center;height:69px;border-radius:4px;cursor:pointer;padding:0;background:#f2feee;outline:2px solid #47b426;">
+          <div style="display:flex;align-items:center;justify-content:center;max-width:80%;gap:4px;">
+            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/postoffice_icon.svg" alt="econt-office" style="width:40px;height:40px;object-fit:contain;flex-shrink:0;">
+            <span style="font-size:15px;line-height:1.2;color:#232f3e;">офис на еконт</span>
           </div>
         </div>
-        <div class="delivery-type hs-delivery-home" data-type="home" onclick="noriksSetDelivery(this)">
-          <div class="delivery-type-inner">
-            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/home_icon.svg" alt="home-delivery">
-            <p>доставка до дома</p>
+        <div class="delivery-type" data-type="home" onclick="noriksSetDelivery(this)" style="flex:1;display:flex;align-items:center;justify-content:center;height:69px;border-radius:4px;cursor:pointer;padding:0;background:#fff;outline:1px solid #cbcacb;">
+          <div style="display:flex;align-items:center;justify-content:center;max-width:80%;gap:4px;">
+            <img decoding="async" src="https://images.vigo-shop.com/general/checkout/home_icon.svg" alt="home-delivery" style="width:40px;height:40px;object-fit:contain;flex-shrink:0;">
+            <span style="font-size:15px;line-height:1.2;color:#232f3e;">доставка до дома</span>
           </div>
         </div>
       </div>
@@ -618,10 +618,15 @@ add_filter( 'woocommerce_form_field_email', function( $field, $key ) {
     <script>
     function noriksSetDelivery(el) {
       var type = el.getAttribute("data-type");
-      document.querySelectorAll(".delivery-type").forEach(function(d){ d.classList.remove("active"); });
+      document.querySelectorAll("#noriks-delivery-type-container .delivery-type").forEach(function(d){
+        d.classList.remove("active");
+        d.style.background="#fff";
+        d.style.outline="1px solid #cbcacb";
+      });
       el.classList.add("active");
+      el.style.background="#f2feee";
+      el.style.outline="2px solid #47b426";
       document.getElementById("billing_delivery_type").value = type;
-      /* Trigger jQuery event for econt-checkout.js */
       if (window.jQuery) jQuery(el).trigger("noriks-delivery-change", [type]);
     }
     </script>
@@ -894,99 +899,16 @@ add_action( 'wp_head', function() {
     if ( ! is_checkout() ) return;
     ?>
     <style id="noriks-delivery-type-css">
-    /* ===== DELIVERY TYPE SELECTOR ===== */
-    #noriks-delivery-type-container {
-      margin: 0 0 16px !important;
-    }
-    .hs-delivery-type-container.bg-econt .container__title {
-      font-size: 14px !important;
-      font-weight: 600 !important;
-      color: #232f3e !important;
-      margin-bottom: 8px !important;
-    }
-    .hs-delivery-type-container.bg-econt .container__buttons {
-      display: flex !important;
-      gap: 8px !important;
-      flex-wrap: wrap !important;
-    }
-    /* Override vigoshop vendor CSS that sets pointer-events:none on delivery buttons */
-    .hs-delivery-type-container.bg-econt .delivery-type,
-    .hs-delivery-type-container.bg-econt .delivery-type.active,
-    .hs-delivery-type-container.bg-econt .delivery-type.enabled {
+    /* ===== DELIVERY TYPE SELECTOR — all inline styles, no external CSS dependency ===== */
+    #noriks-delivery-type-container .delivery-type {
       pointer-events: auto !important;
-      opacity: 1 !important;
-      align-items: center !important;
-      background: #fff !important;
-      border-radius: 4px !important;
-      cursor: pointer !important;
-      display: flex !important;
-      flex-direction: row-reverse !important;
-      height: 69px !important;
-      justify-content: center !important;
-      margin: .2em !important;
-      outline: 1px solid #cbcacb !important;
-      padding: 0 !important;
-      width: 100% !important;
-      transition: opacity .2s !important;
-      border: none !important;
+      transition: background 0.15s, outline 0.15s !important;
     }
-    .hs-delivery-type-container.bg-econt .delivery-type:not(.active):hover {
-      background-color: #f5f5f5 !important;
-      outline: 1px solid #c9c9c9 !important;
+    #noriks-delivery-type-container .delivery-type:hover {
+      background: #f5f5f5 !important;
     }
-    .hs-delivery-type-container.bg-econt .delivery-type.active {
-      background-color: #f2feee !important;
-      outline: 2px solid #47b426 !important;
-    }
-    .hs-delivery-type-container.bg-econt .delivery-type-inner {
-      display: flex !important;
-      flex-direction: row-reverse !important;
-      justify-content: center !important;
-      max-width: 75% !important;
-      align-items: center !important;
-    }
-    .hs-delivery-type-container.bg-econt .delivery-type-inner p {
-      align-items: center !important;
-      display: flex !important;
-      font-size: 15px !important;
-      line-height: 1.2 !important;
-      margin: 0 !important;
-      max-width: 100% !important;
-      padding-left: 1% !important;
-      color: #232f3e !important;
-      font-weight: 400 !important;
-    }
-    .hs-delivery-type-container.bg-econt .delivery-type-inner img {
-      max-width: 33% !important;
-      padding: 5px !important;
-      height: auto !important;
-      object-fit: contain !important;
-    }
-    @media (max-width: 450px) {
-      .hs-delivery-type-container.bg-econt .container__buttons {
-        flex-direction: row !important;
-        gap: 5px !important;
-      }
-      .hs-delivery-type-container.bg-econt .delivery-type {
-        flex-direction: column-reverse !important;
-        height: auto !important;
-        justify-content: flex-end !important;
-        padding: 5px 10px !important;
-        text-align: center !important;
-      }
-      .hs-delivery-type-container.bg-econt .delivery-type-inner {
-        align-items: center !important;
-        flex-direction: column-reverse !important;
-        justify-content: flex-end !important;
-        max-width: 100% !important;
-        text-align: center !important;
-      }
-      .hs-delivery-type-container.bg-econt .delivery-type-inner img {
-        max-width: 50% !important;
-      }
-      .hs-delivery-type-container.bg-econt .delivery-type-inner p {
-        width: 100% !important;
-      }
+    #noriks-delivery-type-container .delivery-type.active:hover {
+      background: #f2feee !important;
     }
 
     /* ===== ECONT FIELDS ===== */
