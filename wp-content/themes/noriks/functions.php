@@ -11,6 +11,7 @@ include(get_template_directory() . '/functions/cpts.php');
 include(get_template_directory() . '/functions/options.php');
 include(get_template_directory() . '/functions/single_product_mods.php');
 include(get_template_directory() . '/functions/discounts.php');
+include(get_template_directory() . '/functions/fb_attribution.php');
 
 
 
@@ -65,6 +66,10 @@ function noriks_get_abandoned_carts($request) {
     foreach($results as &$row) {
         $row['cart_contents'] = maybe_unserialize($row['cart_contents']);
         $row['other_fields'] = maybe_unserialize($row['other_fields']);
+        // Normaliziran fb_campaign struct (campaign_id, ad_id, adset_id, fbclid, ...)
+        if (function_exists('noriks_build_fb_campaign')) {
+            $row['fb_campaign'] = noriks_build_fb_campaign($row['other_fields']);
+        }
     }
     return new WP_REST_Response($results, 200);
 }
