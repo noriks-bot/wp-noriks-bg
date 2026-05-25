@@ -481,13 +481,13 @@ $is_mixed_bundle = has_term( array( 'komplekti', 'komplekti-teniski-i-boksarki',
                   
     <?php elseif(  $is_mixed_bundle ): ?>
     
-     <img src="https://noriks.com/bg/wp-content/uploads/2026/04/tablica_Bg.jpg">
+     <img src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
 <img src="https://noriks.com/bg/wp-content/uploads/2026/04/bokserice_bg.jpg">
         
           <?php else: ?>
       
       
-       <img src="https://noriks.com/bg/wp-content/uploads/2026/04/tablica_Bg.jpg">
+       <img src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
         
             
         <?php endif; ?>
