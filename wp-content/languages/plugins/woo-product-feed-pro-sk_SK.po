@@ -1,0 +1,317 @@
+# Translation of Plugins - Product Feed PRO for WooCommerce by AdTribes – WooCommerce Product Feeds - Stable (latest release) in Slovak
+# This file is distributed under the same license as the Plugins - Product Feed PRO for WooCommerce by AdTribes – WooCommerce Product Feeds - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-05-14 11:42:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: sk\n"
+"Project-Id-Version: Plugins - Product Feed PRO for WooCommerce by AdTribes – WooCommerce Product Feeds - Stable (latest release)\n"
+
+#: templates/settings-page.php:180
+msgid "Enable logging"
+msgstr "Povoliť protokolovanie"
+
+#: templates/settings-page.php:114
+msgid "Use parent variable product image for variations"
+msgstr "Pre varianty použiť obrázok nadriadeného produktu"
+
+#: templates/settings-page.php:147
+msgid "Remove the free shipping zone from your feed (Google Shopping / Facebook only)"
+msgstr "Odstrániť z feedu zóny dopravy s dopravou zadarmo (iba Google Shopping / Facebook)"
+
+#: templates/edit-feed/tabs/general-tab.php:232
+msgid "Refresh only when products changed"
+msgstr "Aktualizovať len keď sa produkty zmenia"
+
+#: templates/edit-feed/tabs/general-tab.php:154
+msgid "And only include lowest priced product variation(s)"
+msgstr "Zahrnúť iba varianty s najnižšou cenou"
+
+#: templates/notices/upgrade-to-elite-notice.php:20
+msgid "Polylang support"
+msgstr "Podpora Polylang"
+
+#: templates/settings-page.php:215
+msgid "Content IDS variable products Facebook Pixel"
+msgstr "Facebook Pixel - ID variabilných produktov"
+
+#: templates/settings-page.php:158
+msgid "Remove the local pickup shipping zone from your feed (Google Shopping / Facebook only)"
+msgstr "Odstrániť spôsob dopravy miestne vyzdvihnutie z feedu (platí len pre Google Shopping / Facebook)"
+
+#: templates/settings-page.php:136
+msgid "Remove all other shipping classes when free shipping criteria are met (Google Shopping / Facebook only)"
+msgstr "Odstrániť všetky ostatné triedy dopravy, ak sú splnené podmienky pre bezplatnú dopravu (platí len pre Google Shopping / Facebook)"
+
+#: templates/settings-page.php:125
+msgid "Add shipping costs for all countries to your feed (Google Shopping / Facebook only)"
+msgstr "Pridať cenu dopravy pre všetky krajiny do feedu (platí len pre Google Shopping / Facebook)"
+
+#: templates/edit-feed/tabs/general-tab.php:262
+msgid "Remove products that did not have sales in the last days"
+msgstr "Odstrániť produkty, ktoré v posledných dňoch nemali žiadne predaje"
+
+#: templates/notices/upgrade-to-elite-notice.php:21
+msgid "Facebook pixel feature"
+msgstr "Funkcia Facebook pixel"
+
+#: templates/settings-page.php:225
+msgid "Add Google Dynamic Remarketing Pixel:"
+msgstr "Pridať Google Pixel pre dynamický remarketing:"
+
+#: templates/settings-page.php:192
+msgid "Add Facebook Pixel"
+msgstr "Pridať Facebook Pixel:"
+
+#: templates/filters-rules/rule-row.php:26
+msgid "Rule"
+msgstr "Pravidlo"
+
+#: templates/filters-rules/filter-row.php:21
+msgid "Filter"
+msgstr "Filter"
+
+#: templates/edit-feed/tabs/filters-rules-tab.php:138
+msgid "Then"
+msgstr "Potom"
+
+#: templates/edit-feed/tabs/filters-rules-tab.php:149
+msgid "IS"
+msgstr "JE"
+
+#: templates/edit-feed/tabs/filters-rules-tab.php:105
+msgid "Condition"
+msgstr "Podmienka"
+
+#: templates/edit-feed/tabs/filters-rules-tab.php:94
+msgid "IF"
+msgstr "AK"
+
+#: templates/edit-feed/tabs/filters-rules-tab.php:91
+msgid "Type"
+msgstr "Typ"
+
+#: templates/edit-feed/tabs/category-mapping-tab.php:99
+msgid "category"
+msgstr "kategória"
+
+#: templates/edit-feed/tabs/category-mapping-tab.php:98
+msgid "Number of products"
+msgstr "Počet produktov"
+
+#: templates/edit-feed/tabs/category-mapping-tab.php:98
+msgid "Your category"
+msgstr "Vaša kategória"
+
+#: templates/edit-feed/tabs/conversion-analytics-tab.php:104
+msgid "Google Analytics campaign content (utm_content)"
+msgstr "Google Analytics - obsah kampane (utm_content)"
+
+#: templates/edit-feed/tabs/conversion-analytics-tab.php:101
+msgid "dynamically added Product ID"
+msgstr "dynamicky pridané ID produktu"
+
+#: templates/edit-feed/tabs/conversion-analytics-tab.php:100
+msgid "Google Analytics campaign term (utm_term)"
+msgstr "Google Analytics - výraz kampane (utm_term)"
+
+#: templates/edit-feed/tabs/conversion-analytics-tab.php:96
+msgid "Google Analytics campaign name (utm_campaign)"
+msgstr "Google Analytics - názov kampane (utm_campaign)"
+
+#: templates/edit-feed/tabs/conversion-analytics-tab.php:92
+msgid "Google Analytics campaign medium (utm_medium)"
+msgstr "Google Analytics - médium kampane (utm_medium)"
+
+#: templates/edit-feed/tabs/conversion-analytics-tab.php:88
+msgid "Google Analytics campaign source (utm_source)"
+msgstr "Google Analytics - zdroj kampane (utm_source)"
+
+#: templates/edit-feed/tabs/filters-rules-tab.php:127
+msgid "CS"
+msgstr "CS"
+
+#: templates/edit-feed/tabs/conversion-analytics-tab.php:79
+msgid "Enable Google Analytics tracking"
+msgstr "Povoliť sledovanie Google Analytics"
+
+#: templates/edit-feed/tabs/field-mapping-tab.php:117
+msgid "Suffix"
+msgstr "Prípona"
+
+#: templates/edit-feed/tabs/field-mapping-tab.php:116
+#: templates/edit-feed/tabs/filters-rules-tab.php:116
+msgid "Value"
+msgstr "Hodnota"
+
+#: templates/edit-feed/tabs/field-mapping-tab.php:115
+msgid "Prefix"
+msgstr "Predpona"
+
+#: templates/edit-feed/tabs/general-tab.php:186
+msgid "Delimiter"
+msgstr "Oddeľovač"
+
+#: templates/edit-feed/tabs/general-tab.php:167
+msgid "File format"
+msgstr "Formát súboru"
+
+#: templates/edit-feed/tabs/general-tab.php:141
+msgid "And only include default product variation"
+msgstr "Zaradiť iba predvolený variant produktu"
+
+#: templates/edit-feed/tabs/general-tab.php:110
+msgid "Channel"
+msgstr "Kanál"
+
+#: templates/edit-feed/tabs/general-tab.php:93
+#: templates/edit-feed/tabs/general-tab.php:99
+msgid "Select a country"
+msgstr "Zvoľte krajinu"
+
+#: templates/edit-feed/tabs/general-tab.php:85
+msgid "Country"
+msgstr "Krajina"
+
+#: templates/edit-feed/tabs/general-tab.php:61
+msgid "Project name"
+msgstr "Názov projektu"
+
+#: templates/settings-page.php:194 templates/settings-page.php:247
+msgid "Read more about this"
+msgstr "Prečítajte si o tom viac"
+
+#: templates/settings-page.php:106
+msgid "Off / On"
+msgstr "Vypnúť / Zapnúť"
+
+#: templates/settings-page.php:105
+msgid "Plugin setting"
+msgstr "Nastavenia pluginu"
+
+#: templates/settings-page.php:67
+msgid "Attribute settings"
+msgstr "Nastavenia vlastností"
+
+#: templates/settings-page.php:64 templates/settings-page.php:94
+msgid "Plugin systems check"
+msgstr "Kontrola stavu pluginu"
+
+#: templates/settings-page.php:57 templates/settings-page.php:61
+#: templates/settings-page.php:91
+msgid "Plugin settings"
+msgstr "Nastavenia pluginu"
+
+#: templates/header.php:37
+msgid "Create a Google Shopping Feed"
+msgstr "Vytvorte Google Shopping feed"
+
+#: templates/manage-feeds.php:86 templates/manage-feeds.php:141
+msgid "Feed URL"
+msgstr "URL adresa feedu"
+
+#: templates/manage-feeds.php:83 templates/manage-feeds.php:116
+msgid "Status"
+msgstr "Stav"
+
+#: templates/edit-feed/tabs/general-tab.php:205
+msgid "Refresh interval"
+msgstr "Interval obnovenia"
+
+#: templates/manage-feeds.php:82 templates/manage-feeds.php:111
+msgid "Format"
+msgstr "Formát"
+
+#: templates/notices/upgrade-to-elite-notice.php:15
+#: templates/notices/upgrade-to-elite-notice.php:16
+#: templates/notices/upgrade-to-elite-notice.php:17
+#: templates/notices/upgrade-to-elite-notice.php:18
+#: templates/notices/upgrade-to-elite-notice.php:19
+#: templates/notices/upgrade-to-elite-notice.php:20
+#: templates/notices/upgrade-to-elite-notice.php:21
+msgid "Read more"
+msgstr "Čítať viac"
+
+#: templates/notices/upgrade-to-elite-notice.php:18
+msgid "WPML support - including their currency switcher"
+msgstr "WPML podpora - vrátane ich kurzového prepínača"
+
+#: templates/notices/upgrade-to-elite-notice.php:17
+msgid "Advanced product data manipulation"
+msgstr "Pokročilá manipulácia s produktovými dátami"
+
+#: templates/header.php:41
+msgid "Adding GTIN, Brand, MPN and More"
+msgstr "Pridáva GTIN, značku, MPN a viac"
+
+#: templates/notices/upgrade-to-elite-notice.php:13
+msgid "Would you like to get more out of your product feeds? Upgrade to the Elite version of the plugin and you will get:"
+msgstr "Chceli by ste získať zo svojich produktových feedov viac? Prejdite na verziu pluginu Elite a získate:"
+
+#: templates/edit-feed/tabs/general-tab.php:128
+msgid "Include product variations"
+msgstr "Zahrnúť všetky varianty produktov"
+
+#: templates/header.php:45
+msgid "Help, my Feed is Stuck!"
+msgstr "Pomoc, môj feed sa zasekol!"
+
+#: includes/Classes/Admin_Pages/Edit_Feed_Page.php:131
+#: templates/edit-feed/tabs/field-mapping-tab.php:297
+msgid "Category Mapping"
+msgstr "Mapovanie kategórie"
+
+#: includes/Classes/Admin_Pages/Edit_Feed_Page.php:130
+msgid "Field Mapping"
+msgstr "Mapovanie polí"
+
+#. Plugin Name of the plugin
+#: woocommerce-sea.php
+msgid "Product Feed PRO for WooCommerce"
+msgstr "Product Feed PRO pre WooCommerce"
+
+#: includes/Classes/Admin_Pages/Settings_Page.php:41
+#: includes/Classes/Admin_Pages/Settings_Page.php:42
+msgid "Settings"
+msgstr "Nastavenia"
+
+#. Plugin URI of the plugin
+#: woocommerce-sea.php
+msgid "https://www.adtribes.io/support/?utm_source=wpadmin&utm_medium=plugin&utm_campaign=woosea_product_feed_pro"
+msgstr "https://www.adtribes.io/support/?utm_source=wpadmin&utm_medium=plugin&utm_campaign=woosea_product_feed_pro"
+
+#: includes/Classes/Admin_Pages/Edit_Feed_Page.php:54
+msgid "Create feed"
+msgstr "Vytvoriť feed"
+
+#: includes/Classes/Admin_Pages/Edit_Feed_Page.php:53
+msgid "Feed configuration"
+msgstr "Nastavenia feedu"
+
+#. Author URI of the plugin
+#: woocommerce-sea.php
+msgid "https://www.adtribes.io"
+msgstr "https://www.adtribes.io"
+
+#. Author of the plugin
+#: woocommerce-sea.php
+msgid "AdTribes.io"
+msgstr "AdTribes.io"
+
+#: includes/Classes/Admin_Pages/Manage_Feeds_Page.php:95
+#: includes/Classes/Admin_Pages/Manage_Feeds_Page.php:96
+msgid "Manage feeds"
+msgstr "Spravovať feedy"
+
+#: includes/Classes/Admin_Pages/Manage_Feeds_Page.php:43
+msgid "Product Feed Pro"
+msgstr "Product Feed Pro"
+
+#. Description of the plugin
+#: woocommerce-sea.php
+msgid "Configure and maintain your WooCommerce product feeds for Google Shopping, Catalog managers, Remarketing, Bing, Skroutz, Yandex, Comparison shopping websites and over a 100 channels more."
+msgstr "Generujte a spravujte svoje WooCommerce produktové feedy pre Google Shopping, Facebook, Remarketing, Bing, Yandex, porovnávače cien a viac ako 100 ďalších kanálov."

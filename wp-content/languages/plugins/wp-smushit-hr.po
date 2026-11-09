@@ -1,0 +1,378 @@
+# Translation of Plugins - Smush Image Optimization – Optimize Images | Compress &amp; Lazy Load Images | Convert WebP &amp; AVIF | Image CDN - Stable (latest release) in Croatian
+# This file is distributed under the same license as the Plugins - Smush Image Optimization – Optimize Images | Compress &amp; Lazy Load Images | Convert WebP &amp; AVIF | Image CDN - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-09-02 19:09:03+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: hr\n"
+"Project-Id-Version: Plugins - Smush Image Optimization – Optimize Images | Compress &amp; Lazy Load Images | Convert WebP &amp; AVIF | Image CDN - Stable (latest release)\n"
+
+#: app/views/cdn/disabled-meta-box.php:25
+msgid "GET STARTED"
+msgstr "ZAPOČNI"
+
+#: app/class-media-library.php:569
+msgid "Smush Stats"
+msgstr "Statistika komprimiranja"
+
+#: app/views/nextgen/summary-meta-box.php:49
+msgid "Total savings"
+msgstr "Ukupne uštede"
+
+#: app/common/summary-segment.php:34
+msgid "Images Resized"
+msgstr "Fotografija redimenzirano"
+
+#: app/views/nextgen/summary-meta-box.php:41
+msgid "Images smushed"
+msgstr "Fotografija komprimirano"
+
+#: app/views/next-gen/disabled-meta-box.php:33
+msgid "Get started"
+msgstr "Započni"
+
+#: core/class-configs.php:672 core/class-settings.php:383
+msgid "Amazon S3"
+msgstr "Amazon S3"
+
+#: core/class-settings.php:382
+msgid "Enable Amazon S3 support"
+msgstr "Omogući Amazon S3 podršku"
+
+#: core/class-configs.php:673 core/class-settings.php:378
+msgid "NextGen Gallery"
+msgstr "NextGen Galerija"
+
+#: app/class-abstract-summary-page.php:210
+#: app/class-abstract-summary-page.php:223 app/modals/directory-list.php:56
+msgid "Choose directory"
+msgstr "Odaberi direktorij"
+
+#: app/class-abstract-summary-page.php:206
+msgid "Smush images that aren't located in your uploads folder."
+msgstr "Komprimiraj fotografije koje nisu u \"upload\" mapi"
+
+#: core/smush/class-smush-settings-ui-controller.php:298
+msgid "Max height"
+msgstr "Najveća visina"
+
+#: core/smush/class-smush-settings-ui-controller.php:287
+msgid "Max width"
+msgstr "Najveća širina"
+
+#. translators: %1$s: strong tag, %2$d: max width size, %3$s: tag, %4$d: max
+#. height size, %5$s: closing strong tag
+#: core/smush/class-smush-settings-ui-controller.php:311
+msgid "Currently, your largest image size is set at %1$s%2$dpx wide %3$s %4$dpx high%5$s."
+msgstr "Trenutno, dimenzije vaše najveće fotografije su: %1$s%2$dpx širine i %3$s %4$dpx visine%5$s."
+
+#: core/modules/class-dir.php:329
+msgid "Image couldn't be optimized"
+msgstr "Fotografija ne može biti optimizirana"
+
+#: core/modules/class-dir.php:277
+msgid "Incorrect image id"
+msgstr "Pogrešan ID fotografije"
+
+#: core/modules/class-dir.php:956
+msgid "We could not find any images in the selected directory."
+msgstr "Nisu pronađene fotografije u odabranom direktoriju. "
+
+#: core/class-core.php:334
+msgid "Ajax Error"
+msgstr "Ajax pogreška"
+
+#: core/class-core.php:332
+msgid "images could not be smushed."
+msgstr "fotografije ne mogu biti optimizirane"
+
+#: core/class-core.php:331
+msgid "image could not be smushed."
+msgstr "fotografija ne može biti optimizirana."
+
+#: core/class-core.php:328
+msgid "Missing file path."
+msgstr "Nedostaje putanja do datoteke."
+
+#: app/class-abstract-summary-page.php:165
+#: app/class-abstract-summary-page.php:216
+msgid "Updating Stats"
+msgstr "Osvježavam status"
+
+#: core/media-library/class-media-library-row.php:822
+msgid "Restore original image"
+msgstr "Vrati originalnu fotografiju."
+
+#: core/media-library/class-media-library-row.php:750
+msgid "Smush image including original file"
+msgstr "Optimiziraj fotografiju uključujući originalnu datoteku."
+
+#: app/views/nextgen/meta-box-header.php:26
+msgid "Manage Galleries"
+msgstr "Upravljaj galerijama"
+
+#: app/class-abstract-page.php:216
+msgid "Smush Free was deactivated. You have Smush Pro active!"
+msgstr "WP Smush Free je deaktiviran. Imate WP Smush Pro aktiviran!"
+
+#. translators: %s: number of thumbnails
+#: app/class-media-library.php:686
+msgid "When you upload an image to WordPress it automatically creates %s thumbnail sizes that are commonly used in your pages. WordPress also stores the original full-size image, but because these are not usually embedded on your site we don’t Smush them. Pro users can override this."
+msgstr "Kada unesete fotografiju u WordPress stranicu automatski se kreira %s minijaturna sličica koje se koristi unutar vaših stranica. WordPress isto tako pohranjuje i original fotografiju pune veličine no kako se ona rijetko koristi na stranici neće se optimizirati. Pro korisnici mogu ovu opciju promijeniti."
+
+#. translators: %1$s - a href opening tag, %2$s - a href closing tag
+#: app/views/nextgen/meta-box-header.php:25
+msgid "Smush individual images via your %1$sManage Galleries%2$s section"
+msgstr "Optimiziraj pojedine fotografije unutar vaše %1$sUpravljaj galerijama%2$s sekcije"
+
+#. translators: %1$s: opening a tga, %2$s: closing a tag
+#: app/views/nextgen/meta-box.php:31
+msgid "We haven't found any images in your %1$sgallery%2$s yet, so there's no smushing to be done! Once you upload images, reload this page and start playing!"
+msgstr "Nisu pronađene fotografije u vašoj %1$sgaleriji%2$s pa se nema što optimizirati. Kada unesete fotografije, ponovo učitajte ovu stranicu i optimizirajte!"
+
+#: app/class-media-library.php:692
+msgid "Image couldn't be smushed as it exceeded the 5Mb size limit, Pro users can smush images without any size restriction."
+msgstr "Fotografija neće biti optimizirana jer prelazi limit od 5Mb. Pro korisnici mogu optimizirati fotografije do ograničenja veličine."
+
+#: core/media-library/class-media-library-row.php:839
+msgid "Detailed stats for all the image sizes"
+msgstr "Detaljni status za sve veličine fotografija"
+
+#: app/views/bulk/meta-box-header.php:36
+msgid "Media Library"
+msgstr "Mediji"
+
+#: app/views/bulk/meta-box.php:101 app/views/nextgen/meta-box.php:81
+msgid "BULK SMUSH"
+msgstr "GRUPNA OPTIMIZACIJA"
+
+#: app/class-abstract-page.php:718
+msgid "Lets you check if any images can be further optimized. Useful after changing settings."
+msgstr "Omogućava vam da li pojedine fotografije mogu biti dodatno optimizirane. Korisno nakon promjena postavki."
+
+#: app/views/bulk/media-lib-empty.php:5 app/views/nextgen/meta-box.php:25
+msgid "No attachments found - Upload some images"
+msgstr "Nisu pronađene dodatke - Unesi fotografije"
+
+#: app/modals/progress-dialog.php:105
+msgid "CANCEL"
+msgstr "OTKAŽI"
+
+#: app/class-abstract-page.php:805
+msgid "Your settings have been updated!"
+msgstr "Vaše postavke su pohranjene!"
+
+#: core/backups/class-backups-controller.php:77
+#: core/modules/class-backup.php:597
+msgid "Unable to restore image"
+msgstr "Nije moguće restorati fotografiju"
+
+#: app/views/bulk/media-lib-empty.php:16
+#: app/views/dashboard/bulk/media-lib-empty.php:10
+#: app/views/nextgen/meta-box.php:42
+msgid "UPLOAD IMAGES"
+msgstr "UNESI FOTOGRAFIJE"
+
+#. translators: %1$s - a href opening tag, %2$s - a href closing tag
+#: app/views/bulk/meta-box-header.php:35
+msgid "Smush individual images via your %1$sMedia Library%2$s"
+msgstr "Optimiziraj pojedine fotografije unutar vaše %1$sMedia Mape%2$s"
+
+#: app/views/nextgen/meta-box.php:52 app/views/nextgen/progress-bar.php:23
+msgid "Bulk smush is currently running. You need to keep this page open for the process to complete."
+msgstr "Grupna optimizacija se trenutno izvršava. Morate ovu stranicu držati otvorenom da bi proces se uspješno izvršio."
+
+#: core/class-core.php:327
+msgid "Your membership couldn't be verified."
+msgstr "Vaše članstvo ne može biti verificirano."
+
+#. translators: %s: total number of images
+#: core/modules/class-dir.php:1261
+msgid "You've smushed %d images in total."
+msgstr "Ukupno ste optimizali ste %d fotografija."
+
+#: app/class-ajax.php:434
+msgid "Image not smushed, fields empty."
+msgstr "Fotografije nije optimizirana, polje je prazno."
+
+#: app/class-ajax.php:443
+msgid "Image couldn't be smushed as the nonce verification failed, try reloading the page."
+msgstr "Fotografije nije optimizirana jer verifikacija nije uspjela, pokušajte ponovo učitati stranicu."
+
+#: app/views/bulk/media-lib-empty.php:11
+msgid "We haven’t found any images in your media library yet so there’s no smushing to be done!"
+msgstr "Nismo pronašli niti jednu fotografiju u vašoj media mapi pa nema ničega za optimizaciju!"
+
+#: app/class-admin.php:639 core/cli/class-cli.php:315
+msgid "Yay! All images are optimized as per your current settings."
+msgstr "Wuhu, sve fotografije su optimizirane prema vašim trenutnim postavkama."
+
+#: core/class-settings.php:377
+msgid "Enable NextGen Gallery integration"
+msgstr "Omogući integraciju u NextGen galeriju"
+
+#: core/class-core.php:314
+msgid "All images are fully optimized."
+msgstr "Sve fotografije su poptuno optimizirane"
+
+#: core/class-settings.php:379
+msgid "Allow smushing images directly through NextGen Gallery settings."
+msgstr "Omogući optimiziranje fotografije izravno u postavkama NextGen galerije."
+
+#: core/class-core.php:322
+msgid "Restoring image..."
+msgstr "Vraćam fotografiju..."
+
+#: core/class-core.php:326
+msgid "We successfully verified your membership, all the Pro features should work completely. "
+msgstr "Uspješno smo verificirali vaše članstvo, sve Pro funkcionalnost bi trebale sada biti omogućene."
+
+#. translators: %1$s - <a>, %2$s - </a>
+#: app/class-abstract-page.php:825
+msgid "You have images that need smushing. %1$sBulk smush now!%2$s"
+msgstr "Postoje fotografije koje se moraju optimizirati. %1$sOptimiziraj ih odmah!%2$s"
+
+#: app/modals/onboarding.php:91 app/views/lazyload/meta-box.php:177
+msgid "New"
+msgstr "Novo"
+
+#: core/class-settings.php:312
+msgid "Automatically compress my images on upload"
+msgstr "Automatski optimiziraj fotografije pri unosu"
+
+#: app/class-abstract-page.php:778 app/class-admin.php:553
+#: app/class-admin.php:753 app/class-admin.php:797
+#: app/views/bulk-settings/meta-box.php:71
+#: core/cache/class-cache-controller.php:67 core/class-core.php:348
+#: core/directory/class-directory-ui-controller.php:266
+#: core/directory/class-directory-ui-controller.php:267
+#: core/external/plugin-notice/notice.php:485
+msgid "Dismiss"
+msgstr "Odbaci"
+
+#: app/class-abstract-page.php:261
+msgid "Install Plugin"
+msgstr "Instaliraj dodatak"
+
+#: app/views/dashboard/cdn/meta-box.php:51
+#: app/views/dashboard/next-gen/meta-box.php:57
+#: app/views/lazyload/disabled-meta-box.php:26
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:2106
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:1418
+msgid "Activate"
+msgstr "aktiviraj"
+
+#: app/common/meta-box-footer.php:19
+msgid "Save changes"
+msgstr "Spremi izmjene"
+
+#: core/class-core.php:311
+msgid "Smush Now"
+msgstr "Optimiziraj"
+
+#: core/class-core.php:310
+msgid "Super-Smush"
+msgstr "Super-Smush"
+
+#: core/class-core.php:336
+msgid "All Done!"
+msgstr "Sve završeno!"
+
+#: app/class-media-library.php:611
+msgid "Smushing in progress..."
+msgstr "Optimizacija u tijeku..."
+
+#: app/modals/hub-connection-success.php:81
+#: app/modals/next-gen-activated.php:54
+#: app/modals/next-gen-conversion-changed.php:64
+#: app/modals/onboarding-free.php:216
+msgid "Bulk Smush Now"
+msgstr "Grupno optimiziraj"
+
+#: app/class-admin.php:410
+msgid "WP Smush"
+msgstr "WP Smush"
+
+#: core/class-core.php:333
+msgid "Already Optimized"
+msgstr "Već je optimizirano"
+
+#: core/modules/class-smush.php:559 core/smush/class-smusher.php:531
+msgid "Image couldn't be smushed"
+msgstr "Fotgrafija ne može biti optimizirana"
+
+#: core/modules/class-smush.php:576 core/smush/class-smusher.php:567
+msgid "Smush data corrupted, try again."
+msgstr "Podaci optimizacije oštećeni, pokušajte ponovo."
+
+#. translators: %s: Error message.
+#: core/modules/class-smush.php:539 core/smush/class-smusher.php:480
+msgid "Error posting to API: %s"
+msgstr "Došlo je do pogreške pri objavi prema API: %s"
+
+#: core/modules/class-smush.php:565 core/smush/class-smusher.php:543
+msgid "Unknown API error"
+msgstr "Nepoznata API pogreška"
+
+#. translators: %s: Directory path
+#: core/class-error-handler.php:270
+msgid "%s is not writable"
+msgstr "%s nema ovlasti za uređivanje"
+
+#: core/class-error-handler.php:262
+msgid "File path is empty"
+msgstr "Putanja do datoteke je prazna"
+
+#: app/class-ajax.php:413
+msgid "No attachment ID was provided."
+msgstr "Nije pružen ID dodatka."
+
+#. Author of the plugin
+#: wp-smush.php
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:801
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:452
+msgid "WPMU DEV"
+msgstr "WPMU DEV"
+
+#: app/class-media-library.php:572
+msgid "Savings"
+msgstr "Pohrane"
+
+#: app/class-media-library.php:571
+#: core/media-library/class-media-library-row.php:660
+msgid "Image size"
+msgstr "Veličina fotografije"
+
+#: app/class-media-library.php:612
+msgid "Smush Now!"
+msgstr "Optimizraj sada!"
+
+#: app/class-media-library.php:733 core/class-core.php:346
+#: core/class-error-handler.php:264 core/class-rest.php:82
+#: core/media-library/class-media-library-row.php:95
+#: core/media-library/class-media-library-row.php:370
+msgid "Not processed"
+msgstr "Nije obrađeno"
+
+#: app/class-ajax.php:405 app/class-ajax.php:451
+#: core/backups/class-backups-controller.php:58
+#: core/media/class-media-item-controller.php:29
+#: core/media/class-media-item-controller.php:56
+#: core/modules/class-backup.php:408
+msgid "You don't have permission to work with uploaded files."
+msgstr "Nemate dozvolu da upravljanje sa datotekama koje su unesene."
+
+#. translators: 1: Error code, 2: Error message.
+#: core/modules/class-smush.php:547 core/smush/class-smusher.php:513
+msgid "Error posting to API: %1$s %2$s"
+msgstr "Došlo je do pogreške pri objavi prema API: %1$s %2$s"
+
+#: app/class-admin.php:367 app/pages/class-bulk.php:217
+#: _src/react/modules/configs.jsx:152
+#: app/assets/js/smush-react-configs.min.js:6733
+msgid "Settings"
+msgstr "Postavke izbornika"
