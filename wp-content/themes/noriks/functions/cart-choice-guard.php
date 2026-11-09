@@ -37,7 +37,7 @@ function noriks_cart_choice_guard() {
 		wc_add_notice(
 			sprintf(
 				/* translators: 1: ime izdelka, 2: povezava do izdelka */
-				__( 'Pri produkte %1$s je potrebné vybrať balík a farbu/veľkosť. %2$s', 'noriks' ),
+				__( 'При продукта %1$s трябва да изберете пакет и цвят/размер. %2$s', 'noriks' ),
 				esc_html( $ime ),
 				$link ? '<a href="' . esc_url( $link ) . '">' . esc_html__( 'Vyberte tu', 'noriks' ) . '</a>' : ''
 			),

@@ -75,7 +75,7 @@ function noriks_ajax_add_to_cart() {
     } else {
         // Get WC notices for error message
         $notices = wc_get_notices('error');
-        $msg = !empty($notices) ? strip_tags($notices[0]['notice'] ?? $notices[0]) : 'Chyba pri pridávaní';
+        $msg = !empty($notices) ? strip_tags($notices[0]['notice'] ?? $notices[0]) : 'Грешка при добавяне';
         wc_clear_notices();
         wp_send_json_error(['message' => $msg]);
     }
@@ -178,7 +178,7 @@ function noriks_upsell_modal_markup() {
                     </div>
                 </div>
                 <div class="noriks-modal-qty-row">
-                    <span class="noriks-attr-label">MNOŽSTVO</span>
+                    <span class="noriks-attr-label">КОЛИЧЕСТВО</span>
                     <select id="noriks-qty-val" class="noriks-qty-select">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -193,8 +193,8 @@ function noriks_upsell_modal_markup() {
                     </select>
                 </div>
                 <div id="noriks-modal-attributes" class="noriks-modal-attributes"></div>
-                <div id="noriks-modal-error" class="noriks-modal-error" style="display:none;">Vyberte všetky možnosti</div>
-                <button id="noriks-modal-add" class="noriks-modal-add-btn">PRIDAŤ DO KOŠÍKA</button>
+                <div id="noriks-modal-error" class="noriks-modal-error" style="display:none;">Изберете всички опции</div>
+                <button id="noriks-modal-add" class="noriks-modal-add-btn">ДОБАВИ В КОЛИЧКАТА</button>
             </div>
 
         </div>
@@ -448,7 +448,7 @@ function noriks_upsell_modal_markup() {
                 $attrs.append($group);
             });
 
-            $('#noriks-modal-add').text('PRIDAŤ DO KOŠÍKA').removeClass('adding added');
+            $('#noriks-modal-add').text('ДОБАВИ В КОЛИЧКАТА').removeClass('adding added');
 
             // Auto-select first option for each attribute
             setTimeout(function() {
@@ -538,7 +538,7 @@ function noriks_upsell_modal_markup() {
 
             var variation = findVariation();
             if (!variation) {
-                $('#noriks-modal-error').text('Táto kombinácia nie je dostupná').show();
+                $('#noriks-modal-error').text('Тази комбинация не е налична').show();
                 return;
             }
 
@@ -547,7 +547,7 @@ function noriks_upsell_modal_markup() {
                 return;
             }
 
-            $btn.addClass('adding').text('PRIDÁVAM...');
+            $btn.addClass('adding').text('ДОБАВЯМ...');
 
             var qty = parseInt($('#noriks-qty-val').val()) || 1;
             var data = {
@@ -566,7 +566,7 @@ function noriks_upsell_modal_markup() {
             $.post(woocommerce_params.ajax_url, data, function(res) {
                 
                 if (res.success !== false && res.fragments) {
-                    $btn.removeClass('adding').addClass('added').text('✓ PRIDANÉ!');
+                    $btn.removeClass('adding').addClass('added').text('✓ ДОБАВЕНО!');
                     
                     // Apply fragments to update side cart
                     $.each(res.fragments, function(key, value) {
@@ -579,18 +579,18 @@ function noriks_upsell_modal_markup() {
                         closeModal();
                     }, 800);
                 } else if (res.success === false) {
-                    $btn.removeClass('adding').text('PRIDAŤ DO KOŠÍKA');
-                    var msg = (res.data && res.data.message) ? res.data.message : 'Chyba pri pridávaní';
+                    $btn.removeClass('adding').text('ДОБАВИ В КОЛИЧКАТА');
+                    var msg = (res.data && res.data.message) ? res.data.message : 'Грешка при добавяне';
                     $('#noriks-modal-error').text(msg).show();
                 } else {
                     // Fallback: no fragments but no error either — refresh
-                    $btn.removeClass('adding').addClass('added').text('✓ PRIDANÉ!');
+                    $btn.removeClass('adding').addClass('added').text('✓ ДОБАВЕНО!');
                     $(document.body).trigger('wc_fragment_refresh');
                     setTimeout(closeModal, 800);
                 }
             }).fail(function(xhr) {
-                $btn.removeClass('adding').text('PRIDAŤ DO KOŠÍKA');
-                $('#noriks-modal-error').text('Chyba pri pridávaní').show();
+                $btn.removeClass('adding').text('ДОБАВИ В КОЛИЧКАТА');
+                $('#noriks-modal-error').text('Грешка при добавяне').show();
             });
         });
 

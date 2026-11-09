@@ -115,16 +115,16 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="top-header">
   <div class="marquee">
     <div class="marquee-content">
-      <span><a href="/sk/shop"><?php echo $mq_ico_truck; ?>Doprava zadarmo pre objednávky nad 70 €</a></span>
-      <span><a href="/sk/shop"><?php echo $mq_ico_shield; ?>30 dní bez rizika – vyskúšaj bez obáv</a></span>
+      <span><a href="/sk/shop"><?php echo $mq_ico_truck; ?>Безплатна доставка за поръчки над 70 €</a></span>
+      <span><a href="/sk/shop"><?php echo $mq_ico_shield; ?>30 дни без риск – пробвай без притеснения</a></span>
 
       <!-- DUPLICATED for seamless infinite loop -->
-      <span><a href="/sk/shop"><?php echo $mq_ico_truck; ?>Doprava zadarmo pre objednávky nad 70 €</a></span>
-      <span><a href="/sk/shop"><?php echo $mq_ico_shield; ?>30 dní bez rizika – vyskúšaj bez obáv</a></span>
+      <span><a href="/sk/shop"><?php echo $mq_ico_truck; ?>Безплатна доставка за поръчки над 70 €</a></span>
+      <span><a href="/sk/shop"><?php echo $mq_ico_shield; ?>30 дни без риск – пробвай без притеснения</a></span>
       
        <!-- DUPLICATED for seamless infinite loop -->
-      <span><a href="/sk/shop"><?php echo $mq_ico_truck; ?>Doprava zadarmo pre objednávky nad 70 €</a></span>
-      <span><a href="/sk/shop"><?php echo $mq_ico_shield; ?>30 dní bez rizika – vyskúšaj bez obáv</a></span>
+      <span><a href="/sk/shop"><?php echo $mq_ico_truck; ?>Безплатна доставка за поръчки над 70 €</a></span>
+      <span><a href="/sk/shop"><?php echo $mq_ico_shield; ?>30 дни без риск – пробвай без притеснения</a></span>
     </div>
   </div>
 </div>

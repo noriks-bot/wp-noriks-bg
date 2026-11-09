@@ -25,23 +25,23 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 function noriks_shop_filter_map() {
 	return apply_filters( 'noriks_shop_filter_map', array(
 		'__shop__' => array(
-			'bestsellers' => 'Najpredávanejšie',
-			'startovaci-balicek' => 'Štartovací balíček',
-			'velke-baliky' => 'Veľké balíky',
+			'bestsellers' => 'Най-продавани',
+			'startovaci-balicek' => 'Стартов пакет',
+			'velke-baliky' => 'Големи пакети',
 		),
 		'boxerky' => array(
 			'1-ks-boxerky' => '1 ks',
-			'balicek-3-ks-boxerky' => 'Balíček 3 ks',
-			'balicek-5-ks-boxerky' => 'Balíček 5 ks',
-			'balicek-7-ks-boxerky' => 'Balíček 7 ks',
-			'balicek-10-ks-boxerky' => 'Balíček 10 ks',
-			'balicek-15-ks-boxerky' => 'Balíček 15 ks',
-			'cierne-boxerky' => 'Čierne',
-			'farebny-boxerky' => 'Farebný',
+			'balicek-3-ks-boxerky' => 'Пакет 3 бр.',
+			'balicek-5-ks-boxerky' => 'Пакет 5 бр.',
+			'balicek-7-ks-boxerky' => 'Пакет 7 бр.',
+			'balicek-10-ks-boxerky' => 'Пакет 10 бр.',
+			'balicek-15-ks-boxerky' => 'Пакет 15 бр.',
+			'cierne-boxerky' => 'Черни',
+			'farebny-boxerky' => 'Цветен',
 		),
 		'ponozky' => array(
 			'bila' => 'Biela',
-			'cerna' => 'Čierna',
+			'cerna' => 'Черен',
 		),
 		'sady' => array(
 			'sada-2-tricka-5-boxerek' => 'Sada: 2+5',
@@ -50,13 +50,13 @@ function noriks_shop_filter_map() {
 		),
 		'tricka' => array(
 			'1-ks' => '1 ks',
-			'balicek-3-ks' => 'Balíček 3 ks',
-			'balicek-6-ks' => 'Balíček 6 ks',
-			'balicek-9-ks' => 'Balíček 9 ks',
-			'balicek-12-ks' => 'Balíček 12 ks',
-			'balicek-15-ks' => 'Balíček 15 ks',
-			'cerne' => 'Čierne',
-			'barevny' => 'Farebný',
+			'balicek-3-ks' => 'Пакет 3 бр.',
+			'balicek-6-ks' => 'Пакет 6 бр.',
+			'balicek-9-ks' => 'Пакет 9 бр.',
+			'balicek-12-ks' => 'Пакет 12 бр.',
+			'balicek-15-ks' => 'Пакет 15 бр.',
+			'cerne' => 'Черни',
+			'barevny' => 'Цветен',
 		)
 	) );
 }

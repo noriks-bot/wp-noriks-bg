@@ -33,7 +33,7 @@ if ( WC()->cart->is_empty() ) return;
         <!-- SHIPPING -->
         <?php WC()->cart->calculate_totals(); ?>
         <div id="custom_shipping">
-          <h3>Doručenie</h3>
+          <h3>Доставка</h3>
           <ul class="shipping_method_custom">
             <li class="standard-shipping shipping-tab">
               <input name="shipping_method[0]" data-index="0" id="shipping_method_0_standard_custom"
@@ -54,24 +54,24 @@ if ( WC()->cart->is_empty() ) return;
           </ul>
           <div class="delivery-from-eu-warehouse">
             <img decoding="async" class="delivery-from-eu-warehouse__icon" src="https://images.vigo-shop.com/general/flags/eu-warehouse.svg">
-            <span class="delivery-from-eu-warehouse__text">Sklad v EÚ</span>
+            <span class="delivery-from-eu-warehouse__text">Склад в ЕС</span>
           </div>
         </div>
 
         <!-- COD prompt -->
         <div id="hs-cod-checkout-prompt" style="display:none;">
-          <div class="cod-prompt-text">Dokončite objednávku teraz, <strong>platba na dobierku 🙂</strong></div>
+          <div class="cod-prompt-text">Завършете поръчката сега, <strong>platba na dobierku 🙂</strong></div>
           <img decoding="async" class="cod-prompt-image" src="https://images.vigo-shop.com/general/checkout/cod/uni_cash_on_delivery.svg">
         </div>
 
         <!-- VAT -->
         <div id="hs-vat-tax-checkout-prompt">
-          <span class="tax-and-vat-checkout-claims">Žiadne dodatočné náklady na colné konanie</span>
-          <span class="tax-and-vat-checkout-claims">DPH je zahrnutá v cene</span>
+          <span class="tax-and-vat-checkout-claims">Без допълнителни митнически разходи</span>
+          <span class="tax-and-vat-checkout-claims">ДДС е включено в цената</span>
         </div>
 
         <!-- PAYMENT + ORDER SUMMARY + BUTTON — via WC hooks -->
-        <h3 class="payment-title">Spôsob platby</h3>
+        <h3 class="payment-title">Начин на плащане</h3>
         <?php woocommerce_checkout_payment(); ?>
 
         <?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
@@ -91,18 +91,18 @@ if ( WC()->cart->is_empty() ) return;
     <img decoding="async" src="https://images.vigo-shop.com/general/guarantee_money_back/satisfaction_icon_sk.png">
   </div>
   <div class="flex__item--autosize f--m checkout-warranty__text">
-    <strong>Nakupujte bez obáv </strong><br>Vrátenie peňazí do 30 dní
+    <strong>Пазарувайте спокойно </strong><br>Връщане на парите до 30 дни
   </div>
 </div>
 
 <!-- Terms -->
 <div class="agreed_terms_txt">
-  <span class="policy-agreement-obligation">Kliknutím na tlačidlo <strong>Objednať</strong> súhlasím s objednávkou s povinnosťou platby.</span><br>
+  <span class="policy-agreement-obligation">С натискане на бутона <strong>Поръчай</strong> приемам поръчка със задължение за плащане.</span><br>
   <div class="terms-checkbox-and-links">
     <label class="checkbox">
       <input type="checkbox" class="input-checkbox" name="agree_to_checkout_terms" id="agree_to_terms_checkbox" value="1">
     </label>
-    Prečítal som a súhlasím <a href="#" id="terms_conditions_link">Všeobecné obchodné podmienky</a> a <a href="#" id="withdrawal_policy_link">právo na odstúpenie</a>.
+    Прочетох и приемам <a href="#" id="terms_conditions_link">Общи условия</a> a <a href="#" id="withdrawal_policy_link">право на отказ</a>.
   </div>
 </div>
 
@@ -113,7 +113,7 @@ if ( WC()->cart->is_empty() ) return;
 <script>
 jQuery(function($){
   /* Delivery dates — same logic as product page (meta.php) */
-  var days=['nedeľa','pondelok','utorok','streda','štvrtok','piatok','sobota'];
+  var days=['неделя','pondelok','utorok','streda','четвъртък','piatok','sobota'];
   function addBiz(d,n){var r=new Date(d);while(n>0){r.setDate(r.getDate()+1);if(r.getDay()!==0&&r.getDay()!==6)n--;}return r;}
   var now=new Date(),from=addBiz(now,2),to=addBiz(now,5);
   $('#js-delivery-dates').text(days[from.getDay()]+', '+from.getDate()+'.'+(from.getMonth()+1)+'. - '+days[to.getDay()]+', '+to.getDate()+'.'+(to.getMonth()+1)+'.');

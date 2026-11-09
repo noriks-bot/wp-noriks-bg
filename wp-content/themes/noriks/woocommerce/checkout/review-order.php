@@ -45,7 +45,7 @@ defined( 'ABSPATH' ) || exit;
 
       <!-- Shipping -->
       <div class="c--darkgray review-section-container review-addons shipping_order_review">
-        <div class="review-addons-title"><div>Doručenie - GLS</div></div>
+        <div class="review-addons-title"><div>Доставка – GLS</div></div>
         <div class="review-addons-price review-sale-price" id="noriks-shipping-price">
           <?php
             $ship = (float) WC()->cart->get_shipping_total();
@@ -83,7 +83,7 @@ defined( 'ABSPATH' ) || exit;
   </div>
   <div class="vigo-checkout-total__sum flex flex--middle border_price">
     <div class="flex__item f--l">
-      Celková suma: <span class="f--bold price_total_wrapper"><?php wc_cart_totals_order_total_html(); ?></span>
+      Обща сума: <span class="f--bold price_total_wrapper"><?php wc_cart_totals_order_total_html(); ?></span>
     </div>
   </div>
 </div>

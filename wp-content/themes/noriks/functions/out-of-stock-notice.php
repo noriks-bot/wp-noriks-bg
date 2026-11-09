@@ -16,7 +16,7 @@ add_action( 'woocommerce_before_add_to_cart_form', function () {
         return;
     }
     ?>
-    <p class="stock out-of-stock noriks-oos"><?php echo esc_html( 'Momentálne nie je na sklade.' ); ?></p>
+    <p class="stock out-of-stock noriks-oos"><?php echo esc_html( 'В момента не е на склад.' ); ?></p>
     <style>
     .single-product .product.outofstock form.cart,
     .single-product .product.outofstock .gck-offer,

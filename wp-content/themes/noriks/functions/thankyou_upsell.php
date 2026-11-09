@@ -248,12 +248,12 @@ function noriks_remove_upsell() {
 
     // Only allow removing upsell items
     if ( $item->get_meta( '_noriks_upsell' ) !== 'thank you upsell' ) {
-        wp_send_json_error( 'Iba upsell produkty je možné odstrániť' );
+        wp_send_json_error( 'Могат да се премахват само допълнителните продукти' );
     }
 
     // Only allow while in primary-hold
     if ( $order->get_status() !== 'primary-hold' ) {
-        wp_send_json_error( 'Čas na úpravy vypršal' );
+        wp_send_json_error( 'Времето за промени изтече' );
     }
 
     $product_name = $item->get_name();
@@ -261,9 +261,9 @@ function noriks_remove_upsell() {
     $order->calculate_totals();
     $order->save();
 
-    $order->add_order_note( sprintf( 'Upsell odstránený: %s', $product_name ) );
+    $order->add_order_note( sprintf( 'Допълнителният продукт е премахнат: %s', $product_name ) );
 
-    wp_send_json_success( array( 'message' => 'Odstránené' ) );
+    wp_send_json_success( array( 'message' => 'Премахнато' ) );
 }
 
 
@@ -279,29 +279,29 @@ function noriks_handle_add_upsell() {
     $nonce        = $_POST['nonce'] ?? '';
 
     if ( ! wp_verify_nonce( $nonce, 'noriks_upsell_' . $order_id ) ) {
-        wp_send_json_error( 'Neplatná požiadavka' );
+        wp_send_json_error( 'Невалидна заявка' );
     }
 
     $order = wc_get_order( $order_id );
-    if ( ! $order ) wp_send_json_error( 'Objednávka nebola nájdená' );
+    if ( ! $order ) wp_send_json_error( 'Поръчката не е намерена' );
 
     // Only allow upsell on COD orders in primary-hold
     if ( $order->get_payment_method() !== 'cod' ) {
-        wp_send_json_error( 'Upsell je dostupný iba pri dobierke' );
+        wp_send_json_error( 'Допълнителната оферта важи само при наложен платеж' );
     }
     if ( $order->get_status() !== 'primary-hold' ) {
-        wp_send_json_error( 'Čas na pridanie vypršal' );
+        wp_send_json_error( 'Времето за добавяне изтече' );
     }
 
     // Time limit: 5 min from order creation (safety check)
     $created = $order->get_date_created();
     if ( $created && ( time() - $created->getTimestamp() ) > 330 ) { // 5.5 min grace
-        wp_send_json_error( 'Čas na pridanie vypršal' );
+        wp_send_json_error( 'Времето за добавяне изтече' );
     }
 
     // Get the actual product (variation or simple)
     $product = $variation_id ? wc_get_product( $variation_id ) : wc_get_product( $product_id );
-    if ( ! $product ) wp_send_json_error( 'Produkt nebol nájdený' );
+    if ( ! $product ) wp_send_json_error( 'Продуктът не е намерен' );
 
     // Duplicate check
     $check_product_id = $variation_id ? $product_id : $product->get_id();
@@ -310,7 +310,7 @@ function noriks_handle_add_upsell() {
         $item_variation_id = $item->get_variation_id();
         if ( $item_product_id == $check_product_id || ( $variation_id && $item_variation_id == $variation_id ) ) {
             if ( $item->get_meta( '_noriks_upsell' ) ) {
-                wp_send_json_error( 'Tento produkt ste už pridali' );
+                wp_send_json_error( 'Вече сте добавили този продукт' );
             }
         }
     }
@@ -329,7 +329,7 @@ function noriks_handle_add_upsell() {
         $active_price = (float) $product->get_regular_price();
     }
     if ( ! $active_price ) {
-        wp_send_json_error( 'Cena produktu nie je dostupná' );
+        wp_send_json_error( 'Цената на продукта не е налична' );
     }
 
     $quantity = max( 1, absint( $_POST['quantity'] ?? 3 ) );
@@ -343,7 +343,7 @@ function noriks_handle_add_upsell() {
     $sku = strtolower( $_detect_prod ? $_detect_prod->get_sku() : '' );
     $cats = wp_get_post_terms( $_detect_id, 'product_cat', array( 'fields' => 'slugs' ) );
     $cat_str = is_array( $cats ) ? strtolower( implode( ' ', $cats ) ) : '';
-    $is_majice = ( strpos($cat_str, 'orto-majice') !== false || strpos($cat_str, 'orto-tricka') !== false || strpos($cat_str, 'tricka') !== false || strpos($name, 'trička') !== false || strpos($name, 'tričk') !== false || strpos($cat_str, 'majic') !== false || strpos($name, 'majic') !== false );
+    $is_majice = ( strpos($cat_str, 'orto-majice') !== false || strpos($cat_str, 'orto-tricka') !== false || strpos($cat_str, 'tricka') !== false || strpos($name, 'тениски') !== false || strpos($name, 'tričk') !== false || strpos($cat_str, 'majic') !== false || strpos($name, 'majic') !== false );
     $qty_prices = $is_majice ? $majice_prices : $bokserice_prices;
     $total_price = isset( $qty_prices[$quantity] ) ? $qty_prices[$quantity] : $active_price;
     $upsell_price = $total_price / $quantity;
@@ -354,7 +354,7 @@ function noriks_handle_add_upsell() {
         'total'    => $upsell_price * $quantity,
     ));
 
-    if ( ! $item_id ) wp_send_json_error( 'Chyba pri pridávaní' );
+    if ( ! $item_id ) wp_send_json_error( 'Грешка при добавяне' );
 
     // Mark as upsell
     $item = $order->get_item( $item_id );
@@ -367,7 +367,7 @@ function noriks_handle_add_upsell() {
 
     $order->add_order_note(
         sprintf(
-            'Thank you upsell: %s pridané s 50%% zľavou — akčná cena: %s, upsell cena: %s',
+            'Thank you upsell: %s добавен с 50%% отстъпка — промо цена: %s, upsell цена: %s',
             $product->get_name(),
             wc_price( $active_price ),
             wc_price( $upsell_price )
@@ -375,7 +375,7 @@ function noriks_handle_add_upsell() {
     );
 
     wp_send_json_success( array(
-        'message'      => 'Pridané',
+        'message'      => 'Добавено',
         'product_name' => $product->get_name(),
         'upsell_price' => $upsell_price,
         'total'        => $order->get_formatted_order_total(),

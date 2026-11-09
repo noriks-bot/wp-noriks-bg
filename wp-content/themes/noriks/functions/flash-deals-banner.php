@@ -52,23 +52,23 @@ function noriks_flash_deals_banner() {
     $off = noriks_flash_max_discount();
     if ( $off < 1 ) { $off = NORIKS_FLASH_OFF_FALLBACK; }
     ?>
-    <div class="nfd" role="region" aria-label="Letný výpredaj">
+    <div class="nfd" role="region" aria-label="Лятна разпродажба">
       <div class="nfd-in">
         <div class="nfd-left">
-          <p class="nfd-eyebrow">Sezónne zľavy</p>
+          <p class="nfd-eyebrow">Сезонни отстъпки</p>
           <div class="nfd-head">
-            <h2 class="nfd-title">Letný výpredaj</h2>
+            <h2 class="nfd-title">Лятна разпродажба</h2>
             <?php if ( $off > 0 ) : ?>
               <span class="nfd-badge">-&minus;<?php echo (int) $off; ?>%</span>
             <?php endif; ?>
           </div>
-          <p class="nfd-sub">Zľavnené, kým sú zásoby</p>
+          <p class="nfd-sub">С отстъпка до изчерпване на количествата</p>
         </div>
 
         <div class="nfd-right">
-          <span class="nfd-cta">Ponuka končí o</span>
+          <span class="nfd-cta">Офертата изтича след</span>
           <div class="nfd-clock" id="nfd-clock" aria-live="off">
-            <span class="nfd-unit"><b data-u="d">00</b><em>dní</em></span>
+            <span class="nfd-unit"><b data-u="d">00</b><em>дни</em></span>
             <span class="nfd-unit"><b data-u="h">00</b><em>hod</em></span>
             <span class="nfd-unit"><b data-u="m">00</b><em>min</em></span>
             <span class="nfd-unit"><b data-u="s">00</b><em>sek</em></span>

@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       ★★★★★
     </div>
     <div class="reviews">
-      <a style="color:black;" href="#reviews-section">Vynikajúce 4.8 | <?php echo get_field('singlepp_reviews_text_1', 'option'); ?> <?php echo get_field('singlepp_reviews_text_2', 'option'); ?></a>
+      <a style="color:black;" href="#reviews-section">Отлично 4.8 | <?php echo get_field('singlepp_reviews_text_1', 'option'); ?> <?php echo get_field('singlepp_reviews_text_2', 'option'); ?></a>
     </div>
   </div>
  
@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php
 
 if ( function_exists( 'noriks_is_type' ) && noriks_is_type( 'norikshers' ) ) {
-	echo '<p class="nhs-title-eyebrow" style="font-size:27px;color:#7c3aed;margin:0 0 11px;font-weight:600;line-height:1.05;letter-spacing:-0.2px;">Ocenená alternatíva k botoxu</p>';
+	echo '<p class="nhs-title-eyebrow" style="font-size:27px;color:#7c3aed;margin:0 0 11px;font-weight:600;line-height:1.05;letter-spacing:-0.2px;">Отличена алтернатива на ботокса</p>';
 }
 
 the_title( '<h1 id="title-buy-now" class="product_title entry-title">', '</h1>' );

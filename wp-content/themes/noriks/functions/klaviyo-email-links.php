@@ -79,7 +79,7 @@ function noriks_email_cart_rebuild() {
 		$link = get_permalink( $brez_izbire[0] );
 		if ( $link ) {
 			$cilj = $link;
-			wc_add_notice( __( 'Vyberte balík a farbu/veľkosť, aby sme mohli pokračovať s vašou objednávkou.', 'noriks' ), 'notice' );
+			wc_add_notice( __( 'Изберете пакет и цвят/размер, за да продължим с поръчката ви.', 'noriks' ), 'notice' );
 		}
 	}
 	wp_safe_redirect( $utm ? add_query_arg( $utm, $cilj ) : $cilj );
@@ -97,7 +97,7 @@ function noriks_cart_nocache() {
 	if ( untrailingslashit( (string) wp_parse_url( home_url( '/cart/' ), PHP_URL_PATH ) ) !== $req_path ) {
 		return;
 	}
-	do_action( 'litespeed_control_set_nocache', 'noriks: stran košarice' );
+	do_action( 'litespeed_control_set_nocache', 'noriks: страница на количката' );
 	if ( ! defined( 'DONOTCACHEPAGE' ) ) {
 		define( 'DONOTCACHEPAGE', true );
 	}

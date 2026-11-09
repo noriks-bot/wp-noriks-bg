@@ -479,7 +479,7 @@ $img_id     = $display_obj->get_image_id();
 $upsell_img = $img_id ? wp_get_attachment_image_url( $img_id, 'woocommerce_thumbnail' ) : wc_placeholder_img_src('woocommerce_thumbnail');
 
 $desc = wp_strip_all_tags( $display_obj->get_short_description() );
-if ( ! $desc ) $desc = 'Odličen dodatek k tvoji narudžbi.';
+if ( ! $desc ) $desc = 'Чудесно допълнение към твоята поръчка.';
 
 $price_pill = wp_strip_all_tags( wc_price( $display_obj->get_price() ) );
 
@@ -875,7 +875,7 @@ img.emoji {
 
         <div class="upsell-actions">
           <button type="button" class="upsell-add-btn" id="upsell-add-btn">
-            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'DODANO' : 'Dodaj u košaricu'; ?></span>
+            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'DODANO' : 'Добави в количката'; ?></span>
           </button>
 
           <button type="button" class="upsell-remove-btn" id="upsell-remove-btn" <?php echo $upsell_in_cart ? '' : 'style="display:none"'; ?>>
@@ -958,7 +958,7 @@ img.emoji {
       if (removeBtn) removeBtn.style.display = isAdded ? 'inline-flex' : 'none';
 
       setOptionsDisabled(isAdded);
-      if (btnText) btnText.textContent = isAdded ? 'DODANO' : 'Dodaj u košaricu';
+      if (btnText) btnText.textContent = isAdded ? 'DODANO' : 'Добави в количката';
     }
 
     function clearAttrHiddenInputs(){
@@ -1155,7 +1155,7 @@ img.emoji {
 
           if (type === 'variable') {
             if (!hasAllRequiredSelections()) {
-              alert('Odaberi sve opcije (npr. veličinu) prije dodavanja.');
+              alert('Избери всички опции (напр. размер), преди да добавиш.');
               checkbox.checked = false;
               syncAddedUI(false);
               setBusy(false);
@@ -1220,7 +1220,7 @@ img.emoji {
         }
 
         if (!removeUrl) {
-          alert('Ne mogu ukloniti proizvod (ne mogu pronaći remove link u košarici).');
+          alert('Продуктът не може да бъде премахнат (липсва remove връзка в количката).');
           checkbox.checked = true;
           syncAddedUI(true);
           setBusy(false);
@@ -1256,7 +1256,7 @@ img.emoji {
 
       } catch(e){
         console.error(e);
-        alert('Nešto je pošlo po zlu. Pogledaj DevTools → Network.');
+        alert('Нещо се обърка. Виж DevTools → Network.');
         checkbox.checked = !checkbox.checked;
         syncAddedUI();
         setBusy(false);

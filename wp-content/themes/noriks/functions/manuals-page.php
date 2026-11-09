@@ -12,7 +12,7 @@ function noriks_manuals_list() {
         array(
             'file'  => 'noriks-majice.pdf',
             'sku'   => 'NORIKS-ALL-BLACK-6-PACK',
-            'title' => 'Tričká NORIKS',
+            'title' => 'Тениски NORIKS',
             'sub'   => 'Bavlnené tričká — výber veľkosti, nosenie a starostlivosť.',
         ),
         array(
@@ -24,55 +24,55 @@ function noriks_manuals_list() {
         array(
             'file'  => 'noriks-kompresijske-carape.pdf',
             'sku'   => array( 'NORIKS-KOMZIPS', 'NORIKS-BOXERS-ORTO-4' ),
-            'title' => 'Kompresné pančuchy NORIKS so zipsom',
+            'title' => 'Компресионни чорапи NORIKS с цип',
             'sub'   => 'Odstupňovaná kompresia 15–20 mmHg s bočným zipsom.',
         ),
         array(
             'file'  => 'noriks-kneefix.pdf',
             'sku'   => 'NORIKS-KNEEFIX',
-            'title' => 'NORIKS KneeFix — ortopedická kolenná ortéza',
+            'title' => 'NORIKS KneeFix — ортопедична наколенка',
             'sub'   => 'Nastaviteľná kompresia, bočné stabilizátory a gélová vložka na jabĺčko.',
         ),
         array(
             'file'  => 'noriks-bunion-fix.pdf',
             'sku'   => 'NORIKS-BUNION',
-            'title' => 'NORIKS Bunion Fix — korektor vybočeného palca',
+            'title' => 'NORIKS Bunion Fix — коректор за изкривен палец',
             'sub'   => 'Postupné narovnávanie palca pri 30 minútach až 3 hodinách denne.',
         ),
         array(
             'file'  => 'noriks-ortopas.pdf',
             'sku'   => 'NORIKS-ORTOPAS',
-            'title' => 'NORIKS ortopedický pás na chrbát',
+            'title' => 'NORIKS ортопедичен колан за гръб',
             'sub'   => 'Cielená kompresia pre driekovú oblasť a stabilizácia pri každodenných pohyboch.',
         ),
         array(
             'file'  => 'noriks-fisiorest.pdf',
             'sku'   => 'NORIKS-FISIOREST',
-            'title' => 'NORIKS NeckRelax — prístroj na krk',
+            'title' => 'NORIKS NeckRelax — уред за врат',
             'sub'   => 'Trakcia, teplo a vibračná masáž v sedení od 15 do 30 minút.',
         ),
         array(
             'file'  => 'noriks-fit-kompresijska-majica.pdf',
             'sku'   => 'NORIKS-KOMPSFIT',
-            'title' => 'NORIKS FIT — kompresné tričko',
+            'title' => 'NORIKS FIT — компресионна тениска',
             'sub'   => 'Priliehavá kompresia, ktorá vyhladzuje siluetu a podporuje vzpriamené držanie tela.',
         ),
         array(
             'file'  => 'noriks-leakbox.pdf',
             'sku'   => 'NORIKS-LEAKBOX',
-            'title' => 'NORIKS PureDry — prateľné boxerky pri inkontinencii',
+            'title' => 'NORIKS PureDry — перящи се боксерки при инконтиненция',
             'sub'   => 'Až 300 ml savosti, sedemvrstvové jadro a vodoodolná membrána.',
         ),
         array(
             'file'  => 'noriks-ergosit.pdf',
             'sku'   => 'NORIKS-ERGOSIT',
-            'title' => 'NORIKS ErgoSit — ortopedický sedací vankúš',
+            'title' => 'NORIKS ErgoSit — ортопедична седалка',
             'sub'   => 'Výrez pre kostrč a pamäťová pena s vysokou hustotou na dlhé sedenie.',
         ),
         array(
             'file'  => 'noriks-kidsnest.pdf',
             'sku'   => 'NORIKS-KIDSNEST',
-            'title' => 'NORIKS KidsNest — detský ortopedický vankúš',
+            'title' => 'NORIKS KidsNest — детска ортопедична възглавница',
             'sub'   => 'Tri veľkosti, ktoré rastú s dieťaťom a podporujú správnu polohu hlavy.',
         ),
     );
@@ -119,7 +119,7 @@ function noriks_manuals_ensure_page() {
     }
 
     $id = wp_insert_post( array(
-        'post_title'   => 'Návod na použitie',
+        'post_title'   => 'Инструкции за употреба',
         'post_name'    => 'navody',
         'post_type'    => 'page',
         'post_status'  => 'publish',

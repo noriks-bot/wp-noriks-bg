@@ -62,7 +62,7 @@ add_action( 'wp_footer', function () {
 	document.addEventListener('DOMContentLoaded', function () {
 	  var btn = document.querySelector('.storefront-sticky-add-to-cart__content-button');
 	  if (!btn) return;
-	  btn.textContent = 'Späť na výber';
+	  btn.textContent = 'Назад към избора';
 	  btn.setAttribute('href', '#title-buy-now'); // put your desired URL here
 	});
 	</script>
@@ -107,9 +107,9 @@ function noriks_controlpro_atc_testimonial() {
     $avatar = get_template_directory_uri() . '/img/controlpro/10-kupac-avatar.jpg';
     ?>
     <div class="cpr-atc-rev">
-        <img class="cpr-atc-avatar" src="<?php echo esc_url( $avatar ); ?>" alt="Spokojný zákazník NORIKS ControlPro" loading="lazy">
+        <img class="cpr-atc-avatar" src="<?php echo esc_url( $avatar ); ?>" alt="Доволен клиент на NORIKS ControlPro" loading="lazy">
         <div class="cpr-atc-body">
-            <p class="cpr-atc-text">„Po operácii prostaty som dva roky pravidelne robil Kegelove cviky a nevidel som väčší pokrok. Myslel som, že budem do konca života nosiť vložky. Štyri týždne s týmto prístrojom a z 5 vložiek denne som klesol na nulu."</p>
+            <p class="cpr-atc-text">„След операция на простатата две години редовно правех упражнения на Кегел и не виждах голям напредък. Мислех, че до края на живота си ще нося подложки. Четири седмици с този уред и от 5 подложки дневно слязох на нула."</p>
             <div class="cpr-atc-foot">
                 <span class="cpr-atc-name">Robert T. 73</span>
                 <span class="cpr-atc-stars">★★★★★</span>

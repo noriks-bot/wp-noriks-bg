@@ -82,7 +82,7 @@ define( 'NORIKS_TEL_EXAMPLE', '0912123456' );
 
 /** Sporocilo ob napacni stevilki — eno samo mesto za ves trg. */
 function noriks_tel_message() {
-    return 'Skontrolujte telefónne číslo — zdá sa, že nie je úplné. napr. ' . NORIKS_TEL_EXAMPLE;
+    return 'Проверете телефонния номер — изглежда непълен. напр. ' . NORIKS_TEL_EXAMPLE;
 }
 
 /* --- strezniska obramba: naročila z ocitno napacno stevilko ne spustimo --- */

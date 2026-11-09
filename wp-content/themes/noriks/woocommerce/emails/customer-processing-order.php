@@ -42,20 +42,20 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
 <?php if ( $email_improvements_enabled ) : ?>
 
 
-	<p style="color:black;">Tvoja objednávka bola úspešne prijatá – ďakujeme, že si si vybral NORIKS!
+	<p style="color:black;">Твоята поръчка е приета успешно – благодарим, че избра NORIKS!
 	<br/>	<br/>
-	Teraz pripravujeme tvoj produkt NORIKS a čoskoro sa vydá na cestu.
+	Сега подготвяме твоя продукт NORIKS и скоро тръгва към теб.
     <br/><br/>
-    Len pohodlie a dobrý pocit – po celý deň.<br/><br/>
+    Само комфорт и добро усещане – през целия ден.<br/><br/>
     
-    Dáme ti vedieť, hneď ako tvoj balík vyrazí k tebe.<br/>
-    Ak budeš čokoľvek potrebovať – sme tu pre teba. 🙂<br/><br/>
+    Ще те уведомим веднага щом пратката тръгне към теб.<br/>
+    Ако ти потрябва нещо – тук сме за теб. 🙂<br/><br/>
     
     
-    <strong>Ak si sa pomýlil vo veľkosti, množstve alebo farbe objednávky – žiadne obavy!</strong><br/>
-    Odpovedz priamo na tento e-mail a daj nám vedieť, čo treba zmeniť pred odoslaním balíka. Radi všetko rýchlo vyriešime.<br/><br/>
+    <strong>Ако си сбъркал размера, количеството или цвета в поръчката – няма проблем!</strong><br/>
+    Отговори директно на този имейл и ни кажи какво да променим преди изпращане на пратката. С радост ще решим всичко бързо.<br/><br/>
     
-    Tím NORIKS
+    Екипът на NORIKS
     </p>
 
 	
@@ -65,20 +65,20 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
 	<?php /* translators: %s: Order number */ ?>
 	
 		
-	<p style="color:black;">Tvoja objednávka bola úspešne prijatá – ďakujeme, že si si vybral NORIKS!
+	<p style="color:black;">Твоята поръчка е приета успешно – благодарим, че избра NORIKS!
 	<br/>	<br/>
-Teraz pripravujeme tvoj produkt NORIKS a čoskoro sa vydá na cestu.
+Сега подготвяме твоя продукт NORIKS и скоро тръгва към теб.
     <br/><br/>
-    Len pohodlie a dobrý pocit – po celý deň.<br/><br/>
+    Само комфорт и добро усещане – през целия ден.<br/><br/>
     
-    Dáme ti vedieť, hneď ako tvoj balík vyrazí k tebe.<br/>
-    Ak budeš čokoľvek potrebovať – sme tu pre teba. 🙂<br/><br/>
+    Ще те уведомим веднага щом пратката тръгне към теб.<br/>
+    Ако ти потрябва нещо – тук сме за теб. 🙂<br/><br/>
     
     
-    <strong>Ak si sa pomýlil vo veľkosti, množstve alebo farbe objednávky – žiadne obavy!</strong><br/>
-    Odpovedz priamo na tento e-mail a daj nám vedieť, čo treba zmeniť pred odoslaním balíka. Radi všetko rýchlo vyriešime.<br/><br/>
+    <strong>Ако си сбъркал размера, количеството или цвета в поръчката – няма проблем!</strong><br/>
+    Отговори директно на този имейл и ни кажи какво да променим преди изпращане на пратката. С радост ще решим всичко бързо.<br/><br/>
     
-    Tím NORIKS
+    Екипът на NORIKS
     </p>
 
 

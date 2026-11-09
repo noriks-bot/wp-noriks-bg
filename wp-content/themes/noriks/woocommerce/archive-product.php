@@ -46,11 +46,11 @@ function is_active_menu_item( $path ) {
 <nav class="category-menu">
   <ul>
     <li class="<?php echo is_shop() ? 'active' : ''; ?>">
-      <a href="/sk/shop">Všetky produkty</a>
+      <a href="/sk/shop">Всички продукти</a>
     </li>
 
     <li class="<?php echo is_active_menu_item('/product-category/tricka') ? 'active' : ''; ?>">
-      <a href="/sk/product-category/tricka/">Tričká</a>
+      <a href="/sk/product-category/tricka/">Тениски</a>
     </li>
 
     <li class="<?php echo is_active_menu_item('/product-category/boxerky') ? 'active' : ''; ?>">
@@ -62,7 +62,7 @@ function is_active_menu_item( $path ) {
     </li>
 
     <li class="<?php echo is_active_menu_item('/product-category/ponozky') ? 'active' : ''; ?>">
-      <a href="/sk/product-category/ponozky/">Ponožky</a>
+      <a href="/sk/product-category/ponozky/">Чорапи</a>
     </li>
   </ul>
 </nav>

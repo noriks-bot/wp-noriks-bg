@@ -99,7 +99,7 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
                     </svg>
                   </span>
                   <span class="wc-reserve-note__text">
-                   Poponáhľajte sa! Niekto si práve objednal jeden z produktov vo vašom košíku. Rezervácia platí len pre <strong id="wc-reserve-timer">10:00</strong> minúta.
+                   Побързайте! Някой току-що поръча един от продуктите във вашата количка. Резервацията важи само за <strong id="wc-reserve-timer">10:00</strong> минута.
                   </span>
                 </div>
                 

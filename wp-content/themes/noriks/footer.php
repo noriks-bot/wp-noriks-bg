@@ -79,18 +79,18 @@
 			<div class="nf-wrap nf-signup-grid">
 				<div class="nf-signup-copy">
 					<h2 class="nf-signup-title">Pridaj sa do rodiny NORIKS</h2>
-					<p class="nf-signup-sub">Exkluzívne ponuky a novinky o produktoch — dozvieš sa to prvý.</p>
+					<p class="nf-signup-sub">Ексклузивни оферти и новини за продуктите — ще научиш пръв.</p>
 				</div>
 				<div class="nf-signup-form-col">
 					<form class="nf-signup-form" data-klaviyo-list="<?php echo esc_attr( $nf_klaviyo_list ); ?>" novalidate>
 						<label class="nf-field-label" for="nf-email">Tvoj e-mail *</label>
 						<div class="nf-field-row">
 							<input type="email" id="nf-email" name="email" class="nf-input" placeholder="Tvoja e-mailová adresa" required autocomplete="email">
-							<button type="submit" class="nf-btn nf-btn-light">Prihlásiť sa</button>
+							<button type="submit" class="nf-btn nf-btn-light">Абонирай се</button>
 						</div>
 						<p class="nf-signup-note">
-							Prihlásením súhlasíš s prijímaním e-mailov. Odhlásiť sa môžeš kedykoľvek.
-							<a href="/sk/ochrana-osobnych-udajov/">Zásady ochrany osobných údajov.</a>
+							С абонирането се съгласяваш да получаваш имейли. Можеш да се отпишеш по всяко време.
+							<a href="/sk/ochrana-osobnych-udajov/">Политика за поверителност.</a>
 						</p>
 						<p class="nf-signup-msg" role="status" aria-live="polite"></p>
 					</form>
@@ -106,7 +106,7 @@
 
 				<div class="nf-brand-col">
 					<p class="nf-brand-desc"><?php echo esc_html( $nf_brand ); ?></p>
-					<a class="nf-btn nf-btn-outline" href="/sk/shop">Nakupovať teraz</a>
+					<a class="nf-btn nf-btn-outline" href="/sk/shop">Пазарувай сега</a>
 				</div>
 
 				<nav class="nf-links">
@@ -122,7 +122,7 @@
 								<a href="<?php echo esc_url( $item['link'] ); ?>"><?php echo esc_html( $item['text'] ); ?></a>
 							<?php endforeach; endif; ?>
 							<?php if ( ! $nf_has_upute ) : ?>
-								<a href="/sk/navody/">Návod na použitie</a>
+								<a href="/sk/navody/">Инструкции за употреба</a>
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
@@ -154,7 +154,7 @@
 					<img loading="lazy" decoding="async" src="https://static.devit.software/countries/flags/rectangle/sk.svg" alt="" class="nf-flag">
 					Slovensko (SK)
 				</span>
-				<span class="nf-copy">© <?php echo date( 'Y' ); ?> NORIKS. Všetky práva vyhradené.</span>
+				<span class="nf-copy">© <?php echo date( 'Y' ); ?> NORIKS. Всички права запазени.</span>
 			</div>
 			<div class="nf-payments">
 				<ul class="nf-pay-list">

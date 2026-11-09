@@ -200,7 +200,7 @@ if ( ! function_exists( 'noriks_velikost_oznake' ) ) {
             'kneewrap'     => array( 'XS' => 'obvod stehna 34,5 – 39 cm', 'S' => 'obvod stehna 39 – 44,5 cm', 'M' => 'obvod stehna 44,5 – 49 cm', 'L' => 'obvod stehna 49 – 53,5 cm', 'XL' => 'obvod stehna 53,5 – 59 cm', 'XXL' => 'obvod stehna 59 – 65,5 cm', 'XXXL' => 'obvod stehna 65,5 – 73,5 cm' ),
             'leggings'     => array( 'XS/S' => '40 – 63 kg', 'M/L' => '59 – 84 kg', 'L/XL' => '79 – 100 kg', '2XL/3XL' => '98 – 136 kg' ),
             'sheer'        => array( 'XS-S' => '30 – 34', 'S-M' => '36 – 38', 'L-XL' => '40 – 42', 'XXL' => '44 – 46' ),
-            'tank'         => array( 'S' => 'obvod hrudníka 84 – 89 cm', 'M' => 'obvod hrudníka 89 – 97 cm', 'L' => 'obvod hrudníka 97 – 104 cm', 'XL' => 'obvod hrudníka 104 – 112 cm', '2XL' => 'obvod hrudníka 112 – 119 cm', '3XL' => 'obvod hrudníka 119 – 127 cm', '4XL' => 'obvod hrudníka 127 – 135 cm' ),
+            'tank'         => array( 'S' => 'обиколка на гърдите 84 – 89 см', 'M' => 'обиколка на гърдите 89 – 97 см', 'L' => 'обиколка на гърдите 97 – 104 см', 'XL' => 'обиколка на гърдите 104 – 112 см', '2XL' => 'обиколка на гърдите 112 – 119 см', '3XL' => 'обиколка на гърдите 119 – 127 см', '4XL' => 'обиколка на гърдите 127 – 135 см' ),
             'perfclogs'    => array( 'XS' => '39 – 39,5', 'S' => '40 – 40,5', 'M' => '41 – 42', 'L' => '42,5 – 43', 'XL' => '44 – 44,5', 'XXL' => '45 – 46' ),
             'nyslipper'    => array( 'S' => '36 – 37', 'M' => '38 – 39', 'L' => '40 – 41', 'XL' => '42 – 43' ),
             'gripsocks'    => array( 'XS' => '35 – 38', 'S' => '38,5 – 43', 'M' => '44 – 47', 'L' => '47,5 – 49' ),
@@ -221,7 +221,7 @@ if ( ! function_exists( 'noriks_velikost_oznake' ) ) {
             'classics'     => array( 'XS-S' => '32 – 36', 'M-L' => '38 – 42', 'XL-2XL' => '44 – 48' ),
             'sr'           => array( 'S' => '59 – 68 kg', 'M' => '69 – 84 kg', 'L' => '84 – 95 kg', 'XL' => '96 – 113 kg', '2XL' => '114 – 129 kg', '3XL' => '130 – 150 kg' ),
             'boots'        => array( '37' => 'chodidlo do 22,8 cm', '38' => 'chodidlo do 23,4 cm', '39' => 'chodidlo do 24,0 cm', '40' => 'chodidlo do 24,6 cm', '41' => 'chodidlo do 25,2 cm', '42' => 'chodidlo do 25,8 cm', '43' => 'chodidlo do 26,4 cm', '44' => 'chodidlo do 27,0 cm', '45' => 'chodidlo do 27,6 cm', '46' => 'chodidlo do 28,2 cm', '47' => 'chodidlo do 28,8 cm', '48' => 'chodidlo do 29,4 cm' ),
-            'diskret'      => array( 'S' => 'košíky AA – B', 'M' => 'košíky B – F', 'L' => 'košíky F – G' ),
+            'diskret'      => array( 'S' => 'чашки AA – B', 'M' => 'чашки B – F', 'L' => 'чашки F – G' ),
             'buildshirt'   => array( 'XS' => 'do 86 cm', 'S' => '86 – 91 cm', 'M' => '91 – 97 cm', 'L' => '97 – 103 cm', 'XL' => '103 – 108 cm', '2XL' => '108 – 113 cm', '3XL' => '113 – 118 cm', '4XL' => '118 – 126 cm', '5XL' => '126 – 133 cm', '6XL' => '133 – 142 cm' ),
         );
         foreach ( $o as $tip => $m ) {

@@ -1,8 +1,8 @@
 <?php
 /**
- * NORIKS — upsell na stranici proizvoda ("Kupi zajedno i uštedi").
+ * NORIKS — upsell na stranici proizvoda ("Купи заедно и спести").
  *
- * Okvir se prikazuje ODMAH ISPOD gumba "Dodaj u košaricu" i nudi 4x Zelené boxerky
+ * Okvir se prikazuje ODMAH ISPOD gumba "Добави в количката" i nudi 4x Zelené boxerky
  * po istoj cijeni kao post-purchase upsell na thank you stranici (14,97 € za 3 kom).
  *
  * - Uključuje se ACF prekidačem `noriks_pp_upsell` (polje registrirano u KODU, dolje).
@@ -38,7 +38,7 @@ function noriks_pp_upsell_register_fields() {
 				'label'        => 'Zobraziť upsell pod tlačidlom (4x Zelené boxerky)',
 				'name'         => 'noriks_pp_upsell',
 				'type'         => 'true_false',
-				'instructions' => 'Pridá rámček "Kúpte spolu a ušetrite" hneď pod tlačidlo Pridať do košíka. Zákazník si vyberie veľkosť a 4 kusy sa pridajú za upsell cenu. Platí len pre tento produkt.',
+				'instructions' => 'Добавя кутия „Купете заедно и спестете" точно под бутона Добави в количката. Клиентът избира размер и 4 броя се добавят на upsell цена. Важи само за този продукт.',
 				'ui'           => 1,
 			),
 			array(
@@ -46,7 +46,7 @@ function noriks_pp_upsell_register_fields() {
 				'label'        => 'Zobraziť upsell #2 pod tlačidlom (2 tričká: čierne + sivé)',
 				'name'         => 'noriks_pp_upsell2',
 				'type'         => 'true_false',
-				'instructions' => 'Druhý upsell rámček: balíček 2 tričiek (1 čierne + 1 sivé), zákazník si vyberie jednu veľkosť pre obe. Nezávislý od prvého prepínača.',
+				'instructions' => 'Втора upsell кутия: пакет от 2 тениски (1 черна + 1 сива), клиентът избира един размер за двете. Независима от първия превключвател.',
 				'ui'           => 1,
 			),
 			array(
@@ -54,7 +54,7 @@ function noriks_pp_upsell_register_fields() {
 				'label'        => 'Zobraziť upsell #3 pod tlačidlom (kompresné tričko NORIKS FIT)',
 				'name'         => 'noriks_pp_upsell3',
 				'type'         => 'true_false',
-				'instructions' => 'Tretí upsell rámček: kompresné tričko NORIKS FIT, zákazník si vyberá veľkosť. Nezávislý od prvých dvoch prepínačov.',
+				'instructions' => 'Трета upsell кутия: компресионна тениска NORIKS FIT, клиентът избира размер. Независима от първите два превключвателя.',
 				'ui'           => 1,
 			),
 		),
@@ -77,7 +77,7 @@ function noriks_pp_upsell_config() {
 		'total'      => 19.99,                   // ista cijena kao thank you upsell (4 komada)
 		'title'      => '4x Modré boxerky',
 		'desc'       => 'Priedušné a mäkké — pridajte ich k objednávke so zľavou %s%%.', // %s = izracunati popust
-		'size_attr'  => 'Veľkosť',
+		'size_attr'  => 'Размер',
 		// Interna oznaka paketa (SKU konvencija kao kod bundle proizvoda + UPSELL na kraju).
 		'sku'        => 'NORIKS-BOX-BLUE-4-PACK-UPSELL',
 		// Kompozitna slika 4 komada na svijetlo sivoj podlozi (kvadratna).
@@ -125,7 +125,7 @@ function noriks_pp_upsell_sizes() {
 }
 
 /* ============================================================
- * 3) Prikaz okvira ispod gumba "Dodaj u košaricu"
+ * 3) Prikaz okvira ispod gumba "Добави в количката"
  * ============================================================ */
 add_action( 'woocommerce_after_add_to_cart_button', 'noriks_pp_upsell_render', 15 );
 function noriks_pp_upsell_render() {
@@ -165,7 +165,7 @@ function noriks_pp_upsell_render() {
 	noriks_pp_upsell_styles();
 	?>
 	<div class="npu-wrap">
-		<span class="npu-label">Kúpte spolu a ušetrite:</span>
+		<span class="npu-label">Купете заедно и спестете:</span>
 
 		<div class="npu-box" id="npu-box">
 			<div class="npu-grid">
@@ -188,10 +188,10 @@ function noriks_pp_upsell_render() {
 					<label class="npu-check">
 						<input type="checkbox" id="npu-toggle" name="noriks_pp_upsell" value="1">
 						<span class="npu-box-mark" aria-hidden="true"></span>
-						<span class="npu-check-text">Pridať k nákupu</span>
+						<span class="npu-check-text">Добави към покупката</span>
 					</label>
 
-					<select class="npu-size" name="noriks_pp_upsell_size" aria-label="Veľkosť boxeriek">
+					<select class="npu-size" name="noriks_pp_upsell_size" aria-label="Размер на боксерките">
 						<?php foreach ( array_keys( $sizes ) as $size ) : ?>
 							<option value="<?php echo esc_attr( $size ); ?>"><?php echo esc_html( $size ); ?></option>
 						<?php endforeach; ?>
@@ -458,14 +458,14 @@ function noriks_pp_upsell2_config() {
 		'product_a'  => 250,   // Crna majica (varijabilni proizvod) — nosi stavku u košarici
 		'product_b'  => 471,   // Siva majica (varijabilni proizvod)
 		'total'      => 16.99, // cijena cijelog paketa (2 komada)
-		'title'      => '1x Čierne + 1x Sivé tričko',
+		'title'      => '1x Черни + 1x Сива тениска',
 		'desc'       => 'Dve základné tričká v balíčku — pridajte ich k objednávke so zľavou %s%%.',
-		'size_attr'  => 'Veľkosť',
+		'size_attr'  => 'Размер',
 		'sku'        => 'NORIKS-SHIRTS-BLACK-GRAY-2-PACK-UPSELL',
 		'image'      => get_template_directory_uri() . '/img/upsell/upsell-2x-majici.png',
-		'label'      => 'Kúpte spolu a ušetrite:',
-		'add_text'   => 'Pridať k nákupu',
-		'aria'       => 'Veľkosť tričiek',
+		'label'      => 'Купете заедно и спестете:',
+		'add_text'   => 'Добави към покупката',
+		'aria'       => 'Размер tričiek',
 	) );
 }
 
@@ -640,8 +640,8 @@ function noriks_pp_upsell2_maybe_add( $cart_item_key, $product_id, $quantity, $v
 	$prod_a = wc_get_product( (int) $cfg['product_a'] );
 	$prod_b = wc_get_product( (int) $cfg['product_b'] );
 	$lines  = array(
-		( $prod_a ? $prod_a->get_name() : 'Čierne' ) . ' - ' . $size,
-		( $prod_b ? $prod_b->get_name() : 'Sivé tričko' ) . ' - ' . $size,
+		( $prod_a ? $prod_a->get_name() : 'Черни' ) . ' - ' . $size,
+		( $prod_b ? $prod_b->get_name() : 'Сива тениска' ) . ' - ' . $size,
 	);
 
 	// PAKET: jedna stavka (količina 1) s cijenom cijelog paketa.
@@ -846,13 +846,13 @@ function noriks_pp_upsell3_config() {
 		'total'      => 17.99,  // cijena za 1 komad
 		'title'      => 'Kompresné tričko NORIKS FIT',
 		'desc'       => 'Formuje siluetu a podporuje držanie tela — pridaj ho k objednávke so zľavou %s%%.',
-		'size_attr'  => 'Veľkosť',
+		'size_attr'  => 'Размер',
 		'sizes'      => array( 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL' ), // upsell nudi S–4XL
 		'sku'        => 'NORIKS-KOMPSFIT-1-UPSELL',
 		'image'      => '', // prazno => koristi se glavna slika proizvoda
-		'label'      => 'Kúpte spolu a ušetrite:',
-		'add_text'   => 'Pridať k nákupu',
-		'aria'       => 'Veľkosť trička',
+		'label'      => 'Купете заедно и спестете:',
+		'add_text'   => 'Добави към покупката',
+		'aria'       => 'Размер на тениската',
 	) );
 }
 
@@ -1048,7 +1048,7 @@ function noriks_pp_upsell3_order_item_meta( $item, $cart_item_key, $values, $ord
 		$cfg = noriks_pp_upsell3_config();
 		$item->update_meta_data( '_noriks_upsell_sku', sanitize_text_field( $cfg['sku'] ) );
 		if ( ! empty( $values['_noriks_pp_upsell_size'] ) ) {
-			$item->update_meta_data( 'Veľkosť', sanitize_text_field( $values['_noriks_pp_upsell_size'] ) );
+			$item->update_meta_data( 'Размер', sanitize_text_field( $values['_noriks_pp_upsell_size'] ) );
 		}
 	}
 }

@@ -185,7 +185,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<button class="pswp__button pswp__button--zoom" aria-label="<?php esc_attr_e( 'Zoom in/out', 'woocommerce' ); ?>"></button>
 				<button class="pswp__button pswp__button--fs" aria-label="<?php esc_attr_e( 'Toggle fullscreen', 'woocommerce' ); ?>"></button>
 				<button class="pswp__button pswp__button--share" aria-label="<?php esc_attr_e( 'Share', 'woocommerce' ); ?>"></button>
-				<button class="pswp__button2 pswp__button--close" aria-label="<?php esc_attr_e( 'Close (Esc)', 'woocommerce' ); ?>">Zatvoriť  <span class="close-x">
+				<button class="pswp__button2 pswp__button--close" aria-label="<?php esc_attr_e( 'Close (Esc)', 'woocommerce' ); ?>">Затвори  <span class="close-x">
     <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
         <line x1="18" y1="6" x2="6" y2="18" />
         <line x1="6" y1="6" x2="18" y2="18" />

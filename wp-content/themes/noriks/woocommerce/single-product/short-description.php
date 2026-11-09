@@ -123,14 +123,14 @@ if ( ! $short_description ) {
 
 <?php if ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ) : ?>
 <div class="nhs-usp">
-  <div class="nhs-usp-guarantee"><svg width="15" height="15" viewBox="0 0 24 24" style="flex:0 0 auto;"><circle cx="12" cy="12" r="12" fill="#7c3aed"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> 30-dňová záruka vrátenia peňazí</div>
+  <div class="nhs-usp-guarantee"><svg width="15" height="15" viewBox="0 0 24 24" style="flex:0 0 auto;"><circle cx="12" cy="12" r="12" fill="#7c3aed"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> 30-дневна гаранция за връщане на парите</div>
   <div class="nhs-usp-grid">
-    <div><span class="nhs-usp-ic">≈</span> Zmierňuje vrásky</div>
-    <div><span class="nhs-usp-ic">↓</span> Zmierňuje jemné vrásky</div>
-    <div><span class="nhs-usp-ic">♡</span> Zosvetľuje jazvy cez noc</div>
-    <div><span class="nhs-usp-ic">✚</span> Extra priľnavé</div>
-    <div><span class="nhs-usp-ic">✓</span> Opakovane použiteľné a odolné</div>
-    <div><span class="nhs-usp-ic">↗</span> Podporuje tvorbu kolagénu</div>
+    <div><span class="nhs-usp-ic">≈</span> Намалява бръчките</div>
+    <div><span class="nhs-usp-ic">↓</span> Намалява фините бръчки</div>
+    <div><span class="nhs-usp-ic">♡</span> Изсветлява белезите през нощта</div>
+    <div><span class="nhs-usp-ic">✚</span> Допълнително прилепващи</div>
+    <div><span class="nhs-usp-ic">✓</span> Многократна употреба и издръжливост</div>
+    <div><span class="nhs-usp-ic">↗</span> Подпомага изграждането на колаген</div>
   </div>
 </div>
 <style>
@@ -157,17 +157,17 @@ if ( ! $short_description ) {
 <!-- KidsNest: summary paket po tryneedo originalu (plava #2b3fb0, rdeca #c0452f) -->
 <div class="kn2-badge">
   <svg width="15" height="15" viewBox="0 0 24 24" style="flex:0 0 auto;"><circle cx="12" cy="12" r="12" fill="#2b7de0"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  <span>Odporúčané pediatrami</span>
+  <span>Препоръчано от педиатри</span>
 </div>
 <div class="kn2-below">
   <div class="kn2-trust">
-    <span><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" fill="#2b3fb0"/><path d="M8.5 12l2.5 2.5 4.5-4.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 90 nocí na vyskúšanie</span>
-    <span><svg width="18" height="14" viewBox="0 0 24 18"><rect x="1" y="3" width="13" height="10" rx="1.5" fill="#2b3fb0"/><path d="M14 6h4l4 4v3h-8z" fill="#2b3fb0"/><circle cx="6" cy="15" r="2.4" fill="#1b2450"/><circle cx="18" cy="15" r="2.4" fill="#1b2450"/></svg> Rýchle doručenie</span>
+    <span><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5l8-3z" fill="#2b3fb0"/><path d="M8.5 12l2.5 2.5 4.5-4.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 90 нощи за изпробване</span>
+    <span><svg width="18" height="14" viewBox="0 0 24 18"><rect x="1" y="3" width="13" height="10" rx="1.5" fill="#2b3fb0"/><path d="M14 6h4l4 4v3h-8z" fill="#2b3fb0"/><circle cx="6" cy="15" r="2.4" fill="#1b2450"/><circle cx="18" cy="15" r="2.4" fill="#1b2450"/></svg> Бърза доставка</span>
     <span><svg width="17" height="15" viewBox="0 0 24 20"><rect x="3" y="2" width="18" height="11" rx="2" fill="none" stroke="#2b3fb0" stroke-width="2"/><circle cx="12" cy="7.5" r="2.6" fill="#2b3fb0"/><path d="M2 17c3 2 7 3 10 3s7-1 10-3" fill="none" stroke="#2b3fb0" stroke-width="2" stroke-linecap="round"/></svg> Platba aj na dobierku</span>
   </div>
   <div class="kn2-redbox">
-    <p class="kn2-red-title"><svg width="14" height="13" viewBox="0 0 24 22" style="vertical-align:-2px;margin-right:6px;"><path d="M12 1L23 21H1L12 1z" fill="none" stroke="#c0452f" stroke-width="2.4" stroke-linejoin="round"/><path d="M12 8v6" stroke="#c0452f" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1.3" fill="#c0452f"/></svg>PRE RODIČOV DETÍ MLADŠÍCH AKO 9 ROKOV</p>
-    <p class="kn2-red-body">Každú noc na nesprávnom vankúši <strong class="kn2-red">sa tvár vášho dieťaťa formuje — nesprávnym smerom.</strong> Slintanie. Chrápanie. Otvorené ústa. Do <strong class="kn2-red">9. roku</strong> sa zmeny upevnia. Do <strong class="kn2-red">14.</strong> — drahý strojček na zuby. Do <strong class="kn2-red">18.</strong> — rozhovor o vážnejších zákrokoch. Detskí zubní lekári zameraní na dýchacie cesty to vídajú každý deň — prestali to nazývať zriedkavým. <strong class="kn2-red">Vymeňte vankúš ešte dnes večer.</strong></p>
+    <p class="kn2-red-title"><svg width="14" height="13" viewBox="0 0 24 22" style="vertical-align:-2px;margin-right:6px;"><path d="M12 1L23 21H1L12 1z" fill="none" stroke="#c0452f" stroke-width="2.4" stroke-linejoin="round"/><path d="M12 8v6" stroke="#c0452f" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1.3" fill="#c0452f"/></svg>ЗА РОДИТЕЛИ НА ДЕЦА ПОД 9 ГОДИНИ</p>
+    <p class="kn2-red-body">Всяка нощ на грешна възглавница <strong class="kn2-red">лицето на детето ви се оформя — в грешна посока.</strong> Лигавене. Хъркане. Отворена уста. До <strong class="kn2-red">9. roku</strong> sa zmeny upevnia. Do <strong class="kn2-red">14.</strong> — скъп апарат за зъби. До <strong class="kn2-red">18.</strong> — разговор за по-сериозни процедури. Детските зъболекари, специализирани в дихателните пътища, го виждат всеки ден — спряха да го наричат рядко. <strong class="kn2-red">Сменете възглавницата още тази вечер.</strong></p>
   </div>
 </div>
 <style>
@@ -265,11 +265,11 @@ if ( ! $short_description ) {
     var badge=document.querySelector('.kn2-badge'), title=document.querySelector('.product_title');
     if(badge&&title&&title.previousElementSibling!==badge){ title.parentNode.insertBefore(badge,title); }
     var sel=document.getElementById('bundle-selector');
-    /* Ribboni: strip ogenj + dodaj "Najlepšia hodnota" na 3. karto */
+    /* Ribboni: strip ogenj + dodaj "Най-изгодно" na 3. karto */
     document.querySelectorAll('.gck-popular-badge, .gck-popular-badge-2').forEach(function(b){ b.textContent=b.textContent.replace('🔥','').trim(); if(/Najobľúbenejšie/i.test(b.textContent)) b.textContent='Najobľúbenejšie'; });
     var cards=sel?sel.querySelectorAll('.bundle-option'):[];
     if(cards.length>=3 && !cards[2].querySelector('.kn2-ribbon') && !cards[2].querySelector('.gck-popular-badge, .gck-popular-badge-2')){
-      var rb=document.createElement('div'); rb.className='kn2-ribbon'; rb.textContent='Najlepšia hodnota'; cards[2].appendChild(rb);
+      var rb=document.createElement('div'); rb.className='kn2-ribbon'; rb.textContent='Най-изгодно'; cards[2].appendChild(rb);
     }
     /* Ikone (pouzece/30dni/dostava) + dostava-box prestavi POD accordion */
     var acc=document.querySelector('.summary .accordion')||document.querySelector('.accordion');
@@ -313,18 +313,18 @@ if ( ! $short_description ) {
 <!-- ErgoSit: zelena "preporuka" pilula (JS je premjesti odmah ispod naslova) + original-style checklista -->
 <div class="oj-recpill">
   <img src="<?php echo esc_url( get_template_directory_uri().'/img/ortopedski-jastuk/04_lijecnik_HR.png' ); ?>" alt="Lekár" class="oj-recpill-av" onerror="this.style.display='none'">
-  <span><strong>Odporúča dr. Marić</strong>&nbsp;|&nbsp;<em>Špecialista na chrbticu</em></span>
+  <span><strong>Препоръчано от д-р Марич</strong>&nbsp;|&nbsp;<em>Специалист по гръбначен стълб</em></span>
   <svg class="oj-recpill-check" width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#22b573"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </div>
 <!-- ErgoSit: mala "zaliha" pilula kao original (umjesto velikog crvenog countdown boxa) -->
 <div class="oj-stockpill">
   <svg width="15" height="15" viewBox="0 0 24 24" style="flex:0 0 auto;"><circle cx="12" cy="12" r="12" fill="#e5344a"/><path d="M12 6.5v7" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><circle cx="12" cy="17" r="1.5" fill="#fff"/></svg>
-  <em>Zostalo už len niekoľko kusov!</em>
+  <em>Останаха само няколко броя!</em>
 </div>
-<!-- ErgoSit: "narudžbe u 24h" red kao original (zeleni pulsirajući krug), JS ga stavi iznad ADD TO CART -->
+<!-- ErgoSit: "поръчки в 24 ч" red kao original (zeleni pulsirajući krug), JS ga stavi iznad ADD TO CART -->
 <div class="oj-orders">
   <span class="oj-orders-dot"></span>
-  <em><strong>128 objednávok</strong> za posledných <strong>24 hodín!</strong></em>
+  <em><strong>128 поръчки</strong> през последните <strong>24 часа!</strong></em>
 </div>
 <style>
   .oj-recpill { display: inline-flex; align-items: center; gap: 9px; background: #e9f8f0; border-radius: 999px; padding: 6px 16px 6px 7px; font-size: 13.5px; color: #1b1533; margin: 8px 0 12px; }
@@ -395,7 +395,7 @@ if ( ! $short_description ) {
     .oj-orders { margin: 0 0 8px !important; }
     .oj-orders em { font-size: 13px; }
   }
-  /* "narudžbe u 24h" red (zeleni pulsirajući krug) */
+  /* "поръчки в 24 ч" red (zeleni pulsirajući krug) */
   .oj-orders { display: flex; align-items: center; gap: 9px; margin: 12px 0 10px; }
   .oj-orders em { font-style: italic; font-size: 14px; color: #121030; }
   .oj-orders-dot { flex: 0 0 auto; width: 11px; height: 11px; border-radius: 50%; background: #17c964; box-shadow: 0 0 0 3px rgba(23,201,100,.25); animation: ojPulse 1.6s ease-in-out infinite; }
@@ -414,9 +414,9 @@ if ( ! $short_description ) {
     var stock = document.querySelector('.oj-stockpill');
     var badge = document.querySelector('.summary .price-badge');
     var price = document.querySelector('.summary .price');
-    var anchor = badge || price; /* iza "Najnižšia cena" badgea, da cijena+badge ostanu u istom redu */
+    var anchor = badge || price; /* iza "Най-ниска цена" badgea, da cijena+badge ostanu u istom redu */
     if ( stock && anchor && anchor.nextSibling !== stock ) { anchor.parentNode.insertBefore(stock, anchor.nextSibling); }
-    /* "narudžbe u 24h" iznad ADD TO CART gumba */
+    /* "поръчки в 24 ч" iznad ADD TO CART gumba */
     var orders = document.querySelector('.oj-orders');
     var cartBtn = document.querySelector('.single_add_to_cart_button');
     if ( orders && cartBtn && cartBtn.previousElementSibling !== orders ) { cartBtn.parentNode.insertBefore(orders, cartBtn); }
@@ -429,9 +429,9 @@ if ( ! $short_description ) {
 <?php // Polar NORIKS Cloth: zelena traka povjerenja ispod naslova, iznad kratkog opisa.
 if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) : ?>
 <div class="ncl-trust">
-  <span>Pre krištáľovo čisté sklo a sprchovacie kúty,</span>
+  <span>За кристално чисто стъкло и душ кабини,</span>
   <span class="ncl-trust-stars">★★★★★</span>
-  <span>dôveruje nám 138 452+ domácností</span>
+  <span>138 452+ домакинства ни се доверяват</span>
 </div>
 <style>
   .ncl-trust { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px;
