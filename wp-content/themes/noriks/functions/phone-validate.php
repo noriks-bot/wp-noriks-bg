@@ -6,15 +6,15 @@
  * Ne preverja predpon in NE zavraca stacionarnih stevilk (Dejan, 26. 8. 2026).
  * Tuje stevilke z + spusti, ce imajo 9-15 cifer.
  *
- * Poleg tega stevilko ob oddaji naročila tiho pretvori v mednarodno obliko (+421...),
+ * Poleg tega stevilko ob oddaji naročila tiho pretvori v mednarodno obliko (+359...),
  * ker je Metakocka del narocil zavracala samo zaradi presledkov in oklepajev.
  */
 
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'NORIKS_TEL_CC',    '421' );
+define( 'NORIKS_TEL_CC',    '359' );
 define( 'NORIKS_TEL_TRUNK', '0' );
-define( 'NORIKS_TEL_MIN',   9 );
+define( 'NORIKS_TEL_MIN',   8 );
 define( 'NORIKS_TEL_MAX',   12 );
 
 /**
@@ -78,7 +78,7 @@ function noriks_tel_intl( $raw ) {
 
 /* Primer stevilke — enak, kot ga ze izrisemo pod poljem
    (css/checkout.css, #billing_phone_field::after). */
-define( 'NORIKS_TEL_EXAMPLE', '0912123456' );
+define( 'NORIKS_TEL_EXAMPLE', '0888123456' );
 
 /** Sporocilo ob napacni stevilki — eno samo mesto za ves trg. */
 function noriks_tel_message() {

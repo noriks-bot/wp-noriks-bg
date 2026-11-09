@@ -83,12 +83,12 @@
       
      
       
-    <div class="size-chart-titlebar" style="padding:14px 16px;border-bottom:1px solid #eee;"><h2 style="margin:0;font-size:18px;">Tabuľka veľkostí</h2></div>
+    <div class="size-chart-titlebar" style="padding:14px 16px;border-bottom:1px solid #eee;"><h2 style="margin:0;font-size:18px;">Таблица с размери</h2></div>
 <div style="padding:16px;width:100%;">
 <div class="noriks-bx-wrap">
           <table class="noriks-bx-t">
             <thead>
-              <tr><th>Veľkosť</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>2XL</th><th>3XL</th><th>4XL</th></tr>
+              <tr><th>Размер</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>2XL</th><th>3XL</th><th>4XL</th></tr>
             </thead>
             <tbody>
               <tr><th>a</th><td>32</td><td>34</td><td>36</td><td>38</td><td>40</td><td>42</td><td>44</td></tr>
@@ -99,8 +99,8 @@
           </table>
         </div>
         <img class="noriks-bx-fig" src="<?php echo esc_url( get_template_directory_uri() . '/img/boxers-measure.webp' ); ?>"
-             alt="Rozmery boxeriek: a, b, c, d" loading="lazy">
-        <p class="noriks-bx-note"><strong>Vyberte rovnaké číslo, aké bežne nosíte.</strong><br>Rozmery sú v centimetroch. Veľkosti sa môžu líšiť o &plusmn;1&ndash;2 cm. Ak ste medzi dvoma veľkosťami, zvoľte menšiu &mdash; materiál je pružný.</p>
+             alt="Размери на боксерките: a, b, c, d" loading="lazy">
+        <p class="noriks-bx-note"><strong>Изберете същото число, което обикновено носите.</strong><br>Размерите са в сантиметри. Размерите може да се различават с &plusmn;1&ndash;2 cm. Ако сте между два размера, изберете по-малкия &mdash; материалът е еластичен.</p>
 </div>
       
       

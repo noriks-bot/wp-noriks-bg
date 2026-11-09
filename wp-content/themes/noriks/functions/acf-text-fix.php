@@ -17,8 +17,8 @@ if ( ! function_exists( 'noriks_no_free_exchange' ) ) {
      */
     function noriks_no_free_exchange( $txt ) {
         if ( ! is_string( $txt ) || $txt === '' ) { return $txt; }
-        $free = 'besplatn\w*|brezplačn\w*|bezplatn\w*|bezpłatn\w*|darmow\w*|gratuit\w*|δωρεάν|kostenlos\w*|ingyenes|free';
-        $exch = 'zamjen\w*|zamenjav\w*|výmen\w*|výměn\w*|wymian\w*|schimb\w*|ανταλλαγ\w*|αλλαγ\w*|Umtausch\w*|cseré\w*|csere|cambi\w*|exchange\w*';
+        $free = 'безплатн\w*|besplatn\w*|brezplačn\w*|bezplatn\w*|bezpłatn\w*|darmow\w*|gratuit\w*|δωρεάν|kostenlos\w*|ingyenes|free';
+        $exch = 'замян\w*|замен\w*|подмян\w*|zamjen\w*|zamenjav\w*|výmen\w*|výměn\w*|wymian\w*|schimb\w*|ανταλλαγ\w*|αλλαγ\w*|Umtausch\w*|cseré\w*|csere|cambi\w*|exchange\w*';
         $txt = preg_replace( '/\b(?:' . $free . ')\s+(' . $exch . ')/iu', '$1', $txt );
         $txt = preg_replace( '/\b(' . $exch . ')\s+(?:' . $free . ')\b/iu', '$1', $txt );
         return preg_replace( '/\s{2,}/u', ' ', $txt );

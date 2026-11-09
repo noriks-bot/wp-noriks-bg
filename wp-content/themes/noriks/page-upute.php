@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Návod na použitie
+ * Template Name: Инструкции за употреба
  *
  * Popis proizvoda s PDF uputama u dva stupca, sa slikom proizvoda i pretragom.
  */
@@ -12,11 +12,11 @@ $dir_path = get_template_directory() . '/manuals/';
 <div class="nmn">
   <div class="nmn-wrap">
     <h1 class="nmn-title"><?php echo esc_html( get_the_title() ); ?></h1>
-    <p class="nmn-sub">Stiahnite si návod pre svoj produkt NORIKS vo formáte PDF.</p>
+    <p class="nmn-sub">Изтеглете инструкцията за своя продукт NORIKS във формат PDF.</p>
 
     <div class="nmn-search">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input type="search" id="nmn-q" placeholder="Hľadať podľa názvu produktu…" autocomplete="off">
+      <input type="search" id="nmn-q" placeholder="Търсене по име на продукт…" autocomplete="off">
     </div>
 
     <div class="nmn-grid" id="nmn-grid">
@@ -42,10 +42,10 @@ $dir_path = get_template_directory() . '/manuals/';
             <p class="nmn-kind"><?php echo esc_html( $m['sub'] ); ?></p>
             <p class="nmn-links">
               <a class="nmn-btn" href="<?php echo esc_url( $dir_url . $m['file'] ); ?>" target="_blank" rel="noopener">
-                Stiahnuť PDF <span>(<?php echo esc_html( $size ); ?>)</span>
+                Изтегли PDF <span>(<?php echo esc_html( $size ); ?>)</span>
               </a>
               <?php if ( $p['url'] ) : ?>
-                <a class="nmn-link" href="<?php echo esc_url( $p['url'] ); ?>">Stránka produktu</a>
+                <a class="nmn-link" href="<?php echo esc_url( $p['url'] ); ?>">Страница на продукта</a>
               <?php endif; ?>
             </p>
           </div>
@@ -53,8 +53,8 @@ $dir_path = get_template_directory() . '/manuals/';
       <?php endforeach; ?>
     </div>
 
-    <p class="nmn-empty" id="nmn-empty" hidden>Pre tento výraz nie sú žiadne návody. Napíšte nám na <a href="mailto:info@noriks.com">info@noriks.com</a>.</p>
-    <p class="nmn-help">Potrebujete pomoc s produktom? Napíšte nám na <a href="mailto:info@noriks.com">info@noriks.com</a>.</p>
+    <p class="nmn-empty" id="nmn-empty" hidden>За този израз няма инструкции. Пишете ни на <a href="mailto:info@noriks.com">info@noriks.com</a>.</p>
+    <p class="nmn-help">Нужна ли ви е помощ с продукт? Пишете ни на <a href="mailto:info@noriks.com">info@noriks.com</a>.</p>
   </div>
 </div>
 

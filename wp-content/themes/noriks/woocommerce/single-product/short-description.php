@@ -266,7 +266,7 @@ if ( ! $short_description ) {
     if(badge&&title&&title.previousElementSibling!==badge){ title.parentNode.insertBefore(badge,title); }
     var sel=document.getElementById('bundle-selector');
     /* Ribboni: strip ogenj + dodaj "Най-изгодно" na 3. karto */
-    document.querySelectorAll('.gck-popular-badge, .gck-popular-badge-2').forEach(function(b){ b.textContent=b.textContent.replace('🔥','').trim(); if(/Najobľúbenejšie/i.test(b.textContent)) b.textContent='Najobľúbenejšie'; });
+    document.querySelectorAll('.gck-popular-badge, .gck-popular-badge-2').forEach(function(b){ b.textContent=b.textContent.replace('🔥','').trim(); if(/Най-популярно/i.test(b.textContent)) b.textContent='Най-популярно'; });
     var cards=sel?sel.querySelectorAll('.bundle-option'):[];
     if(cards.length>=3 && !cards[2].querySelector('.kn2-ribbon') && !cards[2].querySelector('.gck-popular-badge, .gck-popular-badge-2')){
       var rb=document.createElement('div'); rb.className='kn2-ribbon'; rb.textContent='Най-изгодно'; cards[2].appendChild(rb);
@@ -312,7 +312,7 @@ if ( ! $short_description ) {
 <?php if ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ) : ?>
 <!-- ErgoSit: zelena "preporuka" pilula (JS je premjesti odmah ispod naslova) + original-style checklista -->
 <div class="oj-recpill">
-  <img src="<?php echo esc_url( get_template_directory_uri().'/img/ortopedski-jastuk/04_lijecnik_HR.png' ); ?>" alt="Lekár" class="oj-recpill-av" onerror="this.style.display='none'">
+  <img src="<?php echo esc_url( get_template_directory_uri().'/img/ortopedski-jastuk/04_lijecnik_HR.png' ); ?>" alt="Лекар" class="oj-recpill-av" onerror="this.style.display='none'">
   <span><strong>Препоръчано от д-р Марич</strong>&nbsp;|&nbsp;<em>Специалист по гръбначен стълб</em></span>
   <svg class="oj-recpill-check" width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#22b573"/><path d="M7 12.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </div>

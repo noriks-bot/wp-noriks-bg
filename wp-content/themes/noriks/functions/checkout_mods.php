@@ -315,15 +315,15 @@ add_action( 'wp_footer', function() {
     <script id="noriks-checkout-validation">
     jQuery(function($){
       var messages = {
-        required: '\u2715 Povinná informácia',
-        billing_address_2: '\u2715 Ak nemáte číslo domu, napíšte BB',
+        required: '\u2715 Задължително поле',
+        billing_address_2: '\u2715 Ако няма номер на сграда, напишете BB',
       };
       var submitted = false; /* only validate after first submit attempt */
       /* Set submitted=true when WC native button is clicked */
       $('form.checkout').on('checkout_place_order', function(){ submitted = true; });
       $(document).on('click', '#place_order', function(){
         submitted = true;
-        $(this).css('opacity','0.6').text('Spracovanie...');
+        $(this).css('opacity','0.6').text('Обработка...');
         $('form.checkout').css({'opacity':'0.4','pointer-events':'none','transition':'opacity 0.3s'});
       });
       $(document.body).on('checkout_error', function(){
@@ -379,7 +379,7 @@ add_action( 'wp_footer', function() {
 
         /* Email format */
         if (isEmail && val && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
-          showError($row, '\u2715 Zadajte platnú e-mailovú adresu');
+          showError($row, '\u2715 Въведете валиден имейл адрес');
           return false;
         }
 
@@ -392,7 +392,7 @@ add_action( 'wp_footer', function() {
             ? TEL.ok(val)
             : val.replace(/\D/g,'').length >= 6;
           if (!telOk) {
-            showError($row, '\u2715 ' + ((TEL && TEL.msg) || 'Zadajte platné telefónne číslo'));
+            showError($row, '\u2715 ' + ((TEL && TEL.msg) || 'Въведете валиден телефонен номер'));
             return false;
           }
         }
@@ -498,18 +498,18 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     // Labels, placeholders, required
     $fields['billing']['billing_first_name']['label'] = 'Име';
     $fields['billing']['billing_first_name']['placeholder'] = 'Име';
-    $fields['billing']['billing_last_name']['label'] = 'Priezvisko';
-    $fields['billing']['billing_last_name']['placeholder'] = 'Priezvisko';
-    $fields['billing']['billing_address_1']['label'] = 'Ulica';
-    $fields['billing']['billing_address_1']['placeholder'] = 'Ulica';
+    $fields['billing']['billing_last_name']['label'] = 'Фамилия';
+    $fields['billing']['billing_last_name']['placeholder'] = 'Фамилия';
+    $fields['billing']['billing_address_1']['label'] = 'Улица';
+    $fields['billing']['billing_address_1']['placeholder'] = 'Улица';
     $fields['billing']['billing_address_2']['label'] = 'Номер на сграда';
     $fields['billing']['billing_address_2']['placeholder'] = 'Номер на сграда';
     $fields['billing']['billing_address_2']['required'] = true;
-    $fields['billing']['billing_postcode']['label'] = 'PSČ';
-    $fields['billing']['billing_postcode']['placeholder'] = 'PSČ';
-    $fields['billing']['billing_city']['label'] = 'Mesto';
-    $fields['billing']['billing_city']['placeholder'] = 'Mesto';
-    $fields['billing']['billing_phone']['label'] = 'Telefón';
+    $fields['billing']['billing_postcode']['label'] = 'Пощенски код';
+    $fields['billing']['billing_postcode']['placeholder'] = 'Пощенски код';
+    $fields['billing']['billing_city']['label'] = 'Град';
+    $fields['billing']['billing_city']['placeholder'] = 'Град';
+    $fields['billing']['billing_phone']['label'] = 'Телефон';
     $fields['billing']['billing_phone']['placeholder'] = 'Номер на мобилен телефон';
     $fields['billing']['billing_phone']['required'] = true;
     /* Description injected via JS to survive update_checkout AJAX re-renders */
@@ -547,7 +547,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
  * Tu privzete vrednosti nadomestimo z nasimi, da JS ne more nic prepisati.
  */
 add_filter( 'woocommerce_get_country_locale', function( $locale ) {
-    $a1 = array( 'label' => 'Ulica', 'placeholder' => 'Ulica', 'required' => true );
+    $a1 = array( 'label' => 'Улица', 'placeholder' => 'Улица', 'required' => true );
     $a2 = array( 'label' => 'Номер на сграда', 'placeholder' => 'Номер на сграда', 'required' => true );
     foreach ( array( 'default', 'BG' ) as $cc ) {
         if ( ! isset( $locale[ $cc ] ) || ! is_array( $locale[ $cc ] ) ) {
@@ -614,7 +614,7 @@ add_action( 'woocommerce_cart_calculate_fees', function( $cart ) {
 
     $chosen_gateway = WC()->session->get( 'chosen_payment_method' );
     if ( $chosen_gateway === 'cod' ) {
-        $cart->add_fee( 'Dobierka', 1.99, false );
+        $cart->add_fee( 'Наложен платеж', 1.99, false );
     }
 });
 
@@ -649,7 +649,7 @@ add_action('woocommerce_review_order_before_submit', function(){
             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z'%3E%3C/path%3E%3Cline x1='7' y1='7' x2='7.01' y2='7'%3E%3C/line%3E%3C/svg%3E" style="width:14px;height:14px;vertical-align:middle;" /><span style="vertical-align:middle;">Zadajte kód kupónu</span>
         </button>
         <div id="noriks-coupon-expanded" style="display:none;gap:8px;align-items:center;">
-            <input type="text" id="noriks_coupon_code" placeholder="Kód kupónu" style="flex:1;padding:10px 14px;border:1px solid #ccc;border-radius:6px;font-size:14px;" />
+            <input type="text" id="noriks_coupon_code" placeholder="Код на купон" style="flex:1;padding:10px 14px;border:1px solid #ccc;border-radius:6px;font-size:14px;" />
             <button type="button" style="padding:10px 20px;background:#000;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;" onclick="noriksApplyCoupon(this)">Приложи</button>
             <button type="button" style="padding:8px 10px;background:none;border:1px solid #ddd;border-radius:6px;font-size:14px;color:#999;cursor:pointer;line-height:1;" onclick="this.parentElement.style.display='none';document.getElementById('noriks-coupon-btn').style.display='inline-flex';">✕</button>
         </div>
@@ -750,11 +750,11 @@ add_action( 'wp_footer', function () {
     }
     $labels = array(
         'billing_first_name' => 'Име',
-        'billing_last_name' => 'Priezvisko',
-        'billing_address_1' => 'Ulica',
+        'billing_last_name' => 'Фамилия',
+        'billing_address_1' => 'Улица',
         'billing_address_2' => 'Номер на сграда',
-        'billing_postcode' => 'PSČ',
-        'billing_city' => 'Mesto',
+        'billing_postcode' => 'Пощенски код',
+        'billing_city' => 'Град',
     );
     ?>
     <script id="noriks-address-labels">

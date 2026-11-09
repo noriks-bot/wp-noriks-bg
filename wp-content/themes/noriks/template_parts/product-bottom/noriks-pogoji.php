@@ -27,16 +27,16 @@ $npg_ink     = $npg_svetlo > 0.5 ? noriks_pogoji_mesaj( $npg_barva, 0, 0.45 ) : 
 $npg_krog    = noriks_pogoji_mesaj( $npg_barva, 255, 0.86 );
 $npg_svg     = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
 $npg_el      = array(
-	array( '<path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/><path d="M12 8v4l2.6 2"/>', '30 dní', 'na vrátenie peňazí' ),
+	array( '<path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/><path d="M12 8v4l2.6 2"/>', '30 дни', 'за връщане на парите' ),
 	array( '<path d="M2.5 6.5h11v9h-11z"/><path d="M13.5 9.5h4l3 3.2v2.8h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/>', 'Doprava zadarmo', 'nad 70 €' ),
-	array( '<rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/>', 'Platba na dobierku', 'zaplatíte, keď príde balík' ),
-	array( '<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.8 5 5.8"/>', '120 000 zákazníkov', 'priemerné hodnotenie 4,8' ),
+	array( '<rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/>', 'Плащане при доставка', 'плащате, когато дойде пратката' ),
+	array( '<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.2c2.9.3 5 2.8 5 5.8"/>', '120 000 клиенти', 'средна оценка 4,8' ),
 );
 ?>
 <div class="npg" style="--npg-ink:<?php echo esc_attr( $npg_ink ); ?>;--npg-krog:<?php echo esc_attr( $npg_krog ); ?>">
-	<div class="npg__kicker">Nakupujte bez obáv</div>
+	<div class="npg__kicker">Пазарувайте без притеснение</div>
 	<h2 class="npg__h2">S NORIKS nakupujete <em>bez rizika</em></h2>
-	<p class="npg__p">Vyskúšajte <?php echo esc_html( $npg_izdelek ); ?> doma – 30 dní na vrátenie, bez otázok.</p>
+	<p class="npg__p">Опитайте <?php echo esc_html( $npg_izdelek ); ?> вкъщи – 30 дни за връщане, без въпроси.</p>
 	<div class="npg__red">
 		<?php foreach ( $npg_el as $e ) : ?>
 		<div class="npg__k"><span class="npg__i"><?php echo $npg_svg . $e[0]; ?></svg></span><strong><?php echo esc_html( $e[1] ); ?></strong><span class="npg__s"><?php echo esc_html( $e[2] ); ?></span></div>

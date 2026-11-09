@@ -63,12 +63,12 @@
 	$nf_col4_c  = get_field( 'footer_midle_col4_content', 'option' );
 	$nf_brand   = get_field( 'footer_brand_desc', 'option' );
 	if ( ! $nf_brand ) {
-		$nf_brand = 'NORIKS je európska značka výrobkov na každodenné použitie. Zameriavame sa na kvalitu, pohodlie a férové ceny — dôveruje nám už viac ako 120 000 zákazníkov.';
+		$nf_brand = 'NORIKS е европейска марка продукти за всекидневна употреба. Фокусираме се върху качеството, комфорта и честните цени — вече над 120 000 клиенти ни се доверяват.';
 	}
 	$nf_bg      = get_field( 'footer_bg_image', 'option' ); // background photo behind the brand band
 	$nf_legal   = get_field( 'footer_legal_text', 'option' );
 	if ( ! $nf_legal ) {
-		$nf_legal = 'NORIKS BRAND. Všetky práva vyhradené. Ceny zahŕňajú DPH. Obrázky sú ilustračné.';
+		$nf_legal = 'NORIKS BRAND. Всички права запазени. Цените включват ДДС. Изображенията са илюстративни.';
 	}
 	?>
 
@@ -78,19 +78,19 @@
 		<section class="nf-signup">
 			<div class="nf-wrap nf-signup-grid">
 				<div class="nf-signup-copy">
-					<h2 class="nf-signup-title">Pridaj sa do rodiny NORIKS</h2>
+					<h2 class="nf-signup-title">Присъедини се към семейството NORIKS</h2>
 					<p class="nf-signup-sub">Ексклузивни оферти и новини за продуктите — ще научиш пръв.</p>
 				</div>
 				<div class="nf-signup-form-col">
 					<form class="nf-signup-form" data-klaviyo-list="<?php echo esc_attr( $nf_klaviyo_list ); ?>" novalidate>
-						<label class="nf-field-label" for="nf-email">Tvoj e-mail *</label>
+						<label class="nf-field-label" for="nf-email">Твоят имейл *</label>
 						<div class="nf-field-row">
-							<input type="email" id="nf-email" name="email" class="nf-input" placeholder="Tvoja e-mailová adresa" required autocomplete="email">
+							<input type="email" id="nf-email" name="email" class="nf-input" placeholder="Твоят имейл адрес" required autocomplete="email">
 							<button type="submit" class="nf-btn nf-btn-light">Абонирай се</button>
 						</div>
 						<p class="nf-signup-note">
 							С абонирането се съгласяваш да получаваш имейли. Можеш да се отпишеш по всяко време.
-							<a href="/sk/ochrana-osobnych-udajov/">Политика за поверителност.</a>
+							<a href="/bg/ochrana-osobnych-udajov/">Политика за поверителност.</a>
 						</p>
 						<p class="nf-signup-msg" role="status" aria-live="polite"></p>
 					</form>
@@ -106,7 +106,7 @@
 
 				<div class="nf-brand-col">
 					<p class="nf-brand-desc"><?php echo esc_html( $nf_brand ); ?></p>
-					<a class="nf-btn nf-btn-outline" href="/sk/shop">Пазарувай сега</a>
+					<a class="nf-btn nf-btn-outline" href="/bg/shop">Пазарувай сега</a>
 				</div>
 
 				<nav class="nf-links">
@@ -122,7 +122,7 @@
 								<a href="<?php echo esc_url( $item['link'] ); ?>"><?php echo esc_html( $item['text'] ); ?></a>
 							<?php endforeach; endif; ?>
 							<?php if ( ! $nf_has_upute ) : ?>
-								<a href="/sk/navody/">Инструкции за употреба</a>
+								<a href="/bg/navody/">Инструкции за употреба</a>
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
@@ -202,10 +202,10 @@
 			var list  = form.getAttribute('data-klaviyo-list') || '';
 			var email = (form.querySelector('#nf-email') || {}).value || '';
 			if (!email || email.indexOf('@') === -1) {
-				msg.textContent = 'Zadaj platnú e-mailovú adresu.'; msg.className = 'nf-signup-msg is-error'; return;
+				msg.textContent = 'Въведи валиден имейл адрес.'; msg.className = 'nf-signup-msg is-error'; return;
 			}
 			if (!list || list === 'REPLACE_LIST_ID') {
-				msg.textContent = 'Newsletter ešte nie je prepojený (chýba Klaviyo List ID).'; msg.className = 'nf-signup-msg is-error'; return;
+				msg.textContent = 'Бюлетинът още не е свързан (липсва Klaviyo List ID).'; msg.className = 'nf-signup-msg is-error'; return;
 			}
 			msg.textContent = 'Prihlasujem…'; msg.className = 'nf-signup-msg';
 			var body = 'g=' + encodeURIComponent(list) + '&email=' + encodeURIComponent(email) + '&$fields=&$list_fields=';
@@ -215,14 +215,14 @@
 				body: body
 			}).then(function (r) { return r.json(); }).then(function (d) {
 				if (d && d.success) {
-					msg.textContent = 'Ďakujeme! Skontroluj si e-mail pre potvrdenie.'; msg.className = 'nf-signup-msg is-ok';
+					msg.textContent = 'Благодарим! Провери имейла си за потвърждение.'; msg.className = 'nf-signup-msg is-ok';
 					form.reset();
 				} else {
-					msg.textContent = (d && d.errors && d.errors[0]) ? d.errors[0] : 'Niečo sa pokazilo, skús to znova.';
+					msg.textContent = (d && d.errors && d.errors[0]) ? d.errors[0] : 'Нещо се обърка, опитай отново.';
 					msg.className = 'nf-signup-msg is-error';
 				}
 			}).catch(function () {
-				msg.textContent = 'Niečo sa pokazilo, skús to znova.'; msg.className = 'nf-signup-msg is-error';
+				msg.textContent = 'Нещо се обърка, опитай отново.'; msg.className = 'nf-signup-msg is-error';
 			});
 		});
 	})();

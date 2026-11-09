@@ -239,7 +239,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
 
 /* ===== Field descriptions via CSS ::after ===== */
 #billing_email_field::after {
-  content: 'Pre potvrdenie objednávky a sledovanie zásielky';
+  content: 'За потвърждение на поръчката и следене на пратката';
   display: block;
   font-size: 13px;
   color: #5f6061;
@@ -252,7 +252,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
   position: relative !important;
 }
 #billing_phone_field::after {
-  content: 'Príklad: 0912123456' !important;
+  content: 'Пример: 0888123456' !important;
   position: absolute !important;
   left: 0 !important;
   bottom: -20px !important;
@@ -261,7 +261,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
   line-height: 1.4 !important;
 }
 #billing_phone_field::before {
-  content: 'Určené na pomoc pri doručovaní' !important;
+  content: 'Помага при доставката' !important;
   position: absolute !important;
   right: 0 !important;
   bottom: -20px !important;
@@ -405,10 +405,10 @@ body.woocommerce-checkout .noriks-order-summary .review-product-info div {
   font-weight: 500 !important;
 }
 
-/* More space between total and Naruči button */
+/* Vec prostora med skupnim zneskom in gumbom Narocilo */
 .noriks-order-summary .vigo-checkout-total__sum { margin-bottom: 10px !important; }
 
-/* SK: Ulica + Číslo domu full width on desktop */
+/* BG: Ulica + Hisna stevilka cez celotno sirino na namizju */
 @media (min-width: 576px) {
   p#billing_address_1_field,
   p#billing_address_2_field {
@@ -418,7 +418,7 @@ body.woocommerce-checkout .noriks-order-summary .review-product-info div {
   }
 }
 
-/* SK: PSČ + Mesto 50/50 on desktop */
+/* BG: Postna stevilka + Mesto 50/50 na namizju */
 @media (min-width: 576px) {
   p#billing_postcode_field {
     clear: both !important;

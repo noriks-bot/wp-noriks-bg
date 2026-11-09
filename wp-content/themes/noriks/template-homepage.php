@@ -47,10 +47,10 @@ get_header(); ?>
 
   <div class="hero__content">
     <!--<p class="hero__eyebrow">NOVO: NORIKS </p>-->
-    <h1 class="hero__title">Tričko, ktoré rieši všetky problémy.
+    <h1 class="hero__title">Тениската, която решава всички проблеми.
 </h1>
 
-    <a class="hero__btn" href="/sk/shop">NAKUPUJTE TERAZ
+    <a class="hero__btn" href="/bg/shop">КУПЕТЕ СЕГА
 </a>
   </div>
 </section>
@@ -173,16 +173,16 @@ get_header(); ?>
   
   <section class="collections">
   <div class="collections__header">
-    <h2 class="collections__title">Nakupujte podľa kolekcie</h2>
+    <h2 class="collections__title">Пазарувайте по колекция</h2>
 
-    <a class="collections__cta" href="/sk/shop">
-      Všetky produkty<span aria-hidden="true">›</span>
+    <a class="collections__cta" href="/bg/shop">
+      Всички продукти<span aria-hidden="true">›</span>
     </a>
   </div>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="/sk/product-category/tricka/">
+    <a class="collection-card" href="/bg/product-category/tricka/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
@@ -193,10 +193,10 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Tričká</h3>
+            <h3 class="collection-card__name">Тениски</h3>
           </div>
           <p class="collection-card__desc">
-           Pohodlie po celý deň. Bez sťahovania.
+           Комфорт през целия ден. Без стягане.
           </p>
         </div>
 
@@ -205,7 +205,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="/sk/product-category/boxerky/">
+    <a class="collection-card" href="/bg/product-category/boxerky/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -216,10 +216,10 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Boxerky</h3>
+            <h3 class="collection-card__name">Боксерки</h3>
           </div>
           <p class="collection-card__desc">
-          Mäkké. Priedušné. Spoľahlivé.
+          Меки. Дишащи. Надеждни.
 
           </p>
         </div>
@@ -229,7 +229,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 3 -->
-    <a class="collection-card" href="/sk/product-category/sady/">
+    <a class="collection-card" href="/bg/product-category/sady/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-kompleti.jpeg"
@@ -240,11 +240,11 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Sady</h3>
+            <h3 class="collection-card__name">Комплекти</h3>
        
           </div>
           <p class="collection-card__desc">
-Najlepšia hodnota za balenie.
+Най-добра стойност в пакет.
           </p>
         </div>
 
@@ -264,12 +264,12 @@ Najlepšia hodnota za balenie.
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Štartovací balík</h3>
+            <h3 class="collection-card__name">Стартов пакет</h3>
            
            
           </div>
           <p class="collection-card__desc">
-Vyskúšaj NORIKS za výhodnejšiu cenu.
+Опитайте NORIKS на по-изгодна цена.
 
           </p>
         </div>
@@ -661,8 +661,8 @@ a:hover {
       <?php echo get_field("homepage_section_2_t1"); ?>
     </h2>
 
-    <a class="collections__cta" href="/sk/shop">
-      Všetky produkty  <span aria-hidden="true">›</span>
+    <a class="collections__cta" href="/bg/shop">
+      Всички продукти  <span aria-hidden="true">›</span>
     </a>
   </div>
 
