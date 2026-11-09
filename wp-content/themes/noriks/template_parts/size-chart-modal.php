@@ -263,7 +263,7 @@
     
     style="margin-top: 70px;margin-bottom: 70px;"
     
-      src="https://noriks.com/sk/wp-content/uploads/2026/02/Nogavice_tabela_velikosti_sk.png"
+      src="https://noriks.com/bg/wp-content/uploads/2026/02/Nogavice_tabela_velikosti_sk.png"
       alt="Size Guide">
       
       
@@ -275,7 +275,7 @@
     
     style="margin-top: 35px;margin-bottom: 0px;"
     
-      src="https://noriks.com/sk/wp-content/uploads/2026/04/sk_majice.jpeg"
+      src="https://noriks.com/bg/wp-content/uploads/2026/04/sk_majice.jpeg"
       alt="Size Guide">
       
       

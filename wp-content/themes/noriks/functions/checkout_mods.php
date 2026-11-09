@@ -519,7 +519,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_email']['description'] = 'Pre potvrdenie objednávky a sledovanie zásielky';
     $fields['billing']['billing_email']['required'] = true;
-    $fields['billing']['billing_country']['default'] = 'SK';
+    $fields['billing']['billing_country']['default'] = 'BG';
     unset( $fields['billing']['billing_company'] );
 
     // Vigoshop CSS classes
@@ -549,7 +549,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
 add_filter( 'woocommerce_get_country_locale', function( $locale ) {
     $a1 = array( 'label' => 'Ulica', 'placeholder' => 'Ulica', 'required' => true );
     $a2 = array( 'label' => 'Číslo domu', 'placeholder' => 'Číslo domu', 'required' => true );
-    foreach ( array( 'default', 'SK' ) as $cc ) {
+    foreach ( array( 'default', 'BG' ) as $cc ) {
         if ( ! isset( $locale[ $cc ] ) || ! is_array( $locale[ $cc ] ) ) {
             $locale[ $cc ] = array();
         }
@@ -590,7 +590,7 @@ add_action( 'woocommerce_before_checkout_billing_form', function() {
     echo '<h3 class="checkout-billing-title">Platba a doprava</h3>';
 });
 
-add_filter( 'default_checkout_billing_country', function() { return 'SK'; });
+add_filter( 'default_checkout_billing_country', function() { return 'BG'; });
 add_filter( 'woocommerce_order_button_text', function() { return 'Objednať'; });
 
 /**

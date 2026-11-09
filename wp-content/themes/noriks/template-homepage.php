@@ -253,7 +253,7 @@ Najlepšia hodnota za balenie.
     </a>
     
     <!-- Card 3 -->
-    <a class="collection-card" href="https://noriks.com/sk/product-category/startovaci-balicek/">
+    <a class="collection-card" href="https://noriks.com/bg/product-category/startovaci-balicek/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"

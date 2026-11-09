@@ -616,7 +616,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <img src="https://static.devit.software/countries/flags/rectangle/pl.svg"><span>Poland (PL)</span>
   </a>
 
-  <a href="https://noriks.com/sk" class="language-option">
+  <a href="https://noriks.com/bg" class="language-option">
     <img src="https://static.devit.software/countries/flags/rectangle/sk.svg"><span>Slovakia (SK)</span>
   </a>
 

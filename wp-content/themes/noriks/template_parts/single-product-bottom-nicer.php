@@ -67,7 +67,7 @@ if (  has_term( array( 'startovaci-balicek','orto-starter' ), 'product_cat', get
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="" src="https://noriks.com/sk/wp-content/uploads/2026/02/starter-1_sk.png">
+          <img style="" src="https://noriks.com/bg/wp-content/uploads/2026/02/starter-1_sk.png">
       </div>
     </div>
 
@@ -130,7 +130,7 @@ PREČO SI ĽUDIA VYBERAJÚ ŠTARTOVACÍ BALÍČEK?
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-           <img style="" src="https://noriks.com/sk/wp-content/uploads/2026/02/starter-2_sk.png">
+           <img style="" src="https://noriks.com/bg/wp-content/uploads/2026/02/starter-2_sk.png">
       </div>
     </div>
 
@@ -187,7 +187,7 @@ KOMBINÁCIA, KTORÁ SA NOSÍ KAŽDÝ DEŇ
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="" src="https://noriks.com/sk/wp-content/uploads/2026/02/starter-3_sk.png">
+          <img style="" src="https://noriks.com/bg/wp-content/uploads/2026/02/starter-3_sk.png">
       </div>
     </div>
 
@@ -468,7 +468,7 @@ if (  has_term( array( 'tricka',  'orto-tricka', 'orto-majica-darila' ), 'produc
   if (!$reviews_language) { $reviews_language = "EN"; }
   
   
-  $reviews_language = "SK";
+  $reviews_language = "BG";
 
   // Detect if current product belongs to bokserice group
   $current_product_id = (function_exists('is_product') && is_product()) ? get_queried_object_id() : get_the_id();

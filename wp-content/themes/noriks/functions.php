@@ -133,6 +133,8 @@ if ($webshop_language == "EN") {
   include(get_template_directory() . '/functions/lang/en.php');
 } else if ($webshop_language == "GR") {
   include(get_template_directory() . '/functions/lang/gr.php');
+} else if ($webshop_language == "BG") {
+  include(get_template_directory() . '/functions/lang/bg.php');
 }
 /*  include language specific files */
 
