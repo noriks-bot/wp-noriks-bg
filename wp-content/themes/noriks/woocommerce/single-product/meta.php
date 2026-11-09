@@ -66,7 +66,7 @@ global $product;
     </style>
 
 
- <section class=" features2" aria-label="Prednosti">
+ <section class=" features2" aria-label="Предимства">
       <div class="features__row">
         <!-- 1) Truck -->
         
@@ -74,13 +74,13 @@ global $product;
           <div class="feature">
           
   <img src="<?php echo get_template_directory_uri(); ?>/img/cod_icon_.png" alt="Customer Support Icon" class="feature__icon info-icon">
-          <p class="feature__text">Platba na dobierku</p>
+          <p class="feature__text">Плащане при доставка</p>
         </div>
         
         
         <div class="feature">
       <img src="https://noriks.com/hr/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
-          <p class="feature__text">Vyskúšajte 30 dní, bez rizika</p>
+          <p class="feature__text">Опитайте 30 дни без риск</p>
         </div>
         
         
@@ -90,7 +90,7 @@ global $product;
      
        
         <img src="https://noriks.com/hr/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
-          <p class="feature__text">Doprava zadarmo pre objednávky nad 70 €</p>
+          <p class="feature__text">Безплатна доставка над 70 €</p>
         </div>
 
     
@@ -105,7 +105,7 @@ global $product;
 <!-- Ortopas: kartica "preverjeno s strani zdravnika" (slika) -->
 <div class="ortopas-doctor-card" style="margin:14px 0;">
   <img src="<?php echo esc_url( get_template_directory_uri() . '/img/ortopas/ortopas-zdravnik.png' ); ?>"
-       alt="Overené lekárom — ortopedický pás NORIKS"
+       alt="Одобрен от лекар — ортопедичен колан NORIKS"
        style="width:100%; height:auto; display:block; border-radius:10px;"
        loading="lazy" decoding="async">
 </div>
@@ -116,7 +116,7 @@ global $product;
 <div class="shipping-box">
   <h2 id="shipping-window" class="shipping-title"></h2>
   <p class="shipping-sub">
-    Objednajte v nasledujúcich <span id="midnight-countdown" class="countdown"></span>
+    Поръчайте в следващите <span id="midnight-countdown" class="countdown"></span>
   </p>
 </div>
 
@@ -143,7 +143,7 @@ global $product;
 
 <script>
   (function () {
-    const weekdays = ['nedeľa','pondelok','utorok','streda','štvrtok','piatok','sobota'];
+    const weekdays = ['неделя','понеделник','вторник','сряда','четвъртък','петък','събота'];
 
 
     // Helper to add business days (skip Saturday/Sunday)
@@ -170,7 +170,7 @@ global $product;
     }
 
     const windowEl = document.getElementById('shipping-window');
-    windowEl.textContent = `Doručenie od ${weekdays[first.getDay()]}  ${formatDayMonth(first)} do ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
+    windowEl.textContent = `Доставка от ${weekdays[first.getDay()]}  ${formatDayMonth(first)} до ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
 
     // Countdown to midnight
     const cdEl = document.getElementById('midnight-countdown');
@@ -435,65 +435,65 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
     <?php if ( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ) : ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Tvár vášho dieťaťa sa formuje práve teraz — a čas máte do 9. roku</h3>
+        <h3>Лицето на детето ви се оформя точно сега — а имате време до 9-ата година</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
-        <p>Výskumníci dýchacích ciest a detskí zubní lekári roky upozorňujú na rovnaký vzorec — a väčšina rodičov o ňom nikdy nepočula. Volá sa <strong>syndróm predĺženej tváre</strong> (adenoidná tvár).</p>
-        <p>Každú noc, keď dieťa spí s otvorenými ústami na nesprávnom vankúši, sa dejú štyri veci naraz: jazyk padá dozadu, čeľusť sa sťahuje, podnebie sa zužuje do vysokého oblúka a tvár začína rásť vertikálne namiesto horizontálne. Po tisíckach takýchto nocí medzi 3. a 9. rokom sa zmeny upevnia.</p>
-        <p>Preto dnes 9-ročné deti prichádzajú k ortodontovi so stiahnutou bradou, kruhmi pod očami, natlačenými zubami — a drahým účtom za strojček. Spôsob, akým dieťa dýcha medzi 3. a 9. rokom, výrazne ovplyvňuje tvár, ktorú bude nosiť celý život.</p>
-        <p>NORIKS <strong>KidsNest</strong> je navrhnutý tak, aby pôsobil na základnú príčinu — nesprávnu polohu hlavy a čeľuste počas 9 hodín spánku — s <strong>3-zónovou ergonomickou štruktúrou</strong>, ktorá drží hlavu, krk a čeľusť v správnom zarovnaní od prvej noci.</p>
-        <p><strong>Čo uvidíte u svojho dieťaťa:</strong></p>
+        <p>Изследователи на дихателните пътища и детски стоматолози от години предупреждават за един и същ модел — а повечето родители никога не са чували за него. Нарича се <strong>синдром на удълженото лице</strong> (аденоидно лице).</p>
+        <p>Всяка нощ, когато детето спи с отворена уста върху неподходяща възглавница, се случват четири неща наведнъж: езикът пада назад, долната челюст се прибира, небцето се стеснява във висока дъга и лицето започва да расте вертикално вместо хоризонтално. След хиляди такива нощи между 3-ата и 9-ата година промените се затвърждават.</p>
+        <p>Затова днес 9-годишни деца идват при ортодонта с прибрана брадичка, кръгове под очите, разместени зъби — и скъпа сметка за шина. Начинът, по който детето диша между 3-ата и 9-ата година, силно влияе върху лицето, което ще носи цял живот.</p>
+        <p>NORIKS <strong>KidsNest</strong> е създаден така, че да действа върху основната причина — неправилното положение на главата и челюстта през 9 часа сън — с <strong>3-зонова ергономична структура</strong>, която държи главата, шията и челюстта в правилна позиция от първата нощ.</p>
+        <p><strong>Какво ще видите при детето си:</strong></p>
         <ul style="margin:6px 0 12px;padding-left:18px;">
-          <li style="margin:0 0 7px;"><strong>Menej dýchania ústami:</strong> pery zatvorené počas noci, návrat dýchania nosom, koniec suchých úst ráno.</li>
-          <li style="margin:0 0 7px;"><strong>Tichšie noci:</strong> chrápanie sa u väčšiny detí upokojí do 1 – 2 týždňov.</li>
-          <li style="margin:0 0 7px;"><strong>Opora pre vyvíjajúcu sa čeľusť:</strong> správna poloha noc čo noc, v rokoch, keď na tom najviac záleží.</li>
-          <li style="margin:0 0 7px;"><strong>Múdra prevencia:</strong> jeden vankúš dnes — namiesto drahých korekcií zajtra.</li>
+          <li style="margin:0 0 7px;"><strong>По-малко дишане през устата:</strong> затворени устни през нощта, връщане на носовото дишане, край на сухата уста сутрин.</li>
+          <li style="margin:0 0 7px;"><strong>По-тихи нощи:</strong> хъркането при повечето деца се успокоява в рамките на 1 – 2 седмици.</li>
+          <li style="margin:0 0 7px;"><strong>Опора за развиващата се челюст:</strong> правилна позиция нощ след нощ, в годините, когато това има най-голямо значение.</li>
+          <li style="margin:0 0 7px;"><strong>Умна превенция:</strong> една възглавница днес — вместо скъпи корекции утре.</li>
         </ul>
-        <p><strong>Jeden vankúš dnes večer. Alebo tisíce neskôr.</strong></p>
+        <p><strong>Една възглавница тази вечер. Или хиляди по-късно.</strong></p>
       </div>
     </div>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Staršie ako 9? Okno sa zužuje. Poškodenie sa nezastaví.</h3>
+        <h3>Над 9 години? Прозорецът се затваря. Увреждането не спира.</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
-        <p>Rada, ktorú ste počuli, je pravdivá len spolovice. Áno, horné podnebie sa spevní okolo 9. roku. Ale tvár sa vyvíja do 20. roku, dolná čeľusť rastie do 17. a dýchacie cesty sa neustále prispôsobujú.</p>
-        <p>Preto každá noc dýchania ústami po 9. roku pridáva nové poškodenie k starému: škrípanie zubami, bolesti hlavy, spánok, ktorý neoddýchne, pokles koncentrácie — a únava, ktorú si všetci mýlia s lenivosťou. Váš tínedžer nie je lenivý. Každú noc šesť hodín sotva dýcha.</p>
-        <p>KidsNest vo veľkosti <strong>9 – 14 rokov</strong> je vyrobený pre staršiu hlavu, krk a ramená. Iná kontúra, iná výška, iná opora. Rovnaký základný mechanizmus: správne zarovnanie hlavy, krku a čeľuste, celú noc, na tele, ktoré ešte rastie.</p>
-        <p>Čo si rodičia všímajú: chrápanie sa upokojí za 7 až 14 nocí, vracia sa skutočná ranná energia, bolesti hlavy slabnú, sústredenie sa vracia.</p>
-        <p>Najlepšie okno je stále od 3. do 9. roku. Silné okno je od 8. do 18. Žiadne nie je úplne zatvorené — ale každá noc čakania pridáva záťaž telu, ktoré sa snaží zotaviť.</p>
-        <p><strong>Včera je preč. Dnešný večer je stále váš.</strong></p>
+        <p>Съветът, който сте чували, е верен само наполовина. Да, горното небце се укрепва около 9-ата година. Но лицето се развива до 20-ата година, долната челюст расте до 17-ата, а дихателните пътища непрекъснато се приспособяват.</p>
+        <p>Затова всяка нощ дишане през устата след 9-ата година добавя ново увреждане към старото: стискане на зъби, главоболие, сън, който не освежава, спад в концентрацията — и умора, която всички бъркат с лентяйство. Вашият тийнейджър не е ленив. Всяка нощ шест часа едва диша.</p>
+        <p>KidsNest в размер <strong>9 – 14 години</strong> е направен за по-голяма глава, шия и рамене. Друг контур, друга височина, друга опора. Същият основен механизъм: правилно подреждане на главата, шията и челюстта, цяла нощ, върху тяло, което още расте.</p>
+        <p>Какво забелязват родителите: хъркането се успокоява за 7 до 14 нощи, връща се истинската утринна енергия, главоболията намаляват, концентрацията се връща.</p>
+        <p>Най-добрият прозорец е все още от 3-ата до 9-ата година. Силният прозорец е от 8-ата до 18-ата. Никой не е напълно затворен — но всяка нощ изчакване добавя тежест на тяло, което се опитва да се възстанови.</p>
+        <p><strong>Вчера отмина. Тази вечер все още е ваша.</strong></p>
       </div>
     </div>
     <?php endif; ?>
 
 
-    <!-- ErgoSit ortopedický vankúš: prvé dve accordion miesta (kópia originálu, SK) -->
+    <!-- ErgoSit ortopedska blazina: prvi dve accordion mesti (kopija originala, BG) -->
     <?php if ( function_exists('noriks_is_type') && noriks_is_type( 'ortopedski-jastuk', $current_product_id ) ) : ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Špecifikácie produktu</h3>
+        <h3>Спецификации на продукта</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
         <ul style="margin:8px 0 12px; padding-left:18px;">
-          <li style="margin:0 0 8px;"><strong>Vonkajší poťah:</strong> Priedušná pletenina, sťahuje sa a perie v práčke, hypoalergénna</li>
-          <li style="margin:0 0 8px;"><strong>Jadro:</strong> Adaptívna pena OrthoFlex™ | Netoxická, certifikovaná OEKO-TEX® | Navrhnutá na odľahčenie tlaku + zarovnanie držania tela</li>
+          <li style="margin:0 0 8px;"><strong>Външен калъф:</strong> Дишаща плетка, сваля се и се пере в пералня, хипоалергенен</li>
+          <li style="margin:0 0 8px;"><strong>Ядро:</strong> Адаптивна пяна OrthoFlex™ | Нетоксична, сертифицирана OEKO-TEX® | Създадена за разтоварване на натиска + правилна стойка</li>
         </ul>
       </div>
     </div>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Čím je taký výnimočný?</h3>
+        <h3>Какво го прави толкова специален?</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
         <ul style="margin:8px 0 12px; padding-left:18px;">
-          <li style="margin:0 0 10px;"><strong>Pamäťová pena OrthoFlex™:</strong> Pena s vysokou hustotou, ktorá odľahčuje tlak a prispôsobí sa bez sploštenia — podopiera kostrč, boky a chrbticu pre celodenné pohodlie.</li>
-          <li style="margin:0 0 10px;"><strong>Poťah BreatheEase™:</strong> Mäkký, priedušný a jemný k pokožke. Sťahuje sa a perie v práčke, aby vankúš vždy zostal svieži.</li>
-          <li style="margin:0 0 10px;"><strong>Vyvážená opora:</strong> Ani primäkká, ani pritvrdá. Navrhnutá tak, aby zarovnala držanie tela a zmiernila boľavé body z dlhých hodín sedenia.</li>
+          <li style="margin:0 0 10px;"><strong>Пяна с памет OrthoFlex™:</strong> Пяна с висока плътност, която разтоварва натиска и се нагажда, без да се сплесква — поддържа опашната кост, бедрата и гръбнака за комфорт през целия ден.</li>
+          <li style="margin:0 0 10px;"><strong>Калъф BreatheEase™:</strong> Мек, дишащ и нежен към кожата. Сваля се и се пере в пералня, за да остава възглавницата винаги свежа.</li>
+          <li style="margin:0 0 10px;"><strong>Балансирана опора:</strong> Нито твърде мека, нито твърде твърда. Създадена да изправи стойката и да облекчи болезнените точки от дълги часове седене.</li>
         </ul>
       </div>
     </div>
@@ -511,64 +511,64 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
 
                   <?php if( function_exists('noriks_is_type') && noriks_is_type('snug', $current_product_id) ): ?>
 
-                <strong>NORIKS Snug</strong> je vankúš na celé telo v tvare písmena S. Väčšina telových vankúšov je rovná — vaše telo nie je. Preto Snug kopíruje líniu tela a podopiera ramená, boky aj kolená naraz.<br><br>Keď spíte na boku bez opory, rameno nesie celú váhu, bok klesá a chrbtica sa krúti. Tri body opory rozložia váhu, takže žiadne miesto nenesie celé zaťaženie.<br><br>Rozmery sú 105 cm dĺžky a 30 cm šírky — dosť na to, aby vás podopieral od ramena po kolená, a pritom nezaberie celú posteľ. Výplň tvoria tisíce jemných pružných vlákien, ktoré sa vracajú do tvaru a nesplasnú ani po mesiacoch používania.<br><br>Chladivá obliečka sa dá zložiť a vyprať v práčke na 40 °C a látka prepúšťa vzduch celú noc. Dostupný je v šiestich farbách: modrá, ružová, sivá, zelená, fialová a tmavomodrá.
+                <strong>NORIKS Snug</strong> е възглавница за цяло тяло във формата на буквата S. Повечето възглавници за тяло са прави — вашето тяло не е. Затова Snug следва линията на тялото и поддържа раменете, бедрата и коленете едновременно.<br><br>Когато спите на една страна без опора, рамото понася цялата тежест, бедрото се спуска, а гръбнакът се извива. Три опорни точки разпределят тежестта, така че никое място не понася целия товар.<br><br>Размерите са 105 cm дължина и 30 cm широчина — достатъчно, за да ви поддържа от рамото до коленете, без да заема цялото легло. Пълнежът е от хиляди фини еластични влакна, които се връщат във формата си и не се сплескват дори след месеци употреба.<br><br>Хладният калъф се сваля и се пере в пералня на 40 °C, а платът пропуска въздух цяла нощ. Предлага се в шест цвята: синьо, розово, сиво, зелено, лилаво и тъмносиньо.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kompwom', $current_product_id) ): ?>
 
-                <strong>NORIKS FIT Woman</strong> je tvarujúce tričko, v ktorom je reliéf votkaný priamo do látky, nie na ňu potlačený. Široký pás prechádza cez brucho a boky, druhý ide cez chrbát.<br><br>Kompresia je rozložená do šírky, nie stlačená do jedného bodu, takže nič nezareže. Brucho zostáva vyhladené, pás užší a chrbát dostáva oporu, ktorá pomáha stáť vzpriamenejšie.<br><br>Úplet je bezšvový, tenký a matný — zmizne pod košeľou, sakom alebo priliehavými šatami. Cez deň sa neroluje a nečrtá sa pod oblečením.<br><br>Perte v práčke na 30 °C, bez bielidiel, žehlenia a sušičky. Dostupné je v troch farbách (čierna, tmavosivá, ružová) a vo veľkostiach od S po 3XL. Ak ste medzi dvomi veľkosťami, vezmite väčšiu.
+                <strong>NORIKS FIT Woman</strong> е оформяща тениска, при която релефът е втъкан директно в плата, а не отпечатан върху него. Широк колан минава през корема и бедрата, а втори — през гърба.<br><br>Компресията е разпределена на ширина, а не стегната в една точка, така че нищо не се врязва. Коремът остава изгладен, талията — по-тясна, а гърбът получава опора, която помага да стоите по-изправени.<br><br>Плетката е безшевна, тънка и матова — изчезва под риза, сако или прилепнала рокля. През деня не се навива и не се очертава под облеклото.<br><br>Перете в пералня на 30 °C, без белина, гладене и сушилня. Предлага се в три цвята (черно, тъмносиво, розово) и в размери от S до 3XL. Ако сте между два размера, вземете по-големия.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slim', $current_product_id) ): ?>
 
-                <strong>NORIKS Slim</strong> sú tvarujúce nohavičky s vysokým pásom. Široký pás prechádza krížom cez brucho a pokračuje na boky a chrbát, takže kompresia je rozložená okolo celého pása, a nie stlačená do jednej línie.<br><br>Brucho je vyhladené, pás vyzerá užší a oblečenie padne rovnejšie — bez záhybov nad nohavicami a bez okraja, ktorý vidno pod šatami.<br><br>Úplet je tenký, mäkký a priedušný, s elastickými sieťovanými vsadkami a bavlnenou vložkou. Nohavičky sa nerolujú nadol a počas dňa sa nešmýkajú, takže si ich ráno oblečiete a do večera na ne zabudnete.<br><br>Dostupné sú v šiestich farbách (čierna, telová, tmavomodrá, fialová, fuchsiová a slivková) a vo veľkostiach od XS do 5XL. Veľkosť vyberajte podľa obvodu pása; ak ste medzi dvoma veľkosťami, vezmite si väčšiu.
+                <strong>NORIKS Slim</strong> са оформящи бикини с висока талия. Широкият колан минава напречно през корема и продължава към бедрата и гърба, така че компресията е разпределена около цялата талия, а не стегната в една линия.<br><br>Коремът е изгладен, талията изглежда по-тясна и облеклото пада по-гладко — без гънки над панталона и без ръб, който се вижда под роклята.<br><br>Плетката е тънка, мека и дишаща, с еластични мрежести вставки и памучна подплата. Бикините не се навиват надолу и през деня не се свличат, така че ги обличате сутрин и до вечерта забравяте за тях.<br><br>Предлагат се в шест цвята (черно, телесно, тъмносиньо, лилаво, фуксия и сливово) и в размери от XS до 5XL. Изберете размер според обиколката на талията; ако сте между два размера, вземете по-големия.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ): ?>
 
-                NORIKS Tradesman sú hrubé pracovné ponožky z bambusu pre všetkých, ktorí celý deň stoja a chodia v pracovných čižmách – na stavbe, v sklade, v dielni alebo vonku v zime. Mäkký vankúšik tlmí každý krok na betóne aj zamrznutej zemi, zosilnená päta a prsty vydržia tuhé čižmy a pásik pod klenbou s dvojitou manžetou drží ponožku na mieste celú zmenu.<br><br><strong>Zloženie:</strong> 56 % bambusového lyocelu, 38 % nylonu, 6 % elastanu – prirodzene odolné voči nepríjemnému zápachu, odvádzajú vlhkosť a sú veľmi mäkké na koži. <strong>Prevedenie:</strong> 360° opora členka, pásik pod klenbou, vankúšik, sieťované vetranie, dvojitá manžeta s pútkom, zosilnená päta. Výška: klasická, asi 18 cm od päty po okraj.<br><br><strong>Veľkosti (veľkosť obuvi EU):</strong> 39–42, 43–45, 46–49. Farba: čierna. <strong>Starostlivosť:</strong> perte nastudeno, sušte na vzduchu.<br><br>S NORIKS máte 30 dní na vrátenie peňazí, dopravu zadarmo nad 70 € a platbu na dobierku.
+                NORIKS Tradesman са плътни работни чорапи от бамбук за всички, които цял ден стоят и ходят с работни обувки – на строежа, в склада, в сервиза или навън през зимата. Меката подложка омекотява всяка стъпка по бетон и замръзнала земя, подсилените пета и пръсти издържат на твърди обувки, а лентата под свода с двоен ластик държи чорапа на място през цялата смяна.<br><br><strong>Състав:</strong> 56 % бамбуков лиосел, 38 % найлон, 6 % еластан – естествено устойчиви на неприятна миризма, отвеждат влагата и са много меки върху кожата. <strong>Изпълнение:</strong> 360° опора на глезена, лента под свода, подложка, мрежеста вентилация, двоен ластик с халка, подсилена пета. Височина: класическа, около 18 cm от петата до ръба.<br><br><strong>Размери (размер обувки EU):</strong> 39–42, 43–45, 46–49. Цвят: черен. <strong>Поддръжка:</strong> перете на студено, сушете на въздух.<br><br>С NORIKS имате 30 дни за връщане на парите, безплатна доставка над 70 € и плащане при доставка.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
 
-                <strong>NORIKS SlabProof</strong> sú pracovné ponožky urobené pre ľudí, ktorí celý deň pracujú na nohách — na stavbe, v sklade, dielni, obchode alebo kuchyni. Pracovné čižmy chodidlo chránia, ale netlmia ho — tvrdá podlaha nič nevráti, takže každý krok ide do piat, kolien a chrbta. Jediné, čo ten náraz môže zmierniť, je ponožka.<br><br>Preto majú <strong>zónové polstrovanie</strong>: husté vankúšiky pod pätou a prednou časťou chodidla, presne tam, kde krok udiera najsilnejšie, a tenkú pleteninu všade inde, takže čižma nebude pritesná. Päta a prsty sú zosilnené dvojito pleteným nylonom, na dvoch miestach, kde ponožky povolia ako prvé.<br><br>Vzdušná sieťka cez vrchnú časť chodidla a pletenina, ktorá odvádza pot, udržia chodidlá suché celú zmenu. Zmes je bez vlny, takže nič neškriabe a noha sa neprehrieva.<br><br>Široký rebrovaný lem drží ponožku hore bez zvierania lýtka, hlboké vrecko na pätu s jazýčkom nedovolí, aby sa zošmykla do čižmy, a pás okolo klenby drží chodidlo, aby sa nešmýkalo.<br><br>Dostupné sú v čiernej farbe, vo veľkostiach 39–42, 43–45 a 46–49. Platí <strong>30 dní na vrátenie peňazí</strong> a doprava je zadarmo pri objednávkach nad 70 €.
+                <strong>NORIKS SlabProof</strong> са работни чорапи, направени за хора, които цял ден работят на крак — на строежа, в склада, сервиза, магазина или кухнята. Работните обувки защитават стъпалото, но не го омекотяват — твърдият под не връща нищо, така че всяка стъпка отива в петите, коленете и гърба. Единственото, което може да омекоти този удар, е чорапът.<br><br>Затова имат <strong>зоново ватиране</strong>: плътни подложки под петата и под предната част на стъпалото, точно там, където стъпката удря най-силно, и тънка плетка навсякъде другаде, за да не стяга обувката. Петата и пръстите са подсилени с двойно плетен найлон — на двете места, където чорапите се скъсват първи.<br><br>Въздушна мрежа върху горната част на стъпалото и плетка, която отвежда потта, държат краката сухи през цялата смяна. Сместа е без вълна, така че нищо не драска и кракът не се прегрява.<br><br>Широкият ластичен ръб държи чорапа горе, без да стяга прасеца, дълбокият джоб за петата с езиче не позволява да се свлече в обувката, а лентата около свода държи стъпалото да не се плъзга.<br><br>Предлагат се в черен цвят, в размери 39–42, 43–45 и 46–49. Важи <strong>30 дни за връщане на парите</strong>, а доставката е безплатна при поръчки над 70 €.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('winecooler', $current_product_id) ): ?>
 
-                <strong>NORIKS WineCooler</strong> je chladiaca tyčinka na víno z nehrdzavejúcej ocele so zabudovaným nalievačom. Tyčinku vložte do mrazničky aspoň na 1 hodinu a potom ju vsuňte do fľaše — za 10–15 minút dosiahne víno ideálnu teplotu podávania a zostane studené až 3 hodiny, od prvého naliatia až po posledný dúšok.<br><br>Je vyrobená z vysokokvalitnej nehrdzavejúcej ocele vhodnej na styk s potravinami. Na rozdiel od kociek ľadu víno neriedi a na rozdiel od nádoby s ľadom zostáva fľaša na stole suchá.<br><br>Nalievač zaistí rovnomerné nalievanie bez kvapkania, takže víno aj obrus zostanú čisté. Zabudované prevzdušňovanie pomáha, aby sa arómy vína naplno rozvinuli pre bohatšiu chuť.<br><br>Nalievač sa dá odňať a tyčinku môžete umývať v umývačke riadu alebo dôkladne umyť teplou vodou. Hodí sa do väčšiny štandardných fliaš vína — ideálna na biele víno, rosé a šumivé vína, na večere, posedenia na balkóne a ako darček pre milovníkov vína.
+                <strong>NORIKS WineCooler</strong> е охлаждаща пръчка за вино от неръждаема стомана с вграден наливник. Поставете пръчката във фризера за поне 1 час и след това я пъхнете в бутилката — за 10–15 минути виното достига идеалната температура за сервиране и остава студено до 3 часа, от първата глътка до последната.<br><br>Изработена е от висококачествена неръждаема стомана, подходяща за контакт с храни. За разлика от кубчетата лед не разводнява виното, а за разлика от съд с лед бутилката на масата остава суха.<br><br>Наливникът осигурява равномерно наливане без капки, така че виното и покривката остават чисти. Вграденото аериране помага ароматите на виното да се разгърнат напълно за по-богат вкус.<br><br>Наливникът се сваля и пръчката може да се мие в съдомиялна или да се измие обилно с топла вода. Пасва на повечето стандартни бутилки вино — идеална за бяло вино, розе и пенливи вина, за вечери, седенки на балкона и като подарък за любителите на виното.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('bowl', $current_product_id) ): ?>
 
-                <strong>NORIKS Bowl</strong> je zvýšená miska na krmivo a vodu určená pre malé psy. Miska stojí na oceľovom podstavci s výškou 11 cm a je naklonená o 15°, takže pes je postojačky, s hlavou v prirodzenejšej polohe namiesto toho, aby ohýbal krk až k podlahe.<br><br>Miska je plytká (5 cm), takže fúzy nenarážajú o okraj a krmivo sa netlačí von. Priemer je 15 cm a objem približne 430 ml — dosť na porciu alebo vodu pre malého psa.<br><br>Miska aj podstavec sú vyrobené z nehrdzavejúcej ocele. Hladký povrch nenasáva pachy a nedrží zvyšky krmiva ako plast; stačí ju opláchnuť teplou vodou s prostriedkom na riad.<br><br>Vhodná je pre malé plemená, ako sú jazvečík, francúzsky buldoček, knírač, mops a maltézsky psík.
+                <strong>NORIKS Bowl</strong> е повдигната купа за храна и вода, предназначена за малки кучета. Купата стои на стоманена поставка с височина 11 cm и е наклонена на 15°, така че кучето яде изправено, с глава в по-естествено положение, вместо да извива шията си до пода.<br><br>Купата е плитка (5 cm), така че мустаците не опират в ръба и храната не се избутва навън. Диаметърът е 15 cm, а обемът — около 430 ml, достатъчно за една порция или вода за малко куче.<br><br>Купата и поставката са от неръждаема стомана. Гладката повърхност не поема миризми и не задържа остатъци от храна като пластмасата; достатъчно е да се изплакне с топла вода и препарат за съдове.<br><br>Подходяща е за малки породи като дакел, френски булдог, шнауцер, мопс и малтийско болонче.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('pal', $current_product_id) ): ?>
 
-                <strong>NORIKS Pal</strong> je vychádzková palica navrhnutá okolo jedného problému: vstávania. Okrem hornej rukoväte má aj druhú, nižšie, ktorej sa chytíte, keď vstávate z kresla, z postele alebo z nízkej stoličky — bez predklonu a bez cudzej pomoci.<br><br>Štyri gumené nožičky držia palicu vzpriamene, keď ju pustíte. Nepadne na zem, takže sa po nej nemusíte zohýnať. Základňa je protišmyková a zostáva stabilná na dlažbe, parketách aj na nerovnom teréne.<br><br>V rukoväti je zabudované svetlo, ktoré osvetlí cestu pred vami — na cestu do kúpeľne v noci alebo na prechádzku za súmraku. Popri ňom je aj zvukový alarm, ktorý upozorní domácich, ak spadnete alebo potrebujete pomoc.<br><br>Palica je skladacia a zmestí sa do tašky alebo do priehradky v aute, výška sa nastaví za pár sekúnd, bez náradia, pre každú postavu.
+                <strong>NORIKS Pal</strong> е бастун, създаден около един проблем: изправянето. Освен горната ръкохватка има и втора, по-долу, за която се хващате, когато се изправяте от фотьойл, от леглото или от нисък стол — без да се навеждате и без чужда помощ.<br><br>Четири гумени крачета държат бастуна изправен, когато го пуснете. Не пада на пода, така че не се налага да се навеждате за него. Основата е противоплъзгаща и остава стабилна на плочки, паркет и на неравен терен.<br><br>В ръкохватката е вградено осветление, което осветява пътя пред вас — за път до банята през нощта или за разходка по тъмно. До него има и звукова аларма, която предупреждава близките, ако паднете или ви е нужна помощ.<br><br>Бастунът се сгъва и влиза в чанта или в жабката на колата, а височината се настройва за няколко секунди, без инструменти, за всяка фигура.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kneeheat', $current_product_id) ): ?>
 
-                <strong>NORIKS KneeHeat</strong> je bandáž na koleno, ktorá v jednom sedení spája tri terapie: teplo do 42 °C, vzduchovú kompresiu a vibračnú masáž 60 Hz. Teplo rozširuje cievy a uľahčuje prísun krvi do hlbšieho tkaniva, rytmická kompresia vytláča nahromadenú tekutinu a vibrácie uvoľňujú stuhnutosť okolo kĺbu.<br><br>Sedenie trvá 12 minút a spúšťa sa jedným tlačidlom — bez aplikácie, bez nastavovania a bez kábla. K dispozícii sú 3 stupne tepla a 3 režimy vibrácií, takže intenzitu prispôsobíte dňu a ťažkostiam.<br><br>Bandáž má ergonomický tvar a drží nastaviteľnými pásmi; sedí na ľavé aj pravé koleno a v balení je aj predlžovací pás pre väčšie obvody. Látka na koži je mäkká a priedušná.<br><br>Prístroj sa nabíja priloženým USB-C káblom a jedno nabitie vydrží na viac sedení. K prístroju dostanete 2 roky záruku na výmenu.
+                <strong>NORIKS KneeHeat</strong> е наколенка, която в една сесия съчетава три терапии: топлина до 42 °C, въздушна компресия и вибрационен масаж 60 Hz. Топлината разширява съдовете и улеснява притока на кръв към по-дълбоките тъкани, ритмичната компресия изтласква събралата се течност, а вибрациите отпускат сковаността около ставата.<br><br>Сесията продължава 12 минути и се пуска с един бутон — без приложение, без настройки и без кабел. Налични са 3 степени топлина и 3 режима вибрация, така че нагласяте интензивността според деня и оплакванията.<br><br>Наколенката е с ергономична форма и се държи с регулируеми ленти; пасва на лявото и на дясното коляно, а в комплекта има и удължаваща лента за по-големи обиколки. Платът до кожата е мек и дишащ.<br><br>Устройството се зарежда с включения USB-C кабел и едно зареждане стига за няколко сесии. Към уреда получавате 2 години гаранция за замяна.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('red', $current_product_id) ): ?>
 
-                <strong>NORIKS RedRelief</strong> je pás na zápästie, ktorý spája dve najpreskúmanejšie vlnové dĺžky v terapii červeným svetlom: červené svetlo 660 nm upokojuje povrchový zápal a infračervené 850 nm preniká hlbšie, k tkanivu okolo stredového nervu.<br><br>Svetlo sa v tkanive mení na bunkovú energiu (ATP) a podnecuje miestne prekrvenie — dva procesy, ktoré sú súčasťou prirodzenej regenerácie tela. Preto sa používa pri syndróme karpálneho tunela, zápale šliach, artritíde a bolestiach ruky a zápästia.<br><br>V páse je zabudovaných 48 dvojitých LED diód rozložených po celej vnútornej strane, takže svetlo pokryje celé zápästie, nie len jeden bod. K dispozícii sú 4 režimy a 3 úrovne výkonu.<br><br>Zariadenie je bezdrôtové a nabíja sa cez kábel USB-C — jedno nabitie stačí na až 4 ošetrenia. Váži iba 126 g, má otvor na palec a nastaviteľný remienok, takže sadne na ľavú aj pravú ruku. Odporúča sa jedno 15-minútové ošetrenie denne; zariadenie sa na konci samo vypne.
+                <strong>NORIKS RedRelief</strong> е лента за китка, която съчетава двете най-изследвани дължини на вълната в терапията с червена светлина: червена светлина 660 nm успокоява повърхностното възпаление, а инфрачервената 850 nm прониква по-дълбоко, до тъканта около средния нерв.<br><br>Светлината се превръща в тъканта в клетъчна енергия (ATP) и подтиква местното кръвообращение — два процеса, които са част от естественото възстановяване на тялото. Затова се използва при синдром на карпалния тунел, възпаление на сухожилията, артрит и болки в ръката и китката.<br><br>В лентата са вградени 48 двойни LED диода, разположени по цялата вътрешна страна, така че светлината покрива цялата китка, а не само една точка. Налични са 4 режима и 3 степени на мощност.<br><br>Устройството е безжично и се зарежда с USB-C кабел — едно зареждане стига за до 4 процедури. Тежи само 126 g, има отвор за палеца и регулируема каишка, така че пасва и на лявата, и на дясната ръка. Препоръчва се една 15-минутна процедура дневно; устройството се изключва само в края.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ): ?>
 
-                NORIKS KidsNest je vyrobený z hypoalergénnej pamäťovej peny s certifikátom OEKO-TEX® — bez formaldehydu, ťažkých kovov a BPA — s priedušným pleteným poťahom.<br><br>Jeho 3-zónová ergonomická štruktúra jemne prijíma hlavu, podopiera krk a pomáha udržať chrbticu v prirodzenom zarovnaní — aj keď sa dieťa počas noci veľa otáča. Tým podporuje dýchanie nosom a pokojnejší, hlbší spánok.<br><br>Dostupný v troch veľkostiach (1 – 3, 3 – 9 a 9 – 14 rokov), rastie s vaším dieťaťom a poskytuje správnu výšku opory v každej fáze vývoja.
+                NORIKS KidsNest е изработен от хипоалергенна пяна с памет със сертификат OEKO-TEX® — без формалдехид, тежки метали и BPA — с дишащ плетен калъф.<br><br>Неговата 3-зонова ергономична структура нежно поема главата, поддържа шията и помага да задържи гръбнака в естествено положение — дори когато детето се върти много през нощта. Така подкрепя дишането през носа и по-спокойния, по-дълбок сън.<br><br>Предлага се в три размера (1 – 3, 3 – 9 и 9 – 14 години), расте с вашето дете и осигурява правилната височина на опора на всеки етап от развитието.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('controlpro', $current_product_id) ): ?>
 
-                NORIKS ControlPro je mechanický tréner panvového dna so skutočným fyzickým odporom. Namiesto stláčania naprázdno dostanete niečo, proti čomu môžete tlačiť — rovnaký princíp postupného zaťaženia, ktorým posilňuje každý iný sval v tele.<br><br>Používa sa v sede: prístroj vložíte medzi kolená a stláčate proti odporu — 3 série po 10 opakovaní denne, približne päť minút. Bez sond a zavádzania, bez káblov, gélu, batérií a aplikácií. Zabudované počítadlo opakovaní ukazuje, koľko ste odcvičili.<br><br>Konštrukcia je pevná, s mäkkými podložkami na opierkach, ktoré netlačia ani po viacerých sériách. Odpor sa postupne zvyšuje, ako svaly silnejú.<br><br>Je určený mužom, ktorí chcú získať späť kontrolu nad mechúrom — po operácii prostaty, pri úniku počas námahy alebo po dlhých mesiacoch Kegelových cvikov bez výsledku. Doručenie je diskrétne, v neutrálnej krabici bez označenia.
+                NORIKS ControlPro е механичен тренажор за мускулите на тазовото дъно с истинско физическо съпротивление. Вместо да свивате напразно, получавате нещо, срещу което да натискате — същият принцип на постепенно натоварване, с който се укрепва всеки друг мускул в тялото.<br><br>Използва се седнали: поставяте уреда между коленете и натискате срещу съпротивлението — 3 серии по 10 повторения дневно, около пет минути. Без сонди и въвеждане, без кабели, гел, батерии и приложения. Вграденият брояч на повторения показва колко сте направили.<br><br>Конструкцията е здрава, с меки подложки на опорите, които не притискат дори след няколко серии. Съпротивлението се увеличава постепенно, докато мускулите се укрепват.<br><br>Предназначен е за мъже, които искат да си върнат контрола над мехура — след операция на простатата, при изпускане при натоварване или след дълги месеци упражнения на Кегел без резултат. Доставката е дискретна, в неутрална кутия без надписи.
 
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) ): ?>
 
-                NORIKS KneeFix je flexibilná ortéza na koleno, ktorá spája štyri funkcie v jednom systéme podpory: nastaviteľnú kompresiu pomocou presného kolieska, dvojité bočné stabilizátory, gélovú vložku, ktorá odľahčuje jabĺčko, a silikónový protišmykový okraj, ktorý ortézu udrží na mieste.<br><br>Na rozdiel od tuhých ortéz KneeFix koleno neznehybní — podopiera ho počas prirodzeného pohybu. Kompresiu nastavíte za sekundu: ráno pevnejšie, popoludní voľnejšie, podľa toho, koľko ste na nohách. Koleno tak získa stabilitu pri vstávaní, na schodoch, pri chôdzi aj pri dlhšom státí.<br><br>Látka je ľahká, priedušná a odvádza vlhkosť, takže ortézu môžete nosiť hodiny bez potenia a bez zarezávania. Je tenká a diskrétna — pod nohavicami ju takmer nevidno.<br><br>K dispozícii je vo veľkostiach od S po 2XL podľa telesnej hmotnosti a vo verzii na ľavé aj pravé koleno, takže padne presne.
+                NORIKS KneeFix е гъвкава ортеза за коляно, която съчетава четири функции в една система за поддръжка: регулируема компресия с прецизно колелце, двойни странични стабилизатори, гелна вложка, която разтоварва капачката, и силиконов противоплъзгащ ръб, който държи ортезата на място.<br><br>За разлика от твърдите ортези KneeFix не обездвижва коляното — поддържа го по време на естественото движение. Компресията се настройва за секунда: сутрин по-стегнато, следобед по-свободно, според това колко сте на крак. Така коляното получава стабилност при изправяне, по стълби, при ходене и при по-дълго стоене.<br><br>Платът е лек, дишащ и отвежда влагата, така че можете да носите ортезата часове без потене и без да се врязва. Тънка и дискретна е — под панталон почти не се вижда.<br><br>Налична е в размери от S до 2XL според телесното тегло и във версия за лявото и за дясното коляно, така че пасва точно.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'leakboxers', $current_product_id ) ): ?>
 
-                Inkontinenčné boxerky NORIKS sú vyrobené z mäkkého antibakteriálneho bambusového vlákna s vodoodpudivou vonkajšou vrstvou. V strede je 7-vrstvové jadro PureDry™, ktoré okamžite absorbuje a uzamkne až 300 ml tekutiny, takže pokožka zostáva suchá a únik zostáva vo vnútri.<br><br>Strih je tenký a diskrétny — vyzerá a pôsobí ako bežná bielizeň, bez objemnosti a bez pocitu „plienky“. Ochrana pri nohách zabraňuje bočnému pretečeniu a kontrola pachu udržiava sviežosť počas celého dňa.<br><br>Sú prateľné a opakovane použiteľné — absorpčnú schopnosť si udržia počas stoviek praní, ako ekologická a výhodná alternatíva jednorazových vložiek a plienok.
+                Боксерките при инконтиненция NORIKS са изработени от мек антибактериален бамбуков влакнест материал с водоотблъскващ външен слой. В средата е 7-слойното ядро PureDry™, което веднага поема и заключва до 300 ml течност, така че кожата остава суха, а изпускането остава вътре.<br><br>Кройката е тънка и дискретна — изглежда и се усеща като обикновено бельо, без обем и без усещане за „пелена“. Защитата при крачолите предотвратява странично преливане, а контролът на миризмата поддържа свежест през целия ден.<br><br>Перат се и се използват многократно — запазват поемащата си способност през стотици пранета, като екологична и изгодна алтернатива на еднократните подложки и пелени.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'kompresijske-majice', $current_product_id ) ): ?>
 
-                NORIKS FIT je vyrobený z pokročilej iónovej kompresnej tkaniny, ktorá poskytuje priliehavý, podporný strih. Cielená kompresia rovnomerne sťahuje brucho a boky, vyhladzuje siluetu a podporuje vzpriamené držanie tela — bez sťahovania, ktoré obmedzuje dýchanie či pohyb.<br><br>Mikrotkané vlákna podporujú cirkuláciu a pomáhajú vám počas dňa stáť vzpriamenejšie a cítiť sa istejšie. Tkanina je ľahká, priedušná a odvádza vlhkosť, takže zostávate suchý a v pohodlí.<br><br>Tenký a diskrétny strih ho robí neviditeľným pod akoukoľvek košeľou a zároveň môže slúžiť aj ako športové tričko. Výsledok: ostrejší vzhľad, lepšie držanie tela a sebavedomie — len čo si ho oblečiete.
+                NORIKS FIT е изработена от усъвършенстван йонен компресионен плат, който осигурява прилепнала, поддържаща кройка. Целенасочената компресия равномерно прибира корема и кръста, изглажда силуета и подкрепя изправената стойка — без стягане, което ограничава дишането или движението.<br><br>Микротканите влакна подпомагат кръвообращението и ви помагат през деня да стоите по-изправени и да се чувствате по-уверени. Платът е лек, дишащ и отвежда влагата, така че оставате сухи и в комфорт.<br><br>Тънката и дискретна кройка я прави невидима под всяка риза, а в същото време може да служи и като спортна тениска. Резултатът: по-изчистен външен вид, по-добра стойка и самочувствие — още щом я облечете.
 
          <?php elseif( !$is_boxers &&  !$is_carape &&   !$is_mixed_bundle && ! ( function_exists('noriks_is_type') && ( noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('ortopas', $current_product_id) ) ) ): ?>
 
@@ -581,19 +581,19 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
 
 
 
-               Naše prémiové tričká sú vyrobené z prémiovej zmesi 60 % bavlny pradenej metódou prstencového pradenia a 40 % polyesteru, čo zaručuje mimoriadne mäkkú a nekrčivú látku. <br>Boxerky NORIKS sú vyrobené z prémiovej zmesi 95 % modalu a 5 % elastanu, čo zaručuje mimoriadne mäkkú a elastickú látku, ktorá sa dokonale prispôsobí telu. Elastický pás je navrhnutý pre optimálne prispôsobenie, pohodlie bez stiahnutia a perfektný vzhľad pod oblečením. <br>
+               Нашите премиум тениски са изработени от премиум смес от 60 % пръстеновидно предена памук и 40 % полиестер, което гарантира изключително мек и неизмачкващ се плат. <br>Боксерките NORIKS са изработени от премиум смес от 95 % модал и 5 % еластан, което гарантира изключително мек и еластичен плат, който се приспособява идеално към тялото. Еластичният колан е създаден за оптимално прилягане, комфорт без стягане и перфектен вид под облеклото. <br>
 
         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $current_product_id) ): ?>
 
-                NORIKS NeckRelax je terapeutický vankúš na krk, ktorý spája trakciu, teplo a vibračnú masáž v ergonomickej konštrukcii z pamäťovej peny. Jemne naťahuje krk pod správnym uhlom, odľahčuje krčnú chrbticu a teplom a masážou uvoľňuje svalové napätie. Bezdrôtový, nabíjateľný a obalený v mäkkom chladivom hodvábe – bezpečný aj na spánok.
+                NORIKS NeckRelax е терапевтична възглавница за шия, която съчетава тракция, топлина и вибрационен масаж в ергономична конструкция от пяна с памет. Нежно разтяга шията под правилния ъгъл, разтоварва шийния отдел на гръбнака и с топлина и масаж отпуска мускулното напрежение. Безжична, презареждаща се и обвита в мек, хладен сатен – безопасна и за сън.
 
         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('bunion', $current_product_id) ): ?>
 
-                Korektor vbočeného palca NORIKS s pokročilou terapiou zarovnania a patentovaným kĺbovým mechanizmom jemne vracia palec do prirodzenej polohy, zmierňuje nepohodlie a zabraňuje ďalšiemu rastu výrastku. Pružná konštrukcia umožňuje, aby ste v ňom aj chodili. Padne na všetky veľkosti chodidiel, bez ľavej alebo pravej strany. Na použitie v pokoji – počas oddychu, pozerania TV, čítania alebo spánku.
+                Коректорът за изкривен палец NORIKS с усъвършенствана терапия за изправяне и патентован шарнирен механизъм нежно връща палеца в естественото му положение, облекчава дискомфорта и предотвратява по-нататъшния растеж на израстъка. Гъвкавата конструкция позволява да ходите с него. Пасва на всички размери стъпала, без лява или дясна страна. За употреба в покой – докато си почивате, гледате телевизия, четете или спите.
 
         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) ): ?>
 
-                Ortopedický pás NORIKS cielene stabilizuje driekovú časť chrbta pomocou cielenej kompresie, správne zarovná panvu a odľahčí sedací nerv. Tenký a nenápadný pod oblečením, s nastaviteľnou mierou opory. Vhodný pri bolestiach krížov, išiase, svalovom napätí a problémoch so SI kĺbom.
+                Ортопедичният колан NORIKS целенасочено стабилизира кръстната част на гърба с прицелена компресия, изправя правилно таза и разтоварва седалищния нерв. Тънък и незабележим под облеклото, с регулируема степен на опора. Подходящ при болки в кръста, ишиас, мускулно напрежение и проблеми със сакроилиачната става.
 
         <?php else: ?>
         
@@ -616,7 +616,7 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
      <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('snug', $current_product_id) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('pal', $current_product_id) ) && ! ( function_exists('noriks_is_type') && ( noriks_is_type('bowl', $current_product_id) || noriks_is_type('winecooler', $current_product_id) ) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('red', $current_product_id) || noriks_is_type('kneeheat', $current_product_id) ) && ! ( function_exists('noriks_is_type') && ( noriks_is_type('cloud', $current_product_id) || noriks_is_type('cloath', $current_product_id) || noriks_is_type('hyd', $current_product_id) ) )) : // žiadna tabuľka veľkostí pre bunion + fisiorest + norikshers + ortopedický vankúš ?>
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Tabuľky veľkostí</h3>
+        <h3>Таблици с размери</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
@@ -624,26 +624,26 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
            <?php if( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $current_product_id) ): ?>
 
           <div class="kn-size">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/kidsnest/tablica-velicine-sk.webp" alt="KidsNest veľkosti podľa veku" style="width:100%;height:auto;border-radius:10px;display:block;margin:0 0 12px;" loading="lazy">
-            <p style="margin:0;line-height:1.6;"><strong>Dieťa je medzi dvoma veľkosťami?</strong> Vždy vyberte väčšiu. Vankúš je navrhnutý tak, aby podporoval zdravé zarovnanie počas rastu dieťaťa — väčšia veľkosť poskytuje viac priestoru a dlhšie obdobie používania.</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/kidsnest/tablica-velicine-sk.webp" alt="KidsNest размери според възрастта" style="width:100%;height:auto;border-radius:10px;display:block;margin:0 0 12px;" loading="lazy">
+            <p style="margin:0;line-height:1.6;"><strong>Детето е между два размера?</strong> Винаги избирайте по-големия. Възглавницата е създадена да подкрепя здравото подреждане, докато детето расте — по-големият размер дава повече място и по-дълъг период на употреба.</p>
           </div>
 
         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('leakboxers', $current_product_id) ): ?>
 
           <div class="lbx-size">
-            <p style="margin:0 0 6px;font-weight:700;">Ako si zmerať boky</p>
-            <p style="margin:0 0 14px;line-height:1.6;">Omotajte krajčírsky meter okolo najširšej časti bokov (cez zadok), bez sťahovania. Stojte uvoľnene a vzpriamene a zapíšte si mieru v centimetroch.</p>
+            <p style="margin:0 0 6px;font-weight:700;">Как да измерите бедрата</p>
+            <p style="margin:0 0 14px;line-height:1.6;">Обвийте шивашкия метър около най-широката част на бедрата (през седалището), без да стягате. Застанете отпуснато и изправено и запишете мярката в сантиметри.</p>
             <table style="width:100%;border-collapse:collapse;font-size:14px;">
               <thead>
                 <tr style="background:#12233b;color:#fff;">
-                  <th style="padding:8px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Veľkosť</th>
-                  <th style="padding:8px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Boky (cm)</th>
+                  <th style="padding:8px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Размер</th>
+                  <th style="padding:8px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Бедра (cm)</th>
                 </tr>
               </thead>
               <tbody>
                 <?php
                 $lbx_sizes = array(
-                  array('S','do 76 cm','do 30"'),
+                  array('S','до 76 cm','до 30"'),
                   array('M','77 – 85 cm','30 – 33"'),
                   array('L','86 – 94 cm','34 – 37"'),
                   array('XL','95 – 102 cm','37 – 40"'),
@@ -653,7 +653,7 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
                   array('5XL','130 – 137 cm','51 – 54"'),
                   array('6XL','138 – 145 cm','54 – 57"'),
                   array('7XL','146 – 153 cm','57 – 60"'),
-                  array('8XL','154 cm a viac','61" a viac'),
+                  array('8XL','154 cm и повече','61" и повече'),
                 );
                 foreach ( $lbx_sizes as $i => $r ) :
                   $bg = ( $i % 2 ) ? '#f7fafb' : '#fff'; ?>
@@ -664,7 +664,7 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
                 <?php endforeach; ?>
               </tbody>
             </table>
-            <p style="margin:14px 0 0;line-height:1.6;"><strong>Medzi dvoma veľkosťami?</strong> Vždy odporúčame väčšie číslo pre optimálne pohodlie a maximálnu absorpciu.</p>
+            <p style="margin:14px 0 0;line-height:1.6;"><strong>Между два размера?</strong> Винаги препоръчваме по-голямото число за оптимален комфорт и максимална поемаемост.</p>
           </div>
 
         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice', $current_product_id) ): ?>
@@ -673,8 +673,8 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
             <table style="width:100%;border-collapse:collapse;font-size:15px;">
               <thead>
                 <tr style="background:#111;color:#fff;">
-                  <th style="padding:9px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Veľkosť</th>
-                  <th style="padding:9px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Zodpovedajúca hmotnosť</th>
+                  <th style="padding:9px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Размер</th>
+                  <th style="padding:9px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Съответстващо тегло</th>
                 </tr>
               </thead>
               <tbody>
@@ -692,15 +692,15 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
                 <?php endforeach; ?>
               </tbody>
             </table>
-            <p style="margin:12px 0 0;line-height:1.6;">Vyberte veľkosť podľa svojej hmotnosti. Medzi dvoma veľkosťami? Pre silnejšiu kompresiu vyberte menšie číslo.</p>
+            <p style="margin:12px 0 0;line-height:1.6;">Изберете размер според теглото си. Между два размера? За по-силна компресия изберете по-малкото число.</p>
           </div>
 
         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) ): ?>
 
           <div style="line-height:1.9;">
-            <strong>S/M</strong> : obvod bokov 75 – 110 cm<br>
-            <strong>L/XL</strong> : obvod bokov 110 – 140 cm<br><br>
-            Prosím, zmerajte si obvod bokov, aby ste našli svoju veľkosť.
+            <strong>S/M</strong> : обиколка на бедрата 75 – 110 cm<br>
+            <strong>L/XL</strong> : обиколка на бедрата 110 – 140 cm<br><br>
+            Моля, измерете обиколката на бедрата си, за да намерите своя размер.
           </div>
 
         <?php elseif( $is_boxers ): ?>
@@ -714,11 +714,11 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
         <?php elseif( noriks_is_type( 'kompresijske-nogavice', $current_product_id ) ): ?>
 
           <div style="line-height:1.9;">
-            <strong>S/M</strong> : veľkosť obuvi 36–40 / obvod lýtka : 23–36 cm<br>
-            <strong>L/XL</strong> : veľkosť obuvi 40–44 / obvod lýtka : 36–45 cm<br>
-            <strong>2XL</strong> : veľkosť obuvi 44–48 / obvod lýtka : 45–56 cm<br><br>
-            Zmerajte prosím obvod lýtka na najširšom mieste, aby ste zistili svoju veľkosť.<br><br>
-            Odporúčame vybrať veľkosť podľa obvodu lýtka, nie podľa bežnej veľkosti obuvi.
+            <strong>S/M</strong> : размер обувки 36–40 / обиколка на прасеца : 23–36 cm<br>
+            <strong>L/XL</strong> : размер обувки 40–44 / обиколка на прасеца : 36–45 cm<br>
+            <strong>2XL</strong> : размер обувки 44–48 / обиколка на прасеца : 45–56 cm<br><br>
+            Моля, измерете обиколката на прасеца на най-широкото място, за да определите своя размер.<br><br>
+            Препоръчваме да изберете размер според обиколката на прасеца, а не според обичайния размер обувки.
           </div>
 
         <?php elseif(  $is_carape ): ?>
@@ -729,13 +729,13 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
     <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slim', $current_product_id) ): ?>
 
           <div class="slm-size">
-            <p style="margin:0 0 14px;line-height:1.6;">Veľkosť vyberajte podľa <strong>obvodu pása</strong>, nie podľa bežnej veľkosti oblečenia. Ak ste medzi dvoma veľkosťami, vezmite si <strong>väčšiu</strong>.</p>
+            <p style="margin:0 0 14px;line-height:1.6;">Изберете размер според <strong>обиколката на талията</strong>, а не според обичайния размер облекло. Ако сте между два размера, вземете <strong>по-големия</strong>.</p>
             <table style="width:100%;border-collapse:collapse;font-size:14px;">
               <thead>
                 <tr style="background:#a3336b;color:#fff;">
-                  <th style="padding:9px 10px;text-align:left;">Veľkosť</th>
-                  <th style="padding:9px 10px;text-align:left;">EU veľkosť</th>
-                  <th style="padding:9px 10px;text-align:left;">Obvod pása</th>
+                  <th style="padding:9px 10px;text-align:left;">Размер</th>
+                  <th style="padding:9px 10px;text-align:left;">EU размер</th>
+                  <th style="padding:9px 10px;text-align:left;">Обиколка на талията</th>
                 </tr>
               </thead>
               <tbody>
@@ -750,18 +750,18 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
                 <?php endforeach; ?>
               </tbody>
             </table>
-            <p style="margin:14px 0 0;line-height:1.6;"><strong>Ako sa odmerať:</strong> krajčírsky meter oviňte okolo najužšieho miesta trupu, kúsok nad pupkom. Meter má byť vodorovný a priliehavý, ale nie natesno.</p>
+            <p style="margin:14px 0 0;line-height:1.6;"><strong>Как да се измерите:</strong> обвийте шивашкия метър около най-тясното място на тялото, малко над пъпа. Метърът трябва да е хоризонтален и прилепнал, но не стегнат.</p>
           </div>
 
     <?php elseif( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ): ?>
 
           <div class="noriks-size">
-            <p style="margin:0 0 14px;line-height:1.6;">Veľkosť vyberte podľa svojej <strong>veľkosti obuvi (EU)</strong>.</p>
+            <p style="margin:0 0 14px;line-height:1.6;">Изберете размер според своя <strong>размер обувки (EU)</strong>.</p>
             <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
             <table style="width:100%;border-collapse:collapse;font-size:14px;">
               <thead>
                 <tr style="background:#a9683f;color:#fff;">
-                  <th style="padding:9px 8px;text-align:left;">Veľkosť obuvi (EU)</th>
+                  <th style="padding:9px 8px;text-align:left;">Размер обувки (EU)</th>
                 </tr>
               </thead>
               <tbody>
@@ -776,18 +776,18 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
               </tbody>
             </table>
             </div>
-            <p style="margin:12px 0 0;line-height:1.6;">Ste medzi dvoma veľkosťami? Zoberte väčšiu.</p>
-            <p style="margin:14px 0 0;line-height:1.6;">Ak vám veľkosť nesedí, máte 30 dní na vrátenie alebo výmenu.</p>
+            <p style="margin:12px 0 0;line-height:1.6;">Между два размера сте? Вземете по-големия.</p>
+            <p style="margin:14px 0 0;line-height:1.6;">Ако размерът не ви стане, имате 30 дни за връщане или замяна.</p>
           </div>
 
     <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
 
           <div class="noriks-size">
-            <p style="margin:0 0 14px;line-height:1.6;">Objednajte si <strong>svoje bežné číslo obuvi</strong>. Pletenina je pružná, takže každá veľkosť pokryje niekoľko čísel.</p>
+            <p style="margin:0 0 14px;line-height:1.6;">Поръчайте <strong>обичайното си число обувки</strong>. Плетката е еластична, така че всеки размер покрива няколко номера.</p>
             <table style="width:100%;border-collapse:collapse;font-size:14px;">
               <thead>
                 <tr style="background:#d2632e;color:#fff;">
-                  <th style="padding:9px 10px;text-align:left;">EU číslo obuvi</th>
+                  <th style="padding:9px 10px;text-align:left;">EU номер обувки</th>
                 </tr>
               </thead>
               <tbody>
@@ -800,19 +800,19 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
                 <?php endforeach; ?>
               </tbody>
             </table>
-            <p style="margin:14px 0 0;line-height:1.6;"><strong>Medzi dvoma veľkosťami?</strong> Vezmite väčšiu — vankúšik na päte a pás okolo klenby sadnú na miesto, len keď ponožka nie je primalá.</p>
+            <p style="margin:14px 0 0;line-height:1.6;"><strong>Между два размера?</strong> Вземете по-големия — подложката на петата и лентата около свода застават на място само когато чорапът не е твърде малък.</p>
           </div>
 
     <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kompwom', $current_product_id) ): ?>
 
           <div class="kwm-size">
-            <p style="margin:0 0 14px;line-height:1.6;">Veľkosť vyberajte podľa <strong>obvodu hrudníka</strong> — ten určuje, ako tričko sadne na prsia a ramená. Ak ste medzi dvomi veľkosťami, vezmite <strong>väčšiu</strong>.</p>
+            <p style="margin:0 0 14px;line-height:1.6;">Изберете размер според <strong>обиколката на гърдите</strong> — тя определя как тениската ще седне на гърдите и раменете. Ако сте между два размера, вземете <strong>по-големия</strong>.</p>
             <table style="width:100%;border-collapse:collapse;font-size:14px;">
               <thead>
                 <tr style="background:#a8536b;color:#fff;">
-                  <th style="padding:9px 10px;text-align:left;">Veľkosť</th>
-                  <th style="padding:9px 10px;text-align:left;">Obvod hrudníka</th>
-                  <th style="padding:9px 10px;text-align:left;">Obvod pása</th>
+                  <th style="padding:9px 10px;text-align:left;">Размер</th>
+                  <th style="padding:9px 10px;text-align:left;">Обиколка на гърдите</th>
+                  <th style="padding:9px 10px;text-align:left;">Обиколка на талията</th>
                 </tr>
               </thead>
               <tbody>
@@ -848,7 +848,7 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
                   </tr>
               </tbody>
             </table>
-            <p style="margin:14px 0 0;line-height:1.6;"><strong>Ako merať:</strong> hrudník cez najširšie miesto, pás na najužšom mieste. Merajte cez spodnú bielizeň, páska priliehavá, ale nie stiahnutá.</p>
+            <p style="margin:14px 0 0;line-height:1.6;"><strong>Как да мерите:</strong> гърдите през най-широкото място, талията на най-тясното. Мерете през бельото, лентата да е прилепнала, но не стегната.</p>
           </div>
 
         <?php elseif(  $is_mixed_bundle ): ?>
@@ -879,15 +879,15 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
       <div class="accordion-content">
              <?php if( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
 
-                Pranie v práčke nastudeno, spolu s pracovným oblečením. Sušenie v sušičke pri nízkej teplote. Bez ručného prania, sušenia na šnúre a špeciálneho pracieho prostriedku.
+                Пране в пералня на студено, заедно с работното облекло. Сушене в сушилня на ниска температура. Без ръчно пране, сушене на простор и специален перилен препарат.
 
              <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'leakboxers', $current_product_id ) ): ?>
 
-                Perte na 30 – 40 °C, na programe pre jemnú bielizeň. Bez aviváže a bielidla. Sušte na vzduchu. Absorpčnú schopnosť si udržia počas stoviek praní.
+                Перете на 30 – 40 °C, на програма за фино пране. Без омекотител и белина. Сушете на въздух. Запазват поемащата си способност през стотици пранета.
 
              <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'kompresijske-majice', $current_product_id ) ): ?>
 
-                Perte v práčke v studenej vode na jemnom programe. Bez bielidla a aviváže. Nesušiť v sušičke — sušte na vzduchu, aby sa zachovala kompresia a tvar.
+                Перете в пералня в студена вода на деликатна програма. Без белина и омекотител. Не сушете в сушилня — сушете на въздух, за да се запазят компресията и формата.
 
              <?php elseif( !$is_boxers &&  !$is_carape &&   !$is_mixed_bundle ): ?>
         <?php echo get_field("singlepp_acc_t_2","options"); ?>
@@ -897,7 +897,7 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
 
 
 
-                       Perte farby s farbami. Jemný cyklus v studenej vode. Sušte vodorovne alebo v sušičke pri nízkej teplote. Nebieliť.
+                       Перете цветно с цветно. Деликатна програма в студена вода. Сушете хоризонтално или в сушилня на ниска температура. Не използвайте белина.
 
 
           <?php else: ?>
@@ -917,8 +917,8 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
       </div>
       <div class="accordion-content">
        <p></p>
-      Sme si takí istí, že si NORIKS zamilujete, že máte <b data-stringify-type="bold">30 dní</b> na jeho vrátenie alebo výmenu.
-Žiadne papierovačky, žiadny stres – vyriešime to niekoľkými kliknutiami.</p>
+      Толкова сме сигурни, че ще се влюбите в NORIKS, че имате <b data-stringify-type="bold">30 дни</b> да го върнете или замените.
+Без документи, без стрес – решаваме го с няколко клика.</p>
 <p>
     
 
@@ -932,7 +932,7 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
   </a>
 </p>
 
-<p>Stačí nám poslať e-mail s informáciou, že chcete náhradu a <b data-stringify-type="bold">my sa o to hneď postaráme.</b></p>
+<p>Достатъчно е да ни изпратите имейл, че искате замяна, и <b data-stringify-type="bold">ние веднага ще се погрижим.</b></p>
        
       </div>
     </div>
@@ -954,12 +954,12 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
         <!-- 6 - navodila za uporabo (PDF) -->
     <?php
     $noriks_manuals = array(
-        'kidsnest' => array( 'noriks-kidsnest.pdf', 'NORIKS KidsNest — detský ortopedický vankúš' ),
-        'kneefix' => array( 'noriks-kneefix.pdf', 'NORIKS KneeFix — ortopedická kolenná ortéza' ),
-        'ortopedski-jastuk' => array( 'noriks-ergosit.pdf', 'NORIKS ErgoSit — ortopedický sedací vankúš' ),
-        'fisiorest' => array( 'noriks-fisiorest.pdf', 'NORIKS NeckRelax — prístroj na krk' ),
-        'bunion' => array( 'noriks-bunion-fix.pdf', 'NORIKS Bunion Fix — korektor vybočeného palca' ),
-        'ortopas' => array( 'noriks-ortopas.pdf', 'NORIKS ortopedický pás na chrbát' ),
+        'kidsnest' => array( 'noriks-kidsnest.pdf', 'NORIKS KidsNest — детска ортопедична възглавница' ),
+        'kneefix' => array( 'noriks-kneefix.pdf', 'NORIKS KneeFix — ортопедична ортеза за коляно' ),
+        'ortopedski-jastuk' => array( 'noriks-ergosit.pdf', 'NORIKS ErgoSit — ортопедична възглавница за сядане' ),
+        'fisiorest' => array( 'noriks-fisiorest.pdf', 'NORIKS NeckRelax — уред за шия' ),
+        'bunion' => array( 'noriks-bunion-fix.pdf', 'NORIKS Bunion Fix — коректор за изкривен палец' ),
+        'ortopas' => array( 'noriks-ortopas.pdf', 'NORIKS ортопедичен колан за гърба' ),
     );
     $noriks_manual = null;
     if ( function_exists('noriks_is_type') ) {
@@ -970,7 +970,7 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
     if ( $noriks_manual && file_exists( get_template_directory() . '/manuals/' . $noriks_manual[0] ) ) : ?>
     <div class="accordion-item noriks-manual-acc">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Návod na použitie</h3>
+        <h3>Инструкции за употреба</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
@@ -984,7 +984,7 @@ $is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica
           </span>
           <span class="noriks-manual-txt">
             <strong><?php echo esc_html( $noriks_manual[1] ); ?></strong>
-            <small>PDF · otvorí sa na novej karte</small>
+            <small>PDF · отваря се в нов таб</small>
           </span>
           <span class="noriks-manual-dl" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
