@@ -49,10 +49,10 @@
 
 	<?php
 	// ===== Klaviyo newsletter =====
-	// TODO(SK): replace with the Slovak footer list ID (Klaviyo -> Lists
-	// & Segments -> Settings -> List ID). Left as placeholder so signups are
-	// NOT sent to another market's list until the SK list is set.
-	$nf_klaviyo_list = 'SF2NXX';
+	// TODO(BG): vpisi bolgarski List ID iz Klaviyo (Lists & Segments ->
+	// Settings -> List ID). Namenoma prazno, da se prijave NE zapisejo v
+	// seznam drugega trga (SF2NXX je slovaski seznam).
+	$nf_klaviyo_list = '';
 
 	$nf_social  = get_field( 'social_list', 'options' );
 	$nf_col2_h  = get_field( 'footer_midle_col2_header', 'option' );
@@ -151,8 +151,8 @@
 		<div class="nf-wrap nf-meta">
 			<div class="nf-meta-left">
 				<span class="nf-region">
-					<img loading="lazy" decoding="async" src="https://static.devit.software/countries/flags/rectangle/sk.svg" alt="" class="nf-flag">
-					Slovensko (SK)
+					<img loading="lazy" decoding="async" src="https://static.devit.software/countries/flags/rectangle/bg.svg" alt="" class="nf-flag">
+					България (BG)
 				</span>
 				<span class="nf-copy">© <?php echo date( 'Y' ); ?> NORIKS. Всички права запазени.</span>
 			</div>

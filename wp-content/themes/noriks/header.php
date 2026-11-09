@@ -597,7 +597,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div id="languageModal" class="language-modal">
   <div class="language-modal-content">
     <span class="language-close" onclick="closeLanguageModal()">&times;</span>
-    <h3>Vyberte svoju krajinu</h3>
+    <h3>Изберете своята държава</h3>
    <div class="language-options">
 
   <a href="https://noriks.com/" class="language-option">
@@ -616,7 +616,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <img src="https://static.devit.software/countries/flags/rectangle/pl.svg"><span>Poland (PL)</span>
   </a>
 
-  <a href="https://noriks.com/bg" class="language-option">
+  <a href="https://noriks.com/sk" class="language-option">
     <img src="https://static.devit.software/countries/flags/rectangle/sk.svg"><span>Slovakia (SK)</span>
   </a>
 

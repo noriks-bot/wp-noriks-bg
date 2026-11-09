@@ -74,17 +74,17 @@ if (  has_term( array( 'startovaci-balicek','orto-starter' ), 'product_cat', get
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-PREČO SI ĽUDIA VYBERAJÚ ŠTARTOVACÍ BALÍČEK?
+ЗАЩО ХОРАТА ИЗБИРАТ СТАРТОВИЯ ПАКЕТ?
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;"  ><strong>"Vzal som si ho, lebo som si nebol istý, či mi bude sedieť." Marko - Záhreb
+    line-height: 1.2;"  ><strong>"Взех го, защото не бях сигурен дали ще ми стане." Мартин – София
 
 
 
-</strong><span style="font-weight:normal;">Marko - Zagreb</span></p>
-        <p class="description">Mnohí zákazníci začínajú so štartovacím balíčkom, aby to najprv vyskúšali.
+</strong><span style="font-weight:normal;">Мартин – София</span></p>
+        <p class="description">Много клиенти започват със стартовия пакет, за да го изпробват първо.
 
 
 
@@ -93,12 +93,12 @@ PREČO SI ĽUDIA VYBERAJÚ ŠTARTOVACÍ BALÍČEK?
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;" ><strong>"Po prvom nosení som hneď objednal ďalšie."
+    line-height: 1.2;" ><strong>"След първото носене веднага поръчах още."
 
 
 
-</strong><span style="font-weight:normal;">Pavle - Split</span></p>
-        <p class="description">Viac ako 95 % zákazníkov si po zakúpení štartovacieho balíčka objedná znova. Nie preto, že by to plánovali, ale preto, že rozdiel v strihu, pohodlí a kvalite pocítia už prvý deň.
+</strong><span style="font-weight:normal;">Петър – Пловдив</span></p>
+        <p class="description">Над 95 % от клиентите поръчват отново след покупката на стартовия пакет. Не защото са го планирали, а защото разликата в кройката, комфорта и качеството се усеща още първия ден.
 
 
 </p>
@@ -106,12 +106,12 @@ PREČO SI ĽUDIA VYBERAJÚ ŠTARTOVACÍ BALÍČEK?
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;"  ><strong>"Materiál a strih ma presvedčili." 
+    line-height: 1.2;"  ><strong>"Материалът и кройката ме убедиха." 
 
 
 
-</strong><span style="font-weight:normal;">Ante - Pula</span></p>
-        <p class="description">Tričko a boxerky sú mäkké, ľahké a príjemné na pokožku. Štartovací balíček je najčastejším dôvodom, prečo sa NORIKS rýchlo stane súčasťou vášho každodenného šatníka.
+</strong><span style="font-weight:normal;">Георги – Варна</span></p>
+        <p class="description">Тениската и боксерките са меки, леки и приятни за кожата. Стартовият пакет е най-честата причина NORIKS бързо да стане част от вашия всекидневен гардероб.
 
 
 
@@ -137,37 +137,37 @@ PREČO SI ĽUDIA VYBERAJÚ ŠTARTOVACÍ BALÍČEK?
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-KOMBINÁCIA, KTORÁ SA NOSÍ KAŽDÝ DEŇ
+КОМБИНАЦИЯТА, КОЯТО СЕ НОСИ ВСЕКИ ДЕН
 
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Navrhnuté pre celodenné pohodlie
+        <p><strong>Създадени за комфорт през целия ден
 
 
 </strong></p>
-        <p class="description">Tričko a boxerky sú navrhnuté tak, aby sa dali nosiť od rána do večera, bez nastavovania alebo nepohodlia. Všetko drží na svojom mieste, netlačí a umožňuje voľný pohyb počas celého dňa.
+        <p class="description">Тениската и боксерките са създадени така, че да се носят от сутрин до вечер, без нагласяне и без неудобство. Всичко стои на мястото си, не притиска и позволява свободно движение през целия ден.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Strih, ktorý sa prispôsobí postave
+        <p><strong>Кройка, която се приспособява към фигурата
 
 
 </strong></p>
-        <p class="description">Strih trička zdôrazňuje hornú časť tela, zatiaľ čo boxerky poskytujú dostatok priestoru a stability bez dvíhania. Výsledkom je pocit bezpečia, uvoľnenia a elegantný vzhľad v každej situácii.
+        <p class="description">Кройката на тениската подчертава горната част на тялото, а боксерките дават достатъчно място и стабилност, без да се повдигат. Резултатът е усещане за сигурност, отпускане и елегантен вид във всяка ситуация.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kvalita, ktorú pocítite okamžite
+        <p><strong>Качество, което усещате веднага
 
 </strong></p>
-        <p class="description">Materiály sú mäkké, priedušné a príjemné na pokožku, pričom po vypraní nestrácajú svoj tvar. Už od prvého nosenia je jasné, prečo sa táto kombinácia rýchlo stane súčasťou vášho každodenného šatníka.
+        <p class="description">Материалите са меки, дишащи и приятни за кожата, а след пране не губят формата си. Още от първото носене е ясно защо тази комбинация бързо става част от всекидневния ви гардероб.
 
 </p>
       </div>
@@ -194,39 +194,39 @@ KOMBINÁCIA, KTORÁ SA NOSÍ KAŽDÝ DEŇ
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-NAJJEDNODUCHŠÍ A NAJBEZPEČNEJŠÍ ŠTART
+НАЙ-ЛЕСНИЯТ И НАЙ-БЕЗОПАСЕН СТАРТ
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Najnižšie možné riziko
+        <p><strong>Най-нисък възможен риск
 
 
 </strong></p>
-        <p class="description">Pretože vám to umožňuje zažiť kvalitu bez veľkej investície.
-Namiesto toho, aby ste si kupovali viac kusov naraz, dostanete jedno tričko a jedny boxerky – len toľko, aby ste zistili, ako sedia, ako sa nosia a ako sa materiál cíti.
+        <p class="description">Защото ви позволява да изпитате качеството без голяма инвестиция.
+Вместо да купувате няколко броя наведнъж, получавате една тениска и едни боксерки – точно колкото да разберете как стоят, как се носят и как се усеща материалът.
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Navrhnuté pre prvý krok
+        <p><strong>Създаден за първата стъпка
 
 
 </strong></p>
-        <p class="description">Štartovací balíček je určený ako prvá skúsenosť, nie ako zásoba.
-Je k dispozícii iba raz na zákazníka a za špeciálnu cenu, takže rozhodnutie je jednoduché a bez premýšľania.
+        <p class="description">Стартовият пакет е предвиден като първо изживяване, не като запас.
+Достъпен е само веднъж на клиент и на специална цена, така че решението е лесно и без размисъл.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Opakujúca sa skúsenosť
+        <p><strong>Изживяване, което се повтаря
 
 
 </strong></p>
-        <p class="description">Väčšina mužov potom pokračuje s NORIKS, pretože chápu rozdiel v strihu, pohodlí a kvalite.
-Ale prvým krokom je toto – najmenšie riziko, najčistejší dojem.
+        <p class="description">Повечето мъже след това продължават с NORIKS, защото разбират разликата в кройката, комфорта и качеството.
+Но първата стъпка е тази – най-малък риск, най-чисто впечатление.
 
 </p>
       </div>
@@ -328,65 +328,65 @@ if (  has_term( array( 'tricka',  'orto-tricka', 'orto-majica-darila' ), 'produc
       <!--<h4 style="" class="highlight"><?php echo get_field("singlepp_content_standard_reviews_t1","options"); ?></h4>-->
       <h1 style="color:black;     margin-bottom: 4px;">
           
-          <?php if ( function_exists('noriks_is_type') && noriks_is_type('slim') ): ?>Nie ste jediná, kto hľadá hladkú líniu pod oblečením.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ): ?>Nie ste jediný, komu sa chodidlá po celej zmene v pracovných čižmách nevedia dočkať oddychu.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Nie ste jediný, koho po celej zmene na nohách pália chodidlá.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>
+          <?php if ( function_exists('noriks_is_type') && noriks_is_type('slim') ): ?>Не сте единствената, която търси гладка линия под облеклото.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ): ?>Не сте единственият, чиито стъпала след цяла смяна в работни обувки не могат да дочакат почивка.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Не сте единственият, чиито стъпала горят след цяла смяна на крак.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>
           
           
           
-          Nie si sám v hľadaní úľavy od napätia v krku.
+          Не сте сами в търсенето на облекчение от напрежението в шията.
           
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>
           
           
           
-          Nie si sám v hľadaní úľavy od vybočeného palca.
+          Не сте сами в търсенето на облекчение от изкривения палец.
           
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>
           
           
           
-          Nie si sám v hľadaní odľahčenia chrbta.
+          Не сте сами в търсенето на облекчение за гърба.
           
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>
           
           
           
-          Nie si sám v hľadaní dokonalých kompresných ponožiek.
+          Не сте сами в търсенето на идеалните компресионни чорапи.
           
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>
           
           
           
-          Nie si sám v hľadaní dokonalých boxeriek.
+          Не сте сами в търсенето на идеалните боксерки.
           
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>
 
-          Nie ste sami v hľadaní hladkej pleti bez vrások.
+          Не сте сами в търсенето на гладка кожа без бръчки.
 
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>
 
-          Nie ste sami v hľadaní spoľahlivej ochrany pred únikom moču.
+          Не сте сами в търсенето на надеждна защита от изпускане на урина.
 
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>
 
-          Nie ste sami v hľadaní ostrejšej siluety a lepšieho držania tela.
+          Не сте сами в търсенето на по-изчистен силует и по-добра стойка.
 
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>
 
-          Nie ste sami v hľadaní sedenia bez bolesti.
+          Не сте сами в търсенето на седене без болка.
 
-          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ): ?>Nie ste jediný, komu Kegelove cviky nepriniesli výsledok.
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ): ?>Не сте единственият, на когото упражненията на Кегел не донесоха резултат.
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix') ): ?>
 
-           Nie ste jediní, kto hľadá stabilnejšie koleno.
+           Не сте единствените, които търсят по-стабилно коляно.
 
-          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ): ?>Tisíce mužov už používajú NORIKS ControlPro — skutočný odpor namiesto stláčania naprázdno.
-          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix') ): ?>Tisíce zákazníkov už nosia ortézu NORIKS KneeFix pre stabilnejšie koleno – na schodoch, na prechádzke aj počas dlhého státia.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ): ?>Хиляди мъже вече използват NORIKS ControlPro — истинско съпротивление вместо свиване напразно.
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix') ): ?>Хиляди клиенти вече носят ортезата NORIKS KneeFix за по-стабилно коляно – по стълби, на разходка и при дълго стоене.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>
 
-          Nie ste sami v hľadaní pokojného detského spánku.
+          Не сте сами в търсенето на спокоен детски сън.
 
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('winecooler') ): ?>
 
-          Nie ste jediní, komu sa víno v pohári príliš rýchlo zohreje.
+          Не сте единствените, чието вино в чашата се затопля твърде бързо.
 
           <?php elseif ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ): ?>
 
@@ -394,13 +394,13 @@ if (  has_term( array( 'tricka',  'orto-tricka', 'orto-majica-darila' ), 'produc
 
           <?php else: ?>
 
-          Nisi sam u potrazi za savršenim boksericama.
+          Не сте сами в търсенето на идеалните боксерки.
 
           <?php endif; ?>
           
           
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('slim') ): ?>Tisíce žien už nosia NORIKS Slim – tvarujúcu bielizeň, ktorá vyhladí líniu a zostáva na mieste.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ): ?>Tisíce robotníkov už pracujú v ponožkách NORIKS Tradesman – mäkký vankúšik, zosilnená päta a pásik pod klenbou.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Tisíce majstrov už pracujú v ponožkách NORIKS SlabProof – zónové polstrovanie tam, kde krok udiera najsilnejšie, zosilnená päta a prsty a suché chodidlá celú zmenu.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Tisíce ľudí už používa NORIKS NeckRelax na menšiu bolesť a napätie v krku – trakcia, vibrácie a teplo v jednom prístroji.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Tisíce ľudí už nosí korektor NORIKS na menšiu bolesť a rovnejšie postavenie palca – doma, pri telke alebo počas spánku.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Tisíce ľudí už nosí ortopedický pás NORIKS na menšiu bolesť a stabilnejší chrbát – v práci, pri dvíhaní a dlhom sedení.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>Tisíce mužov už nosí kompresné ponožky NORIKS pre ľahšie a menej unavené nohy – v práci, na cestách aj pri tréningu.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>Tisíce mužov už nosí boxerky NORIKS – pohodlie, ktoré vydrží celý deň.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Tisíce žien už používajú HERS silikónové kolagénové pásiky pre hladšiu, pevnejšiu a mladšie vyzerajúcu pleť.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Tisíce mužov už nosia absorpčné boxerky NORIKS pre suchosť a sebavedomie – bez vložiek a plienok.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Tisíce mužov už nosia kompresné tričko NORIKS pre vyhladené brucho, lepšie držanie tela a viac sebavedomia.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Tisíce zákazníkov už používajú ortopedický vankúš NORIKS ErgoSit na sedenie bez bolesti kostrče, chrbta a bokov – v aute, v kancelárii aj doma.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Tisíce rodičov už vymenili obyčajný vankúš za NORIKS KidsNest – tichšie noci, dýchanie nosom a spánok, ktorý skutočne regeneruje.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('winecooler') ): ?>Tisíce ľudí už chladí víno s NORIKS WineCooler – tyčinkou z nehrdzavejúcej ocele s nalievačom, bez vedierka s ľadom a bez rozriedeného vína.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('slim') ): ?>Хиляди жени вече носят NORIKS Slim – оформящо бельо, което изглажда линията и остава на място.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ): ?>Хиляди работници вече работят с чорапите NORIKS Tradesman – мека подложка, подсилена пета и лента под свода.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Хиляди майстори вече работят с чорапите NORIKS SlabProof – зоново ватиране там, където стъпката удря най-силно, подсилени пета и пръсти и сухи стъпала през цялата смяна.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Хиляди хора вече използват NORIKS NeckRelax за по-малко болка и напрежение в шията – тракция, вибрации и топлина в един уред.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Хиляди хора вече носят коректора NORIKS за по-малко болка и по-изправен палец – вкъщи, пред телевизора или докато спят.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Хиляди хора вече носят ортопедичния колан NORIKS за по-малко болка и по-стабилен гръб – в работата, при вдигане и при дълго седене.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>Хиляди мъже вече носят компресионните чорапи NORIKS за по-леки и по-малко уморени крака – в работата, в пътуване и при тренировка.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>Хиляди мъже вече носят боксерките NORIKS – комфорт, който издържа целия ден.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Хиляди жени вече използват силиконовите колагенови лепенки HERS за по-гладка, по-стегната и по-млада на вид кожа.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Хиляди мъже вече носят абсорбиращите боксерки NORIKS за сухота и самочувствие – без подложки и пелени.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Хиляди мъже вече носят компресионната тениска NORIKS за изгладен корем, по-добра стойка и повече самочувствие.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Хиляди клиенти вече използват ортопедичната възглавница NORIKS ErgoSit за седене без болка в опашната кост, гърба и бедрата – в колата, в офиса и вкъщи.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Хиляди родители вече замениха обикновената възглавница с NORIKS KidsNest – по-тихи нощи, дишане през носа и сън, който наистина възстановява.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('winecooler') ): ?>Хиляди хора вече охлаждат виното си с NORIKS WineCooler – пръчка от неръждаема стомана с наливник, без кофичка с лед и без разводнено вино.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
@@ -511,58 +511,58 @@ if (  has_term( array( 'tricka',  'orto-tricka', 'orto-majica-darila' ), 'produc
 
   // Include review pools (own pool per product group)
 if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
-  include get_stylesheet_directory() . '/auto_reviews/SK_snug.php';
+  include get_stylesheet_directory() . '/auto_reviews/BG_snug.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) {
-  include get_stylesheet_directory() . '/auto_reviews/SK_kompwom.php';
+  include get_stylesheet_directory() . '/auto_reviews/BG_kompwom.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('bowl') ) {
-  include get_stylesheet_directory() . '/auto_reviews/SK_bowl.php';
+  include get_stylesheet_directory() . '/auto_reviews/BG_bowl.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('winecooler') ) {
-  include get_stylesheet_directory() . '/auto_reviews/SK_winecooler.php';
+  include get_stylesheet_directory() . '/auto_reviews/BG_winecooler.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('pal') ) {
-  include get_stylesheet_directory() . '/auto_reviews/SK_pal.php';
+  include get_stylesheet_directory() . '/auto_reviews/BG_pal.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('red') ) {
-  include get_stylesheet_directory() . '/auto_reviews/SK_red.php';
+  include get_stylesheet_directory() . '/auto_reviews/BG_red.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) {
-  include get_stylesheet_directory() . '/auto_reviews/SK_kneeheat.php';
+  include get_stylesheet_directory() . '/auto_reviews/BG_kneeheat.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ) {
-  include get_stylesheet_directory() . '/auto_reviews/SK_slabproof.php';
+  include get_stylesheet_directory() . '/auto_reviews/BG_slabproof.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ) {
-  include get_stylesheet_directory() . '/auto_reviews/SK_tradesman.php';
+  include get_stylesheet_directory() . '/auto_reviews/BG_tradesman.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('slim') ) {
-  include get_stylesheet_directory() . '/auto_reviews/SK_slim.php';
+  include get_stylesheet_directory() . '/auto_reviews/BG_slim.php';
 } else
 if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_hyd.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_hyd.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_cloud.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_cloud.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_cloath.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_cloath.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_controlpro.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_controlpro.php';
   } elseif ( $is_kneefix_page ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_kneefix.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_kneefix.php';
   } elseif ( $is_kidsnest_page ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_kidsnest.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_kidsnest.php';
   } elseif ( $is_jastuk_page ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_ortopedski_jastuk.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_ortopedski_jastuk.php';
   } elseif ( $is_leakboxers_page ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_leakboxers.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_leakboxers.php';
   } elseif ( $is_kompmajice_page ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_kompresijske-majice.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_kompresijske-majice.php';
   } elseif ( $is_norikshers_review_page ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_norikshers.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_norikshers.php';
   } elseif ( $is_fisiorest_page ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_fisiorest.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_fisiorest.php';
   } elseif ( $is_bunion_page ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_bunion.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_bunion.php';
   } elseif ( $is_ortopas_page ) {
-    include get_stylesheet_directory() . '/auto_reviews/SK_ortopas.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_ortopas.php';
   } elseif ( ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ) ) {
-      include get_stylesheet_directory() . '/auto_reviews/SK_nogavice.php';
+      include get_stylesheet_directory() . '/auto_reviews/BG_nogavice.php';
   } elseif ( ! $is_bokserice_page )  {
     include get_stylesheet_directory() . '/auto_reviews/'.$reviews_language.'.php';
   } else {
-    include get_stylesheet_directory() . '/auto_reviews/SK_bokserice.php';
+    include get_stylesheet_directory() . '/auto_reviews/BG_bokserice.php';
   }
 
   include get_stylesheet_directory() . '/auto_reviews/'.$reviews_language.'-2.php';
