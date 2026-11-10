@@ -11,23 +11,23 @@ $mj_vid = get_template_directory_uri() . '/img/majica-videos/';
 $mj_ico = get_template_directory_uri() . '/img/majica-icons/';
 $mj_col = get_template_directory_uri() . '/img/majica-barve/';
 ?>
-<section class="fis-science"><div class="fis-wrap"><div class="fis-box"><h2 class="fis-title">Stvorené pre skutočných chlapov: 4 rozdiely, ktoré si všimneš hneď</h2><div class="fis-grid">
-<div class="fis-card"><h3 class="fis-card-title">Brucho zostane zakryté</h3><p class="fis-card-text">Dlhší strih <strong>zostane dole</strong>, aj keď sa zohneš alebo zdvihneš ruky.</p></div>
-<div class="fis-card"><h3 class="fis-card-title">Ramená bez škrtenia</h3><p class="fis-card-text">Širší strih v hrudi a ramenách <strong>zvýrazní postavu</strong> bez naťahovania v podpazuší.</p></div>
-<div class="fis-card"><h3 class="fis-card-title">Tvar aj po praní</h3><p class="fis-card-text">Ringspun bavlna <strong>sa nezrazí ani nevytiahne</strong>, výstrih zostane rovný.</p></div>
-<div class="fis-card"><h3 class="fis-card-title">Nič neškriabe</h3><p class="fis-card-text">Potlačená etiketa namiesto všitej, <strong>jemné na pokožke</strong> celý deň.</p></div>
+<section class="fis-science"><div class="fis-wrap"><div class="fis-box"><h2 class="fis-title">Създадени за истински мъже: 4 разлики, които забелязваш веднага</h2><div class="fis-grid">
+<div class="fis-card"><h3 class="fis-card-title">Коремът остава покрит</h3><p class="fis-card-text">По-дълга кройка <strong>zostane dole</strong>, дори когато се наведеш или вдигнеш ръце.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Рамене без стягане</h3><p class="fis-card-text">По-широка кройка в гърдите и раменете <strong>подчертава фигурата</strong> без опъване под мишниците.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Форма и след пране</h3><p class="fis-card-text">Ringspun bavlna <strong>не се свива и не се разтяга</strong>, деколтето остава право.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Нищо не драска</h3><p class="fis-card-text">Отпечатан етикет вместо зашит, <strong>нежно за кожата</strong> цял ден.</p></div>
 </div></div></div></section>
 
-<section class="fis-hero"><video class="fis-hero-vid" src="<?php echo esc_url( $mj_vid . 'majica-hero.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-hero-overlay"></div><div class="fis-hero-inner"><h2 class="fis-hero-title">Tričko, ktoré konečne sedí. Od rána do večera.</h2></div></section>
+<section class="fis-hero"><video class="fis-hero-vid" src="<?php echo esc_url( $mj_vid . 'majica-hero.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-hero-overlay"></div><div class="fis-hero-inner"><h2 class="fis-hero-title">Тениска, която най-накрая стои добре. От сутрин до вечер.</h2></div></section>
 
-<section class="fis-experts"><div class="fis-wrap fis-exp-grid"><div class="fis-exp-quote"><h2 class="fis-h2">Materiál, ktorý pocítiš</h2>
-<p>Vyrobené z <strong>ringspun bavlny</strong>, ktorá je mäkšia a pevnejšia ako bežná bavlna. Tričko je priedušné, drží tvar a nekrčí sa.</p>
-<p>✔ Hustá, a pritom ľahká látka<br>✔ Nepresvitá, ani biele<br>✔ Farba zostane živá aj po praní</p>
-<p class="fis-exp-author"><strong>Látka zblízka</strong><br>Pozri sa, ako je tričko vyrobené.</p></div>
+<section class="fis-experts"><div class="fis-wrap fis-exp-grid"><div class="fis-exp-quote"><h2 class="fis-h2">Материал, който усещаш</h2>
+<p>Изработени от <strong>ringspun bavlny</strong>, която е по-мека и по-здрава от обикновения памук. Тениската е дишаща, държи формата си и не се мачка.</p>
+<p>✔ Плътен, а при това лек плат<br>✔ Не прозира, дори бялата<br>✔ Цветът остава жив и след пране</p>
+<p class="fis-exp-author"><strong>Платът отблизо</strong><br>Виж как е направена тениската.</p></div>
 <div class="fis-exp-cards">
-<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-fabric.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Mäkká látka</div><div class="fis-exp-role">Mäkšia ako bežná bavlna</div></div></div>
-<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-stretch.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Vráti sa do tvaru</div><div class="fis-exp-role">Nosením sa nevytiahne</div></div></div>
-<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-collar.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Čisté švy</div><div class="fis-exp-role">Bez všitej etikety</div></div></div>
+<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-fabric.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Мек плат</div><div class="fis-exp-role">По-мек от обикновения памук</div></div></div>
+<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-stretch.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Връща се във формата си</div><div class="fis-exp-role">От носене не се разтяга</div></div></div>
+<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-collar.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Чисти шевове</div><div class="fis-exp-role">Без зашит етикет</div></div></div>
 </div></div></section>
 
 <style>
@@ -42,42 +42,42 @@ $mj_col = get_template_directory_uri() . '/img/majica-barve/';
 .nk-col-note{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:18px;font-size:14px;font-weight:600;color:#1c1c1c}
 @media (max-width:760px){.nk-col-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 </style>
-<section class="nk-colors"><div class="fis-wrap"><h2 class="fis-h2 fis-center">7 farieb, ktoré zostanú ako nové</h2><p class="nk-colors-sub">Farby nevyblednú a nevyperú sa ani po mnohých praniach.</p>
+<section class="nk-colors"><div class="fis-wrap"><h2 class="fis-h2 fis-center">7 цвята, които остават като нови</h2><p class="nk-colors-sub">Цветовете не избледняват и не се изпират дори след много пранета.</p>
 <div class="nk-col-grid">
-<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-crna.jpg' . $mj_ver ); ?>" alt="NORIKS tričko čierne" loading="lazy"><span>Čierna</span></div>
-<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-bela.jpg' . $mj_ver ); ?>" alt="NORIKS tričko biele" loading="lazy"><span>Biela</span></div>
-<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-siva.jpg' . $mj_ver ); ?>" alt="NORIKS tričko sivé" loading="lazy"><span>Sivá</span></div>
-<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-bez.jpg' . $mj_ver ); ?>" alt="NORIKS tričko béžové" loading="lazy"><span>Béžová</span></div>
-<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-temnomodra.jpg' . $mj_ver ); ?>" alt="NORIKS tričko tmavomodré" loading="lazy"><span>Tmavomodrá</span></div>
-<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-rjava.jpg' . $mj_ver ); ?>" alt="NORIKS tričko hnedé" loading="lazy"><span>Hnedá</span></div>
-<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-zelena.jpg' . $mj_ver ); ?>" alt="NORIKS tričko zelené" loading="lazy"><span>Zelená</span></div>
+<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-crna.jpg' . $mj_ver ); ?>" alt="NORIKS тениска черна" loading="lazy"><span>Черна</span></div>
+<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-bela.jpg' . $mj_ver ); ?>" alt="NORIKS тениска бяла" loading="lazy"><span>Biela</span></div>
+<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-siva.jpg' . $mj_ver ); ?>" alt="NORIKS тениска сива" loading="lazy"><span>Сива</span></div>
+<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-bez.jpg' . $mj_ver ); ?>" alt="NORIKS тениска бежова" loading="lazy"><span>Бежова</span></div>
+<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-temnomodra.jpg' . $mj_ver ); ?>" alt="NORIKS тениска тъмносиня" loading="lazy"><span>Тъмносиня</span></div>
+<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-rjava.jpg' . $mj_ver ); ?>" alt="NORIKS тениска кафява" loading="lazy"><span>Кафява</span></div>
+<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-zelena.jpg' . $mj_ver ); ?>" alt="NORIKS тениска зелена" loading="lazy"><span>Зелена</span></div>
 </div>
-<div class="nk-col-note"><span>✔ Farba nevybledne</span><span>✔ Biela zostane biela</span><span>✔ Čierna zostane čierna</span></div>
+<div class="nk-col-note"><span>✔ Farba nevybledne</span><span>✔ Biela zostane biela</span><span>✔ Черната остава черна</span></div>
 </div></section>
 
 <section class="fis-ugc"><div class="fis-wrap"><div class="fis-ugc-grid">
-<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-kupec-1.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Dobrá dĺžka, aj pre vyšších chlapov.“</p></div>
-<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-kupec-2.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Vyzerá kvalitne a tak sa aj nosí.“</p></div>
-<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-kupec-3.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Látka neškriabe a pôsobí naozaj kvalitne.“</p></div>
-<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-kupec-4.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Strih sa naozaj podaril, ani príliš úzke, ani príliš široké.“</p></div>
+<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-kupec-1.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Добра дължина, и за по-високи мъже.“</p></div>
+<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-kupec-2.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Изглежда качествено и така се носи.“</p></div>
+<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-kupec-3.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Платът не драска и се усеща наистина качествен.“</p></div>
+<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-kupec-4.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Кройката наистина е сполучлива, нито твърде тясна, нито твърде широка.“</p></div>
 </div></div></section>
 
-<section class="fis-thermo"><div class="fis-wrap"><p class="fis-eyebrow"><strong>NORIKS</strong> strih</p><h2 class="fis-h2 fis-center">3 veci, ktoré robia rozdiel</h2><div class="fis-thermo-grid">
-<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-arms.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Dlhší strih</div></div>
-<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-shelf.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Širšie ramená</div></div>
-<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-wash.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Nekrčí sa</div></div>
+<section class="fis-thermo"><div class="fis-wrap"><p class="fis-eyebrow"><strong>NORIKS</strong> strih</p><h2 class="fis-h2 fis-center">3 неща, които правят разликата</h2><div class="fis-thermo-grid">
+<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-arms.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">По-дълга кройка</div></div>
+<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-shelf.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">По-широки рамене</div></div>
+<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-wash.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Не се мачка</div></div>
 </div></div></section>
 
-<section class="fis-upg"><div class="fis-wrap"><h2 class="fis-h2 fis-center">Štyri detaily, na ktorých záleží</h2><div class="fis-upg-grid">
-<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-1.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Ringspun bavlna</div><p class="fis-upg-text">Mäkšia a odolnejšia ako bežná bavlna, takže tričko dlho vyzerá ako nové.</p></div>
-<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-2.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Bez všitej etikety</div><p class="fis-upg-text">Potlačená etiketa, ktorá neškriabe na krku.</p></div>
-<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-3.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Bočné švy</div><p class="fis-upg-text">Strih kopíruje telo a nepretáča sa okolo pása.</p></div>
-<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-4.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Veľkosti S–4XL</div><p class="fis-upg-text">Stále veľkosti a výmena zadarmo do 30 dní.</p></div>
+<section class="fis-upg"><div class="fis-wrap"><h2 class="fis-h2 fis-center">Четири детайла, които имат значение</h2><div class="fis-upg-grid">
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-1.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Ringspun bavlna</div><p class="fis-upg-text">По-мек и по-издръжлив от обикновения памук, така че тениската дълго изглежда като нова.</p></div>
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-2.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Без зашит етикет</div><p class="fis-upg-text">Отпечатан етикет, който не драска на шията.</p></div>
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-3.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Странични шевове</div><p class="fis-upg-text">Кройката следва тялото и не се извърта около талията.</p></div>
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-4.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Размери S–4XL</div><p class="fis-upg-text">Постоянни размери и замяна до 30 дни.</p></div>
 </div></div></section>
 
-<section class="fis-eng"><div class="fis-wrap fis-row2"><div class="fis-row2-copy"><h2 class="fis-h2">Vyvinuté pre mužskú postavu. Vyskúšané v každodennom živote.</h2><p>Strih sme dolaďovali na mužoch všetkých postáv, od S po 4XL, kým nesedel bez naťahovania na hrudi a bez vyhŕňania nad pásom. Každú objednávku pred odoslaním skontrolujeme, aby prišla bez chyby.</p></div><div class="fis-row2-media nk-media nk-wide"><video src="<?php echo esc_url( $mj_vid . 'majica-pack.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video></div></div></section>
+<section class="fis-eng"><div class="fis-wrap fis-row2"><div class="fis-row2-copy"><h2 class="fis-h2">Разработени за мъжката фигура. Изпробвани в ежедневието.</h2><p>Доработвахме кройката върху мъже с всякакви фигури, от S до 4XL, докато започна да стои без опъване на гърдите и без да се вдига над талията. Всяка поръчка проверяваме преди изпращане, за да пристигне без дефект.</p></div><div class="fis-row2-media nk-media nk-wide"><video src="<?php echo esc_url( $mj_vid . 'majica-pack.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video></div></div></section>
 
-<section class="fis-cheaper"><div class="fis-wrap fis-row2"><div class="fis-row2-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-6-za-ceno-2.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><div class="fis-row2-copy"><p class="fis-eyebrow">MÚDRY NÁKUP</p><h2 class="fis-h2">6 tričiek za cenu dvoch z obchodu</h2><p>Jedno kvalitné tričko stojí v obchode 29–39 €. V NORIKS balení 3+3 GRATIS dostaneš šesť tričiek za 69,99 €, teda 11,67 € za kus. Bez kompromisov v strihu či materiáli a s 30 dňami na výmenu veľkosti.</p></div></div></section>
+<section class="fis-cheaper"><div class="fis-wrap fis-row2"><div class="fis-row2-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-6-za-ceno-2.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><div class="fis-row2-copy"><p class="fis-eyebrow">УМНА ПОКУПКА</p><h2 class="fis-h2">6 тениски на цената на две от магазина</h2><p>Една качествена тениска струва в магазина 29–39 €. В пакета NORIKS 3+3 ПОДАРЪК получаваш шест тениски за 69,99 €, или 11,67 € за бройка. Без компромис в кройката или материала и с 30 дни за замяна на размера.</p></div></div></section>
 
 <style>
 .nk-cmp{padding:48px 0;background:#fff}
@@ -102,19 +102,19 @@ $mj_col = get_template_directory_uri() . '/img/majica-barve/';
 .nk-cmp-foot{text-align:center;font-size:13px;color:#666;margin-top:14px}
 @media (max-width:600px){.nk-cmp-row>div{padding:12px 10px;font-size:13.5px}.nk-cmp-price{font-size:17px}}
 </style>
-<section class="nk-cmp"><div class="fis-wrap"><h2 class="fis-h2 fis-center">NORIKS vs. ostatné značky</h2><p class="nk-cmp-sub">Nie všetky tričká sú rovnaké. Tu je dôvod, prečo sa tie naše oplatia.</p>
+<section class="nk-cmp"><div class="fis-wrap"><h2 class="fis-h2 fis-center">NORIKS срещу другите марки</h2><p class="nk-cmp-sub">Не всички тениски са еднакви. Ето защо нашите си заслужават.</p>
 <div class="nk-cmp-card">
-<div class="nk-cmp-row nk-cmp-head"><div></div><div><div class="nk-cmp-brand">NORIKS</div><div class="nk-cmp-price">11,67–17,49 €</div><div class="nk-cmp-note">za kus, podľa balenia</div></div><div><div class="nk-cmp-brand">Ostatné značky</div><div class="nk-cmp-price">29–39 €</div><div class="nk-cmp-note">za kus</div></div></div>
-<div class="nk-cmp-row"><div>Lichotivý strih pre hruď a ramená</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Konzistentné veľkosti od S do 3XL</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Extra dĺžka, aby brucho zostalo zakryté</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Super mäkká tkanina - ľahká, priedušná a neuveriteľne pohodlná</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Zachováva tvar, aj po mnohých praniach</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Elegantný, štýlový a nadčasový dizajn</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Bez dráždivých, svrbiacich štítkov na krku</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Záruka perfektného sadnutia</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row nk-cmp-head"><div></div><div><div class="nk-cmp-brand">NORIKS</div><div class="nk-cmp-price">11,67–17,49 €</div><div class="nk-cmp-note">за бройка, според пакета</div></div><div><div class="nk-cmp-brand">Други марки</div><div class="nk-cmp-price">29–39 €</div><div class="nk-cmp-note">za kus</div></div></div>
+<div class="nk-cmp-row"><div>Ласкава кройка за гърдите и раменете</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Постоянни размери от S до 3XL</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Допълнителна дължина, за да остане коремът покрит</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Супер мек плат — лек, дишащ и невероятно удобен</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Запазва формата си и след много пранета</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Елегантен, стилен и непреходен дизайн</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Без дразнещи, сърбящи етикети на шията</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Гаранция за перфектно прилягане</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
 </div>
-<p class="nk-cmp-foot">Najnižšia cena 11,67 € za kus v balení 3+3 GRATIS.</p>
+<p class="nk-cmp-foot">Най-ниска цена 11,67 € за бройка в пакета 3+3 ПОДАРЪК.</p>
 </div></section>
 
 <style>
@@ -371,9 +371,9 @@ $mj_col = get_template_directory_uri() . '/img/majica-barve/';
       var ctl = document.createElement('div');
       ctl.className = 'nk-sc';
       ctl.innerHTML =
-        '<button type="button" class="nk-sc-btn" data-dir="-1" aria-label="Predchádzajúce">' + CH + '</button>' +
+        '<button type="button" class="nk-sc-btn" data-dir="-1" aria-label="Предишно">' + CH + '</button>' +
         '<div class="nk-sc-bar"><i></i></div>' +
-        '<button type="button" class="nk-sc-btn" data-dir="1" aria-label="Ďalšie">' +
+        '<button type="button" class="nk-sc-btn" data-dir="1" aria-label="Следващо">' +
           CH.replace('<svg ', '<svg style="transform:rotate(180deg)" ') + '</button>';
       row.parentNode.insertBefore(ctl, row.nextSibling);
 

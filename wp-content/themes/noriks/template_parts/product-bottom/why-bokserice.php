@@ -11,23 +11,23 @@ $bx_vid = get_template_directory_uri() . '/img/boksarice-videos/';
 $bx_ico = get_template_directory_uri() . '/img/boksarice-icons/';
 $bx_col = get_template_directory_uri() . '/img/boksarice-barve/';
 ?>
-<section class="fis-science"><div class="fis-wrap"><div class="fis-box"><h2 class="fis-title">Stvorené pre skutočných chlapov: 4 rozdiely, ktoré si všimneš hneď</h2><div class="fis-grid">
-<div class="fis-card"><h3 class="fis-card-title">Nezapáchajú</h3><p class="fis-card-text">Modal <strong>brzdí množenie baktérií</strong>, takže zostanú svieže aj po dlhom dni.</p></div>
-<div class="fis-card"><h3 class="fis-card-title">Nevyhŕňajú sa</h3><p class="fis-card-text">Nohavičky <strong>zostanú na mieste</strong>, aj pri chôdzi, drepe či cvičení.</p></div>
-<div class="fis-card"><h3 class="fis-card-title">Pás neškrtí</h3><p class="fis-card-text">Mäkká guma <strong>drží, ale netlačí</strong> a po praní nestráca pružnosť.</p></div>
-<div class="fis-card"><h3 class="fis-card-title">Nič neškriabe</h3><p class="fis-card-text">Potlačená etiketa a ploché švy, <strong>jemné na pokožke</strong> celý deň.</p></div>
+<section class="fis-science"><div class="fis-wrap"><div class="fis-box"><h2 class="fis-title">Създадени за истински мъже: 4 разлики, които забелязваш веднага</h2><div class="fis-grid">
+<div class="fis-card"><h3 class="fis-card-title">Не миришат</h3><p class="fis-card-text">Modal <strong>забавя размножаването на бактерии</strong>, така че остават свежи и след дълъг ден.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Не се набират</h3><p class="fis-card-text">Крачолите <strong>остават на място</strong>, и при ходене, клек или тренировка.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Коланът не стяга</h3><p class="fis-card-text">Мекият ластик <strong>държи, но не притиска</strong> и след пране не губи еластичност.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Нищо не драска</h3><p class="fis-card-text">Отпечатан етикет и плоски шевове, <strong>нежни за кожата</strong> цял ден.</p></div>
 </div></div></div></section>
 
-<section class="fis-hero"><video class="fis-hero-vid" src="<?php echo esc_url( $bx_vid . 'boksarice-hero.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-hero-overlay"></div><div class="fis-hero-inner"><h2 class="fis-hero-title">Boxerky, na ktoré zabudneš. Od rána do večera.</h2></div></section>
+<section class="fis-hero"><video class="fis-hero-vid" src="<?php echo esc_url( $bx_vid . 'boksarice-hero.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-hero-overlay"></div><div class="fis-hero-inner"><h2 class="fis-hero-title">Боксерки, за които забравяш. От сутрин до вечер.</h2></div></section>
 
-<section class="fis-experts"><div class="fis-wrap fis-exp-grid"><div class="fis-exp-quote"><h2 class="fis-h2">Modal, ktorý pocítiš</h2>
-<p>Vyrobené z <strong>prémiového modalu</strong>, ktorý je mäkší ako bavlna, lepšie odvádza vlhkosť a rýchlejšie schne. Látka sa naťahuje s každým pohybom a vracia sa do tvaru.</p>
-<p>✔ Hodvábne jemné na pokožke<br>✔ Dýchajú a nezadržiavajú pot<br>✔ Po praní nestrácajú tvar</p>
-<p class="fis-exp-author"><strong>Látka zblízka</strong><br>Pozri sa, ako sú boxerky vyrobené.</p></div>
+<section class="fis-experts"><div class="fis-wrap fis-exp-grid"><div class="fis-exp-quote"><h2 class="fis-h2">Модал, който усещаш</h2>
+<p>Изработени от <strong>премиум модал</strong>, който е по-мек от памука, по-добре отвежда влагата и изсъхва по-бързо. Платът се разтяга с всяко движение и се връща във формата си.</p>
+<p>✔ Копринено нежни за кожата<br>✔ Дишат и не задържат потта<br>✔ След пране не губят формата си</p>
+<p class="fis-exp-author"><strong>Платът отблизо</strong><br>Виж как са направени боксерките.</p></div>
 <div class="fis-exp-cards">
-<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-fabric.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Mäkký modal</div><div class="fis-exp-role">Mäkší ako bavlna</div></div></div>
-<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-stretch.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Vracia sa do tvaru</div><div class="fis-exp-role">Nosením sa nevytiahne</div></div></div>
-<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-waist.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Mäkký pás</div><div class="fis-exp-role">Drží, ale neškrtí</div></div></div>
+<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-fabric.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Мек модал</div><div class="fis-exp-role">По-мек от памука</div></div></div>
+<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-stretch.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Vracia sa do tvaru</div><div class="fis-exp-role">От носене не се разтяга</div></div></div>
+<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-waist.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Мек колан</div><div class="fis-exp-role">Държи, но не стяга</div></div></div>
 </div></div></section>
 
 <style>
@@ -42,35 +42,35 @@ $bx_col = get_template_directory_uri() . '/img/boksarice-barve/';
 .nk-col-note{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:18px;font-size:14px;font-weight:600;color:#1c1c1c}
 @media (max-width:760px){.nk-col-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 </style>
-<section class="nk-colors"><div class="fis-wrap"><h2 class="fis-h2 fis-center">5 farieb na každý deň</h2><p class="nk-colors-sub">Farby nevyblednú a nevyperú sa ani po mnohých praniach.</p>
-<div class="nk-col-grid"><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-crna.jpg' . $bx_ver ); ?>" alt="NORIKS boxerky čierne" loading="lazy"><span>Čierna</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-temnomodra.jpg' . $bx_ver ); ?>" alt="NORIKS boxerky tmavomodré" loading="lazy"><span>Tmavomodrá</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-rdeca.jpg' . $bx_ver ); ?>" alt="NORIKS boxerky červené" loading="lazy"><span>Červená</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-siva.jpg' . $bx_ver ); ?>" alt="NORIKS boxerky sivé" loading="lazy"><span>Sivá</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-zelena.jpg' . $bx_ver ); ?>" alt="NORIKS boxerky zelené" loading="lazy"><span>Zelená</span></div></div>
-<div class="nk-col-note"><span>✔ Farba nevybledne</span><span>✔ Pás zostane čierny</span><span>✔ Všetky veľkosti S–5XL</span></div>
+<section class="nk-colors"><div class="fis-wrap"><h2 class="fis-h2 fis-center">5 цвята за всеки ден</h2><p class="nk-colors-sub">Цветовете не избледняват и не се изпират дори след много пранета.</p>
+<div class="nk-col-grid"><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-crna.jpg' . $bx_ver ); ?>" alt="NORIKS боксерки черни" loading="lazy"><span>Черни</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-temnomodra.jpg' . $bx_ver ); ?>" alt="NORIKS боксерки тъмносини" loading="lazy"><span>Тъмносини</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-rdeca.jpg' . $bx_ver ); ?>" alt="NORIKS боксерки червени" loading="lazy"><span>Червени</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-siva.jpg' . $bx_ver ); ?>" alt="NORIKS боксерки сиви" loading="lazy"><span>Сиви</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-zelena.jpg' . $bx_ver ); ?>" alt="NORIKS боксерки зелени" loading="lazy"><span>Зелени</span></div></div>
+<div class="nk-col-note"><span>✔ Farba nevybledne</span><span>✔ Коланът остава черен</span><span>✔ Всички размери S–5XL</span></div>
 
 </div></section>
 
 <section class="fis-ugc"><div class="fis-wrap"><div class="fis-ugc-grid">
-<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-kupec-1.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Netlačia, ani keď cvičím.“</p></div>
-<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-kupec-2.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Nešmýkajú sa dole, celý deň držia v páse.“</p></div>
-<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-kupec-3.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Guma je pevná, ale netlačí.“</p></div>
-<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-kupec-4.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Najlepšie boxerky pre moju postavu.“</p></div>
+<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-kupec-1.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Не притискат, дори когато тренирам.“</p></div>
+<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-kupec-2.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Не се свличат надолу, цял ден държат в талията.“</p></div>
+<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-kupec-3.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Ластикът е стабилен, но не притиска.“</p></div>
+<div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-kupec-4.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Най-добрите боксерки за моята фигура.“</p></div>
 </div></div></section>
 
-<section class="fis-thermo"><div class="fis-wrap"><p class="fis-eyebrow"><strong>NORIKS</strong> strih</p><h2 class="fis-h2 fis-center">3 veci, ktoré robia rozdiel</h2><div class="fis-thermo-grid">
-<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-squat.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Držia na mieste</div></div>
-<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-pouch.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Priestor, kde ho potrebuješ</div></div>
-<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-wash.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Rýchlo schnú</div></div>
+<section class="fis-thermo"><div class="fis-wrap"><p class="fis-eyebrow"><strong>NORIKS</strong> strih</p><h2 class="fis-h2 fis-center">3 неща, които правят разликата</h2><div class="fis-thermo-grid">
+<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-squat.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Държат на място</div></div>
+<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-pouch.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Място там, където ти трябва</div></div>
+<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-wash.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Изсъхват бързо</div></div>
 </div></div></section>
 
-<section class="fis-upg"><div class="fis-wrap"><h2 class="fis-h2 fis-center">Štyri detaily, na ktorých záleží</h2><div class="fis-upg-grid">
-<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $bx_ico . 'ikona-1.svg' . $bx_ver ); ?>"><div class="fis-upg-title">Prémiový modal</div><p class="fis-upg-text">Mäkší ako bavlna, odvádza vlhkosť a brzdí množenie baktérií.</p></div>
-<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $bx_ico . 'ikona-2.svg' . $bx_ver ); ?>"><div class="fis-upg-title">Bez všitej etikety</div><p class="fis-upg-text">Potlačené označenie, ktoré neškriabe.</p></div>
-<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $bx_ico . 'ikona-3.svg' . $bx_ver ); ?>"><div class="fis-upg-title">Ploché švy</div><p class="fis-upg-text">Nedrú na stehnách a nezanechávajú odtlačky na pokožke.</p></div>
-<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $bx_ico . 'ikona-4.svg' . $bx_ver ); ?>"><div class="fis-upg-title">Veľkosti S–5XL</div><p class="fis-upg-text">Stále veľkosti a výmena zadarmo do 30 dní.</p></div>
+<section class="fis-upg"><div class="fis-wrap"><h2 class="fis-h2 fis-center">Четири детайла, които имат значение</h2><div class="fis-upg-grid">
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $bx_ico . 'ikona-1.svg' . $bx_ver ); ?>"><div class="fis-upg-title">Премиум модал</div><p class="fis-upg-text">По-мек от памука, отвежда влагата и забавя размножаването на бактерии.</p></div>
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $bx_ico . 'ikona-2.svg' . $bx_ver ); ?>"><div class="fis-upg-title">Без зашит етикет</div><p class="fis-upg-text">Отпечатано обозначение, което не драска.</p></div>
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $bx_ico . 'ikona-3.svg' . $bx_ver ); ?>"><div class="fis-upg-title">Плоски шевове</div><p class="fis-upg-text">Не трият по бедрата и не оставят отпечатъци върху кожата.</p></div>
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $bx_ico . 'ikona-4.svg' . $bx_ver ); ?>"><div class="fis-upg-title">Размери S–5XL</div><p class="fis-upg-text">Постоянни размери и замяна до 30 дни.</p></div>
 </div></div></section>
 
-<section class="fis-eng"><div class="fis-wrap fis-row2"><div class="fis-row2-copy"><h2 class="fis-h2">Vyvinuté na každý deň. Vyskúšané na mužoch všetkých postáv.</h2><p>Strih sme dolaďovali na mužoch všetkých postáv, od S po 5XL, kým neboli pohodlné od rána do večera: pás neškrtí, nohavičky zostanú na mieste. Každú objednávku pred odoslaním skontrolujeme, aby prišla bez chyby.</p></div><div class="fis-row2-media nk-media nk-wide"><video src="<?php echo esc_url( $bx_vid . 'boksarice-pack.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video></div></div></section>
+<section class="fis-eng"><div class="fis-wrap fis-row2"><div class="fis-row2-copy"><h2 class="fis-h2">Разработени за всеки ден. Изпробвани върху мъже с всякакви фигури.</h2><p>Доработвахме кройката върху мъже с всякакви фигури, от S до 5XL, докато станаха удобни от сутрин до вечер: коланът не стяга, крачолите остават на място. Всяка поръчка проверяваме преди изпращане, за да пристигне без дефект.</p></div><div class="fis-row2-media nk-media nk-wide"><video src="<?php echo esc_url( $bx_vid . 'boksarice-pack.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video></div></div></section>
 
-<section class="fis-cheaper"><div class="fis-wrap fis-row2"><div class="fis-row2-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-8-za-ceno-3.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><div class="fis-row2-copy"><p class="fis-eyebrow">MÚDRY NÁKUP</p><h2 class="fis-h2">8 boxeriek za cenu troch z obchodu</h2><p>Jedny kvalitné modalové boxerky stoja v obchode 15–20 €. V NORIKS balení 4+4 GRATIS dostaneš osem boxeriek za 59,99 €, teda 7,50 € za kus. Bez kompromisov v strihu či materiáli a s 30 dňami na výmenu veľkosti.</p></div></div></section>
+<section class="fis-cheaper"><div class="fis-wrap fis-row2"><div class="fis-row2-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-8-za-ceno-3.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><div class="fis-row2-copy"><p class="fis-eyebrow">УМНА ПОКУПКА</p><h2 class="fis-h2">8 boxeriek za cenu troch z obchodu</h2><p>Едни качествени модални боксерки струват в магазина 15–20 €. В пакета NORIKS 4+4 ПОДАРЪК получаваш осем боксерки за 59,99 €, или 7,50 € за бройка. Без компромис в кройката или материала и с 30 дни за замяна на размера.</p></div></div></section>
 
 <style>
 .nk-cmp{padding:48px 0;background:#fff}
@@ -94,18 +94,18 @@ $bx_col = get_template_directory_uri() . '/img/boksarice-barve/';
 .nk-no{background:#ececec;color:#9a9a9a}
 .nk-cmp-foot{text-align:center;font-size:13px;color:#666;margin-top:14px}
 @media (max-width:600px){.nk-cmp-row>div{padding:12px 10px;font-size:13.5px}.nk-cmp-price{font-size:17px}}</style>
-<section class="nk-cmp"><div class="fis-wrap"><h2 class="fis-h2 fis-center">NORIKS vs. ostatné značky</h2><p class="nk-cmp-sub">Nie všetky boxerky sú rovnaké. Tu je dôvod, prečo sa tie naše oplatia.</p>
+<section class="nk-cmp"><div class="fis-wrap"><h2 class="fis-h2 fis-center">NORIKS срещу другите марки</h2><p class="nk-cmp-sub">Не всички боксерки са еднакви. Ето защо нашите си заслужават.</p>
 <div class="nk-cmp-card">
-<div class="nk-cmp-row nk-cmp-head"><div></div><div><div class="nk-cmp-brand">NORIKS</div><div class="nk-cmp-price">7,50–11,25 €</div><div class="nk-cmp-note">za kus, podľa balenia</div></div><div><div class="nk-cmp-brand">Ostatné značky</div><div class="nk-cmp-price">15–20 €</div><div class="nk-cmp-note">za kus</div></div></div>
-<div class="nk-cmp-row"><div>Prémiový modal namiesto bežnej bavlny</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Nezapáchajú ani po dlhom dni</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Nohavičky zostanú na mieste</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Pás, ktorý neškrtí</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Stále veľkosti od S po 5XL</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>Bez škriabajúcej etikety</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
-<div class="nk-cmp-row"><div>30 dní na výmenu veľkosti zadarmo</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row nk-cmp-head"><div></div><div><div class="nk-cmp-brand">NORIKS</div><div class="nk-cmp-price">7,50–11,25 €</div><div class="nk-cmp-note">за бройка, според пакета</div></div><div><div class="nk-cmp-brand">Други марки</div><div class="nk-cmp-price">15–20 €</div><div class="nk-cmp-note">za kus</div></div></div>
+<div class="nk-cmp-row"><div>Премиум модал вместо обикновен памук</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Не миришат дори след дълъг ден</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Крачолите остават на място</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Колан, който не стяга</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Постоянни размери от S до 5XL</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>Без драскащ етикет</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
+<div class="nk-cmp-row"><div>30 дни за замяна на размера</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
 </div>
-<p class="nk-cmp-foot">Najnižšia cena 7,50 € za kus v balení 4+4 GRATIS.</p>
+<p class="nk-cmp-foot">Най-ниска цена 7,50 € за бройка в пакета 4+4 ПОДАРЪК.</p>
 </div></section>
 
 <style>
@@ -360,9 +360,9 @@ $bx_col = get_template_directory_uri() . '/img/boksarice-barve/';
       var ctl = document.createElement('div');
       ctl.className = 'nk-sc';
       ctl.innerHTML =
-        '<button type="button" class="nk-sc-btn" data-dir="-1" aria-label="Predchádzajúce">' + CH + '</button>' +
+        '<button type="button" class="nk-sc-btn" data-dir="-1" aria-label="Предишно">' + CH + '</button>' +
         '<div class="nk-sc-bar"><i></i></div>' +
-        '<button type="button" class="nk-sc-btn" data-dir="1" aria-label="Ďalšie">' +
+        '<button type="button" class="nk-sc-btn" data-dir="1" aria-label="Следващо">' +
           CH.replace('<svg ', '<svg style="transform:rotate(180deg)" ') + '</button>';
       row.parentNode.insertBefore(ctl, row.nextSibling);
 
