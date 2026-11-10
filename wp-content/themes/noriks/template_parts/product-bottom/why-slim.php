@@ -27,20 +27,20 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
 <!-- 1) BEZ / S NORIKS SLIM — slika lijevo -->
 <section class="nsl-sec nsl-tint">
   <div class="nsl-wrap nsl-row2">
-    <div class="nsl-media"><?php echo $sl_img( 'slm-05-usporedba.jpg', 'Bez a s tvarujúcimi nohavičkami NORIKS Slim' ); ?></div>
+    <div class="nsl-media"><?php echo $sl_img( 'slm-05-usporedba.jpg', 'Без и с оформящите бикини NORIKS Slim' ); ?></div>
     <div class="nsl-copy">
-      <p class="nsl-kicker">Rozdiel vidieť hneď</p>
-      <h2 class="nsl-h2">Tvarujúca bielizeň, v ktorej <em>oblečenie padne oveľa lepšie</em></h2>
-      <p>Bežné nohavičky nedržia nič a klasické sťahovacie prádlo stlačí v jednej línii — nad okrajom sa tak urobí vydutina a samotný okraj vidno pod oblečením.</p>
+      <p class="nsl-kicker">Разликата се вижда веднага</p>
+      <h2 class="nsl-h2">Оформящо бельо, с което <em>облеклото стои много по-добре</em></h2>
+      <p>Обикновените бикини не държат нищо, а класическото стягащо бельо притиска в една линия — над ръба се образува издутина, а самият ръб се вижда под облеклото.</p>
       <ul class="nsl-vs">
-        <li class="is-yes">Viditeľne hladšia silueta</li>
-        <li class="is-yes">Brucho dobre podopreté celý deň</li>
-        <li class="is-yes">Oblečenie padne rovnejšie</li>
-        <li class="is-no">Záhyby pod úzkym tričkom</li>
-        <li class="is-no">Okraj, ktorý sa roluje a zarezáva pri sedení</li>
-        <li class="is-no">Skrývanie pod širokými tričkami</li>
+        <li class="is-yes">Видимо по-гладък силует</li>
+        <li class="is-yes">Коремът добре подкрепен цял ден</li>
+        <li class="is-yes">Облеклото пада по-гладко</li>
+        <li class="is-no">Гънки под тясна тениска</li>
+        <li class="is-no">Ръб, който се навива и се врязва при седене</li>
+        <li class="is-no">Криене под широки тениски</li>
       </ul>
-      <a class="nsl-cta" href="#bundle-selector">Vybrať farbu a veľkosť</a>
+      <a class="nsl-cta" href="#bundle-selector">Изберете цвят и размер</a>
     </div>
   </div>
 </section>
@@ -52,11 +52,11 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
     <div class="nsl-vids__strip">
       <figure class="nsl-vids__card">
         <video src="<?php echo esc_url( $sl . 'slm-vid-1.mp4' ); ?>" poster="<?php echo esc_url( $sl . 'slm-vid-1.jpg' ); ?>"
-               muted autoplay loop playsinline preload="none" aria-label="Zákazníčka ukazuje nohavičky NORIKS Slim"></video>
+               muted autoplay loop playsinline preload="none" aria-label="Клиентка показва бикините NORIKS Slim"></video>
       </figure>
       <figure class="nsl-vids__card">
         <video src="<?php echo esc_url( $sl . 'slm-vid-2.mp4' ); ?>" poster="<?php echo esc_url( $sl . 'slm-vid-2.jpg' ); ?>"
-               muted autoplay loop playsinline preload="none" aria-label="Zákazníčka ukazuje, ako NORIKS Slim tvaruje pás"></video>
+               muted autoplay loop playsinline preload="none" aria-label="Клиентка показва как NORIKS Slim оформя талията"></video>
       </figure>
     </div>
   </div>
@@ -66,31 +66,31 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
 <section class="nsl-sec nsl-tint">
   <div class="nsl-wrap nsl-row2 nsl-row2--rev">
     <div class="nsl-copy">
-      <p class="nsl-kicker">Od rána do večera</p>
-      <h2 class="nsl-h2">Cíťte sa krásne <em>a sebavedomo</em></h2>
+      <p class="nsl-kicker">От сутрин до вечер</p>
+      <h2 class="nsl-h2">Чувствайте се красиви <em>a sebavedomo</em></h2>
       <div class="nsl-points">
-        <div class="nsl-point"><h3>Bez záhybov</h3><p>Prekrížený pás vyhladí brucho a neposúva sa, keď si sadnete, vstanete alebo sa zohnete.</p></div>
-        <div class="nsl-point"><h3>Tvarovaný pás a zadok</h3><p>Anatomický strih kopíruje líniu tela — pás vyzerá užší a zadok zdvihnutejší.</p></div>
-        <div class="nsl-point"><h3>Pohodlie celý deň</h3><p>Bezšvová, mäkká látka, na ktorú zabudnete hneď, ako si ju oblečiete.</p></div>
+        <div class="nsl-point"><h3>Без гънки</h3><p>Кръстосаният колан изглажда корема и не се измества, когато седнете, станете или се наведете.</p></div>
+        <div class="nsl-point"><h3>Оформена талия и седалище</h3><p>Анатомичната кройка следва линията на тялото — талията изглежда по-тясна, а седалището по-повдигнато.</p></div>
+        <div class="nsl-point"><h3>Комфорт цял ден</h3><p>Безшевен, мек плат, за който забравяте веднага щом го облечете.</p></div>
       </div>
     </div>
-    <div class="nsl-media"><?php echo $sl_img( 'slm-06-samouvjereno.jpg', 'Žena v nohavičkách NORIKS Slim' ); ?></div>
+    <div class="nsl-media"><?php echo $sl_img( 'slm-06-samouvjereno.jpg', 'Жена с бикините NORIKS Slim' ); ?></div>
   </div>
 </section>
 
 <!-- 4) TEHNOLOGIJA PLETIVA — slika lijevo -->
 <section class="nsl-sec">
   <div class="nsl-wrap nsl-row2">
-    <div class="nsl-media"><?php echo $sl_img( 'slm-07-pletivo.jpg', 'Prekrížený pás a úplet nohavičiek NORIKS Slim' ); ?></div>
+    <div class="nsl-media"><?php echo $sl_img( 'slm-07-pletivo.jpg', 'Кръстосан колан и плетка на бикините NORIKS Slim' ); ?></div>
     <div class="nsl-copy">
-      <p class="nsl-kicker">Inteligentný úplet</p>
-      <h2 class="nsl-h2">Vyhladí a podoprie, <em>bez pocitu sťahovania</em></h2>
-      <p>Pás prechádza krížom cez brucho a pokračuje na boky a chrbát. Tlak sa tak rozloží okolo celého pása — 360° — namiesto toho, aby stláčal v jednom bode.</p>
+      <p class="nsl-kicker">Интелигентна плетка</p>
+      <h2 class="nsl-h2">Изглажда и подкрепя, <em>без усещане за стягане</em></h2>
+      <p>Коланът минава напречно през корема и продължава към бедрата и гърба. Така натискът се разпределя около цялата талия — 360° — вместо да притиска в една точка.</p>
       <div class="nsl-facts">
-        <div><h3>Prekrížený pás 360°</h3><p>Spredu, zboku aj zozadu — drží brucho rovnomerne.</p></div>
-        <div><h3>Vysoký pás</h3><p>Horný okraj siaha nad pupok a neroluje sa nadol.</p></div>
-        <div><h3>Sieťované vsadky</h3><p>Prepúšťajú vzduch, takže nie je teplo ani v lete.</p></div>
-        <div><h3>Bavlnená vložka</h3><p>Mäkká a hygienická — nosia sa aj namiesto bežných nohavičiek.</p></div>
+        <div><h3>Кръстосан колан 360°</h3><p>Отпред, отстрани и отзад — държи корема равномерно.</p></div>
+        <div><h3>Висока талия</h3><p>Горният ръб стига над пъпа и не се навива надолу.</p></div>
+        <div><h3>Мрежести вставки</h3><p>Пропускат въздух, така че не е топло и през лятото.</p></div>
+        <div><h3>Памучна подплата</h3><p>Мека и хигиенична — носят се и вместо обикновени бикини.</p></div>
       </div>
     </div>
   </div>
@@ -100,34 +100,34 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
 <section class="nsl-sec nsl-tint">
   <div class="nsl-wrap nsl-row2 nsl-row2--rev">
     <div class="nsl-copy">
-      <p class="nsl-kicker">Elastická kompresia</p>
-      <h2 class="nsl-h2">Vysokoelastické <em>tvarovanie</em></h2>
-      <p>Látka sa naťahuje vo všetkých smeroch a vracia sa do tvaru — drží pevne, a pritom sa hýbe s vami, keď sedíte, chodíte alebo dvíhate dieťa.</p>
+      <p class="nsl-kicker">Еластична компресия</p>
+      <h2 class="nsl-h2">Високоеластично <em>оформяне</em></h2>
+      <p>Платът се разтяга във всички посоки и се връща във формата си — държи стабилно, а при това се движи с вас, когато седите, ходите или вдигате дете.</p>
       <ul class="nsl-check">
-        <li><strong>Kontrola brucha</strong> — brucho je podopreté celý deň</li>
-        <li><strong>Hladký pás</strong> — bez vydutiny nad nohavicami alebo sukňou</li>
-        <li><strong>Nešmýka sa</strong> — zostáva na mieste, aj keď si sadnete</li>
-        <li><strong>Neviditeľné</strong> — pod priliehavými šatami, džínsami aj legínami</li>
+        <li><strong>Kontrola brucha</strong> — коремът е подкрепен цял ден</li>
+        <li><strong>Гладка талия</strong> — без издутина над панталона или полата</li>
+        <li><strong>Не се плъзга</strong> — остава на място, дори когато седнете</li>
+        <li><strong>Невидими</strong> — под прилепнали рокли, дънки и клинове</li>
       </ul>
     </div>
-    <div class="nsl-media"><?php echo $sl_img( 'slm-09-oblikovanje.jpg', 'Vysokoelastické tvarovanie pása' ); ?></div>
+    <div class="nsl-media"><?php echo $sl_img( 'slm-09-oblikovanje.jpg', 'Високоеластично оформяне на талията' ); ?></div>
   </div>
 </section>
 
 <!-- 6) NAKON PORODA — slika lijevo -->
 <section class="nsl-sec">
   <div class="nsl-wrap nsl-row2">
-    <div class="nsl-media"><?php echo $sl_img( 'slm-11-oblikovanje-nakon-poroda.jpg', 'Mamičky v nohavičkách NORIKS Slim' ); ?></div>
+    <div class="nsl-media"><?php echo $sl_img( 'slm-11-oblikovanje-nakon-poroda.jpg', 'Майки с бикините NORIKS Slim' ); ?></div>
     <div class="nsl-copy">
       <p class="nsl-kicker">Aj po tehotenstve</p>
-      <h2 class="nsl-h2">Tvarovanie, ktoré pracuje <em>s vaším telom</em>, nie proti nemu</h2>
-      <p>Po tehotenstve sa brucho a pás často hneď nevrátia do pôvodnej línie. NORIKS Slim ich jemne podoprie, takže oblečenie opäť lepšie padne — bez sťahovania a bez rolovania.</p>
+      <h2 class="nsl-h2">Оформяне, което работи <em>с вашето тяло</em>, nie proti nemu</h2>
+      <p>След бременност коремът и талията често не се връщат веднага към предишната линия. NORIKS Slim ги подкрепя нежно, така че облеклото отново стои по-добре — без стягане и без навиване.</p>
       <ul class="nsl-check">
-        <li><strong>Mäkká a priedušná</strong> látka na citlivej pokožke</li>
-        <li><strong>Horný okraj nad pupkom</strong> — nezarezáva sa do spodnej časti brucha</li>
-        <li><strong>Veľkosti do 5XL</strong> — vyberáte podľa obvodu pása</li>
+        <li><strong>Мек и дишащ</strong> плат върху чувствителна кожа</li>
+        <li><strong>Горен ръб над пъпа</strong> — не се врязва в долната част на корема</li>
+        <li><strong>Размери до 5XL</strong> — избирате според обиколката на талията</li>
       </ul>
-      <p class="nsl-note">Po cisárskom reze alebo ak si nie ste istá, poraďte sa pred nosením so svojím lekárom.</p>
+      <p class="nsl-note">След цезарово сечение или ако не сте сигурна, консултирайте се с лекаря си преди носене.</p>
     </div>
   </div>
 </section>
@@ -136,37 +136,37 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
 <section class="nsl-sec nsl-tint">
   <div class="nsl-wrap nsl-row2 nsl-row2--rev">
     <div class="nsl-copy">
-      <p class="nsl-kicker">Šesť farieb</p>
-      <h2 class="nsl-h2">Na každý deň <em>a ku každému oblečeniu</em></h2>
-      <p>Telová a čierna pod všetko, tmavomodrá na každý deň a fialová, fuchsiová a slivková, keď chcete niečo svoje. Všetky farby majú rovnaký úplet aj rovnaký strih.</p>
+      <p class="nsl-kicker">Шест цвята</p>
+      <h2 class="nsl-h2">За всеки ден <em>и към всяко облекло</em></h2>
+      <p>Телесно и черно под всичко, тъмносиньо за всеки ден и лилаво, фуксия и сливово, когато искате нещо свое. Всички цветове имат същата плетка и същата кройка.</p>
       <ul class="nsl-colors">
-        <li><span style="background:#17161a"></span>Čierna</li>
-        <li><span style="background:#ecd9bd"></span>Telová</li>
-        <li><span style="background:#232b52"></span>Tmavomodrá</li>
-        <li><span style="background:#d8c1ee"></span>Fialová</li>
-        <li><span style="background:#d81b72"></span>Fuchsiová</li>
-        <li><span style="background:#5b2147"></span>Slivková</li>
+        <li><span style="background:#17161a"></span>Черно</li>
+        <li><span style="background:#ecd9bd"></span>Телесно</li>
+        <li><span style="background:#232b52"></span>Тъмносиньо</li>
+        <li><span style="background:#d8c1ee"></span>Лилаво</li>
+        <li><span style="background:#d81b72"></span>Фуксия</li>
+        <li><span style="background:#5b2147"></span>Сливово</li>
       </ul>
-      <a class="nsl-cta" href="#bundle-selector">Vybrať farbu a veľkosť</a>
+      <a class="nsl-cta" href="#bundle-selector">Изберете цвят и размер</a>
     </div>
-    <div class="nsl-media"><?php echo $sl_img( 'slm-12-boje-v2.jpg', 'NORIKS Slim v šiestich farbách' ); ?></div>
+    <div class="nsl-media"><?php echo $sl_img( 'slm-12-boje-v2.jpg', 'NORIKS Slim в шест цвята' ); ?></div>
   </div>
 </section>
 
 <!-- 8) TABLICA VELIČINA — slika lijevo -->
 <section class="nsl-sec">
   <div class="nsl-wrap nsl-row2">
-    <div class="nsl-media"><?php echo $sl_img( 'slm-15-tablica-velicina.jpg', 'Tabuľka veľkostí NORIKS Slim' ); ?></div>
+    <div class="nsl-media"><?php echo $sl_img( 'slm-15-tablica-velicina.jpg', 'Таблица с размери NORIKS Slim' ); ?></div>
     <div class="nsl-copy">
-      <p class="nsl-kicker">Správna veľkosť na prvýkrát</p>
-      <h2 class="nsl-h2">Veľkosť vyberajte <em>podľa obvodu pása</em></h2>
-      <p>Nie podľa bežnej veľkosti oblečenia — po tehotenstve alebo zmene hmotnosti sa tieto dve veľkosti často nezhodujú.</p>
+      <p class="nsl-kicker">Правилният размер от първия път</p>
+      <h2 class="nsl-h2">Изберете размер <em>според обиколката на талията</em></h2>
+      <p>Не според обичайния размер облекло — след бременност или промяна в теглото тези два размера често не съвпадат.</p>
       <ol class="nsl-steps">
-        <li>Nájdite najužšie miesto trupu, kúsok nad pupkom.</li>
-        <li>Oviňte krajčírsky meter vodorovne, priliehavo, ale nie natesno.</li>
-        <li>Nájdite svoj obvod v tabuľke. Ste medzi dvoma veľkosťami? Vezmite si <strong>väčšiu</strong>.</li>
+        <li>Намерете най-тясното място на тялото, малко над пъпа.</li>
+        <li>Обвийте шивашкия метър хоризонтално, прилепнало, но не стегнато.</li>
+        <li>Намерете своята обиколка в таблицата. Между два размера сте? Вземете <strong>по-големия</strong>.</li>
       </ol>
-      <a class="nsl-cta nsl-cta--line js-open-size-chart" href="#">Otvoriť tabuľku veľkostí</a>
+      <a class="nsl-cta nsl-cta--line js-open-size-chart" href="#">Отвори таблицата с размери</a>
     </div>
   </div>
 </section>
@@ -174,16 +174,16 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
 <!-- 9) USPOREDBA — tablica -->
 <section class="nsl-sec nsl-tint nsl-cmp">
   <div class="nsl-wrap">
-    <h2 class="nsl-h2" style="text-align:center">Prečo sú nohavičky NORIKS Slim <em>iné</em></h2>
+    <h2 class="nsl-h2" style="text-align:center">Защо бикините NORIKS Slim са <em>различни</em></h2>
     <div class="nsl-cmp__box">
       <table class="nsl-cmp__table">
-        <thead><tr><td>&nbsp;</td><th scope="col">Cvičenie</th><th scope="col">Diéta</th><th scope="col">Klasické sťahovanie</th><th scope="col">Operácia</th><th scope="col" class="is-us">NORIKS Slim</th></tr></thead>
+        <thead><tr><td>&nbsp;</td><th scope="col">Упражнения</th><th scope="col">Диета</th><th scope="col">Класическо стягане</th><th scope="col">Операция</th><th scope="col" class="is-us">NORIKS Slim</th></tr></thead>
         <tbody>
-          <tr><th scope="row">Pôsobí na skutočnú príčinu</th><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__da is-us">✓</td></tr>
-          <tr><th scope="row">Oblečiete ich za pár sekúnd</th><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
-          <tr><th scope="row">Lacnejšie ako operácia</th><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
-          <tr><th scope="row">Pohodlné celý deň</th><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
-          <tr><th scope="row">Účinok už prvý deň</th><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
+          <tr><th scope="row">Действа върху истинската причина</th><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__da is-us">✓</td></tr>
+          <tr><th scope="row">Обличате ги за няколко секунди</th><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
+          <tr><th scope="row">По-евтино от операция</th><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
+          <tr><th scope="row">Удобни цял ден</th><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
+          <tr><th scope="row">Ефект още първия ден</th><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
           <tr><th scope="row">Podopiera brucho v 360°</th><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__da is-us">✓</td></tr>
         </tbody>
       </table>

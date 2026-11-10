@@ -9,112 +9,112 @@ $wdir = get_template_directory_uri() . '/img/slabproof/';
 
   <section class="wslabproof__s wslabproof__s--bg">
     <div class="wslabproof__v">
-      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-01.webp' ); ?>" alt="Pracovná ponožka s vankúšikom, strihaná pod členok" loading="eager" decoding="async"></div>
+      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-01.webp' ); ?>" alt="Работен чорап с подложка, изрязан под глезена" loading="eager" decoding="async"></div>
       <div class="wslabproof__tekst">
-        <div class="wslabproof__kicker">NÍZKY STRIH</div>
-        <h2 class="wslabproof__h2">Pracovná ponožka s vankúšikom, <em>strihaná pod členok</em></h2>
-        <p class="wslabproof__p">NORIKS SlabProof je pracovná ponožka s vankúšikom na celý deň na nohách, strihaná pod členok. Je urobená do pracovnej obuvi, ochranných tenisiek s oceľovou špičkou a na horúce dni v krátkych nohaviciach, keď vysoká ponožka len prekáža.</p>
-        <p class="wslabproof__p">Pod chodidlom je rovnaký vankúš ako pri vyššom modeli: hustý pod pätou a prednou časťou chodidla, kde krok udiera najsilnejšie. Cez vrchnú časť chodidla vedie sieťovaná časť, päta a prsty sú zosilnené a zvýšený jazýček na päte bráni tomu, aby zadná časť topánky odierala kožu.</p>
-        <p class="wslabproof__p">Ponožka je čierna a dodáva sa v troch veľkostiach: 39–42, 43–45 a 46–49. Perie sa v práčke nastudeno a suší v sušičke pri nízkej teplote, spolu s pracovným oblečením — bez ručného prania a špeciálneho pracieho prostriedku.</p>
-        <p class="wslabproof__zak">Vankúš na každý pracovný deň, v strihu do nízkej pracovnej obuvi.</p>
+        <div class="wslabproof__kicker">НИСКА КРОЙКА</div>
+        <h2 class="wslabproof__h2">Работен чорап с подложка, <em>изрязан под глезена</em></h2>
+        <p class="wslabproof__p">NORIKS SlabProof е работен чорап с подложка за цял ден на крак, изрязан под глезена. Направен е за работни обувки, защитни кецове със стоманено бомбе и за горещи дни с къси панталони, когато висок чорап само пречи.</p>
+        <p class="wslabproof__p">Под стъпалото е същата подложка като при по-високия модел: плътна под петата и предната част на стъпалото, където стъпката удря най-силно. Върху горната част на стъпалото минава мрежеста зона, петата и пръстите са подсилени, а повдигнатото езиче на петата пречи задната част на обувката да ожулва кожата.</p>
+        <p class="wslabproof__p">Чорапът е черен и се предлага в три размера: 39–42, 43–45 и 46–49. Пере се в пералня на студено и се суши в сушилня на ниска температура, заедно с работното облекло — без ръчно пране и специален перилен препарат.</p>
+        <p class="wslabproof__zak">Подложка за всеки работен ден, в кройка за ниски работни обувки.</p>
       </div>
     </div>
   </section>
 
   <section class="wslabproof__s">
     <div class="wslabproof__v wslabproof__v--rev">
-      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-05.webp' ); ?>" alt="Polstrovanie presne tam, kde krok udiera najsilnejšie" loading="eager" decoding="async"></div>
+      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-05.webp' ); ?>" alt="Ватиране точно там, където стъпката удря най-силно" loading="eager" decoding="async"></div>
       <div class="wslabproof__tekst">
-        <div class="wslabproof__kicker">ZÓNOVÉ POLSTROVANIE</div>
-        <h2 class="wslabproof__h2">Polstrovanie presne tam, kde <em>krok udiera najsilnejšie</em></h2>
-        <p class="wslabproof__p">Polstrovanie sme nevymysleli my. Ale NORIKS SlabProof je ponožka, ktorej polstrovanie je urobené pre podlahu, na ktorej stojíte celý deň: husté tam, kde dopadá päta a predná časť chodidla, a tenké všade inde, aby nikdy nevyplnilo topánku a nestlačilo chodidlo.</p>
-        <p class="wslabproof__p">Husté vankúšiky sú pod pätou a pod prednou časťou chodidla, presne na miestach, ktoré pri každom kroku znášajú najväčší náraz. Na zvyšku chodidla je ponožka tenká, takže tlmí krok bez toho, aby topánka pôsobila tesne. Vankúšiky sú rozložené podľa miest dopadu, nie rovnomerne po celom chodidle.</p>
-        <p class="wslabproof__p">Nízky strih pod členok je urobený do pracovnej obuvi, ochranných tenisiek s oceľovou špičkou a na horúce dni v krátkych nohaviciach. Pod chodidlom je rovnaké zónové polstrovanie ako pri vyššom modeli, len ponožka končí pod členkom. Jazýček na päte navyše chráni pätu pred okrajom nízkej topánky.</p>
-        <p class="wslabproof__zak">Husté pod pätou a prednou časťou chodidla, tenké všade inde.</p>
+        <div class="wslabproof__kicker">ЗОНОВО ВАТИРАНЕ</div>
+        <h2 class="wslabproof__h2">Polstrovanie presne tam, kde <em>стъпката удря най-силно</em></h2>
+        <p class="wslabproof__p">Ватирането не сме го измислили ние. Но NORIKS SlabProof е чорап, чието ватиране е направено за пода, на който стоите цял ден: плътно там, където стъпва петата и предната част на стъпалото, и тънко навсякъде другаде, за да не запълва обувката и да не притиска стъпалото.</p>
+        <p class="wslabproof__p">Плътните подложки са под петата и под предната част на стъпалото, точно на местата, които при всяка стъпка поемат най-големия удар. На останалата част от стъпалото чорапът е тънък, така че омекотява стъпката, без обувката да стяга. Подложките са разположени според местата на удар, а не равномерно по цялото стъпало.</p>
+        <p class="wslabproof__p">Ниската кройка под глезена е направена за работни обувки, защитни кецове със стоманено бомбе и за горещи дни с къси панталони. Под стъпалото е същото зоново ватиране като при по-високия модел, само че чорапът свършва под глезена. Езичето на петата допълнително пази петата от ръба на ниската обувка.</p>
+        <p class="wslabproof__zak">Плътно под петата и предната част на стъпалото, тънко навсякъде другаде.</p>
       </div>
     </div>
   </section>
 
   <section class="wslabproof__s wslabproof__s--bg">
     <div class="wslabproof__v">
-      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-07.webp' ); ?>" alt="Zosilnené tam, kde ponožky povolia ako prvé" loading="eager" decoding="async"></div>
+      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-07.webp' ); ?>" alt="Подсилени там, където чорапите се скъсват първи" loading="eager" decoding="async"></div>
       <div class="wslabproof__tekst">
-        <div class="wslabproof__kicker">ZOSILNENÁ PÄTA A PRSTY</div>
-        <h2 class="wslabproof__h2">Zosilnené tam, kde ponožky <em>povolia ako prvé</em></h2>
-        <p class="wslabproof__p">Diery sú dôvod číslo jeden, prečo ponožka skončí v koši. Preto má NORIKS SlabProof dvojito pletený nylon presne na dvoch miestach, kde sa ponožky najčastejšie pretrhnú: na päte a na prstoch.</p>
-        <p class="wslabproof__p">Zosilnenie začína práve tam, kde sa diery inak otvárajú. Päta a prsty znášajú v pracovnej topánke najviac trenia, preto je tam pletenina hustejšia a pevnejšia ako na zvyšku ponožky. To je rozdiel, ktorý uvidíte až po niekoľkých mesiacoch nosenia.</p>
-        <p class="wslabproof__p">Ponožky, ktoré sa zodrú za mesiac, nie sú pracovné ponožky. NORIKS SlabProof je urobený na každodenné nosenie v pracovnej obuvi, zmenu za zmenou, a na pranie spolu s pracovným oblečením. Perie sa v práčke nastudeno a suší v sušičke pri nízkej teplote.</p>
-        <p class="wslabproof__zak">Dvojitý nylon na päte a prstoch — tam, kde sa diera vždy otvorí ako prvá.</p>
+        <div class="wslabproof__kicker">ПОДСИЛЕНИ ПЕТА И ПРЪСТИ</div>
+        <h2 class="wslabproof__h2">Подсилени там, където чорапите <em>се скъсват първи</em></h2>
+        <p class="wslabproof__p">Дупките са причина номер едно чорапът да свърши в коша. Затова NORIKS SlabProof има двойно плетен найлон точно на двете места, където чорапите най-често се скъсват: на петата и на пръстите.</p>
+        <p class="wslabproof__p">Подсилването започва точно там, където иначе се отварят дупките. Петата и пръстите понасят в работната обувка най-много триене, затова плетката там е по-плътна и по-здрава от останалата част на чорапа. Това е разлика, която ще видите след няколко месеца носене.</p>
+        <p class="wslabproof__p">Чорапи, които се износват за месец, не са работни чорапи. NORIKS SlabProof е направен за всекидневно носене в работни обувки, смяна след смяна, и за пране заедно с работното облекло. Пере се в пералня на студено и се суши в сушилня на ниска температура.</p>
+        <p class="wslabproof__zak">Двоен найлон на петата и пръстите — там, където дупката винаги се отваря първа.</p>
       </div>
     </div>
   </section>
 
   <section class="wslabproof__s">
     <div class="wslabproof__v wslabproof__v--rev">
-      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-03.webp' ); ?>" alt="Suché chodidlá od prvej po dvanástu hodinu" loading="eager" decoding="async"></div>
+      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-03.webp' ); ?>" alt="Сухи стъпала от първия до дванадесетия час" loading="eager" decoding="async"></div>
       <div class="wslabproof__tekst">
-        <div class="wslabproof__kicker">VZDUŠNÉ A SUCHÉ</div>
-        <h2 class="wslabproof__h2">Suché chodidlá od <em>prvej po dvanástu hodinu</em></h2>
-        <p class="wslabproof__p">Sieťované časti cez vrchnú časť chodidla odvádzajú pot von, takže chodidlo zostáva suché od prvej po dvanástu hodinu zmeny. Pletenina odvádza vlhkosť z pokožky namiesto toho, aby ju zadržiavala. Sieťka je cez vrchnú časť chodidla, kde sa topánka najviac zohreje.</p>
-        <p class="wslabproof__p">NORIKS SlabProof nie je z vlny — ani jedno vlákno. Preto nič nesvrbí, žiadne vyrážky a chodidlo sa v topánke nevarí, keď je vonku júlová horúčava.</p>
-        <p class="wslabproof__p">Väčšina pracovných ponožiek buď nasáva pot ako špongia, alebo hreje celý deň. Táto je urobená tak, aby zostala ľahká a vzdušná v zatvorenej pracovnej topánke, v lete aj v zime. Chodidlo zostáva suché celú zmenu.</p>
-        <p class="wslabproof__zak">Bez vlny, bez svrbenia, bez mokrých chodidiel do obeda.</p>
+        <div class="wslabproof__kicker">ВЪЗДУШНИ И СУХИ</div>
+        <h2 class="wslabproof__h2">Сухи стъпала от <em>първия до дванадесетия час</em></h2>
+        <p class="wslabproof__p">Мрежестите зони върху горната част на стъпалото отвеждат потта навън, така че стъпалото остава сухо от първия до дванадесетия час на смяната. Плетката отвежда влагата от кожата, вместо да я задържа. Мрежата е върху горната част на стъпалото, където обувката се нагрява най-много.</p>
+        <p class="wslabproof__p">NORIKS SlabProof не е от вълна — нито едно влакно. Затова нищо не сърби, няма обриви и стъпалото не се вари в обувката, когато навън е юлска жега.</p>
+        <p class="wslabproof__p">Повечето работни чорапи или поемат потта като гъба, или топлят цял ден. Този е направен така, че да остане лек и въздушен в затворена работна обувка, лете и зиме. Стъпалото остава сухо цялата смяна.</p>
+        <p class="wslabproof__zak">Без вълна, без сърбеж, без мокри стъпала до обяд.</p>
       </div>
     </div>
   </section>
 
   <section class="wslabproof__s wslabproof__s--bg">
     <div class="wslabproof__v">
-      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-04.webp' ); ?>" alt="Nikdy to nebolo topánkami" loading="eager" decoding="async"></div>
+      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-04.webp' ); ?>" alt="Никога не е било от обувките" loading="eager" decoding="async"></div>
       <div class="wslabproof__tekst">
-        <div class="wslabproof__kicker">NIE JE TO TOPÁNKAMI</div>
-        <h2 class="wslabproof__h2">Nikdy to nebolo <em>topánkami</em></h2>
-        <p class="wslabproof__p">Ochranná obuv je urobená na to, aby chránila prsty, nie aby tlmila chodidlo. To je jej úloha. Ale tvrdá podlaha nepovolí ani o milimeter a každý krok sa niekam musí podieť. Keď topánka už nevládze, zostáva ponožka.</p>
-        <p class="wslabproof__p">Rovnaká topánka, rovnaká práca. Jediné, čo sa zmenilo, je ponožka. Dvanásťhodinové zmeny na nohách sú ako jazda kamiónom bez tlmičov — a jediné, čo ten náraz môže zmierniť, sú zhruba dva a pol centimetra ponožky.</p>
-        <p class="wslabproof__p">Preto je NORIKS SlabProof urobený tak, aby tie dva a pol centimetra boli, ako majú byť: hustý vankúš pod pätou a prednou časťou chodidla, zvyšok tenký a vzdušný.</p>
-        <p class="wslabproof__zak">Rovnaká topánka, rovnaká práca — len iná ponožka.</p>
+        <div class="wslabproof__kicker">НЕ Е ОТ ОБУВКИТЕ</div>
+        <h2 class="wslabproof__h2">Nikdy to nebolo <em>от обувките</em></h2>
+        <p class="wslabproof__p">Защитните обувки са направени да пазят пръстите, не да омекотяват стъпалото. Това е тяхната задача. Но твърдият под не поддава нито милиметър и всяка стъпка трябва да отиде някъде. Когато обувката вече не може, остава чорапът.</p>
+        <p class="wslabproof__p">Същата обувка, същата работа. Единственото, което се промени, е чорапът. Дванадесетчасовите смени на крак са като шофиране на камион без амортисьори — а единственото, което може да омекоти този удар, са около два и половина сантиметра чорап.</p>
+        <p class="wslabproof__p">Затова NORIKS SlabProof е направен така, че тези два и половина сантиметра да са както трябва: плътна подложка под петата и предната част на стъпалото, останалото тънко и въздушно.</p>
+        <p class="wslabproof__zak">Същата обувка, същата работа — само различен чорап.</p>
       </div>
     </div>
   </section>
 
   <section class="wslabproof__s">
     <div class="wslabproof__v wslabproof__v--rev">
-      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-06.webp' ); ?>" alt="Spevnená na päte, podopretá na klenbe" loading="eager" decoding="async"></div>
+      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-06.webp' ); ?>" alt="Подсилен на петата, поддържан на свода" loading="eager" decoding="async"></div>
       <div class="wslabproof__tekst">
-        <div class="wslabproof__kicker">PÄTA A KLENBA</div>
-        <h2 class="wslabproof__h2">Spevnená na päte, <em>podopretá na klenbe</em></h2>
-        <p class="wslabproof__p">Väčšina nízkych ponožiek je len tenká vrstva a nič viac. NORIKS SlabProof obopína pätu a klenbu chodidla, takže chodidlo je v ponožke držané, nielen zakryté. Všetku prácu robia dve zóny: päta a klenba.</p>
-        <p class="wslabproof__p">Hlboké vrecko na pätu a zvýšený jazýček vzadu držia pätu na mieste. Jazýček zároveň oddeľuje okraj topánky od kože, takže zadná časť topánky neodiera pätu. Aj nízka ponožka tak zostane, kde má, a nezošmykne sa pod pätu.</p>
-        <p class="wslabproof__p">Priliehavý pás obopína klenbu chodidla a drží chodidlo tak, aby sa v topánke nešmýkalo. Ponožka zostáva na mieste a počas zmeny nezlieza.</p>
-        <p class="wslabproof__zak">Päta zamknutá, klenba obopnutá — ponožka sa nehýbe.</p>
+        <div class="wslabproof__kicker">ПЕТА И СВОД</div>
+        <h2 class="wslabproof__h2">Подсилен на петата, <em>поддържан на свода</em></h2>
+        <p class="wslabproof__p">Повечето ниски чорапи са само тънък слой и нищо повече. NORIKS SlabProof обгръща петата и свода на стъпалото, така че стъпалото е задържано в чорапа, не само покрито. Цялата работа вършат две зони: петата и сводът.</p>
+        <p class="wslabproof__p">Дълбокият джоб за петата и повдигнатото езиче отзад държат петата на място. Езичето едновременно отделя ръба на обувката от кожата, така че задната част на обувката не ожулва петата. Така и ниският чорап остава където трябва и не се свлича под петата.</p>
+        <p class="wslabproof__p">Прилепналата лента обгръща свода на стъпалото и държи стъпалото да не се плъзга в обувката. Чорапът остава на място и през смяната не се свлича.</p>
+        <p class="wslabproof__zak">Петата заключена, сводът обгърнат — чорапът не се движи.</p>
       </div>
     </div>
   </section>
 
   <section class="wslabproof__s wslabproof__s--bg">
     <div class="wslabproof__v">
-      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-02.webp' ); ?>" alt="Nie všetky pracovné ponožky sú urobené rovnako" loading="eager" decoding="async"></div>
+      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-02.webp' ); ?>" alt="Не всички работни чорапи са направени еднакво" loading="eager" decoding="async"></div>
       <div class="wslabproof__tekst">
         <div class="wslabproof__kicker">POROVNANIE</div>
-        <h2 class="wslabproof__h2">Nie všetky pracovné ponožky sú <em>urobené rovnako</em></h2>
-        <p class="wslabproof__p">Lacné multibalenie, drahý pár z vlny alebo ponožka urobená na prácu, ktorú naozaj robíte. Porovnali sme ich podľa vecí, ktoré sa v práci rátajú: žiadne diery po roku práce, polstrovanie tam, kde krok udiera, sviežosť v pracovnej topánke. Každá z týchto vecí sa ukáže až po niekoľkých týždňoch v práci.</p>
-        <p class="wslabproof__p">Pozerali sme aj na to, aby nič nesvrbelo od vlny, aby sa noha neprehrievala a aby zadná časť topánky neodierala pätu. Lacné multibalenie je lacné, a potom ho kupujete znova; vlna má vyššiu cenu; NORIKS SlabProof kúpite raz a na dlho.</p>
-        <p class="wslabproof__p">Dobrá vlna vydrží, to jej uznávame. Ale v lete škriabe a v pracovnej topánke hreje. NORIKS SlabProof je urobený pre podlahu, na ktorej stojíte, nie pre horský chodník.</p>
-        <p class="wslabproof__zak">Urobená na prácu, nie na hory.</p>
+        <h2 class="wslabproof__h2">Не всички работни чорапи са <em>направени еднакво</em></h2>
+        <p class="wslabproof__p">Евтин мултипакет, скъп чифт от вълна или чорап, направен за работата, която наистина вършите. Сравнихме ги по нещата, които се броят в работата: никакви дупки след година работа, ватиране там, където стъпката удря, свежест в работната обувка. Всяко от тези неща се показва след няколко седмици в работа.</p>
+        <p class="wslabproof__p">Гледахме и нищо да не сърби от вълна, кракът да не се прегрява и задната част на обувката да не ожулва петата. Евтиният мултипакет е евтин, а после го купувате отново; вълната е с по-висока цена; NORIKS SlabProof купувате веднъж и за дълго.</p>
+        <p class="wslabproof__p">Добрата вълна издържа, това ѝ го признаваме. Но лете драска, а в работна обувка топли. NORIKS SlabProof е направен за пода, на който стоите, не за планинска пътека.</p>
+        <p class="wslabproof__zak">Направен за работа, не за планина.</p>
       </div>
     </div>
   </section>
 
   <section class="wslabproof__s">
     <div class="wslabproof__v wslabproof__v--rev">
-      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'sp-07-tko-ih-radi.webp' ); ?>" alt="Nevymyslel ich predajca ponožiek, ale elektrikár" loading="eager" decoding="async"></div>
+      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'sp-07-tko-ih-radi.webp' ); ?>" alt="Не ги е измислил продавач на чорапи, а електротехник" loading="eager" decoding="async"></div>
       <div class="wslabproof__tekst">
-        <div class="wslabproof__kicker">KTO ICH ROBÍ</div>
-        <h2 class="wslabproof__h2">Nevymyslel ich predajca ponožiek, ale <em>elektrikár</em></h2>
-        <p class="wslabproof__p">Za touto ponožkou stojí elektrikár s dvadsiatimi dvoma rokmi praxe, väčšinou na veľkých stavbách: nemocnice, sklady, distribučné centrá. Tvrdé podlahy a dvanásťhodinové dni. Roky robil na nohách, presne ako vy.</p>
-        <p class="wslabproof__p">V dvadsiatke to necítiš. V štyridsiatich piatich máš nohy hotové do obeda a za mesiac minieš celé balenie ponožiek — prederavené päty, mokré do poludnia. Ponožky boli čoraz tenšie a kratšie, po mesiaci plné dier, a nikto nerobil ponožku pre chlapa, ktorý celý deň pracuje na nohách.</p>
-        <p class="wslabproof__p">Tak si urobil vlastnú: zosilnenú tam, kde sa vždy pretrhne, suchú a takú, čo zostane na mieste. Rok ju nosil v práci, kým bola pripravená pre ostatných.</p>
-        <p class="wslabproof__zak">Urobené majstrom, pre majstrov.</p>
+        <div class="wslabproof__kicker">КОЙ ГИ ПРАВИ</div>
+        <h2 class="wslabproof__h2">Не ги е измислил продавач на чорапи, а <em>електротехник</em></h2>
+        <p class="wslabproof__p">Зад този чорап стои електротехник с двадесет и две години практика, предимно на големи строежи: болници, складове, разпределителни центрове. Твърди подове и дванадесетчасови дни. Години работи на крак, точно като вас.</p>
+        <p class="wslabproof__p">На двадесет не го усещаш. На четиридесет и пет краката ти са свършени до обяд, а за месец изразходваш цял пакет чорапи — продупчени пети, мокри до пладне. Чорапите ставаха все по-тънки и по-къси, след месец пълни с дупки, а никой не правеше чорап за мъж, който работи на крак цял ден.</p>
+        <p class="wslabproof__p">Затова си направи свой: подсилен там, където винаги се скъсва, сух и такъв, който остава на място. Година го носи на работа, докато стана готов за останалите.</p>
+        <p class="wslabproof__zak">Направено от майстор, за майстори.</p>
       </div>
     </div>
   </section>
@@ -122,24 +122,24 @@ $wdir = get_template_directory_uri() . '/img/slabproof/';
   <section class="wslabproof__s wslabproof__s--bg">
     <div class="wslabproof__v">
       <div class="wslabproof__media wslabproof__media--pecat">
-        <div class="wslabproof__pecat" role="img" aria-label="30 dní na vrátenie">
+        <div class="wslabproof__pecat" role="img" aria-label="30 дни за връщане">
           <div class="wslabproof__pecat-in">
-            <span class="wslabproof__pecat-top">Právo na vrátenie</span>
+            <span class="wslabproof__pecat-top">Право на връщане</span>
             <span class="wslabproof__pecat-num">30</span>
-            <span class="wslabproof__pecat-dani">DNÍ</span>
+            <span class="wslabproof__pecat-dani">ДНИ</span>
             <span class="wslabproof__pecat-bot">Bez rizika</span>
           </div>
         </div>
       </div>
       <div class="wslabproof__tekst">
-        <div class="wslabproof__kicker">NAKUPUJTE BEZ OBÁV</div>
+        <div class="wslabproof__kicker">ПАЗАРУВАЙТЕ БЕЗ ПРИТЕСНЕНИЕ</div>
         <h2 class="wslabproof__h2">S NORIKS nakupujete <em>bez rizika</em></h2>
-        <p class="wslabproof__p">NORIKS SlabProof si vyskúšajte doma. Ak vám nevyhovuje, máte 30 dní na vrátenie — bez komplikácií a bez otázok.</p>
+        <p class="wslabproof__p">Изпробвайте NORIKS SlabProof вкъщи. Ако не ви харесва, имате 30 дни за връщане — без усложнения и без въпроси.</p>
         <div class="wslabproof__pogoji wslabproof__pogoji--ob">
-        <div class="wslabproof__pog"><strong>30 dní</strong><span>na vrátenie peňazí</span></div>
+        <div class="wslabproof__pog"><strong>30 дни</strong><span>за връщане на парите</span></div>
         <div class="wslabproof__pog"><strong>Doprava zadarmo</strong><span>nad 70 €</span></div>
-        <div class="wslabproof__pog"><strong>Platba na dobierku</strong><span>zaplatíte, keď príde balík</span></div>
-        <div class="wslabproof__pog"><strong>120 000 zákazníkov</strong><span>priemerné hodnotenie 4,8</span></div>
+        <div class="wslabproof__pog"><strong>Platba na dobierku</strong><span>плащате, когато дойде пратката</span></div>
+        <div class="wslabproof__pog"><strong>120 000 клиенти</strong><span>средна оценка 4,8</span></div>
       </div>
     </div>
   </div>
