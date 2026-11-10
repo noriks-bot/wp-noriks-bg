@@ -30,46 +30,46 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
 <section class="nrd-intro">
   <div class="nrd-wrap">
     <div class="nrd-intro__top">
-      <div class="nrd-intro__img"><?php echo $rd_img( 'red-meet.jpg', 'Zápästný pás NORIKS RedRelief s červeným svetlom' ); ?></div>
+      <div class="nrd-intro__img"><?php echo $rd_img( 'red-meet.jpg', 'Лента за китка NORIKS RedRelief с червена светлина' ); ?></div>
       <div class="nrd-intro__text">
         <p class="nrd-kicker">Spoznajte NORIKS RedRelief</p>
-        <h2 class="nrd-h2">Pomoc, ktorá mieri na príčinu, nielen na príznak.</h2>
-        <p>NORIKS RedRelief privádza červené a infračervené svetlo dvojitej vlnovej dĺžky presne do oblasti stredného nervu — tam, kde vzniká zápal stojaci za bolesťou zápästia.</p>
-        <p>Tá istá terapia červeným svetlom bola skúmaná z hľadiska podpory tvorby bunkovej energie (ATP), obnovy prietoku krvi a prísunu kyslíka do tkaniva — aby telo mohlo robiť svoju prácu.</p>
+        <h2 class="nrd-h2">Помощ, която е насочена към причината, не само към симптома.</h2>
+        <p>NORIKS RedRelief насочва червена и инфрачервена светлина с двойна дължина на вълната точно в областта на средния нерв — там, където възниква възпалението, стоящо зад болката в китката.</p>
+        <p>Същата терапия с червена светлина е изследвана по отношение на подпомагането на производството на клетъчна енергия (ATP), възстановяването на кръвотока и доставката на кислород до тъканта — за да може тялото да върши своята работа.</p>
       </div>
     </div>
 
     <div class="nrd-stats">
-      <div class="nrd-stat"><div class="nrd-stat__big">87%</div><div class="nrd-stat__lab">Menej mravčenia a tŕpnutia</div><div class="nrd-stat__sub">Do prvých 30 dní*</div></div>
-      <div class="nrd-stat"><div class="nrd-stat__big">92%</div><div class="nrd-stat__lab">Lepší spánok celú noc</div><div class="nrd-stat__sub">Po 4+ týždňoch každodenného používania*</div></div>
-      <div class="nrd-stat"><div class="nrd-stat__big">94%</div><div class="nrd-stat__lab">Odporučilo by NORIKS RedRelief</div><div class="nrd-stat__sub">Priateľom a rodine*</div></div>
-      <div class="nrd-stat"><div class="nrd-stat__big">71%</div><div class="nrd-stat__lab">Odložilo alebo sa vyhlo zákroku</div><div class="nrd-stat__sub">Pre syndróm karpálneho tunela*</div></div>
+      <div class="nrd-stat"><div class="nrd-stat__big">87%</div><div class="nrd-stat__lab">По-малко изтръпване и мравучкане</div><div class="nrd-stat__sub">В първите 30 дни*</div></div>
+      <div class="nrd-stat"><div class="nrd-stat__big">92%</div><div class="nrd-stat__lab">По-добър сън цяла нощ</div><div class="nrd-stat__sub">След 4+ седмици всекидневна употреба*</div></div>
+      <div class="nrd-stat"><div class="nrd-stat__big">94%</div><div class="nrd-stat__lab">Биха препоръчали NORIKS RedRelief</div><div class="nrd-stat__sub">На приятели и семейство*</div></div>
+      <div class="nrd-stat"><div class="nrd-stat__big">71%</div><div class="nrd-stat__lab">Отложиха или избегнаха процедура</div><div class="nrd-stat__sub">За синдром на карпалния тунел*</div></div>
     </div>
-    <p class="nrd-foot">*Podľa skúseností zákazníkov, ktorí NORIKS RedRelief používajú pravidelne. Výsledky sa líšia od človeka k človeku.</p>
+    <p class="nrd-foot">*Според опита на клиенти, които използват NORIKS RedRelief редовно. Резултатите се различават от човек до човек.</p>
   </div>
 </section>
 
 <!-- 2) TRI JEDNOSTAVNA KORAKA (videi) -->
 <section class="nrd-steps">
   <div class="nrd-wrap">
-    <p class="nrd-kicker nrd-center">Jednoduchšie to už nejde</p>
+    <p class="nrd-kicker nrd-center">По-лесно не може</p>
     <h2 class="nrd-h2 nrd-center">Tri kroky k sedeniu</h2>
-    <p class="nrd-sub">Bez objednávania a bez nastavovania. Len nasadíte, stlačíte a uvoľníte sa.</p>
+    <p class="nrd-sub">Без записване на час и без настройки. Само поставяте, натискате и се отпускате.</p>
     <div class="nrd-steps__grid">
       <div class="nrd-steps__step">
-        <div class="nrd-steps__media"><span class="nrd-steps__num">1</span><?php echo $rd_vid( 'red-vid-1.mp4', 'red-vid-1.jpg', 'Nasadenie pásu na zápästie' ); ?></div>
-        <h4>Nasaďte pás</h4>
-        <p>Prevlečte palec cez otvor a pripevnite pásik cez chrbát ruky.</p>
+        <div class="nrd-steps__media"><span class="nrd-steps__num">1</span><?php echo $rd_vid( 'red-vid-1.mp4', 'red-vid-1.jpg', 'Поставяне на лентата на китката' ); ?></div>
+        <h4>Поставете лентата</h4>
+        <p>Прекарайте палеца през отвора и закрепете каишката през горната част на ръката.</p>
       </div>
       <div class="nrd-steps__step">
-        <div class="nrd-steps__media"><span class="nrd-steps__num">2</span><?php echo $rd_vid( 'red-vid-2.mp4', 'red-vid-2.jpg', 'Spustenie sedenia jedným tlačidlom' ); ?></div>
-        <h4>Stlačte tlačidlo</h4>
-        <p>Jedno stlačenie spustí 15-minútové sedenie. Vyberte úroveň výkonu a režim.</p>
+        <div class="nrd-steps__media"><span class="nrd-steps__num">2</span><?php echo $rd_vid( 'red-vid-2.mp4', 'red-vid-2.jpg', 'Пускане на сесията с един бутон' ); ?></div>
+        <h4>Натиснете бутона</h4>
+        <p>Едно натискане пуска 15-минутна сесия. Изберете степен на мощност и режим.</p>
       </div>
       <div class="nrd-steps__step">
-        <div class="nrd-steps__media"><span class="nrd-steps__num">3</span><?php echo $rd_vid( 'red-vid-3.mp4', 'red-vid-3.jpg', 'Uvoľnenie počas terapie' ); ?></div>
-        <h4>Uvoľnite sa</h4>
-        <p>Nechajte svetlo pracovať. Raz denne — výsledok prináša pravidelnosť.</p>
+        <div class="nrd-steps__media"><span class="nrd-steps__num">3</span><?php echo $rd_vid( 'red-vid-3.mp4', 'red-vid-3.jpg', 'Отпускане по време на терапията' ); ?></div>
+        <h4>Отпуснете се</h4>
+        <p>Оставете светлината да работи. Веднъж дневно — резултатът идва от редовността.</p>
       </div>
     </div>
   </div>
@@ -80,26 +80,26 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
   <div class="nrd-wrap">
 
   <div class="nrd-why__row nrd-why__row--reverse">
-    <div class="nrd-why__imgwrap"><?php echo $rd_img( 'red-valne.jpg', 'Vnútro pásu so svietiacimi červenými LED diódami', 'nrd-why__img' ); ?></div>
+    <div class="nrd-why__imgwrap"><?php echo $rd_img( 'red-valne.jpg', 'Вътрешността на лентата със светещи червени LED диоди', 'nrd-why__img' ); ?></div>
     <div class="nrd-why__content">
-      <h2 class="nrd-h2">Dve vlnové dĺžky. Dvojitý dosah.</h2>
-      <p class="nrd-why__body">NORIKS RedRelief spája dve najviac skúmané vlnové dĺžky v terapii červeným svetlom, takže jedno sedenie pokryje povrch aj hĺbku.</p>
+      <h2 class="nrd-h2">Две дължини на вълната. Двоен обхват.</h2>
+      <p class="nrd-why__body">NORIKS RedRelief съчетава двете най-изследвани дължини на вълната в терапията с червена светлина, така че една сесия покрива и повърхността, и дълбочината.</p>
       <ul class="nrd-checks">
-        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Červené svetlo 660 nm</strong> — upokojuje povrchový zápal</span></li>
-        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Infračervené 850 nm</strong> — dosiahne stredný nerv</span></li>
+        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Червена светлина 660 nm</strong> — успокоява повърхностното възпаление</span></li>
+        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Инфрачервена 850 nm</strong> — достига средния нерв</span></li>
       </ul>
     </div>
   </div>
 
   <div class="nrd-why__row">
-    <div class="nrd-why__imgwrap"><?php echo $rd_img( 'red-led.jpg', '48 dvojitých LED diód v páse', 'nrd-why__img' ); ?></div>
+    <div class="nrd-why__imgwrap"><?php echo $rd_img( 'red-led.jpg', '48 двойни LED диода в лентата', 'nrd-why__img' ); ?></div>
     <div class="nrd-why__content">
-      <h2 class="nrd-h2">48 dvojitých LED diód.</h2>
-      <p class="nrd-why__body">Diódy sú rozmiestnené po celej vnútornej strane ľahkého pásu, ktorý kopíruje tvar zápästia — takže každé sedenie pokryje celú oblasť, nie len jeden bod.</p>
+      <h2 class="nrd-h2">48 двойни LED диода.</h2>
+      <p class="nrd-why__body">Диодите са разположени по цялата вътрешна страна на леката лента, която следва формата на китката — така всяка сесия покрива цялата област, а не само една точка.</p>
       <ul class="nrd-checks">
-        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>48 LED diód</strong> (červené + infračervené)</span></li>
-        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>3 úrovne výkonu</strong> · 4 režimy</span></li>
-        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Iba 126 g</strong> — dosť ľahký na každý deň</span></li>
+        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>48 LED диода</strong> (червени + инфрачервени)</span></li>
+        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>3 степени мощност</strong> · 4 режима</span></li>
+        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Iba 126 g</strong> — достатъчно лек за всеки ден</span></li>
       </ul>
     </div>
   </div>
@@ -112,22 +112,22 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
   <div class="nrd-wrap nrd-pain__wrap">
     <div class="nrd-pain__text">
       <p class="nrd-kicker">Pre koho je NORIKS RedRelief</p>
-      <h2 class="nrd-h2">Pre ruky, ktoré pracujú celý deň.</h2>
-      <p class="nrd-pain__body">Bolesť zápästia málokedy prichádza sama. NORIKS RedRelief je určený tým, ktorí každý deň zaťažujú ruku a zápästie — pri klávesnici, za volantom, v kaderníctve, na stavbe alebo v záhrade.</p>
+      <h2 class="nrd-h2">За ръце, които работят цял ден.</h2>
+      <p class="nrd-pain__body">Болката в китката рядко идва сама. NORIKS RedRelief е предназначен за тези, които всеки ден натоварват ръката и китката си — на клавиатурата, зад волана, във фризьорски салон, на строежа или в градината.</p>
       <ul class="nrd-pills">
-        <li>Syndróm karpálneho tunela</li><li>Zápal šliach</li><li>Artritída</li><li>Bolesti ruky a zápästia</li>
+        <li>Синдром на карпалния тунел</li><li>Възпаление на сухожилията</li><li>Артрит</li><li>Болки в ръката и китката</li>
       </ul>
-      <p class="nrd-pain__note">Prístroj nenahrádza lekárske vyšetrenie ani predpísanú liečbu.</p>
+      <p class="nrd-pain__note">Уредът не замества лекарски преглед, нито предписано лечение.</p>
     </div>
-    <div class="nrd-pain__img"><?php echo $rd_img( 'red-bolovi.jpg', 'Terapia červeným svetlom na zápästí' ); ?></div>
+    <div class="nrd-pain__img"><?php echo $rd_img( 'red-bolovi.jpg', 'Терапия с червена светлина на китката' ); ?></div>
   </div>
 </section>
 
 <!-- 5) ŠTO MOŽETE OČEKIVATI -->
 <section class="nrd-tl">
   <div class="nrd-wrap">
-  <h2 class="nrd-h2 nrd-center">Čo môžete očakávať</h2>
-  <p class="nrd-sub">Výsledky si vyžadujú čas. Touto cestou ide väčšina používateľov.</p>
+  <h2 class="nrd-h2 nrd-center">Какво може да очаквате</h2>
+  <p class="nrd-sub">Резултатите изискват време. По този път минава повечето потребители.</p>
 
   <div class="nrd-tl__wrap">
     <div class="nrd-tl__rail"><div class="nrd-tl__fill"></div></div>
@@ -135,36 +135,36 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
     <div class="nrd-tl__step nrd-tl__step--right">
       <div class="nrd-tl__node"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="nrd-tl__content">
-        <div class="nrd-tl__eyebrow">1. týždeň</div>
-        <h3 class="nrd-tl__name">Prvé známky úľavy</h3>
-        <ul><li>Zápal okolo stredného nervu začína ustupovať</li><li>Zápästie pôsobí ľahšie a odľahčene</li><li>Menej rannej stuhnutosti</li><li>Ľahšie uchopenie šálky alebo volantu</li></ul>
+        <div class="nrd-tl__eyebrow">1-ва седмица</div>
+        <h3 class="nrd-tl__name">Първи признаци на облекчение</h3>
+        <ul><li>Възпалението около средния нерв започва да отстъпва</li><li>Китката се усеща по-лека и разтоварена</li><li>Menej rannej stuhnutosti</li><li>По-лесно хващане на чаша или волан</li></ul>
       </div>
     </div>
 
     <div class="nrd-tl__step nrd-tl__step--left">
       <div class="nrd-tl__node"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="nrd-tl__content">
-        <div class="nrd-tl__eyebrow">2. – 3. týždeň</div>
-        <h3 class="nrd-tl__name">Denná bolesť ustupuje</h3>
-        <ul><li>Mravčenie a tŕpnutie sa citeľne zmierňujú</li><li>Sila stisku sa zlepšuje</li><li>Písanie a otváranie pohárov idú ľahšie</li><li>Menej siahania po tabletkách proti bolesti</li></ul>
+        <div class="nrd-tl__eyebrow">2-ра – 3-та седмица</div>
+        <h3 class="nrd-tl__name">Дневната болка отстъпва</h3>
+        <ul><li>Изтръпването и мравучкането усетимо намаляват</li><li>Силата на хвата се подобрява</li><li>Писането и отварянето на буркани стават по-лесни</li><li>По-рядко посягане към хапчета срещу болка</li></ul>
       </div>
     </div>
 
     <div class="nrd-tl__step nrd-tl__step--right">
       <div class="nrd-tl__node"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="nrd-tl__content">
-        <div class="nrd-tl__eyebrow">4. – 6. týždeň</div>
-        <h3 class="nrd-tl__name">Spánok celú noc</h3>
-        <ul><li>Stŕpnuté ruky vás už nebudia</li><li>Prebudenie bez stuhnutých prstov</li><li>Návrat k záľubám — gitara, pletenie, záhrada</li><li>Vracia sa dôvera vo vlastné ruky</li></ul>
+        <div class="nrd-tl__eyebrow">4-та – 6-та седмица</div>
+        <h3 class="nrd-tl__name">Сън цяла нощ</h3>
+        <ul><li>Изтръпналите ръце вече не ви будят</li><li>Събуждане без сковани пръсти</li><li>Връщане към хобитата — гитара, плетене, градина</li><li>Връща се доверието в собствените ръце</li></ul>
       </div>
     </div>
 
     <div class="nrd-tl__step nrd-tl__step--left">
       <div class="nrd-tl__node"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="nrd-tl__content">
-        <div class="nrd-tl__eyebrow">8.+ týždeň</div>
-        <h3 class="nrd-tl__name">Dlhodobé zdravie ruky</h3>
-        <ul><li>Funkcia zápästia sa naďalej zlepšuje</li><li>Bolesť sa stáva spomienkou, nie každodennosťou</li><li>Terapia bez tabliet a bez zákroku</li><li>15-minútové sedenie ostáva súčasťou dňa</li></ul>
+        <div class="nrd-tl__eyebrow">8-ма+ седмица</div>
+        <h3 class="nrd-tl__name">Дългосрочно здраве на ръката</h3>
+        <ul><li>Функцията на китката продължава да се подобрява</li><li>Болката става спомен, а не всекидневие</li><li>Терапия без хапчета и без процедура</li><li>15-минутната сесия остава част от деня</li></ul>
       </div>
     </div>
   </div>
@@ -176,7 +176,7 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
 <section class="nrd-vs">
   <div class="nrd-wrap nrd-vs__inner">
 
-    <h2 class="nrd-vs__title-mobile">Prečo NORIKS RedRelief<sup>&reg;</sup>?</h2>
+    <h2 class="nrd-vs__title-mobile">Защо NORIKS RedRelief<sup>&reg;</sup>?</h2>
 
     <div class="nrd-vs__cards">
 
@@ -184,37 +184,37 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
         <div class="nrd-vs__imgwrap"><?php echo $rd_img( 'red-vs.jpg', 'NORIKS RedRelief', 'nrd-vs__img' ); ?></div>
         <div class="nrd-vs__card-title">NORIKS RedRelief</div>
         <div class="nrd-vs__list">
-          <div class="nrd-vs__row"><span class="nrd-vs__ic nrd-vs__ic--yes">&#10003;</span>Dvojitá vlnová dĺžka</div>
-          <div class="nrd-vs__row"><span class="nrd-vs__ic nrd-vs__ic--yes">&#10003;</span>48 dvojitých LED diód</div>
-          <div class="nrd-vs__row"><span class="nrd-vs__ic nrd-vs__ic--yes">&#10003;</span>3 úrovne výkonu, 4 režimy</div>
-          <div class="nrd-vs__row"><span class="nrd-vs__ic nrd-vs__ic--yes">&#10003;</span>Bezdrôtový a nabíjateľný</div>
-          <div class="nrd-vs__row"><span class="nrd-vs__ic nrd-vs__ic--yes">&#10003;</span>Tvarovaný na ruku</div>
+          <div class="nrd-vs__row"><span class="nrd-vs__ic nrd-vs__ic--yes">&#10003;</span>Двойна дължина на вълната</div>
+          <div class="nrd-vs__row"><span class="nrd-vs__ic nrd-vs__ic--yes">&#10003;</span>48 двойни LED диода</div>
+          <div class="nrd-vs__row"><span class="nrd-vs__ic nrd-vs__ic--yes">&#10003;</span>3 степени мощност, 4 режима</div>
+          <div class="nrd-vs__row"><span class="nrd-vs__ic nrd-vs__ic--yes">&#10003;</span>Безжичен и презареждаем</div>
+          <div class="nrd-vs__row"><span class="nrd-vs__ic nrd-vs__ic--yes">&#10003;</span>Оформен за ръката</div>
         </div>
       </div>
 
       <div class="nrd-vs__card nrd-vs__card--them">
-        <div class="nrd-vs__card-title nrd-vs__card-title--dark">Iné prístroje</div>
+        <div class="nrd-vs__card-title nrd-vs__card-title--dark">Други уреди</div>
         <div class="nrd-vs__list">
-          <div class="nrd-vs__row nrd-vs__row--dark"><span class="nrd-vs__ic nrd-vs__ic--no">&#10007;</span>Len jedna vlnová dĺžka</div>
-          <div class="nrd-vs__row nrd-vs__row--dark"><span class="nrd-vs__ic nrd-vs__ic--no">&#10007;</span>Menej diód a pokrytia</div>
-          <div class="nrd-vs__row nrd-vs__row--dark"><span class="nrd-vs__ic nrd-vs__ic--no">&#10007;</span>Pevná intenzita</div>
-          <div class="nrd-vs__row nrd-vs__row--dark"><span class="nrd-vs__ic nrd-vs__ic--no">&#10007;</span>Závislé od zásuvky</div>
-          <div class="nrd-vs__row nrd-vs__row--dark"><span class="nrd-vs__ic nrd-vs__ic--no">&#10007;</span>Univerzálny strih</div>
+          <div class="nrd-vs__row nrd-vs__row--dark"><span class="nrd-vs__ic nrd-vs__ic--no">&#10007;</span>Само една дължина на вълната</div>
+          <div class="nrd-vs__row nrd-vs__row--dark"><span class="nrd-vs__ic nrd-vs__ic--no">&#10007;</span>По-малко диоди и покритие</div>
+          <div class="nrd-vs__row nrd-vs__row--dark"><span class="nrd-vs__ic nrd-vs__ic--no">&#10007;</span>Фиксирана интензивност</div>
+          <div class="nrd-vs__row nrd-vs__row--dark"><span class="nrd-vs__ic nrd-vs__ic--no">&#10007;</span>Зависими от контакта</div>
+          <div class="nrd-vs__row nrd-vs__row--dark"><span class="nrd-vs__ic nrd-vs__ic--no">&#10007;</span>Универсална кройка</div>
         </div>
       </div>
 
     </div>
 
     <div class="nrd-vs__copy">
-      <h2 class="nrd-vs__title">Prečo NORIKS RedRelief<sup>&reg;</sup>?</h2>
+      <h2 class="nrd-vs__title">Защо NORIKS RedRelief<sup>&reg;</sup>?</h2>
       <div class="nrd-vs__bullets">
-        <div class="nrd-vs__bullet"><span class="nrd-vs__bc">&#10003;</span><span>Tvarovaný priamo na ruku a zápästie</span></div>
-        <div class="nrd-vs__bullet"><span class="nrd-vs__bc">&#10003;</span><span>Dvojitá vlnová dĺžka v jednom sedení</span></div>
-        <div class="nrd-vs__bullet"><span class="nrd-vs__bc">&#10003;</span><span>Bezdrôtovo, kdekoľvek, 15 minút denne</span></div>
-        <div class="nrd-vs__bullet"><span class="nrd-vs__bc">&#10003;</span><span>Až 4 ošetrenia na jedno nabitie</span></div>
+        <div class="nrd-vs__bullet"><span class="nrd-vs__bc">&#10003;</span><span>Оформен точно за ръката и китката</span></div>
+        <div class="nrd-vs__bullet"><span class="nrd-vs__bc">&#10003;</span><span>Двойна дължина на вълната в една сесия</span></div>
+        <div class="nrd-vs__bullet"><span class="nrd-vs__bc">&#10003;</span><span>Безжично, навсякъде, 15 минути дневно</span></div>
+        <div class="nrd-vs__bullet"><span class="nrd-vs__bc">&#10003;</span><span>До 4 процедури с едно зареждане</span></div>
       </div>
-      <a class="nrd-vs__cta" href="#bundle-selector">Vyskúšajte bez rizika</a>
-      <div class="nrd-vs__guar"><span class="nrd-vs__shield">&#128737;</span> 30 dní na vrátenie peňazí</div>
+      <a class="nrd-vs__cta" href="#bundle-selector">Изпробвайте без риск</a>
+      <div class="nrd-vs__guar"><span class="nrd-vs__shield">&#128737;</span> 30 дни за връщане на парите</div>
     </div>
 
   </div>

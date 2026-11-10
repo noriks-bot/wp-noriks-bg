@@ -4,15 +4,15 @@
  * Sekcije i redoslijed preslikani s referentne stranice, tekst na HR,
  * slike su NORIKS kreative iz img/kneefix/. Svaka sekcija ima sliku s jedne
  * i tekst s druge strane (naizmjenično) — nema sekcija koje su samo slika.
- *   1. Keď sa každý krok stane nepríjemným   slika lijevo   kf-sk-3
- *   2. Možno nejde len o opotrebovanie   slika desno    14_zglob
- *   3. Podpora pre aktívne kolená         slika lijevo   08_aktivno
- *   4. 4 funkcie. Stabilnejší pocit.    slika desno    03_funkcije
- *   5. Pohodlná opora v 3 krokoch          slika lijevo   04_koraki
- *   6. Viac pohodlia v bežnom dni      slika desno    kf-sk-1
+ *   1. Когато всяка стъпка стане неприятна   slika lijevo   kf-sk-3
+ *   2. Може да не е само износване   slika desno    14_zglob
+ *   3. Опора за активни колене         slika lijevo   08_aktivno
+ *   4. 4 функции. По-стабилно усещане.    slika desno    03_funkcije
+ *   5. Удобна опора в 3 стъпки          slika lijevo   04_koraki
+ *   6. Повече комфорт в обикновения ден      slika desno    kf-sk-1
  *   7. Preporučeno za potporu koljena     slika lijevo   kf-sk-2
- *   8. Rozdiel je cítiť                  slika desno    07_vs
- *   9. Čo hovoria naši zákazníci                3 kartice      10/11/12
+ *   8. Разликата се усеща                  slika desno    07_vs
+ *   9. Какво казват нашите клиенти                3 kartice      10/11/12
  * Recenzije i FAQ renderira zajednički reviews.php (ne ovdje).
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
@@ -28,161 +28,161 @@ $kf_img = function( $file, $alt ) use ( $kf, $kf_path ) {
 };
 ?>
 
-<!-- ============ 1) Keď sa každý krok stane nepríjemným ============ -->
+<!-- ============ 1) Когато всяка стъпка стане неприятна ============ -->
 <section class="kfx-sec">
   <div class="kfx-wrap kfx-row2">
-    <div class="kfx-media"><?php echo $kf_img('kf-sk-3.webp','Bolesť kolena pri chôdzi dolu schodmi'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('kf-sk-3.webp','Болка в коляното при слизане по стълби'); ?></div>
     <div class="kfx-copy">
-      <h2 class="kfx-h2">Keď sa každý krok stane nepríjemným</h2>
-      <p class="kfx-lead">Na začiatku je to často len mierne ťahanie.</p>
-      <p>Potom prídu chvíle, keď koleno pocítite oveľa silnejšie:</p>
+      <h2 class="kfx-h2">Когато всяка стъпка стане неприятна</h2>
+      <p class="kfx-lead">В началото често е само леко опъване.</p>
+      <p>После идват моменти, в които усещате коляното много по-силно:</p>
       <ul class="kfx-list">
-        <li>Pri vstávaní</li>
+        <li>При изправяне</li>
         <li>Na schodoch</li>
-        <li>Po dlhšom sedení</li>
-        <li>Pri chôdzi alebo dlhšom státí</li>
+        <li>След по-дълго седене</li>
+        <li>При ходене или по-дълго стоене</li>
       </ul>
-      <p>Mnohí sa vtedy automaticky začnú vyhýbať pohybu. Chodia pomalšie, nevedome odľahčujú koleno alebo sa pri bežných pohyboch cítia neisto.</p>
-      <p class="kfx-strong">Problém je v tom: čím opatrnejšie sa pohybujete, tým viac sa koleno stáva stredobodom vášho dňa.</p>
+      <p>Мнозина тогава автоматично започват да избягват движението. Ходят по-бавно, несъзнателно разтоварват коляното или при обичайни движения се чувстват неуверени.</p>
+      <p class="kfx-strong">Проблемът е в това: колкото по-предпазливо се движите, толкова повече коляното става център на деня ви.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ 2) Možno nejde len o opotrebovanie ============ -->
+<!-- ============ 2) Може да не е само износване ============ -->
 <section class="kfx-sec kfx-alt">
   <div class="kfx-wrap kfx-row2">
     <div class="kfx-copy">
-      <h2 class="kfx-h2">Možno nejde len o opotrebovanie</h2>
-      <p>Mnohé bežné vysvetlenia hovoria len o „opotrebovaní". Bolesť kolena sa však často cíti skôr ako <strong>tlak, podráždenie alebo nestabilita</strong>.</p>
-      <p>Jedným z možných dôvodov je podráždená kĺbová výstelka — citlivá vnútorná blana kolenného kĺbu. Keď sa toto tkanivo podráždi, koleno môže citlivejšie reagovať na záťaž. Prejaviť sa to môže ako:</p>
+      <h2 class="kfx-h2">Може да не е само износване</h2>
+      <p>Много обичайни обяснения говорят само за „износване". Болката в коляното обаче често се усеща по-скоро като <strong>натиск, раздразнение или нестабилност</strong>.</p>
+      <p>Една от възможните причини е раздразнена синовиална обвивка — чувствителната вътрешна мембрана на колянната става. Когато тази тъкан се раздразни, коляното може да реагира по-чувствително на натоварване. Това може да се прояви като:</p>
       <ul class="kfx-inline-list">
-        <li>Pocit tlaku okolo jabĺčka</li>
-        <li>Stuhnutosť po pokoji</li>
+        <li>Усещане за натиск около капачката</li>
+        <li>Скованост след покой</li>
         <li>Neistota pri pohybe</li>
-        <li>Citlivosť pri záťaži</li>
+        <li>Чувствителност при натоварване</li>
       </ul>
-      <p>Mnohé klasické ortézy sa problém snažia riešiť tuhou stabilizáciou. Tvrdé ortézy však bývajú nepohodlné, kĺžu sa alebo obmedzujú prirodzený pohyb. Práve preto je <strong>NORIKS KneeFix</strong> vyvinutý inak.</p>
+      <p>Много класически ортези се опитват да решат проблема с твърда стабилизация. Твърдите ортези обаче обикновено са неудобни, плъзгат се или ограничават естественото движение. Точно затова е <strong>NORIKS KneeFix</strong> разработена различно.</p>
     </div>
-    <div class="kfx-media"><?php echo $kf_img('14_zglob.jpg','Podráždená kĺbová výstelka kolenného kĺbu'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('14_zglob.jpg','Раздразнена синовиална обвивка на колянната става'); ?></div>
   </div>
 </section>
 
-<!-- ============ 3) Podpora pre aktívne kolená ============ -->
+<!-- ============ 3) Опора за активни колене ============ -->
 <section class="kfx-sec">
   <div class="kfx-wrap kfx-row2">
-    <div class="kfx-media"><?php echo $kf_img('08_aktivni_SK.webp','Zostaňte aktívni — bez obmedzení v kolenách'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('08_aktivni_SK.webp','Останете активни — без ограничения в коленете'); ?></div>
     <div class="kfx-copy">
-      <h2 class="kfx-h2">Podpora pre aktívne kolená</h2>
-      <p><strong>NORIKS KneeFix</strong> spája viac funkcií v jednom flexibilnom systéme podpory pre každý deň. Namiesto ťažkej ortézy dostanete:</p>
+      <h2 class="kfx-h2">Опора за активни колене</h2>
+      <p><strong>NORIKS KneeFix</strong> съчетава няколко функции в една гъвкава система за опора за всеки ден. Вместо тежка ортеза получавате:</p>
       <ul class="kfx-check">
-        <li>Kompresiu, ktorú si nastavíte sami</li>
-        <li>Bočnú stabilizáciu</li>
-        <li>Gélový vankúšik na odľahčenie jabĺčka</li>
-        <li>Protišmykový priľnavý okraj</li>
+        <li>Компресия, която настройвате сами</li>
+        <li>Странична стабилизация</li>
+        <li>Гелна подложка за разтоварване на капачката</li>
+        <li>Противоплъзгащ прилепващ ръб</li>
       </ul>
-      <p>Cieľom nie je znehybniť vaše koleno. KneeFix je vyvinutý tak, aby koleno príjemnejšie podoprel pri každodennom pohybe — pri chôdzi, v práci, na nákupoch či na cestách.</p>
+      <p>Целта не е да обездвижи коляното ви. KneeFix е разработена така, че да поддържа коляното по-приятно при всекидневното движение — при ходене, на работа, на пазар или в пътуване.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ 4) 4 funkcie. Stabilnejší pocit. ============ -->
+<!-- ============ 4) 4 функции. По-стабилно усещане. ============ -->
 <section class="kfx-sec kfx-alt">
   <div class="kfx-wrap kfx-row2">
     <div class="kfx-copy">
-      <h2 class="kfx-h2">4 funkcie. Stabilnejší pocit.</h2>
-      <p>KneeFix nerobí len jedno — viacero systémov podpory pôsobí súčasne:</p>
+      <h2 class="kfx-h2">4 функции. По-стабилно усещане.</h2>
+      <p>KneeFix не прави само едно — няколко системи за опора действат едновременно:</p>
       <ul class="kfx-check">
-        <li><strong>Presné koliesko na kompresiu</strong> — nastaviteľná kompresia a bezpečné dosadnutie</li>
-        <li><strong>Dvojité bočné stabilizátory</strong> — bočná stabilita kolena</li>
-        <li><strong>Gélový vankúšik na jabĺčko</strong> — odľahčenie tlaku a tlmenie nárazov</li>
-        <li><strong>Silikónový úchop proti šmýkaniu</strong> — mäkká silikónová textúra bráni skĺznutiu a rolovaniu</li>
+        <li><strong>Прецизно колелце за компресия</strong> — регулируема компресия и сигурно прилягане</li>
+        <li><strong>Двойни странични стабилизатори</strong> — странична стабилност на коляното</li>
+        <li><strong>Гелна подложка за капачката</strong> — разтоварване на натиска и омекотяване на ударите</li>
+        <li><strong>Силиконов захват срещу плъзгане</strong> — мека силиконова текстура пречи на свличането и навиването</li>
       </ul>
     </div>
-    <div class="kfx-media"><?php echo $kf_img('03_funkcie_SK.webp','Štyri funkcie ortézy NORIKS KneeFix'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('03_funkcie_SK.webp','Четири функции на ортезата NORIKS KneeFix'); ?></div>
   </div>
 </section>
 
-<!-- ============ 5) Pohodlná opora v 3 krokoch ============ -->
+<!-- ============ 5) Удобна опора в 3 стъпки ============ -->
 <section class="kfx-sec">
   <div class="kfx-wrap kfx-row2">
-    <div class="kfx-media"><?php echo $kf_img('04_kroky_SK.webp','Pohodlná opora v troch krokoch — natiahnite, zarovnajte, nastavte'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('04_kroky_SK.webp','Удобна опора в три стъпки — изтеглете, подравнете, настройте'); ?></div>
     <div class="kfx-copy">
-      <h2 class="kfx-h2">Pohodlná opora v 3 krokoch</h2>
+      <h2 class="kfx-h2">Удобна опора в 3 стъпки</h2>
       <ol class="kfx-steps">
-        <li><strong>Natiahnite ortézu cez koleno.</strong> Potiahnite ju nahor pre bezpečné a pohodlné dosadnutie.</li>
-        <li><strong>Zarovnajte gélový vankúšik.</strong> Umiestnite ho vycentrovane okolo jabĺčka.</li>
-        <li><strong>Nastavte kompresiu.</strong> Otočením kolieska nastavíte oporu a stabilitu.</li>
+        <li><strong>Изтеглете ортезата през коляното.</strong> Издърпайте я нагоре за сигурно и удобно прилягане.</li>
+        <li><strong>Подравнете гелната подложка.</strong> Разположете я центрирано около капачката.</li>
+        <li><strong>Nastavte kompresiu.</strong> С въртене на колелцето настройвате опората и стабилността.</li>
       </ol>
-      <p>Bez zložitých popruhov a nastavovania — pripravení ste za pár sekúnd.</p>
+      <p>Без сложни ремъци и настройки — готови сте за няколко секунди.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ 6) Viac pohodlia v bežnom dni ============ -->
+<!-- ============ 6) Повече комфорт в обикновения ден ============ -->
 <section class="kfx-sec kfx-alt">
   <div class="kfx-wrap kfx-row2">
     <div class="kfx-copy">
-      <h2 class="kfx-h2">Viac pohodlia v bežnom dni</h2>
-      <p>Mnohí nechcú ťažkú športovú ortézu. Chcú jednoducho:</p>
+      <h2 class="kfx-h2">Повече комфорт в обикновения ден</h2>
+      <p>Мнозина не искат тежка спортна ортеза. Искат просто:</p>
       <ul class="kfx-check">
-        <li>Bezpečnejšie chodiť</li>
-        <li>Uvoľnenejšie chodiť po schodoch</li>
-        <li>Dlhšie stáť</li>
-        <li>Voľnejšie sa pohybovať</li>
+        <li>Да ходят по-уверено</li>
+        <li>По-спокойно да се качват по стълби</li>
+        <li>Да стоят по-дълго</li>
+        <li>Да се движат по-свободно</li>
       </ul>
-      <p>NORIKS KneeFix je vyvinutý tak, aby každodenné pohyby boli príjemnejšie — bez zbytočných obmedzení. Flexibilný materiál sa lepšie prispôsobí vášmu dňu a podoprie koleno tam, kde to potrebujete.</p>
-      <a class="kfx-cta" href="#bundle-selector">Vyber svoju veľkosť →</a>
+      <p>NORIKS KneeFix е разработена така, че всекидневните движения да са по-приятни — без излишни ограничения. Гъвкавият материал се приспособява по-добре към деня ви и поддържа коляното там, където е нужно.</p>
+      <a class="kfx-cta" href="#bundle-selector">Избери своя размер →</a>
     </div>
-    <div class="kfx-media"><?php echo $kf_img('kf-sk-1.webp','KneeFix v bežnom dni — prechádzka, bicykel, tréning'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('kf-sk-1.webp','KneeFix в обикновения ден — разходка, колело, тренировка'); ?></div>
   </div>
 </section>
 
-<!-- ============ 7) Odporúčané na každodennú podporu kolena ============ -->
+<!-- ============ 7) Препоръчана за всекидневна опора на коляното ============ -->
 <section class="kfx-sec">
   <div class="kfx-wrap kfx-row2">
-    <div class="kfx-media"><?php echo $kf_img('kf-sk-2.webp','Odporúčané na každodennú podporu kolena'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('kf-sk-2.webp','Препоръчана за всекидневна опора на коляното'); ?></div>
     <div class="kfx-copy">
-      <h2 class="kfx-h2">Odporúčané na každodennú podporu kolena</h2>
+      <h2 class="kfx-h2">Препоръчана за всекидневна опора на коляното</h2>
       <ul class="kfx-check">
-        <li>Nastaviteľná kompresná podpora</li>
-        <li>Stabilizuje a chráni koleno</li>
-        <li>Pohodlné na každodenné nosenie</li>
+        <li>Регулируема компресионна опора</li>
+        <li>Стабилизира и пази коляното</li>
+        <li>Удобна за всекидневно носене</li>
       </ul>
-      <p>KneeFix je určený ako každodenná podpora, nie ako liečba. Ak máte akútne zranenie alebo trvalé ťažkosti, o nosení sa poraďte so svojím lekárom.</p>
+      <p>KneeFix е предвидена като всекидневна опора, не като лечение. Ако имате остра травма или трайни оплаквания, консултирайте се с лекаря си за носенето.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ 8) Rozdiel je cítiť ============ -->
+<!-- ============ 8) Разликата се усеща ============ -->
 <section class="kfx-sec kfx-alt">
   <div class="kfx-wrap kfx-row2">
     <div class="kfx-copy">
-      <h2 class="kfx-h2">Rozdiel je cítiť</h2>
-      <p>Tradičné ortézy problém často riešia tak, že koleno znehybnia. KneeFix ide inou cestou — pohyb podporuje namiesto toho, aby ho blokoval.</p>
+      <h2 class="kfx-h2">Разликата се усеща</h2>
+      <p>Традиционните ортези често решават проблема, като обездвижват коляното. KneeFix върви по друг път — подкрепя движението, вместо да го блокира.</p>
       <ul class="kfx-check">
-        <li>Prirodzená chôdza namiesto stuhnutosti pri pohybe</li>
-        <li>Uvoľnené držanie tela namiesto nepohodlnej polohy</li>
-        <li>Sloboda pohybu a pohodlie namiesto viditeľného zaťaženia kolena</li>
+        <li>Естествено ходене вместо скованост при движение</li>
+        <li>Отпусната стойка вместо неудобно положение</li>
+        <li>Свобода на движение и комфорт вместо видимо натоварване на коляното</li>
       </ul>
-      <a class="kfx-cta" href="#bundle-selector">Objednať KneeFix</a>
+      <a class="kfx-cta" href="#bundle-selector">Поръчай KneeFix</a>
     </div>
-    <div class="kfx-media"><?php echo $kf_img('07_vs_SK.webp','Kolenná ortéza NORIKS v porovnaní s tradičnou ortézou'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('07_vs_SK.webp','Ортеза за коляно NORIKS в сравнение с традиционна ортеза'); ?></div>
   </div>
 </section>
 
-<!-- ============ 9) Čo hovoria naši zákazníci ============ -->
+<!-- ============ 9) Какво казват нашите клиенти ============ -->
 <section class="kfx-sec kfx-revs">
   <div class="kfx-wrap">
-    <h2 class="kfx-h2 kfx-center">Čo hovoria naši zákazníci</h2>
-    <p class="kfx-sub kfx-center"><strong>Tisíce zákazníkov už denne nosia NORIKS KneeFix</strong> pretože je vyvinutý tak, aby koleno cielene podoprel — namiesto zbytočného obmedzovania pohybu alebo krátkodobého prekrytia ťažkostí.</p>
+    <h2 class="kfx-h2 kfx-center">Какво казват нашите клиенти</h2>
+    <p class="kfx-sub kfx-center"><strong>Хиляди клиенти вече носят NORIKS KneeFix всеки ден</strong> защото е разработена така, че да поддържа коляното прицелено — вместо излишно да ограничава движението или краткотрайно да прикрива оплакванията.</p>
     <div class="kfx-rev-grid">
       <?php foreach ( array(
-        array( '10_review-1.jpg', 'Konečne stabilnejšia chôdza', 'Vyskúšal som už niekoľko ortéz, ale boli buď príliš tuhé, alebo sa neustále šmýkali. Táto sedí citeľne pohodlnejšie a kolenu pri chôdzi aj na schodoch dáva oveľa viac stability.', 'Damir P.' ),
-        array( '11_review-3.jpg', 'Viac istoty na schodoch', 'Schody boli pre mňa roky utrpením, pretože sa mi koleno zdalo nestabilné. Odkedy nosím KneeFix, cítim sa oveľa istejšie. Takmer sa nešmýka ani na dlhších prechádzkach.', 'Sanja M.' ),
-        array( '12_review-6.jpg', 'Príjemné v bežnom dni', 'Nosím ju v práci a nemyslela som si, že bude taká pohodlná. Materiál je flexibilný, kompresia sa ľahko nastaví a pod nohavicami ju takmer nevidno.', 'Vesna N.' ),
+        array( '10_review-1.jpg', 'Най-накрая по-стабилно ходене', 'Пробвал съм вече няколко ортези, но бяха или твърде твърди, или постоянно се плъзгаха. Тази стои усетимо по-удобно и дава на коляното много повече стабилност при ходене и по стълби.', 'Damir P.' ),
+        array( '11_review-3.jpg', 'Viac istoty na schodoch', 'Стълбите бяха за мен години мъчение, защото коляното ми се струваше нестабилно. Откакто нося KneeFix, се чувствам много по-уверен. Почти не се плъзга дори при по-дълги разходки.', 'Sanja M.' ),
+        array( '12_review-6.jpg', 'Приятна в обикновения ден', 'Нося я на работа и не мислех, че ще е толкова удобна. Материалът е гъвкав, компресията се настройва лесно, а под панталона почти не се вижда.', 'Vesna N.' ),
       ) as $rv ) : ?>
         <article class="kfx-rev">
-          <div class="kfx-rev-img"><?php echo $kf_img( $rv[0], 'Zákazník nosí ortézu NORIKS KneeFix' ); ?></div>
+          <div class="kfx-rev-img"><?php echo $kf_img( $rv[0], 'Клиент носи ортезата NORIKS KneeFix' ); ?></div>
           <div class="kfx-rev-body">
             <div class="kfx-stars" aria-label="Ocjena 5 od 5">★★★★★</div>
             <p class="kfx-rev-title"><?php echo esc_html( $rv[1] ); ?></p>
