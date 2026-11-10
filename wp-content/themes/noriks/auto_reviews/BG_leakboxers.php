@@ -1,21 +1,21 @@
 <?php
-// Review pool for NORIKS LEAK BOXERS — panska spodna bielizen pre inkontinenciu.
-// Text-only (no images), Slovak.
+// Review pool for NORIKS LEAK BOXERS — mosko spodnje perilo pri inkontinenci.
+// Text-only (no images), Bulgarian.
 $auto_reviews_en = array(
-    array("name" => "Георги Т.",    "text" => "Konečne môžem zahodiť tie vložky. Desať rokov som ich nosil po operácii a katétri. Tieto boxerky mi vrátili kus dôstojnosti — sú pohodlné, bez zápachu a bez trápnosti. Som nadšený."),
-    array("name" => "Иван Д.",      "text" => "Nosím ich každý deň. Odkedy som prešiel na NORIKS, nemám jediný incident a nikto si nevšimne, že ich vôbec nosím. Diskrétne a spoľahlivé, už sa neskrývam."),
-    array("name" => "Франц М.","text" => "Veľmi pohodlné a veľmi účinné. Odkedy ich nosím, nemám pretečenia. Materiál je mäkký, nepôsobí objemne ako plienky. Najlepší nákup za posledný rok."),
-    array("name" => "Марин П.",    "text" => "Skepticky som si objednal jeden kus na skúšku. Teraz ich mám päť. Absorbujú naozaj dobre a sucho je celý deň. Periem ich v práčke a sú ako nové."),
-    array("name" => "Здравко К.",   "text" => "Po prostate som mal problémy s únikom moču. Tieto boxerky zmenili môj každodenný život — môžem si opäť dať kávu s priateľmi bez strachu."),
-    array("name" => "Давид Б.",    "text" => "Diskrétne doručenie, neutrálne balenie. Produkt vyzerá ako normálna bielizeň a vydrží aj do práce. Odporúčam každému, kto má tento problém."),
-    array("name" => "Стефан Л.",   "text" => "Vyskúšal som rôzne vložky, nič nebolo pohodlné. NORIKS je tenký, priedušný a nevidno ho pod nohavicami. Konečne pokoj."),
-    array("name" => "Томислав Р.",    "text" => "Nosím ich aj v noci. Spím pokojne, bez obáv o matrac a posteľnú bielizeň. Ráno všetko suché. Stoja za každé euro."),
-    array("name" => "Никола Й.",  "text" => "Kúpil som ich otcovi, ktorý bol po operácii veľmi skľúčený kvôli plienkam. Teraz je oveľa veselší a samostatnejší. Ďakujem vám."),
-    array("name" => "Йосиф Х.",    "text" => "Kvalita spracovania je špičková, švy pevné. Aj po viacerých praniach absorbujú rovnako dobre. Objednávam ďalší set."),
-    array("name" => "Бранимир С.","text" => "Pracujem fyzicky a bál som sa, že nevydržia. Vydržali celý deň bez pretečenia a zápachu. Konečne môžem pracovať bez stresu."),
-    array("name" => "Драгомир В.", "text" => "Predtým som mesačne minul kopu peňazí na jednorazové vložky. Tieto sa perú a vydržia, takže som už ušetril. Múdra voľba."),
-    array("name" => "Милан Г.",    "text" => "Materiál je jemný k pokožke, už nemám podráždenie, ktoré mi robili plienky. Diskrétne a pohodlné, akoby som nosil bežnú bielizeň."),
-    array("name" => "Антон М.",    "text" => "Objednal som s nedôverou, ale naozaj fungujú. Tekutina sa absorbuje a zostane vo vnútri, pokožka zostáva suchá. Ochrana pri nohách je vynikajúca."),
-    array("name" => "Румен П.",   "text" => "Podpora bola milá a rýchlo odpovedali na otázky o veľkosti. Boxerky sedia perfektne. Všetka chvála."),
-    array("name" => "Кристиян Д.", "text" => "Po diagnóze som si myslel, že s normálnym životom je koniec. Tieto boxerky mi vrátili slobodu — cestujem, šoférujem, chodím von. Odporúčam zo srdca."),
+    array("name" => "Георги Т.",    "text" => "Най-накрая мога да изхвърля онези подложки. Десет години ги носих след операция и катетър. Тези боксерки ми върнаха част от достойнството — удобни са, без миризма и без неудобство. Във възторг съм."),
+    array("name" => "Иван Д.",      "text" => "Нося ги всеки ден. Откакто минах на NORIKS, нямам нито един инцидент и никой не забелязва, че изобщо ги нося. Дискретни и надеждни, вече не се крия."),
+    array("name" => "Франц М.","text" => "Много удобни и много ефективни. Откакто ги нося, няма преливания. Материалът е мек, не изглежда обемист като пелени. Най-добрата покупка за последната година."),
+    array("name" => "Марин П.",    "text" => "Скептично поръчах един брой за проба. Сега имам пет. Поемат наистина добре и сухо е цял ден. Пера ги в пералня и са като нови."),
+    array("name" => "Здравко К.",   "text" => "След простатата имах проблеми с изпускане на урина. Тези боксерки промениха всекидневието ми — отново мога да изпия кафе с приятели без страх."),
+    array("name" => "Давид Б.",    "text" => "Дискретна доставка, неутрална опаковка. Продуктът изглежда като нормално бельо и издържа и за на работа. Препоръчвам на всеки, който има този проблем."),
+    array("name" => "Стефан Л.",   "text" => "Пробвал съм различни подложки, нищо не беше удобно. NORIKS е тънък, дишащ и не се вижда под панталона. Най-накрая спокойствие."),
+    array("name" => "Томислав Р.",    "text" => "Нося ги и през нощта. Спя спокойно, без притеснение за матрака и спалното бельо. Сутрин всичко е сухо. Струват си всяко евро."),
+    array("name" => "Никола Й.",  "text" => "Купих ги на баща ми, който след операция беше много унил заради пелените. Сега е много по-ведър и самостоятелен. Благодаря ви."),
+    array("name" => "Йосиф Х.",    "text" => "Качеството на изработка е първокласно, шевовете са здрави. И след няколко пранета поемат също толкова добре. Поръчвам още един комплект."),
+    array("name" => "Бранимир С.","text" => "Работя физически и се страхувах, че няма да издържат. Издържаха цял ден без преливане и миризма. Най-накрая мога да работя без стрес."),
+    array("name" => "Драгомир В.", "text" => "Преди харчех месечно купища пари за еднократни подложки. Тези се перат и издържат, така че вече спестих. Умен избор."),
+    array("name" => "Милан Г.",    "text" => "Материалът е нежен към кожата, вече нямам раздразнението, което ми правеха пелените. Дискретни и удобни, като да нося обикновено бельо."),
+    array("name" => "Антон М.",    "text" => "Поръчах с недоверие, но наистина работят. Течността се поема и остава вътре, кожата остава суха. Защитата при крачолите е отлична."),
+    array("name" => "Румен П.",   "text" => "Поддръжката беше любезна и отговориха бързо на въпросите за размера. Боксерките стоят перфектно. Всички похвали."),
+    array("name" => "Кристиян Д.", "text" => "След диагнозата си мислех, че с нормалния живот е свършено. Тези боксерки ми върнаха свободата — пътувам, шофирам, излизам. Препоръчвам от сърце."),
 );

@@ -1,21 +1,21 @@
 <?php
-// Review pool for NORIKS KidsNest — detsky vankus pre spravne dychanie (orto-kidsnest).
-// Text-only (no images), Slovak.
+// Review pool for NORIKS KidsNest — detska blazina za pravilno dihanje (orto-kidsnest).
+// Text-only (no images), Bulgarian.
 $auto_reviews_en = array(
-    array("name" => "Мартина К.",  "text" => "Syn chrápal každú noc a spal s otvorenými ústami. Po týždni na KidsNest sú noci tichšie a ústa má zatvorené. Neverila som, kým som to nevidela."),
-    array("name" => "Ивана П.",    "text" => "Malá sa predtým stále budila a prehadzovala. Teraz zaspí rýchlejšie a spí do rána. Vankúš pekne prijme hlavu a drží ju v správnej polohe."),
-    array("name" => "Петра С.",    "text" => "Kúpila som pre 5-ročného, ktorý dýchal ústami. Po dvoch týždňoch si všímam, že dýcha nosom a ráno nemá suché ústa. Veľká zmena."),
-    array("name" => "Анна М.",     "text" => "Výška je presne pre detskú hlavu, nie ako vankúše pre dospelých, na ktorých spal predtým. Krk má zarovnaný s chrbticou a spí oveľa pokojnejšie."),
-    array("name" => "Соня Т.",     "text" => "Poťah sa dá stiahnuť a prať v práčke, čo je pri deťoch na nezaplatenie. Po praní vyzerá ako nový. Pena drží tvar a nesplošťuje sa."),
-    array("name" => "Никола Р.",   "text" => "Syn má alergie, takže bolo pre mňa dôležité, že je hypoalergénny. Nemá zápach, tkanina je mäkká a priedušná. Spí lepšie a menej sa potí."),
-    array("name" => "Мария Х.",    "text" => "Bola som skeptická, či ho bude chcieť používať, ale zvykol si za dve noci. Teraz si ho nosí aj k babke, keď u nej spí. Bez neho nechce spať."),
-    array("name" => "Катерина Д.", "text" => "Dcéra škrípala zubami a budila sa unavená. Odkedy spí na KidsNest, noci sú pokojnejšie a ráno má oveľa lepšiu náladu. Odporúčam všetkým rodičom."),
-    array("name" => "Дора Л.",   "text" => "Vzala som veľkosť 3 – 9 pre šesťročného, sedí perfektne. Priehlbina na hlavu je presne akurát, hlava mu už nepadá dopredu ako predtým."),
-    array("name" => "Яна В.",     "text" => "Chrápanie sa upokojilo do desiatich dní. S manželom konečne spíme bez obáv a malý vyzerá oddýchnutejšie. Výborný pomer ceny a kvality."),
-    array("name" => "Тереза К.",   "text" => "Vankúš je pevný, ale príjemný, dieťa sa doň neprepadá. Vidím, že spí so zatvorenými ústami, čo bol hlavný dôvod kúpy."),
-    array("name" => "Лилия М.",    "text" => "Objednala som dva, pre oboch chlapcov. Starší (11) hovorí, že ho už ráno nebolí krk. Mladší prestal chrápať. Obe veľkosti sú super."),
-    array("name" => "Валентина С.","text" => "Kvalitné spracovanie, pekné švy, žiadny chemický zápach z balenia. Vidno, že je robený pre deti, nie len zmenšený vankúš pre dospelých."),
-    array("name" => "Кристина Н.", "text" => "Malá mala stále kruhy pod očami a budila sa unavená. Po mesiaci spania na KidsNest vyzerá oddýchnutejšie a ľahšie vstáva do školy."),
-    array("name" => "Андреа Т.",   "text" => "Pediatrička nám poradila, aby sme dbali na dýchanie nosom. Tento vankúš naozaj pomohol — hlava mu už nepadá dozadu a ústa zostávajú zatvorené."),
-    array("name" => "Барбара Г.",  "text" => "Oplatilo sa do posledného centa. Dieťa spí pokojnejšie, my spíme pokojnejšie a vankúš aj po dvoch mesiacoch vyzerá a podopiera ako v prvý deň."),
+    array("name" => "Мартина К.",  "text" => "Синът ми хъркаше всяка нощ и спеше с отворена уста. След седмица на KidsNest нощите са по-тихи и устата му е затворена. Не вярвах, докато не го видях."),
+    array("name" => "Ивана П.",    "text" => "Малката преди постоянно се будеше и се въртеше. Сега заспива по-бързо и спи до сутринта. Възглавницата хубаво поема главата и я държи в правилно положение."),
+    array("name" => "Петра С.",    "text" => "Купих я за 5-годишния, който дишаше през устата. След две седмици забелязвам, че диша през носа и сутрин не му е суха устата. Голяма промяна."),
+    array("name" => "Анна М.",     "text" => "Височината е точно за детска глава, не като възглавниците за възрастни, на които спеше преди. Шията му е подредена с гръбнака и спи много по-спокойно."),
+    array("name" => "Соня Т.",     "text" => "Калъфът се сваля и се пере в пералня, което при деца е безценно. След пране изглежда като нов. Пяната държи формата си и не се сплесква."),
+    array("name" => "Никола Р.",   "text" => "Синът ми има алергии, затова за мен беше важно, че е хипоалергенна. Няма миризма, платът е мек и дишащ. Спи по-добре и се поти по-малко."),
+    array("name" => "Мария Х.",    "text" => "Бях скептична дали ще иска да я използва, но свикна за две нощи. Сега си я носи и при баба, когато спи там. Без нея не иска да спи."),
+    array("name" => "Катерина Д.", "text" => "Дъщеря ми стискаше зъби и се будеше уморена. Откакто спи на KidsNest, нощите са по-спокойни и сутрин е в много по-добро настроение. Препоръчвам на всички родители."),
+    array("name" => "Дора Л.",   "text" => "Взех размера 3 – 9 за шестгодишния, стои перфектно. Вдлъбнатината за главата е точно каквато трябва, главата му вече не пада напред както преди."),
+    array("name" => "Яна В.",     "text" => "Хъркането се успокои в рамките на десет дни. Със съпруга ми най-накрая спим без притеснения, а малкият изглежда по-отпочинал. Отлично съотношение цена и качество."),
+    array("name" => "Тереза К.",   "text" => "Възглавницата е стабилна, но приятна, детето не потъва в нея. Виждам, че спи със затворена уста, което беше основната причина за покупката."),
+    array("name" => "Лилия М.",    "text" => "Поръчах две, за двете момчета. По-големият (11) казва, че сутрин вече не го боли шията. По-малкият спря да хърка. И двата размера са супер."),
+    array("name" => "Валентина С.","text" => "Качествена изработка, хубави шевове, никаква химическа миризма от опаковката. Вижда се, че е направена за деца, не просто смалена възглавница за възрастни."),
+    array("name" => "Кристина Н.", "text" => "Малката имаше постоянно кръгове под очите и се будеше уморена. След месец сън на KidsNest изглежда по-отпочинала и по-лесно става за училище."),
+    array("name" => "Андреа Т.",   "text" => "Педиатърката ни посъветва да внимаваме за дишането през носа. Тази възглавница наистина помогна — главата му вече не пада назад и устата остава затворена."),
+    array("name" => "Барбара Г.",  "text" => "Заслужаваше си до последния цент. Детето спи по-спокойно, ние спим по-спокойно, а възглавницата и след два месеца изглежда и поддържа както на първия ден."),
 );

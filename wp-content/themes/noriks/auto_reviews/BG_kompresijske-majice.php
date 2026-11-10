@@ -1,21 +1,21 @@
 <?php
-// Review pool for NORIKS FIT — panske kompresne/tvarujuce tricko.
-// Text-only base (images come from kompresijske-majice-slike/), Slovak, male.
+// Review pool for NORIKS FIT — moska kompresijska/oblikovalna majica.
+// Text-only base (images come from kompresijske-majice-slike/), Bulgarian, male.
 $auto_reviews_en = array(
-    array("name" => "Иван М.",      "text" => "Bol som skeptický, ale po 4 týždňoch nosenia som zhodil pár centimetrov v páse a začal som stáť vzpriamene bez rozmýšľania. Ramená sa otvorili, priateľka povedala, že vyzerám, akoby som žiaril."),
-    array("name" => "Марин П.",    "text" => "Celý deň sedím za stolom. NORIKS ma doslova prinútil sedieť vzpriamene bez akejkoľvek námahy. Za 10 dní napätie v chrbte zmizlo a košele začali lepšie sedieť."),
-    array("name" => "Томислав К.",    "text" => "Tri roky som sa pri obliekaní vyhýbal zrkadlu. Prvýkrát som sa obliekol za 5 minút, bez naprávania a bez vyhýbania sa vlastnému odrazu. Zmenilo mi to rána."),
-    array("name" => "Йосиф Р.",    "text" => "Nosím ho pod košeľou do práce. Brucho je vyhladené, držanie tela lepšie a nikto si nevšimne, že niečo nosím. Diskrétne a pohodlné celý deň."),
-    array("name" => "Давид С.",    "text" => "Materiál je priedušný, nepotím sa ako v bežných kompresných tričkách. Výborne sedí a neroluje sa nahor. Kupujem ďalší."),
-    array("name" => "Кристиян Б.", "text" => "Pivné brucho je konečne pod kontrolou, keď ho nosím. Košele mi teraz pekne padnú. Žena si hneď všimla rozdiel na fotkách."),
-    array("name" => "Андрей Л.",   "text" => "Kúpil som ho do posilňovne a nakoniec ho nosím každý deň. Podopiera chrbát a drží ma vzpriamene. Kvalita spracovania je naozaj dobrá."),
-    array("name" => "Филип Д.",    "text" => "Faldíky nevidno pod tričkom, silueta je ostrejšia. Cítim sa istejšie na poradách aj podujatiach. Stojí za každé euro."),
-    array("name" => "Румен Х.",   "text" => "Po štyridsiatke som stratil formu a toto mi vrátilo sebavedomie, kým nedám do poriadku zvyšok. Diskrétne tvaruje a nesťahuje príliš."),
-    array("name" => "Лъчезар В.",    "text" => "Prvé pranie prebehlo bez problémov, kompresia zostala rovnaká. Nestráca tvar. Odporúčam každému, kto chce štíhlejší vzhľad pod oblečením."),
-    array("name" => "Душан Т.",    "text" => "Pracujem v predaji a veľa stojím na nohách. Chrbát ma menej bolí, odkedy ho nosím, a vyzerám upravenejšie. Výborný produkt."),
-    array("name" => "Игор Н.",     "text" => "Myslel som, že je to trik, ale naozaj drží brucho aj ramená. Tričká navrchu vyzerajú oveľa lepšie. Objednávam druhý v inej farbe."),
-    array("name" => "Самуил П.",   "text" => "Je príjemný na pokožke, žiadne stopy ani začervenanie. Nosím ho 8 – 10 hodín bez nepohodlia. Silueta hneď vyzerá pevnejšie."),
-    array("name" => "Мартин К.",   "text" => "Konečne kompresné tričko, ktoré nevidno pod košeľou. Je tenké, ale pevne drží. Presne to, čo som hľadal."),
-    array("name" => "Владимир Й.", "text" => "Po pár týždňoch som si všimol, že automaticky lepšie stojím aj bez trička. Stalo sa súčasťou mojej každodennej rutiny obliekania."),
-    array("name" => "Борис М.",    "text" => "Objednal som jedno na skúšku, teraz mám tri. Diskrétne, pohodlné a naozaj tvaruje. Podpora rýchlo odpovedala na otázku o veľkosti."),
+    array("name" => "Иван М.",      "text" => "Бях скептичен, но след 4 седмици носене свалих няколко сантиметра в талията и започнах да стоя изправен, без да мисля. Раменете се отвориха, приятелката ми каза, че изглеждам, сякаш светя."),
+    array("name" => "Марин П.",    "text" => "Цял ден седя на бюро. NORIKS буквално ме накара да седя изправен без никакво усилие. За 10 дни напрежението в гърба изчезна и ризите започнаха да стоят по-добре."),
+    array("name" => "Томислав К.",    "text" => "Три години избягвах огледалото, когато се обличах. За първи път се облякох за 5 минути, без да се оправям и без да избягвам собственото си отражение. Промени ми сутрините."),
+    array("name" => "Йосиф Р.",    "text" => "Нося я под риза за работа. Коремът е изгладен, стойката по-добра и никой не забелязва, че нося нещо. Дискретна и удобна цял ден."),
+    array("name" => "Давид С.",    "text" => "Материалът е дишащ, не се потя както в обикновените компресионни тениски. Стои отлично и не се навива нагоре. Купувам още една."),
+    array("name" => "Кристиян Б.", "text" => "Биреното коремче най-накрая е под контрол, когато я нося. Ризите сега ми падат хубаво. Жена ми веднага забеляза разликата на снимките."),
+    array("name" => "Андрей Л.",   "text" => "Купих я за фитнеса, а накрая я нося всеки ден. Поддържа гърба и ме държи изправен. Качеството на изработка е наистина добро."),
+    array("name" => "Филип Д.",    "text" => "Гънките не се виждат под тениската, силуетът е по-изчистен. Чувствам се по-уверен на срещи и на събития. Струва си всяко евро."),
+    array("name" => "Румен Х.",   "text" => "След четиридесетте изгубих форма и това ми върна самочувствието, докато оправя останалото. Дискретно оформя и не стяга прекалено."),
+    array("name" => "Лъчезар В.",    "text" => "Първото пране мина без проблем, компресията остана същата. Не губи формата си. Препоръчвам на всеки, който иска по-стегнат вид под облеклото."),
+    array("name" => "Душан Т.",    "text" => "Работя в търговията и много стоя на крак. Гърбът ме боли по-малко, откакто я нося, и изглеждам по-подреден. Отличен продукт."),
+    array("name" => "Игор Н.",     "text" => "Мислех, че е трик, но наистина държи корема и раменете. Тениските отгоре изглеждат много по-добре. Поръчвам втора в друг цвят."),
+    array("name" => "Самуил П.",   "text" => "Приятна е за кожата, никакви следи или зачервяване. Нося я 8 – 10 часа без дискомфорт. Силуетът веднага изглежда по-стегнат."),
+    array("name" => "Мартин К.",   "text" => "Най-накрая компресионна тениска, която не се вижда под риза. Тънка е, но държи стабилно. Точно това търсех."),
+    array("name" => "Владимир Й.", "text" => "След няколко седмици забелязах, че автоматично стоя по-добре и без тениската. Стана част от всекидневната ми рутина при обличане."),
+    array("name" => "Борис М.",    "text" => "Поръчах една за проба, сега имам три. Дискретна, удобна и наистина оформя. Поддръжката отговори бързо на въпроса за размера."),
 );
