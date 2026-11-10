@@ -148,20 +148,29 @@ tako kot pri drugih trgih. Potrebujem le vrstico v
 
 ## 5. Slike s slovaškim besedilom
 
-Te prevoda kode ne doseže — treba jih je narediti na novo (ali vzeti HR
-izvirnik in napisati bolgarsko besedilo):
+Preveril sem vsako sliko posebej — spodnjih **pet** ima besedilo vžgano v
+sliko in jih prevod kode ne doseže. Nisem jih delal sam (velja pravilo, da
+produktnih slik ne generiram brez tvoje besede).
 
-| Datoteka | Kaj je |
+| Datoteka v temi | Kaj piše na njej |
 |---|---|
-| `img/kidsnest/tablica-velicine-sk.webp` | tabela velikosti KidsNest |
-| `boxers_size_sk.png` *(v uploads)* | tabela velikosti bokserice |
-| `Nogavice_tabela_velikosti_sk.png` *(v uploads)* | tabela velikosti nogavice |
-| `starter-1_sk.png`, `starter-2_sk.png`, `starter-3_sk.png` *(v uploads)* | sekcije startnega paketa |
-| `satisfaction_icon_sk.png` | značka zadovoljstva |
-| `01-poravnan-sk.webp` | why-sekcija |
-| `manuals/*.pdf` (11 datotek) | navodila za uporabo |
+| `img/kidsnest/tablica-velicine-sk.webp` | Vek 1–3 roky / Výška 2-4 cm (tabela velikosti) |
+| `img/kidsnest/01-poravnan-sk.webp` | »Dokonale zarovnané, celú noc« + 3 oznake |
+| `img/kompsfit/ks-sk-04.webp` | PRED NORIKSOM / PO NORIKSE |
+| `img/ortopedski-jastuk/erg-sk-04.webp` | znački ODPORÚČANIE LEKÁRA in GARANCIA 60 DNÍ |
+| `img/kneefix/kf-sk-2.webp` | »Spoľahlivá podpora kolena každý deň« + 3 točke |
 
----
+**Te so brez besedila, ostanejo lahko takšne:** `img/kneefix/kf-sk-1.webp`,
+`kf-sk-3.webp`, `img/kidsnest/kn-sk-2.webp`, `kn-sk-6.webp`,
+`img/pal/pal-sklopivo.jpg` (ime je zavajajoče, slika je brez napisa).
+
+**Še v medijski knjižnici (ne v repozitoriju) — preveri po klonu baze:**
+`boxers_size_sk.png`, `Nogavice_tabela_velikosti_sk.png`, `sk_majice.jpeg`,
+`satisfaction_icon_sk.png`, `starter-1_sk.png`, `starter-2_sk.png`,
+`starter-3_sk.png`.
+
+**PDF navodila** (`manuals/`, 11 datotek) so v slovaščini in jih je treba
+narediti na novo.
 
 ## 6. Klaviyo
 

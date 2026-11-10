@@ -223,7 +223,7 @@ get_header();
                         ">
                         <p class="announcement-bar__message">
                           <span>
-                            <a style="font-size: 1.2rem; "href="https://noriks.com/hr/product-category/bokserice/" title="">NORIKS • Комфортът и здравето на първо място</a>
+                            <a style="font-size: 1.2rem; "href="https://noriks.com/bg/product-category/boxerky/" title="">NORIKS • Комфортът и здравето на първо място</a>
                           </span>
                         </p>
                       </div>
@@ -253,7 +253,7 @@ get_header();
                         ">
                         <p class="announcement-bar__message">
                           <span>
-                            <a style="margin-top: 15px; padding-bottom: 5px;display: block; color: #121212; font-size:1.1rem;" href="https://noriks.com/hr/product-category/bokserice/" title="">Статия Men Cub › Мъжко здраве › Бельо</a>
+                            <a style="margin-top: 15px; padding-bottom: 5px;display: block; color: #121212; font-size:1.1rem;" href="https://noriks.com/bg/product-category/boxerky/" title="">Статия Men Cub › Мъжко здраве › Бельо</a>
                           </span>
                         </p>
                       </div>
@@ -406,7 +406,7 @@ get_header();
                     <p>Ако в момента носиш памучни или други обикновени боксерки, прочети внимателно информацията на тази страница.</p>
                     <p>Ако все още носиш традиционен памук или, още по-лошо, синтетично бельо от полиестер, рискуваш сериозни здравословни проблеми.</p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Провери наличността </a>
+                  <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary"> Провери наличността </a>
                 </div>
               </div>
             </div>
@@ -434,7 +434,7 @@ get_header();
                     </p>
                     <p>Областта на слабините и без това е топла и влажна. Традиционните платове задържат топлината и влагата, създавайки идеална среда за развитие на бактерии и гъбички. Това натрупване на топлина може да намали производството на сперма и да подтикне свръхрастеж на микроорганизми.</p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Провери наличността </a>
+                  <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary"> Провери наличността </a>
                 </div>
               </div>
             </div>
@@ -469,7 +469,7 @@ get_header();
                       <em>Боксерките NORIKS с вентилация и ултрамек модал помагат кожата да остане хладна, суха и защитена.</em>
                     </p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Провери наличността </a>
+                  <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary"> Провери наличността </a>
                 </div>
               </div>
             </div>
@@ -612,7 +612,7 @@ get_header();
                       <strong>Затова боксерките NORIKS не са просто лукс, а здравна необходимост.</strong>
                     </p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Провери наличността </a>
+                  <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary"> Провери наличността </a>
                 </div>
               </div>
             </div>
@@ -640,7 +640,7 @@ get_header();
                     <p>Областта на слабините и без това е топла и влажна. Традиционният памук и полиестерът задържат топлината и влагата — точно това, което бактериите и гъбичките използват, за да се размножават.</p>
                     <p>Натрупването на топлина може да намали образуването на сперма и да повлияе отрицателно на мъжкото репродуктивно здраве.</p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Купи NORIKS </a>
+                  <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary"> Купи NORIKS </a>
                 </div>
               </div>
             </div>
@@ -674,7 +674,7 @@ get_header();
                       <strong>– Топлинен обрив (miliaria):</strong> Запушените канали на потните жлези образуват болезнени, сърбящи подутини, които могат да се инфектират при разчесване.
                     </p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Провери наличността </a>
+                  <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary"> Провери наличността </a>
                 </div>
               </div>
             </div>
@@ -704,7 +704,7 @@ get_header();
                       <strong>Ултрамекият NORIKS</strong> модал е по-гладък и по-тънък от памука, намалява триенето и пази чувствителната кожа.
                     </p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Поръчай NORIKS </a>
+                  <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary"> Поръчай NORIKS </a>
                 </div>
               </div>
             </div>
@@ -752,7 +752,7 @@ get_header();
                       <li>Изключителен комфорт и дишане</li>
                     </ul>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Поръчай сега </a>
+                  <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary"> Поръчай сега </a>
                 </div>
               </div>
             </div>
@@ -792,7 +792,7 @@ get_header();
 Индивидуалните резултати може да се различават. </em>
                     </p>
                   </div>
-                  <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary"> Поръчай NORIKS </a>
+                  <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary"> Поръчай NORIKS </a>
                 </div>
               </div>
             </div>
@@ -838,7 +838,7 @@ get_header();
                 </h2>
               </div>
               <div style="margin-top: 15px;" class="rich-text__buttons">
-                <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary">Поръчай сега и защити здравето си</a>
+                <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary">Поръчай сега и защити здравето си</a>
               </div>
               <div class="rich-text__text rte">
                 <p>Над 2 225 000 мъже вече преминаха към NORIKS. Не чакай да се появят обриви, инфекции или неприятни миризми.</p>
@@ -968,7 +968,7 @@ get_header();
                 </p>
               </div>
               <div class="rich-text__buttons">
-                <a href="https://noriks.com/hr/product-category/bokserice/" class="button button--primary">Провери наличността >></a>
+                <a href="https://noriks.com/bg/product-category/boxerky/" class="button button--primary">Провери наличността >></a>
               </div>
               <div class="rich-text__text rte">
                 <h6>
@@ -1060,7 +1060,7 @@ get_header();
                         ">
                         <p class="announcement-bar__message">
                           <span>
-                            <a style="font-size: 1.2rem;" href="https://noriks.com/hr/product-category/bokserice/" title="">70% отстъпка днес → 30-дневен пробен период без риск</a>
+                            <a style="font-size: 1.2rem;" href="https://noriks.com/bg/product-category/boxerky/" title="">70% отстъпка днес → 30-дневен пробен период без риск</a>
                           </span>
                         </p>
                       </div>
