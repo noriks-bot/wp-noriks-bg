@@ -18,26 +18,26 @@ $bun_img_features = get_template_directory_uri() . '/img/bunion/why-2026.webp';
 
 // Skutočné výsledky — percentá
 $bun_results = array(
-    array( 'pct' => 91, 'text' => 'používateľov uviedlo zmiernenie bolesti spôsobenej vbočeným palcom už od 2. sedenia' ),
-    array( 'pct' => 90, 'text' => 'používateľov úplne odstránilo bolesť spôsobenú vbočeným palcom už po 14 dňoch dôsledného používania (30 min/deň)' ),
-    array( 'pct' => 88, 'text' => 'používateľov si všimlo viditeľné zlepšenie zarovnania prstov už po 30 dňoch dôsledného používania (30 min/deň)' ),
+    array( 'pct' => 91, 'text' => 'от потребителите съобщават за облекчаване на болката от изкривен палец още от 2-рата сесия' ),
+    array( 'pct' => 90, 'text' => 'от потребителите напълно премахнаха болката от изкривен палец още след 14 дни последователна употреба (30 мин/ден)' ),
+    array( 'pct' => 88, 'text' => 'от потребителите забелязаха видимо подобрение в подреждането на пръстите още след 30 дни последователна употреба (30 мин/ден)' ),
 );
 
 // Prečo si vybrať nás — porovnanie (rovnaký štýl ako knc-table na ponožkách so zipsom)
 $bun_cmp = array(
-    '90-dňová záruka vrátenia peňazí',
-    'Zmierňuje nepohodlie',
-    'Zabraňuje rastu vbočeného palca',
-    'Postupom času zlepšuje stav vbočeného palca',
-    'Pružná konštrukcia — môžete v ňom chodiť',
-    'Odolný a dlhotrvajúci',
+    '90-дневна гаранция за връщане на парите',
+    'Облекчава дискомфорта',
+    'Предотвратява растежа на изкривения палец',
+    'С времето подобрява състоянието на изкривения палец',
+    'Гъвкава конструкция — може да ходите с него',
+    'Издръжлив и дълготраен',
 );
 
-// Ako sa používa — 3 kroky (video + opis)
+// Как се използва — 3 kroky (video + opis)
 $bun_steps = array(
     array( 'video' => $bun_vid_dir . 'step-1.mp4', 'caption' => 'Pripevnite korektor NORIKS na palec a chodidlo' ),
-    array( 'video' => $bun_vid_dir . 'step-2.mp4', 'caption' => 'Nastavte intenzitu naťahovania podľa potreby' ),
-    array( 'video' => $bun_vid_dir . 'step-3.mp4', 'caption' => 'Uvoľnite sa a nechajte korektor NORIKS vykonať svoju prácu' ),
+    array( 'video' => $bun_vid_dir . 'step-2.mp4', 'caption' => 'Настройте интензивността на разтягането според нуждата' ),
+    array( 'video' => $bun_vid_dir . 'step-3.mp4', 'caption' => 'Отпуснете се и оставете коректора NORIKS да свърши работата си' ),
 );
 ?>
 
@@ -48,14 +48,14 @@ $bun_steps = array(
       <video src="<?php echo esc_url( $bun_video_1 ); ?>" muted autoplay loop playsinline preload="metadata"></video>
     </div>
     <div class="bun-col bun-copy">
-      <h2 class="bun-title">Ste len krok od toho, aby ste sa zbavili <span class="bun-hl">nepohodlia spôsobeného vbočeným palcom</span>, opuchnutých prstov a bolesti chodidiel…</h2>
-      <p>Ak toto čítate, je veľká pravdepodobnosť, že trpíte pretrvávajúcim <strong class="bun-red">nepohodlím spôsobeným vbočeným palcom</strong>.</p>
-      <p>Výsledok? Bolesť a nepohodlie ovplyvňujú vaše každodenné činnosti.</p>
-      <p>Ak sa neliečia, môžu sa zhoršiť. Prsty sa prekrížia, môžu sa vyvinúť kladivkové prsty a kostné výrastky.</p>
-      <p>Vbočený palec je <strong class="bun-red">postupujúci problém</strong> a sám od seba nezmizne.</p>
-      <p>Postupom času môže viesť k vážnejším problémom, ako sú <u>invazívna operácia, problémy s bedrami, kolenami a driekovou časťou chrbta a dokonca aj nehybnosť</u>.</p>
-      <p>Pomocou klinicky overenej pokročilej terapie zarovnania a patentovaného kĺbového mechanizmu <strong>korektor vbočeného palca NORIKS</strong> účinne zmierňuje nepohodlie na postihnutej časti chodidla a obnovuje zdravie vášho chodidla len s 30 minútami denného používania.</p>
-      <p class="bun-stat"><span class="bun-check" aria-hidden="true">✔</span> <em>91 % používateľov uviedlo <strong>zmiernenie bolesti chodidiel</strong> už v prvom týždni</em></p>
+      <h2 class="bun-title">Ste len krok od toho, aby ste sa zbavili <span class="bun-hl">дискомфорта, причинен от изкривен палец</span>, подути пръсти и болки в стъпалата…</h2>
+      <p>Ако четете това, има голяма вероятност да страдате от продължителен <strong class="bun-red">дискомфорт, причинен от изкривен палец</strong>.</p>
+      <p>Резултатът? Болката и дискомфортът влияят на всекидневните ви дейности.</p>
+      <p>Ако не се лекуват, може да се влошат. Пръстите се кръстосват, може да се развият чукообразни пръсти и костни израстъци.</p>
+      <p>Изкривеният палец е <strong class="bun-red">напредващ проблем</strong> и няма да изчезне сам.</p>
+      <p>С времето може да доведе до по-сериозни проблеми, като <u>инвазивна операция, проблеми с бедрата, коленете и кръста, и дори обездвижване</u>.</p>
+      <p>С помощта на клинично доказана усъвършенствана терапия за изправяне и патентован шарнирен механизъм <strong>коректорът за изкривен палец NORIKS</strong> ефективно облекчава дискомфорта в засегнатата част на стъпалото и възстановява здравето на стъпалото ви само с 30 минути дневна употреба.</p>
+      <p class="bun-stat"><span class="bun-check" aria-hidden="true">✔</span> <em>91 % от потребителите съобщават за <strong>zmiernenie bolesti chodidiel</strong> още през първата седмица</em></p>
     </div>
   </div>
 </section>
@@ -68,26 +68,26 @@ $bun_steps = array(
     </div>
     <div class="bun-col bun-copy">
       <h2 class="bun-title">Ako to funguje?</h2>
-      <p><strong>Korektor vbočeného palca NORIKS</strong> využíva pokročilú terapiu zarovnania. Je navrhnutý tak, aby <strong class="bun-red">podporil opätovné zarovnanie</strong> palca a postupne zmiernil zápal pomocou silného patentovaného kĺbového mechanizmu.</p>
-      <p>Pomáha uvoľniť svalové napätie tým, že jemne vracia palec do jeho prirodzenej polohy, čo postupom času vedie k bezbolestnému prirodzenému zarovnaniu kĺbu prsta.</p>
-      <p>Takto sa uvoľní roky nahromadené napätie, výrastok sa upraví a zmenší, bolesť sa zmierni a zabráni sa ďalšiemu rastu — aby ste sa opäť postavili na nohy, vzpriamene a sebavedomo.</p>
-      <p>Niektorí používatelia môžu potrebovať jedno alebo dve sedenia, aby si zvykli, keďže <strong class="bun-red">pocit môže byť výraznejší</strong> v porovnaní s inými metódami.</p>
-      <p>Je to prirodzený a neinvazívny spôsob, ako obnoviť prirodzenú polohu prsta a chodidla a napraviť škody spôsobené nevhodnou obuvou alebo genetikou.</p>
-      <p>Bez ohľadu na to, či ide o malé detské chodidlo alebo veľké chodidlo dospelého, je <u>korektor vyrobený tak, aby pohodlne padol na všetky veľkosti chodidiel</u>.</p>
-      <p class="bun-stat"><span class="bun-check" aria-hidden="true">✔</span> <em>87 % používateľov uviedlo <strong>viditeľné zlepšenie</strong> už v prvom mesiaci</em></p>
+      <p><strong>Коректорът за изкривен палец NORIKS</strong> използва усъвършенствана терапия за изправяне. Създаден е така, че да <strong class="bun-red">подпомогне повторното изправяне</strong> на палеца и постепенно да намали възпалението с помощта на силен патентован шарнирен механизъм.</p>
+      <p>Помага да се отпусне мускулното напрежение, като нежно връща палеца в естественото му положение, което с времето води до безболезнено естествено изправяне на ставата на пръста.</p>
+      <p>Така се освобождава натрупаното през годините напрежение, израстъкът се прибира и намалява, болката се облекчава и се предотвратява по-нататъшният растеж — за да стъпите отново на краката си, изправени и уверени.</p>
+      <p>Някои потребители може да имат нужда от една или две сесии, за да свикнат, тъй като <strong class="bun-red">усещането може да е по-силно</strong> в сравнение с други методи.</p>
+      <p>Това е естествен и неинвазивен начин да се възстанови естественото положение на пръста и стъпалото и да се поправят вредите от неподходящи обувки или от генетиката.</p>
+      <p>Независимо дали става дума за малко детско стъпало или за голямо стъпало на възрастен, <u>коректорът е направен така, че да пасва удобно на всички размери стъпала</u>.</p>
+      <p class="bun-stat"><span class="bun-check" aria-hidden="true">✔</span> <em>87 % от потребителите съобщават за <strong>видимо подобрение</strong> още през първия месец</em></p>
     </div>
   </div>
 </section>
 
-<!-- ============ 3) Ako sa používa (sivé, 3 kroky) ============ -->
+<!-- ============ 3) Как се използва (sivé, 3 kroky) ============ -->
 <section class="bun-why bun-howto">
   <div class="bun-wrap">
-    <h2 class="bun-howto-title">Ako sa používa</h2>
+    <h2 class="bun-howto-title">Как се използва</h2>
     <div class="bun-howto-intro">
-      <p>Odporúčame začať s 30 minútami denne a postupne predlžovať až na sedenie 1 až 3 hodiny.</p>
-      <p>Keď sa budete cítiť pohodlne, môžete ho začať nosiť aj počas spánku každú noc.</p>
-      <p>Najlepší je na oddych — keď ležíte na gauči, pozeráte TV, čítate alebo spíte.</p>
-      <p>Na rozdiel od iných produktov na trhu sa však môžete aj hýbať bez toho, aby vás korektor NORIKS obmedzoval v pohybe, vďaka svojej pružnej konštrukcii.</p>
+      <p>Препоръчваме да започнете с 30 минути дневно и постепенно да удължавате до сесия от 1 до 3 часа.</p>
+      <p>Когато ви стане удобно, може да започнете да го носите и докато спите, всяка нощ.</p>
+      <p>Най-подходящ е за почивка — когато лежите на дивана, гледате телевизия, четете или спите.</p>
+      <p>За разлика от други продукти на пазара обаче може и да се движите, без коректорът NORIKS да ви ограничава, благодарение на гъвкавата си конструкция.</p>
     </div>
     <div class="bun-steps-grid">
       <?php $bun_n = 0; foreach ( $bun_steps as $bun_step ) : $bun_n++; ?>
@@ -103,34 +103,34 @@ $bun_steps = array(
   </div>
 </section>
 
-<!-- ============ 4) 8 dôvodov, prečo si ho zamilujete ============ -->
+<!-- ============ 4) 8 причини да го харесате ============ -->
 <section class="bun-why">
   <div class="bun-wrap bun-row">
     <div class="bun-col bun-copy">
-      <h2 class="bun-title">8 dôvodov, prečo si ho zamilujete</h2>
+      <h2 class="bun-title">8 причини да го харесате</h2>
       <ul class="bun-reasons">
-        <li><strong>Úľava od nepohodlia</strong> pri chôdzi, cvičení, státí a spánku</li>
-        <li><strong>Zabraňuje</strong> ďalšiemu rastu vbočeného palca</li>
-        <li><strong>Nechirurgická možnosť</strong> úľavy</li>
-        <li>Pevné zarovnanie kĺbu, ktoré <strong>skutočne zlepší váš stav</strong></li>
-        <li><strong>Nastaviteľná</strong> intenzita naťahovania</li>
-        <li>Navrhnutý a odporúčaný <strong>zdravotníckymi odborníkmi</strong></li>
-        <li><strong>Jednoduchý na použitie</strong> a prenosný</li>
-        <li><strong>90-dňová záruka vrátenia peňazí</strong> („výsledky alebo plné vrátenie peňazí"), pretože sme si natoľko istí naším produktom a vieme, že vám pomôže</li>
+        <li><strong>Облекчение от дискомфорта</strong> при ходене, упражнения, стоене и сън</li>
+        <li><strong>Предотвратява</strong> по-нататъшния растеж на изкривения палец</li>
+        <li><strong>Нехирургична възможност</strong> за облекчение</li>
+        <li>Стабилно изправяне на ставата, което <strong>наистина подобрява състоянието ви</strong></li>
+        <li><strong>Регулируема</strong> интензивност на разтягането</li>
+        <li>Създаден и препоръчан <strong>от медицински специалисти</strong></li>
+        <li><strong>Лесен за употреба</strong> и преносим</li>
+        <li><strong>90-дневна гаранция за връщане на парите</strong> („резултати или пълно връщане на парите"), защото сме толкова сигурни в продукта си и знаем, че ще ви помогне</li>
       </ul>
     </div>
     <div class="bun-col bun-media">
-      <img loading="lazy" decoding="async" src="<?php echo esc_url( $bun_img_features ); ?>" alt="Prečo je korektor vbočeného palca NORIKS iný" />
+      <img loading="lazy" decoding="async" src="<?php echo esc_url( $bun_img_features ); ?>" alt="Защо коректорът за изкривен палец NORIKS е различен" />
     </div>
   </div>
 </section>
 
-<!-- ============ 5) Skutočné výsledky, skutoční ľudia ============ -->
+<!-- ============ 5) Skutočné výsledky, истински хора ============ -->
 <section class="bun-why bun-results-sec">
   <div class="bun-wrap bun-row">
     <div class="bun-col bun-copy">
-      <h2 class="bun-title">Skutočné <span class="bun-hl">výsledky</span>, skutoční ľudia</h2>
-      <p>Vykonali sme spotrebiteľský test, v ktorom sme korektor vbočeného palca NORIKS poslali do viac ako <strong>37 podiatrických ambulancií</strong>. Celkovo ho vyskúšalo <strong>432 pacientov</strong> s vbočeným palcom. Tu sú výsledky.</p>
+      <h2 class="bun-title">Истински <span class="bun-hl">резултати</span>, истински хора</h2>
+      <p>Проведохме потребителски тест, при който изпратихме коректора за изкривен палец NORIKS в над <strong>37 подиатрични кабинета</strong>. Общо го пробваха <strong>432 pacientov</strong> с изкривен палец. Ето резултатите.</p>
     </div>
     <div class="bun-col">
       <div class="bun-results">
@@ -150,19 +150,19 @@ $bun_steps = array(
   </div>
 </section>
 
-<!-- ============ 6) Prečo si vybrať nás? (porovnávacia tabuľka, knc štýl) ============ -->
+<!-- ============ 6) Защо да изберете нас? (porovnávacia tabuľka, knc štýl) ============ -->
 <section class="bun-cmp-section">
   <div class="bun-cmp-wrap">
-    <h2 class="bun-cmp-title">Prečo si vybrať nás?</h2>
-    <p class="bun-cmp-lead">Nenaleťte na <span class="bun-hl">LACNÉ imitácie</span></p>
-    <p class="bun-cmp-sub">Ako sa <strong>korektor vbočeného palca NORIKS</strong> porovnáva s ostatnými:</p>
+    <h2 class="bun-cmp-title">Защо да изберете нас?</h2>
+    <p class="bun-cmp-lead">Не се подвеждайте по <span class="bun-hl">ЕВТИНИ имитации</span></p>
+    <p class="bun-cmp-sub">Ako sa <strong>коректорът за изкривен палец NORIKS</strong> се сравнява с останалите:</p>
     <div class="bun-cmp-scroll">
       <table class="bun-cmp-table">
         <thead>
           <tr>
             <th></th>
             <th class="bun-us">NORIKS</th>
-            <th class="bun-comp">Ostatné korektory</th>
+            <th class="bun-comp">Други коректори</th>
           </tr>
         </thead>
         <tbody>
@@ -219,7 +219,7 @@ $bun_steps = array(
   .bun-reverse .bun-media { order: 2; }
   .bun-reverse .bun-copy { order: 1; }
 
-  /* 3) Ako sa používa (sivé ozadie) */
+  /* 3) Как се използва (sivé ozadie) */
   .bun-why.bun-howto { background: #f0f2f5; }
   .bun-howto-title { text-align: center; font-size: clamp(24px,2.9vw,34px); font-weight: 800; color: #1c1c1c; margin: 0 0 18px; }
   .bun-howto-intro { max-width: 820px; margin: 0 auto 34px; text-align: center; }

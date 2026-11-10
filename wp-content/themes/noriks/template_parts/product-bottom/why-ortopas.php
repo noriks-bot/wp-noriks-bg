@@ -26,50 +26,50 @@ $opz_video_feat   = $opz_vid_dir . 'features.mp4' . $opz_vid_v;                 
 $opz_cards = array(
     array(
         'video' => $opz_vid_dir . 'card-1.mp4' . $opz_vid_v,
-        'title' => 'Zmierňuje ťažkosti',
-        'text'  => 'Môže poskytnúť rýchlu úľavu pri išiase a bolestiach chrbta',
+        'title' => 'Облекчава оплакванията',
+        'text'  => 'Може да осигури бързо облекчение при ишиас и болки в гърба',
     ),
     array(
         'video' => $opz_vid_dir . 'card-2.mp4' . $opz_vid_v,
-        'title' => 'Odľahčenie driekovej chrbtice',
-        'text'  => 'Stabilizuje a zarovnáva driekovú časť chrbta',
+        'title' => 'Разтоварване на кръстния отдел',
+        'text'  => 'Стабилизира и подрежда кръста',
     ),
     array(
         'video' => $opz_vid_dir . 'card-3.mp4' . $opz_vid_v,
-        'title' => 'Overená metóda',
-        'text'  => 'Založená na cielenej kompresnej technológii',
+        'title' => 'Доказан метод',
+        'text'  => 'Основан на прицелена компресионна технология',
     ),
 );
 
 /* Porovnávacia tabuľka — 7) sekcia. array( názov, NORIKS(bool), Fyzio(bool) ) */
 $opz_cmp_rows = array(
-    array( 'Úľava od bolesti',                true,  true  ),
-    array( 'Dlhotrvajúci účinok',             true,  false ),
-    array( 'Priaznivá cena',                  true,  false ),
-    array( 'Okamžité uvoľnenie',              true,  false ),
-    array( 'Bez čakania',                     true,  false ),
-    array( '60-dňová záruka vrátenia peňazí', true, false ),
-    array( 'Dlhodobé náklady',                false, true  ),
+    array( 'Облекчение на болката',          true,  true  ),
+    array( 'Дълготраен ефект',               true,  false ),
+    array( 'Изгодна цена',                   true,  false ),
+    array( 'Незабавно облекчение',           true,  false ),
+    array( 'Без чакане',                     true,  false ),
+    array( '60-дневна гаранция за връщане',  true, false ),
+    array( 'Дългосрочни разходи',            false, true  ),
 );
 /* Recenzie s obrázkom — 8) sekcia */
 $opz_reviews = array(
     array(
         'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-1.webp?v=20261026',
-        'title' => 'Veľká pomoc proti bolestiam driekovej časti chrbta',
-        'text'  => 'Pás NORIKS mi naozaj veľmi uľahčil život. Funguje presne tak, ako sľubuje. Opäť sa môžem zohnúť bez bolesti.',
-        'name'  => 'Alžbeta M.',
+        'title' => 'Голяма помощ срещу болките в кръста',
+        'text'  => 'Коланът NORIKS наистина много ми облекчи живота. Работи точно както обещава. Отново мога да се навеждам без болка.',
+        'name'  => 'Елисавета М.',
     ),
     array(
         'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-2.webp?v=20261026',
-        'title' => 'Mäkký a pohodlný',
-        'text'  => 'Môj fyzioterapeut mi odporučil pás proti bolestiam chrbta. Predtým som skúšal aj iné pásy, ale tento je oveľa pohodlnejší na sedenie a zohýbanie. Napriek tomu poskytuje výbornú oporu!',
-        'name'  => 'Júlia U.',
+        'title' => 'Мек и удобен',
+        'text'  => 'Моят физиотерапевт ми препоръча колан срещу болки в гърба. Преди пробвах и други колани, но този е много по-удобен за седене и навеждане. Въпреки това дава отлична опора!',
+        'name'  => 'Юлия У.',
     ),
     array(
         'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-3.webp?v=20261026',
-        'title' => 'Vynikajúce!',
-        'text'  => 'Pomáha mi sedieť vzpriamene a mám pocit, že chodím vzpriamenejšie. Bolesti sa výrazne zmiernili a konečne môžem bez bolesti vstať aj po dlhšom sedení. Pás nosím približne 2 – 3 hodiny denne – väčšinou v práci.',
-        'name'  => 'Ivan D.',
+        'title' => 'Отлично!',
+        'text'  => 'Помага ми да седя изправен и имам усещането, че ходя по-изправен. Болките значително намаляха и най-накрая мога да се изправя без болка и след по-дълго седене. Нося колана около 2 – 3 часа дневно – предимно на работа.',
+        'name'  => 'Иван Д.',
     ),
 );
 
@@ -77,45 +77,45 @@ $opz_yes = '<svg class="opz-yes" viewBox="0 0 24 24" width="20" height="20" aria
 $opz_no  = '<svg class="opz-no" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17" fill="none" stroke="#dc3545" stroke-width="2.4" stroke-linecap="round"/></svg>';
 ?>
 
-<!-- ============ 1) Viac ako 14 000 spokojných zákazníkov ============ -->
+<!-- ============ 1) Над 14 000 доволни клиенти ============ -->
 <section class="opz-why opz-customers">
   <div class="opz-wrap opz-row">
     <div class="opz-col opz-media">
-      <img loading="lazy" decoding="async" src="<?php echo esc_url( $opz_img_collage ); ?>" alt="Spokojní zákazníci ortopedického pásu NORIKS" />
+      <img loading="lazy" decoding="async" src="<?php echo esc_url( $opz_img_collage ); ?>" alt="Доволни клиенти на ортопедичния колан NORIKS" />
     </div>
     <div class="opz-col opz-copy">
       <div class="opz-stars" aria-hidden="true">★★★★★</div>
-      <h2 class="opz-title">Viac ako 14 000 spokojných zákazníkov</h2>
-      <p class="opz-sub">Tisíce ľudí už vymenili každodennú bolesť chrbta za stabilitu a úľavu — v práci, počas jazdy a doma.</p>
+      <h2 class="opz-title">Над 14 000 доволни клиенти</h2>
+      <p class="opz-sub">Хиляди хора вече замениха всекидневната болка в гърба за стабилност и облекчение — на работа, зад волана и вкъщи.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ 2) Prirodzená úľava od bolesti ============ -->
+<!-- ============ 2) Естествено облекчение на болката ============ -->
 <section class="opz-why">
   <div class="opz-wrap opz-row">
     <div class="opz-col opz-media">
       <video src="<?php echo esc_url( $opz_video_relief ); ?>" muted autoplay loop playsinline preload="metadata"></video>
     </div>
     <div class="opz-col opz-copy">
-      <h2 class="opz-title">Prirodzená úľava od bolesti</h2>
-      <p>Keď si nasadíte pás NORIKS, pokročilá technológia s <strong>dvoma kompresnými zónami</strong> zabezpečí správne zarovnanie vašich bokov a driekovej časti chrbta. To môže stabilizovať vašu chrbticu a odľahčiť sedací nerv.</p>
-      <p>Zvyčajne by ste museli absolvovať rozsiahlu fyzioterapiu, aby ste dosiahli túto úľavu. Pás NORIKS umožňuje, aby ste <strong>úľavu pocítili v reálnom čase</strong> — kým pracujete alebo ste v pohybe s najbližšími.</p>
-      <p>Hneď ako sú vaša drieková časť chrbta a boky správne podopreté, môže sa tlak na sedací nerv znížiť. To môže znamenať <strong>menej bolesti a väčšiu pohyblivosť</strong>.</p>
+      <h2 class="opz-title">Естествено облекчение на болката</h2>
+      <p>Когато поставите колана NORIKS, усъвършенстваната технология с <strong>две компресионни зони</strong> осигурява правилно подреждане на бедрата и кръста ви. Това може да стабилизира гръбнака ви и да разтовари седалищния нерв.</p>
+      <p>Обикновено би трябвало да минете през дълга физиотерапия, за да постигнете това облекчение. Коланът NORIKS позволява <strong>да усетите облекчението в реално време</strong> — докато работите или сте в движение с близките си.</p>
+      <p>Веднага щом кръстът и бедрата ви са правилно подкрепени, натискът върху седалищния нерв може да намалее. Това може да означава <strong>по-малко болка и по-голяма подвижност</strong>.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ 3) Skutočná príčina bolestí chrbta a išiasu ============ -->
+<!-- ============ 3) Истинската причина за болките в гърба и ишиаса ============ -->
 <section class="opz-why opz-cause">
   <div class="opz-wrap opz-row">
     <div class="opz-col opz-media">
       <video src="<?php echo esc_url( $opz_video_cause ); ?>" muted autoplay loop playsinline preload="metadata"></video>
     </div>
     <div class="opz-col opz-copy">
-      <h2 class="opz-title">Skutočná príčina bolestí chrbta a išiasu</h2>
-      <p>Hodiny strávené za písacím stolom, opakujúce sa pohyby alebo ťažká fyzická práca môžu vytvárať <strong>nerovnomerný tlak na medzistavcové platničky</strong>. V kombinácii s nesprávnym držaním tela to môže v priebehu rokov spôsobiť značné poškodenie chrbtice.</p>
-      <p>V dôsledku toho môžu platničky vykĺznuť zo svojej polohy a tlačiť na sedací nerv, čo spôsobuje <strong>pálivú bolesť, pichanie a dokonca aj slabosť</strong>, ktoré sa šíria z driekovej časti chrbta nadol po nohách.</p>
+      <h2 class="opz-title">Истинската причина за болките в гърба и ишиаса</h2>
+      <p>Часовете, прекарани на бюро, повтарящите се движения или тежката физическа работа могат да създадат <strong>неравномерен натиск върху междупрешленните дискове</strong>. В комбинация с неправилна стойка това може в рамките на години да причини значително увреждане на гръбнака.</p>
+      <p>В резултат дисковете може да се изместят от положението си и да притиснат седалищния нерв, което причинява <strong>пареща болка, бодежи и дори слабост</strong>, които се разпространяват от кръста надолу по краката.</p>
     </div>
   </div>
 </section>
@@ -123,7 +123,7 @@ $opz_no  = '<svg class="opz-no" viewBox="0 0 24 24" width="20" height="20" aria-
 <!-- ============ 4) Prirodzená úľava (3 karty) ============ -->
 <section class="opz-why opz-cards">
   <div class="opz-wrap">
-    <h2 class="opz-cards-title">Prirodzená úľava pri išiase a bolestiach chrbta</h2>
+    <h2 class="opz-cards-title">Естествено облекчение при ишиас и болки в гърба</h2>
     <div class="opz-cards-grid">
       <?php foreach ( $opz_cards as $opz_card ) : ?>
         <div class="opz-card">
@@ -143,43 +143,43 @@ $opz_no  = '<svg class="opz-no" viewBox="0 0 24 24" width="20" height="20" aria-
   </div>
 </section>
 
-<!-- ============ 5) Ako funguje pás NORIKS? ============ -->
+<!-- ============ 5) Как работи коланът NORIKS? ============ -->
 <section class="opz-why">
   <div class="opz-wrap opz-row">
     <div class="opz-col opz-media">
-      <img loading="lazy" decoding="async" src="<?php echo esc_url( $opz_img_indik ); ?>" alt="Indikácie — pri čom pomáha ortopedický pás NORIKS" />
+      <img loading="lazy" decoding="async" src="<?php echo esc_url( $opz_img_indik ); ?>" alt="Показания — при какво помага ортопедичният колан NORIKS" />
     </div>
     <div class="opz-col opz-copy">
-      <h2 class="opz-title">Ako funguje pás NORIKS?</h2>
-      <p>Pás NORIKS <strong>cielene stabilizuje</strong> oblasť L5 chrbtice pomocou <strong>cielenej kompresie</strong>, správne zarovná panvu a vráti SI kĺb do jeho prirodzeného rozsahu pohybu.</p>
-      <p><strong>Podopiera problematickú oblasť</strong>, môže odľahčiť medzistavcové platničky a tak znížiť tlak na sedací nerv.</p>
-      <p>Cielená kompresia podporuje krvný obeh, čím sa môže podporiť proces samoliečenia.</p>
-      <p>Táto kombinácia môže poskytnúť rýchlu úľavu pri išiase, bolestiach chrbta a SI ťažkostiach, ako aj <strong>dlhotrvajúce zmiernenie bolesti</strong> pri pravidelnom používaní.</p>
+      <h2 class="opz-title">Как работи коланът NORIKS?</h2>
+      <p>Коланът NORIKS <strong>cielene stabilizuje</strong> областта L5 на гръбнака с помощта на <strong>cielenej kompresie</strong>, подрежда правилно таза и връща сакроилиачната става в естествения ѝ обхват на движение.</p>
+      <p><strong>Подкрепя проблемната област</strong>, може да разтовари междупрешленните дискове и така да намали натиска върху седалищния нерв.</p>
+      <p>Прицелената компресия подпомага кръвообращението, с което може да се подкрепи процесът на самовъзстановяване.</p>
+      <p>Тази комбинация може да осигури бързо облекчение при ишиас, болки в гърба и проблеми със сакроилиачната става, както и <strong>дълготрайно намаляване на болката</strong> при редовна употреба.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ 6) Inovatívne vlastnosti ============ -->
+<!-- ============ 6) Иновативни характеристики ============ -->
 <section class="opz-why">
   <div class="opz-wrap opz-row">
     <div class="opz-col opz-media">
       <video src="<?php echo esc_url( $opz_video_feat ); ?>" muted autoplay loop playsinline preload="metadata"></video>
     </div>
     <div class="opz-col opz-copy">
-      <h2 class="opz-title">Inovatívne vlastnosti</h2>
-      <p><strong>Tenký a praktický:</strong> Vyvinutý na každodenné používanie a pohodlne padne pod väčšinu oblečenia, takže nikto nezbadá, že ho nosíte!</p>
-      <p><strong>Nastaviteľná kompresia:</strong> Umožňuje vám prispôsobiť mieru opory vašim potrebám a poskytuje maximálne pohodlie.</p>
-      <p>Prístup k fyzioterapeutom a odborníkom na bolesť je často obmedzený a spojený s vysokými nákladmi a stratou času. <strong>Pás NORIKS ponúka profesionálne riešenie na najvyššej úrovni</strong> a predstavuje účinnú a dostupnú alternatívu.</p>
+      <h2 class="opz-title">Иновативни характеристики</h2>
+      <p><strong>Тънък и практичен:</strong> Разработен за всекидневна употреба и пасва удобно под повечето дрехи, така че никой няма да забележи, че го носите!</p>
+      <p><strong>Регулируема компресия:</strong> Позволява ви да нагласите степента на опора според нуждите си и осигурява максимален комфорт.</p>
+      <p>Достъпът до физиотерапевти и специалисти по болка често е ограничен и свързан с високи разходи и загуба на време. <strong>Коланът NORIKS предлага професионално решение на най-високо ниво</strong> и представлява ефективна и достъпна алтернатива.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ 7) Pás NORIKS v porovnaní (tabuľka) ============ -->
+<!-- ============ 7) Коланът NORIKS в сравнение (tabuľka) ============ -->
 <section class="opz-why opz-compare">
   <div class="opz-wrap opz-row">
     <div class="opz-col opz-copy">
-      <h2 class="opz-title">Pás NORIKS v porovnaní</h2>
-      <p class="opz-sub">Cielene pôsobí na driekovú časť chrbta, aby znížil zaťaženie.</p>
+      <h2 class="opz-title">Коланът NORIKS в сравнение</h2>
+      <p class="opz-sub">Действа прицелено върху кръста, за да намали натоварването.</p>
     </div>
     <div class="opz-col">
       <table class="opz-table">
@@ -211,7 +211,7 @@ $opz_no  = '<svg class="opz-no" viewBox="0 0 24 24" width="20" height="20" aria-
       <?php foreach ( $opz_reviews as $opz_rev ) : ?>
         <div class="opz-review">
           <div class="opz-review-media">
-            <img loading="lazy" decoding="async" src="<?php echo esc_url( $opz_rev['img'] ); ?>" alt="Pás NORIKS — recenzia zákazníka <?php echo esc_attr( $opz_rev['name'] ); ?>" />
+            <img loading="lazy" decoding="async" src="<?php echo esc_url( $opz_rev['img'] ); ?>" alt="Коланът NORIKS — отзив на клиент <?php echo esc_attr( $opz_rev['name'] ); ?>" />
           </div>
           <div class="opz-review-stars" aria-hidden="true">★★★★★</div>
           <h3 class="opz-review-title"><?php echo esc_html( $opz_rev['title'] ); ?></h3>
