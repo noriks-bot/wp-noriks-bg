@@ -1,23 +1,23 @@
 <?php
-// Review pool for the NORIKS orthopedic back belt (ortopedický pás).
-// Text-only (no images), Slovak.
+// Review pool for the NORIKS orthopedic back belt (ortopedski pas).
+// Text-only (no images), Bulgarian.
 $auto_reviews_en = array(
-    array("name" => "Мариян К.",   "text" => "Bolesti krížov ma sprevádzali roky. Po dvoch týždňoch nosenia pásu sa konečne dokážem zohnúť bez pichania. Nosím ho v práci aj počas jazdy."),
-    array("name" => "Татяна П.",  "text" => "Hneď ako som si ho nasadila, pocítila som oporu v driekovej časti chrbta. Sedenie za stolom je oveľa menej namáhavé."),
-    array("name" => "Борис Р.",    "text" => "Pracujem v sklade a veľa dvíham. Pás mi dáva pocit stability, na konci dňa ma menej bolí."),
-    array("name" => "Наталия М.",  "text" => "Fyzioterapeut mi odporučil niečo na oporu chrbta. Tento pás je tenký a pod oblečením ho nevidno."),
-    array("name" => "Андрей З.",   "text" => "Išias ma trápil mesiace. Pri pravidelnom nosení sa bolesť v nohe citeľne upokojila."),
-    array("name" => "Петра В.",    "text" => "Výborná opora pre driekovú časť chrbta. Kompresia je nastaviteľná, čo mi veľmi vyhovuje."),
-    array("name" => "Григор С.",   "text" => "Kúpil som ho kvôli dlhým hodinám za volantom. Rozdiel je badateľný už po prvom týždni."),
-    array("name" => "Моника Л.",   "text" => "Po pôrode som mala problémy s krížami. Pás mi pomáha sedieť vzpriamenejšie a menej ma bolí."),
-    array("name" => "Дамян Х.",   "text" => "Kvalitne vyrobené, odolné a pohodlné. Nosím ho každý deň niekoľko hodín."),
-    array("name" => "Симона Б.",   "text" => "Prekvapivo pohodlný na každodenné nosenie. Nešmýka sa a nekrúti."),
-    array("name" => "Роман Й.",    "text" => "Po náročnom dni na stavbe mi pás naozaj uľaví chrbtu. Odporúčam všetkým, ktorí fyzicky pracujú."),
-    array("name" => "Алена Д.",    "text" => "Používam ho pri záhradkárčení a upratovaní. Chrbát je výrazne menej zaťažený."),
-    array("name" => "Михаил Т.",   "text" => "Spočiatku som bol skeptický, ale opora je skutočná. Teraz ho už nedám z rúk."),
-    array("name" => "Вяра К.",    "text" => "Bolesti panvy a SI kĺbu sa zmiernili. Konečne opäť normálne chodím."),
-    array("name" => "Георги П.",    "text" => "Jednoducho sa nasadí, napätie rýchlo prispôsobíš. Veľmi praktický produkt."),
-    array("name" => "Барбара Н.",  "text" => "Nosím ho počas dlhého sedenia v kancelárii. Držanie tela je lepšie, bolesti menšie."),
-    array("name" => "Томислав Г.",    "text" => "Po dvoch týždňoch dôsledného používania sa cítim stabilnejšie a vzpriamenejšie."),
-    array("name" => "Ирена М.",    "text" => "Mäkký materiál, nedráždi pokožku. Oporu dáva presne tam, kde ju potrebujem."),
+    array("name" => "Мариян К.",   "text" => "Болките в кръста ме съпровождаха години. След две седмици носене на колана най-накрая мога да се навеждам без бодежи. Нося го на работа и зад волана."),
+    array("name" => "Татяна П.",  "text" => "Веднага щом го поставих, усетих опора в кръста. Седенето на бюро е много по-малко натоварващо."),
+    array("name" => "Борис Р.",    "text" => "Работя в склад и много вдигам. Коланът ми дава усещане за стабилност, в края на деня ме боли по-малко."),
+    array("name" => "Наталия М.",  "text" => "Физиотерапевтът ми препоръча нещо за опора на гърба. Този колан е тънък и под облеклото не се вижда."),
+    array("name" => "Андрей З.",   "text" => "Ишиасът ме мъчеше месеци. При редовно носене болката в крака усетимо се успокои."),
+    array("name" => "Петра В.",    "text" => "Отлична опора за кръста. Компресията е регулируема, което много ми отива."),
+    array("name" => "Григор С.",   "text" => "Купих го заради дългите часове зад волана. Разликата е забележима още след първата седмица."),
+    array("name" => "Моника Л.",   "text" => "След раждане имах проблеми с кръста. Коланът ми помага да седя по-изправена и ме боли по-малко."),
+    array("name" => "Дамян Х.",   "text" => "Качествено направен, издръжлив и удобен. Нося го всеки ден по няколко часа."),
+    array("name" => "Симона Б.",   "text" => "Изненадващо удобен за всекидневно носене. Не се плъзга и не се извърта."),
+    array("name" => "Роман Й.",    "text" => "След тежък ден на строежа коланът наистина облекчава гърба ми. Препоръчвам на всички, които работят физически."),
+    array("name" => "Алена Д.",    "text" => "Използвам го при работа в градината и при чистене. Гърбът е значително по-малко натоварен."),
+    array("name" => "Михаил Т.",   "text" => "Отначало бях скептичен, но опората е истинска. Сега вече не го оставям."),
+    array("name" => "Вяра К.",    "text" => "Болките в таза и сакроилиачната става намаляха. Най-накрая отново ходя нормално."),
+    array("name" => "Георги П.",    "text" => "Поставя се лесно, напрежението се нагласява бързо. Много практичен продукт."),
+    array("name" => "Барбара Н.",  "text" => "Нося го при дълго седене в офиса. Стойката е по-добра, болките по-малки."),
+    array("name" => "Томислав Г.",    "text" => "След две седмици последователна употреба се чувствам по-стабилен и по-изправен."),
+    array("name" => "Ирена М.",    "text" => "Мек материал, не дразни кожата. Дава опора точно там, където ми трябва."),
 );

@@ -1,23 +1,23 @@
 <?php
-// Review pool for NORIKS ErgoSit — ortopedický vankúš na sedenie (orto-ortopedski-jastuk).
-// Text-only (no images), Slovak.
+// Review pool for NORIKS ErgoSit — ortopedska blazina za sedenje (orto-ortopedski-jastuk).
+// Text-only (no images), Bulgarian.
 $auto_reviews_en = array(
-    array("name" => "Марин К.",      "text" => "Jazdím dodávkou celý deň a kostrč ma zabíjala. Odkedy používam ErgoSit, bolesť takmer zmizla. Výrez pre kostrč naozaj robí rozdiel, vystupujem z auta bez stuhnutosti."),
-    array("name" => "Зоя П.",     "text" => "Sedím v kancelárii 8 hodín a chrbát ma bolel každý deň. Po týždni s vankúšom mám vzpriamenejšie držanie tela a bolesť v krížoch je oveľa menšia. Som nadšená."),
-    array("name" => "Петър Т.",      "text" => "Pamäťová pena je pevná tak, ako má byť, nesplošťuje sa ako lacné vankúše, ktoré som kupoval predtým. Po mesiaci stále drží tvar. Stojí za každé euro."),
-    array("name" => "Ивана М.",      "text" => "Mám problémy s išiasom a dlhé jazdy boli utrpenie. Tento vankúš odľahčuje nerv, takže noha už nemravčí. Nosím ho z auta do kancelárie a späť."),
-    array("name" => "Томислав Р.",      "text" => "Kúpil som ho babke, ktorá sedí na vozíku. Poťah sa dá stiahnuť a oprať a je jej oveľa pohodlnejšie. Základňa sa nešmýka, drží stabilne. Výborný nákup."),
-    array("name" => "Петра С.",      "text" => "Pracujem z domu a stolička mi ničila boky. ErgoSit zmenil všetko — sedím celé hodiny bez bolesti a mravčenia. Konečne niečo, čo naozaj pomáha."),
-    array("name" => "Мирослав Б.",   "text" => "Bol som skeptik, ale po dvoch týždňoch musím uznať, že funguje. Kostrč ma po dlhom sedení už nebolí a aj držanie tela mám lepšie. Odporúčam."),
-    array("name" => "Мартина Д.",    "text" => "Je priedušný a nepotím sa ako na obyčajnom vankúši. Používam ho v aute aj pri stole. Boky a chrbát mám oveľa odľahčenejšie."),
-    array("name" => "Йосиф Л.",      "text" => "Po operácii chrbtice sa mi ťažko sedelo. Tento vankúš drží chrbticu v správnej polohe, takže vydržím sedieť dlhšie bez bolesti. Ďakujem."),
-    array("name" => "Андреа В.",     "text" => "Je ľahký a jednoducho ho nosím so sebou. V práci, v aute, dokonca aj na zápasoch. Kostrč ma už netrápi ani na tvrdých sedadlách."),
-    array("name" => "Кристиян Н.",   "text" => "Som vodič z povolania a toto mi zachránilo chrbát. Rovnomerne rozkladá váhu, takže netlačí na jedno miesto. Kvalita na úrovni."),
-    array("name" => "Диана Х.",      "text" => "S manželom sme sa oň delili, tak som objednala ešte jeden. Obaja máme večer menej bolestí chrbta. Je pevný, ale príjemný, nezabára sa."),
-    array("name" => "Филип К.",      "text" => "Sedím za počítačom celý deň a držanie tela som mal hrozné. Vyvýšenie pre driekovú časť ma drží vzpriamene. Po mesiaci je chrbát oveľa lepší."),
-    array("name" => "Габриела М.",   "text" => "Mám bolesti SI kĺbu a bokov. Tento vankúš stabilizuje panvu, takže sedenie je konečne znesiteľné. Používam ho každý deň."),
-    array("name" => "Румен П.",     "text" => "Kúpil som ho na dlhú cestu autom a bola to najpohodlnejšia cesta doteraz. Žiadne zmeravené nohy ani boľavá kostrč. Teraz ho používam aj doma."),
-    array("name" => "Лидия С.",      "text" => "Poťah sa ľahko sťahuje a perie v práčke, zostáva ako nový. Pena je kvalitná a nemení tvar. Špičkový pomer ceny a kvality."),
-    array("name" => "Николай Т.",    "text" => "Bolesti kostrče z dlhého sedenia zmizli takmer okamžite. Protišmyková základňa ho drží na kancelárskej stoličke bez posúvania. Odporúčam všetkým."),
-    array("name" => "Сандра Б.",     "text" => "Pracujem ako kaderníčka a medzi klientkami veľa sedím. Odkedy mám ErgoSit, chrbát ma na konci dňa nebolí. Ľutujem, že som si ho nekúpila skôr."),
+    array("name" => "Марин К.",      "text" => "Карам ван цял ден и опашната кост ме убиваше. Откакто използвам ErgoSit, болката почти изчезна. Изрезът за опашната кост наистина прави разлика, слизам от колата без скованост."),
+    array("name" => "Зоя П.",     "text" => "Седя в офиса 8 часа и гърбът ме болеше всеки ден. След седмица с възглавницата стойката ми е по-изправена, а болката в кръста е много по-малка. Във възторг съм."),
+    array("name" => "Петър Т.",      "text" => "Пяната с памет е стабилна точно колкото трябва, не се сплесква като евтините възглавници, които купувах преди. След месец още държи формата си. Струва си всяко евро."),
+    array("name" => "Ивана М.",      "text" => "Имам проблеми с ишиаса и дългите пътувания бяха мъчение. Тази възглавница разтоварва нерва, така че кракът вече не изтръпва. Нося я от колата в офиса и обратно."),
+    array("name" => "Томислав Р.",      "text" => "Купих я на баба, която е в инвалидна количка. Калъфът се сваля и се пере, а на нея е много по-удобно. Основата не се плъзга, държи стабилно. Отлична покупка."),
+    array("name" => "Петра С.",      "text" => "Работя от дома и столът съсипваше бедрата ми. ErgoSit промени всичко — седя часове без болка и изтръпване. Най-накрая нещо, което наистина помага."),
+    array("name" => "Мирослав Б.",   "text" => "Бях скептик, но след две седмици трябва да призная, че работи. Опашната кост вече не ме боли след дълго седене, а и стойката ми е по-добра. Препоръчвам."),
+    array("name" => "Мартина Д.",    "text" => "Дишаща е и не се потя като на обикновена възглавница. Използвам я в колата и на бюрото. Бедрата и гърбът ми са много по-разтоварени."),
+    array("name" => "Йосиф Л.",      "text" => "След операция на гръбнака ми беше трудно да седя. Тази възглавница държи гръбнака в правилно положение, така че издържам да седя по-дълго без болка. Благодаря."),
+    array("name" => "Андреа В.",     "text" => "Лека е и лесно я нося със себе си. На работа, в колата, дори на мачове. Опашната кост вече не ме мъчи дори на твърди седалки."),
+    array("name" => "Кристиян Н.",   "text" => "Шофьор съм по професия и това спаси гърба ми. Разпределя тежестта равномерно, така че не притиска на едно място. Качество на ниво."),
+    array("name" => "Диана Х.",      "text" => "Със съпруга ми си я делихме, затова поръчах още една. И двамата имаме вечер по-малко болки в гърба. Стабилна е, но приятна, не потъваш в нея."),
+    array("name" => "Филип К.",      "text" => "Седя пред компютъра цял ден и стойката ми беше ужасна. Повдигането за кръста ме държи изправен. След месец гърбът е много по-добре."),
+    array("name" => "Габриела М.",   "text" => "Имам болки в сакроилиачната става и бедрата. Тази възглавница стабилизира таза, така че седенето най-накрая е търпимо. Използвам я всеки ден."),
+    array("name" => "Румен П.",     "text" => "Купих я за дълго пътуване с кола и беше най-удобното пътуване досега. Никакви изтръпнали крака, нито боляща опашна кост. Сега я използвам и вкъщи."),
+    array("name" => "Лидия С.",      "text" => "Калъфът се сваля лесно и се пере в пералня, остава като нов. Пяната е качествена и не променя формата си. Първокласно съотношение цена и качество."),
+    array("name" => "Николай Т.",    "text" => "Болките в опашната кост от дълго седене изчезнаха почти веднага. Противоплъзгащата основа я държи на офис стола без да се мести. Препоръчвам на всички."),
+    array("name" => "Сандра Б.",     "text" => "Работя като фризьорка и между клиентките много седя. Откакто имам ErgoSit, гърбът не ме боли в края на деня. Съжалявам, че не си я купих по-рано."),
 );

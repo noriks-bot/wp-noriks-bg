@@ -1,23 +1,23 @@
 <?php
-// Review pool for the NORIKS bunion corrector (korektor vbočeného palca).
-// Text-only (no images), Slovak.
+// Review pool for the NORIKS bunion corrector (korektor za izkrivljen palec).
+// Text-only (no images), Bulgarian.
 $auto_reviews_en = array(
-    array("name" => "Мартина С.",  "text" => "Vbočený palec ma bolel pri každom kroku. Po dvoch týždňoch večerného používania bolesť citeľne poľavila."),
-    array("name" => "Франц К.", "text" => "Používam ho počas pozerania televízie. Palec sa pomaly vracia do prirodzenejšej polohy."),
-    array("name" => "Надежда П.",  "text" => "Jemne naťahuje, ale cítiť, že to funguje. Po niekoľkých sedeniach som si zvykla a teraz mi to robí radosť."),
-    array("name" => "Боян М.",    "text" => "Nechirurgické riešenie, ktoré som hľadal. Večer si ho nasadím a ráno je chodidlo uvoľnenejšie."),
-    array("name" => "Катерина Л.", "text" => "Sadne dokonale, netreba vyberať ľavú ani pravú stranu. Jednoduché na použitie."),
-    array("name" => "Саша Д.",     "text" => "Bolesť pri chôdzi sa zmiernila už v prvom týždni. Som veľmi spokojný."),
-    array("name" => "Власта Р.",   "text" => "Nosím ho počas čítania a oddychu. Opuch okolo kĺbu je menší."),
-    array("name" => "Денис Х.",    "text" => "Kvalitne vyrobené, intenzitu naťahovania si viem sám prispôsobiť. Funguje."),
-    array("name" => "Уршка Б.",    "text" => "Palec bol čoraz krivší. S korektorom sa postup zastavil, cítim sa lepšie."),
-    array("name" => "Марин Ж.",    "text" => "Spočiatku nezvyčajný pocit, ale po druhom sedení úplne pohodlné. Výsledky sú viditeľné."),
-    array("name" => "Елена Т.",   "text" => "Odporučila mi ho kamarátka. Naozaj pomáha pri bolestiach spôsobených vbočeným palcom."),
-    array("name" => "Румен П.",   "text" => "Používam ho každý večer po 30 minút. Chodidlo je menej napäté a bolí menej."),
-    array("name" => "Анна К.",     "text" => "Výborná alternatíva k operácii. Som spokojná s pohodlím aj účinkom."),
-    array("name" => "Зоран М.",    "text" => "Odolný a jednoduchý na použitie. Palec sa postupne zarovnáva."),
-    array("name" => "Лидия С.",    "text" => "Po 30 dňoch pravidelného používania je zarovnanie prstov badateľne lepšie. Odporúčam."),
-    array("name" => "Горазд В.",   "text" => "Nosím ho počas oddychu na gauči. Nič neprekáža a účinok je reálny."),
-    array("name" => "Катя Н.",    "text" => "Bolesť poľavila, chôdza je opäť príjemnejšia. Som rada, že som si ho kúpila."),
-    array("name" => "Пламен Й.",   "text" => "Funguje pomaly a prirodzene, ale výsledok je tu. Odporúčam trpezlivosť a pravidelné používanie."),
+    array("name" => "Мартина С.",  "text" => "Изкривеният палец ме болеше при всяка стъпка. След две седмици вечерна употреба болката усетимо отпусна."),
+    array("name" => "Франц К.", "text" => "Използвам го, докато гледам телевизия. Палецът бавно се връща в по-естествено положение."),
+    array("name" => "Надежда П.",  "text" => "Разтяга нежно, но се усеща, че работи. След няколко сесии свикнах и сега ми е приятно."),
+    array("name" => "Боян М.",    "text" => "Нехирургичното решение, което търсех. Вечер си го слагам и сутрин стъпалото е по-отпуснато."),
+    array("name" => "Катерина Л.", "text" => "Пасва идеално, не се налага да избираш лява или дясна страна. Лесен за употреба."),
+    array("name" => "Саша Д.",     "text" => "Болката при ходене намаля още през първата седмица. Много съм доволен."),
+    array("name" => "Власта Р.",   "text" => "Нося го, докато чета и си почивам. Отокът около ставата е по-малък."),
+    array("name" => "Денис Х.",    "text" => "Качествено направен, интензивността на разтягането си нагласям сам. Работи."),
+    array("name" => "Уршка Б.",    "text" => "Палецът ставаше все по-изкривен. С коректора напредването спря, чувствам се по-добре."),
+    array("name" => "Марин Ж.",    "text" => "Отначало необичайно усещане, но след втората сесия напълно удобно. Резултатите се виждат."),
+    array("name" => "Елена Т.",   "text" => "Препоръча ми го приятелка. Наистина помага при болки от изкривен палец."),
+    array("name" => "Румен П.",   "text" => "Използвам го всяка вечер по 30 минути. Стъпалото е по-малко напрегнато и боли по-малко."),
+    array("name" => "Анна К.",     "text" => "Отлична алтернатива на операция. Доволна съм и от комфорта, и от ефекта."),
+    array("name" => "Зоран М.",    "text" => "Издръжлив и лесен за употреба. Палецът постепенно се изправя."),
+    array("name" => "Лидия С.",    "text" => "След 30 дни редовна употреба подреждането на пръстите е забележимо по-добро. Препоръчвам."),
+    array("name" => "Горазд В.",   "text" => "Нося го, докато си почивам на дивана. Нищо не пречи, а ефектът е реален."),
+    array("name" => "Катя Н.",    "text" => "Болката отпусна, ходенето отново е приятно. Радвам се, че си го купих."),
+    array("name" => "Пламен Й.",   "text" => "Работи бавно и естествено, но резултатът е налице. Препоръчвам търпение и редовна употреба."),
 );
