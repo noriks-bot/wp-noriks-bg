@@ -74,21 +74,40 @@ Jezikovne datoteke: WooCommerce in WordPress bolgarščino poberejo sama
 - povezave `noriks.com/sk` in `/sk/...` → `/bg/...`
 - izbirnik držav v glavi: dodana Bolgarija, Slovaška spet kaže na `/sk`
 - noga: zastavica in napis **България (BG)**
-- prevedeno: produktna stran (`meta.php`), domača stran, noga, blagajna,
-  stran z navodili, tabele velikosti, FAQ (11 izdelkov), vtičnik orto-product
 - `functions/acf-text-fix.php` — dodani bolgarski besedi za pravilo
   »zamenjava ni brezplačna«
 
-### Še v delu (prevod v temi)
+**Prevod teme je zaključen.** V bolgarščini je vse, kar vidi kupec:
 
-- `template-vigocheckout.php` (369 vrstic) — tudi **seznam bolgarskih oblasti**
-  namesto slovaških krajev
-- preostanek `single-product-bottom-nicer.php` (FAQ za 10 izdelkov)
-- 28 datotek `template_parts/product-bottom/why-*.php`
-- `auto_reviews/BG*.php` — besedila mnenj **in slovaška imena** (Tomáš, Mária →
-  bolgarska)
-- `single-lander2.php`, `functions/product-page-upsell.php`,
-  `template_parts/size-chart-modal.php`, `functions/klaviyo-email-links.php`
+| sklop | obseg |
+|---|---|
+| produktna stran `woocommerce/single-product/meta.php` | ikone, okno dostave, opisi 19 izdelkov, tabele velikosti, pranje, vračila, PDF navodila |
+| `template_parts/single-product-bottom-nicer.php` | sistem mnenj + FAQ vseh **21 izdelkov** |
+| `template_parts/product-bottom/why-*.php` | **27 datotek**, vse why-sekcije |
+| `auto_reviews/BG*.php` | **28 datotek, ~1 150 mnenj** — besedila in imena |
+| domača stran, glava, noga, blagajna, košarica, stran z navodili | vsi napisi |
+| vtičnik `orto-product` | izbirnik ponudb, značke, števec, barve, kontrolni seznam |
+| modali tabel velikosti | 6 datotek |
+| `single-lander2.php` | advertorial (prej hrvaški) |
+
+Imena v mnenjih so prepisana v bolgarsko cirilico (Tomáš L. → Томислав Л.),
+kraji v mnenjih zamenjani z bolgarskimi (Bratislava → София, Košice → Пловдив …),
+imena zdravnikov in terapevtov prav tako. `php -l` je čist na vseh
+**270 datotekah** teme.
+
+### Namenoma neprevedeno
+
+- **`template-vigocheckout.php`** (375 vrstic slovaščine/hrvaščine) — to je
+  *»pixel-perfect vigoshop.sk checkout replica«*, torej kopija tuje blagajne za
+  referenco. Ni nikjer vključena, ni naša blagajna (ta teče prek WooCommerce +
+  `checkout_mods.php`) in nobena stran je ne uporablja. Če je ne potrebuješ več,
+  jo lahko zbrišem — povej.
+- **`auto_reviews/EN.php`** — angleški bazen mnenj, ki ga BG ne vključuje
+  (vključujeta se `BG.php` in `BG-2.php`).
+- **`functions/lang/hr.php`** — hrvaška jezikovna datoteka, ostaja nedotaknjena.
+- Razvijalski komentarji v kodi (nevidni kupcu) in večjezični seznami besed v
+  `functions/acf-text-fix.php` ter prepoznavanje atributov v `orto-product`,
+  kjer slovaške besede morajo ostati.
 
 ---
 

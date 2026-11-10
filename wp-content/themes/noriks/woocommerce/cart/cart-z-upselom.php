@@ -888,7 +888,7 @@ img.emoji {
 
     <div class="upsell-loader" aria-hidden="true">
       <div class="upsell-loader__dots"><span></span><span></span><span></span></div>
-      <div class="upsell-loader__text">Obrađujem…</div>
+      <div class="upsell-loader__text">Обработвам…</div>
     </div>
   </div>
 
