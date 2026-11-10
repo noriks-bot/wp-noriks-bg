@@ -16,52 +16,52 @@ $cp_img = function( $file, $alt ) use ( $cp, $cp_path ) {
 
 <section class="cpr-sec">
   <div class="cpr-wrap cpr-row2">
-    <div class="cpr-media"><?php echo $cp_img('08-vjezba-1.webp','Cvičenie s trenérom NORIKS ControlPro'); ?></div>
+    <div class="cpr-media"><?php echo $cp_img('08-vjezba-1.webp','Упражнение с тренажора NORIKS ControlPro'); ?></div>
     <div class="cpr-copy">
-      <h2 class="cpr-h2">Prečo cítiť stiahnutie a naozaj posilniť panvové dno nie je to isté</h2>
-      <p>Lekár vám povedal, aby ste robili Kegelove cviky. Tak ste stláčali. A cítili ste, že to funguje — to napätie, tú kontrakciu. Preto ste pokračovali. Týždne, možno mesiace.</p>
-      <p>Únik sa však nezastavil.</p>
-      <p>Dôvod je jednoduchý: cítiť stiahnutie a naozaj vybudovať silu panvového dna nie je to isté. Bez odporu sval iba aktivujete — netrénujete ho. Stláčate naprázdno a žiadny sval v tele takto ešte nezosilnel.</p>
-      <p>ControlPro to mení. Vášmu panvovému dnu dá niečo, proti čomu môže tlačiť — skutočný fyzický odpor, ktorý zaťaží práve tie svaly, ktoré ovládajú mechúr. Každé stiahnutie buduje skutočnú, funkčnú silu.</p>
+      <h2 class="cpr-h2">Защо да усещаш свиване и наистина да укрепиш тазовото дъно не е едно и също</h2>
+      <p>Лекарят ви каза да правите упражнения на Кегел. И вие свивахте. И усещахте, че работи — това напрежение, това свиване. Затова продължихте. Седмици, може би месеци.</p>
+      <p>Изпускането обаче не спря.</p>
+      <p>Причината е проста: да усещаш свиване и наистина да изградиш сила в тазовото дъно не е едно и също. Без съпротивление само активирате мускула — не го тренирате. Свивате напразно, а никой мускул в тялото не е укрепнал така.</p>
+      <p>ControlPro променя това. Дава на тазовото ви дъно нещо, срещу което да натиска — истинско физическо съпротивление, което натоварва точно онези мускули, които управляват мехура. Всяко свиване изгражда истинска, функционална сила.</p>
     </div>
   </div>
 </section>
 
 <section class="cpr-sec">
   <div class="cpr-wrap cpr-row2">
-    <div class="cpr-media"><?php echo $cp_img('09-vjezba-2.webp','Stláčanie proti odporu — 3 série po 10 opakovaní denne'); ?></div>
+    <div class="cpr-media"><?php echo $cp_img('09-vjezba-2.webp','Натискане срещу съпротивление — 3 серии по 10 повторения дневно'); ?></div>
     <div class="cpr-copy">
-      <h2 class="cpr-h2">3 série po 10 stiahnutí denne. To je všetko.</h2>
-      <p>Sadnite si na stoličku a vložte ControlPro medzi kolená. Stláčajte proti odporu — 3 série po 10 opakovaní denne.</p>
-      <p>Bez zavádzania, bez káblov, bez aplikácií. Vyzerá ako cvičebná pomôcka, pretože ňou aj je. Cvičte pri správach alebo za pracovným stolom — nikto to nemusí vidieť.</p>
-      <a class="cpr-cta" href="#bundle-selector">Získajte kontrolu ešte dnes</a>
+      <h2 class="cpr-h2">3 серии по 10 свивания дневно. Това е всичко.</h2>
+      <p>Седнете на стол и поставете ControlPro между коленете. Натискайте срещу съпротивлението — 3 серии по 10 повторения дневно.</p>
+      <p>Без въвеждане, без кабели, без приложения. Изглежда като помагало за упражнения, защото е точно това. Тренирайте пред новините или на работното бюро — никой не трябва да вижда.</p>
+      <a class="cpr-cta" href="#bundle-selector">Върнете си контрола още днес</a>
     </div>
   </div>
 </section>
 
 <section class="cpr-sec">
   <div class="cpr-wrap cpr-row2">
-    <div class="cpr-media"><?php echo $cp_img('01-usporedba.png','Porovnanie: vložky, EMS prístroje, samotné Kegelove cviky a NORIKS'); ?></div>
+    <div class="cpr-media"><?php echo $cp_img('01-usporedba.png','Сравнение: подложки, EMS уреди, самите упражнения на Кегел и NORIKS'); ?></div>
     <div class="cpr-copy">
-      <h2 class="cpr-h2">Prečo toto funguje, keď nič iné nezabralo</h2>
-      <p>Vložky a ochrana tlmia príznak — budete ich kupovať každý mesiac, navždy, a nič nezosilnie.</p>
-      <p>EMS prístroje (175 – 350 €) stiahnu sval <em>za vás</em>, čo je ako keby niekto iný robil vaše kliky — spojenie mozog–sval sa nikdy nevytvorí a mnohé vyžadujú vnútorné sondy.</p>
-      <p>Samotné Kegelove cviky sú dobrý nápad, ale bez odporu a spätnej väzby väčšina mužov cvičí naslepo a do pár týždňov to vzdá.</p>
-      <p>NORIKS ControlPro zaplatíte raz, prácu musíte urobiť sami proti skutočnému odporu a využíva rovnaký princíp postupného zaťaženia, ktorý posilňuje každý iný sval v tele.</p>
-      <p>Vaše panvové dno nie je pokazené.</p>
-      <p class="cpr-strong">Je len málo trénované.</p>
+      <h2 class="cpr-h2">Защо това работи, когато нищо друго не помогна</h2>
+      <p>Подложките и защитата потушават симптома — ще ги купувате всеки месец, завинаги, а нищо не укрепва.</p>
+      <p>EMS уредите (175 – 350 €) свиват мускула <em>вместо вас</em>, което е като някой друг да прави вашите лицеви опори — връзката мозък–мускул никога не се създава, а много от тях изискват вътрешни сонди.</p>
+      <p>Самите упражнения на Кегел са добра идея, но без съпротивление и обратна връзка повечето мъже тренират наслуки и след няколко седмици се отказват.</p>
+      <p>NORIKS ControlPro плащате веднъж, работата трябва да свършите сами срещу истинско съпротивление, а той използва същия принцип на постепенно натоварване, който укрепва всеки друг мускул в тялото.</p>
+      <p>Тазовото ви дъно не е повредено.</p>
+      <p class="cpr-strong">Просто е слабо тренирано.</p>
     </div>
   </div>
 </section>
 
 <section class="cpr-sec cpr-revs">
   <div class="cpr-wrap">
-    <h2 class="cpr-h2 cpr-center">Muži ako vy už vidia výsledky</h2>
+    <h2 class="cpr-h2 cpr-center">Мъже като вас вече виждат резултати</h2>
     <div class="cpr-rev-grid">
       <?php foreach ( array(
-        array( 'Zo 4 vložiek denne na 0', 'Po operácii prostaty som viac ako rok robil Kegelove cviky bez pokroku. Bol som skeptický, ale používam ho asi päť týždňov a zo štyroch vložiek denne som klesol na nulu.', 'Marek R.' ),
-        array( 'Bol som skeptický', 'Unikalo mi dva roky a cviky nepriniesli žiadnu zmenu. Rozdiel cítiť hneď, keď majú svaly skutočný odpor. Teraz mi už neuniká.', 'Juraj P.' ),
-        array( 'Jednoduché a dobre spracované', 'Jednoduchý a dobre vyrobený prístroj. Stlačíte a pustíte, časom získate výrazne väčšiu kontrolu. Vyhnite sa lacným kópiám — nemajú rovnaký odpor.', 'Andrej T.' ),
+        array( 'От 4 подложки дневно на 0', 'След операция на простатата повече от година правих упражнения на Кегел без напредък. Бях скептичен, но го използвам около пет седмици и от четири подложки дневно паднах на нула.', 'Марек Р.' ),
+        array( 'Бях скептичен', 'Изпусках две години и упражненията не донесоха никаква промяна. Разликата се усеща веднага, когато мускулите имат истинско съпротивление. Сега вече не изпускам.', 'Георги П.' ),
+        array( 'Просто и добре направено', 'Прост и добре направен уред. Натискате и отпускате, с времето получавате значително по-голям контрол. Избягвайте евтините копия — не дават същото съпротивление.', 'Андрей Т.' ),
       ) as $rv ) : ?>
         <article class="cpr-rev">
           <span class="cpr-quote" aria-hidden="true">&#10077;</span>

@@ -29,7 +29,7 @@ $knv = get_template_directory_uri() . '/img/kompresijske-videos/';
 <!-- Kako funkcionira u praksi (product demo videos, autoplay on view) — FIRST -->
 <section class="why-section knc-demo">
   <div class="knc-demo-wrap">
-    <h2 class="knc-demo-title">Ako to funguje v praxi</h2>
+    <h2 class="knc-demo-title">Как работи на практика</h2>
     <div class="knc-demo-grid">
       <video class="knc-lazyvid" data-src="<?php echo esc_url( $knv ); ?>demo-1.mp4" poster="<?php echo esc_url( $knv ); ?>demo-1-poster.jpg" muted loop playsinline preload="none"></video>
       <video class="knc-lazyvid" data-src="<?php echo esc_url( $knv ); ?>demo-2.mp4" poster="<?php echo esc_url( $knv ); ?>demo-2-poster.jpg" muted loop playsinline preload="none"></video>
@@ -42,26 +42,26 @@ $knv = get_template_directory_uri() . '/img/kompresijske-videos/';
 <!-- Usporedba: NORIKS vs ostali -->
 <section class="why-section knc-compare-section">
   <div class="knc-compare-wrap">
-    <h2 class="knc-compare-title">NORIKS vs ostatní</h2>
+    <h2 class="knc-compare-title">NORIKS срещу останалите</h2>
     <div class="knc-table-scroll">
       <table class="knc-table">
         <thead>
           <tr>
             <th class="knc-feat"></th>
-            <th class="knc-comp">Klasické pančuchy<span>(Bauerfeind, medi…)</span></th>
-            <th class="knc-comp">TV pančuchy<span>(Zip Sox &amp; Co.)</span></th>
-            <th class="knc-us">NORIKS<em class="knc-badge">Č. 1</em></th>
+            <th class="knc-comp">Класически чорапи<span>(Bauerfeind, medi…)</span></th>
+            <th class="knc-comp">ТВ чорапи<span>(Zip Sox &amp; Co.)</span></th>
+            <th class="knc-us">NORIKS<em class="knc-badge">№ 1</em></th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Medicínska kompresia</td><td class="ok">✓</td><td class="no">✕</td><td class="us ok">✓</td></tr>
-          <tr><td>Zips pre jednoduché obúvanie</td><td class="no">✕</td><td class="ok">✓</td><td class="us ok">✓</td></tr>
-          <tr><td>Samostatné obúvanie bez pomoci</td><td class="no">✕</td><td class="mid">~</td><td class="us ok">✓</td></tr>
-          <tr><td>Zosilnený zips, nikdy sa nezasekne</td><td class="mid">—</td><td class="no">✕</td><td class="us ok">✓</td></tr>
-          <tr><td>Priedušná tkanina</td><td class="mid">~</td><td class="no">✕</td><td class="us ok">✓</td></tr>
-          <tr><td>Pohodlie celý deň (+12 hodín)</td><td class="mid">~</td><td class="no">✕</td><td class="us ok">✓</td></tr>
-          <tr><td>Záruka vrátenia peňazí 30 dní</td><td class="no">✕</td><td class="no">✕</td><td class="us ok">✓</td></tr>
-          <tr class="knc-price"><td>Cena za pár</td><td>od 85 €</td><td>~15 €</td><td class="us">od 23,33 €</td></tr>
+          <tr><td>Медицинска компресия</td><td class="ok">✓</td><td class="no">✕</td><td class="us ok">✓</td></tr>
+          <tr><td>Цип за лесно обуване</td><td class="no">✕</td><td class="ok">✓</td><td class="us ok">✓</td></tr>
+          <tr><td>Самостоятелно обуване без помощ</td><td class="no">✕</td><td class="mid">~</td><td class="us ok">✓</td></tr>
+          <tr><td>Подсилен цип, никога не блокира</td><td class="mid">—</td><td class="no">✕</td><td class="us ok">✓</td></tr>
+          <tr><td>Дишащ плат</td><td class="mid">~</td><td class="no">✕</td><td class="us ok">✓</td></tr>
+          <tr><td>Комфорт през целия ден (+12 часа)</td><td class="mid">~</td><td class="no">✕</td><td class="us ok">✓</td></tr>
+          <tr><td>Гаранция за връщане на парите 30 дни</td><td class="no">✕</td><td class="no">✕</td><td class="us ok">✓</td></tr>
+          <tr class="knc-price"><td>Цена за чифт</td><td>от 85 €</td><td>~15 €</td><td class="us">от 23,33 €</td></tr>
         </tbody>
       </table>
     </div>
@@ -75,7 +75,7 @@ $knv = get_template_directory_uri() . '/img/kompresijske-videos/';
     <div class="why-col">
       <div class="video-wrapper">
         <?php if ( $kn_img_1 ) : ?>
-          <img loading="lazy" decoding="async" style="width:100%; aspect-ratio:1/1; object-fit:cover;" src="<?php echo esc_url( $kn_img_1 ); ?>" alt="Kompresné pančuchy">
+          <img loading="lazy" decoding="async" style="width:100%; aspect-ratio:1/1; object-fit:cover;" src="<?php echo esc_url( $kn_img_1 ); ?>" alt="Компресионни чорапи">
         <?php else : echo $kn_placeholder; endif; ?>
       </div>
     </div>
@@ -83,22 +83,22 @@ $knv = get_template_directory_uri() . '/img/kompresijske-videos/';
     <!-- Right content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-        PREČO KOMPRESNÉ PANČUCHY?
+        ЗАЩО КОМПРЕСИОННИ ЧОРАПИ?
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Lepšia cirkulácia, menej únavy</strong></p>
-        <p class="description">Postupná kompresia jemne podporuje prietok krvi smerom k srdcu, znižuje pocit ťažoby a únavy v nohách a pomáha, aby nohy zostali ľahké aj počas najdlhšieho dňa.</p>
+        <p><strong>По-добро кръвообращение, по-малко умора</strong></p>
+        <p class="description">Степенуваната компресия нежно подпомага притока на кръв към сърцето, намалява усещането за тежест и умора в краката и помага краката да останат леки и през най-дългия ден.</p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Menej opuchov</strong></p>
-        <p class="description">Ideálne na dlhé cestovanie, dlhé státie alebo sedenie. Rovnomerný tlak znižuje zadržiavanie tekutín a opuchy členkov a lýtok.</p>
+        <p><strong>По-малко отоци</strong></p>
+        <p class="description">Идеални за дълго пътуване, дълго стоене или седене. Равномерният натиск намалява задържането на течности и отоците на глезените и прасците.</p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Opora, ktorú pocítite</strong></p>
-        <p class="description">Anatomický strih drží pančuchu na mieste, bez sťahovania na vrchu. Pocit pevnej, ale príjemnej opory počas celého dňa.</p>
+        <p><strong>Опора, която усещате</strong></p>
+        <p class="description">Анатомичната кройка държи чорапа на място, без да стяга в горната част. Усещане за стабилна, но приятна опора през целия ден.</p>
       </div>
     </div>
 
@@ -142,7 +142,7 @@ $knv = get_template_directory_uri() . '/img/kompresijske-videos/';
 <!-- Što kažu naši kupci (UGC testimonial videos, load on click) -->
 <section class="why-section knc-ugc">
   <div class="knc-ugc-wrap">
-    <h2 class="knc-ugc-title">Čo hovoria naši zákazníci</h2>
+    <h2 class="knc-ugc-title">Какво казват нашите клиенти</h2>
     <div class="knc-ugc-grid">
       <div class="knc-ugc-item" data-src="<?php echo esc_url( $knv ); ?>review-1.mp4"><video class="knc-ugc-video" poster="<?php echo esc_url( $knv ); ?>review-1-poster.jpg" preload="none" playsinline></video><span class="knc-ugc-play" aria-label="Play"></span></div>
       <div class="knc-ugc-item" data-src="<?php echo esc_url( $knv ); ?>review-2.mp4"><video class="knc-ugc-video" poster="<?php echo esc_url( $knv ); ?>review-2-poster.jpg" preload="none" playsinline></video><span class="knc-ugc-play" aria-label="Play"></span></div>

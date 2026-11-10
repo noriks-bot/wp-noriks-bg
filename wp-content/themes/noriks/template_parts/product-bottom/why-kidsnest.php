@@ -15,7 +15,7 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
 <!-- ============ 1) Trust marquee (plava traka, vrti se) ============ -->
 <div class="kn-marquee" aria-hidden="true">
   <div class="kn-marquee-track">
-    <?php $kn_ticker = array('ODPORÚČANÉ PEDIATRAMI','OEKO-TEX® PAMÄŤOVÁ PENA','3-ZÓNOVÁ ŠTRUKTÚRA','90 NOCÍ NA VYSKÚŠANIE','HYPOALERGÉNNE','PRIEDUŠNÁ PLETENINA');
+    <?php $kn_ticker = array('ПРЕПОРЪЧАНА ОТ ПЕДИАТРИ','OEKO-TEX® ПЯНА С ПАМЕТ','3-ЗОНОВА СТРУКТУРА','90 НОЩИ ЗА ИЗПРОБВАНЕ','ХИПОАЛЕРГЕННА','ДИШАЩА ПЛЕТКА');
     for ( $r = 0; $r < 2; $r++ ) { foreach ( $kn_ticker as $t ) { echo '<span class="kn-tick">'.esc_html($t).'</span><span class="kn-dot">•</span>'; } } ?>
   </div>
 </div>
@@ -23,14 +23,14 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
 <!-- ============ 2) Pocnite veceras — slika LIJEVO, tekst DESNO ============ -->
 <section class="kn-sec">
   <div class="kn-wrap kn-row2">
-    <div class="kn-media"><img src="<?php echo esc_url( $kn.'01-poravnan-sk.webp' ); ?>" alt="Dokonale zarovnané — hlava, krk a chrbtica počas spánku" loading="lazy" onerror="this.style.display='none'"></div>
+    <div class="kn-media"><img src="<?php echo esc_url( $kn.'01-poravnan-sk.webp' ); ?>" alt="Идеално подредени — глава, шия и гръбнак по време на сън" loading="lazy" onerror="this.style.display='none'"></div>
     <div class="kn-copy">
-      <p class="kn-eyebrow">Vyvinuté so zubnými lekármi pre detské dýchacie cesty</p>
-      <h2 class="kn-h2 kn-h2-blue">Začnite už dnes večer naprávať skryté poškodenie.</h2>
-      <p>Detskí zubní lekári zameraní na dýchacie cesty upozorňujú rodičov na rovnaký tichý problém: deti, ktoré chrápu a dýchajú ústami, „nespia len horšie“. Ich čeľusť, podnebie a štruktúra tváre sa môžu pomaly vyvíjať nesprávnym smerom.</p>
-      <p><strong>A okno na nápravu nezostáva otvorené navždy.</strong></p>
-      <p>NORIKS <strong>vankúš KidsNest</strong> je navrhnutý tak, aby <strong>podopieral hlavu, čeľusť a dýchacie cesty v správnej polohe počas spánku</strong> — a podporoval dýchanie nosom a zdravší vývoj tváre, kým na tom ešte záleží.</p>
-      <p><strong>Toto nie je len vankúš.<br>Je to nočná opora dýchacích ciest v rokoch, ktoré formujú tvár vášho dieťaťa.</strong></p>
+      <p class="kn-eyebrow">Разработена със стоматолози за детските дихателни пътища</p>
+      <h2 class="kn-h2 kn-h2-blue">Започнете още тази вечер да поправяте скритото увреждане.</h2>
+      <p>Детските стоматолози, насочени към дихателните пътища, предупреждават родителите за един и същ тих проблем: децата, които хъркат и дишат през устата, „не спят просто по-лошо“. Челюстта, небцето и структурата на лицето им може бавно да се развиват в грешна посока.</p>
+      <p><strong>А прозорецът за поправяне не остава отворен завинаги.</strong></p>
+      <p>NORIKS <strong>възглавницата KidsNest</strong> е създадена така, че да <strong>поддържа главата, челюстта и дихателните пътища в правилно положение по време на сън</strong> — и да подкрепя дишането през носа и по-здравото развитие на лицето, докато това още има значение.</p>
+      <p><strong>Това не е просто възглавница.<br>Това е нощна опора на дихателните пътища в годините, които оформят лицето на вашето дете.</strong></p>
     </div>
   </div>
 </section>
@@ -39,25 +39,25 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
 <section class="kn-sec">
   <div class="kn-wrap kn-row2">
     <div class="kn-copy">
-      <h2 class="kn-h2 kn-h2-blue">Správna opora hlavy a krku je kľúčová pre zdravý spánok.</h2>
-      <p>Ergonomický detský vankúš drží <strong>hlavu a krk v prirodzenom zarovnaní a pomáha zabrániť nakláňaniu hlavy</strong> počas noci. Chrbtica tak zostáva správne zarovnaná — aj keď sa dieťa v spánku veľa prevaľuje.</p>
-      <p><strong>Výsledkom je pokojnejší spánok a lepšia regenerácia.</strong></p>
+      <h2 class="kn-h2 kn-h2-blue">Правилната опора на главата и шията е от ключово значение за здравия сън.</h2>
+      <p>Ергономичната детска възглавница държи <strong>главата и шията в естествено положение и помага да се предотврати отмятането на главата</strong> през нощта. Така гръбнакът остава правилно подреден — дори когато детето се върти много в съня си.</p>
+      <p><strong>Резултатът е по-спокоен сън и по-добро възстановяване.</strong></p>
     </div>
-    <div class="kn-media"><img src="<?php echo esc_url( $kn.'kn-sk-2.webp' ); ?>" alt="Dieťa pokojne spí na vankúši KidsNest" loading="lazy" onerror="this.style.display='none'"></div>
+    <div class="kn-media"><img src="<?php echo esc_url( $kn.'kn-sk-2.webp' ); ?>" alt="Дете спи спокойно на възглавницата KidsNest" loading="lazy" onerror="this.style.display='none'"></div>
   </div>
 </section>
 
 <!-- ============ 4) Statistika — svijetlo-plava, 3 kartice s krugovima ============ -->
 <section class="kn-sec kn-stats-sec">
   <div class="kn-wrap">
-    <h2 class="kn-h2 kn-h2-blue kn-center">Stvorený, aby chránil vyvíjajúcu sa tvár vášho dieťaťa</h2>
-    <p class="kn-sub kn-center"><strong>Spánok s otvorenými ústami v detstve môže pretvarovať rastúcu tvár. KidsNest drží hlavu vášho dieťaťa zarovnanú, aby dýchalo nosom.</strong></p>
+    <h2 class="kn-h2 kn-h2-blue kn-center">Създадена да пази развиващото се лице на вашето дете</h2>
+    <p class="kn-sub kn-center"><strong>Сънят с отворена уста в детството може да преоформи растящото лице. KidsNest държи главата на детето ви подредена, за да диша през носа.</strong></p>
     <div class="kn-stats">
       <?php
       $kn_stats = array(
-        array('94','165.3','rodičov si všimne, že dieťa spí <strong>so zatvorenými ústami</strong> do 2 týždňov'),
-        array('60','105.5','vývoja tváre vášho <strong>dieťaťa</strong> sa formuje do 6. roku — toto okno sa už znova neotvorí'),
-        array('98','172.3','rodičov by odporučilo <strong>KidsNest</strong>, aby ochránili úsmev ďalšieho dieťaťa'),
+        array('94','165.3','от родителите забелязват, че детето спи <strong>със затворена уста</strong> в рамките на 2 седмици'),
+        array('60','105.5','от развитието на лицето на <strong>детето ви</strong> се оформя до 6-ата година — този прозорец няма да се отвори отново'),
+        array('98','172.3','от родителите биха препоръчали <strong>KidsNest</strong>, за да опазят усмивката на следващото дете'),
       );
       foreach ( $kn_stats as $st ) : ?>
       <div class="kn-stat-card">
@@ -76,14 +76,14 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
 <!-- ============ 5) #1 djecji jastuk + zvjezdice + drseca foto traka ============ -->
 <section class="kn-sec kn-rated-sec">
   <div class="kn-wrap">
-    <h2 class="kn-h2 kn-h2-blue kn-center">Vyhodnotený ako detský vankúš na spanie #1 v roku 2026.</h2>
-    <p class="kn-sub kn-center">Podporte ich spánok — podporte roky vyrastania.</p>
-    <p class="kn-stars kn-center"><span aria-hidden="true">★★★★★</span> Hodnotenie 4,8/5 na základe 140+ recenzií</p>
+    <h2 class="kn-h2 kn-h2-blue kn-center">Оценена като детска възглавница за сън №1 през 2026 г.</h2>
+    <p class="kn-sub kn-center">Подкрепете съня им — подкрепете годините на израстване.</p>
+    <p class="kn-stars kn-center"><span aria-hidden="true">★★★★★</span> Оценка 4,8/5 на база 140+ отзива</p>
   </div>
   <div class="kn-strip">
     <div class="kn-strip-track">
       <?php for ( $r = 0; $r < 2; $r++ ) : for ( $i = 1; $i <= 5; $i++ ) : ?>
-        <img src="<?php echo esc_url( $kn.'traka/t'.$i.'.webp' ); ?>" alt="NORIKS KidsNest — deti a rodičia" loading="lazy" onerror="this.style.display='none'">
+        <img src="<?php echo esc_url( $kn.'traka/t'.$i.'.webp' ); ?>" alt="NORIKS KidsNest — деца и родители" loading="lazy" onerror="this.style.display='none'">
       <?php endfor; endfor; ?>
     </div>
   </div>
@@ -92,12 +92,12 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
 <!-- ============ 6) Kvaliteta materijala — slika LIJEVO, tekst DESNO ============ -->
 <section class="kn-sec">
   <div class="kn-wrap kn-row2">
-    <div class="kn-media"><img src="<?php echo esc_url( $kn.'kn-sk-6.webp' ); ?>" alt="KidsNest — 3-zónová štruktúra a priedušná tkanina zblízka" loading="lazy" onerror="this.style.display='none'"></div>
+    <div class="kn-media"><img src="<?php echo esc_url( $kn.'kn-sk-6.webp' ); ?>" alt="KidsNest — 3-зонова структура и дишащ плат отблизо" loading="lazy" onerror="this.style.display='none'"></div>
     <div class="kn-copy">
-      <h2 class="kn-h2 kn-h2-blue">Kvalita, ktorú cítiť — noc čo noc.</h2>
-      <p>Hustá, priedušná pletenina a starostlivo tvarovaný povrch tu nie sú kvôli vzhľadu — <strong>každá zóna má svoju úlohu</strong>. Stred jemne prijíma hlavu, okraje podopierajú krk a štruktúra si drží tvar aj po mesiacoch každodenného používania.</p>
-      <p>Pletenina je priedušná a pena je <strong>hypoalergénna a odolná voči roztočom</strong> — vankúš tak zostáva svieži, čistý a pripravený na každú noc. Bez priehlbín, bez sploštenia, bez kompromisov.</p>
-      <p><strong>Vankúš, ktorý aj po roku vyzerá — a podopiera — ako v prvý deň.</strong></p>
+      <h2 class="kn-h2 kn-h2-blue">Качество, което се усеща — нощ след нощ.</h2>
+      <p>Плътната, дишаща плетка и внимателно оформената повърхност не са тук заради вида — <strong>всяка зона има своята роля</strong>. Средата нежно поема главата, краищата поддържат шията, а структурата запазва формата си и след месеци всекидневна употреба.</p>
+      <p>Плетката е дишаща, а пяната е <strong>хипоалергенна и устойчива на акари</strong> — така възглавницата остава свежа, чиста и готова за всяка нощ. Без вдлъбнатини, без сплескване, без компромиси.</p>
+      <p><strong>Възглавница, която и след година изглежда — и поддържа — както на първия ден.</strong></p>
     </div>
   </div>
 </section>
