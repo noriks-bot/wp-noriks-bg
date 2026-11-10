@@ -1623,356 +1623,356 @@ $cloath_faq = array(
 $is_cloud_faq = ( function_exists('noriks_is_type') && noriks_is_type('cloud') );
 $cloud_faq = array(
   array(
-    'questioon' => 'Čo ak mi vankúš nevyhovuje?',
-    'answer'    => 'Máte 60 nocí na vyskúšanie. Ak nebudete spokojní, napíšte našej podpore a vrátime vám celú sumu — bez podmienok a bez papierovania.',
+    'questioon' => 'А ако възглавницата не ми е удобна?',
+    'answer'    => 'Имате 60 нощи за изпробване. Ако не сте доволни, пишете на нашата поддръжка и ще ви върнем цялата сума — без условия и без документи.',
   ),
   array(
-    'questioon' => 'Ako sa vankúš správne používa?',
-    'answer'    => 'Ľahnite si na bok, vložte vankúš medzi kolená a pásku utiahnite okolo vrchnej nohy. Bedrá, panva a chrbtica majú byť v priamke. Pásku môžete zložiť a vankúš používať pod členky alebo pod krk.',
+    'questioon' => 'Как се използва възглавницата правилно?',
+    'answer'    => 'Легнете на една страна, поставете възглавницата между коленете и затегнете лентата около горния крак. Бедрата, тазът и гръбнакът трябва да са в една линия. Лентата може да се свали и възглавницата да се използва под глезените или под шията.',
   ),
   array(
-    'questioon' => 'Naozaj zostane na mieste, keď sa otočím?',
-    'answer'    => 'Áno. Nastaviteľná páska s patentkami ide okolo nohy a drží vankúš pri kolene, takže nevypadáva ako bežný vankúš. Páska má dve polohy utiahnutia podľa obvodu nohy.',
+    'questioon' => 'Наистина ли остава на място, когато се обърна?',
+    'answer'    => 'Да. Регулируемата лента с тик-так копчета минава около крака и държи възглавницата при коляното, така че не пада като обикновена възглавница. Лентата има две позиции на затягане според обиколката на крака.',
   ),
   array(
-    'questioon' => 'Z čoho je vankúš vyrobený?',
-    'answer'    => 'Jadro je z pamäťovej peny medicínskej kvality s perforáciami, ktoré zaisťujú prúdenie vzduchu. Poťah je z priedušnej tkaniny, dá sa zložiť a vyprať. Materiály sú certifikované podľa OEKO-TEX® STANDARD 100 a CertiPUR-EU.',
+    'questioon' => 'От какво е изработена възглавницата?',
+    'answer'    => 'Ядрото е от пяна с памет с медицинско качество с перфорации, които осигуряват движение на въздуха. Калъфът е от дишащ плат, сваля се и се пере. Материалите са сертифицирани по OEKO-TEX® STANDARD 100 и CertiPUR-EU.',
   ),
   array(
-    'questioon' => 'Je príliš tvrdý alebo príliš mäkký?',
-    'answer'    => 'Má strednú tuhosť — dosť na to, aby držal odstup nôh celú noc, ale pod tlakom sa prispôsobí tvaru kolena. Nesplasne a po vstaní sa vráti do tvaru.',
+    'questioon' => 'Твърде твърда ли е или твърде мека?',
+    'answer'    => 'Има средна твърдост — достатъчна, за да държи краката разделени цяла нощ, но под натиск се нагажда към формата на коляното. Не се сплесква и след ставане се връща във формата си.',
   ),
   array(
-    'questioon' => 'Ako sa perie?',
-    'answer'    => 'Poťah zložte a perte v práčke na 40 °C, bez aviváže a bez bielidla, sušte na vzduchu. Penu neperte v práčke — v prípade potreby ju utrite vlhkou handričkou a nechajte uschnúť.',
+    'questioon' => 'Как се пере?',
+    'answer'    => 'Свалете калъфа и го перете в пералня на 40 °C, без омекотител и без белина, сушете на въздух. Не перете пяната в пералня — при нужда я избършете с влажна кърпа и оставете да изсъхне.',
   ),
   array(
-    'questioon' => 'Ako dlho trvá, kým si zvyknem?',
-    'answer'    => 'Väčšina používateľov cíti rozdiel už prvú alebo druhú noc. Ak ste zvyknutí spať so spojenými kolenami, prvých pár nocí môže byť odstup nezvyčajný — telo sa zvyčajne prispôsobí do týždňa.',
+    'questioon' => 'Колко време отнема да свикна?',
+    'answer'    => 'Повечето потребители усещат разлика още първата или втората нощ. Ако сте свикнали да спите със събрани колене, първите няколко нощи разстоянието може да е необичайно — тялото обикновено се приспособява в рамките на седмица.',
   ),
   array(
-    'questioon' => 'Je vhodný v tehotenstve?',
-    'answer'    => 'Áno. V tehotenstve sa odporúča spánok na ľavom boku a vankúš medzi kolenami odľahčuje bedrá a kríže. Pri zdravotných komplikáciách sa pred použitím poraďte s lekárom.',
+    'questioon' => 'Подходяща ли е при бременност?',
+    'answer'    => 'Да. При бременност се препоръчва сън на лявата страна, а възглавница между коленете разтоварва бедрата и кръста. При здравословни усложнения се консултирайте с лекар преди употреба.',
   ),
 );
 
 $is_hyd_faq = ( function_exists('noriks_is_type') && noriks_is_type('hyd') );
 $hyd_faq = array(
   array(
-    'questioon' => 'Čo je vodíková voda?',
-    'answer'    => 'Je to bežná pitná voda, v ktorej je rozpustený molekulárny vodík (H₂). Vodík je najmenšia molekula a výskumy ho spájajú so selektívnym antioxidačným účinkom.',
+    'questioon' => 'Какво е водородна вода?',
+    'answer'    => 'Това е обикновена питейна вода, в която е разтворен молекулярен водород (H₂). Водородът е най-малката молекула, а изследванията го свързват със селективен антиоксидантен ефект.',
   ),
   array(
-    'questioon' => 'Ako dlho trvá jeden cyklus?',
-    'answer'    => 'Krátky cyklus trvá 3 minúty a dáva približne 1 600 ppb vodíka, dlhý 10 minút a až 3 000 ppb. Cyklus si vyberiete stlačením tlačidla.',
+    'questioon' => 'Колко продължава един цикъл?',
+    'answer'    => 'Кратък цикъл продължава 3 минути и дава около 1 600 ppb водород, дълъг — 10 минути и до 3 000 ppb. Цикълът се избира с натискане на бутона.',
   ),
   array(
-    'questioon' => 'Prichádza voda do styku s plastom?',
-    'answer'    => 'Nie. Fľaša je z borosilikátového skla so základňou z nehrdzavejúcej ocele, takže vo vode nie je chuť plastu ani častice.',
+    'questioon' => 'Влиза ли водата в контакт с пластмаса?',
+    'answer'    => 'Не. Бутилката е от боросиликатно стъкло с основа от неръждаема стомана, така че във водата няма вкус на пластмаса, нито частици.',
   ),
   array(
-    'questioon' => 'Akú vodu môžem používať?',
-    'answer'    => 'Akúkoľvek pitnú vodu — z vodovodu, filtrovanú, balenú alebo destilovanú. Vďaka PEM/SPE membráne zariadenie nepotrebuje minerály.',
+    'questioon' => 'Каква вода мога да използвам?',
+    'answer'    => 'Всякаква питейна вода — от чешмата, филтрирана, бутилирана или дестилирана. Благодарение на PEM/SPE мембраната устройството не се нуждае от минерали.',
   ),
   array(
-    'questioon' => 'Treba meniť filter?',
-    'answer'    => 'Nie. Generátor má trvalý filter, takže niet spotrebného materiálu ani ďalších nákladov.',
+    'questioon' => 'Трябва ли да се сменя филтър?',
+    'answer'    => 'Не. Генераторът има постоянен филтър, така че няма консумативи и допълнителни разходи.',
   ),
   array(
-    'questioon' => 'Ako sa nabíja?',
-    'answer'    => 'USB káblom; plné nabitie trvá 30 až 60 minút a stačí na viac cyklov. Fľašu nenabíjajte, kým je v nej voda.',
+    'questioon' => 'Как се зарежда?',
+    'answer'    => 'С USB кабел; пълното зареждане отнема 30 до 60 минути и стига за няколко цикъла. Не зареждайте бутилката, докато в нея има вода.',
   ),
   array(
-    'questioon' => 'Kedy vodu vypiť?',
-    'answer'    => 'Najlepšie hneď po cykle, do zhruba 30 minút, pretože koncentrácia vodíka časom klesá.',
+    'questioon' => 'Кога да изпием водата?',
+    'answer'    => 'Най-добре веднага след цикъла, в рамките на около 30 минути, защото концентрацията на водород спада с времето.',
   ),
   array(
-    'questioon' => 'Čo ak nebudem spokojný?',
-    'answer'    => 'Máte 30 dní na vrátenie peňazí. Navyše na zariadenie dostávate 1 rok záruky.',
+    'questioon' => 'А ако не съм доволен?',
+    'answer'    => 'Имате 30 дни за връщане на парите. Освен това за устройството получавате 1 година гаранция.',
   ),
 );
 
 $is_snug = ( function_exists('noriks_is_type') && noriks_is_type('snug') );
 $snug_faq = array(
   array(
-    'questioon' => 'Aké sú rozmery vankúša?',
-    'answer'    => 'Jedna veľkosť: <strong>105 cm dĺžky a 30 cm šírky</strong>. Podopiera od ramena po kolená, ale nezaberie celú posteľ — preto sa ľahko drží a ľahko sa s ním otočíte.',
+    'questioon' => 'Какви са размерите на възглавницата?',
+    'answer'    => 'Един размер: <strong>105 cm дължина и 30 cm широчина</strong>. Поддържа от рамото до коленете, но не заема цялото легло — затова се държи лесно и лесно се обръщате с нея.',
   ),
   array(
-    'questioon' => 'Časom sa sploští?',
-    'answer'    => 'Nie. Výplň tvoria tisíce jemných pružných vlákien, ktoré sa vracajú do tvaru. Opora, ktorú cítite prvú noc, je rovnaká aj po deväťdesiatich nociach.',
+    'questioon' => 'Ще се сплеска ли с времето?',
+    'answer'    => 'Не. Пълнежът е от хиляди фини еластични влакна, които се връщат във формата си. Опората, която усещате първата нощ, е същата и след деветдесет нощи.',
   ),
   array(
-    'questioon' => 'Čím je vyplnený?',
-    'answer'    => 'Vysoko pružnou vláknitou výplňou — zvonku mäkkou a príjemnou, vnútri pevnou a podopierajúcou. Bez pamäťovej peny, ktorá sa zahrieva.',
+    'questioon' => 'С какво е пълна?',
+    'answer'    => 'С високоеластичен влакнест пълнеж — отвън мек и приятен, отвътре стабилен и поддържащ. Без пяна с памет, която се нагрява.',
   ),
   array(
-    'questioon' => 'Ako sa perie?',
-    'answer'    => 'Obliečka sa dá zložiť a vyprať v práčke na 40 °C. Samotný vankúš neperte v práčke — v prípade potreby ho vyvetrajte a nechajte vyschnúť na vzduchu.',
+    'questioon' => 'Как се пере?',
+    'answer'    => 'Калъфът се сваля и се пере в пералня на 40 °C. Самата възглавница не перете в пералня — при нужда я проветрете и оставете да изсъхне на въздух.',
   ),
   array(
-    'questioon' => 'Je vhodný počas tehotenstva?',
-    'answer'    => 'Áno. Tvar S podopiera brucho spredu a chrbát zozadu, pričom odporúčaná poloha v tehotenstve je spánok na ľavom boku. Pri zdravotných komplikáciách sa poraďte s lekárom.',
+    'questioon' => 'Подходяща ли е при бременност?',
+    'answer'    => 'Да. Формата S поддържа корема отпред и гърба отзад, а препоръчваното положение при бременност е сън на лявата страна. При здравословни усложнения се консултирайте с лекар.',
   ),
   array(
-    'questioon' => 'Ako dlho trvá zvyknúť si?',
-    'answer'    => 'Väčšina ľudí si nájde svoju polohu do druhej noci. Tvar S je iný ako rovný vankúš, takže prvé noci sa telo učí, kam si ľahnúť.',
+    'questioon' => 'Колко време отнема да свикна?',
+    'answer'    => 'Повечето хора намират своето положение до втората нощ. Формата S е различна от права възглавница, така че първите нощи тялото се учи как да легне.',
   ),
   array(
-    'questioon' => 'Aké farby sú dostupné?',
-    'answer'    => 'Šesť farieb: modrá, ružová, sivá, zelená, fialová a tmavomodrá. Farbu si vyberáte na tejto stránke pred pridaním do košíka.',
+    'questioon' => 'Какви цветове се предлагат?',
+    'answer'    => 'Шест цвята: синьо, розово, сиво, зелено, лилаво и тъмносиньо. Цветът се избира на тази страница преди добавяне в количката.',
   ),
   array(
-    'questioon' => 'Môžem ho vrátiť?',
-    'answer'    => 'Áno, máte <strong>30 dní</strong> na vrátenie peňazí alebo výmenu. Stačí e-mail, bez formulárov.',
+    'questioon' => 'Мога ли да я върна?',
+    'answer'    => 'Да, имате <strong>30 дни</strong> за връщане на парите или замяна. Достатъчен е имейл, без формуляри.',
   ),
 );
 
 $is_kompwom = ( function_exists('noriks_is_type') && noriks_is_type('kompwom') );
 $kompwom_faq = array(
   array(
-    'questioon' => 'Ako si vybrať veľkosť?',
-    'answer'    => 'Podľa obvodu hrudníka — ten rozhoduje, ako tričko sadne na prsiach a ramenách. Ak ste medzi dvomi veľkosťami, vezmite <strong>väčšiu</strong>. Dostupné sú veľkosti od S po 3XL.',
+    'questioon' => 'Как да избера размер?',
+    'answer'    => 'Според обиколката на гърдите — тя определя как тениската ще седне на гърдите и раменете. Ако сте между два размера, вземете <strong>по-големия</strong>. Предлагат се размери от S до 3XL.',
   ),
   array(
-    'questioon' => 'Vidno ho pod oblečením?',
-    'answer'    => 'Nie. Úplet je bezšvový, tenký a matný, takže zmizne pod košeľou, sakom alebo priliehavými šatami. Nemá okraj, ktorý by sa črtal.',
+    'questioon' => 'Вижда ли се под облеклото?',
+    'answer'    => 'Не. Плетката е безшевна, тънка и матова, така че изчезва под риза, сако или прилепнала рокля. Няма ръб, който да се очертава.',
   ),
   array(
-    'questioon' => 'Roluje sa cez deň?',
-    'answer'    => 'Nie. Kompresia sa rozkladá do šírky namiesto toho, aby tlačila v jednom bode, takže tričko zostane na mieste aj po celom dni.',
+    'questioon' => 'Навива ли се през деня?',
+    'answer'    => 'Не. Компресията се разпределя на ширина, вместо да притиска в една точка, така че тениската остава на място и след цял ден.',
   ),
   array(
-    'questioon' => 'Sú 3D línie potlačené?',
-    'answer'    => 'Nie. Väzba je <strong>votkaná priamo do látky</strong>, takže nič nepraská a nič sa časom neodlupuje, bez ohľadu na počet praní.',
+    'questioon' => 'Отпечатани ли са 3D линиите?',
+    'answer'    => 'Не. Плетката е <strong>втъкана директно в плата</strong>, така че нищо не се напуква и нищо не се отлепва с времето, независимо от броя пранета.',
   ),
   array(
-    'questioon' => 'Ako silno sťahuje?',
-    'answer'    => 'Rozhodne, ale nikdy tesne. Musíte normálne dýchať a jesť bez toho, aby ste na tričko mysleli. Ak je stopa na koži viditeľná dvadsať minút po vyzlečení, veľkosť je primalá.',
+    'questioon' => 'Колко силно стяга?',
+    'answer'    => 'Решително, но никога стегнато. Трябва да дишате нормално и да се храните, без да мислите за тениската. Ако следата върху кожата се вижда двадесет минути след събличане, размерът е твърде малък.',
   ),
   array(
-    'questioon' => 'Ako sa perie?',
-    'answer'    => 'V práčke na <strong>30 °C</strong>. Bez bielidiel, bez žehlenia a bez sušičky — nechajte vyschnúť na vzduchu.',
+    'questioon' => 'Как се пере?',
+    'answer'    => 'В пералня на <strong>30 °C</strong>. Без белина, без гладене и без сушилня — оставете да изсъхне на въздух.',
   ),
   array(
-    'questioon' => 'Aké farby sú dostupné?',
-    'answer'    => 'Tri farby: čierna, tmavosivá a ružová. Farbu a veľkosť si vyberáte na tejto stránke pred pridaním do košíka.',
+    'questioon' => 'Какви цветове се предлагат?',
+    'answer'    => 'Три цвята: черно, тъмносиво и розово. Цветът и размерът се избират на тази страница преди добавяне в количката.',
   ),
   array(
-    'questioon' => 'Môžem ho vrátiť?',
-    'answer'    => 'Áno, máte <strong>30 dní</strong> na vrátenie peňazí alebo výmenu veľkosti. Stačí e-mail, bez formulárov.',
+    'questioon' => 'Мога ли да я върна?',
+    'answer'    => 'Да, имате <strong>30 дни</strong> за връщане на парите или замяна на размера. Достатъчен е имейл, без формуляри.',
   ),
 );
 
 $is_slim = ( function_exists('noriks_is_type') && noriks_is_type('slim') );
 $slim_faq = array(
-  array('questioon' => 'Ako si vybrať veľkosť?',
-    'answer'    => 'Odmerajte si <strong>obvod pása</strong> v najužšom mieste trupu, kúsok nad pupkom, a porovnajte ho s tabuľkou veľkostí (XS až 5XL). Ak ste medzi dvoma veľkosťami, vezmite si <strong>väčšiu</strong>.'),
-  array('questioon' => 'Rolujú sa nadol?',
-    'answer'    => 'Nie. Široký prekrížený pás vedie okolo celého pása — spredu, zboku aj zozadu — takže sa tlak rozloží namiesto toho, aby stláčal v jednej línii. Nohavičky zostávajú na mieste, aj keď sedíte.'),
-  array('questioon' => 'Vidno ich pod oblečením?',
-    'answer'    => 'Nie. Úplet je tenký a hladký, bez hrubých švov, takže zmiznú pod priliehavými šatami, džínsami aj legínami.'),
-  array('questioon' => 'Nosia sa namiesto nohavičiek alebo cez ne?',
-    'answer'    => 'Ako je vám to pohodlnejšie. Väčšina žien ich nosí samotné, ako bežnú spodnú bielizeň, no môžete ich nosiť aj cez tenké nohavičky.'),
-  array('questioon' => 'Môžem ich nosiť po pôrode?',
-    'answer'    => 'Mnohé mamičky ich nosia po pôrode, pretože sú mäkké a priedušné. Po cisárskom reze alebo ak si nie ste istá, poraďte sa pred nosením so svojím lekárom.'),
-  array('questioon' => 'Ako pevne sťahujú?',
-    'answer'    => 'Pevne, ale nie natesno. Mali by ste normálne dýchať aj sedieť. Ak vás niekde tlačia alebo zanechávajú hlbokú stopu, vezmite si väčšiu veľkosť.'),
-  array('questioon' => 'Ako sa perú?',
-    'answer'    => 'Ručne alebo v práčke na <strong>30 °C</strong> vo vrecku na bielizeň. Bez bielidla, žehlenia a sušičky — sušte na vzduchu.'),
-  array('questioon' => 'Aké farby sú dostupné?',
-    'answer'    => 'Šesť farieb: čierna, telová, tmavomodrá, fialová, fuchsiová a slivková. Farbu a veľkosť si vyberiete na tejto stránke pred pridaním do košíka.'),
-  array('questioon' => 'Môžem ich vrátiť?',
-    'answer'    => 'Áno, máte <strong>30 dní</strong> na vrátenie peňazí alebo výmenu veľkosti. Stačí e-mail, bez formulárov.'),
+  array('questioon' => 'Как да избера размер?',
+    'answer'    => 'Измерете <strong>обиколката на талията</strong> на най-тясното място на тялото, малко над пъпа, и я сравнете с таблицата с размери (XS до 5XL). Ако сте между два размера, вземете <strong>по-големия</strong>.'),
+  array('questioon' => 'Навиват ли се надолу?',
+    'answer'    => 'Не. Широкият кръстосан колан минава около цялата талия — отпред, отстрани и отзад — така че натискът се разпределя, вместо да притиска в една линия. Бикините остават на място и когато седите.'),
+  array('questioon' => 'Виждат ли се под облеклото?',
+    'answer'    => 'Не. Плетката е тънка и гладка, без плътни шевове, така че изчезват под прилепнали рокли, дънки и клинове.'),
+  array('questioon' => 'Носят се вместо бикини или върху тях?',
+    'answer'    => 'Както ви е по-удобно. Повечето жени ги носят самостоятелно, като обикновено бельо, но може да ги носите и върху тънки бикини.'),
+  array('questioon' => 'Мога ли да ги нося след раждане?',
+    'answer'    => 'Много майки ги носят след раждане, защото са меки и дишащи. След цезарово сечение или ако не сте сигурна, консултирайте се с лекаря си преди носене.'),
+  array('questioon' => 'Колко стегнато притискат?',
+    'answer'    => 'Стабилно, но не стегнато. Трябва да дишате и да седите нормално. Ако някъде притискат или оставят дълбока следа, вземете по-голям размер.'),
+  array('questioon' => 'Как се перат?',
+    'answer'    => 'На ръка или в пералня на <strong>30 °C</strong> в торбичка за пране. Без белина, гладене и сушилня — сушете на въздух.'),
+  array('questioon' => 'Какви цветове се предлагат?',
+    'answer'    => 'Шест цвята: черно, телесно, тъмносиньо, лилаво, фуксия и сливово. Цветът и размерът се избират на тази страница преди добавяне в количката.'),
+  array('questioon' => 'Мога ли да ги върна?',
+    'answer'    => 'Да, имате <strong>30 дни</strong> за връщане на парите или замяна на размера. Достатъчен е имейл, без формуляри.'),
 );
 
 $is_tradesman = ( function_exists('noriks_is_type') && noriks_is_type('tradesman') );
 $tradesman_faq = array(
-  array('questioon' => 'Z čoho sú vyrobené?',
-    'answer'    => '56 % bambusového lyocelu, 38 % nylonu a 6 % elastanu. Bez bavlny – nylon je zosilnený na päte a prstoch, kde sa ponožky najviac zodierajú. Sú prirodzene odolné voči nepríjemnému zápachu, odvádzajú vlhkosť a sú veľmi mäkké na koži.'),
-  array('questioon' => 'Akú veľkosť si vybrať?',
-    'answer'    => 'Podľa veľkosti obuvi (EU): 39–42, 43–45, 46–49. Ste medzi dvoma veľkosťami? Zoberte väčšiu.'),
-  array('questioon' => 'Zostanú mi chodidlá suché?',
-    'answer'    => 'Bambus celú zmenu odvádza vlhkosť z pokožky a sieťované vetranie púšťa pot von. Poteniu nezabránia, ale držia ho pod kontrolou – aj v ťažkých pracovných čižmách.'),
-  array('questioon' => 'Nezošmyknú sa v čižmách?',
-    'answer'    => 'Nie. Dvojitá manžeta s pútkom na natiahnutie a pásik pod klenbou držia ponožku na mieste – bez krčenia a šmýkania celú zmenu.'),
-  array('questioon' => 'Vydržia dlhé zmeny?',
-    'answer'    => 'Áno. Mäkký vankúšik a zosilnená päta tlmia každý krok – pre tých, čo sú 8–12 hodín na nohách na betóne, štrku alebo nerovnom teréne.'),
-  array('questioon' => 'Aké sú vysoké?',
-    'answer'    => 'Klasická výška – asi 18 cm od päty po okraj manžety.'),
-  array('questioon' => 'Ako ich prať?',
-    'answer'    => 'Perte nastudeno a sušte na vzduchu. Bambusová látka si aj po mnohých praniach zachová mäkkosť a tvar.'),
-  array('questioon' => 'Môžem ich vrátiť?',
-    'answer'    => 'Áno. Máte 30 dní na vrátenie peňazí. Doprava je zadarmo pri objednávke nad 70 € a platíte na dobierku, keď príde balík.'),
+  array('questioon' => 'От какво са изработени?',
+    'answer'    => '56 % бамбуков лиосел, 38 % найлон и 6 % еластан. Без памук – найлонът е подсилен на петата и пръстите, където чорапите се износват най-много. Естествено устойчиви са на неприятна миризма, отвеждат влагата и са много меки върху кожата.'),
+  array('questioon' => 'Какъв размер да избера?',
+    'answer'    => 'Според размера обувки (EU): 39–42, 43–45, 46–49. Между два размера сте? Вземете по-големия.'),
+  array('questioon' => 'Ще останат ли краката ми сухи?',
+    'answer'    => 'Бамбукът отвежда влагата от кожата през цялата смяна, а мрежестата вентилация изпуска потта навън. Няма да спрат потенето, но го държат под контрол – дори в тежки работни обувки.'),
+  array('questioon' => 'Няма ли да се свлекат в обувките?',
+    'answer'    => 'Не. Двойният ластик с халка за обуване и лентата под свода държат чорапа на място – без събиране и плъзгане през цялата смяна.'),
+  array('questioon' => 'Издържат ли дълги смени?',
+    'answer'    => 'Да. Меката подложка и подсилената пета омекотяват всяка стъпка – за тези, които са 8–12 часа на крак по бетон, чакъл или неравен терен.'),
+  array('questioon' => 'Колко са високи?',
+    'answer'    => 'Класическа височина – около 18 cm от петата до ръба на ластика.'),
+  array('questioon' => 'Как да ги перем?',
+    'answer'    => 'Перете на студено и сушете на въздух. Бамбуковият плат запазва мекотата и формата си и след много пранета.'),
+  array('questioon' => 'Мога ли да ги върна?',
+    'answer'    => 'Да. Имате 30 дни за връщане на парите. Доставката е безплатна при поръчка над 70 €, а плащате при доставка, когато дойде пратката.'),
 );
 
 $is_slabproof = ( function_exists('noriks_is_type') && noriks_is_type('slabproof') );
 $slabproof_faq = array(
-  array('questioon' => 'Akú veľkosť si mám objednať? Mám veľkú nohu.',
-    'answer'    => 'Tri veľkosti podľa veľkosti obuvi (EU): <strong>39–42</strong>, <strong>43–45</strong> a <strong>46–49</strong>. Objednajte si svoje bežné číslo obuvi.'),
-  array('questioon' => 'Sú z vlny? Neznášam, keď škriabe.',
-    'answer'    => 'Žiadna vlna, ani jedno vlákno. Nič neškriabe, žiadne vyrážky a noha sa v horúčave nevarí. Pletenina odvádza pot z pokožky namiesto toho, aby ho zadržiavala.'),
-  array('questioon' => 'Nebudú sa mi chodidlá kúpať v pote?',
-    'answer'    => 'Práve preto sú takto urobené. Vzdušná sieťka cez vrchnú časť chodidla a pletenina, ktorá odvádza vlhkosť, sťahujú pot z pokožky.'),
-  array('questioon' => 'Ako ich prať? Musím si dávať pozor?',
-    'answer'    => 'V práčke nastudeno, v sušičke pri nízkej teplote, spolu s pracovným oblečením. Bez ručného prania, sušenia na šnúre a špeciálneho pracieho prostriedku.'),
-  array('questioon' => 'Naozaj vydržia, alebo sa prederavia ako všetky ostatné?',
-    'answer'    => 'Päta a prsty sú zosilnené dvojito pleteným nylonom, presne tam, kde ponožky povolia ako prvé. Ak vám aj tak nebudú vyhovovať, máte <strong>30 dní na vrátenie peňazí</strong>.'),
-  array('questioon' => 'Kedy pocítim rozdiel?',
-    'answer'    => 'Polstrovanie hneď, keď sa v nich prvýkrát postavíte. To, že nezliezajú a zostávajú suché, počas zmeny. Väčšina si to všimne už cestou domov v prvý deň a skutočný znak je, keď si ich na druhý deň ráno zase oblečiete.'),
-  array('questioon' => 'Koľko stojí doprava a ako sa platí?',
-    'answer'    => 'Doprava je <strong>zadarmo pri objednávkach nad 70 €</strong> a platíte na dobierku pri prevzatí balíka.'),
-  array('questioon' => 'Čo ak mi jednoducho nebudú vyhovovať?',
-    'answer'    => 'Máte <strong>30 dní na vrátenie peňazí</strong>. Ak nie ste spokojní, ozvite sa nám a peniaze vám vrátime.'),
+  array('questioon' => 'Какъв размер да поръчам? Имам голям крак.',
+    'answer'    => 'Три размера според размера обувки (EU): <strong>39–42</strong>, <strong>43–45</strong> и <strong>46–49</strong>. Поръчайте обичайното си число обувки.'),
+  array('questioon' => 'От вълна ли са? Не понасям, когато драска.',
+    'answer'    => 'Никаква вълна, нито едно влакно. Нищо не драска, няма обриви и кракът не се вари в жегата. Плетката отвежда потта от кожата, вместо да го задържа.'),
+  array('questioon' => 'Няма ли краката ми да плуват в пот?',
+    'answer'    => 'Точно затова са направени така. Въздушната мрежа върху горната част на стъпалото и плетката, която отвежда влагата, изтеглят потта от кожата.'),
+  array('questioon' => 'Как да ги перем? Трябва ли да внимавам?',
+    'answer'    => 'В пералня на студено, в сушилня на ниска температура, заедно с работното облекло. Без ръчно пране, сушене на простор и специален перилен препарат.'),
+  array('questioon' => 'Наистина ли ще издържат, или ще се продупчат като всички останали?',
+    'answer'    => 'Петата и пръстите са подсилени с двойно плетен найлон, точно там, където чорапите се скъсват първи. Ако все пак не ви харесат, имате <strong>30 дни за връщане на парите</strong>.'),
+  array('questioon' => 'Кога ще усетя разликата?',
+    'answer'    => 'Ватирането веднага, когато за първи път се изправите с тях. Това, че не се свличат и остават сухи — по време на смяната. Повечето го забелязват още по пътя към дома на първия ден, а истинският знак е, когато на другата сутрин ги обуете отново.'),
+  array('questioon' => 'Колко струва доставката и как се плаща?',
+    'answer'    => 'Доставката е <strong>безплатна при поръчки над 70 €</strong>, а плащате при получаване на пратката.'),
+  array('questioon' => 'А ако просто не ми харесат?',
+    'answer'    => 'Имате <strong>30 дни за връщане на парите</strong>. Ако не сте доволни, пишете ни и ще ви върнем парите.'),
 );
 
 $is_bowl = ( function_exists('noriks_is_type') && noriks_is_type('bowl') );
 $bowl_faq = array(
-  array('questioon' => 'Pre ktoré psy je miska vhodná?',
-    'answer'    => 'Pre <strong>malé plemená</strong> — jazvečík, francúzsky buldoček, knírač, mops, maltézsky psík a podobné. Miska má priemer 15 cm a objem približne 430 ml.'),
-  array('questioon' => 'Načo slúži sklon 15°?',
-    'answer'    => 'Miska je naklonená smerom k psovi, takže krmivo sa zosúva k nemu a hlava s krkom sú v prirodzenejšej polohe. Pes nemusí tlačiť ňufák do rohu misky ani ohýbať krk až k podlahe.'),
-  array('questioon' => 'Prečo je zvýšená?',
-    'answer'    => 'Podstavec s výškou 11 cm zdvihne misku bližšie k výške psa, takže je postojačky, s menším ohýbaním krku a chrbta. To je obzvlášť príjemné pre staršie psy.'),
-  array('questioon' => 'Môžem ju použiť na vodu?',
-    'answer'    => 'Áno. Miska je z nehrdzavejúcej ocele a je rovnako vhodná na krmivo aj na vodu. Mnohí majitelia berú dve — jednu na krmivo, druhú na vodu.'),
-  array('questioon' => 'Ako sa čistí?',
-    'answer'    => 'Misku opláchnite teplou vodou s prostriedkom na riad. Hladká oceľ nenasáva pachy a nedrží zvyšky krmiva ako plast.'),
-  array('questioon' => 'Kĺže sa po podlahe?',
-    'answer'    => 'Podstavec je stabilný a neprevrhne sa, keď pes je. Na veľmi hladkých podlahách odporúčame podložku pod podstavec.'),
-  array('questioon' => 'Môžem ju vrátiť?',
-    'answer'    => 'Áno, máte <strong>30 dní</strong> na vrátenie peňazí. Stačí e-mail, bez formulárov.'),
+  array('questioon' => 'За кои кучета е подходяща купата?',
+    'answer'    => 'За <strong>малки породи</strong> — дакел, френски булдог, шнауцер, мопс, малтийско болонче и подобни. Купата има диаметър 15 cm и обем около 430 ml.'),
+  array('questioon' => 'За какво служи наклонът 15°?',
+    'answer'    => 'Купата е наклонена към кучето, така че храната се свлича към него, а главата и шията са в по-естествено положение. Кучето не трябва да бута муцуната си в ъгъла на купата, нито да извива шия до пода.'),
+  array('questioon' => 'Защо е повдигната?',
+    'answer'    => 'Поставката с височина 11 cm вдига купата по-близо до височината на кучето, така че то яде изправено, с по-малко извиване на шията и гърба. Това е особено приятно за по-старите кучета.'),
+  array('questioon' => 'Мога ли да я използвам за вода?',
+    'answer'    => 'Да. Купата е от неръждаема стомана и е подходяща както за храна, така и за вода. Много собственици вземат две — една за храна, една за вода.'),
+  array('questioon' => 'Как се чисти?',
+    'answer'    => 'Изплакнете купата с топла вода и препарат за съдове. Гладката стомана не поема миризми и не задържа остатъци от храна като пластмасата.'),
+  array('questioon' => 'Плъзга ли се по пода?',
+    'answer'    => 'Поставката е стабилна и не се обръща, когато кучето яде. На много гладки подове препоръчваме подложка под поставката.'),
+  array('questioon' => 'Мога ли да я върна?',
+    'answer'    => 'Да, имате <strong>30 дни</strong> за връщане на парите. Достатъчен е имейл, без формуляри.'),
 );
 
 $is_pal = ( function_exists('noriks_is_type') && noriks_is_type('pal') );
 $pal_faq = array(
   array(
-    'questioon' => 'Na čo slúži druhá rukoväť?',
-    'answer'    => 'Na <strong>vstávanie</strong>. Spodnú rukoväť chytíte, keď vstávate z kresla, z postele alebo z nízkej stoličky — tlak ide zvisle nadol, takže sa nemusíte predkláňať ani prosiť niekoho o pomoc.',
+    'questioon' => 'За какво служи втората ръкохватка?',
+    'answer'    => 'За <strong>изправяне</strong>. Хващате долната ръкохватка, когато се изправяте от фотьойл, от леглото или от нисък стол — натискът отива вертикално надолу, така че не се налага да се навеждате, нито да молите някого за помощ.',
   ),
   array(
-    'questioon' => 'Naozaj stojí sama?',
-    'answer'    => 'Áno. Základňa má <strong>štyri gumené nožičky</strong>, ktoré držia palicu vzpriamene, keď ju pustíte. Nepadne na zem, takže sa po nej nemusíte zohýnať.',
+    'questioon' => 'Наистина ли стои сама?',
+    'answer'    => 'Да. Основата има <strong>четири гумени крачета</strong>, които държат бастуна изправен, когато го пуснете. Не пада на пода, така че не се налага да се навеждате за него.',
   ),
   array(
-    'questioon' => 'Kĺže sa na hladkej podlahe?',
-    'answer'    => 'Nie. Nožičky sú z protišmykovej gumy a držia na dlažbe, parketách aj laminátoch. Základňa sa prispôsobí aj nerovnému terénu vonku.',
+    'questioon' => 'Плъзга ли се на гладък под?',
+    'answer'    => 'Не. Крачетата са от противоплъзгаща гума и държат на плочки, паркет и ламинат. Основата се приспособява и към неравен терен навън.',
   ),
   array(
-    'questioon' => 'Ako funguje svetlo?',
-    'answer'    => 'Svetlo je zabudované v rukoväti a zapína sa tlačidlom. Osvetlí cestu pred vami — na nočnú cestu do kúpeľne alebo na prechádzku za súmraku.',
+    'questioon' => 'Как работи осветлението?',
+    'answer'    => 'Осветлението е вградено в ръкохватката и се включва с бутон. Осветява пътя пред вас — за нощен път до банята или за разходка по тъмно.',
   ),
   array(
-    'questioon' => 'Čo robí alarm?',
-    'answer'    => 'Stlačením tlačidla sa spustí <strong>hlasný zvukový signál</strong>, ktorý upozorní domácich, ak spadnete alebo potrebujete pomoc.',
+    'questioon' => 'Какво прави алармата?',
+    'answer'    => 'С натискане на бутона се пуска <strong>силен звуков сигнал</strong>, който предупреждава близките, ако паднете или имате нужда от помощ.',
   ),
   array(
-    'questioon' => 'Dá sa nastaviť výška?',
-    'answer'    => 'Áno. Výška sa nastaví za pár sekúnd, bez náradia, takže palica sadne každej postave.',
+    'questioon' => 'Може ли да се настрои височината?',
+    'answer'    => 'Да. Височината се настройва за няколко секунди, без инструменти, така че бастунът пасва на всяка фигура.',
   ),
   array(
-    'questioon' => 'Dá sa zložiť?',
-    'answer'    => 'Áno. Zloží sa na niekoľko častí a zmestí sa do tašky alebo do priehradky v aute — praktické na cestovanie a návštevy lekára.',
+    'questioon' => 'Сгъва ли се?',
+    'answer'    => 'Да. Сгъва се на няколко части и влиза в чанта или в жабката на колата — практично за пътуване и посещения при лекар.',
   ),
   array(
-    'questioon' => 'Môžem ju vrátiť?',
-    'answer'    => 'Áno, máte <strong>30 dní</strong> na vrátenie peňazí alebo výmenu. Stačí e-mail, bez formulárov.',
+    'questioon' => 'Мога ли да го върна?',
+    'answer'    => 'Да, имате <strong>30 дни</strong> за връщане на парите или замяна. Достатъчен е имейл, без формуляри.',
   ),
 );
 
 $is_red = ( function_exists('noriks_is_type') && noriks_is_type('red') );
 $red_faq = array(
   array(
-    'questioon' => 'Ako terapia červeným svetlom pomáha pri syndróme karpálneho tunela?',
-    'answer'    => 'Červené a infračervené svetlo preniká do tkaniva a stimuluje <strong>tvorbu bunkovej energie (ATP)</strong>, čo pomáha utlmiť zápal okolo stredového nervu, zlepšiť prekrvenie a podporiť prirodzené hojenie.',
+    'questioon' => 'Как терапията с червена светлина помага при синдром на карпалния тунел?',
+    'answer'    => 'Червената и инфрачервената светлина проникват в тъканта и стимулират <strong>производството на клетъчна енергия (ATP)</strong>, което помага да се потуши възпалението около средния нерв, да се подобри кръвообращението и да се подпомогне естественото заздравяване.',
   ),
   array(
-    'questioon' => 'Ako dlho do prvých výsledkov?',
-    'answer'    => 'Väčšina používateľov cíti menej nočného mravčenia do <strong>1 – 2 týždňov</strong>. Badateľnejšia zmena v sile úchopu zvyčajne prichádza okolo štvrtého týždňa. Odporúčame pravidelné denné používanie aspoň osem týždňov.',
+    'questioon' => 'След колко време са първите резултати?',
+    'answer'    => 'Повечето потребители усещат по-малко нощно изтръпване в рамките на <strong>1 – 2 седмици</strong>. По-забележима промяна в силата на хвата обикновено идва около четвъртата седмица. Препоръчваме редовна всекидневна употреба поне осем седмици.',
   ),
   array(
-    'questioon' => 'Je bezpečné používať to každý deň?',
-    'answer'    => 'Áno. Zariadenie je určené na <strong>denné 15-minútové ošetrenia</strong>. Svetlo pri týchto dávkach tkanivo nezahrieva. Zariadenie sa na konci ošetrenia samo vypne.',
+    'questioon' => 'Безопасно ли е да се използва всеки ден?',
+    'answer'    => 'Да. Устройството е предвидено за <strong>всекидневни 15-минутни процедури</strong>. Светлината при тези дози не загрява тъканта. Устройството се изключва само в края на процедурата.',
   ),
   array(
-    'questioon' => 'Funguje na obidve ruky?',
-    'answer'    => 'Áno, pás sa dá nasadiť <strong>na ľavú aj na pravú ruku</strong>. Ak máte problém na oboch rukách, urobte dve ošetrenia po 15 minút za sebou alebo si vyberte balenie s dvomi zariadeniami.',
+    'questioon' => 'Работи ли и на двете ръце?',
+    'answer'    => 'Да, лентата може да се постави <strong>на лявата и на дясната ръка</strong>. Ако имате проблем и на двете ръце, направете две процедури по 15 минути една след друга или изберете пакет с две устройства.',
   ),
   array(
-    'questioon' => 'Na aké veľkosti ruky sa hodí?',
-    'answer'    => 'Pružný pás s nastaviteľným remienkom sadne na <strong>väčšinu veľkostí dospelej ruky</strong>, aj na tie väčšie. Otvor na palec drží zariadenie na mieste počas celého ošetrenia.',
+    'questioon' => 'За какви размери ръка е подходяща?',
+    'answer'    => 'Еластичната лента с регулируема каишка пасва на <strong>повечето размери ръка на възрастен</strong>, включително по-големите. Отворът за палеца държи устройството на място през цялата процедура.',
   ),
   array(
-    'questioon' => 'Čo je v balení?',
-    'answer'    => '1× pás NORIKS RED, <strong>1× nabíjací kábel USB-C</strong> a návod s odporúčaným protokolom terapie.',
+    'questioon' => 'Какво има в комплекта?',
+    'answer'    => '1× лента NORIKS RED, <strong>1× зареждащ кабел USB-C</strong> и инструкция с препоръчан протокол на терапията.',
   ),
   array(
-    'questioon' => 'Ako dlho vydrží batéria?',
-    'answer'    => 'Jedno nabitie stačí na <strong>až 4 ošetrenia</strong>. Zariadenie sa nabíja cez kábel USB-C, takže ho nabijete z nabíjačky na telefón alebo z notebooku.',
+    'questioon' => 'Колко издържа батерията?',
+    'answer'    => 'Едно зареждане стига за <strong>до 4 процедури</strong>. Устройството се зарежда през USB-C кабел, така че го зареждате от зарядно за телефон или от лаптоп.',
   ),
   array(
-    'questioon' => 'Nahrádza to lekára?',
-    'answer'    => 'Nie. NORIKS RED je zariadenie na domáce použitie a <strong>nenahrádza lekárske vyšetrenie</strong> ani predpísanú liečbu. Pri pretrvávajúcich alebo silných ťažkostiach vyhľadajte lekára.',
+    'questioon' => 'Замества ли лекар?',
+    'answer'    => 'Не. NORIKS RED е устройство за домашна употреба и <strong>не замества лекарски преглед</strong>, нито предписано лечение. При трайни или силни оплаквания потърсете лекар.',
   ),
   array(
-    'questioon' => 'Môžem ho vrátiť?',
-    'answer'    => 'Áno, máte <strong>30 dní</strong> na vrátenie peňazí alebo výmenu. Stačí e-mail, bez formulárov.',
+    'questioon' => 'Мога ли да го върна?',
+    'answer'    => 'Да, имате <strong>30 дни</strong> за връщане на парите или замяна. Достатъчен е имейл, без формуляри.',
   ),
 );
 
 $is_kneeheat = ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') );
 $kneeheat_faq = array(
   array(
-    'questioon' => 'Ako prístroj vlastne funguje?',
-    'answer'    => 'Teplo do <strong>42 °C</strong> rozširuje cievy a uľahčuje prísun krvi do hlbšieho tkaniva. Rytmická vzduchová kompresia vytláča nahromadenú tekutinu a privádza čerstvú krv a vibrácie <strong>60 Hz</strong> uvoľňujú stuhnutosť okolo kĺbu. Všetky tri terapie fungujú súčasne.',
+    'questioon' => 'Как всъщност работи уредът?',
+    'answer'    => 'Топлината до <strong>42 °C</strong> разширява съдовете и улеснява притока на кръв към по-дълбоката тъкан. Ритмичната въздушна компресия изтласква събралата се течност и докарва свежа кръв, а вибрациите <strong>60 Hz</strong> отпускат сковаността около ставата. И трите терапии работят едновременно.',
   ),
   array(
-    'questioon' => 'Na aké ťažkosti je určený?',
-    'answer'    => 'Na chronické, postupne vzniknuté ťažkosti — stuhnuté, bolestivé alebo opuchnuté koleno, ktoré sa objavuje s vekom a záťažou. Pri čerstvom zranení, nedávnej operácii alebo poruchách krvného obehu sa najprv poraďte s lekárom.',
+    'questioon' => 'За какви оплаквания е предназначен?',
+    'answer'    => 'За хронични, постепенно възникнали оплаквания — сковано, болезнено или подуто коляно, което се появява с възрастта и натоварването. При свежа травма, скорошна операция или нарушения на кръвообращението се консултирайте първо с лекар.',
   ),
   array(
-    'questioon' => 'Ako dlho trvá jedno sedenie?',
-    'answer'    => '<strong>12 minút.</strong> Prístroj sa spúšťa jedným tlačidlom a na konci sedenia sa sám zastaví.',
+    'questioon' => 'Колко продължава една сесия?',
+    'answer'    => '<strong>12 минути.</strong> Уредът се пуска с един бутон и в края на сесията спира сам.',
   ),
   array(
-    'questioon' => 'Kedy pocítim rozdiel?',
-    'answer'    => 'Mnohí cítia, že je koleno uvoľnenejšie už po prvom sedení. Citeľnejšia zmena zvyčajne prichádza po <strong>7 až 14 dňoch</strong> každodenného používania.',
+    'questioon' => 'Кога ще усетя разлика?',
+    'answer'    => 'Мнозина усещат коляното по-отпуснато още след първата сесия. По-забележима промяна обикновено идва след <strong>7 до 14 дни</strong> всекидневна употреба.',
   ),
   array(
-    'questioon' => 'Môžem ho používať na obe kolená?',
-    'answer'    => 'Áno. Bandáž sedí na ľavú aj pravú nohu — ak vás trápia obe, spustite sedenie na každej.',
+    'questioon' => 'Мога ли да го използвам на двете колена?',
+    'answer'    => 'Да. Наколенката пасва на левия и на десния крак — ако и двете ви създават проблеми, пуснете сесия на всяко.',
   ),
   array(
-    'questioon' => 'Čím sa líši od prístroja TENS alebo termofóru?',
-    'answer'    => 'TENS prekrýva signál bolesti a termofór zahrieva len povrch a za pár minút vychladne. KneeHeat spája dlhotrvajúce teplo, kompresiu a vibrácie, aby pôsobil na hlbšie tkanivo.',
+    'questioon' => 'С какво се различава от TENS уред или термофор?',
+    'answer'    => 'TENS припокрива сигнала за болка, а термофорът загрява само повърхността и след няколко минути изстива. KneeHeat съчетава продължителна топлина, компресия и вибрации, за да действа върху по-дълбоката тъкан.',
   ),
   array(
-    'questioon' => 'Treba ho nabíjať?',
-    'answer'    => 'Áno, prístroj je bezdrôtový a nabíja sa priloženým USB-C káblom. Jedno nabitie vydrží na viac sedení.',
+    'questioon' => 'Трябва ли да се зарежда?',
+    'answer'    => 'Да, уредът е безжичен и се зарежда с включения USB-C кабел. Едно зареждане стига за няколко сесии.',
   ),
   array(
-    'questioon' => 'Sedí na každú veľkosť nohy?',
-    'answer'    => 'Pásy sú nastaviteľné a v balení je aj predlžovací pás pre väčšie obvody nohy.',
+    'questioon' => 'Пасва ли на всеки размер крак?',
+    'answer'    => 'Лентите са регулируеми, а в комплекта има и удължаваща лента за по-големи обиколки на крака.',
   ),
 );
 
 $is_winecooler = ( function_exists('noriks_is_type') && noriks_is_type('winecooler') );
 $winecooler_faq = array(
-  array('questioon' => 'Ako funguje ponuka na viac kusov?',
-    'answer'    => 'Jednoducho vyberte ponuku <strong>1x ks</strong>, <strong>2x ks</strong> alebo <strong>3x ks</strong> — do košíka sa pridá zvolený počet chladičov vína a zľava sa započíta automaticky.'),
-  array('questioon' => 'Aké spôsoby platby môžem použiť?',
-    'answer'    => 'U nás môžete platiť cez Apple Pay, Google Pay, Mastercard a Visa.'),
-  array('questioon' => 'Ako to funguje?',
-    'answer'    => 'Vložte chladiacu tyčinku do mrazničky aspoň na 1 hodinu. Vychladenú tyčinku vsuňte do fľaše vína. Odpite si dúšok, aby ste urobili trochu miesta, a vychutnajte si dokonale vychladené víno pri každom naliatí.'),
-  array('questioon' => 'Informácie o doručení',
-    'answer'    => 'Doprava zadarmo pri objednávkach nad 70 €. Doba doručenia je 5–12 pracovných dní od odoslania.'),
-  array('questioon' => 'Pravidlá vrátenia',
-    'answer'    => 'Právo na vrátenie do 30 dní. Ak nie ste s nákupom úplne spokojní, ozvite sa nám do 30 dní od prevzatia objednávky a radi vám pomôžeme s vrátením tovaru alebo peňazí.'),
+  array('questioon' => 'Как работи офертата за повече бройки?',
+    'answer'    => 'Просто изберете офертата <strong>1x бр.</strong>, <strong>2x бр.</strong> или <strong>3x бр.</strong> — в количката се добавя избраният брой охладители за вино, а отстъпката се начислява автоматично.'),
+  array('questioon' => 'Какви начини на плащане мога да използвам?',
+    'answer'    => 'При нас може да плащате с Apple Pay, Google Pay, Mastercard и Visa.'),
+  array('questioon' => 'Как работи?',
+    'answer'    => 'Поставете охлаждащата пръчка във фризера за поне 1 час. Пъхнете изстудената пръчка в бутилката вино. Пийнете глътка, за да направите малко място, и се насладете на идеално изстудено вино при всяко наливане.'),
+  array('questioon' => 'Информация за доставката',
+    'answer'    => 'Безплатна доставка при поръчки над 70 €. Времето за доставка е 5–12 работни дни от изпращането.'),
+  array('questioon' => 'Правила за връщане',
+    'answer'    => 'Право на връщане в рамките на 30 дни. Ако не сте напълно доволни от покупката, пишете ни в рамките на 30 дни от получаване на поръчката и с радост ще ви помогнем с връщането на стоката или на парите.'),
 );
 
 $faq_pick = function( $title, $list ) use ( $is_winecooler, $winecooler_faq, $is_slim, $slim_faq, $is_tradesman, $tradesman_faq, $is_slabproof, $slabproof_faq, $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
   $t = (string) $title;
-  $is_info = ( stripos( $t, 'produkt' ) !== false ) || ( stripos( $t, 'výrobk' ) !== false );
+  $is_info = ( stripos( $t, 'produkt' ) !== false ) || ( stripos( $t, 'продукт' ) !== false ) || ( stripos( $t, 'издели' ) !== false ) || ( stripos( $t, 'výrobk' ) !== false );
   if ( $is_snug && $is_info ) { return $snug_faq; }
   if ( $is_kompwom && $is_info ) { return $kompwom_faq; }
   if ( $is_tradesman && $is_info ) { return $tradesman_faq; }
@@ -2005,7 +2005,7 @@ $faq_pick = function( $title, $list ) use ( $is_winecooler, $winecooler_faq, $is
 
 
 <section class="faq-section">
-  <h2>Často kladené otázky</h2>
+  <h2>Често задавани въпроси</h2>
   
 
    <!-- first faq container --> 
