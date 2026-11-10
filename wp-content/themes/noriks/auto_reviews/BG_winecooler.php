@@ -40,7 +40,7 @@ $auto_reviews_en = array(
     array("name" => "Фльор Б.", "text" => "Идеален за балкона през топлите вечери."),
     array("name" => "Роос П.", "text" => "Налива хубаво и не капе — идеално. 👍"),
     array("name" => "Гайс Х.", "text" => "По-добър резултат от кубчета лед в чашата."),
-    // 3 citati iz okvirja "Poslušajte naše kupce" (nakupna škatla originala) — prestavljeni sem.
+    // 3 citati iz okvira "Poslusajte nase kupce" (nakupna skatla originala) — prestavljeni sem.
     array("name" => "Елин В.", "text" => "Много практичен за употреба и лесно се носи със себе си."),
     array("name" => "Сане Д.", "text" => "Изпълнихте това, което обещахте, а и дойде доста бързо."),
     array("name" => "Теса Й.", "text" => "Супер 😊"),
