@@ -484,30 +484,30 @@ if (  has_term( array( 'tricka',  'orto-tricka', 'orto-majica-darila' ), 'produc
   $is_jastuk_page     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $current_product_id) );
 
   // Fallback product name shown in review cards.
-  $rv_fallback_title = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ) ? 'Kompresné ponožky NORIKS'
-                     : ( $is_ortopas_page ? 'Ortopedický pás NORIKS'
-                     : ( $is_bunion_page ? 'Korektor palca NORIKS'
+  $rv_fallback_title = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ) ? 'Компресионни чорапи NORIKS'
+                     : ( $is_ortopas_page ? 'Ортопедичен колан NORIKS'
+                     : ( $is_bunion_page ? 'Коректор за палец NORIKS'
                      : ( $is_fisiorest_page ? 'NORIKS NeckRelax'
-                     : ( $is_kneefix_page ? 'NORIKS KneeFix kolenná ortéza'
-                     : ( $is_kidsnest_page ? 'NORIKS KidsNest vankúš'
-                     : ( $is_jastuk_page ? 'NORIKS ErgoSit ortopedický vankúš'
-                     : ( $is_leakboxers_page ? 'NORIKS absorpčné boxerky'
-                     : ( $is_kompmajice_page ? 'NORIKS FIT kompresné tričko'
-                     : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedno sivé tričko' ) ) ) ) ) ) ) ) );
-  if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) { $rv_fallback_title = 'NORIKS ControlPro tréner panvového dna'; }
+                     : ( $is_kneefix_page ? 'NORIKS KneeFix ортеза за коляно'
+                     : ( $is_kidsnest_page ? 'NORIKS KidsNest възглавница'
+                     : ( $is_jastuk_page ? 'NORIKS ErgoSit ортопедична възглавница'
+                     : ( $is_leakboxers_page ? 'NORIKS абсорбиращи боксерки'
+                     : ( $is_kompmajice_page ? 'NORIKS FIT компресионна тениска'
+                     : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Една сива тениска' ) ) ) ) ) ) ) ) );
+  if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) { $rv_fallback_title = 'NORIKS ControlPro тренажор за тазово дъно'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) { $rv_fallback_title = 'NORIKS HYD'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) { $rv_fallback_title = 'NORIKS Cloud'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) { $rv_fallback_title = 'Polar NORIKS Cloth XXL'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) { $rv_fallback_title = 'NORIKS Snug vankúš na celé telo'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman tvarujúce tričko'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal vychádzková palica'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('bowl') ) { $rv_fallback_title = 'NORIKS Bowl ortopedická miska pre psa'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('winecooler') ) { $rv_fallback_title = 'NORIKS WineCooler chladič vína'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('red') ) { $rv_fallback_title = 'NORIKS RedRelief terapia červeným svetlom'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) { $rv_fallback_title = 'NORIKS KneeHeat ohrievač a masážny prístroj na koleno'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ) { $rv_fallback_title = 'NORIKS SlabProof™ Pracovné ponožky'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ) { $rv_fallback_title = 'Pracovné ponožky NORIKS Tradesman'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('slim') ) { $rv_fallback_title = 'NORIKS Slim tvarujúce nohavičky'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) { $rv_fallback_title = 'NORIKS Snug възглавница за цяло тяло'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman оформяща тениска'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal бастун'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('bowl') ) { $rv_fallback_title = 'NORIKS Bowl ортопедична купа за куче'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('winecooler') ) { $rv_fallback_title = 'NORIKS WineCooler охладител за вино'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('red') ) { $rv_fallback_title = 'NORIKS RedRelief терапия с червена светлина'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) { $rv_fallback_title = 'NORIKS KneeHeat уред за затопляне и масаж на коляното'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ) { $rv_fallback_title = 'NORIKS SlabProof™ работни чорапи'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ) { $rv_fallback_title = 'Работни чорапи NORIKS Tradesman'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('slim') ) { $rv_fallback_title = 'NORIKS Slim оформящи бикини'; }
 
   // Include review pools (own pool per product group)
 if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
@@ -1031,18 +1031,18 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
     <div class="reviews-tabs" style="display:flex;gap:18px;border-bottom:1px solid #cbc8c8;margin-bottom:18px;">
       <button type="button" class="reviews-tab is-active" data-tab="product"
         style="appearance:none;background:#00000008;border:1px solid #cbc8c8;border-bottom:0;padding:8px 14px;border-radius:0;font-weight:700;">
-        <?php echo esc_html__('Recenzie produktu', 'your-textdomain'); ?> (692)
+        <?php echo esc_html__('Отзиви за продукта', 'your-textdomain'); ?> (692)
       </button>
       <button type="button" class="reviews-tab" data-tab="shipping"
         style="appearance:none;background:transparent;border:1px solid transparent;border-bottom:0;padding:8px 14px;border-radius:0;font-weight:700;">
-        <?php echo esc_html__('Recenzie doručenia', 'your-textdomain'); ?> (389)
+        <?php echo esc_html__('Отзиви за доставката', 'your-textdomain'); ?> (389)
       </button>
     </div>
 
     <!-- PRODUCT GRID (default visible) -->
     <div class="reviews-grid" id="reviews-grid-product">
       <?php if (!empty($initial_product)) : foreach ($initial_product as $review) :
-        $name  = $review['name'] ?? 'Anonymní';
+        $name  = $review['name'] ?? 'Анонимен';
         $text  = $review['text'] ?? '';
         $title = !empty($review['product_title']) ? $review['product_title'] : $rv_fallback_title;
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
@@ -1067,7 +1067,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
               <div class="avatar">👤</div>
             <?php endif; ?>
             <div class="name"><?php echo esc_html($name); ?></div>
-            <span class="verified"><?php _e('Potvrdené','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Потвърдено','your-textdomain'); ?></span>
           </div>
           <div class="content"><?php echo esc_html($text); ?></div>
         </article>
@@ -1077,7 +1077,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
     <!-- SHIPPING GRID (hidden initially) -->
     <div class="reviews-grid" id="reviews-grid-shipping" style="display:none;">
       <?php if (!empty($initial_ship)) : foreach ($initial_ship as $review) :
-        $name  = $review['name'] ?? 'Anonymní';
+        $name  = $review['name'] ?? 'Анонимен';
         $text  = $review['text'] ?? '';
         $title = !empty($review['product_title']) ? $review['product_title'] : $rv_fallback_title;
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
@@ -1104,7 +1104,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
               <div class="avatar">👤</div>
             <?php endif; ?>
             <div class="name"><?php echo esc_html($name); ?></div>
-            <span class="verified"><?php _e('Potvrdené','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Потвърдено','your-textdomain'); ?></span>
           </div>
           <?php if (!empty($review['headline'])) : ?>
             <div class="headline"><?php echo esc_html($review['headline']); ?></div>
@@ -1184,7 +1184,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
 
         const url       = review.product_url   || '#';
         const title     = review.product_title || '<?php echo esc_js($rv_fallback_title); ?>';
-        const name      = review.name          || 'Anonymní';
+        const name      = review.name          || 'Анонимен';
         const text      = review.text          || '';
         const headline  = review.headline      || '';
         const date      = review.assigned_date || '';
@@ -1199,7 +1199,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
           <div class="identity">
             ${avatarHtml(avatarUrl)}
             <div class="name">${esc(name)}</div>
-            <span class="verified"><?php _e('Potvrdené','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Потвърдено','your-textdomain'); ?></span>
           </div>
           ${headline ? `<div class="headline">${esc(headline)}</div>` : ''}
           <div class="content">${esc(text)}</div>
@@ -1453,170 +1453,170 @@ $is_jastuk_faq     = ( function_exists('noriks_is_type') && noriks_is_type('orto
 
 // ErgoSit ortopedický vankúš — FAQ o produkte (NORIKS).
 $jastuk_faq = array(
-  array( 'questioon' => 'Ako NORIKS ErgoSit zmierňuje bolesť pri sedení?', 'answer' => 'ErgoSit má výrez pre kostrč, ktorý odstraňuje priamy tlak na kostrčovú kosť a sedací nerv, zatiaľ čo anatomický tvar z pamäťovej peny s vysokou hustotou rovnomerne rozkladá váhu na boky a stehná. Tým sa odľahčujú citlivé body a podporuje zdravé, vzpriamené držanie tela.' ),
-  array( 'questioon' => 'Kde všade môžem vankúš používať?', 'answer' => 'Kdekoľvek, kde sedíte — v aute, na kancelárskej stoličke, jedálenskej stoličke, invalidnom vozíku alebo doma. Stabilná protišmyková základňa ho drží na mieste, takže pohodlie ide s vami celý deň.' ),
-  array( 'questioon' => 'Sploští sa pena časom?', 'answer' => 'Nie. ErgoSit používa pamäťovú penu s vysokou hustotou, ktorá si udrží tvar a pevnosť aj po dlhodobom každodennom používaní, na rozdiel od lacných vankúšov, ktoré sa rýchlo sploštia.' ),
-  array( 'questioon' => 'Dá sa poťah prať?', 'answer' => 'Áno. Poťah sa dá stiahnuť a prať v práčke, takže vankúš zostáva svieži a čistý. Tkanina je priedušná, hypoalergénna a certifikovaná OEKO-TEX®.' ),
-  array( 'questioon' => 'Sadne na moju stoličku alebo sedadlo?', 'answer' => 'ErgoSit má univerzálny tvar a sadne na väčšinu autosedadiel, kancelárskych a kuchynských stoličiek aj invalidných vozíkov. Nemá veľkosti — jeden model sadne každému.' ),
-  array( 'questioon' => 'Za aký čas pocítim rozdiel?', 'answer' => 'Väčšina používateľov pocíti menší tlak na kostrč a pohodlnejšie sedenie už od prvého dňa. Lepšie držanie tela a menej bolestí chrbta sa pri pravidelnom používaní ďalej stupňujú.' ),
-  array( 'questioon' => 'Existuje záruka vrátenia peňazí?', 'answer' => 'Áno, každý NORIKS ErgoSit prichádza so 60-dňovou zárukou pohodlia. Ak nepocítite menej bolesti a viac pohodlia, kontaktujte nás a vyriešime to.' ),
+  array( 'questioon' => 'Как NORIKS ErgoSit облекчава болката при седене?', 'answer' => 'ErgoSit има изрез за опашната кост, който премахва директния натиск върху опашната кост и седалищния нерв, а анатомичната форма от пяна с памет с висока плътност разпределя тежестта равномерно върху бедрата. Така се разтоварват чувствителните точки и се подкрепя здрава, изправена стойка.' ),
+  array( 'questioon' => 'Къде мога да използвам възглавницата?', 'answer' => 'Навсякъде, където седите — в колата, на офис стол, на стол за хранене, в инвалидна количка или вкъщи. Стабилната противоплъзгаща основа я държи на място, така че комфортът ви следва през целия ден.' ),
+  array( 'questioon' => 'Ще се сплеска ли пяната с времето?', 'answer' => 'Не. ErgoSit използва пяна с памет с висока плътност, която запазва формата и стабилността си и след дълга всекидневна употреба, за разлика от евтините възглавници, които бързо се сплескват.' ),
+  array( 'questioon' => 'Може ли калъфът да се пере?', 'answer' => 'Да. Калъфът се сваля и се пере в пералня, така че възглавницата остава свежа и чиста. Платът е дишащ, хипоалергенен и сертифициран OEKO-TEX®.' ),
+  array( 'questioon' => 'Ще пасне ли на моя стол или седалка?', 'answer' => 'ErgoSit има универсална форма и пасва на повечето автомобилни седалки, офис и кухненски столове, както и на инвалидни колички. Няма размери — един модел пасва на всички.' ),
+  array( 'questioon' => 'След колко време ще усетя разлика?', 'answer' => 'Повечето потребители усещат по-малък натиск върху опашната кост и по-удобно седене още от първия ден. По-добрата стойка и по-малко болки в гърба се подобряват допълнително при редовна употреба.' ),
+  array( 'questioon' => 'Има ли гаранция за връщане на парите?', 'answer' => 'Да, всеки NORIKS ErgoSit идва с 60-дневна гаранция за комфорт. Ако не усетите по-малко болка и повече комфорт, свържете се с нас и ще го решим.' ),
 );
 
 // NORIKS FIT (kompresné/tvarujúce tričko) — FAQ o produkte (preklad, NORIKS FIT).
 $kompmajice_faq = array(
-  array( 'questioon' => 'Pre koho je NORIKS FIT určený?', 'answer' => 'NORIKS FIT je stvorený pre mužov, ktorí chcú štíhlejší vzhľad, vrátiť si sebavedomie vo vlastné telo, napraviť držanie tela, cítiť sa počas dňa energickejšie a vyzerať štíhlejšie pod akýmkoľvek oblečením.' ),
-  array( 'questioon' => 'Ako tričko NORIKS FIT vlastne funguje?', 'answer' => 'NORIKS FIT používa pokročilú iónovú kompresnú tkaninu, ktorá aktivuje prirodzenú odozvu tela. Mikrotkané vlákna podporujú zdravú cirkuláciu a pomáhajú vám udržať vzpriamené držanie tela od rána do večera. Pri pravidelnom nosení prináša viditeľne tvarovanejší trup, lepšie zarovnanie chrbtice a viac sebavedomia.' ),
-  array( 'questioon' => 'Ako rýchlo si všimnem výsledky?', 'answer' => 'Každé telo je iné, ale väčšina zákazníkov hlási viditeľnú zmenu počas prvých 30 dní. Pre najlepší účinok noste NORIKS FIT každý deň a kombinujte ho s vyváženou stravou a pravidelným pohybom.' ),
-  array( 'questioon' => 'Vidno ho pod košeľou?', 'answer' => 'Nie. NORIKS FIT je tenký, diskrétny a neviditeľný pod akoukoľvek košeľou a zároveň tvaruje brucho a hrudník a podporuje držanie tela.' ),
-  array( 'questioon' => 'Ako sa perie a z čoho je vyrobený?', 'answer' => 'Je vyrobený z 80 % nylonu a 20 % elastanu. Perte ho v studenej vode na jemnom programe, aby ste zachovali kompresiu a predĺžili životnosť tkaniny.' ),
+  array( 'questioon' => 'За кого е предназначена NORIKS FIT?', 'answer' => 'NORIKS FIT е създадена за мъже, които искат по-стегнат външен вид, да си върнат увереността в собственото тяло, да коригират стойката си, да се чувстват по-енергични през деня и да изглеждат по-слаби под всяко облекло.' ),
+  array( 'questioon' => 'Как всъщност работи тениската NORIKS FIT?', 'answer' => 'NORIKS FIT използва усъвършенстван йонен компресионен плат, който задейства естествената реакция на тялото. Микротканите влакна подпомагат здравото кръвообращение и помагат да задържите изправена стойка от сутрин до вечер. При редовно носене резултатът е видимо по-оформен торс, по-добро подреждане на гръбнака и повече самочувствие.' ),
+  array( 'questioon' => 'Колко бързо ще забележа резултати?', 'answer' => 'Всяко тяло е различно, но повечето клиенти съобщават за видима промяна през първите 30 дни. За най-добър ефект носете NORIKS FIT всеки ден и я комбинирайте с балансирано хранене и редовно движение.' ),
+  array( 'questioon' => 'Вижда ли се под риза?', 'answer' => 'Не. NORIKS FIT е тънка, дискретна и невидима под всяка риза, като в същото време оформя корема и гърдите и подкрепя стойката.' ),
+  array( 'questioon' => 'Как се пере и от какво е изработена?', 'answer' => 'Изработена е от 80 % найлон и 20 % еластан. Перете я в студена вода на деликатна програма, за да запазите компресията и да удължите живота на плата.' ),
 );
 
 // NORIKS LEAK BOXERS (inkontinenčné boxerky) — FAQ o produkte (preklad, NORIKS).
 $leakboxers_faq = array(
-  array( 'questioon' => 'Prečo si NORIKS vybralo viac ako 123 000 mužov?', 'answer' => 'NORIKS sú najabsorpčnejšie prateľné boxerky pre mužský únik moču: udržia až 300 ml, majú certifikát Oeko-Tex® a neobsahujú škodlivé látky, sú prateľné a opakovane použiteľné (ekologická alternatíva jednorazových vložiek), navrhnuté pre celodenné pohodlie a sebavedomie. Až 87 % zákazníkov si po prvom nákupe objedná znova.' ),
-  array( 'questioon' => 'Koľko absorbujú?', 'answer' => 'Až 300 ml — takmer 3-krát viac ako väčšina produktov na trhu. Vďaka 7-vrstvovému jadru PureDry™ sa tekutina okamžite absorbuje a uzamkne hlboko vo vnútri, takže pokožka zostáva suchá a vonkajšia vrstva je vodoodpudivá.' ),
-  array( 'questioon' => 'Vidno ich pod oblečením?', 'answer' => 'Nie. Boxerky NORIKS sú tenké, diskrétne a flexibilné — vyzerajú a pôsobia ako bežná spodná bielizeň, bez objemnosti a bez pocitu „plienky“.' ),
-  array( 'questioon' => 'Ako sa perú?', 'answer' => 'Perte na 30 – 40 °C, bez aviváže a bielidla, sušte na vzduchu. Absorpčnú schopnosť si udržia počas stoviek praní.' ),
-  array( 'questioon' => 'Je doručenie diskrétne?', 'answer' => 'Áno. Všetky objednávky posielame v neutrálnom, diskrétnom balení bez viditeľných označení obsahu, aby sme chránili vaše súkromie.' ),
-  array( 'questioon' => 'Z čoho sú vyrobené?', 'answer' => 'Vonkajšia vrstva z bambusového vlákna s elastanom, 7-vrstvové absorpčné jadro z technických mikrovlákien a vodoodpudivá priedušná membrána.' ),
+  array( 'questioon' => 'Защо NORIKS избраха над 123 000 мъже?', 'answer' => 'NORIKS са най-абсорбиращите перящи се боксерки при мъжко изпускане на урина: поемат до 300 ml, имат сертификат Oeko-Tex® и не съдържат вредни вещества, перат се и се използват многократно (екологична алтернатива на еднократните подложки), създадени са за комфорт и самочувствие през целия ден. До 87 % от клиентите поръчват отново след първата покупка.' ),
+  array( 'questioon' => 'Колко поемат?', 'answer' => 'До 300 ml — почти 3 пъти повече от повечето продукти на пазара. Благодарение на 7-слойното ядро PureDry™ течността се поема веднага и се заключва дълбоко вътре, така че кожата остава суха, а външният слой е водоотблъскващ.' ),
+  array( 'questioon' => 'Виждат ли се под облеклото?', 'answer' => 'Не. Боксерките NORIKS са тънки, дискретни и гъвкави — изглеждат и се усещат като обикновено бельо, без обем и без усещане за „пелена“.' ),
+  array( 'questioon' => 'Как се перат?', 'answer' => 'Перете на 30 – 40 °C, без омекотител и белина, сушете на въздух. Запазват поемащата си способност през стотици пранета.' ),
+  array( 'questioon' => 'Дискретна ли е доставката?', 'answer' => 'Да. Всички поръчки изпращаме в неутрална, дискретна опаковка без видими обозначения на съдържанието, за да защитим вашата поверителност.' ),
+  array( 'questioon' => 'От какво са изработени?', 'answer' => 'Външен слой от бамбуково влакно с еластан, 7-слойно абсорбиращо ядро от технически микрофибри и водоотблъскваща дишаща мембрана.' ),
 );
 
-// KidsNest detský vankúš — FAQ o produkte (NORIKS, zmiernené tvrdenia).
+// KidsNest детска възглавница — FAQ за продукта (NORIKS, omiljene trditve).
 $kneefix_faq = array(
   array(
-    'questioon' => 'Je KneeFix vhodný na každodenné nosenie?',
-    'answer'    => 'Áno. NORIKS KneeFix je vyvinutý práve pre bežné pohyby — chôdzu, prácu, chodenie po schodoch či dlhšie státie.',
+    'questioon' => 'Подходяща ли е KneeFix за всекидневно носене?',
+    'answer'    => 'Да. NORIKS KneeFix е разработена точно за обичайните движения — ходене, работа, качване по стълби или по-дълго стоене.',
   ),
   array(
-    'questioon' => 'Môžem si kompresiu nastaviť sám?',
-    'answer'    => 'Áno. Vstavaným presným kolieskom si kompresiu nastavíte sami — toľko opory, koľko je vám príjemné.',
+    'questioon' => 'Мога ли сам да настроя компресията?',
+    'answer'    => 'Да. С вграденото прецизно колелце настройвате компресията сами — толкова опора, колкото ви е приятно.',
   ),
   array(
-    'questioon' => 'Šmýka sa ortéza pri chôdzi?',
-    'answer'    => 'KneeFix má protišmykový silikónový okraj, ktorý pomáha obmedziť šmýkanie a rolovanie ortézy počas nosenia.',
+    'questioon' => 'Плъзга ли се ортезата при ходене?',
+    'answer'    => 'KneeFix има противоплъзгащ силиконов ръб, който помага да се ограничи плъзгането и навиването на ортезата при носене.',
   ),
   array(
-    'questioon' => 'Môžem ortézu nosiť pod oblečením?',
-    'answer'    => 'Áno. Pružný a tenký strih umožňuje pohodlné nosenie pod väčšinou bežného oblečenia.',
+    'questioon' => 'Мога ли да нося ортезата под облеклото?',
+    'answer'    => 'Да. Еластичната и тънка кройка позволява удобно носене под повечето обикновени дрехи.',
   ),
   array(
-    'questioon' => 'Je ortéza vhodná na obe kolená?',
-    'answer'    => 'Pri objednávke si vyberiete stranu (ľavá alebo pravá), takže ortéza sadne presne tomu kolenu, ktoré chcete podoprieť.',
+    'questioon' => 'Подходяща ли е ортезата за двете колена?',
+    'answer'    => 'При поръчката избирате страната (лява или дясна), така че ортезата пасва точно на коляното, което искате да подкрепите.',
   ),
   array(
-    'questioon' => 'Môžem ortézu nosiť dlhší čas?',
-    'answer'    => 'Ortéza je vyvinutá na každodenné nosenie. Mnohí zákazníci ju nosia v práci, na prechádzke aj pri bežných činnostiach.',
+    'questioon' => 'Мога ли да нося ортезата по-дълго време?',
+    'answer'    => 'Ортезата е разработена за всекидневно носене. Много клиенти я носят на работа, на разходка и при обичайни дейности.',
   ),
   array(
-    'questioon' => 'Ako si vybrať veľkosť?',
-    'answer'    => 'Veľkosti sú určené podľa telesnej hmotnosti: M (50–75 kg), L (76–90 kg), XL (91–110 kg) a 2XL (110 kg+).',
+    'questioon' => 'Как да избера размер?',
+    'answer'    => 'Размерите се определят според телесното тегло: M (50–75 kg), L (76–90 kg), XL (91–110 kg) и 2XL (110 kg+).',
   ),
 );
 
 $kidsnest_faq = array(
-  array( 'questioon' => 'Ako rýchlo uvidím, že dýchanie ústami prestáva?', 'answer' => 'Väčšina rodičov si všimne tichšie dýchanie a menej prebúdzaní s otvorenými ústami počas prvých 5 – 7 nocí. Do 14. noci sa u väčšiny detí chrápanie upokojí a pery zostávajú zatvorené. Plný rozdiel — viditeľne lepšiu polohu a pokojnejší spánok — rodičia najčastejšie opisujú okolo 21. až 30. dňa. Používajte ho každú noc.' ),
-  array( 'questioon' => 'Pre aký vek je KidsNest určený?', 'answer' => 'KidsNest prichádza v troch veľkostiach: 1 – 3, 3 – 9 a 9 – 14 rokov. Najdôležitejšie okno je medzi 3. a 9. rokom, keď sa podnebie a čeľusť vyvíjajú najintenzívnejšie — no každý vek má svoju veľkosť a svoj prínos.' ),
-  array( 'questioon' => 'Je bezpečný? Čo je vo vnútri?', 'answer' => 'KidsNest je vyrobený z hypoalergénnej pamäťovej peny s certifikátom OEKO-TEX® — bez formaldehydu, ťažkých kovov a BPA. Je odolný voči roztočom a priedušný a poťah sa dá stiahnuť a prať v práčke.' ),
-  array( 'questioon' => 'Bude ho moje dieťa naozaj používať?', 'answer' => 'Áno. Ergonomický tvar pôsobí ako opora, nie ako niečo zvláštne — väčšina detí si zvykne za 1 – 2 noci. Rodičia často hlásia, že deti po prvom týždni nechcú spať bez neho. 3-zónová štruktúra prirodzene prijíma hlavu — neexistuje „správny spôsob“, žiadny boj pred spaním.' ),
-  array( 'questioon' => 'Funguje, ak moje dieťa už dýcha ústami?', 'answer' => 'Áno — presne pre takéto deti je navrhnutý. 3-zónová štruktúra pomáha zabrániť zakláňaniu hlavy dozadu, kvôli ktorému sa ústa v spánku otvárajú. U väčšiny detí sa počas 7 – 14 nocí pery prirodzene zatvárajú a dýchanie nosom sa vracia.' ),
-  array( 'questioon' => 'Čo ak môjmu dieťaťu nepomôže?', 'answer' => 'Nechajte dieťa spať na KidsNest 30 nocí. Ak nevidíte rozdiel — menej dýchania ústami, tichšie noci, pokojnejší spánok — ozvite sa nám a vrátime vám peniaze. Bez otázok a bez drobných písmen.' ),
+  array( 'questioon' => 'Колко бързо ще видя, че дишането през устата спира?', 'answer' => 'Повечето родители забелязват по-тихо дишане и по-малко събуждания с отворена уста през първите 5 – 7 нощи. До 14-ата нощ при повечето деца хъркането се успокоява и устните остават затворени. Пълната разлика — видимо по-добро положение и по-спокоен сън — родителите най-често описват около 21-ия до 30-ия ден. Използвайте я всяка нощ.' ),
+  array( 'questioon' => 'За каква възраст е KidsNest?', 'answer' => 'KidsNest се предлага в три размера: 1 – 3, 3 – 9 и 9 – 14 години. Най-важният прозорец е между 3-ата и 9-ата година, когато небцето и челюстта се развиват най-интензивно — но всяка възраст има своя размер и своята полза.' ),
+  array( 'questioon' => 'Безопасна ли е? Какво има вътре?', 'answer' => 'KidsNest е изработена от хипоалергенна пяна с памет със сертификат OEKO-TEX® — без формалдехид, тежки метали и BPA. Устойчива е на акари и е дишаща, а калъфът се сваля и се пере в пералня.' ),
+  array( 'questioon' => 'Ще я използва ли наистина детето ми?', 'answer' => 'Да. Ергономичната форма се усеща като опора, не като нещо странно — повечето деца свикват за 1 – 2 нощи. Родителите често съобщават, че след първата седмица децата не искат да спят без нея. 3-зоновата структура поема главата естествено — няма „правилен начин“, няма борба преди лягане.' ),
+  array( 'questioon' => 'Работи ли, ако детето ми вече диша през устата?', 'answer' => 'Да — точно за такива деца е създадена. 3-зоновата структура помага да се предотврати отмятането на главата назад, заради което устата се отваря в съня. При повечето деца в рамките на 7 – 14 нощи устните се затварят естествено и носовото дишане се връща.' ),
+  array( 'questioon' => 'А ако на детето ми не помогне?', 'answer' => 'Оставете детето да спи върху KidsNest 30 нощи. Ако не видите разлика — по-малко дишане през устата, по-тихи нощи, по-спокоен сън — пишете ни и ще ви върнем парите. Без въпроси и без дребен шрифт.' ),
 );
 
-// NORIKS HERS — silikónové kolagénové pásiky na vrásky a jazvy — FAQ o produkte (preklad, NORIKS).
+// NORIKS HERS — силиконови колагенови лепенки за бръчки и белези — FAQ за продукта (NORIKS).
 $norikshers_faq = array(
-  array( 'questioon' => 'Čím sa líši od klasických náplastí na vrásky alebo krémov na jazvy?', 'answer' => 'Väčšina náplastí na vrásky je z papiera alebo hydrokoloidu a krémy na jazvy často zostanú len na povrchu pokožky. NORIKS HERS používa silikón klinickej kvality, ktorému dermatológovia dôverujú už roky pri viditeľnom zlepšovaní textúry jaziev a pružnosti pokožky — a teraz sa využíva aj na zmiernenie vrások.' ),
-  array( 'questioon' => 'Môže jediný pásik naozaj pôsobiť na vrásky aj jazvy?', 'answer' => 'Áno, pretože vrásky aj jazvy sú prejavom rozpadu kolagénu alebo slabej regenerácie pokožky. Silikón podporuje udržanie vlhkosti, obnovu kolagénu a vyhladenie textúry pokožky, čo prospieva obom.' ),
-  array( 'questioon' => 'Za aký čas uvidím výsledky?', 'answer' => 'Väčšina používateľov spozoruje viditeľné vyhladenie jemných vrások už po 1 – 3 použitiach a vzhľad jaziev sa zlepší za 2 – 3 týždne pravidelného používania. Hlbšie jazvy a vrásky môžu trvať dlhšie, no výsledky sa časom stupňujú.' ),
-  array( 'questioon' => 'Je bezpečný pre citlivú pleť alebo pleť náchylnú na akné?', 'answer' => 'Určite. NORIKS HERS je hypoalergénny, bez latexu a dostatočne jemný na citlivé oblasti, ako je okolie očí či úst, a dokonca aj na hojace sa stopy po akné. Ak máte veľmi reaktívnu pokožku, vždy najprv otestujte na malej ploche.' ),
-  array( 'questioon' => 'Ako dlho ho môžem nosiť?', 'answer' => 'Pre najlepšie výsledky odporúčame nosiť NORIKS HERS 6 – 8 hodín, cez noc. Môžete ho použiť aj cez deň — len dbajte na to, aby bola pokožka pod ním čistá a bez olejov či sér.' ),
-  array( 'questioon' => 'Ako dlho vydrží jedna rolka?', 'answer' => 'V závislosti od toho, ako často a kde ho používate, jedna rolka vydrží 3 – 6 týždňov. Keďže je opakovane použiteľný, je oveľa hospodárnejší ako jednorazové náplasti alebo krémy.' ),
-  array( 'questioon' => 'Zostane na mieste, kým spím?', 'answer' => 'Áno! NORIKS HERS je vyrobený s pokožke priateľským, odolným lepidlom, ktoré kopíruje vaše pohyby. Je priedušný a zostane na mieste aj u ľudí, ktorí spia na boku.' ),
-  array( 'questioon' => 'Na ktorých oblastiach ho môžem používať?', 'answer' => 'Kdekoľvek! Väčšina zákazníkov používa NORIKS HERS na: vrásky na čele, vrásky medzi obočím, vrásky od úsmevu, vrásky na krku, stopy po akné, jazvy po cisárskom reze, strie, chirurgické alebo poúrazové jazvy.' ),
-  array( 'questioon' => 'Prečo je NORIKS HERS lepší ako lacné online náplasti?', 'answer' => 'Mnohé náplasti predávané online sú nekvalitné, tenké alebo majú zlé lepidlo. NORIKS HERS používa prémiový silikón, testovaný v laboratóriu na bezpečnosť a odolnosť, a drží na mieste celú noc. Navyše ponúkame dedikovanú zákaznícku podporu a rýchlejšiu výmenu, ak potrebujete pomoc.' ),
-  array( 'questioon' => 'Je k dispozícii záruka vrátenia peňazí?', 'answer' => 'Áno, ponúkame 30-dňovú záruku bez rizika. Ak nie ste spokojní, stačí nás kontaktovať a vyriešime to.' ),
+  array( 'questioon' => 'По какво се различава от обикновените лепенки за бръчки или кремовете за белези?', 'answer' => 'Повечето лепенки за бръчки са от хартия или хидроколоид, а кремовете за белези често остават само на повърхността на кожата. NORIKS HERS използва силикон с клинично качество, на който дерматолозите разчитат от години за видимо подобряване на текстурата на белезите и еластичността на кожата — а сега се използва и за намаляване на бръчките.' ),
+  array( 'questioon' => 'Може ли една лепенка наистина да действа и върху бръчки, и върху белези?', 'answer' => 'Да, защото и бръчките, и белезите са проява на разпад на колаген или слабо възстановяване на кожата. Силиконът подпомага задържането на влага, възстановяването на колагена и изглаждането на текстурата на кожата, което е от полза за двете.' ),
+  array( 'questioon' => 'След колко време ще видя резултати?', 'answer' => 'Повечето потребители забелязват видимо изглаждане на фините бръчки още след 1 – 3 употреби, а видът на белезите се подобрява за 2 – 3 седмици редовна употреба. По-дълбоките белези и бръчки може да отнемат повече време, но резултатите се натрупват.' ),
+  array( 'questioon' => 'Безопасна ли е за чувствителна или склонна към акне кожа?', 'answer' => 'Определено. NORIKS HERS е хипоалергенна, без латекс и достатъчно нежна за чувствителни зони като около очите и устата, и дори за заздравяващи следи от акне. Ако кожата ви е много реактивна, винаги тествайте първо на малък участък.' ),
+  array( 'questioon' => 'Колко дълго мога да я нося?', 'answer' => 'За най-добри резултати препоръчваме да носите NORIKS HERS 6 – 8 часа, през нощта. Може да я използвате и през деня — само се погрижете кожата под нея да е чиста и без масла или серуми.' ),
+  array( 'questioon' => 'Колко време стига едно руло?', 'answer' => 'В зависимост от това колко често и къде я използвате, едно руло стига за 3 – 6 седмици. Тъй като е многократна, е много по-икономична от еднократните лепенки или кремове.' ),
+  array( 'questioon' => 'Ще остане ли на място, докато спя?', 'answer' => 'Да! NORIKS HERS е направена с приятелско към кожата, издръжливо лепило, което следва движенията ви. Дишаща е и остава на място дори при хора, които спят на една страна.' ),
+  array( 'questioon' => 'На кои зони мога да я използвам?', 'answer' => 'Навсякъде! Повечето клиенти използват NORIKS HERS за: бръчки на челото, бръчки между веждите, бръчки от усмивка, бръчки на шията, следи от акне, белези от цезарово сечение, стрии, хирургични или следтравмени белези.' ),
+  array( 'questioon' => 'Защо NORIKS HERS е по-добра от евтините лепенки онлайн?', 'answer' => 'Много лепенки, продавани онлайн, са с ниско качество, тънки или с лошо лепило. NORIKS HERS използва премиум силикон, тестван в лаборатория за безопасност и издръжливост, и държи на място цяла нощ. Освен това предлагаме отделна клиентска поддръжка и по-бърза замяна, ако ви е нужна помощ.' ),
+  array( 'questioon' => 'Има ли гаранция за връщане на парите?', 'answer' => 'Да, предлагаме 30-дневна гаранция без риск. Ако не сте доволни, просто се свържете с нас и ще го решим.' ),
 );
 
-// Korektor vbočeného palca — FAQ o produkte (preklad, NORIKS).
+// Коректор за изкривен палец — FAQ за продукта (NORIKS).
 $bunion_faq = array(
-  array( 'questioon' => 'Ako rýchlo sa budem cítiť lepšie?', 'answer' => 'Približne 30 minút — toľko času je potrebné na zmiernenie nepohodlia. Pri pravidelnom používaní počas dvoch týždňov pocítite výrazné uľavenie pri každodenných činnostiach, ako sú chôdza, státie alebo spánok.' ),
-  array( 'questioon' => 'Ako rýchlo si všimnem rozdiel na vbočenom palci?', 'answer' => 'V závislosti od závažnosti vbočeného palca si väčšina zákazníkov všimne viditeľné zlepšenie po 4 – 8 týždňoch. Mierny vbočený palec: 4 týždne. Stredný vbočený palec: 4 týždne. Ťažší vbočený palec: 8 týždňov.' ),
-  array( 'questioon' => 'Dá sa nosiť v topánkach? Môžem v ňom chodiť?', 'answer' => 'Nie, do topánky sa nezmestí. Áno, môžete v ňom chodiť. Je však určený na oddych — keď ležíte na gauči, pozeráte TV, čítate alebo spíte.' ),
-  array( 'questioon' => 'Čo ak mi to bude nepríjemné?', 'answer' => 'To je úplne normálne! Korektor NORIKS je navrhnutý dostatočne pevne na to, aby zarovnal kĺb palca, zastavil zápal a zmiernil nepohodlie. Možno budete potrebovať 1 – 2 sedenia, aby ste si zvykli, potom sa však budete cítiť oveľa lepšie!' ),
-  array( 'questioon' => 'Ako dlho ho mám používať?', 'answer' => 'Odporúčame začať s 30 minútami denne a postupne predlžovať až na sedenie 1 až 3 hodiny. Keď vám to bude pohodlné, môžete ho začať nosiť aj počas spánku. Noste ho počas oddychu — na gauči, pri TV, čítaní alebo spánku.' ),
-  array( 'questioon' => 'Pomôže pri mojom konkrétnom stave?', 'answer' => 'Korektor NORIKS je ideálny na: zmiernenie nepohodlia, ktoré ovplyvňuje každodenné činnosti ako chôdza alebo státie; úľavu od nepohodlia spôsobeného vbočeným palcom počas oddychu alebo spánku; riešenie vbočeného palca v skorej fáze, ktorý môže postupovať; vbočený palec, ktorý sa vrátil po operácii; pomoc pri ťažšom vbočenom palci pripravenom na operáciu; a ako účinnú nechirurgickú možnosť.' ),
-  array( 'questioon' => 'Bude vyhovovať môjmu chodidlu? Existuje ľavá a pravá strana?', 'answer' => 'Bez ohľadu na veľkosť chodidla — od najmenšieho detského po veľké chodidlo dospelého — korektor NORIKS pohodlne padne. Nie sú strany! Vďaka prispôsobiteľnej konštrukcii sa rovnako ľahko prispôsobí ľavému aj pravému chodidlu.' ),
+  array( 'questioon' => 'Колко бързо ще се почувствам по-добре?', 'answer' => 'Около 30 минути — толкова време е нужно за облекчаване на дискомфорта. При редовна употреба в рамките на две седмици ще усетите значително облекчение при всекидневни дейности като ходене, стоене или сън.' ),
+  array( 'questioon' => 'Колко бързо ще забележа разлика в изкривения палец?', 'answer' => 'В зависимост от тежестта на изкривяването повечето клиенти забелязват видимо подобрение след 4 – 8 седмици. Леко изкривяване: 4 седмици. Средно изкривяване: 4 седмици. По-тежко изкривяване: 8 седмици.' ),
+  array( 'questioon' => 'Може ли да се носи в обувки? Мога ли да ходя с него?', 'answer' => 'Не, в обувка не влиза. Да, може да ходите с него. Предназначен е обаче за почивка — когато лежите на дивана, гледате телевизия, четете или спите.' ),
+  array( 'questioon' => 'А ако ми е неприятно?', 'answer' => 'Това е напълно нормално! Коректорът NORIKS е създаден достатъчно стабилен, за да изправи ставата на палеца, да спре възпалението и да облекчи дискомфорта. Може да са ви нужни 1 – 2 сесии, за да свикнете, но след това ще се чувствате много по-добре!' ),
+  array( 'questioon' => 'Колко дълго да го използвам?', 'answer' => 'Препоръчваме да започнете с 30 минути дневно и постепенно да удължавате до сесия от 1 до 3 часа. Когато ви стане удобно, може да започнете да го носите и докато спите. Носете го по време на почивка — на дивана, пред телевизора, при четене или сън.' ),
+  array( 'questioon' => 'Ще помогне ли при моето конкретно състояние?', 'answer' => 'Коректорът NORIKS е идеален за: облекчаване на дискомфорта, който пречи на всекидневни дейности като ходене или стоене; облекчение от дискомфорта, причинен от изкривен палец, по време на почивка или сън; овладяване на изкривен палец в ранна фаза, който може да напредне; изкривен палец, който се е върнал след операция; помощ при по-тежко изкривяване, готово за операция; и като ефективна нехирургична възможност.' ),
+  array( 'questioon' => 'Ще пасне ли на моето стъпало? Има ли лява и дясна страна?', 'answer' => 'Независимо от размера на стъпалото — от най-малкото детско до голямо стъпало на възрастен — коректорът NORIKS пасва удобно. Няма страни! Благодарение на нагласящата се конструкция се приспособява еднакво лесно към лявото и към дясното стъпало.' ),
 );
 
-// Ortopedický pás — FAQ o produkte (preklad, NORIKS).
+// Ортопедичен колан — FAQ за продукта (NORIKS).
 $ortopas_faq = array(
-  array( 'questioon' => 'Ako rýchlo pocítim úľavu od bolesti?', 'answer' => 'Mnohí používatelia pocítia badateľnú úľavu od išiasu a bolestí krížov hneď po nasadení pásu NORIKS. Jeho cielená kompresia poskytuje okamžitú oporu, stabilizuje chrbticu a znižuje tlak na nervy. Pre dlhotrvajúci účinok odporúčame nosiť pás dôsledne podľa návodu aspoň dva týždne. Postupom času môžete pri správnom používaní a zdravých návykoch pocítiť trvalú úľavu a lepšiu pohyblivosť.' ),
-  array( 'questioon' => 'Ako pás správne nasadiť?', 'answer' => 'Pás NORIKS noste okolo bokov, tesne pod líniou pása. Mal by sa nachádzať nad krížovou oblasťou (drieková časť chrbta, tesne nad zadkom) a pod hrebeňom panvy (horná časť bočných bokov). Pre viac informácií si pozrite návod na použitie.' ),
-  array( 'questioon' => 'Oslabí pás moje svaly?', 'answer' => 'Nie, pás NORIKS neoslabuje svaly ako korzet na chrbát. Len pomáha držať SI kĺby pohromade a obnovuje normálne napätie väzov. Môžete ho nosiť týždne alebo mesiace bez obáv zo svalovej atrofie.' ),
-  array( 'questioon' => 'Môžem pás nosiť aj počas spánku?', 'answer' => 'Áno, pás môžete nosiť aj v noci. Dĺžka nosenia nie je obmedzená a dlhšie nosenie nemá negatívne účinky.' ),
-  array( 'questioon' => 'Ako tesne ho mám nasadiť?', 'answer' => 'Pás by mal tesne priliehať, ale nie príliš tesne, aby ste sa vyhli nepohodliu. Mali by ste sa bez problémov hýbať bez toho, aby sa pás zarezával alebo šmýkal. Napätie sa jednoducho nastavuje elastickými pásikmi.' ),
-  array( 'questioon' => 'Komu ho odporúčate?', 'answer' => 'Všetkým, ktorí zápasia s bolesťami krížov, išiasom, svalovým napätím, prietržou medzistavcovej platničky, bolesťami bokov alebo panvy a problémami so SI kĺbom. Bez ohľadu na vek, pohlavie, výšku a hmotnosť.' ),
-  array( 'questioon' => 'Existuje záruka vrátenia peňazí?', 'answer' => 'Ponúkame záruku spokojnosti! Ak nie ste s pásom NORIKS spokojní, kontaktujte nás na info@noriks.com za účelom vrátenia a preplatenia do 30 dní. Lehota sa počíta od prevzatia pásu.' ),
+  array( 'questioon' => 'Колко бързо ще усетя облекчение на болката?', 'answer' => 'Много потребители усещат забележимо облекчение на ишиаса и болките в кръста веднага след поставянето на колана NORIKS. Прицелената му компресия дава незабавна опора, стабилизира гръбнака и намалява натиска върху нервите. За траен ефект препоръчваме да носите колана последователно според указанията поне две седмици. С времето, при правилна употреба и здрави навици, може да усетите трайно облекчение и по-добра подвижност.' ),
+  array( 'questioon' => 'Как се поставя коланът правилно?', 'answer' => 'Носете колана NORIKS около бедрата, точно под линията на талията. Трябва да се намира над кръстната област (долната част на гърба, точно над седалището) и под гребена на таза (горната част на страничните бедра). За повече информация вижте инструкциите за употреба.' ),
+  array( 'questioon' => 'Ще отслаби ли коланът мускулите ми?', 'answer' => 'Не, коланът NORIKS не отслабва мускулите като корсет за гърба. Той само помага да задържи сакроилиачните стави заедно и възстановява нормалното напрежение на връзките. Може да го носите седмици или месеци без опасения от мускулна атрофия.' ),
+  array( 'questioon' => 'Мога ли да нося колана и докато спя?', 'answer' => 'Да, може да носите колана и през нощта. Продължителността на носене не е ограничена и по-дългото носене няма отрицателни ефекти.' ),
+  array( 'questioon' => 'Колко стегнато да го поставя?', 'answer' => 'Коланът трябва да прилепва плътно, но не прекалено стегнато, за да избегнете дискомфорт. Трябва да можете да се движите без проблем, без коланът да се врязва или да се плъзга. Напрежението се настройва лесно с еластичните ленти.' ),
+  array( 'questioon' => 'На кого го препоръчвате?', 'answer' => 'На всички, които се борят с болки в кръста, ишиас, мускулно напрежение, дискова херния, болки в бедрата или таза и проблеми със сакроилиачната става. Независимо от възраст, пол, височина и тегло.' ),
+  array( 'questioon' => 'Има ли гаранция за връщане на парите?', 'answer' => 'Предлагаме гаранция за удовлетвореност! Ако не сте доволни от колана NORIKS, свържете се с нас на info@noriks.com за връщане и възстановяване в рамките на 30 дни. Срокът се брои от получаването на колана.' ),
 );
 
-// NeckRelax — FAQ o produkte (preklad, NORIKS).
+// NeckRelax — FAQ за продукта (NORIKS).
 $fisiorest_faq = array(
-  array( 'questioon' => 'Ako NORIKS NeckRelax funguje?', 'answer' => 'NeckRelax spája trakciu, teplo a vibračnú masáž s ergonomickou konštrukciou z pamäťovej peny. Táto technológia naťahuje krk pod presne správnym uhlom a odľahčuje krčnú chrbticu. Následne upokojujúca teplá masáž podporí prítok krvi bohatej na kyslík a živiny do svalov a tak pomáha pri regenerácii tkanív.' ),
-  array( 'questioon' => 'V čom je NeckRelax lepší ako iné zariadenia?', 'answer' => 'NORIKS NeckRelax je výnimočný, pretože spája <strong>tri terapie v jednej</strong> — teplo, masáž a jemnú trakciu — ktoré uvoľnia svaly a znovu zarovnajú krk pre dlhotrvajúcu úľavu. Navyše je <strong>bezdrôtový, bezpečný na spánok a obalený v chladivom hodvábe</strong> pre pohodlie, aké inde nenájdete.' ),
-  array( 'questioon' => 'Ako sa NeckRelax používa?', 'answer' => '1. Nabite ho priloženým USB-C káblom a nabíjačkou približne 4 až 6 hodín. 2. Podržte tlačidlo masáže alebo tepla 5 sekúnd, kým sa nerozsvieti kontrolka. 3. Opätovným stláčaním tlačidiel meníte rýchlosť masáže a nastavenia tepla. 4. Užívajte si uvoľňujúcu masáž!' ),
-  array( 'questioon' => 'Ako dlho mám NeckRelax používať?', 'answer' => 'Odporúčame začať s 15 minútami, aby si krk zvykol. Postupom času môžete prejsť na plné sedenie. Pre orientáciu: cyklus jemného tepla, masáže a trakcie trvá 30 minút, čo je zvyčajne ideálny čas na to, aby sa krk uvoľnil a obnovil svoju prirodzenú krivku.' ),
-  array( 'questioon' => 'Je NeckRelax bezdrôtový?', 'answer' => 'Áno! NORIKS NeckRelax je úplne bezdrôtový a nabíjateľný na každodenné používanie.' ),
-  array( 'questioon' => 'Ako sa NeckRelax čistí?', 'answer' => 'Látka je odolná voči olejom a prachu, no odporúčame NeckRelax po použití utrieť dezinfekčnou utierkou, keďže poťah vankúša nie je možné prať.' ),
-  array( 'questioon' => 'Je bezpečný pre každého?', 'answer' => 'NORIKS NeckRelax je navrhnutý tak, aby vyhovoval každému bez ohľadu na vek alebo pohlavie. Každá situácia je však iná. Pre podrobné pokyny prispôsobené vašim potrebám odporúčame konzultáciu s lekárom.' ),
-  array( 'questioon' => 'Môžem ho vrátiť, ak nevidím výsledky?', 'answer' => 'Samozrejme! Poskytujeme plnú záruku vrátenia peňazí do 30 dní od doručenia, ak nie ste s produktom spokojní. Napíšte nám na info@noriks.com a odpovieme do 12 hodín od prijatia správy!' ),
+  array( 'questioon' => 'Как работи NORIKS NeckRelax?', 'answer' => 'NeckRelax съчетава тракция, топлина и вибрационен масаж с ергономична конструкция от пяна с памет. Тази технология разтяга шията под точно правилния ъгъл и разтоварва шийния отдел на гръбнака. След това успокояващият топъл масаж подпомага притока на богата на кислород и хранителни вещества кръв към мускулите и така помага при възстановяването на тъканите.' ),
+  array( 'questioon' => 'С какво NeckRelax е по-добър от други устройства?', 'answer' => 'NORIKS NeckRelax е изключителен, защото съчетава <strong>три терапии в една</strong> — топлина, масаж и лека тракция — които отпускат мускулите и отново подреждат шията за трайно облекчение. Освен това е <strong>безжичен, безопасен за сън и обвит в хладен сатен</strong> за комфорт, какъвто другаде няма да намерите.' ),
+  array( 'questioon' => 'Как се използва NeckRelax?', 'answer' => '1. Заредете го с включения USB-C кабел и зарядно за около 4 до 6 часа. 2. Задръжте бутона за масаж или топлина 5 секунди, докато светне индикаторът. 3. С повторно натискане на бутоните сменяте скоростта на масажа и настройките на топлината. 4. Насладете се на отпускащия масаж!' ),
+  array( 'questioon' => 'Колко дълго да използвам NeckRelax?', 'answer' => 'Препоръчваме да започнете с 15 минути, за да свикне шията. С времето може да преминете към пълна сесия. За ориентир: цикълът с лека топлина, масаж и тракция продължава 30 минути, което обикновено е идеалното време шията да се отпусне и да възстанови естествената си кривина.' ),
+  array( 'questioon' => 'Безжичен ли е NeckRelax?', 'answer' => 'Да! NORIKS NeckRelax е напълно безжичен и презареждащ се за всекидневна употреба.' ),
+  array( 'questioon' => 'Как се чисти NeckRelax?', 'answer' => 'Платът е устойчив на масла и прах, но препоръчваме да избършете NeckRelax след употреба с дезинфекцираща кърпичка, тъй като калъфът на възглавницата не може да се пере.' ),
+  array( 'questioon' => 'Безопасен ли е за всеки?', 'answer' => 'NORIKS NeckRelax е създаден така, че да е подходящ за всеки, независимо от възраст или пол. Всяка ситуация обаче е различна. За подробни указания според вашите нужди препоръчваме консултация с лекар.' ),
+  array( 'questioon' => 'Мога ли да го върна, ако не виждам резултати?', 'answer' => 'Разбира се! Даваме пълна гаранция за връщане на парите в рамките на 30 дни от доставката, ако не сте доволни от продукта. Пишете ни на info@noriks.com и ще отговорим в рамките на 12 часа от получаване на съобщението!' ),
 );
 
 // Nahrádza LEN kontajner FAQ o produkte pre 3 orto-produkty;
 // kontajnery doručenia/vrátenia zostávajú nedotknuté.
 $controlpro_faq = array(
-  array( 'questioon' => 'Ako sa používa?', 'answer' => 'Sadnite si na stoličku, prístroj vložte <strong>medzi kolená</strong> a stláčajte proti odporu. Odporúčame <strong>3 série po 10 opakovaní denne</strong>, čo trvá približne päť minút.' ),
-  array( 'questioon' => 'Treba niečo zavádzať?', 'answer' => 'Nie. Žiadne sondy, žiadne zavádzanie. Prístroj pracuje <strong>mimo tela</strong>.' ),
-  array( 'questioon' => 'Kedy môžem čakať výsledky?', 'answer' => 'Väčšina používateľov hlási prvé zmeny po <strong>3 až 6 týždňoch</strong> pravidelného cvičenia.' ),
-  array( 'questioon' => 'Potrebuje batérie alebo aplikáciu?', 'answer' => 'Nie. Prístroj je plne mechanický — bez batérií, káblov a aplikácie. Má len <strong>počítadlo opakovaní</strong>.' ),
-  array( 'questioon' => 'Čím sa líši od EMS prístrojov?', 'answer' => 'EMS prístroje stiahnu sval za vás. ControlPro vyžaduje, aby ste <strong>prácu urobili sami</strong> proti skutočnému odporu.' ),
-  array( 'questioon' => 'Je vhodný po operácii prostaty?', 'answer' => 'Áno, mnohí ho používajú práve po operácii prostaty. Ak ste v rekonvalescencii, poraďte sa najprv s lekárom.' ),
-  array( 'questioon' => 'Ako sa čistí?', 'answer' => 'Utrite vlhkou handričkou s jemným čistiacim prostriedkom. Neponárajte do vody.' ),
-  array( 'questioon' => 'Aké je doručenie?', 'answer' => 'Doručenie je <strong>diskrétne</strong>, v neutrálnej krabici bez označenia obsahu.' ),
-  array( 'questioon' => 'Môžem ho vrátiť?', 'answer' => 'Áno, máte <strong>30 dní</strong> na vrátenie peňazí. Stačí e-mail, bez formulárov.' ),
+  array( 'questioon' => 'Как се използва?', 'answer' => 'Седнете на стол, поставете уреда <strong>между коленете</strong> и натискайте срещу съпротивлението. Препоръчваме <strong>3 серии по 10 повторения дневно</strong>, което отнема около пет минути.' ),
+  array( 'questioon' => 'Трябва ли да се въвежда нещо?', 'answer' => 'Не. Никакви сонди, никакво въвеждане. Уредът работи <strong>извън тялото</strong>.' ),
+  array( 'questioon' => 'Кога да очаквам резултати?', 'answer' => 'Повечето потребители съобщават за първи промени след <strong>3 до 6 седмици</strong> редовни упражнения.' ),
+  array( 'questioon' => 'Нужни ли са батерии или приложение?', 'answer' => 'Не. Уредът е напълно механичен — без батерии, кабели и приложение. Има само <strong>брояч на повторения</strong>.' ),
+  array( 'questioon' => 'С какво се различава от EMS уредите?', 'answer' => 'EMS уредите свиват мускула вместо вас. ControlPro изисква <strong>вие да свършите работата</strong> срещу истинско съпротивление.' ),
+  array( 'questioon' => 'Подходящ ли е след операция на простатата?', 'answer' => 'Да, мнозина го използват точно след операция на простатата. Ако сте във възстановителен период, консултирайте се първо с лекар.' ),
+  array( 'questioon' => 'Как се чисти?', 'answer' => 'Избършете с влажна кърпа и мек почистващ препарат. Не потапяйте във вода.' ),
+  array( 'questioon' => 'Каква е доставката?', 'answer' => 'Доставката е <strong>дискретна</strong>, в неутрална кутия без обозначение на съдържанието.' ),
+  array( 'questioon' => 'Мога ли да го върна?', 'answer' => 'Да, имате <strong>30 дни</strong> за връщане на парите. Достатъчен е имейл, без формуляри.' ),
 );
 
 $is_cloath_faq = ( function_exists('noriks_is_type') && noriks_is_type('cloath') );
 $cloath_faq = array(
   array(
-    'questioon' => 'Čo ak nebudem s nákupom spokojný?',
-    'answer'    => 'Máte 30 dní na to, aby ste handričku vyskúšali bez rizika. Ak nie ste s výsledkom spokojní, napíšte našej podpore a vrátime vám peniaze — bez papierovania a bez vysvetľovania.',
+    'questioon' => 'А ако не съм доволен от покупката?',
+    'answer'    => 'Имате 30 дни да изпробвате кърпата без риск. Ако не сте доволни от резултата, пишете на нашата поддръжка и ще ви върнем парите — без документи и без обяснения.',
   ),
   array(
-    'questioon' => 'Z čoho je handrička vyrobená?',
-    'answer'    => 'Z hustej mikrovláknovej tkaniny s obojstranným dizajnom: chlpatá strana zbiera nečistoty a vodu, sieťkovaná leští do lesku. Okraj je spevnený mäkkým lemom, ktorý nepoškriabe.',
+    'questioon' => 'От какво е изработена кърпата?',
+    'answer'    => 'От плътен микрофибърен плат с двустранен дизайн: влакнестата страна събира мръсотията и водата, а мрежестата полира до блясък. Ръбът е подсилен с мек кант, който не драска.',
   ),
   array(
-    'questioon' => 'Prečo je drahšia než bežné handričky?',
-    'answer'    => 'Pretože je hustejšia a ťažšia než štandardná mikrovlákna — nasaje mnohonásobne viac vody, nepúšťa vlákna a vydrží stovky praní. Jedna nahradí celý rad lacných, ktoré sa po pár praniach začnú strapkať.',
+    'questioon' => 'Защо е по-скъпа от обикновените кърпи?',
+    'answer'    => 'Защото е по-плътна и по-тежка от стандартния микрофибър — поема многократно повече вода, не пуска влакна и издържа стотици пранета. Една заменя цяла редица евтини, които след няколко пранета започват да се разнищват.',
   ),
   array(
-    'questioon' => 'Ako dlho vydrží v porovnaní s bežnými?',
-    'answer'    => 'Pri správnej starostlivosti vydrží stovky použití. Handričky z obchodu zvyčajne po asi 20 praniach stratia hustotu a začnú zanechávať šmuhy.',
+    'questioon' => 'Колко дълго издържа в сравнение с обикновените?',
+    'answer'    => 'При правилна грижа издържа стотици употреби. Кърпите от магазина обикновено след около 20 пранета губят плътност и започват да оставят следи.',
   ),
   array(
-    'questioon' => 'Zanecháva šmuhy alebo škvrny?',
-    'answer'    => 'Nie. Vďaka hustote a obojstrannému dizajnu sa voda nasaje namiesto rozotierania, takže sklo a zrkadlá zostanú bez šmúh — a bez vlákien.',
+    'questioon' => 'Оставя ли следи или петна?',
+    'answer'    => 'Не. Благодарение на плътността и двустранния дизайн водата се поема, вместо да се размазва, така че стъклата и огледалата остават без следи — и без влакна.',
   ),
   array(
-    'questioon' => 'Ako ju najlepšie prať?',
-    'answer'    => 'V práčke na 40 °C, s pracím prostriedkom bez aviváže (aviváž upchá vlákna a zníži nasiakavosť). Nepoužívajte bielidlo a nesušte v sušičke — sušte na vzduchu.',
+    'questioon' => 'Как е най-добре да се пере?',
+    'answer'    => 'В пералня на 40 °C, с перилен препарат без омекотител (омекотителят запушва влакната и намалява поемаемостта). Не използвайте белина и не сушете в сушилня — сушете на въздух.',
   ),
   array(
-    'questioon' => 'Prečo handrička na niektorých záberoch vyzerá tmavšie?',
-    'answer'    => 'Kvôli osvetleniu. Handrička je tmavosivá s čiernym lemom; pri silnom svetle pôsobí svetlejšie a v interiéri tmavšie.',
+    'questioon' => 'Защо на някои снимки кърпата изглежда по-тъмна?',
+    'answer'    => 'Заради осветлението. Кърпата е тъмносива с черен кант; при силна светлина изглежда по-светла, а на закрито по-тъмна.',
   ),
   array(
-    'questioon' => 'Je vhodná ako darček?',
-    'answer'    => 'Áno — balenia 3+3 a 8+4 patria medzi najčastejšie darčeky k nasťahovaniu a na sviatky. Handrička prichádza pekne zložená a pripravená na darovanie.',
+    'questioon' => 'Подходяща ли е за подарък?',
+    'answer'    => 'Да — пакетите 3+3 и 8+4 са сред най-честите подаръци за нов дом и за празници. Кърпата идва прегъната и готова за подаряване.',
   ),
 );
 
