@@ -1,23 +1,23 @@
 <?php
-// Review pool for NORIKS HERS — silikónové kolagénové pásiky na vrásky a jazvy.
-// Text-only (no images), Slovak.
+// Review pool for NORIKS HERS — silikonske kolagenske lepilne trakove za gube in brazgotine.
+// Text-only (no images), Bulgarian.
 $auto_reviews_en = array(
-    array("name" => "Ивана К.",    "text" => "Už po prvej noci bola pokožka na čele viditeľne hladšia. Pásik nosím cez noc a ráno sú vrásky medzi obočím oveľa menej výrazné. Konečne niečo, čo naozaj funguje bez ihiel."),
-    array("name" => "Мария П.",    "text" => "Mala som jazvu po cisárskom reze, ktorá ma trápila roky. Po niekoľkých týždňoch pravidelného používania je pokožka mäkšia a jazva svetlejšia a plochšia. Som nadšená."),
-    array("name" => "Петра С.",    "text" => "Skúšala som drahé krémy a nič nepomohlo tak ako toto. Silikón naozaj udrží vlhkosť, pokožka je oddýchnutejšia a jasnejšia. Pásik drží celú noc."),
-    array("name" => "Анна М.",     "text" => "Jemné na citlivú pokožku, nepáli a nečervenie ako retinol. Používam okolo očí a vrásky sú viditeľne mäkšie. Odporúčam všetkým, čo sa boja botoxu."),
-    array("name" => "Соня Т.",     "text" => "Používam ho na vrásky od úsmevu a stopy po akné. Po 3 týždňoch je pokožka jednotnejšia a jemné vrásky sa vyhladili. Oplatí sa každé euro."),
-    array("name" => "Никола Р.",   "text" => "Pásik sa ľahko odstrihne na požadovanú veľkosť a dokonale prilne. Spím na boku a ostane na mieste do rána. Viditeľný rozdiel už po pár použitiach."),
-    array("name" => "Мартина Б.",  "text" => "Manžel sa ma pýtal, či som bola na procedúre, lebo mi pokožka vyzerala oddýchnutejšie. Iba NORIKS HERS cez noc. Bez ihiel, bez bolesti, bez stresu."),
-    array("name" => "Катерина Д.", "text" => "Pre mňa najlepšia alternatíva botoxu. Vrásky na čele sa uvoľnili, pokožka je pevnejšia. Jedna rolka vydrží týždne, takže je aj výhodná."),
-    array("name" => "Дора Л.",     "text" => "Mám citlivú pokožku a bála som sa podráždenia, ale nič. Je hypoalergénna a príjemná. Jazva po operácii je oveľa menej viditeľná."),
-    array("name" => "Яна В.",     "text" => "Výsledky sa budujú postupne. Najprv zmizli drobné vrásky a potom aj hlbšie vrásky zmäkli. Používam ho pravidelne večer."),
-    array("name" => "Тереза К.",   "text" => "Konečne produkt, ktorý nesľubuje zázraky, ale naozaj funguje. Pokožka je hydratovaná a hladšia. Pásiky nie sú počas spánku vidieť, úplne diskrétne."),
-    array("name" => "Лилия М.",    "text" => "Používam na strie po tehotenstve a vidím postupné zlepšenie textúry pokožky. Trpezlivosť a dôslednosť sú kľúčové, ale stojí to za to."),
-    array("name" => "Мария Х.",    "text" => "Kúpila som zo zvedavosti a teraz to neviem prestať používať. Vrásky medzi obočím sa zmiernili, pokožka vyzerá mladšie. Odporúčam."),
-    array("name" => "Ивета П.",    "text" => "Silikónové pásiky, ktoré naozaj držia. Ľahko sa strihajú, výborne priľnú a cez noc ich necítiť. Pokožka je ráno hladká ako nikdy."),
-    array("name" => "Валентина С.","text" => "Kamarátka mi ho odporučila a neľutujem. Jemné vrásky okolo úst sú po dvoch týždňoch viditeľne mäkšie. Bez akéhokoľvek podráždenia."),
-    array("name" => "Кристина Н.", "text" => "Diskrétne, jednoduché a účinné. Nosím ho 6-7 hodín cez noc. Pokožka je pevnejšia a jasnejšia a jazvy blednú. Skvelý produkt."),
-    array("name" => "Андреа Т.",   "text" => "Na rozdiel od náplastí z internetu, ktoré som skúšala, táto je kvalitná a drží celú noc. Výsledky na vráskach sú skutočné. Objednávam znova."),
-    array("name" => "Барбара Г.",  "text" => "Po štyridsiatke pokožka stratila pevnosť a toto naozaj pomohlo. Vrásky sú menšie, pokožka napnutejšia a hydratovanejšia. Stalo sa to súčasťou mojej večernej rutiny."),
+    array("name" => "Ивана К.",    "text" => "Още след първата нощ кожата на челото беше видимо по-гладка. Нося лепенката през нощта и сутрин бръчките между веждите са много по-слабо изразени. Най-накрая нещо, което наистина работи без игли."),
+    array("name" => "Мария П.",    "text" => "Имах белег от цезарово сечение, който ме мъчеше години. След няколко седмици редовна употреба кожата е по-мека, а белегът по-светъл и по-плосък. Във възторг съм."),
+    array("name" => "Петра С.",    "text" => "Пробвала съм скъпи кремове и нищо не помогна като това. Силиконът наистина задържа влагата, кожата е по-отпочинала и по-свежа. Лепенката държи цяла нощ."),
+    array("name" => "Анна М.",     "text" => "Нежна за чувствителна кожа, не пари и не зачервява като ретинола. Използвам я около очите и бръчките са видимо по-меки. Препоръчвам на всички, които се страхуват от ботокс."),
+    array("name" => "Соня Т.",     "text" => "Използвам я за бръчките от усмивка и следите от акне. След 3 седмици кожата е по-равномерна, а фините бръчки се изгладиха. Струва си всяко евро."),
+    array("name" => "Никола Р.",   "text" => "Лепенката се отрязва лесно до нужния размер и прилепва идеално. Спя на една страна и остава на място до сутринта. Видима разлика още след няколко употреби."),
+    array("name" => "Мартина Б.",  "text" => "Мъжът ми ме попита дали съм била на процедура, защото кожата ми изглеждаше по-отпочинала. Само NORIKS HERS през нощта. Без игли, без болка, без стрес."),
+    array("name" => "Катерина Д.", "text" => "За мен най-добрата алтернатива на ботокса. Бръчките на челото се отпуснаха, кожата е по-стегната. Едно руло стига за седмици, така че е и изгодно."),
+    array("name" => "Дора Л.",     "text" => "Имам чувствителна кожа и се страхувах от раздразнение, но нищо. Хипоалергенна е и приятна. Белегът от операция е много по-малко видим."),
+    array("name" => "Яна В.",     "text" => "Резултатите се натрупват постепенно. Първо изчезнаха дребните бръчки, а после и по-дълбоките омекнаха. Използвам я редовно вечер."),
+    array("name" => "Тереза К.",   "text" => "Най-накрая продукт, който не обещава чудеса, а наистина работи. Кожата е хидратирана и по-гладка. Лепенките не се виждат по време на сън, напълно дискретни."),
+    array("name" => "Лилия М.",    "text" => "Използвам я за стрии след бременност и виждам постепенно подобрение в текстурата на кожата. Търпението и последователността са ключови, но си заслужава."),
+    array("name" => "Мария Х.",    "text" => "Купих я от любопитство и сега не мога да спра да я използвам. Бръчките между веждите намаляха, кожата изглежда по-млада. Препоръчвам."),
+    array("name" => "Ивета П.",    "text" => "Силиконови лепенки, които наистина държат. Отрязват се лесно, прилепват отлично и през нощта не се усещат. Кожата е сутрин гладка както никога."),
+    array("name" => "Валентина С.","text" => "Приятелка ми я препоръча и не съжалявам. Фините бръчки около устата след две седмици са видимо по-меки. Без никакво раздразнение."),
+    array("name" => "Кристина Н.", "text" => "Дискретна, лесна и ефективна. Нося я 6-7 часа през нощта. Кожата е по-стегната и по-свежа, а белезите избледняват. Страхотен продукт."),
+    array("name" => "Андреа Т.",   "text" => "За разлика от лепенките от интернет, които съм пробвала, тази е качествена и държи цяла нощ. Резултатите върху бръчките са истински. Поръчвам отново."),
+    array("name" => "Барбара Г.",  "text" => "След четиридесетте кожата изгуби стегнатостта си и това наистина помогна. Бръчките са по-малки, кожата по-опъната и по-хидратирана. Стана част от вечерната ми рутина."),
 );
