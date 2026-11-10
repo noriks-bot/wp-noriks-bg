@@ -15,25 +15,25 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
 <section class="lbx-sec lbx-reason">
   <div class="lbx-wrap lbx-row2">
     <div class="lbx-copy">
-      <p class="lbx-eyebrow">Vráťte si dôstojnosť</p>
-      <h2 class="lbx-h2">Jednorazové pomôcky sú <em>ponižujúce</em></h2>
-      <p>Vložky, ktoré počuť, plienky, ktoré vidno pod oblečením, a neustály strach z pretečenia. Zaslúžite si riešenie, ktoré vyzerá a pôsobí ako bežná spodná bielizeň.</p>
+      <p class="lbx-eyebrow">Върнете си достойнството</p>
+      <h2 class="lbx-h2">Еднократните помощни средства са <em>унизителни</em></h2>
+      <p>Подложки, които се чуват, пелени, които се виждат под облеклото, и постоянен страх от преливане. Заслужавате решение, което изглежда и се усеща като обикновено бельо.</p>
       <ul class="lbx-check">
-        <li><strong>250 kg</strong> odpadu ročne na jedného používateľa</li>
-        <li>Viac ako <strong>800 €</strong> vyhodených každý rok</li>
-        <li>Jednorazové výrobky sú objemné a plné chemikálií</li>
+        <li><strong>250 kg</strong> отпадък годишно на един потребител</li>
+        <li>Viac ako <strong>800 €</strong> изхвърляни всяка година</li>
+        <li>Еднократните продукти са обемисти и пълни с химикали</li>
       </ul>
-      <a class="lbx-cta lbx-cta-solid" href="#bundle-selector">Vráťte mi sebavedomie →</a>
+      <a class="lbx-cta lbx-cta-solid" href="#bundle-selector">Върнете ми самочувствието →</a>
     </div>
-    <div class="lbx-media"><img src="<?php echo esc_url( $lb.'boxer-navy.jpg' ); ?>" alt="NORIKS absorpčné boxerky — tmavomodrá" loading="lazy"></div>
+    <div class="lbx-media"><img src="<?php echo esc_url( $lb.'boxer-navy.jpg' ); ?>" alt="NORIKS абсорбиращи боксерки — тъмносини" loading="lazy"></div>
   </div>
 </section>
 
 <!-- ============ 1b) Brand video (preko cijele širine) ============ -->
 <section class="lbx-sec lbx-alt">
   <div class="lbx-wrap">
-    <h2 class="lbx-h2 lbx-center">Dôstojnosť, ktorú si zaslúžite</h2>
-    <p class="lbx-sub lbx-center">Pozrite sa, prečo sa viac ako 123 000 mužov už nikdy nevrátilo k jednorazovým pomôckam.</p>
+    <h2 class="lbx-h2 lbx-center">Достойнството, което заслужавате</h2>
+    <p class="lbx-sub lbx-center">Вижте защо над 123 000 мъже никога не се върнаха към еднократните помощни средства.</p>
     <div class="lbx-brandvideo">
       <video src="<?php echo esc_url( $lbv.'brand.mp4' ); ?>" autoplay muted loop playsinline preload="metadata"></video>
     </div>
@@ -43,16 +43,16 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
 <!-- ============ 2) PureDry™ 7 slojeva (slika + tekst) ============ -->
 <section class="lbx-sec">
   <div class="lbx-wrap lbx-row2 lbx-rev">
-    <div class="lbx-media"><img src="<?php echo esc_url( $lb.'features.png' ); ?>" alt="NORIKS PureDry — 7-vrstvová absorpčná technológia" loading="lazy"></div>
+    <div class="lbx-media"><img src="<?php echo esc_url( $lb.'features.png' ); ?>" alt="NORIKS PureDry — 7-слойна абсорбираща технология" loading="lazy"></div>
     <div class="lbx-copy">
-      <p class="lbx-eyebrow">Technológia</p>
+      <p class="lbx-eyebrow">Технология</p>
       <h2 class="lbx-h2">NORIKS <em>PureDry™</em> — 7 vrstiev ochrany</h2>
-      <p>Po viac ako 2 rokoch vývoja sme vytvorili látku, ktorá okamžite absorbuje a uzamkne vlhkosť hlboko v jadre — bez objemnosti a bez pocitu vlhka na pokožke.</p>
+      <p>След над 2 години разработка създадохме плат, който веднага поема и заключва влагата дълбоко в ядрото — без обем и без усещане за влага върху кожата.</p>
       <ul class="lbx-check">
-        <li>7-vrstvová absorpčná technológia — až do <strong>300 ml</strong></li>
-        <li>Antibakteriálne bambusové vlákno</li>
-        <li>Ochrana proti pretečeniu pri nohách</li>
-        <li>Kontrola pachu a vodoodpudivá vonkajšia vrstva</li>
+        <li>7-слойна абсорбираща технология — до <strong>300 ml</strong></li>
+        <li>Антибактериално бамбуково влакно</li>
+        <li>Защита от преливане при крачолите</li>
+        <li>Контрол на миризмата и водоотблъскващ външен слой</li>
       </ul>
     </div>
   </div>
@@ -63,9 +63,9 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
   <div class="lbx-wrap lbx-row2">
     <div class="lbx-copy">
       <p class="lbx-eyebrow">Rozdiel NORIKS</p>
-      <h2 class="lbx-h2">Sledujte, ako <em>mizne</em>. Nula pretečení.</h2>
-      <p>Vonkajšia vrstva je vodoodpudivá a absorpčné jadro udrží tekutinu vo vnútri. Výsledok: zostávate suchý — bez škvŕn a bez nepríjemných chvíľ, v práci, na cestách aj počas spánku.</p>
-      <div class="lbx-chips"><span>Bez pretečenia</span><span>Bez objemnosti</span><span>Bez zápachu</span></div>
+      <h2 class="lbx-h2">Sledujte, ako <em>mizne</em>. Нула преливания.</h2>
+      <p>Външният слой е водоотблъскващ, а абсорбиращото ядро задържа течността вътре. Резултатът: оставате сухи — без петна и без неприятни моменти, на работа, в пътуване и докато спите.</p>
+      <div class="lbx-chips"><span>Без преливане</span><span>Bez objemnosti</span><span>Без миризма</span></div>
     </div>
     <div class="lbx-media">
       <video src="<?php echo esc_url( $lbv.'waterpour.mp4' ); ?>" autoplay muted loop playsinline preload="metadata"></video>
@@ -77,11 +77,11 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
 <section class="lbx-sec">
   <div class="lbx-wrap">
     <p class="lbx-eyebrow lbx-center">Zamilujete si ich</p>
-    <h2 class="lbx-h2 lbx-center">Prateľné <em>inkontinenčné boxerky</em></h2>
+    <h2 class="lbx-h2 lbx-center">Перящи се <em>боксерки при инконтиненция</em></h2>
     <div class="lbx-cards">
-      <figure class="lbx-card"><img src="<?php echo esc_url( $lb.'boxer-black.jpg' ); ?>" alt="Elegantná ochrana" loading="lazy"><figcaption>Elegantná ochrana</figcaption></figure>
-      <figure class="lbx-card"><img src="<?php echo esc_url( $lb.'absorption.jpg' ); ?>" alt="Neprekonateľná absorpcia" loading="lazy"><figcaption>Neprekonateľná absorpcia</figcaption></figure>
-      <figure class="lbx-card"><img src="<?php echo esc_url( $lb.'hydrofuge.jpg' ); ?>" alt="Hydrofóbna technológia" loading="lazy"><figcaption>Hydrofóbna technológia</figcaption></figure>
+      <figure class="lbx-card"><img src="<?php echo esc_url( $lb.'boxer-black.jpg' ); ?>" alt="Елегантна защита" loading="lazy"><figcaption>Елегантна защита</figcaption></figure>
+      <figure class="lbx-card"><img src="<?php echo esc_url( $lb.'absorption.jpg' ); ?>" alt="Ненадмината абсорбция" loading="lazy"><figcaption>Ненадмината абсорбция</figcaption></figure>
+      <figure class="lbx-card"><img src="<?php echo esc_url( $lb.'hydrofuge.jpg' ); ?>" alt="Хидрофобна технология" loading="lazy"><figcaption>Хидрофобна технология</figcaption></figure>
     </div>
   </div>
 </section>
@@ -89,14 +89,14 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
 <!-- ============ 6) Statistika (dark) ============ -->
 <section class="lbx-sec lbx-stats">
   <div class="lbx-wrap">
-    <p class="lbx-eyebrow lbx-center lbx-eyebrow-d">Dokázané dátami</p>
-    <h2 class="lbx-h2 lbx-center lbx-h2-d">Ešte stále nie ste <em>presvedčený?</em></h2>
+    <p class="lbx-eyebrow lbx-center lbx-eyebrow-d">Доказано с данни</p>
+    <h2 class="lbx-h2 lbx-center lbx-h2-d">Още ли не сте <em>убедени?</em></h2>
     <div class="lbx-rings">
       <?php
       $lbx_stats = array(
-        array( 'p'=>'98', 'dash'=>'172.4', 't'=>'mužov hovorí, že sa <strong>nikdy nevráti</strong> k vložkám či plienkam' ),
-        array( 'p'=>'95', 'dash'=>'167.1', 't'=>'hlási <strong>nulový stres</strong> z pretečenia počas dňa' ),
-        array( 'p'=>'97', 'dash'=>'170.6', 't'=>'cíti <strong>výrazne vyššie sebavedomie</strong>' ),
+        array( 'p'=>'98', 'dash'=>'172.4', 't'=>'от мъжете казват, че <strong>никога няма да се върнат</strong> към подложки или пелени' ),
+        array( 'p'=>'95', 'dash'=>'167.1', 't'=>'съобщават за <strong>нулев стрес</strong> от преливане през деня' ),
+        array( 'p'=>'97', 'dash'=>'170.6', 't'=>'чувстват <strong>значително по-високо самочувствие</strong>' ),
       );
       foreach ( $lbx_stats as $s ) : ?>
         <div class="lbx-ring-item">
@@ -115,35 +115,35 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
 <!-- ============ 7) Usporedna tablica ============ -->
 <section class="lbx-sec">
   <div class="lbx-wrap-narrow">
-    <h2 class="lbx-h2 lbx-center">Múdrejšia voľba než <em>jednorazové vložky</em></h2>
+    <h2 class="lbx-h2 lbx-center">По-умен избор от <em>еднократните подложки</em></h2>
     <div class="lbx-cmp-scroll">
       <table class="lbx-cmp-table">
-        <thead><tr><th></th><th class="lbx-us">NORIKS</th><th>Jednorazové vložky</th><th>Bežné boxerky</th></tr></thead>
+        <thead><tr><th></th><th class="lbx-us">NORIKS</th><th>Еднократни подложки</th><th>Обикновени боксерки</th></tr></thead>
         <tbody>
-          <tr><td>Absorbuje až 300 ml</td><td class="us ok">✓</td><td class="mid">čiastočne</td><td class="no">✕</td></tr>
-          <tr><td>Diskrétne pod oblečením</td><td class="us ok">✓</td><td class="no">✕</td><td class="ok">✓</td></tr>
-          <tr><td>Prateľné a opakovane použiteľné</td><td class="us ok">✓</td><td class="no">✕</td><td class="ok">✓</td></tr>
-          <tr><td>Ochrana proti zápachu</td><td class="us ok">✓</td><td class="mid">chemikálie</td><td class="no">✕</td></tr>
-          <tr><td>Ročné náklady</td><td class="us ok">✓ nízke</td><td class="mid">800 €+</td><td class="ok">nízke</td></tr>
-          <tr><td>Ekologické</td><td class="us ok">✓</td><td class="no">✕ 250 kg odpadu</td><td class="ok">✓</td></tr>
+          <tr><td>Поема до 300 ml</td><td class="us ok">✓</td><td class="mid">частично</td><td class="no">✕</td></tr>
+          <tr><td>Дискретни под облеклото</td><td class="us ok">✓</td><td class="no">✕</td><td class="ok">✓</td></tr>
+          <tr><td>Перящи се и многократни</td><td class="us ok">✓</td><td class="no">✕</td><td class="ok">✓</td></tr>
+          <tr><td>Защита от миризма</td><td class="us ok">✓</td><td class="mid">химикали</td><td class="no">✕</td></tr>
+          <tr><td>Годишни разходи</td><td class="us ok">✓ ниски</td><td class="mid">800 €+</td><td class="ok">ниски</td></tr>
+          <tr><td>Екологични</td><td class="us ok">✓</td><td class="no">✕ 250 kg odpadu</td><td class="ok">✓</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="lbx-cta-wrap"><a class="lbx-cta lbx-cta-solid" href="#bundle-selector">Vyberte si svoj balík</a></div>
+    <div class="lbx-cta-wrap"><a class="lbx-cta lbx-cta-solid" href="#bundle-selector">Изберете своя пакет</a></div>
   </div>
 </section>
 
 <!-- ============ 8) Video testimonijali ============ -->
 <section class="lbx-sec lbx-alt">
   <div class="lbx-wrap">
-    <p class="lbx-eyebrow lbx-center">Skúsenosti zákazníkov</p>
-    <h2 class="lbx-h2 lbx-center">Bielizeň, ktorej už dôveruje <em>123 000+ mužov</em></h2>
+    <p class="lbx-eyebrow lbx-center">Опит на клиентите</p>
+    <h2 class="lbx-h2 lbx-center">Бельо, на което вече се доверяват <em>123 000+ мъже</em></h2>
     <div class="lbx-tst-grid">
       <video src="<?php echo esc_url( $lbv.'tst1.mp4' ); ?>" autoplay muted loop playsinline preload="metadata"></video>
       <video src="<?php echo esc_url( $lbv.'tst2.mp4' ); ?>" autoplay muted loop playsinline preload="metadata"></video>
       <video src="<?php echo esc_url( $lbv.'tst3.mp4' ); ?>" autoplay muted loop playsinline preload="metadata"></video>
     </div>
-    <div class="lbx-cta-wrap"><a class="lbx-cta lbx-cta-solid" href="#bundle-selector">Objednajte diskrétne →</a></div>
+    <div class="lbx-cta-wrap"><a class="lbx-cta lbx-cta-solid" href="#bundle-selector">Поръчайте дискретно →</a></div>
   </div>
 </section>
 

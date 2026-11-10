@@ -27,13 +27,13 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
 <!-- 1) KAKO IZGLEDA U KREVETU (galerija) -->
 <section class="nsg-sec nsg-tint">
   <div class="nsg-wrap">
-    <p class="nsg-kicker nsg-center">V skutočnej spálni</p>
-    <h2 class="nsg-h2 nsg-center">Objatie, ktoré vydrží celú noc</h2>
-    <p class="nsg-sub">Objímte ho spredu, oprite sa oň chrbtom — vankúš funguje z oboch strán.</p>
+    <p class="nsg-kicker nsg-center">В истинска спалня</p>
+    <h2 class="nsg-h2 nsg-center">Прегръдка, която издържа цяла нощ</h2>
+    <p class="nsg-sub">Прегърнете я отпред, облегнете се на нея с гърба — възглавницата работи и от двете страни.</p>
     <div class="nsg-gallery">
-      <figure><?php echo $sg_vid( 'sng-gal-1.mp4', 'sng-gal-1.jpg', 'Vankúš omotaný okolo nôh počas spánku' ); ?></figure>
-      <figure><?php echo $sg_vid( 'sng-gal-2.mp4', 'sng-gal-2.jpg', 'Ako sa NORIKS Snug používa' ); ?></figure>
-      <figure><?php echo $sg_vid( 'sng-gal-3.mp4', 'sng-gal-3.jpg', 'Spánok na boku s NORIKS Snug' ); ?></figure>
+      <figure><?php echo $sg_vid( 'sng-gal-1.mp4', 'sng-gal-1.jpg', 'Възглавница, обвита около краката по време на сън' ); ?></figure>
+      <figure><?php echo $sg_vid( 'sng-gal-2.mp4', 'sng-gal-2.jpg', 'Как се използва NORIKS Snug' ); ?></figure>
+      <figure><?php echo $sg_vid( 'sng-gal-3.mp4', 'sng-gal-3.jpg', 'Сън на една страна с NORIKS Snug' ); ?></figure>
       <figure><?php echo $sg_vid( 'sng-gal-4.mp4', 'sng-gal-4.jpg', 'NORIKS Snug v posteli' ); ?></figure>
     </div>
   </div>
@@ -42,30 +42,30 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
 <!-- 2) PROBLEM — slika lijevo -->
 <section class="nsg-sec">
   <div class="nsg-wrap nsg-row2">
-    <div class="nsg-media"><?php echo $sg_vid( 'sng-video.mp4', 'sng-video.jpg', 'NORIKS Snug pri používaní' ); ?></div>
+    <div class="nsg-media"><?php echo $sg_vid( 'sng-video.mp4', 'sng-video.jpg', 'NORIKS Snug при употреба' ); ?></div>
     <div class="nsg-copy">
-      <p class="nsg-kicker">Problém</p>
-      <h2 class="nsg-h2">Prečo sa nikdy nezobudíte <em>oddýchnutí</em></h2>
+      <p class="nsg-kicker">Проблемът</p>
+      <h2 class="nsg-h2">Защо никога не се будите <em>отпочинали</em></h2>
       <div class="nsg-pain__list">
         <div class="nsg-pain__row">
           <span class="nsg-pain__num">01</span>
           <div class="nsg-pain__copy">
-            <h3>Rameno nesie celú váhu.</h3>
-            <p>Bez opory hornej časti tela sa vrchné rameno preklopí dopredu a prevezme celú vašu váhu. To je tá tŕpnutosť, s ktorou sa budíte každé ráno.</p>
+            <h3>Рамото понася цялата тежест.</h3>
+            <p>Без опора за горната част на тялото горното рамо се прехвърля напред и поема цялата ви тежест. Това е онова изтръпване, с което се будите всяка сутрин.</p>
           </div>
         </div>
         <div class="nsg-pain__row">
           <span class="nsg-pain__num">02</span>
           <div class="nsg-pain__copy">
-            <h3>Bedro klesá, chrbtica ho nasleduje.</h3>
-            <p>Nič vám nedrží bedrá v jednej rovine, takže ich gravitácia stiahne nadol a driek sa skrúti, aby to vyrovnal. To je budenie o tretej ráno.</p>
+            <h3>Бедрото се спуска, гръбнакът го следва.</h3>
+            <p>Нищо не държи бедрата ви в една равнина, затова гравитацията ги изтегля надолу и кръстът се извива, за да компенсира. Това е събуждането в три сутринта.</p>
           </div>
         </div>
         <div class="nsg-pain__row">
           <span class="nsg-pain__num">03</span>
           <div class="nsg-pain__copy">
-            <h3>Kolená sa kladú na seba a šúchajú sa.</h3>
-            <p>Tlak kosti o kosť rastie celú noc. Do rána kolená bolia a nohy sú ťažké ešte skôr, ako vstanete z postele.</p>
+            <h3>Коленете лягат едно върху друго и се търкат.</h3>
+            <p>Натискът кост в кост расте цяла нощ. До сутринта коленете болят, а краката са тежки още преди да станете от леглото.</p>
           </div>
         </div>
       </div>
@@ -78,45 +78,45 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
   <div class="nsg-wrap nsg-row2 nsg-row2--rev">
     <div class="nsg-copy">
       <p class="nsg-kicker">Ako to funguje</p>
-      <h2 class="nsg-h2">Tvar S drží tri body naraz</h2>
-      <p>Zakrivenie kopíruje líniu tela: horná časť podopiera rameno, stred vypĺňa priestor pri páse a spodné rameno oddeľuje kolená.</p>
-      <p>Váha sa rozloží po celej dĺžke namiesto toho, aby sa nazbierala na jednom mieste. Telo prestane vysielať signály, ktoré vás budia.</p>
+      <h2 class="nsg-h2">Формата S държи три точки наведнъж</h2>
+      <p>Кривината следва линията на тялото: горната част поддържа рамото, средата запълва пространството при талията, а долното рамо разделя коленете.</p>
+      <p>Тежестта се разпределя по цялата дължина, вместо да се събира на едно място. Тялото спира да изпраща сигналите, които ви будят.</p>
       <ul class="nsg-check">
-        <li>Odľahčené ramená, bez tlaku na jednu stranu</li>
-        <li>Bedrá a panva v prirodzenej línii</li>
-        <li>Oddelené kolená, bez kontaktu kosti o kosť</li>
+        <li>Разтоварени рамене, без натиск на една страна</li>
+        <li>Бедра и таз в естествена линия</li>
+        <li>Разделени колене, без контакт кост в кост</li>
       </ul>
       <a class="nsg-cta" href="#bundle-selector">Vyberte si svoju farbu</a>
     </div>
-    <div class="nsg-media"><?php echo $sg_img( 'sng-usporedba.jpg', 'NORIKS Snug v porovnaní s bežným vankúšom' ); ?></div>
+    <div class="nsg-media"><?php echo $sg_img( 'sng-usporedba.jpg', 'NORIKS Snug в сравнение с обикновена възглавница' ); ?></div>
   </div>
 </section>
 
 <!-- 4) TRI KLJUČNE POTPORE — slika lijevo -->
 <section class="nsg-sec nsg-trust">
   <div class="nsg-trust__head">
-    <p class="nsg-trust__eyebrow">Dôvera odborníkov</p>
-    <h2 class="nsg-trust__title">Odporúčajú <em>chiropraktici.</em></h2>
+    <p class="nsg-trust__eyebrow">Доверие на специалистите</p>
+    <h2 class="nsg-trust__title">Препоръчват <em>хиропрактиците.</em></h2>
   </div>
   <div class="nsg-wrap">
     <div class="nsg-docs">
       <article class="nsg-doc">
-        <div class="nsg-doc__img"><?php echo $sg_img( 'sng-doc-1.jpg', 'Chiropraktička s vankúšom NORIKS Snug' ); ?></div>
+        <div class="nsg-doc__img"><?php echo $sg_img( 'sng-doc-1.jpg', 'Хиропрактик с възглавницата NORIKS Snug' ); ?></div>
         <div class="nsg-doc__body">
-          <p class="nsg-doc__lead">„Snug odporúčam pacientom, ktorí v noci bojujú s bolesťami bedier a drieku.”</p>
-          <p class="nsg-doc__p">„Tvar S drží chrbticu v neutrálnej polohe, pretože súčasne podopiera ramená, bedrá aj kolená. Väčšina vankúšov na telo rieši len jedno z toho. Tento rieši všetky tri, a preto ho pacienti naozaj používajú ďalej.”</p>
+          <p class="nsg-doc__lead">„Snug препоръчвам на пациенти, които през нощта се борят с болки в бедрата и кръста.”</p>
+          <p class="nsg-doc__p">„Формата S държи гръбнака в неутрално положение, защото едновременно поддържа раменете, бедрата и коленете. Повечето възглавници за тяло решават само едно от тези. Тази решава и трите, затова пациентите наистина продължават да я използват.”</p>
           <div class="nsg-doc__who">
-            <p class="nsg-doc__name">Chiropraktička<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#5b7fa6"/><path d="M5 8l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="nsg-doc__name">Хиропрактик<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#5b7fa6"/><path d="M5 8l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </p>
             <p class="nsg-doc__role">12 rokov praxe</p>
           </div>
         </div>
       </article>
       <article class="nsg-doc">
-        <div class="nsg-doc__img"><?php echo $sg_img( 'sng-doc-2.jpg', 'Chiropraktik s vankúšom NORIKS Snug' ); ?></div>
+        <div class="nsg-doc__img"><?php echo $sg_img( 'sng-doc-2.jpg', 'Хиропрактик с възглавницата NORIKS Snug' ); ?></div>
         <div class="nsg-doc__body">
-          <p class="nsg-doc__lead">„U pacientov, ktorí spia na boku, je problém vždy rovnaký: prázdny priestor medzi ramenom a kolenami.”</p>
-          <p class="nsg-doc__p">„Snug je jeden z mála produktov, ktoré to naozaj riešia. Podopiera celú dĺžku trupu, nielen jeden tlakový bod. Pacienti sa po dvoch týždňoch vracajú a hovoria, že ranná stuhnutosť je preč.”</p>
+          <p class="nsg-doc__lead">„При пациенти, които спят на една страна, проблемът винаги е същият: празното пространство между рамото и коленете.”</p>
+          <p class="nsg-doc__p">„Snug е един от малкото продукти, които наистина решават това. Поддържа цялата дължина на тялото, не само една точка на натиск. Пациентите се връщат след две седмици и казват, че утринната скованост е изчезнала.”</p>
           <div class="nsg-doc__who">
             <p class="nsg-doc__name">Chiropraktik<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#5b7fa6"/><path d="M5 8l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </p>
@@ -125,23 +125,23 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
         </div>
       </article>
     </div>
-    <p class="nsg-note">Názory odborníkov nenahrádzajú lekárske vyšetrenie ani predpísanú liečbu.</p>
+    <p class="nsg-note">Мненията на специалисти не заместват лекарски преглед, нито предписано лечение.</p>
   </div>
 </section>
 
 <!-- 7) PUNJENJE — slika lijevo -->
 <section class="nsg-sec nsg-tint">
   <div class="nsg-wrap nsg-row2">
-    <div class="nsg-media"><?php echo $sg_img( 'sng-potpore.jpg', 'Tri kľúčové opory: ruky, bedrá, kolená' ); ?></div>
+    <div class="nsg-media"><?php echo $sg_img( 'sng-potpore.jpg', 'Три ключови опори: ръце, бедра, колене' ); ?></div>
     <div class="nsg-copy">
       <p class="nsg-kicker">Tri body opory</p>
-      <h2 class="nsg-h2">Jeden vankúš namiesto troch</h2>
-      <p>Väčšina ľudí poskladá dva alebo tri bežné vankúše, aby získali oporu, ktorú Snug dáva sám — a potom ich celú noc prekladá.</p>
-      <p>Snug drží všetky tri body naraz, takže sa nemusíte budiť, aby ste ho poprávali.</p>
+      <h2 class="nsg-h2">Една възглавница вместо три</h2>
+      <p>Повечето хора трупат две или три обикновени възглавници, за да получат опората, която Snug дава сама — и после цяла нощ ги местят.</p>
+      <p>Snug държи и трите точки наведнъж, така че не се будите, за да я оправяте.</p>
       <ul class="nsg-check">
-        <li>Opora rúk — predchádza tŕpnutiu počas noci</li>
-        <li>Zarovnanie bedier — chrbtica ostáva neutrálna</li>
-        <li>Vypodloženie kolien — sníma tlak z drieku</li>
+        <li>Опора за ръцете — предотвратява изтръпване през нощта</li>
+        <li>Подреждане на бедрата — гръбнакът остава неутрален</li>
+        <li>Подложка за коленете — свалят натиска от кръста</li>
       </ul>
     </div>
   </div>
@@ -151,14 +151,14 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
 <section class="nsg-sec">
   <div class="nsg-wrap nsg-row2 nsg-row2--rev">
     <div class="nsg-copy">
-      <p class="nsg-kicker">Správna veľkosť</p>
-      <h2 class="nsg-h2">105 × 30 cm — dosť, ale nie priveľa</h2>
-      <p>Podopiera vás od ramena po kolená, ale nezaberie celú posteľ a neprekáža partnerovi.</p>
-      <p>Práve táto dĺžka je dôvod, prečo sa ľahko drží a ľahko sa s ním otáča — bez prekladania a bez budenia.</p>
+      <p class="nsg-kicker">Правилният размер</p>
+      <h2 class="nsg-h2">105 × 30 cm — достатъчно, но не прекалено</h2>
+      <p>Поддържа ви от рамото до коленете, но не заема цялото легло и не пречи на партньора.</p>
+      <p>Точно тази дължина е причината да се държи лесно и лесно да се обръщате с нея — без местене и без будене.</p>
       <ul class="nsg-check">
-        <li>Dĺžka 105 cm, šírka 30 cm</li>
-        <li>Vyhovuje všetkým výškam</li>
-        <li>Ľahký, preložíte ho jednou rukou</li>
+        <li>Дължина 105 cm, широчина 30 cm</li>
+        <li>Подходяща за всички височини</li>
+        <li>Лека, местите я с една ръка</li>
       </ul>
     </div>
     <div class="nsg-media"><?php echo $sg_img( 'sng-dimenzije.jpg', 'Rozmery: 105 × 30 cm' ); ?></div>
@@ -168,12 +168,12 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
 <!-- 6) PREPORUČUJU STRUČNJACI (postavitev z originala) -->
 <section class="nsg-sec nsg-tint">
   <div class="nsg-wrap nsg-row2">
-    <div class="nsg-media"><?php echo $sg_img( 'sng-boje.jpg', 'Šesť dostupných farieb' ); ?></div>
+    <div class="nsg-media"><?php echo $sg_img( 'sng-boje.jpg', 'Шест налични цвята' ); ?></div>
     <div class="nsg-copy">
       <p class="nsg-kicker">Vyberte farbu</p>
-      <h2 class="nsg-h2">Šesť farieb do každej spálne</h2>
-      <p>Modrá, ružová, sivá, zelená, fialová a tmavomodrá — farbu si vyberiete na tejto stránke, pred pridaním do košíka.</p>
-      <p>Všetky odtiene majú rovnakú chladivú tkaninu a rovnakú výplň; líši sa len farba obliečky.</p>
+      <h2 class="nsg-h2">Шест цвята за всяка спалня</h2>
+      <p>Синьо, розово, сиво, зелено, лилаво и тъмносиньо — цветът се избира на тази страница, преди добавяне в количката.</p>
+      <p>Всички нюанси имат същия хладен плат и същия пълнеж; различава се само цветът на калъфа.</p>
       <a class="nsg-cta" href="#bundle-selector">Vyberte si svoju farbu</a>
     </div>
   </div>

@@ -4,7 +4,7 @@
  * Prevod s HR (SK). Slike: img/bowl/ — lokalizirane.
  * Pravilo: svaka sekcija ima TOCNO JEDNU sliku, naizmjenicno lijevo/desno, nikoli na sredini;
  * slike su omejene na max-height 430px.
- *   1) Pre šťastnejšieho a zdravšieho psa (lijevo)   4) Za male pasmine (desno)
+ *   1) За по-щастливо и по-здраво куче (lijevo)   4) Za male pasmine (desno)
  *   2) Specifikacije (desno)                     5) Nehrdajuci celik (lijevo)
  *   3) Tri prednosti (lijevo)                    6) Izjava + jamstvo (desno)
  */
@@ -21,18 +21,18 @@ $bw_img  = function( $file, $alt ) use ( $bw, $bw_path ) {
 <!-- 1) ZA SRETNIJEG I ZDRAVIJEG PSA — slika lijevo -->
 <section class="nbw-sec nbw-tint">
   <div class="nbw-wrap nbw-row2">
-    <div class="nbw-media"><?php echo $bw_img( 'bwl-05-naslov-kuhinja.jpg', 'Francúzsky buldoček pri miske NORIKS Bowl' ); ?></div>
+    <div class="nbw-media"><?php echo $bw_img( 'bwl-05-naslov-kuhinja.jpg', 'Френски булдог при купата NORIKS Bowl' ); ?></div>
     <div class="nbw-copy">
-      <p class="nbw-kicker">Jedlo bez ohýbania krku</p>
-      <h2 class="nbw-h2">Pre šťastnejšieho <em>a zdravšieho psa</em></h2>
-      <p>Z bežnej misky na podlahe pes je zhrbený, s krkom ohnutým nadol. Krmivo sa tlačí k okraju a menšie psy ňufákom lovia posledné granule po rohoch.</p>
-      <p>NORIKS Bowl zdvihne misku na 11 cm a nakloní ju o 15° smerom k psovi — krmivo sa zosúva k nemu a hlava zostáva v prirodzenejšej polohe.</p>
+      <p class="nbw-kicker">Хранене без извиване на шията</p>
+      <h2 class="nbw-h2">За по-щастливо <em>и по-здраво куче</em></h2>
+      <p>От обикновена купа на пода кучето яде прегърбено, с шия извита надолу. Храната се избутва към ръба и по-малките кучета с муцуна ловят последните хапки по ъглите.</p>
+      <p>NORIKS Bowl вдига купата на 11 cm и я накланя на 15° към кучето — храната се свлича към него, а главата остава в по-естествено положение.</p>
       <ul class="nbw-check">
-        <li><strong>Menej ohýbania krku</strong> počas jedenia</li>
-        <li><strong>Pokojnejšie jedlo</strong> — krmivo neuteká po podlahe</li>
-        <li><strong>Príjemnejšie pre staršie psy</strong>, ktorým je zohýbanie namáhavé</li>
+        <li><strong>По-малко извиване на шията</strong> по време на хранене</li>
+        <li><strong>По-спокойно хранене</strong> — храната не бяга по пода</li>
+        <li><strong>По-приятно за по-старите кучета</strong>, за които навеждането е трудно</li>
       </ul>
-      <a class="nbw-cta" href="#bundle-selector">Objednať NORIKS Bowl</a>
+      <a class="nbw-cta" href="#bundle-selector">Поръчай NORIKS Bowl</a>
     </div>
   </div>
 </section>
@@ -41,30 +41,30 @@ $bw_img  = function( $file, $alt ) use ( $bw, $bw_path ) {
 <section class="nbw-sec">
   <div class="nbw-wrap nbw-row2 nbw-row2--rev">
     <div class="nbw-copy">
-      <p class="nbw-kicker">Každý detail má svoj účel</p>
-      <h2 class="nbw-h2">Navrhnutá <em>podľa toho, ako pes je</em></h2>
+      <p class="nbw-kicker">Всеки детайл има своята цел</p>
+      <h2 class="nbw-h2">Създадена <em>според това как кучето яде</em></h2>
       <div class="nbw-facts">
-        <div><span class="nbw-num">15°</span><h3>Sklon misky</h3><p>Pre lepšie držanie hlavy a krku pri jedení.</p></div>
-        <div><span class="nbw-num">11 cm</span><h3>Výška podstavca</h3><p>Menej napätia v krku než pri miske na podlahe.</p></div>
-        <div><span class="nbw-num">5 cm</span><h3>Plytká miska</h3><p>Fúzy nenarážajú o okraj a krmivo je ľahko dostupné.</p></div>
-        <div><span class="nbw-num">430 ml</span><h3>Objem</h3><p>Priemer 15 cm — dosť na porciu alebo vodu pre malého psa.</p></div>
+        <div><span class="nbw-num">15°</span><h3>Sklon misky</h3><p>За по-добро положение на главата и шията при хранене.</p></div>
+        <div><span class="nbw-num">11 cm</span><h3>Височина на поставката</h3><p>По-малко напрежение в шията, отколкото при купа на пода.</p></div>
+        <div><span class="nbw-num">5 cm</span><h3>Плитка купа</h3><p>Мустаците не опират в ръба и храната е лесно достъпна.</p></div>
+        <div><span class="nbw-num">430 ml</span><h3>Objem</h3><p>Диаметър 15 cm — достатъчно за порция или вода за малко куче.</p></div>
       </div>
     </div>
-    <div class="nbw-media"><?php echo $bw_img( 'bwl-10-specifikacije.jpg', 'Špecifikácie NORIKS Bowl: sklon 15°, výška 11 cm, hĺbka 5 cm' ); ?></div>
+    <div class="nbw-media"><?php echo $bw_img( 'bwl-10-specifikacije.jpg', 'Спецификации NORIKS Bowl: наклон 15°, височина 11 cm, дълбочина 5 cm' ); ?></div>
   </div>
 </section>
 
 <!-- 3) TRI PREDNOSTI — slika lijevo -->
 <section class="nbw-sec nbw-tint">
   <div class="nbw-wrap nbw-row2">
-    <div class="nbw-media"><?php echo $bw_img( 'bwl-09-prednosti.jpg', 'Knírač je z misky NORIKS Bowl' ); ?></div>
+    <div class="nbw-media"><?php echo $bw_img( 'bwl-09-prednosti.jpg', 'Шнауцер яде от купата NORIKS Bowl' ); ?></div>
     <div class="nbw-copy">
-      <p class="nbw-kicker">Tri dôvody</p>
-      <h2 class="nbw-h2">Prečo psy jedia <em>pohodlnejšie</em></h2>
+      <p class="nbw-kicker">Три причини</p>
+      <h2 class="nbw-h2">Защо кучетата се хранят <em>по-удобно</em></h2>
       <div class="nbw-points">
-        <div class="nbw-point"><h3>Prirodzenejšia poloha</h3><p>Sklon 15° podporuje prirodzenejšiu a pohodlnejšiu polohu pri jedení — pes nemusí tlačiť ňufák na dno misky.</p></div>
-        <div class="nbw-point"><h3>Hygienická oceľ</h3><p>Prvotriedna nehrdzavejúca oceľ zostáva hygienická a svieža a ľahko sa čistí.</p></div>
-        <div class="nbw-point"><h3>Hladký povrch</h3><p>Zvyšky krmiva sa nelepia, takže čistenie je rýchlejšie než pri plastovej miske.</p></div>
+        <div class="nbw-point"><h3>По-естествено положение</h3><p>Наклонът 15° подпомага по-естествено и по-удобно положение при хранене — кучето не трябва да бута муцуната до дъното на купата.</p></div>
+        <div class="nbw-point"><h3>Хигиенична стомана</h3><p>Първокласната неръждаема стомана остава хигиенична и свежа и се чисти лесно.</p></div>
+        <div class="nbw-point"><h3>Гладка повърхност</h3><p>Остатъците от храна не полепват, затова чистенето е по-бързо, отколкото при пластмасова купа.</p></div>
       </div>
     </div>
   </div>
@@ -74,37 +74,37 @@ $bw_img  = function( $file, $alt ) use ( $bw, $bw_path ) {
 <section class="nbw-sec">
   <div class="nbw-wrap nbw-row2 nbw-row2--rev">
     <div class="nbw-copy">
-      <p class="nbw-kicker">Veľkosť</p>
-      <h2 class="nbw-h2">Vytvorená <em>pre malé plemená</em></h2>
-      <p>Výška podstavca a veľkosť misky sú prispôsobené psom nízkeho vzrastu, pre ktorých je miska na podlahe priďaleko a bežná zvýšená miska privysoká.</p>
+      <p class="nbw-kicker">Размер</p>
+      <h2 class="nbw-h2">Създадена <em>за малки породи</em></h2>
+      <p>Височината на поставката и размерът на купата са съобразени с кучета с нисък ръст, за които купата на пода е твърде далеч, а обикновената повдигната купа — твърде висока.</p>
       <ul class="nbw-breeds">
-        <li>Jazvečík</li>
-        <li>Francúzsky buldoček</li>
-        <li>Miniatúrny knírač</li>
+        <li>Дакел</li>
+        <li>Френски булдог</li>
+        <li>Миниатюрен шнауцер</li>
         <li>Mops</li>
-        <li>Maltézsky psík</li>
-        <li>Jack Russell teriér</li>
+        <li>Малтийско болонче</li>
+        <li>Джак Ръсел териер</li>
       </ul>
-      <p class="nbw-note">Rozmery misky: priemer 15 cm, hĺbka 5 cm, objem približne 430 ml.</p>
+      <p class="nbw-note">Размери на купата: диаметър 15 cm, дълбочина 5 cm, обем около 430 ml.</p>
     </div>
-    <div class="nbw-media"><?php echo $bw_img( 'bwl-03-francuski-buldog.jpg', 'Francúzsky buldoček pri miske NORIKS Bowl' ); ?></div>
+    <div class="nbw-media"><?php echo $bw_img( 'bwl-03-francuski-buldog.jpg', 'Френски булдог при купата NORIKS Bowl' ); ?></div>
   </div>
 </section>
 
 <!-- 5) NEHRĐAJUĆI ČELIK — slika lijevo -->
 <section class="nbw-sec nbw-tint">
   <div class="nbw-wrap nbw-row2">
-    <div class="nbw-media"><?php echo $bw_img( 'bwl-06-celik.jpg', 'NORIKS Bowl z nehrdzavejúcej ocele' ); ?></div>
+    <div class="nbw-media"><?php echo $bw_img( 'bwl-06-celik.jpg', 'NORIKS Bowl от неръждаема стомана' ); ?></div>
     <div class="nbw-copy">
-      <p class="nbw-kicker">Materiál</p>
-      <h2 class="nbw-h2">Oceľ namiesto <em>plastu</em></h2>
-      <p>Plastové misky časom dostanú drobné škrabance, v ktorých zostávajú zvyšky krmiva a zápach. Oceľ zostáva hladká roky.</p>
+      <p class="nbw-kicker">Материал</p>
+      <h2 class="nbw-h2">Стомана вместо <em>plastu</em></h2>
+      <p>Пластмасовите купи с времето се сдобиват с дребни драскотини, в които остават остатъци от храна и миризма. Стоманата остава гладка години.</p>
       <ul class="nbw-vs">
-        <li class="is-yes">Nehrdzavejúca oceľ — miska aj podstavec</li>
-        <li class="is-yes">Nenasáva pachy a nemení farbu</li>
-        <li class="is-yes">Opláchne sa teplou vodou za pár sekúnd</li>
-        <li class="is-no">Plast, ktorý sa poškriabe a drží zvyšky</li>
-        <li class="is-no">Keramika, ktorá sa po páde odštiepi</li>
+        <li class="is-yes">Неръждаема стомана — купа и поставка</li>
+        <li class="is-yes">Не поема миризми и не променя цвета си</li>
+        <li class="is-yes">Изплаква се с топла вода за няколко секунди</li>
+        <li class="is-no">Пластмаса, която се надрасква и задържа остатъци</li>
+        <li class="is-no">Керамика, която се отчупва след падане</li>
       </ul>
     </div>
   </div>
@@ -113,21 +113,21 @@ $bw_img  = function( $file, $alt ) use ( $bw, $bw_path ) {
 <!-- 6) VOLE JE VLASNICI PASA — fotografije kupaca -->
 <section class="nbw-sec nbw-rev">
   <div class="nbw-wrap">
-    <h2 class="nbw-h2" style="text-align:center">Majú ju radi <em>majitelia psov</em></h2>
-    <p class="nbw-rev__lead">Lepšie držanie tela. Pokojnejšie jedlá.</p>
-    <p class="nbw-rev__rate"><span class="nbw-rev__stars">★★★★★</span> Hodnotenie <strong>4,8/5</strong> na základe <strong>1 081 recenzií</strong></p>
+    <h2 class="nbw-h2" style="text-align:center">Обичат я <em>majitelia psov</em></h2>
+    <p class="nbw-rev__lead">По-добра стойка. По-спокойни хранения.</p>
+    <p class="nbw-rev__rate"><span class="nbw-rev__stars">★★★★★</span> Hodnotenie <strong>4,8/5</strong> на база <strong>1 081 отзива</strong></p>
     <div class="nbw-rev__strip">
         <figure class="nbw-rev__card">
-          <?php echo $bw_img( 'bwl-02-jazavcar.jpg', 'Jazvečík, 6 rokov pri miske NORIKS Bowl' ); ?>
-          <figcaption><span class="nbw-rev__stars">★★★★★</span><strong>Jazvečík, 6 rokov</strong><span>„Už neje v drepe. Miska je akurát taká vysoká, aby mu hlava zostala rovno."</span></figcaption>
+          <?php echo $bw_img( 'bwl-02-jazavcar.jpg', 'Дакел, 6 години при купата NORIKS Bowl' ); ?>
+          <figcaption><span class="nbw-rev__stars">★★★★★</span><strong>Дакел, 6 години</strong><span>„Вече не яде приклекнал. Купата е точно толкова висока, че главата му остава изправена."</span></figcaption>
         </figure>
         <figure class="nbw-rev__card">
-          <?php echo $bw_img( 'bwl-03-francuski-buldog.jpg', 'Francúzsky buldoček, 3 roky pri miske NORIKS Bowl' ); ?>
-          <figcaption><span class="nbw-rev__stars">★★★★★</span><strong>Francúzsky buldoček, 3 roky</strong><span>„Pre psa s krátkym ňufákom je to najväčší rozdiel — je pokojnejšie a bez dusenia."</span></figcaption>
+          <?php echo $bw_img( 'bwl-03-francuski-buldog.jpg', 'Френски булдог, 3 години при купата NORIKS Bowl' ); ?>
+          <figcaption><span class="nbw-rev__stars">★★★★★</span><strong>Френски булдог, 3 години</strong><span>„За куче с къса муцуна това е най-голямата разлика — яде по-спокойно и без да се задавя."</span></figcaption>
         </figure>
         <figure class="nbw-rev__card">
-          <?php echo $bw_img( 'bwl-04-snaucer.jpg', 'Knírač, 8 rokov pri miske NORIKS Bowl' ); ?>
-          <figcaption><span class="nbw-rev__stars">★★★★★</span><strong>Knírač, 8 rokov</strong><span>„Starší pes so stuhnutým krkom. Sklon 15° mu viditeľne uľahčil jedlo."</span></figcaption>
+          <?php echo $bw_img( 'bwl-04-snaucer.jpg', 'Шнауцер, 8 години при купата NORIKS Bowl' ); ?>
+          <figcaption><span class="nbw-rev__stars">★★★★★</span><strong>Шнауцер, 8 години</strong><span>„По-старо куче със скована шия. Наклонът 15° видимо му облекчи храненето."</span></figcaption>
         </figure>
     </div>
   </div>
@@ -138,16 +138,16 @@ $bw_img  = function( $file, $alt ) use ( $bw, $bw_path ) {
   <div class="nbw-wrap nbw-row2 nbw-row2--rev">
     <div class="nbw-copy">
       <p class="nbw-kicker">NORIKS Bowl</p>
-      <h2 class="nbw-h2">Stabilná, elegantná <em>a naozaj pohodlná</em></h2>
-      <p>Podstavec stojí pevne, aj keď je pes nemotorný, oceľ sa umyje za pár sekúnd a v kuchyni vyzerá ako súčasť nábytku, nie ako plastová miska na podlahe.</p>
+      <h2 class="nbw-h2">Стабилна, елегантна <em>и наистина удобна</em></h2>
+      <p>Поставката стои стабилно, дори когато кучето е несръчно, стоманата се измива за няколко секунди, а в кухнята изглежда като част от обзавеждането, не като пластмасова купа на пода.</p>
       <ul class="nbw-check">
-        <li>Na krmivo aj na vodu — mnohí berú dve</li>
-        <li>Rýchle doručenie domov</li>
-        <li><strong>30 dní</strong> na vrátenie peňazí</li>
+        <li>За храна и за вода — мнозина вземат две</li>
+        <li>Бърза доставка до дома</li>
+        <li><strong>30 дни</strong> за връщане на парите</li>
       </ul>
-      <a class="nbw-cta" href="#bundle-selector">Objednať NORIKS Bowl</a>
+      <a class="nbw-cta" href="#bundle-selector">Поръчай NORIKS Bowl</a>
     </div>
-    <div class="nbw-media"><?php echo $bw_img( 'bwl-08-izjava.jpg', 'Jazvečík pri miske NORIKS Bowl' ); ?></div>
+    <div class="nbw-media"><?php echo $bw_img( 'bwl-08-izjava.jpg', 'Дакел при купата NORIKS Bowl' ); ?></div>
   </div>
 </section>
 

@@ -16,13 +16,13 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
   <div class="kmf-wrap kmf-row2 kmf-rev">
     <div class="kmf-media"><video src="<?php echo esc_url( $kmv.'demo.mp4' ); ?>" autoplay muted loop playsinline preload="metadata"></video></div>
     <div class="kmf-copy">
-      <p class="kmf-eyebrow">Okamžitý účinok</p>
-      <h2 class="kmf-h2">Tvaruje siluetu, <em>len čo si ho oblečiete</em></h2>
-      <p>Cielená kompresia rovnomerne sťahuje brucho a boky, vyhladzuje „pneumatiky“ na bokoch a napriamuje držanie tela — bez sťahovania, ktoré obmedzuje dýchanie či pohyb.</p>
+      <p class="kmf-eyebrow">Мигновен ефект</p>
+      <h2 class="kmf-h2">Tvaruje siluetu, <em>още щом я облечете</em></h2>
+      <p>Прицелената компресия равномерно прибира корема и кръста, изглажда „гумите“ отстрани и изправя стойката — без стягане, което ограничава дишането или движението.</p>
       <ul class="kmf-check">
-        <li>Vyhladené brucho a hrudník</li>
-        <li>Vzpriamenejšie, sebavedomé držanie tela</li>
-        <li>Neviditeľné pod akoukoľvek košeľou</li>
+        <li>Изгладен корем и гърди</li>
+        <li>По-изправена, уверена стойка</li>
+        <li>Невидима под всяка риза</li>
       </ul>
     </div>
   </div>
@@ -33,30 +33,30 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
   <div class="kmf-wrap kmf-row2">
     <div class="kmf-copy">
       <p class="kmf-eyebrow">NORIKS FIT</p>
-      <h2 class="kmf-h2">Vráťte si sebavedomie a silu</h2>
-      <p>Ak chcete, aby vám oblečenie lepšie sedelo a aby ste sa celý deň cítili podporovaní, NORIKS FIT je stvorený pre vás.</p>
-      <p>Vyrobený z <strong>iónovej kompresnej tkaniny</strong> poskytuje priliehavý, podporný strih, ktorý vyhladzuje siluetu a ponúka celodenné pohodlie — ostrejší vzhľad, lepšie vnímanie držania tela a sebavedomie, ktoré prichádza, keď sa cítite dobre v tom, čo nosíte.</p>
-      <a class="kmf-cta" href="#bundle-selector">Vyberte si svoju veľkosť →</a>
+      <h2 class="kmf-h2">Върнете си самочувствието и силата</h2>
+      <p>Ако искате облеклото да ви стои по-добре и да се чувствате подкрепени през целия ден, NORIKS FIT е създадена за вас.</p>
+      <p>Изработена от <strong>йонен компресионен плат</strong> осигурява прилепнала, поддържаща кройка, която изглажда силуета и дава комфорт през целия ден — по-изчистен външен вид, по-добро усещане за стойката и самочувствието, което идва, когато се чувствате добре в това, което носите.</p>
+      <a class="kmf-cta" href="#bundle-selector">Изберете своя размер →</a>
     </div>
-    <div class="kmf-media kmf-hero-media"><img src="<?php echo esc_url( $km.'hero.webp' ); ?>" alt="NORIKS FIT kompresné tričko pod košeľou" loading="lazy"></div>
+    <div class="kmf-media kmf-hero-media"><img src="<?php echo esc_url( $km.'hero.webp' ); ?>" alt="Компресионна тениска NORIKS FIT под риза" loading="lazy"></div>
   </div>
 </section>
 
 <!-- ============ 3) Tajno oružje protiv pivskog trbuha ============ -->
 <section class="kmf-sec">
   <div class="kmf-wrap">
-    <h2 class="kmf-h2 kmf-center kmf-upper">Vaša nová tajná zbraň proti pivnému bruchu</h2>
+    <h2 class="kmf-h2 kmf-center kmf-upper">Новото ви тайно оръжие срещу бирено коремче</h2>
     <div class="kmf-weapon-grid">
       <div class="kmf-feat-col">
         <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Zbohom „dad bod“.</p></div>
-        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Pivné brucho? Preč.</p></div>
-        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Faldíky? Zamknuté.</p></div>
+        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Бирено коремче? Няма го.</p></div>
+        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Гънките? Заключени.</p></div>
       </div>
       <div class="kmf-weapon-media"><img src="<?php echo esc_url( $km.'wear.webp' ); ?>" alt="NORIKS FIT tvaruje brucho a siluetu" loading="lazy"></div>
       <div class="kmf-feat-col">
-        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Hrudník? Vyhladený.</p></div>
-        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Neviditeľné. Nezastaviteľné.</p></div>
-        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Košeľa sedí. Konečne.</p></div>
+        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Гърдите? Изгладени.</p></div>
+        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Невидима. Неудържима.</p></div>
+        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Ризата стои. Най-накрая.</p></div>
       </div>
     </div>
   </div>
@@ -66,15 +66,15 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
 <section class="kmf-sec">
   <div class="kmf-wrap kmf-row2">
     <div class="kmf-copy">
-      <p class="kmf-eyebrow">Viditeľný rozdiel</p>
+      <p class="kmf-eyebrow">Видима разлика</p>
       <h2 class="kmf-h2">Pred a po NORIKS FIT</h2>
-      <p>Vzpriamenejšie držanie tela, vyhladené brucho a ostrejšia silueta — len čo si ho oblečiete.</p>
+      <p>По-изправена стойка, изгладен корем и по-изчистен силует — още щом я облечете.</p>
       <ul class="kmf-check">
-        <li>Viditeľne vzpriamenejšie držanie tela</li>
-        <li>Vyhladené brucho a „pneumatiky“</li>
-        <li>Ostrejšia silueta pod každým tričkom</li>
+        <li>Видимо по-изправена стойка</li>
+        <li>Изгладен корем и „гуми“</li>
+        <li>По-изчистен силует под всяка тениска</li>
       </ul>
-      <a class="kmf-cta" href="#bundle-selector">Vyberte si svoju veľkosť →</a>
+      <a class="kmf-cta" href="#bundle-selector">Изберете своя размер →</a>
     </div>
     <div class="kmf-media"><img src="<?php echo esc_url( $km.'ks-sk-04.webp' ); ?>" alt="Pred a po NORIKS FIT" loading="lazy"></div>
   </div>
@@ -94,23 +94,23 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
 <!-- ============ 4) Zašto NORIKS FIT? (usporedba) ============ -->
 <section class="kmf-sec kmf-alt">
   <div class="kmf-wrap">
-    <h2 class="kmf-h2 kmf-center">Prečo NORIKS FIT?</h2>
-    <p class="kmf-sub">Porovnajte NORIKS FIT s bežnými kompresnými tričkami a uvidíte rozdiel, ktorý pocítite hneď, ako si ho oblečiete.</p>
+    <h2 class="kmf-h2 kmf-center">Защо NORIKS FIT?</h2>
+    <p class="kmf-sub">Сравнете NORIKS FIT с обикновени компресионни тениски и ще видите разликата, която усещате още щом я облечете.</p>
     <div class="kmf-cmp-row">
-      <div class="kmf-cmp-media"><img src="<?php echo esc_url( $km.'compare.webp' ); ?>" alt="NORIKS FIT v porovnaní s bežnými tričkami" loading="lazy"></div>
+      <div class="kmf-cmp-media"><img src="<?php echo esc_url( $km.'compare.webp' ); ?>" alt="NORIKS FIT в сравнение с обикновени тениски" loading="lazy"></div>
       <div class="kmf-table">
         <div class="kmf-t-head">
           <span class="kmf-t-feature"></span>
           <span class="kmf-t-col kmf-t-us">NORIKS FIT</span>
-          <span class="kmf-t-col kmf-t-them">Ostatní</span>
+          <span class="kmf-t-col kmf-t-them">Останалите</span>
         </div>
         <?php
         $kmf_rows = array(
-          'Celodenné pohodlie kompresie',
-          'Odolný, vysokokvalitný materiál',
-          'Neviditeľné pod akoukoľvek košeľou',
-          'Zároveň aj športové tričko',
-          'Ľahká tkanina odvádzajúca vlhkosť',
+          'Комфорт от компресията през целия ден',
+          'Издръжлив, висококачествен материал',
+          'Невидима под всяка риза',
+          'Същевременно и спортна тениска',
+          'Лек плат, който отвежда влагата',
         );
         foreach ( $kmf_rows as $row ) : ?>
           <div class="kmf-t-row">
@@ -130,26 +130,26 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
   <div class="kmf-wrap">
     <div class="kmf-rev-top">
       <span class="kmf-rev-stars">★★★★★</span>
-      <span class="kmf-rev-head">3 575 overených recenzií — vynikajúce, 4,8 z 5 hviezdičiek</span>
+      <span class="kmf-rev-head">3 575 проверени отзива — отлично, 4,8 от 5 звезди</span>
     </div>
     <div class="kmf-rev-cards">
       <div class="kmf-rev-card">
-        <div class="kmf-rev-photo"><img src="<?php echo esc_url( $km.'wear.webp' ); ?>" alt="NORIKS FIT recenzia zákazníka" loading="lazy"></div>
-        <p class="kmf-rev-txt">„Budem úprimný — bol som skeptický. Vždy som mal to bruško, ktoré som schovával pod voľnými tričkami. Po 4 týždňoch nosenia NORIKS-u 4 hodiny denne som zhodil pár centimetrov v páse a začal som stáť vzpriamene bez rozmýšľania. Ramená sa otvorili a priateľka povedala, že vyzerám, akoby som ‚žiaril‘.“</p>
-        <div class="kmf-rev-foot"><span class="kmf-rev-badge">★★★★★ Overený</span><span class="kmf-rev-name">Ján M. — 34 r.</span></div>
+        <div class="kmf-rev-photo"><img src="<?php echo esc_url( $km.'wear.webp' ); ?>" alt="NORIKS FIT отзив на клиент" loading="lazy"></div>
+        <p class="kmf-rev-txt">„Ще бъда честен — бях скептичен. Винаги имах онова коремче, което криех под широки тениски. След 4 седмици носене на NORIKS по 4 часа дневно свалих няколко сантиметра в талията и започнах да стоя изправен, без да мисля. Раменете се отвориха, а приятелката ми каза, че изглеждам, сякаш ‚светя‘.“</p>
+        <div class="kmf-rev-foot"><span class="kmf-rev-badge">★★★★★ Проверен</span><span class="kmf-rev-name">Иван М. — 34 г.</span></div>
       </div>
       <div class="kmf-rev-card">
-        <div class="kmf-rev-photo"><img src="<?php echo esc_url( $km.'persona.webp' ); ?>" alt="NORIKS FIT recenzia zákazníka" loading="lazy"></div>
-        <p class="kmf-rev-txt">„Celý deň sedím za stolom. Zhrbený, nafúknutý, bez sebavedomia. NORIKS ma doslova prinútil sedieť vzpriamene bez akejkoľvek námahy. Za 10 dní napätie v chrbte zmizlo a košele začali lepšie sedieť. Teraz ho nosím do kancelárie — je diskrétny, priedušný a úprimne? Prestal som sa schovávať pred kamerami.“</p>
-        <div class="kmf-rev-foot"><span class="kmf-rev-badge">★★★★★ Overený</span><span class="kmf-rev-name">Marek P. — 42 r.</span></div>
+        <div class="kmf-rev-photo"><img src="<?php echo esc_url( $km.'persona.webp' ); ?>" alt="NORIKS FIT отзив на клиент" loading="lazy"></div>
+        <p class="kmf-rev-txt">„Цял ден седя на бюро. Прегърбен, подут, без самочувствие. NORIKS буквално ме накара да седя изправен без никакво усилие. За 10 дни напрежението в гърба изчезна и ризите започнаха да стоят по-добре. Сега я нося в офиса — дискретна е, дишаща и честно? Спрях да се крия от камерите.“</p>
+        <div class="kmf-rev-foot"><span class="kmf-rev-badge">★★★★★ Проверен</span><span class="kmf-rev-name">Marek P. — 42 r.</span></div>
       </div>
       <div class="kmf-rev-card">
-        <div class="kmf-rev-photo"><img src="<?php echo esc_url( $km.'hero.webp' ); ?>" alt="NORIKS FIT recenzia zákazníka" loading="lazy"></div>
-        <p class="kmf-rev-txt">„Tri roky som odmietal chodiť von, lebo som nenávidel to, čo vidím v zrkadle, keď sa obliekam. S NORIKS-om som prvýkrát prestal bojovať s vlastným odrazom. Dnes ráno som sa obliekol za 5 minút. Bez naprávania. Bez vyhýbania sa zrkadlu. To je ono.“</p>
-        <div class="kmf-rev-foot"><span class="kmf-rev-badge">★★★★★ Overený</span><span class="kmf-rev-name">Tomáš K. — 27 r.</span></div>
+        <div class="kmf-rev-photo"><img src="<?php echo esc_url( $km.'hero.webp' ); ?>" alt="NORIKS FIT отзив на клиент" loading="lazy"></div>
+        <p class="kmf-rev-txt">„Три години отказвах да излизам, защото ненавиждах това, което виждам в огледалото, когато се обличам. С NORIKS за първи път спрях да се боря с отражението си. Тази сутрин се облякох за 5 минути. Без оправяне. Без избягване на огледалото. Това е.“</p>
+        <div class="kmf-rev-foot"><span class="kmf-rev-badge">★★★★★ Проверен</span><span class="kmf-rev-name">Томислав К. — 27 г.</span></div>
       </div>
     </div>
-    <div class="kmf-cta-wrap"><a class="kmf-cta" href="#bundle-selector">Vyberte si svoju veľkosť →</a></div>
+    <div class="kmf-cta-wrap"><a class="kmf-cta" href="#bundle-selector">Изберете своя размер →</a></div>
   </div>
 </section>
 
