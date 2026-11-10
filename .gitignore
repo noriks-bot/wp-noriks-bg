@@ -14,3 +14,6 @@
 # Keep themes and plugins (tracked)
 !/wp-content/themes/
 !/wp-content/plugins/
+
+# Navodila za postavitev BG trga
+!BG-SETUP.md
