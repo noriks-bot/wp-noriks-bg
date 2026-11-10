@@ -11,17 +11,17 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 <div id="custom-size-chart-modal" class="kwsc" role="dialog" aria-modal="true" aria-labelledby="kwsc-title">
   <div class="kwsc-box">
   <div class="kwsc-bar">
-    <h2 id="kwsc-title">Tabuľka veľkostí</h2>
-    <span id="close-size-chart-x" role="button" tabindex="0" aria-label="Zavrieť">&times;</span>
+    <h2 id="kwsc-title">Таблица с размери</h2>
+    <span id="close-size-chart-x" role="button" tabindex="0" aria-label="Затвори">&times;</span>
   </div>
 
   <div class="kwsc-body">
-    <p class="kwsc-lead">Objednajte si <strong>svoje bežné číslo obuvi</strong>. Pletenina je pružná, takže každá veľkosť pokryje niekoľko čísel.</p>
+    <p class="kwsc-lead">Поръчайте <strong>обичайното си число обувки</strong>. Плетката е еластична, така че всеки размер покрива няколко номера.</p>
 
     <div class="kwsc-scroll">
       <table class="kwsc-table">
         <thead>
-          <tr><th scope="col">EU číslo obuvi</th></tr>
+          <tr><th scope="col">EU номер обувки</th></tr>
         </thead>
         <tbody>
           <?php foreach ( noriks_slabproof_sizes() as $r ) : ?>
@@ -32,13 +32,13 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     </div>
 
     <div class="kwsc-how">
-      <h3>Ako vybrať</h3>
+      <h3>Как да изберете</h3>
       <ol>
-        <li><strong>Pozrite sa na číslo</strong> na pracovných čižmách alebo topánkach, ktoré bežne nosíte.</li>
-        <li><strong>Nájdite ho</strong> v stĺpci EU číslo obuvi.</li>
-        <li><strong>Medzi dvoma veľkosťami?</strong> Vezmite väčšiu — ponožka nebude zvierať prsty.</li>
+        <li><strong>Погледнете номера</strong> на работните обувки, които обикновено носите.</li>
+        <li><strong>Намерете го</strong> в колоната EU номер обувки.</li>
+        <li><strong>Между два размера?</strong> Вземете по-големия — чорапът няма да стяга пръстите.</li>
       </ol>
-      <p class="kwsc-note">Vankúšik na päte a pás okolo klenby sadnú na miesto len v správnej veľkosti.</p>
+      <p class="kwsc-note">Подложката на петата и лентата около свода застават на място само при правилния размер.</p>
     </div>
   </div>
   </div>

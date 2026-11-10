@@ -35,7 +35,7 @@ function noriks_pp_upsell_register_fields() {
 		'fields' => array(
 			array(
 				'key'          => 'field_noriks_pp_upsell',
-				'label'        => 'Zobraziť upsell pod tlačidlom (4x Zelené boxerky)',
+				'label'        => 'Pokazi upsell pod gumbom (4x zelene bokserice)',
 				'name'         => 'noriks_pp_upsell',
 				'type'         => 'true_false',
 				'instructions' => 'Добавя кутия „Купете заедно и спестете" точно под бутона Добави в количката. Клиентът избира размер и 4 броя се добавят на upsell цена. Важи само за този продукт.',
@@ -43,7 +43,7 @@ function noriks_pp_upsell_register_fields() {
 			),
 			array(
 				'key'          => 'field_noriks_pp_upsell2',
-				'label'        => 'Zobraziť upsell #2 pod tlačidlom (2 tričká: čierne + sivé)',
+				'label'        => 'Pokazi upsell #2 pod gumbom (2 majici: crna + siva)',
 				'name'         => 'noriks_pp_upsell2',
 				'type'         => 'true_false',
 				'instructions' => 'Втора upsell кутия: пакет от 2 тениски (1 черна + 1 сива), клиентът избира един размер за двете. Независима от първия превключвател.',
@@ -51,7 +51,7 @@ function noriks_pp_upsell_register_fields() {
 			),
 			array(
 				'key'          => 'field_noriks_pp_upsell3',
-				'label'        => 'Zobraziť upsell #3 pod tlačidlom (kompresné tričko NORIKS FIT)',
+				'label'        => 'Pokazi upsell #3 pod gumbom (kompresijska majica NORIKS FIT)',
 				'name'         => 'noriks_pp_upsell3',
 				'type'         => 'true_false',
 				'instructions' => 'Трета upsell кутия: компресионна тениска NORIKS FIT, клиентът избира размер. Независима от първите два превключвателя.',
@@ -75,8 +75,8 @@ function noriks_pp_upsell_config() {
 		'product_id' => 3153,                    // Plave Bokserice (varijabilni proizvod)
 		'qty'        => 4,                       // uvijek 4 komada, iste veličine
 		'total'      => 19.99,                   // ista cijena kao thank you upsell (4 komada)
-		'title'      => '4x Modré boxerky',
-		'desc'       => 'Priedušné a mäkké — pridajte ich k objednávke so zľavou %s%%.', // %s = izracunati popust
+		'title'      => '4x Сини боксерки',
+		'desc'       => 'Дишащи и меки — добавете ги към поръчката с %s%% отстъпка.', // %s = izracunati popust
 		'size_attr'  => 'Размер',
 		// Interna oznaka paketa (SKU konvencija kao kod bundle proizvoda + UPSELL na kraju).
 		'sku'        => 'NORIKS-BOX-BLUE-4-PACK-UPSELL',
@@ -459,13 +459,13 @@ function noriks_pp_upsell2_config() {
 		'product_b'  => 471,   // Siva majica (varijabilni proizvod)
 		'total'      => 16.99, // cijena cijelog paketa (2 komada)
 		'title'      => '1x Черни + 1x Сива тениска',
-		'desc'       => 'Dve základné tričká v balíčku — pridajte ich k objednávke so zľavou %s%%.',
+		'desc'       => 'Две базови тениски в пакет — добавете ги към поръчката с %s%% отстъпка.',
 		'size_attr'  => 'Размер',
 		'sku'        => 'NORIKS-SHIRTS-BLACK-GRAY-2-PACK-UPSELL',
 		'image'      => get_template_directory_uri() . '/img/upsell/upsell-2x-majici.png',
 		'label'      => 'Купете заедно и спестете:',
 		'add_text'   => 'Добави към покупката',
-		'aria'       => 'Размер tričiek',
+		'aria'       => 'Размер на тениските',
 	) );
 }
 
@@ -844,8 +844,8 @@ function noriks_pp_upsell3_config() {
 	return apply_filters( 'noriks_pp_upsell3_config', array(
 		'product_id' => 7242,   // NORIKS FIT kompresijska majica (jednostavan proizvod)
 		'total'      => 17.99,  // cijena za 1 komad
-		'title'      => 'Kompresné tričko NORIKS FIT',
-		'desc'       => 'Formuje siluetu a podporuje držanie tela — pridaj ho k objednávke so zľavou %s%%.',
+		'title'      => 'Компресионна тениска NORIKS FIT',
+		'desc'       => 'Оформя силуета и подкрепя стойката — добави я към поръчката с %s%% отстъпка.',
 		'size_attr'  => 'Размер',
 		'sizes'      => array( 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL' ), // upsell nudi S–4XL
 		'sku'        => 'NORIKS-KOMPSFIT-1-UPSELL',

@@ -6,17 +6,17 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 $noriks_st = array(
-    'uvod'    => 'Veľkosť vyberte podľa svojej <strong>veľkosti obuvi (EU)</strong>.',
-    'glava'   => array( 'Veľkosť obuvi (EU)' ),
+    'uvod'    => 'Изберете размер според своя <strong>размер обувки (EU)</strong>.',
+    'glava'   => array( 'Размер обувки (EU)' ),
     'vrstice' => function_exists( 'noriks_tradesman_sizes' ) ? noriks_tradesman_sizes() : array(),
-    'opomba'  => 'Ste medzi dvoma veľkosťami? Zoberte väčšiu.',
+    'opomba'  => 'Между два размера сте? Вземете по-големия.',
 );
 ?>
 <div id="custom-size-chart-modal" class="kwsc" role="dialog" aria-modal="true" aria-labelledby="kwsc-title">
   <div class="kwsc-box">
   <div class="kwsc-bar">
-    <h2 id="kwsc-title">Tabuľka veľkostí</h2>
-    <span id="close-size-chart-x" role="button" tabindex="0" aria-label="Zavrieť">&times;</span>
+    <h2 id="kwsc-title">Таблица с размери</h2>
+    <span id="close-size-chart-x" role="button" tabindex="0" aria-label="Затвори">&times;</span>
   </div>
 
   <div class="kwsc-body">
@@ -38,7 +38,7 @@ $noriks_st = array(
 
     <div class="kwsc-how">
       <?php if ( $noriks_st['opomba'] ) : ?><p class="kwsc-note"><?php echo esc_html( $noriks_st['opomba'] ); ?></p><?php endif; ?>
-      <p class="kwsc-note">Ak vám veľkosť nesedí, máte 30 dní na vrátenie alebo výmenu.</p>
+      <p class="kwsc-note">Ако размерът не ви стане, имате 30 дни за връщане или замяна.</p>
     </div>
   </div>
   </div>

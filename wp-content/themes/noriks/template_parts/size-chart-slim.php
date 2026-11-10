@@ -15,17 +15,17 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 <div id="custom-size-chart-modal" class="kwsc" role="dialog" aria-modal="true" aria-labelledby="kwsc-title">
   <div class="kwsc-box">
   <div class="kwsc-bar">
-    <h2 id="kwsc-title">Tabuľka veľkostí</h2>
-    <span id="close-size-chart-x" role="button" tabindex="0" aria-label="Zavrieť">&times;</span>
+    <h2 id="kwsc-title">Таблица с размери</h2>
+    <span id="close-size-chart-x" role="button" tabindex="0" aria-label="Затвори">&times;</span>
   </div>
 
   <div class="kwsc-body">
-    <p class="kwsc-lead">Veľkosť vyberajte podľa <strong>obvodu pása</strong>, nie podľa bežnej veľkosti oblečenia — po tehotenstve alebo zmene hmotnosti sa tieto dve veľkosti často nezhodujú. Ak ste medzi dvoma veľkosťami, vezmite si <strong>väčšiu</strong>.</p>
+    <p class="kwsc-lead">Изберете размер според <strong>обиколката на талията</strong>, а не според обичайния размер облекло — след бременност или промяна в теглото тези два размера често не съвпадат. Ако сте между два размера, вземете <strong>по-големия</strong>.</p>
 
     <div class="kwsc-scroll">
       <table class="kwsc-table">
         <thead>
-          <tr><th scope="col">Veľkosť</th><th scope="col">EU veľkosť</th><th scope="col">Obvod pása</th></tr>
+          <tr><th scope="col">Размер</th><th scope="col">EU размер</th><th scope="col">Обиколка на талията</th></tr>
         </thead>
         <tbody>
           <?php foreach ( noriks_slim_sizes() as $r ) : ?>
@@ -38,13 +38,13 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     </div>
 
     <div class="kwsc-how">
-      <h3>Ako sa odmerať</h3>
+      <h3>Как да се измерите</h3>
       <ol>
-        <li><strong>Nájdite najužšie miesto trupu</strong> — zvyčajne kúsok nad pupkom.</li>
-        <li><strong>Oviňte meter</strong> vodorovne okolo tela, priliehavo, ale nie natesno.</li>
-        <li><strong>Vyberte riadok</strong>, v ktorom je váš obvod; ak ste medzi dvoma riadkami, vezmite si väčšiu veľkosť.</li>
+        <li><strong>Намерете най-тясното място на тялото</strong> — обикновено малко над пъпа.</li>
+        <li><strong>Обвийте метъра</strong> хоризонтално около тялото, прилепнало, но не стегнато.</li>
+        <li><strong>Изберете реда</strong>, в който е вашата обиколка; ако сте между два реда, вземете по-големия размер.</li>
       </ol>
-      <p class="kwsc-note">Po pôrode merajte nad bruchom, nie cez jeho najširšiu časť.</p>
+      <p class="kwsc-note">След раждане мерете над корема, не през най-широката му част.</p>
     </div>
   </div>
   </div>

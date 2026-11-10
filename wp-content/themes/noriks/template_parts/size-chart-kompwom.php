@@ -15,18 +15,18 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 <div id="custom-size-chart-modal" class="kwsc" role="dialog" aria-modal="true" aria-labelledby="kwsc-title">
   <div class="kwsc-box">
   <div class="kwsc-bar">
-    <h2 id="kwsc-title">Tabuľka veľkostí</h2>
-    <span id="close-size-chart-x" role="button" tabindex="0" aria-label="Zavrieť">&times;</span>
+    <h2 id="kwsc-title">Таблица с размери</h2>
+    <span id="close-size-chart-x" role="button" tabindex="0" aria-label="Затвори">&times;</span>
   </div>
 
   <div class="kwsc-body">
-    <p class="kwsc-lead">Veľkosť vyberajte podľa <strong>obvodu hrudníka</strong> — ten určuje, ako tričko sadne na prsia a ramená. Ak ste medzi dvomi veľkosťami, vezmite <strong>väčšiu</strong>.</p>
+    <p class="kwsc-lead">Изберете размер според <strong>обиколката на гърдите</strong> — тя определя как тениската ще седне на гърдите и раменете. Ако сте между два размера, вземете <strong>по-големия</strong>.</p>
 
 
     <div class="kwsc-scroll">
       <table class="kwsc-table">
         <thead>
-          <tr><th scope="col">Veľkosť</th><th scope="col">Obvod hrudníka</th><th scope="col">Obvod pása</th></tr>
+          <tr><th scope="col">Размер</th><th scope="col">Обиколка на гърдите</th><th scope="col">Обиколка на талията</th></tr>
         </thead>
         <tbody>
           <tr><th scope="row">S <span class="kwsc-us">US 0–4</span></th>
@@ -52,13 +52,13 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     </div>
 
     <div class="kwsc-how">
-      <h3>Ako merať</h3>
+      <h3>Как да мерите</h3>
       <ol>
-        <li><strong>Hrudník</strong> — cez najširšiu časť hrudníka, páska vodorovne okolo tela.</li>
-        <li><strong>Pás</strong> — najužšia časť pása, zvyčajne kúsok nad pupkom.</li>
-        <li><strong>Vyberte riadok</strong>, v ktorom sú obidve čísla; ak padnú do dvoch riadkov, vezmite väčšiu veľkosť.</li>
+        <li><strong>Гърди</strong> — през най-широката част на гърдите, лентата хоризонтално около тялото.</li>
+        <li><strong>Талия</strong> — най-тясната част на талията, обикновено малко над пъпа.</li>
+        <li><strong>Изберете реда</strong>, в който са и двете числа; ако попадат в два реда, вземете по-големия размер.</li>
       </ol>
-      <p class="kwsc-note">Merajte cez spodnú bielizeň, nie cez oblečenie. Páska nech prilieha, ale nesťahuje.</p>
+      <p class="kwsc-note">Мерете през бельото, не през облеклото. Лентата да прилепва, но да не стяга.</p>
     </div>
   </div>
   </div>

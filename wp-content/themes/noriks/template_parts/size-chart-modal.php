@@ -187,7 +187,7 @@
 <div id="custom-size-chart-backdrop"></div>
 <div id="custom-size-chart-modal" aria-modal="true" role="dialog" aria-labelledby="custom-size-chart-title">
   <div class="size-chart-titlebar">
-    <h2 id="custom-size-chart-title">Tabuľka veľkostí</h2>
+    <h2 id="custom-size-chart-title">Таблица с размери</h2>
     <span id="close-size-chart-x" style="font-size: 26px; font-weight: bold; cursor: pointer;
       background: #000; border-radius: 2px; width: 34px; height: 34px;
       display: inline-flex; align-items: center; justify-content: center;
@@ -228,7 +228,7 @@
         <div class="noriks-bx-wrap">
           <table class="noriks-bx-t">
             <thead>
-              <tr><th>Veľkosť</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>2XL</th><th>3XL</th><th>4XL</th></tr>
+              <tr><th>Размер</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>2XL</th><th>3XL</th><th>4XL</th></tr>
             </thead>
             <tbody>
               <tr><th>a</th><td>32</td><td>34</td><td>36</td><td>38</td><td>40</td><td>42</td><td>44</td></tr>
@@ -240,7 +240,7 @@
         </div>
         <img class="noriks-bx-fig" src="<?php echo esc_url( get_template_directory_uri() . '/img/boxers-measure.webp' ); ?>"
              alt="Rozmery boxeriek: a, b, c, d" loading="lazy">
-        <p class="noriks-bx-note"><strong>Vyberte rovnaké číslo, aké bežne nosíte.</strong><br>Rozmery sú v centimetroch. Veľkosti sa môžu líšiť o &plusmn;1&ndash;2 cm. Ak ste medzi dvoma veľkosťami, zvoľte menšiu &mdash; materiál je pružný.</p>
+        <p class="noriks-bx-note"><strong>Изберете същото число, което обикновено носите.</strong><br>Размерите са в сантиметри. Размерите може да се различават с &plusmn;1&ndash;2 cm. Ако сте между два размера, изберете по-малкия &mdash; материалът е еластичен.</p>
       </div>
 
       
@@ -249,11 +249,11 @@
       <?php elseif ( function_exists('noriks_is_type') && noriks_is_type( 'kompresijske-nogavice' ) ): ?>
 
       <div style="line-height:1.9; text-align:left; margin:40px 0; padding:0 6px; font-size:15px; color:#111;">
-        <strong>S/M</strong> : veľkosť obuvi 36–40 / obvod lýtka : 23–36 cm<br>
-        <strong>L/XL</strong> : veľkosť obuvi 40–44 / obvod lýtka : 36–45 cm<br>
-        <strong>2XL</strong> : veľkosť obuvi 44–48 / obvod lýtka : 45–56 cm<br><br>
-        Zmerajte prosím obvod lýtka na najširšom mieste, aby ste zistili svoju veľkosť.<br><br>
-        Odporúčame vybrať veľkosť podľa obvodu lýtka, nie podľa bežnej veľkosti obuvi.
+        <strong>S/M</strong> : размер обувки 36–40 / обиколка на прасеца : 23–36 cm<br>
+        <strong>L/XL</strong> : размер обувки 40–44 / обиколка на прасеца : 36–45 cm<br>
+        <strong>2XL</strong> : размер обувки 44–48 / обиколка на прасеца : 45–56 cm<br><br>
+        Моля, измерете обиколката на прасеца на най-широкото място, за да определите своя размер.<br><br>
+        Препоръчваме да изберете размер според обиколката на прасеца, а не според обичайния размер обувки.
       </div>
 
       <?php elseif ( has_term( array( 'ponozky', 'zimske-carape	' ), 'product_cat', get_the_ID() ) ): ?>
@@ -286,7 +286,7 @@
         <div class="noriks-bx-wrap">
           <table class="noriks-bx-t">
             <thead>
-              <tr><th>Veľkosť</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>2XL</th><th>3XL</th><th>4XL</th></tr>
+              <tr><th>Размер</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>2XL</th><th>3XL</th><th>4XL</th></tr>
             </thead>
             <tbody>
               <tr><th>a</th><td>32</td><td>34</td><td>36</td><td>38</td><td>40</td><td>42</td><td>44</td></tr>
@@ -298,7 +298,7 @@
         </div>
         <img class="noriks-bx-fig" src="<?php echo esc_url( get_template_directory_uri() . '/img/boxers-measure.webp' ); ?>"
              alt="Rozmery boxeriek: a, b, c, d" loading="lazy">
-        <p class="noriks-bx-note"><strong>Vyberte rovnaké číslo, aké bežne nosíte.</strong><br>Rozmery sú v centimetroch. Veľkosti sa môžu líšiť o &plusmn;1&ndash;2 cm. Ak ste medzi dvoma veľkosťami, zvoľte menšiu &mdash; materiál je pružný.</p>
+        <p class="noriks-bx-note"><strong>Изберете същото число, което обикновено носите.</strong><br>Размерите са в сантиметри. Размерите може да се различават с &plusmn;1&ndash;2 cm. Ако сте между два размера, изберете по-малкия &mdash; материалът е еластичен.</p>
       </div>
 
 
@@ -307,11 +307,11 @@
       <?php elseif ( function_exists('noriks_is_type') && noriks_is_type( 'leakboxers' ) ): ?>
 
       <div style="margin:30px 0;padding:0 6px;">
-        <p style="margin:0 0 4px;font-weight:700;font-size:15px;">Ako si zmerať boky</p>
-        <p style="margin:0 0 14px;line-height:1.6;font-size:14px;color:#333;">Omotajte krajčírsky meter okolo najširšej časti bokov (cez zadok), bez sťahovania, a zapíšte si mieru v centimetroch.</p>
+        <p style="margin:0 0 4px;font-weight:700;font-size:15px;">Как да измерите бедрата</p>
+        <p style="margin:0 0 14px;line-height:1.6;font-size:14px;color:#333;">Обвийте шивашкия метър около най-широката част на бедрата (през седалището), без да стягате, и запишете мярката в сантиметри.</p>
         <table style="width:100%;border-collapse:collapse;font-size:14px;">
           <thead><tr style="background:#12233b;color:#fff;">
-            <th style="padding:9px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Veľkosť</th><th style="padding:9px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Boky (cm)</th>
+            <th style="padding:9px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Размер</th><th style="padding:9px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Бедра (cm)</th>
           </tr></thead>
           <tbody>
           <?php foreach ( array(array('S','do 76 cm','do 30"'),array('M','77 – 85 cm','30 – 33"'),array('L','86 – 94 cm','34 – 37"'),array('XL','95 – 102 cm','37 – 40"'),array('2XL','103 – 114 cm','41 – 45"'),array('3XL','115 – 121 cm','45 – 48"'),array('4XL','122 – 129 cm','48 – 51"'),array('5XL','130 – 137 cm','51 – 54"'),array('6XL','138 – 145 cm','54 – 57"'),array('7XL','146 – 153 cm','57 – 60"'),array('8XL','154 cm a viac','61" a viac') ) as $i=>$r): ?>
@@ -321,7 +321,7 @@
           <?php endforeach; ?>
           </tbody>
         </table>
-        <p style="margin-top:12px;font-size:14px;color:#444;"><strong>Medzi dvoma veľkosťami?</strong> Odporúčame väčšie číslo pre optimálne pohodlie a maximálnu absorpciu.</p>
+        <p style="margin-top:12px;font-size:14px;color:#444;"><strong>Между два размера?</strong> Препоръчваме по-голямото число за оптимален комфорт и максимална поемаемост.</p>
       </div>
 
       <?php elseif ( function_exists('noriks_is_type') && noriks_is_type( 'kompresijske-majice' ) ): ?>
@@ -329,7 +329,7 @@
       <div style="margin:30px 0;padding:0 6px;">
         <table style="width:100%;border-collapse:collapse;font-size:16px;">
           <thead><tr style="background:#111;color:#fff;">
-            <th style="padding:11px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Veľkosť</th><th style="padding:11px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Zodpovedajúca hmotnosť</th>
+            <th style="padding:11px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Размер</th><th style="padding:11px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Съответстващо тегло</th>
           </tr></thead>
           <tbody>
           <?php foreach ( array(array('S','50 – 70 kg'),array('M','70 – 90 kg'),array('L','90 – 110 kg'),array('XL','110 – 130 kg'),array('2XL','130 – 150 kg'),array('3XL','150 – 170 kg'),array('4XL','170 – 190 kg'),array('5XL','190 – 210 kg') ) as $i=>$r): ?>
@@ -339,7 +339,7 @@
           <?php endforeach; ?>
           </tbody>
         </table>
-        <p style="margin-top:12px;font-size:14px;color:#444;">Vyberte veľkosť podľa svojej hmotnosti. Medzi dvoma veľkosťami? Pre silnejšiu kompresiu vyberte menšie číslo.</p>
+        <p style="margin-top:12px;font-size:14px;color:#444;">Изберете размер според теглото си. Между два размера? За по-силна компресия изберете по-малкото число.</p>
       </div>
 
       <?php else: ?>
@@ -578,7 +578,7 @@
             <thead>
               <tr>
                 <th class="noriks-sc-empty" style="width:42px;"></th>
-                <th class="noriks-sc-empty" style="width:80px;">Veľkosť</th>
+                <th class="noriks-sc-empty" style="width:80px;">Размер</th>
                 <th>59-68 kg</th>
                 <th>69-77 kg</th>
                 <th>78-84 kg</th>
@@ -592,7 +592,7 @@
             </thead>
             <tbody>
               <tr>
-                <th class="noriks-sc-vis-label" rowspan="11">Výška (cm)</th>
+                <th class="noriks-sc-vis-label" rowspan="11">Височина (cm)</th>
                 <th>168 cm</th>
                 <td class="noriks-sc-size">S</td>
                 <td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td><td class="noriks-sc-empty"></td>
@@ -715,31 +715,31 @@
         </div>
 
         <div class="noriks-sc-steps">
-          <h3>Ako nájsť svoju veľkosť</h3>
+          <h3>Как да намерите своя размер</h3>
           <div class="noriks-sc-steps-grid">
             <div class="noriks-sc-step">
               <span class="noriks-sc-num">1</span>
-              <span>Nájdi svoju <strong>výšku</strong> v ľavom stĺpci.</span>
+              <span>Намери своята <strong>височина</strong> в лявата колона.</span>
             </div>
             <div class="noriks-sc-step">
               <span class="noriks-sc-num">2</span>
-              <span>Nájdi svoju <strong>hmotnosť</strong> v hornom riadku.</span>
+              <span>Намери своето <strong>тегло</strong> в горния ред.</span>
             </div>
             <div class="noriks-sc-step">
               <span class="noriks-sc-num">3</span>
-              <span>Pole, kde sa pretínajú &mdash; to je tvoja veľkosť.</span>
+              <span>Полето, където се пресичат &mdash; това е твоят размер.</span>
             </div>
           </div>
         </div>
 
         <div class="noriks-sc-pro">
           <span class="noriks-sc-pro-tag">PRO TIP</span>
-          <span>Ak si medzi dvoma veľkosťami a chceš <strong>voľnejší strih</strong>, vezmi väčšiu. Pre <strong>priliehavejší vzhľad</strong> vezmi menšiu.</span>
+          <span>Ако си между два размера и искаш <strong>по-свободна кройка</strong>, вземи по-големия. За <strong>по-прилепнал вид</strong> вземи по-малкия.</span>
         </div>
 
         <div class="noriks-sc-guarantee">
           <span class="noriks-sc-check">&#10003;</span>
-          <span>Nie si si istý? Výmena veľkosti do 30 dní.</span>
+          <span>Не си сигурен? Замяна на размера до 30 дни.</span>
         </div>
       </div>
 
