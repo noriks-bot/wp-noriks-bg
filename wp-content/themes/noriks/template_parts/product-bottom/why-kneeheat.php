@@ -30,28 +30,28 @@ $kh_img = function( $file, $alt ) use ( $kh, $kh_path ) {
 <section class="nkh-sec nkh-light">
   <div class="nkh-wrap">
     <p class="nkh-eyebrow nkh-center">Ako to funguje</p>
-    <h2 class="nkh-h2 nkh-center">Úľava v 3 jednoduchých krokoch</h2>
-    <p class="nkh-lead nkh-center">Bez nastavovania, bez aplikácie, bez zložitej rutiny. Nasaďte, stlačte tlačidlo a pokračujte v dni.</p>
+    <h2 class="nkh-h2 nkh-center">Облекчение в 3 лесни стъпки</h2>
+    <p class="nkh-lead nkh-center">Без настройки, без приложение, без сложна рутина. Поставете, натиснете бутона и продължете с деня си.</p>
     <div class="nkh-steps3">
       <div class="nkh-step3">
-        <?php echo $kh_vid( 'kh-step-1.mp4', 'kh-step-1.jpg', 'Nasadenie bandáže na koleno' ); ?>
+        <?php echo $kh_vid( 'kh-step-1.mp4', 'kh-step-1.jpg', 'Поставяне на наколенката' ); ?>
         <div class="nkh-step3-txt">
-          <p class="nkh-step3-h"><span>1</span> Nasaďte bandáž</p>
-          <p>Obtočte ju okolo kolena a utiahnite pásy. Trvá to 20 sekúnd a funguje na oboch nohách.</p>
+          <p class="nkh-step3-h"><span>1</span> Поставете наколенката</p>
+          <p>Обвийте я около коляното и затегнете лентите. Отнема 20 секунди и работи на двата крака.</p>
         </div>
       </div>
       <div class="nkh-step3">
-        <?php echo $kh_vid( 'kh-step-2.mp4', 'kh-step-2.jpg', 'Spustenie sedenia jedným tlačidlom' ); ?>
+        <?php echo $kh_vid( 'kh-step-2.mp4', 'kh-step-2.jpg', 'Пускане на сесията с един бутон' ); ?>
         <div class="nkh-step3-txt">
-          <p class="nkh-step3-h"><span>2</span> Stlačte tlačidlo</p>
-          <p>Jedno tlačidlo spustí všetky tri terapie — teplo, kompresiu a vibrácie — presne na 12 minút.</p>
+          <p class="nkh-step3-h"><span>2</span> Натиснете бутона</p>
+          <p>Един бутон пуска и трите терапии — топлина, компресия и вибрации — точно за 12 минути.</p>
         </div>
       </div>
       <div class="nkh-step3">
-        <?php echo $kh_vid( 'kh-step-3.mp4', 'kh-step-3.jpg', 'Prístroj pracuje sám, kým oddychujete' ); ?>
+        <?php echo $kh_vid( 'kh-step-3.mp4', 'kh-step-3.jpg', 'Уредът работи сам, докато си почивате' ); ?>
         <div class="nkh-step3-txt">
-          <p class="nkh-step3-h"><span>3</span> Pokračujte v dni</p>
-          <p>Pozrite si správy, vypite kávu. Prístroj pracuje sám a zastaví sa, keď sedenie skončí.</p>
+          <p class="nkh-step3-h"><span>3</span> Продължете с деня си</p>
+          <p>Гледайте новините, изпийте кафе. Уредът работи сам и спира, когато сесията свърши.</p>
         </div>
       </div>
     </div>
@@ -61,14 +61,14 @@ $kh_img = function( $file, $alt ) use ( $kh, $kh_path ) {
 <!-- 2) Zacaran krug — video -->
 <section class="nkh-sec nkh-white">
   <div class="nkh-wrap nkh-row">
-    <div class="nkh-media"><?php echo $kh_vid( 'kh-vid-bol.mp4', 'kh-vid-bol.jpg', 'Bolesť a stuhnutosť kolena' ); ?></div>
+    <div class="nkh-media"><?php echo $kh_vid( 'kh-vid-bol.mp4', 'kh-vid-bol.jpg', 'Болка и скованост в коляното' ); ?></div>
     <div class="nkh-copy">
-      <h2 class="nkh-h2">Prerušte začarovaný kruh. Vaše koleno je pripravené na skutočnú úľavu.</h2>
-      <p>Tupá bolesť, stuhnutosť pri vstávaní, opatrný krok pred schádzaním zo schodov — to sú signály tkaniva, ktoré roky potichu hladuje. Odpoveďou nie je ďalšia tabletka, ale obnovenie prietoku krvi v kĺbe.</p>
+      <h2 class="nkh-h2">Прекъснете порочния кръг. Коляното ви е готово за истинско облекчение.</h2>
+      <p>Тъпа болка, скованост при изправяне, предпазлива стъпка преди слизане по стълби — това са сигнали на тъкан, която от години тихо гладува. Отговорът не е още едно хапче, а възстановяване на кръвотока в ставата.</p>
       <ul class="nkh-tri">
-        <li><strong>12 minút denne:</strong> obnovenie prietoku a uvoľnenie napätia, bez tabliet.</li>
-        <li><strong>Obnova a regenerácia:</strong> teplo rozširuje cievy, kompresia vyplavuje opuch, vibrácie uvoľňujú stuhnutosť — všetko v jednom sedení.</li>
-        <li><strong>Pohyb bez počítania:</strong> schody bez plánovania, drep v záhrade, vnúča v náručí.</li>
+        <li><strong>12 минути дневно:</strong> възстановяване на кръвотока и отпускане на напрежението, без хапчета.</li>
+        <li><strong>Възстановяване и регенерация:</strong> топлината разширява съдовете, компресията изтласква отока, вибрациите отпускат сковаността — всичко в една сесия.</li>
+        <li><strong>Движение без изчисляване:</strong> стълби без планиране, клек в градината, внуче на ръце.</li>
       </ul>
     </div>
   </div>
@@ -78,29 +78,29 @@ $kh_img = function( $file, $alt ) use ( $kh, $kh_path ) {
 <section class="nkh-sec nkh-light">
   <div class="nkh-wrap nkh-row">
     <div class="nkh-copy">
-      <h2 class="nkh-h2">Pocíťte rozdiel: trvalá úľava sa začína dnes</h2>
-      <p>Nie krátkodobý pokoj, ale zmena, ktorú spozorujete. <strong>Väčšina používateľov pocíti skutočný rozdiel v priebehu prvých 7 až 14 dní</strong> pravidelného používania. Ranná stuhnutosť povoľuje a schádzanie zo schodov prestáva byť počtami.</p>
+      <h2 class="nkh-h2">Усетете разликата: трайното облекчение започва днес</h2>
+      <p>Не краткотраен покой, а промяна, която забелязвате. <strong>Повечето потребители усещат истинска разлика в рамките на първите 7 до 14 дни</strong> редовна употреба. Утринната скованост отпуска и слизането по стълби спира да е изчисление.</p>
       <ul class="nkh-tri">
-        <li><strong>Menej stuhnutosti a tlaku:</strong> znižuje napätie a opuch, ktoré udržiavajú ťažkosti.</li>
-        <li><strong>Lepší krvný obeh:</strong> obnovuje prietok v hlbšom tkanive kolena — tam, kde problém skutočne vzniká.</li>
-        <li><strong>Všetko doma:</strong> bez chodenia na terapie a bez čakania na termín.</li>
+        <li><strong>Menej stuhnutosti a tlaku:</strong> намалява напрежението и отока, които поддържат оплакванията.</li>
+        <li><strong>По-добро кръвообращение:</strong> възстановява кръвотока в по-дълбоката тъкан на коляното — там, където проблемът всъщност възниква.</li>
+        <li><strong>Всичко вкъщи:</strong> без ходене на терапии и без чакане на час.</li>
       </ul>
     </div>
-    <div class="nkh-media"><?php echo $kh_vid( 'kh-vid-zglob.mp4', 'kh-vid-zglob.jpg', 'Kolenný kĺb' ); ?></div>
+    <div class="nkh-media"><?php echo $kh_vid( 'kh-vid-zglob.mp4', 'kh-vid-zglob.jpg', 'Колянна става' ); ?></div>
   </div>
 </section>
 
 <!-- Pametna tehnologija — video lijevo -->
 <section class="nkh-sec nkh-white">
   <div class="nkh-wrap nkh-row">
-    <div class="nkh-media"><?php echo $kh_vid( 'kh-vid-led.mp4', 'kh-vid-led.jpg', 'Vyhrievacie prvky v bandáži' ); ?></div>
+    <div class="nkh-media"><?php echo $kh_vid( 'kh-vid-led.mp4', 'kh-vid-led.jpg', 'Нагревателни елементи в наколенката' ); ?></div>
         <div class="nkh-copy">
-      <h2 class="nkh-h2">Inteligentná technológia pre hlbšie tkanivo</h2>
-      <p>Prispôsobte NORIKS KneeHeat svojmu kolenu: <strong>3 stupne tepla</strong>, <strong>3 režimy vibrácií</strong> a <strong>cyklická kompresia</strong>. Bez kábla, jedno tlačidlo, dvanásť minút.</p>
+      <h2 class="nkh-h2">Интелигентна технология за по-дълбоката тъкан</h2>
+      <p>Нагласете NORIKS KneeHeat за своето коляно: <strong>3 stupne tepla</strong>, <strong>3 режима вибрации</strong> a <strong>циклична компресия</strong>. Без кабел, един бутон, дванадесет минути.</p>
       <ul class="nkh-tri">
-        <li><strong>Vždy pripravený:</strong> bezdrôtová prevádzka a nabíjanie cez USB-C kábel.</li>
-        <li><strong>Prenosný:</strong> je ľahký a zmestí sa do tašky — používajte ho kdekoľvek ste.</li>
-        <li><strong>Jednoduché ovládanie:</strong> jedno tlačidlo, bez aplikácie a bez nastavovania.</li>
+        <li><strong>Винаги готов:</strong> безжична работа и зареждане през USB-C кабел.</li>
+        <li><strong>Преносим:</strong> лек е и влиза в чанта — използвайте го, където и да сте.</li>
+        <li><strong>Лесно управление:</strong> един бутон, без приложение и без настройки.</li>
       </ul>
     </div>
   </div>
@@ -111,16 +111,16 @@ $kh_img = function( $file, $alt ) use ( $kh, $kh_path ) {
 <section class="nkh-sec nkh-light">
   <div class="nkh-wrap nkh-row">
     <div class="nkh-copy">
-      <h2 class="nkh-h2">Tri terapie v jednom sedení</h2>
-      <p>Ohrievanie, kompresia a vibrácie nefungujú jedno po druhom, ale súčasne — preto jedno sedenie trvá len 12 minút.</p>
+      <h2 class="nkh-h2">Три терапии в една сесия</h2>
+      <p>Затоплянето, компресията и вибрациите не работят едно след друго, а едновременно — затова една сесия продължава само 12 минути.</p>
       <ul class="nkh-tri">
-        <li><strong>Teplo do 42 °C</strong> rozširuje cievy a zmäkčuje stuhnuté tkanivo okolo kĺbu.</li>
-        <li><strong>Vzduchová kompresia</strong> rytmicky stláča a povoľuje, vytláča nahromadenú tekutinu a privádza čerstvú krv.</li>
-        <li><strong>Vibračná masáž 60 Hz</strong> uvoľňuje napätie a stuhnutosť, ktorá drží koleno „zamknuté".</li>
+        <li><strong>Teplo do 42 °C</strong> разширява съдовете и омекотява сковаността в тъканта около ставата.</li>
+        <li><strong>Въздушна компресия</strong> ритмично притиска и отпуска, изтласква събралата се течност и докарва свежа кръв.</li>
+        <li><strong>Вибрационен масаж 60 Hz</strong> отпуска напрежението и сковаността, които държат коляното „заключено".</li>
       </ul>
-      <p class="nkh-note">Na rozdiel od prístrojov TENS, ktoré len prekrývajú signál bolesti, KneeHeat pôsobí na hlbšie tkanivo.</p>
+      <p class="nkh-note">За разлика от TENS уредите, които само припокриват сигнала за болка, KneeHeat действа върху по-дълбоката тъкан.</p>
     </div>
-    <div class="nkh-media nkh-graf"><?php echo $kh_img( 'kh-04-metoda.jpg', 'Trojitá metóda: teplo, kompresia a vibrácie' ); ?></div>
+    <div class="nkh-media nkh-graf"><?php echo $kh_img( 'kh-04-metoda.jpg', 'Троен метод: топлина, компресия и вибрации' ); ?></div>
   </div>
 </section>
 
@@ -128,12 +128,12 @@ $kh_img = function( $file, $alt ) use ( $kh, $kh_path ) {
 <!-- 4) Značajke uređaja — slika desno -->
 <section class="nkh-sec nkh-white">
   <div class="nkh-wrap nkh-row">
-    <div class="nkh-media nkh-graf"><?php echo $kh_img( 'kh-11-znacajke.jpg', 'Vlastnosti prístroja NORIKS KneeHeat' ); ?></div>
+    <div class="nkh-media nkh-graf"><?php echo $kh_img( 'kh-11-znacajke.jpg', 'Характеристики на уреда NORIKS KneeHeat' ); ?></div>
     <div class="nkh-copy">
-      <h2 class="nkh-h2">Vyrobený na nosenie, nie do šuplíka</h2>
-      <p>Ovládací panel je na vonkajšej strane, na dosah ruky: <strong>jeden dotyk mení stupeň tepla</strong>, druhý režim vibrácií. Žiadne menu ani aplikácia, ktorú treba hľadať v tme.</p>
-      <p>Bandáž sa zapína na dva pásy, takže pevnosť si volíte sami — voľnejšie, keď sedíte, pevnejšie, keď chodíte po dome. Prístroj potom zostáva na mieste a neotáča sa okolo nohy.</p>
-      <p class="nkh-strong">Je bezdrôtový a nabíja sa USB-C káblom; jedno nabitie vydrží na viac sedení, takže ide s vami do práce aj na cesty.</p>
+      <h2 class="nkh-h2">Направен да се носи, не за шкафа</h2>
+      <p>Панелът за управление е от външната страна, на една ръка разстояние: <strong>едно докосване сменя степента на топлина</strong>, второто — режима на вибрации. Никакво меню, нито приложение, което да търсите в тъмното.</p>
+      <p>Наколенката се закопчава с две ленти, така че стегнатостта избирате сами — по-свободно, когато седите, по-стегнато, когато се движите по къщата. Така уредът остава на място и не се върти около крака.</p>
+      <p class="nkh-strong">Безжичен е и се зарежда с USB-C кабел; едно зареждане стига за няколко сесии, така че идва с вас на работа и на път.</p>
     </div>
   </div>
 </section>
@@ -142,12 +142,12 @@ $kh_img = function( $file, $alt ) use ( $kh, $kh_path ) {
 <section class="nkh-sec nkh-light">
   <div class="nkh-wrap nkh-row">
     <div class="nkh-copy">
-      <h2 class="nkh-h2">Čo dostanete v balení</h2>
+      <h2 class="nkh-h2">Какво получавате в комплекта</h2>
       <ul class="nkh-pack">
-        <li><strong>Prístroj NORIKS KneeHeat</strong> — bandáž s ohrievaním, kompresiou a vibráciami</li>
-        <li><strong>Opletený USB-C kábel</strong> na nabíjanie</li>
-        <li><strong>Predlžovací pás</strong> pre väčšie obvody nohy</li>
-        <li><strong>2 roky záruka na výmenu</strong></li>
+        <li><strong>Уред NORIKS KneeHeat</strong> — наколенка със затопляне, компресия и вибрации</li>
+        <li><strong>Плетен USB-C кабел</strong> за зареждане</li>
+        <li><strong>Удължаваща лента</strong> за по-големи обиколки на крака</li>
+        <li><strong>2 години гаранция за замяна</strong></li>
       </ul>
     </div>
     <div class="nkh-media nkh-graf"><?php echo $kh_img( 'kh-07-unboxing-h.jpg', 'Obsah balenia NORIKS KneeHeat' ); ?></div>
@@ -158,11 +158,11 @@ $kh_img = function( $file, $alt ) use ( $kh, $kh_path ) {
 <!-- 7) Liječnik — slika desno -->
 <section class="nkh-sec nkh-white">
   <div class="nkh-wrap nkh-row">
-    <div class="nkh-media nkh-graf"><?php echo $kh_img( 'kh-02-lijecnik.jpg', 'Odporúčanie ortopéda' ); ?></div>
+    <div class="nkh-media nkh-graf"><?php echo $kh_img( 'kh-02-lijecnik.jpg', 'Препоръка от ортопед' ); ?></div>
     <div class="nkh-copy">
-      <h2 class="nkh-h2">Vytvorené pre každodenné pohodlie a pohyb</h2>
-      <p class="nkh-quote">„Pri chronických ťažkostiach s kolenom po 45. roku sa najviac oplatí to, čo ľudia môžu robiť každý deň doma. Teplo, kompresia a vibrácie spolu obnovujú prietok v tkanive — a to je základ, na ktorom funguje všetko ostatné.”</p>
-      <p class="nkh-sign">MUDr. Marek Kováč, ortopéd</p>
+      <h2 class="nkh-h2">Създаден за всекидневен комфорт и движение</h2>
+      <p class="nkh-quote">„При хронични проблеми с коляното след 45-ата година най-много помага това, което хората могат да правят всеки ден вкъщи. Топлината, компресията и вибрациите заедно възстановяват кръвотока в тъканта — а това е основата, върху която работи всичко останало.”</p>
+      <p class="nkh-sign">Д-р Марин Ковачев, ортопед</p>
     </div>
   </div>
 </section>

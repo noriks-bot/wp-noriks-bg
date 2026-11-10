@@ -24,16 +24,16 @@ $pl_img  = function( $file, $alt, $cls = '' ) use ( $pl, $pl_path ) {
 <!-- 1) PROBLEM — slika lijevo -->
 <section class="npl-sec npl-tint">
   <div class="npl-wrap npl-row2">
-    <div class="npl-media"><?php echo $pl_img( 'pal-rucke.jpg', 'Ortopedické rukoväte na oporu' ); ?></div>
+    <div class="npl-media"><?php echo $pl_img( 'pal-rucke.jpg', 'Ортопедични ръкохватки за опора' ); ?></div>
     <div class="npl-copy">
-      <p class="npl-kicker">Druhá rukoväť</p>
+      <p class="npl-kicker">Втората ръкохватка</p>
       <h2 class="npl-h2">Opora presne tam, kde ju potrebujete</h2>
-      <p>Okrem hornej rukoväte má palica aj <strong>druhú rukoväť nižšie</strong>. Tej sa chytíte, keď vstávate z kresla, z postele alebo z nízkej stoličky.</p>
-      <p>Tlak ide zvisle nadol, do stabilnej základne — nie dopredu, kde by vás vytiahol z rovnováhy. Preto vstanete jedným pohybom, bez predkláňania a bez cudzej pomoci.</p>
+      <p>Освен горната ръкохватка бастунът има и <strong>втора ръкохватка по-долу</strong>. За нея се хващате, когато се изправяте от фотьойл, от леглото или от нисък стол.</p>
+      <p>Натискът отива вертикално надолу, в стабилната основа — не напред, където би ви извадил от равновесие. Затова се изправяте с едно движение, без да се навеждате и без чужда помощ.</p>
       <ul class="npl-check">
-        <li>Vstávanie z kresla, postele alebo z lavičky</li>
-        <li>Rukoväte neodierajú dlaň ani po dlhšej chôdzi</li>
-        <li>Bez čakania, kým vám niekto pomôže</li>
+        <li>Изправяне от фотьойл, легло или пейка</li>
+        <li>Ръкохватките не ожулват ръката дори след по-дълго ходене</li>
+        <li>Без да чакате някой да ви помогне</li>
       </ul>
       <a class="npl-cta" href="#bundle-selector">Pozrite si ponuku</a>
     </div>
@@ -45,27 +45,27 @@ $pl_img  = function( $file, $alt, $cls = '' ) use ( $pl, $pl_path ) {
   <div class="npl-wrap npl-row2 npl-row2--rev">
     <div class="npl-copy">
       <p class="npl-kicker">Stabilita</p>
-      <h2 class="npl-h2">Stojí sama — netreba sa zohýnať za palicou</h2>
-      <p>Štyri gumené nožičky držia palicu vzpriamene, keď ju pustíte. Nespadne na zem pri gauči, pri stole ani v čakárni, takže sa po nej nemusíte zohýnať.</p>
-      <p>To je maličkosť, ktorú si všimnete už prvý deň: palica vás čaká tam, kde ste ju nechali.</p>
+      <h2 class="npl-h2">Стои сама — не се налага да се навеждате за бастуна</h2>
+      <p>Четири гумени крачета държат бастуна изправен, когато го пуснете. Не пада на земята до дивана, до масата, нито в чакалнята, така че не се навеждате за него.</p>
+      <p>Това е дребно нещо, което забелязвате още първия ден: бастунът ви чака там, където сте го оставили.</p>
     </div>
-    <div class="npl-media"><?php echo $pl_vid( 'pal-video.mp4', 'pal-video.jpg', 'Palica stojí sama na štyroch nožičkách' ); ?></div>
+    <div class="npl-media"><?php echo $pl_vid( 'pal-video.mp4', 'pal-video.jpg', 'Бастунът стои сам на четири крачета' ); ?></div>
   </div>
 </section>
 
 <!-- 5) PROTUKLIZNA BAZA — slika lijevo -->
 <section class="npl-sec npl-tint">
   <div class="npl-wrap npl-row2">
-    <div class="npl-media"><?php echo $pl_img( 'pal-pregled.jpg', 'Prehľad palice: dve rukoväte, svietidlo, alarm, štyri nožičky' ); ?></div>
+    <div class="npl-media"><?php echo $pl_img( 'pal-pregled.jpg', 'Преглед на бастуна: две ръкохватки, осветление, аларма, четири крачета' ); ?></div>
     <div class="npl-copy">
-      <p class="npl-kicker">Čo dostanete</p>
-      <h2 class="npl-h2">Päť vecí v jednej palici</h2>
+      <p class="npl-kicker">Какво получавате</p>
+      <h2 class="npl-h2">Пет неща в един бастун</h2>
       <div class="npl-points">
-        <div class="npl-point"><h3>Dve rukoväte</h3><p>Horná na chôdzu, dolná na vstávanie.</p></div>
-        <div class="npl-point"><h3>Štyri nožičky</h3><p>Palica stojí sama a nepadá na zem.</p></div>
-        <div class="npl-point"><h3>Svietidlo</h3><p>Osvetľuje cestu pred vami v tme.</p></div>
-        <div class="npl-point"><h3>Alarm</h3><p>Hlasný signál, ktorý počujú domáci.</p></div>
-        <div class="npl-point"><h3>Skladacia verzia</h3><p>Zmestí sa do tašky aj do priehradky v aute.</p></div>
+        <div class="npl-point"><h3>Две ръкохватки</h3><p>Горната за ходене, долната за изправяне.</p></div>
+        <div class="npl-point"><h3>Четири крачета</h3><p>Бастунът стои сам и не пада на земята.</p></div>
+        <div class="npl-point"><h3>Svietidlo</h3><p>Осветява пътя пред вас в тъмното.</p></div>
+        <div class="npl-point"><h3>Alarm</h3><p>Силен сигнал, който близките чуват.</p></div>
+        <div class="npl-point"><h3>Skladacia verzia</h3><p>Влиза в чанта и в жабката на колата.</p></div>
       </div>
     </div>
   </div>
@@ -75,32 +75,32 @@ $pl_img  = function( $file, $alt, $cls = '' ) use ( $pl, $pl_path ) {
 <section class="npl-sec">
   <div class="npl-wrap npl-row2 npl-row2--rev">
     <div class="npl-copy">
-      <p class="npl-kicker">Základňa</p>
-      <h2 class="npl-h2">Drží na dlažbe, parkete aj vonku</h2>
-      <p>Gumené nožičky sú <strong>protišmykové</strong> a nešmýkajú sa na hladkých podlahách. Vonku sa základňa prispôsobí nerovnému terénu a ostáva stabilná.</p>
+      <p class="npl-kicker">Основа</p>
+      <h2 class="npl-h2">Държи на плочки, паркет и навън</h2>
+      <p>Гумените крачета са <strong>противоплъзгащи</strong> и не се плъзгат по гладки подове. Навън основата се приспособява към неравен терен и остава стабилна.</p>
       <ul class="npl-check">
-        <li>Nešmýka sa na dlažbe, parkete ani laminíte</li>
-        <li>Prispôsobí sa nerovnému terénu</li>
-        <li>Nožičky sa dajú vymeniť, keď sa opotrebujú</li>
+        <li>Не се плъзга по плочки, паркет или ламинат</li>
+        <li>Приспособява се към неравен терен</li>
+        <li>Крачетата се сменят, когато се износят</li>
       </ul>
     </div>
-    <div class="npl-media"><?php echo $pl_img( 'pal-nozice.jpg', 'Štyri protišmykové gumené nožičky' ); ?></div>
+    <div class="npl-media"><?php echo $pl_img( 'pal-nozice.jpg', 'Четири противоплъзгащи гумени крачета' ); ?></div>
   </div>
 </section>
 
 <!-- 6) SVJETILJKA — slika desno -->
 <section class="npl-sec npl-tint">
   <div class="npl-wrap npl-row2">
-    <div class="npl-media"><?php echo $pl_img( 'pal-sklopivo.jpg', 'Skladacia a nastaviteľná palica' ); ?></div>
+    <div class="npl-media"><?php echo $pl_img( 'pal-sklopivo.jpg', 'Сгъваем и регулируем бастун' ); ?></div>
     <div class="npl-copy">
-      <p class="npl-kicker">Prenosnosť</p>
-      <h2 class="npl-h2">Zloží sa za sekundu a zmestí sa do tašky</h2>
-      <p>Diely sú spojené vnútornou gumou, takže sa palica rozoberá a skladá <strong>jedným pohybom</strong>, bez náradia a bez cudzej pomoci. Zložená sa zmestí do tašky alebo do priehradky v aute.</p>
-      <p>Výšku nastavíte za pár sekúnd, takže tá istá palica vyhovuje človeku so 155 cm aj so 190 cm.</p>
+      <p class="npl-kicker">Преносимост</p>
+      <h2 class="npl-h2">Сгъва се за секунда и влиза в чанта</h2>
+      <p>Частите са свързани с вътрешен ластик, така че бастунът се разглобява и сгъва <strong>с едно движение</strong>, без инструменти и без чужда помощ. Сгънат влиза в чанта или в жабката на колата.</p>
+      <p>Височината се настройва за няколко секунди, така че един и същ бастун е подходящ за човек от 155 cm и от 190 cm.</p>
       <ul class="npl-check">
-        <li>Rozobratie a zloženie bez náradia</li>
-        <li>Nastaviteľná dĺžka pre všetky výšky</li>
-        <li>Diely ostávajú spojené — nič sa nestratí</li>
+        <li>Разглобяване и сгъване без инструменти</li>
+        <li>Регулируема дължина за всички височини</li>
+        <li>Частите остават свързани — нищо не се губи</li>
       </ul>
     </div>
   </div>
@@ -108,24 +108,24 @@ $pl_img  = function( $file, $alt, $cls = '' ) use ( $pl, $pl_path ) {
 
 <section class="npl-sec npl-rev">
   <div class="npl-wrap">
-    <p class="npl-kicker npl-center">U našich zákazníkov</p>
-    <h2 class="npl-h2 npl-center">Palica v skutočných domácnostiach</h2>
-    <p class="npl-sub">Fotografie a komentáre zákazníkov — pri kresle, v chodbe, v tme a zložená na cestu.</p>
+    <p class="npl-kicker npl-center">При нашите клиенти</p>
+    <h2 class="npl-h2 npl-center">Бастунът в истински домове</h2>
+    <p class="npl-sub">Снимки и коментари на клиенти — до фотьойла, в коридора, в тъмното и сгънат за път.</p>
     <div class="npl-rev__grid">
       <?php
       $pl_reviews = array(
-        array( 'img' => 'pal-ugc-1.jpg',    'name' => 'Mária K.',  'meta' => 'Bratislava · kúpila pred 2 mesiacmi',
-               'text' => '„Držím ju pri kresle. Predtým som vstávala na tri pokusy, teraz sa chytím dolnej rukoväte a vstanem na prvý raz.”' ),
-        array( 'img' => 'pal-ugc-3.jpg',    'name' => 'Zdenko P.', 'meta' => 'Košice · kúpil pred 3 mesiacmi',
-               'text' => '„Stojí sama pri stole a nepadá. To je pre mňa najväčšia vec — nezohýnam sa za palicou každých päť minút.”' ),
-        array( 'img' => 'pal-noc.jpg',      'name' => 'Anna M.',  'meta' => 'Žilina · kúpila pred mesiacom',
-               'text' => '„Svietidlo zapínam, keď idem v noci do kúpeľne. Nebudím manžela veľkým svetlom a vidím podlahu pred sebou.”' ),
-        array( 'img' => 'pal-ugc-baza.jpg', 'name' => 'Ivan Š.',    'meta' => 'Nitra · kúpil pred 6 týždňami',
-               'text' => '„Základňa je široká a nešmýka sa. Vyskúšal som ju na dlažbe v kúpeľni aj na mokrej terase — drží.”' ),
-        array( 'img' => 'pal-ugc-6.jpg',    'name' => 'Nadežda B.',    'meta' => 'Trnava · kúpila pred 2 mesiacmi',
-               'text' => '„Kúpila som ju mame k 78. narodeninám. Sama si nastaví výšku a sama ju zloží, bez ničej pomoci.”' ),
-        array( 'img' => 'pal-ugc-5.jpg',    'name' => 'Štefan L.', 'meta' => 'Prešov · kúpil pred 4 mesiacmi',
-               'text' => '„Vozím ju v aute, keď idem k lekárovi. Zloží sa za sekundu a zmestí sa do tašky, v čakárni neprekáža.”' ),
+        array( 'img' => 'pal-ugc-1.jpg',    'name' => 'Мария К.',  'meta' => 'София · купи преди 2 месеца',
+               'text' => '„Държа го до фотьойла. Преди се изправях на три опита, сега се хващам за долната ръкохватка и се изправям от първия път.”' ),
+        array( 'img' => 'pal-ugc-3.jpg',    'name' => 'Zdenko P.', 'meta' => 'Пловдив · купи преди 3 месеца',
+               'text' => '„Стои сам до масата и не пада. Това за мен е най-голямото нещо — не се навеждам за бастуна на всеки пет минути.”' ),
+        array( 'img' => 'pal-noc.jpg',      'name' => 'Anna M.',  'meta' => 'Варна · купи преди месец',
+               'text' => '„Светлината включвам, когато отивам през нощта до банята. Не будя мъжа си с голямата лампа и виждам пода пред себе си.”' ),
+        array( 'img' => 'pal-ugc-baza.jpg', 'name' => 'Иван Ш.',    'meta' => 'Бургас · купи преди 6 седмици',
+               'text' => '„Основата е широка и не се плъзга. Пробвах го на плочките в банята и на мокра тераса — държи.”' ),
+        array( 'img' => 'pal-ugc-6.jpg',    'name' => 'Надежда Б.',    'meta' => 'Русе · купи преди 2 месеца',
+               'text' => '„Купих го на мама за 78-ия ѝ рожден ден. Сама си настройва височината и сама го сгъва, без чужда помощ.”' ),
+        array( 'img' => 'pal-ugc-5.jpg',    'name' => 'Стефан Л.', 'meta' => 'Стара Загора · купи преди 4 месеца',
+               'text' => '„Нося го в колата, когато ходя на лекар. Сгъва се за секунда и влиза в чанта, в чакалнята не пречи.”' ),
       );
       foreach ( $pl_reviews as $r ) : ?>
       <article class="npl-rev__card">
@@ -148,12 +148,12 @@ $pl_img  = function( $file, $alt, $cls = '' ) use ( $pl, $pl_path ) {
   <div class="npl-wrap npl-row2 npl-row2--rev">
     <div class="npl-copy">
       <p class="npl-kicker">Rozdiel</p>
-      <h2 class="npl-h2">Od „potrebujem pomoc” k „idem sám”</h2>
-      <p>Rozdiel nie je v sile nôh, ale v tom, že máte čoho sa chytiť. Druhá rukoväť nesie váhu namiesto vašich ramien a zápästí.</p>
-      <p class="npl-strong">Samostatné vstávanie, a aj prechádzka parkom.</p>
-      <a class="npl-cta" href="#bundle-selector">Objednajte bez rizika — 30 dní</a>
+      <h2 class="npl-h2">От „имам нужда от помощ” към „тръгвам сам”</h2>
+      <p>Разликата не е в силата на краката, а в това, че има за какво да се хванете. Втората ръкохватка носи тежестта вместо раменете и китките ви.</p>
+      <p class="npl-strong">Самостоятелно изправяне, а и разходка в парка.</p>
+      <a class="npl-cta" href="#bundle-selector">Поръчайте без риск — 30 дни</a>
     </div>
-    <div class="npl-media"><?php echo $pl_img( 'pal-prije-poslije.jpg', 'Predtým a potom — samostatný pohyb' ); ?></div>
+    <div class="npl-media"><?php echo $pl_img( 'pal-prije-poslije.jpg', 'Преди и след — самостоятелно движение' ); ?></div>
   </div>
 </section>
 
