@@ -21,18 +21,18 @@ $kw_img  = function( $file, $alt, $cls = '' ) use ( $kw, $kw_path ) {
 <!-- 1) ZAGLAĐEN TRBUH — slika lijevo -->
 <section class="nkw-sec nkw-tint">
   <div class="nkw-wrap nkw-row2">
-    <div class="nkw-media"><?php echo $kw_img( 'kwm-trbuh.jpg', 'Vyhladené brucho v tričku NORIKS FIT Woman' ); ?></div>
+    <div class="nkw-media"><?php echo $kw_img( 'kwm-trbuh.jpg', 'Изгладен корем с тениската NORIKS FIT Woman' ); ?></div>
     <div class="nkw-copy">
-      <p class="nkw-kicker">Hneď, od prvej minúty</p>
-      <h2 class="nkw-h2">Vyhladené brucho <em>bez stláčania</em></h2>
-      <p>Naše 3D línie formujú telo tak, že jemne stiahnu oblasť brucha a bokov a podporujú cirkuláciu — bez pásu, ktorý sa zarezáva, a bez pocitu stiahnutia.</p>
-      <p>Bez trička je brucho ochabnuté a záhyby vidno pod oblečením. S ním je brucho hneď vyhladené a držanie vzpriamenejšie.</p>
+      <p class="nkw-kicker">Веднага, от първата минута</p>
+      <h2 class="nkw-h2">Изгладен корем <em>без притискане</em></h2>
+      <p>Нашите 3D линии оформят тялото, като нежно прибират областта на корема и кръста и подпомагат кръвообращението — без колан, който се врязва, и без усещане за стягане.</p>
+      <p>Без тениската коремът е отпуснат и гънките се виждат под облеклото. С нея коремът е веднага изгладен, а стойката — по-изправена.</p>
       <ul class="nkw-check">
-        <li>Hneď vyhladené brucho</li>
-        <li>Vzpriamené držanie bez rozmýšľania</li>
-        <li>Neviditeľné pod oblečením</li>
+        <li>Веднага изгладен корем</li>
+        <li>Изправена стойка без да мислите</li>
+        <li>Невидима под облеклото</li>
       </ul>
-      <a class="nkw-cta" href="#bundle-selector">Vyberte farbu a veľkosť</a>
+      <a class="nkw-cta" href="#bundle-selector">Изберете цвят и размер</a>
     </div>
   </div>
 </section>
@@ -42,47 +42,47 @@ $kw_img  = function( $file, $alt, $cls = '' ) use ( $kw, $kw_path ) {
   <div class="nkw-wrap nkw-row2 nkw-row2--rev">
     <div class="nkw-copy">
       <p class="nkw-kicker">Rozdiel</p>
-      <h2 class="nkw-h2">Prečo bežná kompresia nefunguje</h2>
-      <p>Klasické sťahovacie tričká tlačia v jednej línii. Výsledkom je vyduté miesto nad okrajom, záhyby na ramenách a okraj, ktorý vidno pod oblečením.</p>
-      <p>U nás je reliéf <strong>vpletený do tkaniny</strong> a rozložený do šírky, takže sa tlak rozleje namiesto toho, aby sa nazbieral.</p>
+      <h2 class="nkw-h2">Защо обикновената компресия не работи</h2>
+      <p>Класическите стягащи тениски притискат в една линия. Резултатът е издутина над ръба, гънки на раменете и ръб, който се вижда под облеклото.</p>
+      <p>При нас релефът е <strong>вплетен в плата</strong> и разпределен на ширина, така че натискът се разлива, вместо да се събира.</p>
       <ul class="nkw-vs">
-        <li class="is-yes">3D technológia vpletená do úpletu</li>
-        <li class="is-yes">Jemná 360° kompresia bez vydutín</li>
+        <li class="is-yes">3D технология, вплетена в плетката</li>
+        <li class="is-yes">Нежна 360° компресия без издутини</li>
         <li class="is-yes">Podopiera driek</li>
-        <li class="is-no">Bežná kompresia, ktorá vytvára vydutiny</li>
-        <li class="is-no">Materiál sa počas dňa roluje</li>
-        <li class="is-no">Okraj, ktorý vidno pod oblečením</li>
+        <li class="is-no">Обикновена компресия, която създава издутини</li>
+        <li class="is-no">Материалът се навива през деня</li>
+        <li class="is-no">Ръб, който се вижда под облеклото</li>
       </ul>
     </div>
-    <div class="nkw-media"><?php echo $kw_img( 'kwm-usporedba.jpg', 'NORIKS FIT Woman v porovnaní s bežným sťahovacím tričkom' ); ?></div>
+    <div class="nkw-media"><?php echo $kw_img( 'kwm-usporedba.jpg', 'NORIKS FIT Woman в сравнение с обикновена стягаща тениска' ); ?></div>
   </div>
 </section>
 
 <!-- 3) OSJEĆAJTE SE SIGURNO — slika lijevo -->
 <section class="nkw-rev">
   <div class="nkw-rev__head">
-    <span class="nkw-rev__badge">★★★★★ Vynikajúce · Hodnotenie 4,9/5</span>
-    <h2 class="nkw-rev__title">Recenzie žien ako ste vy</h2>
+    <span class="nkw-rev__badge">★★★★★ Отлично · Оценка 4,9/5</span>
+    <h2 class="nkw-rev__title">Отзиви на жени като вас</h2>
   </div>
   <div class="nkw-rev__track">
     <?php
     $kw_reviews = array(
-      array( 'img' => 'kwm-ugc-1.jpg', 'name' => 'Karolína B.', 'meta' => 'Veľkosť M · 46 · Bratislava', 'worn' => 'Nosí 7 týždňov',
-             'text' => '„Košele mi sedia rovno, spredu aj zozadu. Tie, ktoré som skúšala predtým, nevydržali ani jeden celý deň.”' ),
-      array( 'img' => 'kwm-ugc-2.jpg', 'name' => 'Daniela P.', 'meta' => 'Veľkosť 2XL · 48 · Košice', 'worn' => 'Nosí 5 týždňov',
-             'text' => '„Prvé sťahovacie tričko, ktoré sa mi neroluje nahor. Okraj drží a látka je dosť tenká na leto.”' ),
-      array( 'img' => 'kwm-ugc-3.jpg', 'name' => 'Hana T.', 'meta' => 'Veľkosť 3XL · 51 · Žilina', 'worn' => 'Nosí 6 týždňov',
-             'text' => '„Kúpila som ho na svadbu a teraz ho nosím do práce. Sedenie už nemení to, ako šaty padnú.”' ),
-      array( 'img' => 'kwm-ugc-4.jpg', 'name' => 'Laura D.', 'meta' => 'Veľkosť M · 43 · Nitra', 'worn' => 'Nosí 8 týždňov',
-             'text' => '„Oblečiem si ho po raňajkách a zabudnem, že ho mám. Do obeda si ho vôbec nevšimnem.”' ),
-      array( 'img' => 'kwm-ugc-5.jpg', 'name' => 'Natália A.', 'meta' => 'Veľkosť 2XL · 37 · Trnava', 'worn' => 'Nosí 9 týždňov',
-             'text' => '„Nikdy mi to nesedelo, keď som si tričko zastrčila do nohavíc. S týmto pod tým vyzerá pás užší a celý deň sa neupravujem.”' ),
-      array( 'img' => 'kwm-ugc-6.jpg', 'name' => 'Nikoleta M.', 'meta' => 'Veľkosť L · 48 · Prešov', 'worn' => 'Nosí 4 týždne',
-             'text' => '„Objednala som si ho na jeden outfit a skončilo pod väčšinou svetrov. Úplet vyzerá hladko namiesto pokrčene v páse.”' ),
-      array( 'img' => 'kwm-ugc-7.jpg', 'name' => 'Petra J.', 'meta' => 'Veľkosť XL · 50 · Banská Bystrica', 'worn' => 'Nosí 6 týždňov',
-             'text' => '„Pri stole sedím deväť hodín denne a ostáva pohodlné. Nie sú tam švy, ktoré by bolo cítiť, a blúzka vzadu ostáva hladká.”' ),
-      array( 'img' => 'kwm-ugc-8.jpg', 'name' => 'Sofia K.', 'meta' => 'Veľkosť M · 45 · Trenčín', 'worn' => 'Nosí 10 týždňov',
-             'text' => '„Chrbát je mi vďačný. Tričko ma jemne pripomína, aby som sa vystrela, a pritom ma nikde nesťahuje.”' ),
+      array( 'img' => 'kwm-ugc-1.jpg', 'name' => 'Калина Б.', 'meta' => 'Размер M · 46 · София', 'worn' => 'Носи 7 седмици',
+             'text' => '„Ризите ми стоят гладко, отпред и отзад. Тези, които пробвах преди, не издържаха нито един цял ден.”' ),
+      array( 'img' => 'kwm-ugc-2.jpg', 'name' => 'Daniela P.', 'meta' => 'Размер 2XL · 48 · Пловдив', 'worn' => 'Носи 5 седмици',
+             'text' => '„Първата стягаща тениска, която не ми се навива нагоре. Ръбът държи, а платът е достатъчно тънък за лятото.”' ),
+      array( 'img' => 'kwm-ugc-3.jpg', 'name' => 'Hana T.', 'meta' => 'Размер 3XL · 51 · Варна', 'worn' => 'Носи 6 седмици',
+             'text' => '„Купих я за свадба, а сега я нося на работа. Седенето вече не променя как пада роклята.”' ),
+      array( 'img' => 'kwm-ugc-4.jpg', 'name' => 'Laura D.', 'meta' => 'Размер M · 43 · Бургас', 'worn' => 'Носи 8 седмици',
+             'text' => '„Обличам я след закуска и забравям, че я нося. До обяд изобщо не я усещам.”' ),
+      array( 'img' => 'kwm-ugc-5.jpg', 'name' => 'Наталия А.', 'meta' => 'Размер 2XL · 37 · Русе', 'worn' => 'Носи 9 седмици',
+             'text' => '„Никога не ми стоеше добре, когато прибирах тениската в панталона. С тази отдолу талията изглежда по-тясна и цял ден не се оправям.”' ),
+      array( 'img' => 'kwm-ugc-6.jpg', 'name' => 'Nikoleta M.', 'meta' => 'Размер L · 48 · Стара Загора', 'worn' => 'Носи 4 седмици',
+             'text' => '„Поръчах я за един тоалет, а свърши под повечето пуловери. Плетката изглежда гладка, вместо намачкана в талията.”' ),
+      array( 'img' => 'kwm-ugc-7.jpg', 'name' => 'Petra J.', 'meta' => 'Размер XL · 50 · Плевен', 'worn' => 'Носи 6 седмици',
+             'text' => '„На бюрото седя девет часа дневно и остава удобна. Няма шевове, които да се усещат, а блузата отзад остава гладка.”' ),
+      array( 'img' => 'kwm-ugc-8.jpg', 'name' => 'Sofia K.', 'meta' => 'Размер M · 45 · Сливен', 'worn' => 'Носи 10 седмици',
+             'text' => '„Гърбът ми е благодарен. Тениската нежно ми напомня да се изправя, а при това никъде не ме стяга.”' ),
     );
     foreach ( $kw_reviews as $r ) : ?>
     <article class="nkw-rev__card">
@@ -102,20 +102,20 @@ $kw_img  = function( $file, $alt, $cls = '' ) use ( $kw, $kw_path ) {
     </article>
     <?php endforeach; ?>
   </div>
-  <p class="nkw-rev__hint">Potiahnite do strany pre ďalšie recenzie →</p>
+  <p class="nkw-rev__hint">Плъзнете встрани за още отзиви →</p>
 </section>
 
 <!-- 7) BOJE — slika desno -->
 <section class="nkw-sec nkw-tint">
   <div class="nkw-wrap nkw-row2">
-    <div class="nkw-media"><?php echo $kw_img( 'kwm-drzanje.jpg', 'Užší pás a vzpriamené držanie' ); ?></div>
+    <div class="nkw-media"><?php echo $kw_img( 'kwm-drzanje.jpg', 'По-тясна талия и изправена стойка' ); ?></div>
     <div class="nkw-copy">
       <p class="nkw-kicker">Tri veci naraz</p>
-      <h2 class="nkw-h2">Cíťte sa <em>isto vo svojej koži</em></h2>
+      <h2 class="nkw-h2">Чувствайте се <em>уверени в кожата си</em></h2>
       <div class="nkw-points">
-        <div class="nkw-point"><h3>Užší pás</h3><p>3D línie formujú pás a vyhládzajú vydutiny nad nohavicami alebo sukňou.</p></div>
-        <div class="nkw-point"><h3>Hneď ploché brucho</h3><p>Jemná kompresia drží brucho pod každým oblečením, bez tlaku do jedného bodu.</p></div>
-        <div class="nkw-point"><h3>Vzpriamené držanie</h3><p>Opora na chrbte pomáha stáť vzpriamene a odľahčuje driek.</p></div>
+        <div class="nkw-point"><h3>По-тясна талия</h3><p>3D линиите оформят талията и изглаждат издутините над панталона или полата.</p></div>
+        <div class="nkw-point"><h3>Веднага плосък корем</h3><p>Нежната компресия държи корема под всяко облекло, без натиск в една точка.</p></div>
+        <div class="nkw-point"><h3>Изправена стойка</h3><p>Опората на гърба помага да стоите изправени и разтоварва кръста.</p></div>
       </div>
     </div>
   </div>
@@ -125,34 +125,34 @@ $kw_img  = function( $file, $alt, $cls = '' ) use ( $kw, $kw_path ) {
 <section class="nkw-sec">
   <div class="nkw-wrap nkw-row2 nkw-row2--rev">
     <div class="nkw-copy">
-      <p class="nkw-kicker">Látka a strih</p>
-      <h2 class="nkw-h2">Reliéf je <em>vpletený</em>, nie potlačený</h2>
-      <p>Široký pás prechádza cez brucho a boky, druhý ide cez chrbát. Preto nič nepraská a nič sa neodlupuje.</p>
+      <p class="nkw-kicker">Плат и кройка</p>
+      <h2 class="nkw-h2">Релефът е <em>вплетен</em>, а не отпечатан</h2>
+      <p>Широк колан минава през корема и кръста, втори — през гърба. Затова нищо не се напуква и нищо не се отлепва.</p>
       <div class="nkw-facts">
-        <div><h3>3D línie</h3><p>Štruktúrované, vpletené do úpletu — časom neodpadnú.</p></div>
-        <div><h3>Pás na chrbte</h3><p>Druhý pás prechádza cez chrbát a podporuje vzpriamené držanie.</p></div>
-        <div><h3>Rukávy</h3><p>Priliehavý strih, ktorý sa neroluje a nesťahuje nahor.</p></div>
-        <div><h3>Materiál</h3><p>Tenký, matný a priedušný — zmizne pod košeľou alebo sakom.</p></div>
+        <div><h3>3D линии</h3><p>Структурирани, вплетени в плетката — с времето не падат.</p></div>
+        <div><h3>Колан на гърба</h3><p>Вторият колан минава през гърба и подкрепя изправената стойка.</p></div>
+        <div><h3>Ръкави</h3><p>Прилепнала кройка, която не се навива и не се вдига.</p></div>
+        <div><h3>Материал</h3><p>Тънък, матов и дишащ — изчезва под риза или сако.</p></div>
       </div>
     </div>
-    <div class="nkw-media"><?php echo $kw_img( 'kwm-detalji.jpg', 'Detaily: 3D línie, pás, rukávy, materiál' ); ?></div>
+    <div class="nkw-media"><?php echo $kw_img( 'kwm-detalji.jpg', 'Детайли: 3D линии, колан, ръкави, материал' ); ?></div>
   </div>
 </section>
 
 <!-- 5) KAKO JE NOSITI — slika lijevo -->
 <section class="nkw-sec nkw-tint">
   <div class="nkw-wrap nkw-row2">
-    <div class="nkw-media"><?php echo $kw_img( 'kwm-siva.jpg', 'NORIKS FIT Woman tmavosivá' ); ?></div>
+    <div class="nkw-media"><?php echo $kw_img( 'kwm-siva.jpg', 'NORIKS FIT Woman тъмносива' ); ?></div>
     <div class="nkw-copy">
-      <p class="nkw-kicker">Ako ho nosiť</p>
-      <h2 class="nkw-h2">Oblečte si ho ráno a zabudnite naň do večera</h2>
-      <p>Musíte normálne dýchať a jesť bez toho, aby ste mysleli na tričko. Ak je stopa na koži viditeľná dvadsať minút po vyzlečení, veľkosť je primalá.</p>
+      <p class="nkw-kicker">Как да я носите</p>
+      <h2 class="nkw-h2">Облечете я сутрин и забравете за нея до вечерта</h2>
+      <p>Трябва да дишате и да се храните нормално, без да мислите за тениската. Ако следата върху кожата се вижда двадесет минути след събличане, размерът е твърде малък.</p>
       <ul class="nkw-check">
-        <li><strong>Celý deň</strong> — kompresia je rozložená, takže nič sa nezarezáva</li>
-        <li><strong>Pod všetko</strong> — bez línie a bez okraja pod oblečením</li>
-        <li><strong>Jednoduchá starostlivosť</strong> — pranie v práčke na 30 °C</li>
+        <li><strong>Цял ден</strong> — компресията е разпределена, така че нищо не се врязва</li>
+        <li><strong>Под всичко</strong> — без линия и без ръб под облеклото</li>
+        <li><strong>Лесна поддръжка</strong> — пране в пералня на 30 °C</li>
       </ul>
-      <p class="nkw-note nkw-note--left">Veľkosť vyberajte podľa obvodu hrudníka. Ak ste medzi dvoma, vezmite väčšiu.</p>
+      <p class="nkw-note nkw-note--left">Изберете размер според обиколката на гърдите. Ако сте между два, вземете по-големия.</p>
     </div>
   </div>
 </section>
@@ -162,12 +162,12 @@ $kw_img  = function( $file, $alt, $cls = '' ) use ( $kw, $kw_path ) {
   <div class="nkw-wrap nkw-row2 nkw-row2--rev">
     <div class="nkw-copy">
       <p class="nkw-kicker">Tri farby</p>
-      <h2 class="nkw-h2">Čierna, tmavosivá a <em>ružová</em></h2>
-      <p>Čierna pod všetko, tmavosivá na bežné nosenie, ružová, keď chcete niečo teplejšie. Všetky tri majú rovnaký úplet a rovnaký reliéf.</p>
-      <p>Farbu a veľkosť vyberáte na tejto stránke, pred pridaním do košíka.</p>
-      <a class="nkw-cta" href="#bundle-selector">Vyberte farbu a veľkosť</a>
+      <h2 class="nkw-h2">Черно, тъмносиво и <em>розово</em></h2>
+      <p>Черно под всичко, тъмносиво за всекидневно носене, розово, когато искате нещо по-топло. И трите имат същата плетка и същия релеф.</p>
+      <p>Цветът и размерът се избират на тази страница, преди добавяне в количката.</p>
+      <a class="nkw-cta" href="#bundle-selector">Изберете цвят и размер</a>
     </div>
-    <div class="nkw-media"><?php echo $kw_img( 'kwm-roza.jpg', 'NORIKS FIT Woman ružová' ); ?></div>
+    <div class="nkw-media"><?php echo $kw_img( 'kwm-roza.jpg', 'NORIKS FIT Woman розова' ); ?></div>
   </div>
 </section>
 

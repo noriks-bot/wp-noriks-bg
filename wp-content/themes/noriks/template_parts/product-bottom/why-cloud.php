@@ -4,13 +4,13 @@
  *
  * Redoslijed prati referentnu stranicu (Cellsius), tekst na HR, mediji su NORIKS
  * kreative iz img/cloud/. Tamna shema jer su i kreative tamne.
- *   1. Získajte späť rána, ktoré ste považovali za stratené   11_jutra
+ *   1. Върнете си сутрините, които смятахте за изгубени   11_jutra
  *   2. Bez Noriksa / S Noriksom                              01
  *   3. Poravnanje koje se vidi (prije/poslije)               02
  *   4. Osmisljeno za ono sto vas sprjecava da spavate        06
  *   5. Ostaje na mjestu. Cijelu noc.                         12
  *   6. Stvoreno da dise                                      09
- *   7. Nie všetky vankúše medzi kolená sú rovnaké                      05
+ *   7. Не всички възглавници между коленете са еднакви                      05
  *   8. Izradeno prema strogim standardima                    04
  *   9. Preporucuju ga strucnjaci                             hf_
  *  10. 60 noci isprobavanja                                  07
@@ -39,15 +39,15 @@ $cd_img = function( $file, $alt ) use ( $cd, $cd_path ) {
 <!-- ============ 2) Bez Noriksa / S Noriksom ============ -->
 <section class="ncd-sec ncd-dark">
   <div class="ncd-wrap ncd-row2">
-    <div class="ncd-media"><?php echo $cd_vid('cld-vid-razlika.mp4','cld-bez-s-noriksom.webp','Spánok bez vankúša a s vankúšom NORIKS Cloud'); ?></div>
+    <div class="ncd-media"><?php echo $cd_vid('cld-vid-razlika.mp4','cld-bez-s-noriksom.webp','Сън без възглавница и с възглавницата NORIKS Cloud'); ?></div>
     <div class="ncd-copy">
-      <h2 class="ncd-h2">Rozdiel, ktorý spoznáte hneď prvú noc</h2>
-      <p><strong>Bez vankúša:</strong> vrchná noha padá cez spodnú, panva sa krúti a tlak ide do krížov a do kolien.</p>
-      <p><strong>S NORIKS Cloudom:</strong> nohy zostanú v línii s bedrami, hmotnosť sa rozloží a tlakové body zmiznú.</p>
+      <h2 class="ncd-h2">Разликата, която ще усетите още първата нощ</h2>
+      <p><strong>Без възглавница:</strong> горният крак пада през долния, тазът се извива, а натискът отива в кръста и в коленете.</p>
+      <p><strong>S NORIKS Cloudom:</strong> краката остават в линия с бедрата, тежестта се разпределя и точките на натиск изчезват.</p>
       <ul class="ncd-check">
-        <li>Bedrá a kolená v prirodzenej línii</li>
-        <li>Menší tlak na kríže</li>
-        <li>Menej otáčania počas noci</li>
+        <li>Бедра и колене в естествена линия</li>
+        <li>По-малък натиск върху кръста</li>
+        <li>По-малко въртене през нощта</li>
       </ul>
     </div>
   </div>
@@ -56,16 +56,16 @@ $cd_img = function( $file, $alt ) use ( $cd, $cd_path ) {
 <!-- ============ B) Koraci — pocnite bolje spavati vec veceras ============ -->
 <?php
 $cd_steps = array(
-  array( 'cld-korak1.webp', 'Rozopnite pásik a vložte vankúš', 'Stlačte patentku, uvoľnite pásik a vložte vankúš medzi kolená.' ),
-  array( 'cld-korak2.webp', 'Nastavte pásik podľa svojej nohy',       'Utiahnite pásik okolo nohy v jednej z dvoch polôh — pevne, ale bez tlaku.' ),
-  array( 'cld-korak3.webp', 'Spite v správnom postavení',    'Vankúš udržiava nohy v rozstupe, chrbtica zostáva vyrovnaná a tlak povolí.' ),
-  array( 'cld-korak4.webp', 'Zobuďte sa bez stuhnutosti',         'Bez prevaľovania pol noci a bez hľadania polohy, ktorá nebolí.' ),
+  array( 'cld-korak1.webp', 'Разкопчайте лентата и поставете възглавницата', 'Натиснете тик-так копчето, освободете лентата и поставете възглавницата между коленете.' ),
+  array( 'cld-korak2.webp', 'Нагласете лентата според крака си',       'Затегнете лентата около крака в едно от двете положения — стабилно, но без натиск.' ),
+  array( 'cld-korak3.webp', 'Спете в правилно положение',    'Възглавницата държи краката разделени, гръбнакът остава изправен и натискът отпуска.' ),
+  array( 'cld-korak4.webp', 'Събудете се без скованост',         'Без да се въртите половин нощ и без да търсите положение, което не боли.' ),
 );
 ?>
 <section class="ncd-sec">
   <div class="ncd-wrap ncd-center">
-    <h2 class="ncd-h2">Začnite lepšie spať už dnes večer</h2>
-    <p class="ncd-sub">Jednoduché na použitie. <strong>Lepší spánok</strong> od prvej noci.</p>
+    <h2 class="ncd-h2">Започнете да спите по-добре още тази вечер</h2>
+    <p class="ncd-sub">Лесна за употреба. <strong>По-добър сън</strong> od prvej noci.</p>
   </div>
   <div class="ncd-wrap">
     <div class="ncd-steps4">
@@ -86,16 +86,16 @@ $cd_steps = array(
 <!-- ============ A) Recenzije kupaca — vrtuljak (kao prva sekcija na referenci) ============ -->
 <?php
 $cd_revs = array(
-  array( 5, 'Konečne spím celú noc',      'Spím na boku celý život a vždy som sa budila so stuhnutým chrbtom. Prvé ráno s vankúšom — nič. Neverila som, že je to také jednoduché.', 'Martina T.' ),
-  array( 5, 'Pásik je to, čo ho odlišuje', 'Predtým mi obyčajný vankúš vypadol po pol hodine. Tento zostáva medzi kolenami až do rána, aj keď sa otočím na druhý bok.', 'Dávid K.' ),
-  array( 5, 'Záchrana v tehotenstve',               'Kúpila som si ho v siedmom mesiaci. Konečne môžem ležať na ľavom boku bez tlaku v bedre a bez vrtenia pol noci.', 'Ivana P.' ),
-  array( 5, 'Bedrá ma ráno už nebolia', 'Bola som skeptická, veď je to len vankúš. Rozdiel je však skutočný — vstávam bez tej stuhnutosti v panve.', 'Lucia H.' ),
+  array( 5, 'Най-накрая спя цяла нощ',      'Спя на една страна цял живот и винаги се будех със скован гръб. Първата сутрин с възглавницата — нищо. Не вярвах, че е толкова просто.', 'Martina T.' ),
+  array( 5, 'Лентата е това, което я отличава', 'Преди обикновената възглавница ми изпадаше след половин час. Тази остава между коленете до сутринта, дори когато се обърна на другата страна.', 'Давид К.' ),
+  array( 5, 'Спасение при бременност',               'Купих я в седмия месец. Най-накрая мога да лежа на лявата страна без натиск в бедрото и без да се въртя половин нощ.', 'Ivana P.' ),
+  array( 5, 'Бедрата вече не ме болят сутрин', 'Бях скептична, нали е само възглавница. Разликата обаче е истинска — ставам без онази скованост в таза.', 'Lucia H.' ),
 );
 ?>
 <section class="ncd-sec ncd-dark">
   <div class="ncd-wrap ncd-center">
-    <h2 class="ncd-h2">Prečo sa s NORIKS Cloudom budíte inak</h2>
-    <p class="ncd-sub ncd-rate"><span class="ncd-stars">★★★★★</span> Hodnotenie <strong>4,8/5</strong> tisíc spokojných zákazníkov</p>
+    <h2 class="ncd-h2">Защо с NORIKS Cloud се будите различно</h2>
+    <p class="ncd-sub ncd-rate"><span class="ncd-stars">★★★★★</span> Hodnotenie <strong>4,8/5</strong> хиляди доволни клиенти</p>
   </div>
   <div class="ncd-wrap">
     <div class="ncd-revs">
@@ -108,7 +108,7 @@ $cd_revs = array(
             <strong><?php echo esc_html( $r[3] ); ?></strong>
             <span class="ncd-rev-v">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2f6fd0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-              Overený zákazník
+              Проверен клиент
             </span>
           </div>
         </article>
@@ -122,13 +122,13 @@ $cd_revs = array(
 <section class="ncd-sec">
   <div class="ncd-wrap ncd-row2">
     <div class="ncd-copy">
-      <p class="ncd-eyebrow">Spánok na boku</p>
-      <h2 class="ncd-h2">Získajte späť rána, ktoré ste považovali za stratené</h2>
-      <p>Poznáte ten pocit: zobudíte sa stuhnutí, celú noc hľadáte polohu, ktorá nebolí, alebo sa niekoľkokrát zobudíte bez dôvodu.</p>
-      <p>Problém nie ste vy. Keď spíte na boku bez opory medzi kolenami, bedrá sa stáčajú, krížová oblasť zostáva napätá a svaly celú noc pracujú, aby vás stabilizovali.</p>
-      <p class="ncd-strong">NORIKS Cloud drží nohy presne tak ďaleko od seba, ako treba — chrbtica zostáva vyrovnaná a telo sa konečne uvoľní.</p>
+      <p class="ncd-eyebrow">Сън на една страна</p>
+      <h2 class="ncd-h2">Върнете си сутрините, които смятахте за изгубени</h2>
+      <p>Познавате усещането: будите се сковани, цяла нощ търсите положение, което не боли, или се будите няколко пъти без причина.</p>
+      <p>Проблемът не сте вие. Когато спите на една страна без опора между коленете, бедрата се извиват, кръстът остава напрегнат, а мускулите цяла нощ работят, за да ви стабилизират.</p>
+      <p class="ncd-strong">NORIKS Cloud държи краката точно толкова далеч един от друг, колкото е нужно — гръбнакът остава изправен и тялото най-накрая се отпуска.</p>
     </div>
-    <div class="ncd-media"><?php echo $cd_vid('cld-vid-jutra.mp4','cld-jutra.webp','Ráno bez bolesti chrbta'); ?></div>
+    <div class="ncd-media"><?php echo $cd_vid('cld-vid-jutra.mp4','cld-jutra.webp','Сутрин без болка в гърба'); ?></div>
   </div>
 </section>
 
@@ -136,12 +136,12 @@ $cd_revs = array(
 <section class="ncd-sec ncd-dark">
   <div class="ncd-wrap ncd-row2">
     <div class="ncd-copy">
-      <h2 class="ncd-h2">Zarovnanie, ktoré pocítite ráno</h2>
-      <p>Keď je rozstup nôh správny, chrbtica prestane byť skrútená, panva sa vyrovná a kolená sa už netlačia o seba.</p>
+      <h2 class="ncd-h2">Подреждане, което усещате на сутринта</h2>
+      <p>Когато разстоянието между краката е правилно, гръбнакът спира да е извит, тазът се изправя, а коленете вече не се притискат едно в друго.</p>
       <ul class="ncd-check">
-        <li>Vyrovnaná chrbtica namiesto skrútenej</li>
-        <li>Vyrovnaná panva bez krútenia</li>
-        <li>Oddelené kolená, bez tlaku</li>
+        <li>Изправен гръбнак вместо извит</li>
+        <li>Изправен таз без извиване</li>
+        <li>Разделени колене, без натиск</li>
       </ul>
     </div>
     <div class="ncd-media"><?php echo $cd_img('cld-prije-poslije.webp','Pred a po — vyrovnanie chrbtice'); ?></div>
@@ -151,18 +151,18 @@ $cd_revs = array(
 <!-- ============ 4) Za koga je — krugovi s naslovom i tekstom (kao na referenci) ============ -->
 <?php
 $cd_cases = array(
-  array( 'cld-case-bok.webp',       'Spánok na boku', 'Prispôsobené vašej prirodzenej polohe.' ),
-  array( 'cld-case-ledja.webp',     'Bolesť chrbta',     'Bráni nočnému stáčaniu krížov.' ),
-  array( 'cld-case-kukovi.webp',    'Bolesť bedier',   'Drží bedrá vyrovnané namiesto skrútené.' ),
-  array( 'cld-case-koljena.webp',   'Bolesť kolien',  'Koniec tlaku kolena o koleno.' ),
-  array( 'cld-case-trudnoca.webp',  'Tehotenstvo',         'Podopiera bedrá a bruško počas tehotenstva.' ),
-  array( 'cld-case-operacija.webp', 'Po operácii',  'Šetrí bedro a koleno počas rekonvalescencie.' ),
+  array( 'cld-case-bok.webp',       'Сън на една страна', 'Съобразена с естественото ви положение.' ),
+  array( 'cld-case-ledja.webp',     'Болка в гърба',     'Пречи на нощното извиване на кръста.' ),
+  array( 'cld-case-kukovi.webp',    'Болка в бедрата',   'Държи бедрата изправени вместо извити.' ),
+  array( 'cld-case-koljena.webp',   'Болка в коленете',  'Koniec tlaku kolena o koleno.' ),
+  array( 'cld-case-trudnoca.webp',  'Tehotenstvo',         'Поддържа бедрата и корема по време на бременност.' ),
+  array( 'cld-case-operacija.webp', 'След операция',  'Щади бедрото и коляното по време на възстановяване.' ),
 );
 ?>
 <section class="ncd-sec">
   <div class="ncd-wrap ncd-center">
-    <h2 class="ncd-h2">Navrhnuté pre to, čo vám bráni spať</h2>
-    <p class="ncd-sub">Šesť situácií, kde vankúš medzi kolená prinesie najväčší rozdiel.</p>
+    <h2 class="ncd-h2">Създадена за това, което ви пречи да спите</h2>
+    <p class="ncd-sub">Шест ситуации, в които възглавница между коленете прави най-голяма разлика.</p>
   </div>
   <div class="ncd-wrap">
     <div class="ncd-cases">
@@ -181,31 +181,31 @@ $cd_cases = array(
 <section class="ncd-sec ncd-dark">
   <div class="ncd-wrap ncd-row2">
     <div class="ncd-copy">
-      <h2 class="ncd-h2">Vytvorený, aby dýchal</h2>
-      <p>Pamäťová pena medicínskej kvality so zabudovanými perforáciami — dosť pevná, aby držala odstup, dosť mäkká, aby sa prispôsobila telu.</p>
+      <h2 class="ncd-h2">Създадена да диша</h2>
+      <p>Пяна с памет с медицинско качество с вградени перфорации — достатъчно стабилна, за да държи разстоянието, достатъчно мека, за да се нагоди към тялото.</p>
       <ul class="ncd-check">
-        <li><strong>Prateľný poťah</strong> — priedušná tkanina, šetrná k pokožke</li>
-        <li><strong>Perforácie</strong> udržujú penu sviežu celú noc</li>
-        <li><strong>Udrží tvar</strong> roky, nesplasne</li>
+        <li><strong>Перящ се калъф</strong> — дишащ плат, щадящ кожата</li>
+        <li><strong>Перфорации</strong> държат пяната свежа цяла нощ</li>
+        <li><strong>Запазва формата</strong> roky, nesplasne</li>
       </ul>
     </div>
-    <div class="ncd-media"><?php echo $cd_img('cld-pjena.webp','Priedušná pamäťová pena s perforáciami'); ?></div>
+    <div class="ncd-media"><?php echo $cd_img('cld-pjena.webp','Дишаща пяна с памет с перфорации'); ?></div>
   </div>
 </section>
 
 <!-- ============ 7) Usporedba ============ -->
 <section class="ncd-sec">
   <div class="ncd-wrap ncd-row2">
-    <div class="ncd-media"><?php echo $cd_img('cld-usporedba.webp','NORIKS Cloud v porovnaní s bežnými vankúšmi'); ?></div>
+    <div class="ncd-media"><?php echo $cd_img('cld-usporedba.webp','NORIKS Cloud в сравнение с обикновени възглавници'); ?></div>
     <div class="ncd-copy">
-      <h2 class="ncd-h2">Nie všetky vankúše medzi kolená sú rovnaké</h2>
+      <h2 class="ncd-h2">Не всички възглавници между коленете са еднакви</h2>
       <ul class="ncd-vs">
-        <li class="is-no"><strong>Bez pásky</strong><span>vypadne hneď, ako sa otočíte</span></li>
-        <li class="is-no"><strong>Stredový otvor</strong><span>bráni cirkulácii</span></li>
-        <li class="is-no"><strong>Splasne</strong><span>za pár týždňov</span></li>
-        <li class="is-yes"><strong>Nastaviteľná páska</strong><span>zostane presne tam, kde má</span></li>
-        <li class="is-yes"><strong>Plný, ergonomický tvar</strong><span>bez dier a prázdnych miest</span></li>
-        <li class="is-yes"><strong>Pena medicínskej kvality</strong><span>udrží tvar roky</span></li>
+        <li class="is-no"><strong>Без лента</strong><span>изпада веднага, щом се обърнете</span></li>
+        <li class="is-no"><strong>Централен отвор</strong><span>пречи на кръвообращението</span></li>
+        <li class="is-no"><strong>Splasne</strong><span>за няколко седмици</span></li>
+        <li class="is-yes"><strong>Регулируема лента</strong><span>остава точно там, където трябва</span></li>
+        <li class="is-yes"><strong>Плътна, ергономична форма</strong><span>без дупки и празни места</span></li>
+        <li class="is-yes"><strong>Пяна с медицинско качество</strong><span>запазва формата си години</span></li>
       </ul>
     </div>
   </div>
@@ -215,12 +215,12 @@ $cd_cases = array(
 <section class="ncd-sec ncd-dark">
   <div class="ncd-wrap ncd-row2">
     <div class="ncd-copy">
-      <h2 class="ncd-h2">Vyrobené podľa prísnych noriem</h2>
-      <p>Materiály sú testované na škodlivé látky a pena je certifikovaná. Dizajn vznikol podľa švajčiarskych noriem kvality.</p>
+      <h2 class="ncd-h2">Произведена по строги стандарти</h2>
+      <p>Материалите са тествани за вредни вещества, а пяната е сертифицирана. Дизайнът е създаден по швейцарски стандарти за качество.</p>
       <ul class="ncd-check">
-        <li><strong>OEKO-TEX® STANDARD 100</strong> — bez škodlivých látok</li>
-        <li><strong>CertiPUR-EU</strong> — certifikovaná pamäťová pena</li>
-        <li><strong>Navrhnuté vo Švajčiarsku</strong>, vyrobené podľa európskych noriem</li>
+        <li><strong>OEKO-TEX® STANDARD 100</strong> — без вредни вещества</li>
+        <li><strong>CertiPUR-EU</strong> — сертифицирана пяна с памет</li>
+        <li><strong>Проектирана в Швейцария</strong>, произведена по европейски стандарти</li>
       </ul>
     </div>
     <div class="ncd-media"><?php echo $cd_img('cld-certifikati.webp','OEKO-TEX i CertiPUR-EU certifikati'); ?></div>
@@ -232,11 +232,11 @@ $cd_cases = array(
   <div class="ncd-wrap ncd-row2">
     <div class="ncd-copy">
       <p class="ncd-eyebrow">Bez rizika</p>
-      <h2 class="ncd-h2">60 nocí na vyskúšanie</h2>
-      <p>Vyskúšajte ho sami. Ak NORIKS Cloud nie je pre vás, vrátime vám celú sumu — bez podmienok a bez papierovania.</p>
-      <a class="ncd-cta" href="#bundle-selector">Objednať NORIKS Cloud</a>
+      <h2 class="ncd-h2">60 нощи за изпробване</h2>
+      <p>Изпробвайте я сами. Ако NORIKS Cloud не е за вас, ще ви върнем цялата сума — без условия и без документи.</p>
+      <a class="ncd-cta" href="#bundle-selector">Поръчай NORIKS Cloud</a>
     </div>
-    <div class="ncd-media"><?php echo $cd_img('cld-60-noci.webp','60 nocí na vyskúšanie'); ?></div>
+    <div class="ncd-media"><?php echo $cd_img('cld-60-noci.webp','60 нощи за изпробване'); ?></div>
   </div>
 </section>
 
