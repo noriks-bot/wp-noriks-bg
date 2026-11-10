@@ -55,7 +55,7 @@ function gck_get_bundle_offers( $product_id = null ) : array {
         if ( $sale <= 0 ) continue;
 
         $saving_amount = $regular - $sale;
-        $saving_text   = "Celková úspora " . number_format($saving_amount, 2, '.', '') . "€";
+        $saving_text   = "Обща икономия " . number_format($saving_amount, 2, '.', '') . "€";
 
         $p1  = trim((string)($row['p1'] ?? ''));
         $p2  = trim((string)($row['p2'] ?? ''));
@@ -198,9 +198,9 @@ function gck_attr_group_token( string $label, string $type ) : string {
     $l = strtolower( trim( $label ) );
 
     if ( $type === 'color' ) {
-        $l = str_replace(['farba', 'color', 'colour', ':'], ' ', $l);
+        $l = str_replace(['farba', 'color', 'colour', 'Цвят', 'цвят', ':'], ' ', $l);
     } else {
-        $l = str_replace(['Veľkosť', 'velkost', 'velkost', 'veľkosť', ':'], ' ', $l);
+        $l = str_replace(['Veľkosť', 'velkost', 'Размер', 'размер', 'veľkosť', ':'], ' ', $l);
     }
 
     $l = trim( preg_replace('/\s+/', ' ', $l) );
@@ -382,30 +382,22 @@ function gck_register_orto_countdown_fields() {
 function gck_sk_majice_phrase( int $n, bool $free = false, string $type = 'majica' ) : string {
     if ( $type === 'steznica' ) {
         $m100 = $n % 100;
-        if ( $n === 1 ) { $noun = 'ortézu'; }
-        elseif ( in_array( $n % 10, array( 2, 3, 4 ), true ) && ! in_array( $m100, array( 12, 13, 14 ), true ) ) { $noun = 'ortézy'; }
-        else { $noun = 'ortéz'; }
-        return $free ? ( $noun . ' zadarmo' ) : $noun;
+        $noun = ( $n === 1 ) ? 'ортеза' : 'ортези';
+        return $free ? ( $noun . ' безплатно' ) : $noun;
     }
     $m100  = $n % 100;
     $is1   = ( $n === 1 );
     $is234 = ( in_array( $n % 10, array( 2, 3, 4 ), true ) && ! in_array( $m100, array( 12, 13, 14 ), true ) );
 
     if ( $type === 'bokserica' ) {
-        $noun = ( $is1 || $is234 ) ? 'boxerky' : 'boxeriek';
+        $noun = $is1 ? 'боксерки' : 'боксерки';
     } elseif ( $type === 'carapa' ) {
         // Compression socks: sock noun, never the shirt one.
-        $noun = ( $is1 || $is234 ) ? 'ponožky' : 'ponožiek';
+        $noun = $is1 ? 'чорапи' : 'чорапи';
     } else {
-        if ( $is1 ) {
-            $noun = 'tričko';
-        } elseif ( $is234 ) {
-            $noun = 'trička';
-        } else {
-            $noun = 'tričiek';
-        }
+        $noun = $is1 ? 'тениска' : 'тениски';
     }
-    return $free ? ( $noun . ' zadarmo' ) : $noun;
+    return $free ? ( $noun . ' безплатно' ) : $noun;
 }
 
 
@@ -477,12 +469,12 @@ function gck_render_bundle_selector() {
     //  - orto-ortopas                 : single "Veľkosť" attribute, no colour (size selector only).
     // Podnaslov ponudbe in kartus nad kartico — samo Polar NORIKS Cloth in Cloud.
     if ( has_term( array( 'orto-cloath' ), 'product_cat', $product_id ) ) {
-        $gck_offer_subs = array( 'Set do kúpeľne', 'Balík pre celý dom', 'Balík pre rodinu a priateľov' );
+        $gck_offer_subs = array( 'Комплект за баня', 'Пакет за целия дом', 'Пакет за семейство и приятели' );
     } else {
         $gck_offer_subs = array();
     }
     $gck_offer_badges = has_term( array( 'orto-cloath', 'orto-cloud' ), 'product_cat', $product_id )
-        ? array( 1 => 'NAJPREDÁVANEJŠIE', 2 => 'NAJLEPŠIA CENA' )
+        ? array( 1 => 'НАЙ-ПРОДАВАНО', 2 => 'НАЙ-ДОБРА ЦЕНА' )
         : array();
     $gck_no_attrs    = has_term( array( 'orto-red', 'orto-kneeheat', 'orto-pal', 'orto-bowl', 'orto-winecooler', 'orto-cloath', 'orto-hyd', 'orto-cloud', 'orto-controlpro', 'orto-bunion', 'orto-fisiorest', 'orto-norikshers', 'orto-noriks-hers', 'orto-ortopedski-jastuk' ), 'product_cat', $product_id );
     $gck_single_size = has_term( array( 'orto-ortopas', 'orto-kidsnest' ), 'product_cat', $product_id );
@@ -921,15 +913,15 @@ function gck_render_bundle_selector() {
         <?php if ( ! has_term( array( 'orto-red', 'orto-kneeheat', 'orto-pal', 'orto-bowl', 'orto-winecooler', 'orto-slabproof', 'orto-tradesman', 'orto-kompwom', 'orto-slim', 'orto-snug', 'orto-cloath', 'orto-hyd', 'orto-cloud', 'orto-ortopas', 'orto-kneefix', 'orto-controlpro', 'orto-bunion', 'orto-fisiorest', 'orto-norikshers', 'orto-noriks-hers', 'orto-leak-boxers', 'orto-kompresijske-majice', 'orto-ortopedski-jastuk', 'orto-kidsnest' ), 'product_cat', $product_id ) ) : // hide benefits list for back belt + bunion + fisiorest + leak boxers + kompresijske majice + orthopedic pillow + kidsnest ?>
         <ul class="gck-benefits-list">
             <?php if ( !has_term( array( 'orto-bokserice', 'orto-bokserice2', 'starter-paketi' ), 'product_cat', $product_id ) ) : ?>
-                <li><span class="gck-check">✔</span> <strong>Perfektné padnutie</strong></li>
+                <li><span class="gck-check">✔</span> <strong>Перфектна посадка</strong></li>
             <?php endif; ?>
 
-            <li><strong>✔ Prémiové materiály</strong></li>
+            <li><strong>✔ Премиум материали</strong></li>
             <li><strong>✔ Pohodlie bez kompromisov</strong></li>
 
             <?php if ( has_term( array( 'orto-starter' ), 'product_cat', $product_id ) ) : ?>
-                <li style="color: #c00;"><strong>✔ Štartovací balíček je k dispozícii iba raz na osobuv</strong></li>
-                <li style="color: #c00;"><strong>✔ Limitované na 1.000 balení </strong></li>
+                <li style="color: #c00;"><strong>✔ Стартовият пакет е достъпен само веднъж на човек</strong></li>
+                <li style="color: #c00;"><strong>✔ Ограничено до 1 000 пакета </strong></li>
             <?php endif; ?>
         </ul>
         <?php endif; ?>
@@ -940,7 +932,7 @@ function gck_render_bundle_selector() {
                 <path d="M11.4124 2.58464L2.08525 11.9118C1.86558 12.1315 1.86558 12.4876 2.08525 12.7073L5.78977 16.4118C6.00944 16.6315 6.3656 16.6315 6.58527 16.4118L15.9124 7.08466C16.1321 6.86499 16.1321 6.50883 15.9124 6.28916L12.2079 2.58464C11.9883 2.36497 11.6321 2.36497 11.4124 2.58464Z" stroke="#111213" stroke-width="0.84375"></path>
                 <path d="M9.28125 4.71875L11.5312 6.96875M6.75 7.25L9 9.5M4.21875 9.78125L6.46875 12.0312" stroke="#111213" stroke-width="0.84375"></path>
             </svg>
-            Tabuľky veľkostí
+            Таблици с размери
         </a>
         <?php endif; ?>
     </div>
@@ -962,7 +954,7 @@ function gck_render_bundle_selector() {
         <div class="dev-banner" data-total="1000" data-sold="354">
             <div class="dev-banner__text">
                 <span class="dev-banner__icon">📦</span>
-                <span>Obmedzené množstvo <b class="sold">0</b> / <b class="total">0</b> (Ešte <b class="remain">0</b> kusov)</span>
+                <span>Ограничено количество <b class="sold">0</b> / <b class="total">0</b> (Остават <b class="remain">0</b> бр.)</span>
             </div>
             <div class="dev-banner__bar" aria-label="Sales progress">
                 <div class="dev-banner__fill"></div>
@@ -1029,13 +1021,13 @@ function gck_render_bundle_selector() {
              data-key="gck_cd_<?php echo esc_attr( $product_id ); ?>">
             <div class="gck-countdown__head">
                 <span class="gck-countdown__icon">🔥</span>
-                Obmedzená zásoba
+                Ограничена наличност
             </div>
             <div class="gck-countdown__body">
-                Akcia platí len dnes — ešte <span class="gck-countdown__timer" aria-live="polite">--:--</span>.<?php
+                Промоцията важи само днес — още <span class="gck-countdown__timer" aria-live="polite">--:--</span>.<?php
                 if ( $countdown_stock > 0 ) :
-                    ?> Zostáva len <strong><?php echo esc_html( $countdown_stock ); ?> ks</strong>.<?php
-                endif; ?> <strong>Ponáhľajte sa, kým sa nevypredá!</strong>
+                    ?> Остават само <strong><?php echo esc_html( $countdown_stock ); ?> бр.</strong>.<?php
+                endif; ?> <strong>Побързайте, докато не се изчерпи!</strong>
             </div>
         </div>
         <script>
@@ -1087,7 +1079,7 @@ function gck_render_bundle_selector() {
                 <path d="M11.4124 2.58464L2.08525 11.9118C1.86558 12.1315 1.86558 12.4876 2.08525 12.7073L5.78977 16.4118C6.00944 16.6315 6.3656 16.6315 6.58527 16.4118L15.9124 7.08466C16.1321 6.86499 16.1321 6.50883 15.9124 6.28916L12.2079 2.58464C11.9883 2.36497 11.6321 2.36497 11.4124 2.58464Z" stroke="#111213" stroke-width="0.84375"></path>
                 <path d="M9.28125 4.71875L11.5312 6.96875M6.75 7.25L9 9.5M4.21875 9.78125L6.46875 12.0312" stroke="#111213" stroke-width="0.84375"></path>
             </svg>
-            Tabuľky veľkostí
+            Таблици с размери
         </a>
     </div>
     <?php endif; ?>
@@ -1128,7 +1120,7 @@ function gck_render_bundle_selector() {
     <div class="gck-size-link-wrap" style="text-align:right; margin:0 0 10px 0;">
         <a id="open-size-chartCustom" href="#size-chart" class="gck-size-link">
             <svg style="margin-right:5px;width:20px;height:20px;display:inline-block;vertical-align:middle;" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none"><path d="M11.4124 2.58464L2.08525 11.9118C1.86558 12.1315 1.86558 12.4876 2.08525 12.7073L5.78977 16.4118C6.00944 16.6315 6.3656 16.6315 6.58527 16.4118L15.9124 7.08466C16.1321 6.86499 16.1321 6.50883 15.9124 6.28916L12.2079 2.58464C11.9883 2.36497 11.6321 2.36497 11.4124 2.58464Z" stroke="#111213" stroke-width="0.84375"></path></svg>
-            Tabuľky veľkostí
+            Таблици с размери
         </a>
     </div>
     <?php endif; ?>
@@ -1834,11 +1826,11 @@ function gck_render_bundle_selector() {
 
                 <?php if ( ! $show_group_titles ) : ?>
                     <?php if ( $loop_index == 1 ) : ?>
-                        <div class="gck-popular-badge">Najobľúbenejšie 🔥</div>
+                        <div class="gck-popular-badge">Най-популярно 🔥</div>
                     <?php endif; ?>
 
                     <?php if ( $loop_index == 3 ) : ?>
-                        <div class="gck-popular-badge-2">Najnižšia cena 🔥</div>
+                        <div class="gck-popular-badge-2">Най-ниска цена 🔥</div>
                     <?php endif; ?>
                 <?php endif; ?>
 
@@ -1942,24 +1934,24 @@ function gck_render_bundle_selector() {
                     // Each item gets its own pair index so all 6 selections reach the cart.
                     $gck_sections = array(
                         array(
-                            'label'   => 'Vyber 4 tričká',
+                            'label'   => 'Изберете 4 тениски',
                             'gratis'  => false, 'count' => 4, 'gg' => 0, 'garment' => 'majica',
                             'ckey'    => 'majica_color', 'skey' => 'majica_size',
-                            'colors'  => array( 'Čierna', 'Biela', 'Sivá', 'Béžová', 'Modrá', 'Hnedá', 'Zelená' ),
+                            'colors'  => array( 'Черен', 'Бял', 'Сив', 'Бежов', 'Син', 'Кафяв', 'Зелен' ),
                             'sizes'   => array( 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL' ),
                         ),
                         array(
                             'label'   => 'Vyber 1 boxerky zdarma',
                             'gratis'  => true, 'count' => 1, 'gg' => 1, 'garment' => 'bokserica',
                             'ckey'    => 'bokserica_color', 'skey' => 'bokserica_size',
-                            'colors'  => array( 'Čierna', 'Modrá', 'Sivá', 'Zelená', 'Červená' ),
+                            'colors'  => array( 'Черен', 'Син', 'Сив', 'Зелен', 'Червен' ),
                             'sizes'   => array( 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL' ),
                         ),
                         array(
-                            'label'   => 'Vyber farbu ponožiek (5 párov)',
+                            'label'   => 'Изберете цвят на чорапите (5 чифта)',
                             'gratis'  => true, 'count' => 1, 'gg' => 2, 'garment' => 'carapa',
                             'ckey'    => 'carapa_color', 'skey' => 'carapa_size',
-                            'colors'  => array( 'Čierna', 'Biela' ),
+                            'colors'  => array( 'Черен', 'Бял' ),
                             'sizes'   => array( '39-43', '43-46' ),
                         ),
                     );
@@ -2028,7 +2020,7 @@ function gck_render_bundle_selector() {
                     if ( $gck_split_garments ) {
                         $gck_passes = array(
                             array( 'group' => 0, 'label' => 'Vyber ' . (int) $pairs . ' ' . gck_sk_majice_phrase( $pairs, false, 'majica' ), 'gratis' => false ),
-                            array( 'group' => 1, 'label' => 'Vyber ešte ' . (int) $pairs . ' ' . gck_sk_majice_phrase( $pairs, true, 'bokserica' ), 'gratis' => true ),
+                            array( 'group' => 1, 'label' => 'Изберете още ' . (int) $pairs . ' ' . gck_sk_majice_phrase( $pairs, true, 'bokserica' ), 'gratis' => true ),
                         );
                     } else {
                         $gck_passes = array( array( 'group' => null, 'label' => null, 'gratis' => false ) );
@@ -2043,7 +2035,7 @@ function gck_render_bundle_selector() {
                             <div class="gck-pair-label">Vyber <?php echo (int) $gck_paid; ?> <?php echo esc_html( gck_sk_majice_phrase( $gck_paid, false, $gck_garment ) ); ?></div>
                         <?php endif; ?>
                         <?php if ( $gck_pass['group'] === null && $gck_show_sections && $gck_free > 0 && $i === ( $gck_paid + 1 ) ) : ?>
-                            <div class="gck-pair-label is-gratis">Vyber ešte <?php echo (int) $gck_free; ?> <?php echo esc_html( gck_sk_majice_phrase( $gck_free, true, $gck_garment ) ); ?></div>
+                            <div class="gck-pair-label is-gratis">Изберете още <?php echo (int) $gck_free; ?> <?php echo esc_html( gck_sk_majice_phrase( $gck_free, true, $gck_garment ) ); ?></div>
                         <?php endif; ?>
                         <div class="bundle-pair">
                             <?php foreach ( $attr_groups as $g_index => $group ) :
@@ -2136,7 +2128,7 @@ function gck_render_bundle_selector() {
                     <?php endif; /* $gck_shgifts vs SHBOX/normal render */ ?>
 
                     <?php if ( ! $gck_no_attrs ) : ?>
-                    <small style="display: block; line-height: 1;"><?php esc_html_e( 'Ponúkame 30 dní na vrátenie peňazí alebo výmenu – bezstarostný nákup!', 'gift-card-kompetentnost' ); ?></small>
+                    <small style="display: block; line-height: 1;"><?php esc_html_e( 'Предлагаме 30 дни за връщане на парите или замяна – спокойна покупка!', 'gift-card-kompetentnost' ); ?></small>
                     <?php endif; ?>
                 </div>
             </label>
@@ -2270,7 +2262,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (!valid) {
             e.preventDefault();
-            alert('Prosimo, izberite boju/barvu i veličinu za svaki set.');
+            alert('Моля, изберете цвят и размер за всеки комплект.');
         }
     });
 
@@ -2402,9 +2394,9 @@ function gck_build_shgifts_lines( array $pairs_data ) : array {
         $label = '';
         foreach ( array_keys( $attrs ) as $k ) {
             $kl = strtolower( (string) $k );
-            if ( strpos( $kl, 'majic' ) !== false )    { $label = 'Tričko';  break; }
+            if ( strpos( $kl, 'majic' ) !== false )    { $label = 'Тениска';  break; }
             if ( strpos( $kl, 'bokseric' ) !== false ) { $label = 'Boxerky'; break; }
-            if ( strpos( $kl, 'carap' ) !== false )    { $label = 'Ponožky'; break; }
+            if ( strpos( $kl, 'carap' ) !== false )    { $label = 'Чорапи'; break; }
         }
 
         $clean = [];
@@ -2602,7 +2594,7 @@ function gck_shgifts_free_gifts_notice() {
         array( 'label' => '1x boxerky', 'img' => $boxer_img, 'price' => '19,99 €' ),
     );
     for ( $i = 0; $i < 5; $i++ ) {
-        $gifts[] = array( 'label' => '1x pár ponožiek', 'img' => $socks_img, 'price' => '12,99 €' );
+        $gifts[] = array( 'label' => '1x чифт чорапи', 'img' => $socks_img, 'price' => '12,99 €' );
     }
     ?>
     <style>
@@ -2672,7 +2664,7 @@ function gck_shgifts_free_gifts_notice() {
       }
     </style>
     <div class="gck-fg">
-        <div class="gck-fg__head">6 tovarov ZADARMO ku každému nákupu</div>
+        <div class="gck-fg__head">6 продукта БЕЗПЛАТНО към всяка покупка</div>
         <div class="gck-fg__grid">
             <?php foreach ( $gifts as $g ) : ?>
                 <div class="gck-fg__card">
