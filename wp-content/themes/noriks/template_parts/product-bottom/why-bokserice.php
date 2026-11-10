@@ -96,7 +96,7 @@ $bx_col = get_template_directory_uri() . '/img/boksarice-barve/';
 @media (max-width:600px){.nk-cmp-row>div{padding:12px 10px;font-size:13.5px}.nk-cmp-price{font-size:17px}}</style>
 <section class="nk-cmp"><div class="fis-wrap"><h2 class="fis-h2 fis-center">NORIKS срещу другите марки</h2><p class="nk-cmp-sub">Не всички боксерки са еднакви. Ето защо нашите си заслужават.</p>
 <div class="nk-cmp-card">
-<div class="nk-cmp-row nk-cmp-head"><div></div><div><div class="nk-cmp-brand">NORIKS</div><div class="nk-cmp-price">7,50–11,25 €</div><div class="nk-cmp-note">за бройка, според пакета</div></div><div><div class="nk-cmp-brand">Други марки</div><div class="nk-cmp-price">15–20 €</div><div class="nk-cmp-note">za kus</div></div></div>
+<div class="nk-cmp-row nk-cmp-head"><div></div><div><div class="nk-cmp-brand">NORIKS</div><div class="nk-cmp-price">7,50–11,25 €</div><div class="nk-cmp-note">за бройка, според пакета</div></div><div><div class="nk-cmp-brand">Други марки</div><div class="nk-cmp-price">15–20 €</div><div class="nk-cmp-note">за бройка</div></div></div>
 <div class="nk-cmp-row"><div>Премиум модал вместо обикновен памук</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
 <div class="nk-cmp-row"><div>Не миришат дори след дълъг ден</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
 <div class="nk-cmp-row"><div>Крачолите остават на място</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>

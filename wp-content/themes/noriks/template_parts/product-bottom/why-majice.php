@@ -104,7 +104,7 @@ $mj_col = get_template_directory_uri() . '/img/majica-barve/';
 </style>
 <section class="nk-cmp"><div class="fis-wrap"><h2 class="fis-h2 fis-center">NORIKS срещу другите марки</h2><p class="nk-cmp-sub">Не всички тениски са еднакви. Ето защо нашите си заслужават.</p>
 <div class="nk-cmp-card">
-<div class="nk-cmp-row nk-cmp-head"><div></div><div><div class="nk-cmp-brand">NORIKS</div><div class="nk-cmp-price">11,67–17,49 €</div><div class="nk-cmp-note">за бройка, според пакета</div></div><div><div class="nk-cmp-brand">Други марки</div><div class="nk-cmp-price">29–39 €</div><div class="nk-cmp-note">za kus</div></div></div>
+<div class="nk-cmp-row nk-cmp-head"><div></div><div><div class="nk-cmp-brand">NORIKS</div><div class="nk-cmp-price">11,67–17,49 €</div><div class="nk-cmp-note">за бройка, според пакета</div></div><div><div class="nk-cmp-brand">Други марки</div><div class="nk-cmp-price">29–39 €</div><div class="nk-cmp-note">за бройка</div></div></div>
 <div class="nk-cmp-row"><div>Ласкава кройка за гърдите и раменете</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
 <div class="nk-cmp-row"><div>Постоянни размери от S до 3XL</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>
 <div class="nk-cmp-row"><div>Допълнителна дължина, за да остане коремът покрит</div><div><span class="nk-yes">✓</span></div><div><span class="nk-no">✕</span></div></div>

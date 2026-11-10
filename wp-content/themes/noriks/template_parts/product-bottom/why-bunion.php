@@ -48,7 +48,7 @@ $bun_steps = array(
       <video src="<?php echo esc_url( $bun_video_1 ); ?>" muted autoplay loop playsinline preload="metadata"></video>
     </div>
     <div class="bun-col bun-copy">
-      <h2 class="bun-title">Ste len krok od toho, aby ste sa zbavili <span class="bun-hl">дискомфорта, причинен от изкривен палец</span>, подути пръсти и болки в стъпалата…</h2>
+      <h2 class="bun-title">На една крачка сте от това да се избавите от <span class="bun-hl">дискомфорта, причинен от изкривен палец</span>, подути пръсти и болки в стъпалата…</h2>
       <p>Ако четете това, има голяма вероятност да страдате от продължителен <strong class="bun-red">дискомфорт, причинен от изкривен палец</strong>.</p>
       <p>Резултатът? Болката и дискомфортът влияят на всекидневните ви дейности.</p>
       <p>Ако не се лекуват, може да се влошат. Пръстите се кръстосват, може да се развият чукообразни пръсти и костни израстъци.</p>
@@ -67,7 +67,7 @@ $bun_steps = array(
       <video src="<?php echo esc_url( $bun_video_2 ); ?>" muted autoplay loop playsinline preload="metadata"></video>
     </div>
     <div class="bun-col bun-copy">
-      <h2 class="bun-title">Ako to funguje?</h2>
+      <h2 class="bun-title">Как работи?</h2>
       <p><strong>Коректорът за изкривен палец NORIKS</strong> използва усъвършенствана терапия за изправяне. Създаден е така, че да <strong class="bun-red">подпомогне повторното изправяне</strong> на палеца и постепенно да намали възпалението с помощта на силен патентован шарнирен механизъм.</p>
       <p>Помага да се отпусне мускулното напрежение, като нежно връща палеца в естественото му положение, което с времето води до безболезнено естествено изправяне на ставата на пръста.</p>
       <p>Така се освобождава натрупаното през годините напрежение, израстъкът се прибира и намалява, болката се облекчава и се предотвратява по-нататъшният растеж — за да стъпите отново на краката си, изправени и уверени.</p>
@@ -155,7 +155,7 @@ $bun_steps = array(
   <div class="bun-cmp-wrap">
     <h2 class="bun-cmp-title">Защо да изберете нас?</h2>
     <p class="bun-cmp-lead">Не се подвеждайте по <span class="bun-hl">ЕВТИНИ имитации</span></p>
-    <p class="bun-cmp-sub">Ako sa <strong>коректорът за изкривен палец NORIKS</strong> се сравнява с останалите:</p>
+    <p class="bun-cmp-sub">Как <strong>коректорът за изкривен палец NORIKS</strong> се сравнява с останалите:</p>
     <div class="bun-cmp-scroll">
       <table class="bun-cmp-table">
         <thead>

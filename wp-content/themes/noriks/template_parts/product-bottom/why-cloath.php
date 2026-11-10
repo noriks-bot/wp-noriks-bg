@@ -114,7 +114,7 @@ $cl_anim = function( $mp4, $fallback, $alt ) use ( $cl, $cl_path, $cl_img ) {
       <p>Още ли се съмнявате? Разбираме — звучи твърде добре, за да е истина.</p>
       <p>Затова можете да изпробвате кърпата напълно без риск <strong>30 дни</strong>. Ако стъклото не стане кристално чисто, ако плочките не се поддържат по-лесно или резултатът просто не ви хареса — изпратете я обратно.</p>
       <p class="ncl-strong">Или получавате баня, която блести като нова, или получавате парите си обратно.</p>
-      <a class="ncl-cta" href="#bundle-selector">Objednajte bez rizika</a>
+      <a class="ncl-cta" href="#bundle-selector">Поръчайте без риск</a>
     </div>
     <div class="ncl-media"><?php echo $cl_img('cl-10-zena-lice.webp','30-дневна гаранция за връщане на парите'); ?></div>
   </div>

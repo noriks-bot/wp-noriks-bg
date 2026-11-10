@@ -119,8 +119,8 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
   <div class="nsl-wrap nsl-row2">
     <div class="nsl-media"><?php echo $sl_img( 'slm-11-oblikovanje-nakon-poroda.jpg', 'Майки с бикините NORIKS Slim' ); ?></div>
     <div class="nsl-copy">
-      <p class="nsl-kicker">Aj po tehotenstve</p>
-      <h2 class="nsl-h2">Оформяне, което работи <em>с вашето тяло</em>, nie proti nemu</h2>
+      <p class="nsl-kicker">И след бременност</p>
+      <h2 class="nsl-h2">Оформяне, което работи <em>с вашето тяло</em>, а не срещу него</h2>
       <p>След бременност коремът и талията често не се връщат веднага към предишната линия. NORIKS Slim ги подкрепя нежно, така че облеклото отново стои по-добре — без стягане и без навиване.</p>
       <ul class="nsl-check">
         <li><strong>Мек и дишащ</strong> плат върху чувствителна кожа</li>

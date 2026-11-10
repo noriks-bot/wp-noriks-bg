@@ -29,7 +29,7 @@ $kh_img = function( $file, $alt ) use ( $kh, $kh_path ) {
 <!-- 1) Tri koraka — videi -->
 <section class="nkh-sec nkh-light">
   <div class="nkh-wrap">
-    <p class="nkh-eyebrow nkh-center">Ako to funguje</p>
+    <p class="nkh-eyebrow nkh-center">Как работи</p>
     <h2 class="nkh-h2 nkh-center">Облекчение в 3 лесни стъпки</h2>
     <p class="nkh-lead nkh-center">Без настройки, без приложение, без сложна рутина. Поставете, натиснете бутона и продължете с деня си.</p>
     <div class="nkh-steps3">

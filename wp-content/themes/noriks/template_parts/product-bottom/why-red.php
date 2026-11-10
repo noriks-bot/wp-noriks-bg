@@ -99,7 +99,7 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
       <ul class="nrd-checks">
         <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>48 LED диода</strong> (червени + инфрачервени)</span></li>
         <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>3 степени мощност</strong> · 4 режима</span></li>
-        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Iba 126 g</strong> — достатъчно лек за всеки ден</span></li>
+        <li><span class="nrd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><strong>Само 126 g</strong> — достатъчно лек за всеки ден</span></li>
       </ul>
     </div>
   </div>
@@ -111,7 +111,7 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
 <section class="nrd-pain">
   <div class="nrd-wrap nrd-pain__wrap">
     <div class="nrd-pain__text">
-      <p class="nrd-kicker">Pre koho je NORIKS RedRelief</p>
+      <p class="nrd-kicker">За кого е NORIKS RedRelief</p>
       <h2 class="nrd-h2">За ръце, които работят цял ден.</h2>
       <p class="nrd-pain__body">Болката в китката рядко идва сама. NORIKS RedRelief е предназначен за тези, които всеки ден натоварват ръката и китката си — на клавиатурата, зад волана, във фризьорски салон, на строежа или в градината.</p>
       <ul class="nrd-pills">

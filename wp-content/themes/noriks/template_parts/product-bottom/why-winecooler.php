@@ -98,7 +98,7 @@ $nwc_testimonials = array(
 <section class="nwc-sec">
   <div class="nwc-wrap nwc-row2 nwc-row2--rev">
     <div class="nwc-copy">
-      <p class="nwc-kicker">Kvalita</p>
+      <p class="nwc-kicker">Качество</p>
       <h2 class="nwc-h2">Hygiena a <em>първокласно качество</em></h2>
       <p>Залагаме на първокласна неръждаема стомана, подходяща за контакт с храни, за ненадмината сила и издръжливост, така че охлаждащата пръчка да ви служи надеждно години.</p>
       <p>Охлаждащата пръчка за вино има свалящ се наливник, така че се мие лесно и обилно с топла вода.</p>
@@ -132,7 +132,7 @@ $nwc_testimonials = array(
   <div class="nwc-wrap nwc-c">
     <h2 class="nwc-h2 nwc-h2--c">Изпробвайте го <em>без притеснение.</em></h2>
     <p class="nwc-sub">Изстудете първата бутилка и се убедете в разликата. Ако не сте доволни, имате <strong>30 дни за връщане на парите</strong>.</p>
-    <p class="nwc-trust"><span>30 дни за връщане</span><span>Doprava zadarmo nad 70 €</span><span>Platba na dobierku</span></p>
+    <p class="nwc-trust"><span>30 дни за връщане</span><span>Безплатна доставка над 70 €</span><span>Плащане при доставка</span></p>
   </div>
 </section>
 

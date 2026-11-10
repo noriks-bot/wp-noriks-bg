@@ -16,13 +16,13 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
     <p class="nhs-lead">Пробвали сте кремове, които обещаваха чудеса.<br>Мислили сте и за ботокс, но е страшен, скъп или просто не е за вас.</p>
     <div class="nhs-reason-grid">
       <div class="nhs-col nhs-cons">
-        <p><strong>Повечето продукти</strong> len prekryje povrch.</p>
+        <p><strong>Повечето продукти</strong> само покриват повърхността.</p>
         <p>Ретинолът може <strong>да пари и да дразни</strong>.</p>
         <p>Botox <strong>замразява</strong> лицето, вместо да помогне на кожата да се възстанови.</p>
       </div>
       <div class="nhs-media"><img src="<?php echo esc_url( $nh.'11.png' ); ?>" alt="NORIKS HERS pred a po" loading="lazy"></div>
       <div class="nhs-col nhs-pros">
-        <p><strong>NORIKS HERS работи с вашата кожа</strong>, nie proti nej.</p>
+        <p><strong>NORIKS HERS работи с вашата кожа</strong>, а не срещу нея.</p>
         <p>Помага на кожата <strong>да задържи влага и да възстанови колагена</strong>.</p>
         <p>Добавеният колаген изглажда напрежението, което образува бръчките, и облекчава белезите, <strong>без дразнене и игли</strong>.</p>
       </div>
@@ -93,8 +93,8 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
     <div class="nhs-zero-copy">
       <h2 class="nhs-h2">Изглажда кожата <em>без странични ефекти</em></h2>
       <div class="nhs-zero-chips">
-        <span>Bez ihiel</span><span>Без зачервяване</span><span>Без щипане</span>
-        <span>Bez olupovania</span><span>Bez citlivosti</span><span>Bez stresu</span>
+        <span>Без игли</span><span>Без зачервяване</span><span>Без щипане</span>
+        <span>Без белене</span><span>Без чувствителност</span><span>Без стрес</span>
       </div>
     </div>
     <div class="nhs-media"><img src="<?php echo esc_url( $nh.'10.png' ); ?>" alt="NORIKS HERS balenia" loading="lazy"></div>
@@ -104,13 +104,13 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
 <!-- ============ 8) Porovnávacia tabuľka ============ -->
 <section class="nhs-cmp">
   <div class="nhs-wrap-narrow">
-    <h2 class="nhs-h2 nhs-center">По-здравият начин да изгладите бръчки и белези, <em>bez ihiel</em></h2>
+    <h2 class="nhs-h2 nhs-center">По-здравият начин да изгладите бръчки и белези, <em>без игли</em></h2>
     <p class="nhs-cmp-if">Ако искате безопасна и нежна алтернатива на ботокса, не понасяте дразненето от агресивни съставки като ретинол или киселини и искате да изглеждате свежи — и все пак като себе си… <strong>potom si zamilujete NORIKS HERS!</strong></p>
     <div class="nhs-cmp-scroll">
       <table class="nhs-cmp-table">
         <thead><tr><th></th><th class="nhs-us">NORIKS HERS</th><th>Botox</th><th>Евтини копия</th></tr></thead>
         <tbody>
-          <tr><td>Bez ihiel</td><td class="us ok">✓</td><td class="no">✕</td><td class="ok">✓</td></tr>
+          <tr><td>Без игли</td><td class="us ok">✓</td><td class="no">✕</td><td class="ok">✓</td></tr>
           <tr><td>Инвазивни</td><td class="us ok">✕</td><td class="no">✓</td><td class="ok">✕</td></tr>
           <tr><td>Безопасно за чувствителна кожа</td><td class="us ok">✓</td><td class="mid">риск от дразнене</td><td class="mid">агресивно лепило</td></tr>
           <tr><td>Ползи от колагена</td><td class="us ok">✓</td><td class="no">✕</td><td class="no">✕</td></tr>

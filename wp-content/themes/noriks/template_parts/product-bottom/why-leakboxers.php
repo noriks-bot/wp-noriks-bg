@@ -20,7 +20,7 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
       <p>Подложки, които се чуват, пелени, които се виждат под облеклото, и постоянен страх от преливане. Заслужавате решение, което изглежда и се усеща като обикновено бельо.</p>
       <ul class="lbx-check">
         <li><strong>250 kg</strong> отпадък годишно на един потребител</li>
-        <li>Viac ako <strong>800 €</strong> изхвърляни всяка година</li>
+        <li>Над <strong>800 €</strong> изхвърляни всяка година</li>
         <li>Еднократните продукти са обемисти и пълни с химикали</li>
       </ul>
       <a class="lbx-cta lbx-cta-solid" href="#bundle-selector">Върнете ми самочувствието →</a>
@@ -63,9 +63,9 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
   <div class="lbx-wrap lbx-row2">
     <div class="lbx-copy">
       <p class="lbx-eyebrow">Rozdiel NORIKS</p>
-      <h2 class="lbx-h2">Sledujte, ako <em>mizne</em>. Нула преливания.</h2>
+      <h2 class="lbx-h2">Вижте как <em>изчезва</em>. Нула преливания.</h2>
       <p>Външният слой е водоотблъскващ, а абсорбиращото ядро задържа течността вътре. Резултатът: оставате сухи — без петна и без неприятни моменти, на работа, в пътуване и докато спите.</p>
-      <div class="lbx-chips"><span>Без преливане</span><span>Bez objemnosti</span><span>Без миризма</span></div>
+      <div class="lbx-chips"><span>Без преливане</span><span>Без обем</span><span>Без миризма</span></div>
     </div>
     <div class="lbx-media">
       <video src="<?php echo esc_url( $lbv.'waterpour.mp4' ); ?>" autoplay muted loop playsinline preload="metadata"></video>

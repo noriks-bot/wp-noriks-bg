@@ -231,7 +231,7 @@ $cd_cases = array(
 <section class="ncd-sec">
   <div class="ncd-wrap ncd-row2">
     <div class="ncd-copy">
-      <p class="ncd-eyebrow">Bez rizika</p>
+      <p class="ncd-eyebrow">Без риск</p>
       <h2 class="ncd-h2">60 нощи за изпробване</h2>
       <p>Изпробвайте я сами. Ако NORIKS Cloud не е за вас, ще ви върнем цялата сума — без условия и без документи.</p>
       <a class="ncd-cta" href="#bundle-selector">Поръчай NORIKS Cloud</a>

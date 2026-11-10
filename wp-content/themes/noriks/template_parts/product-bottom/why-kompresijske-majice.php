@@ -121,7 +121,7 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
         <?php endforeach; ?>
       </div>
     </div>
-    <div class="kmf-cta-wrap"><a class="kmf-cta" href="#bundle-selector">Objednajte si svoj NORIKS FIT →</a></div>
+    <div class="kmf-cta-wrap"><a class="kmf-cta" href="#bundle-selector">Поръчайте своя NORIKS FIT →</a></div>
   </div>
 </section>
 

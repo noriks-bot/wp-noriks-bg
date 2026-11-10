@@ -127,18 +127,18 @@ $wdir = get_template_directory_uri() . '/img/slabproof/';
             <span class="wslabproof__pecat-top">Право на връщане</span>
             <span class="wslabproof__pecat-num">30</span>
             <span class="wslabproof__pecat-dani">ДНИ</span>
-            <span class="wslabproof__pecat-bot">Bez rizika</span>
+            <span class="wslabproof__pecat-bot">Без риск</span>
           </div>
         </div>
       </div>
       <div class="wslabproof__tekst">
         <div class="wslabproof__kicker">ПАЗАРУВАЙТЕ БЕЗ ПРИТЕСНЕНИЕ</div>
-        <h2 class="wslabproof__h2">S NORIKS nakupujete <em>bez rizika</em></h2>
+        <h2 class="wslabproof__h2">С NORIKS пазарувате <em>без риск</em></h2>
         <p class="wslabproof__p">Изпробвайте NORIKS SlabProof вкъщи. Ако не ви харесва, имате 30 дни за връщане — без усложнения и без въпроси.</p>
         <div class="wslabproof__pogoji wslabproof__pogoji--ob">
         <div class="wslabproof__pog"><strong>30 дни</strong><span>за връщане на парите</span></div>
-        <div class="wslabproof__pog"><strong>Doprava zadarmo</strong><span>nad 70 €</span></div>
-        <div class="wslabproof__pog"><strong>Platba na dobierku</strong><span>плащате, когато дойде пратката</span></div>
+        <div class="wslabproof__pog"><strong>Безплатна доставка</strong><span>над 70 €</span></div>
+        <div class="wslabproof__pog"><strong>Плащане при доставка</strong><span>плащате, когато дойде пратката</span></div>
         <div class="wslabproof__pog"><strong>120 000 клиенти</strong><span>средна оценка 4,8</span></div>
       </div>
     </div>

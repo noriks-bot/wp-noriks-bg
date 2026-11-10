@@ -15,7 +15,7 @@ if ( WC()->cart->is_empty() ) return;
 <div class="before_form container container--xs">
 
 <form name="checkout" method="post" class="checkout woocommerce-checkout"
-      action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data" aria-label="Platba">
+      action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data" aria-label="Плащане">
 
   <div class="col2-set" id="customer_details">
     <div class="col-1 clearfix">
@@ -60,7 +60,7 @@ if ( WC()->cart->is_empty() ) return;
 
         <!-- COD prompt -->
         <div id="hs-cod-checkout-prompt" style="display:none;">
-          <div class="cod-prompt-text">Завършете поръчката сега, <strong>platba na dobierku 🙂</strong></div>
+          <div class="cod-prompt-text">Завършете поръчката сега, <strong>плащане при доставка 🙂</strong></div>
           <img decoding="async" class="cod-prompt-image" src="https://images.vigo-shop.com/general/checkout/cod/uni_cash_on_delivery.svg">
         </div>
 

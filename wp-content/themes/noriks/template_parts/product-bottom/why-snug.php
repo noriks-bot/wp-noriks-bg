@@ -77,7 +77,7 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
 <section class="nsg-sec nsg-tint">
   <div class="nsg-wrap nsg-row2 nsg-row2--rev">
     <div class="nsg-copy">
-      <p class="nsg-kicker">Ako to funguje</p>
+      <p class="nsg-kicker">Как работи</p>
       <h2 class="nsg-h2">Формата S държи три точки наведнъж</h2>
       <p>Кривината следва линията на тялото: горната част поддържа рамото, средата запълва пространството при талията, а долното рамо разделя коленете.</p>
       <p>Тежестта се разпределя по цялата дължина, вместо да се събира на едно място. Тялото спира да изпраща сигналите, които ви будят.</p>

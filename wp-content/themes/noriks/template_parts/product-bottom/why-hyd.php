@@ -90,7 +90,7 @@ $nhy_marquee = array(
       <ul class="nhy-stories">
         <li><strong>Възстановяване с повече енергия</strong><span>„След всяка тренировка усещам по-малко умора в мускулите. HydraH₂ направи възстановяването ми лесно."</span></li>
         <li><strong>Хидратация, която се вижда</strong><span>„Кожата ми е по-наситена и по-добре хидратирана. Идеално за всекидневната рутина."</span></li>
-        <li><strong>Практично и чисто</strong><span>„Nema okusa plastike, punjenje preko USB-a je jednostavno. Moja svakodnevna boca."</span></li>
+        <li><strong>Практично и чисто</strong><span>„Няма вкус на пластмаса, зареждането през USB е лесно. Моята всекидневна бутилка."</span></li>
       </ul>
     </div>
   </div>
