@@ -22,7 +22,7 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <!-- ============ 1) Marquee (tamna traka, vrti se) ============ -->
 <div class="oj-marquee" aria-hidden="true">
   <div class="oj-marquee-track">
-    <?php $oj_ticker = array('PRIEDUŠNÉ A PRATEĽNÉ','DOKONALÉ ZAROVNANIE','PENA STABILITYCORE™','CERTIFIKÁT OEKO-TEX®','HYPOALERGÉNNE','POŤAH SILKFLEX™');
+    <?php $oj_ticker = array('ДИШАЩА И ПЕРЯЩА СЕ','ИДЕАЛНО ПОДРЕЖДАНЕ','PENA STABILITYCORE™','СЕРТИФИКАТ OEKO-TEX®','ХИПОАЛЕРГЕННА','КАЛЪФ SILKFLEX™');
     for ( $r = 0; $r < 2; $r++ ) { foreach ( $oj_ticker as $t ) { echo '<span class="oj-tick">'.esc_html($t).'</span><span class="oj-dot">•</span>'; } } ?>
   </div>
 </div>
@@ -30,13 +30,13 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <!-- ============ 2) "Svjetski #1" + UGC karusel ============ -->
 <section class="oj-sec">
   <div class="oj-wrap">
-    <h2 class="oj-hero-h">Svetová <em>#1 medzi ortopedickými vankúšmi na sedenie</em> pre každodenné pohodlie</h2>
-    <p class="oj-hero-sub">Dôverujú mu tisíce spokojných zákazníkov — od <strong>vodičov na cestách cez ľudí v kanceláriách až po rodiny doma.</strong></p>
+    <h2 class="oj-hero-h">Световен <em>№1 сред ортопедичните възглавници за сядане</em> за всекидневен комфорт</h2>
+    <p class="oj-hero-sub">Доверяват му се хиляди доволни клиенти — от <strong>шофьори на път през хора в офиси до семейства вкъщи.</strong></p>
     <div class="oj-ugc-grid oj-ugc-5">
       <?php for ( $i = 1; $i <= 4; $i++ ) : ?>
         <div class="oj-ugc-item" data-src="<?php echo esc_url( $ojv.'nasi-'.$i.'.mp4' ); ?>">
           <video class="oj-ugc-video" preload="metadata" playsinline muted></video>
-          <span class="oj-ugc-play" aria-label="Prehrať"></span>
+          <span class="oj-ugc-play" aria-label="Пусни"></span>
         </div>
       <?php endfor; ?>
     </div>
@@ -46,11 +46,11 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <!-- ============ 3) Kraj boli u trtici — slika LIJEVO, tekst DESNO ============ -->
 <section class="oj-sec oj-alt">
   <div class="oj-wrap oj-row2">
-    <div class="oj-media"><?php echo $oj_img('07_lifestyle_HR.png','Predtým a potom — bolesť kostrče pri šoférovaní'); ?></div>
+    <div class="oj-media"><?php echo $oj_img('07_lifestyle_HR.png','Преди и след — болка в опашната кост при шофиране'); ?></div>
     <div class="oj-copy">
-      <h2 class="oj-h2"><em class="oj-pink-i">Koniec bolesti kostrče, išiasu a chrbta</em> zo sedenia</h2>
-      <p>Väčšina stoličiek zničí vaše telo do 30 minút. <strong>Boky sa nakláňajú, chrbtica sa hrbí a tlak na kostrč a sedací nerv rastie.</strong> Preto po dlhých jazdách, práci v kancelárii či večeri pri stole zostáva chrbát boľavý, stuhnutý alebo zmeravený.</p>
-      <p>NORIKS <strong>ErgoSit ortopedický vankúš</strong> je postavený inak. Výrez pre kostrč odstraňuje priamy tlak na kostrčovú kosť, zatiaľ čo tvarovaný dizajn podopiera chrbticu a vracia zdravé držanie tela. Pamäťová pena s vysokou hustotou rovnomerne rozkladá váhu na boky a stehná a udržiava prietok krvi, aby vám nohy nemraveli.</p>
+      <h2 class="oj-h2"><em class="oj-pink-i">Край на болката в опашната кост, ишиаса и гърба</em> zo sedenia</h2>
+      <p>Повечето столове съсипват тялото ви за 30 минути. <strong>Бедрата се накланят, гръбнакът се прегърбва и натискът върху опашната кост и седалищния нерв расте.</strong> Затова след дълги пътувания, работа в офиса или вечеря на масата гърбът остава болезнен, скован или изтръпнал.</p>
+      <p>NORIKS <strong>Ортопедичната възглавница ErgoSit</strong> е направена различно. Изрезът за опашната кост премахва директния натиск върху нея, а оформеният дизайн поддържа гръбнака и връща здравата стойка. Пяната с памет с висока плътност разпределя тежестта равномерно върху бедрата и поддържа кръвотока, за да не изтръпват краката.</p>
     </div>
   </div>
 </section>
@@ -59,9 +59,9 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <section class="oj-sec">
   <div class="oj-wrap oj-row2">
     <div class="oj-copy">
-      <h2 class="oj-h2">Zlepšite držanie tela a podporte cirkuláciu</h2>
-      <p>Autosedadlá a kancelárske stoličky sú stavané na výdrž, nie pre vaše telo. Ich tvar tlačí boky do prepadu, stehná do sedadla a cirkulácia sa spomaľuje — nohy sú nepokojné a chrbát bolí ešte dlho po tom, čo vstanete.</p>
-      <p>NORIKS <strong>ErgoSit</strong> je navrhnutý na dlhé hodiny. Tvarovaná základňa drží boky v rovine, kontúrované okraje znižujú tlak na stehná a vyvýšenie podopiera chrbticu kilometer za kilometrom. Výsledok? Vzpriamené držanie tela, zdravá cirkulácia a hodiny sedenia bez bolesti a stuhnutosti.</p>
+      <h2 class="oj-h2">Подобрете стойката си и подкрепете кръвообращението</h2>
+      <p>Автомобилните седалки и офис столовете са направени за издръжливост, не за вашето тяло. Формата им бута бедрата в пропадане, бедрените мускули — в седалката, а кръвообращението се забавя — краката са неспокойни, а гърбът боли дълго след като станете.</p>
+      <p>NORIKS <strong>ErgoSit</strong> е създадена за дълги часове. Оформената основа държи бедрата в една равнина, контурираните краища намаляват натиска върху бедрените мускули, а повдигането поддържа гръбнака километър след километър. Резултатът? Изправена стойка, здраво кръвообращение и часове седене без болка и скованост.</p>
     </div>
     <div class="oj-media"><video class="oj-secvid" src="<?php echo esc_url( $ojv.'drzanje.mp4' ); ?>" autoplay muted loop playsinline preload="metadata"></video></div>
   </div>
@@ -70,11 +70,11 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <!-- ============ 5) Prilagođava se gdje god sjedite — grid 4 LIJEVO, tekst DESNO ============ -->
 <section class="oj-sec oj-alt">
   <div class="oj-wrap oj-row2">
-    <div class="oj-media"><?php echo $oj_img('prilagodba.webp','NORIKS ErgoSit — prispôsobí sa všade, kde sedíte'); ?></div>
+    <div class="oj-media"><?php echo $oj_img('prilagodba.webp','NORIKS ErgoSit — приспособява се навсякъде, където седите'); ?></div>
     <div class="oj-copy">
-      <h2 class="oj-h2">Úľava, ktorá sa prispôsobí všade, kde sedíte.</h2>
-      <p>NORIKS <strong>ErgoSit</strong> sa prispôsobí každému miestu, na ktorom sedíte. Stabilná protišmyková základňa ho drží na mieste na <strong>autosedadlách, kancelárskych stoličkách, jedálenských stoličkách aj invalidných vozíkoch</strong> — takže pohodlie ide s vami celý deň.</p>
-      <p>Pamäťová pena s vysokou hustotou podopiera telo bez sploštenia, zatiaľ čo snímateľný prateľný poťah zostáva svieži, čistý a pripravený na každodenné používanie.</p>
+      <h2 class="oj-h2">Облекчение, което се приспособява навсякъде, където седите.</h2>
+      <p>NORIKS <strong>ErgoSit</strong> се приспособява към всяко място, на което седите. Стабилната противоплъзгаща основа я държи на място върху <strong>автомобилни седалки, офис столове, столове за хранене и инвалидни колички</strong> — така комфортът ви следва през целия ден.</p>
+      <p>Пяната с памет с висока плътност поддържа тялото, без да се сплесква, а свалящият се перящ калъф остава свеж, чист и готов за всекидневна употреба.</p>
     </div>
   </div>
 </section>
@@ -83,14 +83,14 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <section class="oj-sec oj-stills-sec">
   <div class="oj-trustbar" aria-hidden="true">
     <div class="oj-trustbar-track">
-      <?php $oj_trust = array('120 000+ ZÁKAZNÍKOV','HODNOTENIE 4,8/5','OEKO-TEX®','ODPORÚČANÉ LEKÁRMI','60-DŇOVÁ ZÁRUKA','ORTOPEDICKÝ DIZAJN');
+      <?php $oj_trust = array('120 000+ КЛИЕНТИ','HODNOTENIE 4,8/5','OEKO-TEX®','ПРЕПОРЪЧАНА ОТ ЛЕКАРИ','60-ДНЕВНА ГАРАНЦИЯ','ОРТОПЕДИЧЕН ДИЗАЙН');
       for ( $r = 0; $r < 2; $r++ ) { foreach ( $oj_trust as $t ) { echo '<span class="oj-trust-item">'.esc_html($t).'</span><span class="oj-trust-dot">•</span>'; } } ?>
     </div>
   </div>
   <div class="oj-wrap">
     <div class="oj-stills">
       <?php for ( $i = 1; $i <= 6; $i++ ) : ?>
-        <img src="<?php echo esc_url( $oj.'galerija/li'.$i.'.webp' ); ?>" alt="NORIKS ErgoSit — spokojní zákazníci" loading="lazy" onerror="this.style.display='none'">
+        <img src="<?php echo esc_url( $oj.'galerija/li'.$i.'.webp' ); ?>" alt="NORIKS ErgoSit — доволни клиенти" loading="lazy" onerror="this.style.display='none'">
       <?php endfor; ?>
     </div>
   </div>
@@ -99,11 +99,11 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <!-- ============ 7) Osmišljen s ortopedskim znanjem — slika LIJEVO, tekst DESNO + CTA ============ -->
 <section class="oj-sec oj-alt">
   <div class="oj-wrap oj-row2">
-    <div class="oj-media"><?php echo $oj_img('erg-sk-04.webp','Odporúčanie lekára — NORIKS ErgoSit'); ?></div>
+    <div class="oj-media"><?php echo $oj_img('erg-sk-04.webp','Препоръка от лекар — NORIKS ErgoSit'); ?></div>
     <div class="oj-copy">
-      <h2 class="oj-h2">Navrhnutý s ortopedickými poznatkami, stvorený na každodenné sedenie.</h2>
-      <p>S pomocou poznatkov ortopedických odborníkov a mesiacov ergonomického testovania je NORIKS <strong>ErgoSit</strong> navrhnutý tak, aby zmiernil najčastejšie bolesti spôsobené dlhým sedením — od tlaku na kostrč až po nepohodlie v krížoch a bokoch.</p>
-      <a class="oj-cta" href="#bundle-selector">👉 OBJEDNAŤ TERAZ</a>
+      <h2 class="oj-h2">Създадена с ортопедични познания, направена за всекидневно седене.</h2>
+      <p>С помощта на познанията на ортопедични специалисти и месеци ергономични тестове NORIKS е <strong>ErgoSit</strong> създаден така, че да облекчи най-честите болки от дълго седене — от натиска върху опашната кост до дискомфорта в кръста и бедрата.</p>
+      <a class="oj-cta" href="#bundle-selector">👉 ПОРЪЧАЙ СЕГА</a>
     </div>
   </div>
 </section>
@@ -111,16 +111,16 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <!-- ============ 8) Učinkovito protiv čestih problema — akordeon, PUNA ŠIRINA ============ -->
 <section class="oj-sec">
   <div class="oj-wrap">
-    <h2 class="oj-h2 oj-center"><em class="oj-pink-i">Účinný proti</em> častým problémom pri sedení</h2>
+    <h2 class="oj-h2 oj-center"><em class="oj-pink-i">Ефективна срещу</em> честите проблеми при седене</h2>
     <div class="oj-acc">
       <?php
       $oj_probs = array(
-        array('Bolesť kostrče (kostrčová kosť)','Výrez pre kostrč odstraňuje tlak z kostrčovej kosti a rozkladá váhu po vankúši, takže tú ostrú, pálivú bolesť nepocítite už po niekoľkých minútach sedenia.'),
-        array('Išias a vystreľovanie do nohy','Tým, že drží boky v rovine a chrbticu vzpriamenú, vankúš odľahčuje sedací nerv — takže môžete sedieť, šoférovať alebo pracovať bez vystreľujúcej bolesti, ktorá sa šíri do nôh.'),
-        array('Bolesť v krížoch','Väčšina stoličiek necháva za krížmi medzeru. NORIKS ju vypĺňa, vracia chrbtici prirodzené zakrivenie a znižuje svalové napätie počas dlhých hodín sedenia.'),
-        array('Mravčenie a opuch nôh','Rovné podložky prerušujú cirkuláciu. Kontúrované okraje vankúša odľahčujú stehná a udržiavajú prietok krvi, takže nohy sú ľahké a plné energie, nie ťažké či zmeravené.'),
-        array('Bolesť SI kĺbu a bokov','Nerovnomerná váha zaťažuje boky a kĺby. NORIKS rovnomerne rozkladá tlak, pomáha udržať vyvážené držanie tela a znižuje napätie v bokoch.'),
-        array('Úľava pri citlivom sedení','Pri citlivých oblastiach vankúš spája pevnú oporu s jemným tvarovaním — odľahčuje tlak, takže môžete pohodlne sedieť, aj keď je telo citlivé.'),
+        array('Болка в опашната кост','Изрезът за опашната кост премахва натиска от нея и разпределя тежестта по възглавницата, така че онази остра, пареща болка не се усеща още след няколко минути седене.'),
+        array('Ишиас и стрелкаща болка в крака','Като държи бедрата в една равнина и гръбнака изправен, възглавницата разтоварва седалищния нерв — така можете да седите, да шофирате или да работите без стрелкащата болка, която се разпространява в краката.'),
+        array('Болка в кръста','Повечето столове оставят празнина зад кръста. NORIKS я запълва, връща естествената кривина на гръбнака и намалява мускулното напрежение при дълги часове седене.'),
+        array('Изтръпване и отоци на краката','Плоските подложки прекъсват кръвообращението. Контурираните краища на възглавницата разтоварват бедрените мускули и поддържат кръвотока, така че краката са леки и пълни с енергия, а не тежки или изтръпнали.'),
+        array('Болка в сакроилиачната става и бедрата','Неравномерната тежест натоварва бедрата и ставите. NORIKS разпределя натиска равномерно, помага да се задържи балансирана стойка и намалява напрежението в бедрата.'),
+        array('Облекчение при чувствително седене','При чувствителни зони възглавницата съчетава стабилна опора с нежно оформяне — разтоварва натиска, така че можете да седите удобно, дори когато тялото е чувствително.'),
       );
       foreach ( $oj_probs as $p ) : ?>
         <div class="oj-acc-item">
@@ -137,18 +137,18 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <!-- ============ 9) 20x jeftinije — slika LIJEVO, tekst DESNO + CTA ============ -->
 <section class="oj-sec">
   <div class="oj-wrap oj-row2">
-    <div class="oj-media"><?php echo $oj_img('14_vsebina_HR.png','NORIKS ErgoSit — seď lepšie, ži lepšie'); ?></div>
+    <div class="oj-media"><?php echo $oj_img('14_vsebina_HR.png','NORIKS ErgoSit — седи по-добре, живей по-добре'); ?></div>
     <div class="oj-copy">
-      <h2 class="oj-h2"><em class="oj-pink-i">20× lacnejšie</em> ako drahé riešenia</h2>
-      <p>Väčšina ľudí <strong>minie tisíce</strong> v snahe vyriešiť bolesť zo sedenia:</p>
+      <h2 class="oj-h2"><em class="oj-pink-i">20× по-евтино</em> от скъпите решения</h2>
+      <p>Повечето хора <strong>харчат хиляди</strong> в опит да решат болката от седене:</p>
       <ul class="oj-x">
-        <li><span>✕</span> Ergonomická stolička: <strong>750 – 1 100 €</strong></li>
-        <li><span>✕</span> Týždenné návštevy chiropraktika: <strong>70 – 140 € za návštevu</strong> (3 000+ € ročne)</li>
-        <li><span>✕</span> Fyzioterapia: <strong>190 €+ za návštevu</strong>, často týždne čakania na termín</li>
+        <li><span>✕</span> Ергономичен стол: <strong>750 – 1 100 €</strong></li>
+        <li><span>✕</span> Седмични посещения при хиропрактик: <strong>70 – 140 € на посещение</strong> (3 000+ € годишно)</li>
+        <li><span>✕</span> Fyzioterapia: <strong>190 €+ на посещение</strong>, често седмици чакане за час</li>
       </ul>
-      <p><strong>NORIKS ErgoSit ortopedický vankúš</strong></p>
-      <p>Jednorazový nákup, ktorý zmierňuje bolesť kostrče, chrbta a bokov bez toho, aby vyprázdnil peňaženku.</p>
-      <a class="oj-cta" href="#bundle-selector">Objednať teraz</a>
+      <p><strong>Ортопедична възглавница NORIKS ErgoSit</strong></p>
+      <p>Еднократна покупка, която облекчава болката в опашната кост, гърба и бедрата, без да изпразва портфейла.</p>
+      <a class="oj-cta" href="#bundle-selector">Поръчай сега</a>
     </div>
   </div>
 </section>
@@ -157,17 +157,17 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <section class="oj-sec">
   <div class="oj-wrap oj-row2">
     <div class="oj-copy">
-      <h2 class="oj-h2">Vankúš, ktorý sa nevzdáva</h2>
-      <p class="oj-lead">Zostáva pevný, zmierňuje bolesť a drží oporu tam, kde iné zlyhajú.</p>
+      <h2 class="oj-h2">Възглавница, която не се предава</h2>
+      <p class="oj-lead">Остава стабилна, облекчава болката и държи опора там, където други се провалят.</p>
     </div>
     <div class="oj-cmp-wrap">
-      <span class="oj-cmp-others">Ostatné</span>
+      <span class="oj-cmp-others">Останалите</span>
       <div class="oj-cmp-pill"><span>NORIKS</span></div>
       <div class="oj-cmp-card">
-        <div class="oj-cmp-row"><div class="f">Odľahčuje kostrč a chrbát</div><div class="us">✓</div><div class="no">✕</div></div>
-        <div class="oj-cmp-row"><div class="f">Podporuje vzpriamené, zdravé držanie tela</div><div class="us">✓</div><div class="no">✕</div></div>
-        <div class="oj-cmp-row"><div class="f">Časom si udrží tvar</div><div class="us">✓</div><div class="no">✕</div></div>
-        <div class="oj-cmp-row"><div class="f">Protišmyková základňa</div><div class="us">✓</div><div class="no">✕</div></div>
+        <div class="oj-cmp-row"><div class="f">Разтоварва опашната кост и гърба</div><div class="us">✓</div><div class="no">✕</div></div>
+        <div class="oj-cmp-row"><div class="f">Подкрепя изправена, здрава стойка</div><div class="us">✓</div><div class="no">✕</div></div>
+        <div class="oj-cmp-row"><div class="f">С времето запазва формата си</div><div class="us">✓</div><div class="no">✕</div></div>
+        <div class="oj-cmp-row"><div class="f">Противоплъзгаща основа</div><div class="us">✓</div><div class="no">✕</div></div>
       </div>
     </div>
   </div>
@@ -177,12 +177,12 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <section class="oj-sec oj-guar-sec">
   <div class="oj-wrap">
   <div class="oj-guarantee oj-row2">
-    <div class="oj-guar-badge"><?php echo $oj_img('15_znacka_30_dana.png','60-dňová záruka vrátenia peňazí'); ?></div>
+    <div class="oj-guar-badge"><?php echo $oj_img('15_znacka_30_dana.png','60-дневна гаранция за връщане на парите'); ?></div>
     <div class="oj-guar-copy">
-      <h2 class="oj-h2 oj-h2-light">Vyskúšajte <em class="oj-pink-i">30 dní</em>, bez obáv</h2>
-      <p>Nájsť ten správny vankúš nie je ľahké — mnohé sa sploštia alebo jednoducho neprinesú skutočnú úľavu. Preto každý NORIKS <strong>ErgoSit</strong> prichádza s našou <strong>60-dňovou zárukou pohodlia</strong>.</p>
-      <p>Vezmite si ho do kancelárie, do auta alebo na dlhé hodiny doma. Ak nepocítite menej bolesti a viac pohodlia pri každodennom sedení, náš tím sa postará, aby bolo všetko tak, ako má byť.</p>
-      <p>Pretože keď ide o vaše zdravie a pohodlie, veríme, že rozdiel máte <strong>cítiť</strong>, nie si ho len želať.</p>
+      <h2 class="oj-h2 oj-h2-light">Изпробвайте <em class="oj-pink-i">30 дни</em>, без притеснение</h2>
+      <p>Да намериш правилната възглавница не е лесно — много се сплескват или просто не носят истинско облекчение. Затова всеки NORIKS <strong>ErgoSit</strong> идва с нашата <strong>60-дневна гаранция за комфорт</strong>.</p>
+      <p>Вземете я в офиса, в колата или за дълги часове вкъщи. Ако не усетите по-малко болка и повече комфорт при всекидневното седене, нашият екип ще се погрижи всичко да е както трябва.</p>
+      <p>Защото когато става дума за вашето здраве и комфорт, вярваме, че разликата трябва да <strong>се усеща</strong>, а не само да си я пожелавате.</p>
     </div>
   </div>
   </div>

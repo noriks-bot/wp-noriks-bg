@@ -1,35 +1,35 @@
 <?php
 /**
  * product-bottom: NORIKS HERS (orto-norikshers / orto-noriks-hers)
- * Silikónové kolagénové pásiky na vrásky a jazvy.
+ * Silikónové kolagénové pásiky na бръчки и белези.
  * Pravé HTML sekcie (dizajn z referencie), preklad SK. Foto-grafiky: img/norikshers/.
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 $nh = get_template_directory_uri() . '/img/norikshers/';
 ?>
 
-<!-- ============ 1) Pravý dôvod ============ -->
+<!-- ============ 1) Истинската причина ============ -->
 <section class="nhs-reason">
   <div class="nhs-wrap">
-    <p class="nhs-eyebrow-i">Pravý dôvod</p>
-    <h2 class="nhs-h1">Prečo vrásky a jazvy neblednú</h2>
-    <p class="nhs-lead">Skúšali ste krémy, ktoré sľubovali zázraky.<br>Uvažovali ste aj o botoxe, no je desivý, drahý alebo jednoducho nie je pre vás.</p>
+    <p class="nhs-eyebrow-i">Истинската причина</p>
+    <h2 class="nhs-h1">Защо бръчките и белезите не избледняват</h2>
+    <p class="nhs-lead">Пробвали сте кремове, които обещаваха чудеса.<br>Мислили сте и за ботокс, но е страшен, скъп или просто не е за вас.</p>
     <div class="nhs-reason-grid">
       <div class="nhs-col nhs-cons">
-        <p><strong>Väčšina produktov</strong> len prekryje povrch.</p>
-        <p>Retinol môže <strong>páliť a dráždiť</strong>.</p>
-        <p>Botox <strong>zmrazí</strong> tvár namiesto toho, aby pomohol pokožke obnoviť sa.</p>
+        <p><strong>Повечето продукти</strong> len prekryje povrch.</p>
+        <p>Ретинолът може <strong>да пари и да дразни</strong>.</p>
+        <p>Botox <strong>замразява</strong> лицето, вместо да помогне на кожата да се възстанови.</p>
       </div>
       <div class="nhs-media"><img src="<?php echo esc_url( $nh.'11.png' ); ?>" alt="NORIKS HERS pred a po" loading="lazy"></div>
       <div class="nhs-col nhs-pros">
-        <p><strong>NORIKS HERS pracuje s vašou pokožkou</strong>, nie proti nej.</p>
-        <p>Pomáha pokožke <strong>udržať vlhkosť a obnoviť kolagén</strong>.</p>
-        <p>Pridaný kolagén vyhladí napätie, ktoré tvorí vrásky, a zmierni jazvy, <strong>bez podráždenia a ihiel</strong>.</p>
+        <p><strong>NORIKS HERS работи с вашата кожа</strong>, nie proti nej.</p>
+        <p>Помага на кожата <strong>да задържи влага и да възстанови колагена</strong>.</p>
+        <p>Добавеният колаген изглажда напрежението, което образува бръчките, и облекчава белезите, <strong>без дразнене и игли</strong>.</p>
       </div>
     </div>
     <div class="nhs-cta-wrap">
-      <a class="nhs-cta" href="#bundle-selector">Uvidíte výsledky do rána</a>
-      <p class="nhs-cta-note">💜 <em>Viditeľné výsledky už od prvej noci, dlhodobé prínosy pri pravidelnom používaní</em></p>
+      <a class="nhs-cta" href="#bundle-selector">Ще видите резултати до сутринта</a>
+      <p class="nhs-cta-note">💜 <em>Видими резултати още от първата нощ, дълготрайни ползи при редовна употреба</em></p>
     </div>
   </div>
 </section>
@@ -37,15 +37,15 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
 <!-- ============ 2) Produkt + prínosy ============ -->
 <section class="nhs-benefits">
   <div class="nhs-wrap nhs-row2">
-    <div class="nhs-media"><img src="<?php echo esc_url( $nh.'15.png' ); ?>" alt="NORIKS HERS nanášanie" loading="lazy"></div>
+    <div class="nhs-media"><img src="<?php echo esc_url( $nh.'15.png' ); ?>" alt="NORIKS HERS нанасяне" loading="lazy"></div>
     <div class="nhs-b-list">
-      <div class="nhs-chip"><span class="nhs-ic">✓</span> Vyhladzuje vrásky na čele, okolo očí a od úsmevu cez noc</div>
-      <div class="nhs-chip"><span class="nhs-ic">✓</span> Pomáha pokožke vyzerať pevnejšie a sviežejšie</div>
-      <div class="nhs-chip"><span class="nhs-ic">✓</span> Pomáha predchádzať vzniku nových vrások</div>
-      <div class="nhs-chip"><span class="nhs-ic">✓</span> Zvyšuje vlhkosť, takže pokožka je plnšia</div>
-      <div class="nhs-chip"><span class="nhs-ic">✓</span> Na opakované použitie až 5-krát</div>
-      <div class="nhs-chip"><span class="nhs-ic">✓</span> Jemný na každodenné nočné použitie na všetkých typoch pleti</div>
-      <a class="nhs-cta nhs-cta-solid" href="#bundle-selector">Vymažte moje vrásky ešte dnes v noci →</a>
+      <div class="nhs-chip"><span class="nhs-ic">✓</span> Изглажда бръчките на челото, около очите и от усмивка през нощта</div>
+      <div class="nhs-chip"><span class="nhs-ic">✓</span> Помага кожата да изглежда по-стегната и по-свежа</div>
+      <div class="nhs-chip"><span class="nhs-ic">✓</span> Помага да се предотврати появата на нови бръчки</div>
+      <div class="nhs-chip"><span class="nhs-ic">✓</span> Повишава влажността, така че кожата е по-наситена</div>
+      <div class="nhs-chip"><span class="nhs-ic">✓</span> За многократна употреба до 5 пъти</div>
+      <div class="nhs-chip"><span class="nhs-ic">✓</span> Нежна за всекидневна нощна употреба на всички типове кожа</div>
+      <a class="nhs-cta nhs-cta-solid" href="#bundle-selector">Изтрийте бръчките ми още тази нощ →</a>
     </div>
   </div>
 </section>
@@ -55,34 +55,34 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
   <div class="nhs-wrap nhs-row2">
     <div class="nhs-sci-copy">
       <p class="nhs-eyebrow-i">Veda</p>
-      <h2 class="nhs-h2">Za hladkosťou</h2>
-      <p><strong>Silikónové pásiky sa v dermatológii používajú</strong> na podporu hojenia pokožky a obnovy kolagénu.</p>
-      <p><strong>NORIKS HERS využíva rovnakú overenú metódu</strong>, obohatenú kolagénom na vyhladenie vrások a zmiernenie jaziev — bezpečne a jemne.</p>
+      <h2 class="nhs-h2">Зад гладкостта</h2>
+      <p><strong>Силиконовите лепенки се използват в дерматологията</strong> за подпомагане на заздравяването на кожата и възстановяването на колагена.</p>
+      <p><strong>NORIKS HERS използва същия доказан метод</strong>, обогатен с колаген за изглаждане на бръчките и облекчаване на белезите — безопасно и нежно.</p>
       <ul class="nhs-check">
-        <li>Odporúčané dermatológmi</li>
-        <li>Bez zvláštneho zápachu</li>
-        <li>Certifikované nezávislým laboratóriom</li>
-        <li>Miluje ho viac ako 73 000 žien</li>
+        <li>Препоръчано от дерматолози</li>
+        <li>Без специфична миризма</li>
+        <li>Сертифицирано от независима лаборатория</li>
+        <li>Харесват го над 73 000 жени</li>
       </ul>
     </div>
-    <div class="nhs-media"><img src="<?php echo esc_url( $nh.'02.png' ); ?>" alt="Dermatologické odporúčanie pre NORIKS HERS" loading="lazy"></div>
+    <div class="nhs-media"><img src="<?php echo esc_url( $nh.'02.png' ); ?>" alt="Дерматологична препоръка за NORIKS HERS" loading="lazy"></div>
   </div>
 </section>
 
 <!-- ============ 4) Dokázateľne funguje ============ -->
 <section class="nhs-proof">
   <div class="nhs-wrap">
-    <h2 class="nhs-h2 nhs-center">Dokázateľne funguje na <em>vrásky a jazvy</em></h2>
+    <h2 class="nhs-h2 nhs-center">Доказано действа върху <em>бръчки и белези</em></h2>
     <div class="nhs-proof-grid">
-      <img src="<?php echo esc_url( $nh.'03.png' ); ?>" alt="NORIKS HERS výsledok 1" loading="lazy">
-      <img src="<?php echo esc_url( $nh.'05.png' ); ?>" alt="NORIKS HERS výsledok 2" loading="lazy">
-      <img src="<?php echo esc_url( $nh.'04.png' ); ?>" alt="NORIKS HERS výsledok 3" loading="lazy">
+      <img src="<?php echo esc_url( $nh.'03.png' ); ?>" alt="NORIKS HERS резултат 1" loading="lazy">
+      <img src="<?php echo esc_url( $nh.'05.png' ); ?>" alt="NORIKS HERS резултат 2" loading="lazy">
+      <img src="<?php echo esc_url( $nh.'04.png' ); ?>" alt="NORIKS HERS резултат 3" loading="lazy">
     </div>
     <ul class="nhs-check nhs-check-center">
-      <li>Zobuďte sa s viditeľne jemnejšou a hladšou pokožkou</li>
-      <li>Vyhladzuje vrásky na čele, okolo očí a od úsmevu</li>
-      <li>Podporuje obnovu kolagénu</li>
-      <li>Pomáha predchádzať vzniku nových vrások</li>
+      <li>Събудете се с видимо по-нежна и по-гладка кожа</li>
+      <li>Изглажда бръчките на челото, около очите и от усмивка</li>
+      <li>Подпомага възстановяването на колагена</li>
+      <li>Помага да се предотврати появата на нови бръчки</li>
     </ul>
   </div>
 </section>
@@ -91,9 +91,9 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
 <section class="nhs-zero">
   <div class="nhs-wrap nhs-row2">
     <div class="nhs-zero-copy">
-      <h2 class="nhs-h2">Vyhladzuje pokožku <em>bez vedľajších účinkov</em></h2>
+      <h2 class="nhs-h2">Изглажда кожата <em>без странични ефекти</em></h2>
       <div class="nhs-zero-chips">
-        <span>Bez ihiel</span><span>Bez začervenania</span><span>Bez štípania</span>
+        <span>Bez ihiel</span><span>Без зачервяване</span><span>Без щипане</span>
         <span>Bez olupovania</span><span>Bez citlivosti</span><span>Bez stresu</span>
       </div>
     </div>
@@ -104,37 +104,37 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
 <!-- ============ 8) Porovnávacia tabuľka ============ -->
 <section class="nhs-cmp">
   <div class="nhs-wrap-narrow">
-    <h2 class="nhs-h2 nhs-center">Zdravší spôsob, ako vyhladiť vrásky a jazvy, <em>bez ihiel</em></h2>
-    <p class="nhs-cmp-if">Ak chcete bezpečnú a jemnú alternatívu k botoxu, neznášate podráždenie z agresívnych zložiek ako retinol či kyseliny a chcete vyzerať sviežo — a stále ako vy… <strong>potom si zamilujete NORIKS HERS!</strong></p>
+    <h2 class="nhs-h2 nhs-center">По-здравият начин да изгладите бръчки и белези, <em>bez ihiel</em></h2>
+    <p class="nhs-cmp-if">Ако искате безопасна и нежна алтернатива на ботокса, не понасяте дразненето от агресивни съставки като ретинол или киселини и искате да изглеждате свежи — и все пак като себе си… <strong>potom si zamilujete NORIKS HERS!</strong></p>
     <div class="nhs-cmp-scroll">
       <table class="nhs-cmp-table">
-        <thead><tr><th></th><th class="nhs-us">NORIKS HERS</th><th>Botox</th><th>Lacné kópie</th></tr></thead>
+        <thead><tr><th></th><th class="nhs-us">NORIKS HERS</th><th>Botox</th><th>Евтини копия</th></tr></thead>
         <tbody>
           <tr><td>Bez ihiel</td><td class="us ok">✓</td><td class="no">✕</td><td class="ok">✓</td></tr>
-          <tr><td>Invazívne</td><td class="us ok">✕</td><td class="no">✓</td><td class="ok">✕</td></tr>
-          <tr><td>Bezpečné pre citlivú pokožku</td><td class="us ok">✓</td><td class="mid">riziko podráždenia</td><td class="mid">agresívne lepidlo</td></tr>
-          <tr><td>Kolagénové prínosy</td><td class="us ok">✓</td><td class="no">✕</td><td class="no">✕</td></tr>
-          <tr><td>Funguje na vrásky aj jazvy</td><td class="us ok">✓</td><td class="no">✕</td><td class="no">✕</td></tr>
-          <tr><td>Výhodné</td><td class="us ok">✓ opakovane</td><td class="mid">300 – 600 €</td><td class="mid">nízka kvalita</td></tr>
-          <tr><td>Prirodzený vzhľad</td><td class="us ok">✓</td><td class="mid">„zamrznuté"</td><td class="mid">napína pokožku</td></tr>
+          <tr><td>Инвазивни</td><td class="us ok">✕</td><td class="no">✓</td><td class="ok">✕</td></tr>
+          <tr><td>Безопасно за чувствителна кожа</td><td class="us ok">✓</td><td class="mid">риск от дразнене</td><td class="mid">агресивно лепило</td></tr>
+          <tr><td>Ползи от колагена</td><td class="us ok">✓</td><td class="no">✕</td><td class="no">✕</td></tr>
+          <tr><td>Действа и върху бръчки, и върху белези</td><td class="us ok">✓</td><td class="no">✕</td><td class="no">✕</td></tr>
+          <tr><td>Изгодно</td><td class="us ok">✓ opakovane</td><td class="mid">300 – 600 €</td><td class="mid">ниско качество</td></tr>
+          <tr><td>Естествен вид</td><td class="us ok">✓</td><td class="mid">„замразено"</td><td class="mid">опъва кожата</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="nhs-cta-wrap"><a class="nhs-cta nhs-cta-solid" href="#bundle-selector">Vyskúšajte to, čo naozaj funguje</a></div>
+    <div class="nhs-cta-wrap"><a class="nhs-cta nhs-cta-solid" href="#bundle-selector">Опитайте това, което наистина работи</a></div>
   </div>
 </section>
 
 <!-- ============ 10) Výsledky za 30 dní (posledná) ============ -->
 <section class="nhs-results">
   <div class="nhs-wrap nhs-row2">
-    <div class="nhs-media"><img src="<?php echo esc_url( $nh.'12.png' ); ?>" alt="NORIKS HERS výsledky" loading="lazy"></div>
+    <div class="nhs-media"><img src="<?php echo esc_url( $nh.'12.png' ); ?>" alt="NORIKS HERS резултати" loading="lazy"></div>
     <div class="nhs-res-copy">
-      <h2 class="nhs-h2">Uvidíte výsledky za 30 dní alebo <em>vrátime peniaze!</em></h2>
+      <h2 class="nhs-h2">Ще видите резултати за 30 дни или <em>връщаме парите!</em></h2>
       <?php
       $nhs_stats = array(
-        array( 'p' => '98', 'dash' => '172.4', 't' => 'Zaznamenalo <strong>hladšiu pokožku</strong> a menej jemných vrások už v <strong>prvom týždni</strong> používania.' ),
-        array( 'p' => '95', 'dash' => '167.1', 't' => 'Uviedlo, že NORIKS HERS je <strong>účinnejší</strong> ako krémy na vrásky alebo jazvy, ktoré vyskúšali.' ),
-        array( 'p' => '91', 'dash' => '160.1', 't' => 'Nahlásilo <strong>vyblednuté jazvy a lepšiu textúru</strong> po pravidelnom nočnom používaní.' ),
+        array( 'p' => '98', 'dash' => '172.4', 't' => 'Отчетоха <strong>по-гладка кожа</strong> и по-малко фини бръчки още през <strong>първата седмица</strong> на употреба.' ),
+        array( 'p' => '95', 'dash' => '167.1', 't' => 'Казаха, че NORIKS HERS е <strong>по-ефективен</strong> от кремовете за бръчки или белези, които са пробвали.' ),
+        array( 'p' => '91', 'dash' => '160.1', 't' => 'Съобщиха за <strong>избледнели белези и по-добра текстура</strong> след редовна нощна употреба.' ),
       );
       foreach ( $nhs_stats as $s ) : ?>
         <div class="nhs-stat">
@@ -146,8 +146,8 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
           <p><?php echo wp_kses_post($s['t']); ?></p>
         </div>
       <?php endforeach; ?>
-      <a class="nhs-cta nhs-cta-solid" href="#bundle-selector">Vyskúšajte 30 dní bez rizika</a>
-      <p class="nhs-cta-note"><em>Nie ste nadšení? Plné vrátenie peňazí!</em></p>
+      <a class="nhs-cta nhs-cta-solid" href="#bundle-selector">Изпробвайте 30 дни без риск</a>
+      <p class="nhs-cta-note"><em>Не сте във възторг? Пълно връщане на парите!</em></p>
     </div>
   </div>
 </section>
