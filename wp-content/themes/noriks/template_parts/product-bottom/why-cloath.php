@@ -34,12 +34,12 @@ $cl_anim = function( $mp4, $fallback, $alt ) use ( $cl, $cl_path, $cl_img ) {
 <!-- ============ 1) Kristalno cist tus u manje od minute ============ -->
 <section class="ncl-sec ncl-alt">
   <div class="ncl-wrap ncl-row2">
-    <div class="ncl-media"><?php echo $cl_anim('cl-anim-1.mp4','cl-01-hero-3plus3.webp','Čistenie sprchovacieho kúta handričkou Polar NORIKS Cloth'); ?></div>
+    <div class="ncl-media"><?php echo $cl_anim('cl-anim-1.mp4','cl-01-hero-3plus3.webp','Почистване на душ кабина с кърпата Polar NORIKS Cloth'); ?></div>
     <div class="ncl-copy">
-      <h2 class="ncl-h2">Krištáľovo čistý sprchovací kút za menej než minútu — bez chémie, len voda</h2>
-      <p>Stále bojujete so škvrnami od vody, vodným kameňom a mydlovým povlakom, aj po stierke či lacnej handričke z obchodu?</p>
-      <p>Preto sme vytvorili <strong>Polar NORIKS Cloth</strong> — pre všetkých, ktorí majú dosť drhnutia a míňania peňazí na spreje.</p>
-      <p>Pár rýchlych ťahov a sklo, obklady aj batérie zostanú bezchybné. Bez agresívnych prostriedkov, bez šmúh, bez nervov.</p>
+      <h2 class="ncl-h2">Кристално чиста душ кабина за по-малко от минута — без химия, само вода</h2>
+      <p>Още ли се борите с петна от вода, варовик и сапунен налеп, дори след чистачка или евтина кърпа от магазина?</p>
+      <p>Preto sme vytvorili <strong>Polar NORIKS Cloth</strong> — за всички, на които е дотегнало да търкат и да харчат пари за спрейове.</p>
+      <p>Няколко бързи движения и стъклото, плочките и смесителите остават безупречни. Без агресивни препарати, без следи, без нерви.</p>
     </div>
   </div>
 </section>
@@ -48,29 +48,29 @@ $cl_anim = function( $mp4, $fallback, $alt ) use ( $cl, $cl_path, $cl_img ) {
 <section class="ncl-sec">
   <div class="ncl-wrap ncl-row2">
     <div class="ncl-copy">
-      <h2 class="ncl-h2">Dokonalé zrkadlo za pár sekúnd — bez šmúh a bez námahy</h2>
-      <p>Máte dosť škvŕn od vody, kvapiek a zahmlenia, ktoré zanechávajú šmuhy alebo vlákna?</p>
-      <p>Hustá pletená vrstva zoberie nečistoty a vodu jedným ťahom, takže zrkadlo zostane krištáľovo čisté — bez sprejov a bez rozmazávania.</p>
-      <p class="ncl-strong">Bezchybný lesk zakaždým a handrička, ktorá to vydrží pranie za praním.</p>
+      <h2 class="ncl-h2">Идеално огледало за няколко секунди — без следи и без усилие</h2>
+      <p>Дотегнаха ли ви петната от вода, капките и замъгляването, които оставят следи или влакна?</p>
+      <p>Плътният плетен слой поема мръсотията и водата с едно движение, така че огледалото остава кристално чисто — без спрейове и без размазване.</p>
+      <p class="ncl-strong">Безупречен блясък всеки път и кърпа, която издържа пране след пране.</p>
     </div>
-    <div class="ncl-media"><?php echo $cl_anim('cl-anim-2.mp4','cl-08-dvostrani.webp','Utieranie zrkadla bez šmúh'); ?></div>
+    <div class="ncl-media"><?php echo $cl_anim('cl-anim-2.mp4','cl-08-dvostrani.webp','Избърсване на огледало без следи'); ?></div>
   </div>
 </section>
 
 <!-- ============ 3) Kupaonica koja blista ============ -->
 <section class="ncl-sec ncl-alt">
   <div class="ncl-wrap ncl-row2">
-    <div class="ncl-media"><?php echo $cl_img('cl-09-zena-krpa.webp','Kúpeľňa vyčistená handričkou Polar NORIKS Cloth'); ?></div>
+    <div class="ncl-media"><?php echo $cl_img('cl-09-zena-krpa.webp','Баня, почистена с кърпата Polar NORIKS Cloth'); ?></div>
     <div class="ncl-copy">
-      <h2 class="ncl-h2">Žiariaca kúpeľňa bez zdvihnutia prsta</h2>
-      <p>Čisté sklo, lesklé batérie, bezchybné zrkadlo — bez drhnutia, bez sprejov, bez stresu.</p>
-      <p>Hrubšie a hustejšie vlákna zoberú vodný kameň, nečistoty a škvrny od vody na pár ťahov — len s vodou.</p>
+      <h2 class="ncl-h2">Блестяща баня без да вдигнете пръст</h2>
+      <p>Чисто стъкло, блестящи смесители, безупречно огледало — без търкане, без спрейове, без стрес.</p>
+      <p>По-плътните и по-гъсти влакна поемат варовика, мръсотията и петната от вода с няколко движения — само с вода.</p>
       <ul class="ncl-check">
-        <li>Sklenené a terasové dvere</li>
-        <li>Zrkadlá a veľké okná</li>
-        <li>Obklady, batérie a pracovné dosky</li>
+        <li>Стъклени и терасни врати</li>
+        <li>Огледала и големи прозорци</li>
+        <li>Плочки, смесители и плотове</li>
       </ul>
-      <a class="ncl-cta" href="#bundle-selector">Vyberte si balík</a>
+      <a class="ncl-cta" href="#bundle-selector">Изберете пакет</a>
     </div>
   </div>
 </section>
@@ -79,27 +79,27 @@ $cl_anim = function( $mp4, $fallback, $alt ) use ( $cl, $cl_path, $cl_img ) {
 <section class="ncl-sec">
   <div class="ncl-wrap ncl-row2">
     <div class="ncl-copy">
-      <h2 class="ncl-h2">Nasaje až 4× svoju hmotnosť vo vode a povrchy nechá suché</h2>
-      <p>Väčšina handričiek vodu len rozotrie. Polar NORIKS Cloth nasaje <strong>až 600 ml</strong> naraz — takmer celú fľašu vody.</p>
-      <p>Pár ťahov a sprchovací kút, obklady aj batérie sú suché. Bez šmúh, bez škvŕn, bez čakania.</p>
-      <p class="ncl-strong">Výsledok: kúpeľňa, ktorá zostane čistá dlhšie, bez neporiadku.</p>
+      <h2 class="ncl-h2">Поема до 4× собственото си тегло вода и оставя повърхностите сухи</h2>
+      <p>Повечето кърпи само размазват водата. Polar NORIKS Cloth поема <strong>до 600 ml</strong> наведнъж — почти цяла бутилка вода.</p>
+      <p>Няколко движения и душ кабината, плочките и смесителите са сухи. Без следи, без петна, без чакане.</p>
+      <p class="ncl-strong">Резултатът: баня, която остава чиста по-дълго, без бъркотия.</p>
     </div>
-    <div class="ncl-media"><?php echo $cl_anim('cl-anim-3.mp4','cl-07-dimenzije.webp','Nasávanie vody — až 600 ml naraz'); ?></div>
+    <div class="ncl-media"><?php echo $cl_anim('cl-anim-3.mp4','cl-07-dimenzije.webp','Поемане на вода — до 600 ml наведнъж'); ?></div>
   </div>
 </section>
 
 <!-- ============ 5) Bez vlakana, izdrzljiva ============ -->
 <section class="ncl-sec ncl-alt">
   <div class="ncl-wrap ncl-row2">
-    <div class="ncl-media"><?php echo $cl_anim('cl-anim-4.mp4','cl-02-stack.webp','Handrička po stovkách praní'); ?></div>
+    <div class="ncl-media"><?php echo $cl_anim('cl-anim-4.mp4','cl-02-stack.webp','Кърпата след стотици пранета'); ?></div>
     <div class="ncl-copy">
-      <h2 class="ncl-h2">Bez vlákien. Odolná. Vydrží pranie za praním.</h2>
-      <p>Handrička je vyrobená na stovky použití. Hoďte ju do práčky a je opäť pripravená.</p>
-      <p>Na rozdiel od bežných handričiek <strong>nepúšťa vlákna</strong> — žiadne chĺpky, žiadne šmuhy, žiadne nervy.</p>
+      <h2 class="ncl-h2">Без влакна. Издръжлива. Издържа пране след пране.</h2>
+      <p>Кърпата е направена за стотици употреби. Хвърлете я в пералнята и е готова отново.</p>
+      <p>За разлика от обикновените кърпи <strong>не пуска влакна</strong> — никакви власинки, никакви следи, никакви нерви.</p>
       <ul class="ncl-check">
-        <li>Nevybledne a nestrapká sa</li>
-        <li>Prateľná v práčke na 40 °C</li>
-        <li>Obojstranný dizajn: umýva a leští</li>
+        <li>Не избледнява и не се разнищва</li>
+        <li>Пере се в пералня на 40 °C</li>
+        <li>Двустранен дизайн: мие и полира</li>
       </ul>
     </div>
   </div>
@@ -109,14 +109,14 @@ $cl_anim = function( $mp4, $fallback, $alt ) use ( $cl, $cl_path, $cl_img ) {
 <section class="ncl-sec">
   <div class="ncl-wrap ncl-row2">
     <div class="ncl-copy">
-      <p class="ncl-eyebrow">30 dní bez rizika</p>
-      <h2 class="ncl-h2">Platíte, len ak sa vám bude páčiť</h2>
-      <p>Stále pochybujete? Rozumieme — znie to príliš dobre na to, aby to bola pravda.</p>
-      <p>Preto si handričku môžete vyskúšať úplne bez rizika <strong>30 dní</strong>. Ak sklo nebude krištáľovo čisté, ak sa obklady nebudú udržiavať ľahšie alebo sa vám výsledok jednoducho nepáči — pošlite ju späť.</p>
-      <p class="ncl-strong">Buď dostanete kúpeľňu, ktorá žiari ako nová, alebo dostanete peniaze späť.</p>
+      <p class="ncl-eyebrow">30 дни без риск</p>
+      <h2 class="ncl-h2">Плащате само ако ви хареса</h2>
+      <p>Още ли се съмнявате? Разбираме — звучи твърде добре, за да е истина.</p>
+      <p>Затова можете да изпробвате кърпата напълно без риск <strong>30 дни</strong>. Ако стъклото не стане кристално чисто, ако плочките не се поддържат по-лесно или резултатът просто не ви хареса — изпратете я обратно.</p>
+      <p class="ncl-strong">Или получавате баня, която блести като нова, или получавате парите си обратно.</p>
       <a class="ncl-cta" href="#bundle-selector">Objednajte bez rizika</a>
     </div>
-    <div class="ncl-media"><?php echo $cl_img('cl-10-zena-lice.webp','30-dňová záruka vrátenia peňazí'); ?></div>
+    <div class="ncl-media"><?php echo $cl_img('cl-10-zena-lice.webp','30-дневна гаранция за връщане на парите'); ?></div>
   </div>
 </section>
 

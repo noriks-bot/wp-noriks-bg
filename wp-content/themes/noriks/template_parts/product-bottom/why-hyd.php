@@ -33,8 +33,8 @@ $nhy_icon = array(
 );
 $nhy_marquee = array(
   array( 'kap',     '3 000 ppb maksimalna infuzija' ),
-  array( 'beskraj', 'Trvalý filter, bez zamjena' ),
-  array( 'srce',    'Omiljena među ljubiteljima wellnessa' ),
+  array( 'beskraj', 'Постоянен филтър, без смени' ),
+  array( 'srce',    'Любима сред феновете на уелнеса' ),
 );
 ?>
 
@@ -49,16 +49,16 @@ $nhy_marquee = array(
   </div>
 </section>
 
-<!-- ============ 2) Pozrite, ako perlí ============ -->
+<!-- ============ 2) Вижте как искри ============ -->
 <section class="nhy-sec">
   <div class="nhy-wrap">
-    <h2 class="nhy-h2 nhy-center">Pozrite, ako perlí</h2>
-    <p class="nhy-fizz-text">Pozrite si silné bublinky, ktoré vznikajú počas elektrolýzy — to je čistá infúzia vodíka v najlepšej podobe. Voda pritom zostáva číra a osviežujúca po každom cykle.</p>
+    <h2 class="nhy-h2 nhy-center">Вижте как искри</h2>
+    <p class="nhy-fizz-text">Вижте силните мехурчета, които се образуват по време на електролизата — това е чиста водородна инфузия в най-добрия ѝ вид. Водата при това остава прозрачна и освежаваща след всеки цикъл.</p>
     <div class="nhy-fizz">
       <div class="nhy-fizz-item">
         <?php if ( $nh_has('hyd-fizz-1.mp4') ) : ?>
           <video src="<?php echo esc_url($nh.'hyd-fizz-1.mp4'); ?>" poster="<?php echo esc_url($nh.'hyd-fizz-1-poster.webp'); ?>" autoplay muted loop playsinline preload="metadata"></video>
-        <?php else : echo $nh_img('hyd-01-hidracija.webp','Mjehurići vodika tijekom elektrolize'); endif; ?>
+        <?php else : echo $nh_img('hyd-01-hidracija.webp','Водородни мехурчета по време на електролиза'); endif; ?>
       </div>
       <div class="nhy-fizz-item"><?php echo $nh_img('hyd-fizz-2.webp','Korisnica s NORIKS HYD bocom'); ?></div>
       <div class="nhy-fizz-item"><?php echo $nh_img('hyd-fizz-3.webp','Korisnik s NORIKS HYD bocom'); ?></div>
@@ -66,14 +66,14 @@ $nhy_marquee = array(
   </div>
 </section>
 
-<!-- ============ 3) Sila antioxidantov, menej zápalov ============ -->
+<!-- ============ 3) Сила на антиоксидантите, по-малко възпаления ============ -->
 <section class="nhy-sec nhy-alt">
   <div class="nhy-wrap nhy-row2">
     <div class="nhy-copy">
-      <h2 class="nhy-h2">Sila antioxidantov, menej zápalov</h2>
-      <p>Vodíková voda je známa silným antioxidačným a protizápalovým účinkom, ktorý vedecké výskumy spájajú s prínosmi pri viac než 150 stavoch.</p>
-      <p>Klinické štúdie ukázali aj to, že vypitie troch fliaš vodíkovej vody môže mať antioxidačný účinok porovnateľný s konzumáciou stoviek kusov ovocia a zeleniny.</p>
-      <p class="nhy-note">Vodíková voda je doplnok každodennej hydratácie, nie náhrada lekárskej liečby.</p>
+      <h2 class="nhy-h2">Сила на антиоксидантите, по-малко възпаления</h2>
+      <p>Водородната вода е известна със силния си антиоксидантен и противовъзпалителен ефект, който научните изследвания свързват с ползи при над 150 състояния.</p>
+      <p>Клинични проучвания показват и че изпиването на три бутилки водородна вода може да има антиоксидантен ефект, сравним с консумацията на стотици плодове и зеленчуци.</p>
+      <p class="nhy-note">Водородната вода е допълнение към всекидневната хидратация, а не заместител на медицинско лечение.</p>
     </div>
     <div class="nhy-media"><?php echo $nh_img('hyd-03-prednosti.webp','Antioksidativno djelovanje vodikove vode'); ?></div>
   </div>
@@ -82,46 +82,46 @@ $nhy_marquee = array(
 <!-- ============ 4) Prave price korisnika ============ -->
 <section class="nhy-sec">
   <div class="nhy-wrap nhy-center">
-    <h2 class="nhy-h2">Skutočné príbehy používateľov</h2>
+    <h2 class="nhy-h2">Истински истории на потребители</h2>
   </div>
   <div class="nhy-wrap nhy-row2">
     <div class="nhy-media nhy-media-shadow"><?php echo $nh_img('hyd-06-pravi-ljudi.webp','Korisnici NORIKS HYD boce'); ?></div>
     <div class="nhy-copy">
       <ul class="nhy-stories">
-        <li><strong>Regenerácia s viac energiou</strong><span>„Nakon svakog treninga osjećam manje umora u mišićima. HydraH₂ mi je oporavak učinio jednostavnim."</span></li>
-        <li><strong>Hydratácia, ktorú vidieť</strong><span>„Koža mi je punija i bolje hidrirana. Savršeno za svakodnevnu rutinu."</span></li>
-        <li><strong>Praktické a čisté</strong><span>„Nema okusa plastike, punjenje preko USB-a je jednostavno. Moja svakodnevna boca."</span></li>
+        <li><strong>Възстановяване с повече енергия</strong><span>„След всяка тренировка усещам по-малко умора в мускулите. HydraH₂ направи възстановяването ми лесно."</span></li>
+        <li><strong>Хидратация, която се вижда</strong><span>„Кожата ми е по-наситена и по-добре хидратирана. Идеално за всекидневната рутина."</span></li>
+        <li><strong>Практично и чисто</strong><span>„Nema okusa plastike, punjenje preko USB-a je jednostavno. Moja svakodnevna boca."</span></li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- ============ 5) Výhody vodíkovej vody ============ -->
+<!-- ============ 5) Ползи от водородната вода ============ -->
 <section class="nhy-sec nhy-alt">
   <div class="nhy-wrap nhy-center">
-    <h2 class="nhy-h2">Výhody vodíkovej vody</h2>
+    <h2 class="nhy-h2">Ползи от водородната вода</h2>
   </div>
   <div class="nhy-wrap">
     <div class="nhy-perks">
-      <div class="nhy-perk"><strong>Lepšia hydratácia</strong><span>Obohacuje vodu vodíkom vysokej koncentrácie pre optimálnu hydratáciu.</span></div>
-      <div class="nhy-perk"><strong>Nabíjateľná batéria</strong><span>USB nabíjanie za menej než 60 minút udrží fľašu pripravenú celý deň.</span></div>
-      <div class="nhy-perk"><strong>Trvalý filter</strong><span>Zabudovaný filter netreba meniť — šetrí vám čas aj peniaze.</span></div>
-      <div class="nhy-perk"><strong>Rýchle cykly</strong><span>Vyberte si cyklus 3 alebo 10 minút pre prispôsobenú dávku vodíka.</span></div>
+      <div class="nhy-perk"><strong>По-добра хидратация</strong><span>Обогатява водата с водород с висока концентрация за оптимална хидратация.</span></div>
+      <div class="nhy-perk"><strong>Презареждаема батерия</strong><span>USB зареждане за по-малко от 60 минути държи бутилката готова цял ден.</span></div>
+      <div class="nhy-perk"><strong>Постоянен филтър</strong><span>Вграденият филтър не се сменя — спестява ви време и пари.</span></div>
+      <div class="nhy-perk"><strong>Бързи цикли</strong><span>Изберете цикъл от 3 или 10 минути за съобразена доза водород.</span></div>
     </div>
   </div>
 </section>
 
-<!-- ============ 6) Pokročilá výroba vodíka ============ -->
+<!-- ============ 6) Усъвършенствано производство на водород ============ -->
 <section class="nhy-sec">
   <div class="nhy-wrap nhy-row2">
-    <div class="nhy-media"><?php echo $nh_img('hyd-04-kako-radi.webp','PEM i SPE elektroliza — proizvodnja vodika'); ?></div>
+    <div class="nhy-media"><?php echo $nh_img('hyd-04-kako-radi.webp','PEM и SPE електролиза — производство на водород'); ?></div>
     <div class="nhy-copy">
-      <h2 class="nhy-h2">Pokročilá výroba vodíka</h2>
-      <p>Vďaka špičkovej <strong>PEM a SPE elektrolýze</strong> NORIKS HYD vytvára až <strong>3 000 ppb</strong> molekulárneho vodíka vo vode. Sklenená fľaša so základňou z nehrdzavejúcej ocele zaisťuje, že voda nikdy nepríde do kontaktu s plastom, a trvalý filter generátora odstraňuje starosti s údržbou. Automatické odvzdušnenie odvedie zvyškové plyny pre čisté a bezpečné pitie.</p>
+      <h2 class="nhy-h2">Усъвършенствано производство на водород</h2>
+      <p>Благодарение на най-съвременната <strong>PEM и SPE електролиза</strong> NORIKS HYD произвежда до <strong>3 000 ppb</strong> молекулярен водород във водата. Стъклената бутилка с основа от неръждаема стомана гарантира, че водата никога не влиза в контакт с пластмаса, а постоянният филтър на генератора премахва грижите по поддръжката. Автоматичното обезвъздушаване отвежда остатъчните газове за чисто и безопасно пиене.</p>
       <ul class="nhy-check">
-        <li>Titánové elektródy s platinovou vrstvou</li>
-        <li>99,99 % čistý vodík, vedľajšie produkty odchádzajú cez odvzdušnenie</li>
-        <li>Funguje s akoukoľvek pitnou vodou, aj s destilovanou</li>
+        <li>Титанови електроди с платинов слой</li>
+        <li>99,99 % чист водород, страничните продукти излизат през обезвъздушаването</li>
+        <li>Работи с всякаква питейна вода, дори с дестилирана</li>
       </ul>
     </div>
   </div>
@@ -131,9 +131,9 @@ $nhy_marquee = array(
 <section class="nhy-sec nhy-alt">
   <div class="nhy-wrap nhy-row2">
     <div class="nhy-copy">
-      <h2 class="nhy-h2">Pripravení posunúť hydratáciu na vyššiu úroveň?</h2>
-      <p>Pridajte sa k tisíckam tých, ktorí svoju wellness rutinu vylepšili vodou bohatou na vodík. Pocíťte nával energie, lepšiu regeneráciu a hydratáciu, ktorú vidieť.</p>
-      <a class="nhy-cta" href="#bundle-selector">Objednať NORIKS HYD</a>
+      <h2 class="nhy-h2">Готови ли сте да изведете хидратацията на по-високо ниво?</h2>
+      <p>Присъединете се към хилядите, които подобриха уелнес рутината си с вода, богата на водород. Усетете прилив на енергия, по-добро възстановяване и хидратация, която се вижда.</p>
+      <a class="nhy-cta" href="#bundle-selector">Поръчай NORIKS HYD</a>
     </div>
     <div class="nhy-media"><?php echo $nh_img('hyd-07-lifestyle.webp','NORIKS HYD u svakodnevnoj upotrebi'); ?></div>
   </div>

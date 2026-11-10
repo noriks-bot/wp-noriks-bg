@@ -28,37 +28,37 @@ $nwc_video = function( $n, $label ) use ( $nwc, $nwc_path ) {
   return '<div class="nwc-vid"><video src="' . esc_url( $nwc . $file ) . '"'
     . ( file_exists( $nwc_path . $poster ) ? ' poster="' . esc_url( $nwc . $poster ) . '"' : '' )
     . ' playsinline preload="metadata" aria-label="' . esc_attr( $label ) . '"></video>'
-    . '<button type="button" class="nwc-play" aria-label="' . esc_attr( 'Prehrať video: ' . $label ) . '"></button></div>';
+    . '<button type="button" class="nwc-play" aria-label="' . esc_attr( 'Пусни видео: ' . $label ) . '"></button></div>';
 };
 
 /* 2) prednosti — 1:1 z originala (harmonike) */
 $nwc_feat = array(
-  array( 'Vysoká kvalita', 'Vyrobený z vysokokvalitnej nehrdzavejúcej ocele vhodnej na styk s potravinami, tento výrobok ponúka trvalú kvalitu a spoľahlivosť pri každodennom používaní.' ),
-  array( 'Okamžitý pôžitok', 'Jednoducho sa používa, rýchlo sa nasadí a je neuveriteľne praktický — ľahké riešenie, ako si vychutnať víno bez akejkoľvek námahy.' ),
-  array( 'Dokonalé nalievanie', 'Rozlúčte sa s rozliatym vínom. Tento nalievač zakaždým zaistí rovnomerné nalievanie bez kvapkania a udrží vaše víno aj stôl dokonale čisté.' ),
-  array( 'Odomknite plnú chuť', 'Zabudované prevzdušňovanie umožní, aby sa arómy vína naplno rozvinuli, čím sa zlepší chuť a zážitok z vína je bohatší.' ),
+  array( 'Високо качество', 'Изработен от висококачествена неръждаема стомана, подходяща за контакт с храни, този продукт предлага трайно качество и надеждност при всекидневна употреба.' ),
+  array( 'Мигновено удоволствие', 'Използва се лесно, слага се бързо и е невероятно практичен — лесно решение да се насладите на виното без никакво усилие.' ),
+  array( 'Идеално наливане', 'Сбогувайте се с разлятото вино. Този наливник всеки път осигурява равномерно наливане без капки и пази виното и масата ви идеално чисти.' ),
+  array( 'Отключете пълния вкус', 'Вграденото аериране позволява ароматите на виното да се разгърнат напълно, с което вкусът се подобрява и изживяването е по-богато.' ),
 );
 
 /* 4) mnenja — 1:1 z originala (isti vrstni red, ista imena) */
 $nwc_testimonials = array(
-  array( 'Skvelá vec', 'Skvelá vec, rovnomerne chladí a nalieva bez rozliatia.', 'Emma Molenaar' ),
-  array( 'Praktické', 'Praktické je, že zátka zároveň uzatvára; žiadne kvapky na obruse.', 'Lars van Dam' ),
-  array( 'Používam ho', 'Používam ho hlavne na rosé — zostane svieže až do posledného pohára.', 'Julian Rietveld' ),
-  array( 'Chladí lepšie', 'Chladí lepšie ako samostatné chladiace vložky, ktoré som mala. ✨', 'Nina Mulder' ),
-  array( 'Funguje rýchlo', 'Funguje rýchlo; za desať minút citeľne chladnejšie.', 'Sara Smits' ),
-  array( 'Praktický', 'Praktický a pevný, presne to, čo som hľadal.', 'Jesse de Bruin' ),
+  array( 'Страхотно нещо', 'Страхотно нещо, охлажда равномерно и налива без разливане.', 'Emma Molenaar' ),
+  array( 'Практично', 'Практично е, че тапата едновременно затваря; никакви капки по покривката.', 'Lars van Dam' ),
+  array( 'Използвам го', 'Използвам го главно за розе — остава свежо до последната чаша.', 'Julian Rietveld' ),
+  array( 'Охлажда по-добре', 'Охлажда по-добре от отделните охлаждащи вложки, които имах. ✨', 'Nina Mulder' ),
+  array( 'Работи бързо', 'Работи бързо; за десет минути усетимо по-студено.', 'Sara Smits' ),
+  array( 'Практичен', 'Практичен и стабилен, точно каквото търсех.', 'Jesse de Bruin' ),
 );
 ?>
 
 <!-- 1) VIDEI KUPACA -->
 <section class="nwc-sec nwc-tint">
   <div class="nwc-wrap">
-    <p class="nwc-kicker nwc-kicker--c">Videá zákazníkov</p>
-    <h2 class="nwc-h2 nwc-h2--c">Vypočujte si <em>našich zákazníkov</em> <span class="nwc-stars">★★★★★</span></h2>
+    <p class="nwc-kicker nwc-kicker--c">Видеа на клиенти</p>
+    <h2 class="nwc-h2 nwc-h2--c">Чуйте <em>нашите клиенти</em> <span class="nwc-stars">★★★★★</span></h2>
     <div class="nwc-vids">
-      <?php echo $nwc_video( 1, 'Video zákazníka 1 — NORIKS WineCooler' ); ?>
-      <?php echo $nwc_video( 2, 'Video zákazníka 2 — NORIKS WineCooler' ); ?>
-      <?php echo $nwc_video( 3, 'Video zákazníka 3 — NORIKS WineCooler' ); ?>
+      <?php echo $nwc_video( 1, 'Видео на клиент 1 — NORIKS WineCooler' ); ?>
+      <?php echo $nwc_video( 2, 'Видео на клиент 2 — NORIKS WineCooler' ); ?>
+      <?php echo $nwc_video( 3, 'Видео на клиент 3 — NORIKS WineCooler' ); ?>
     </div>
   </div>
 </section>
@@ -66,8 +66,8 @@ $nwc_testimonials = array(
 <!-- 2) RECITE ZBOGOM TOPLOM VINU + prednosti -->
 <section class="nwc-sec">
   <div class="nwc-wrap">
-    <h2 class="nwc-h2 nwc-h2--c">Rozlúčte sa s <em>teplým vínom</em></h2>
-    <p class="nwc-sub">Teraz si môžete zakaždým vychutnať dokonale vychladené víno, bez obáv z horúčavy!</p>
+    <h2 class="nwc-h2 nwc-h2--c">Сбогувайте се с <em>топлото вино</em></h2>
+    <p class="nwc-sub">Сега всеки път можете да се насладите на идеално изстудено вино, без да се притеснявате от жегата!</p>
     <div class="nwc-feat">
       <?php foreach ( $nwc_feat as $f ) : ?>
       <article class="nwc-feat__card">
@@ -82,14 +82,14 @@ $nwc_testimonials = array(
 <!-- 3) ZA LJUBITELJE VINA — slika lijevo -->
 <section class="nwc-sec nwc-tint">
   <div class="nwc-wrap nwc-row2">
-    <div class="nwc-media"><?php echo $nwc_img( 'wc-ljubitelji-vina.webp', 'Nalievanie vychladeného vína cez nalievač NORIKS WineCooler na pláži' ); ?></div>
+    <div class="nwc-media"><?php echo $nwc_img( 'wc-ljubitelji-vina.webp', 'Наливане на изстудено вино през наливника NORIKS WineCooler на плажа' ); ?></div>
     <div class="nwc-copy">
       <p class="nwc-kicker">Chladenie</p>
-      <h2 class="nwc-h2">Pre <em>milovníkov vína</em></h2>
-      <p>Otvorená fľaša na stole sa za pol hodiny zohreje a vedierko s ľadom víno rozriedi a nechá na obruse mláku. Tyčinka vyrieši oboje: vychladíte ju v mrazničke, vsuniete do fľaše a chladí víno <strong>zvnútra</strong>.</p>
-      <p>Už za <strong>10–15 minút</strong> privedie víno na teplotu podávania a udrží ho studené <strong>až 3 hodiny</strong> — dosť na celý večer na terase.</p>
-      <p>Vďaka zabudovanému nalievaču zostáva tyčinka vo fľaši aj počas nalievania: nevyťahujete ju, nekvapká a víno sa medzi dvoma pohármi nestihne zohriať.</p>
-      <p class="nwc-big">S touto chladiacou tyčinkou zostane vaše víno dokonale vychladené od prvého naliatia až po posledný dúšok.</p>
+      <h2 class="nwc-h2">Pre <em>любители на виното</em></h2>
+      <p>Отворена бутилка на масата се затопля за половин час, а кофичката с лед разводнява виното и оставя локва на покривката. Пръчката решава и двете: охлаждате я във фризера, пъхате я в бутилката и тя охлажда виното <strong>отвътре</strong>.</p>
+      <p>Още за <strong>10–15 минути</strong> докарва виното до температура за сервиране и го държи студено <strong>до 3 часа</strong> — достатъчно за цяла вечер на терасата.</p>
+      <p>Благодарение на вградения наливник пръчката остава в бутилката и докато наливате: не я вадите, не капе и виното не успява да се затопли между две чаши.</p>
+      <p class="nwc-big">С тази охлаждаща пръчка виното ви остава идеално изстудено от първото наливане до последната глътка.</p>
     </div>
   </div>
 </section>
@@ -99,24 +99,24 @@ $nwc_testimonials = array(
   <div class="nwc-wrap nwc-row2 nwc-row2--rev">
     <div class="nwc-copy">
       <p class="nwc-kicker">Kvalita</p>
-      <h2 class="nwc-h2">Hygiena a <em>špičková kvalita</em></h2>
-      <p>Staviame na špičkovú nehrdzavejúcu oceľ vhodnú na styk s potravinami pre neprekonateľnú kvalitu a odolnosť, aby vám chladiaca tyčinka na víno spoľahlivo slúžila celé roky.</p>
-      <p>Chladiaca tyčinka na víno má odnímateľný nalievač, takže sa dá ľahko a dôkladne umyť teplou vodou.</p>
-      <p class="nwc-big">Môžete ju umývať v umývačke riadu.</p>
+      <h2 class="nwc-h2">Hygiena a <em>първокласно качество</em></h2>
+      <p>Залагаме на първокласна неръждаема стомана, подходяща за контакт с храни, за ненадмината сила и издръжливост, така че охлаждащата пръчка да ви служи надеждно години.</p>
+      <p>Охлаждащата пръчка за вино има свалящ се наливник, така че се мие лесно и обилно с топла вода.</p>
+      <p class="nwc-big">Може да я миете в съдомиялна машина.</p>
     </div>
-    <div class="nwc-media"><?php echo $nwc_img( 'wc-higijena.webp', 'Chladiaca tyčinka NORIKS WineCooler a fľaša vína' ); ?></div>
+    <div class="nwc-media"><?php echo $nwc_img( 'wc-higijena.webp', 'Охлаждаща пръчка NORIKS WineCooler и бутилка вино' ); ?></div>
   </div>
 </section>
 
 <!-- 5) ODLIČNO 4,8 / 5 -->
 <section class="nwc-sec nwc-tint">
   <div class="nwc-wrap">
-    <h2 class="nwc-h2 nwc-h2--c">Výborné <em>4,8 / 5</em></h2>
-    <p class="nwc-rate"><span class="nwc-rate__stars">★★★★★</span> Na základe <strong>1 081</strong> recenzií</p>
+    <h2 class="nwc-h2 nwc-h2--c">Отлично <em>4,8 / 5</em></h2>
+    <p class="nwc-rate"><span class="nwc-rate__stars">★★★★★</span> На база <strong>1 081</strong> отзива</p>
     <div class="nwc-rev">
       <?php foreach ( $nwc_testimonials as $t ) : ?>
       <article class="nwc-rev__card">
-        <span class="nwc-rate__stars" aria-label="5 z 5 hviezdičiek">★★★★★</span>
+        <span class="nwc-rate__stars" aria-label="5 от 5 звезди">★★★★★</span>
         <h3><?php echo esc_html( $t[0] ); ?></h3>
         <p><?php echo esc_html( $t[1] ); ?></p>
         <cite><?php echo esc_html( $t[2] ); ?></cite>
@@ -130,9 +130,9 @@ $nwc_testimonials = array(
 <!-- 6) NORIKS pogoji -->
 <section class="nwc-sec">
   <div class="nwc-wrap nwc-c">
-    <h2 class="nwc-h2 nwc-h2--c">Vyskúšajte ho <em>bez obáv.</em></h2>
-    <p class="nwc-sub">Vychlaďte prvú fľašu a presvedčte sa o rozdiele. Ak nebudete spokojní, máte <strong>30 dní na vrátenie peňazí</strong>.</p>
-    <p class="nwc-trust"><span>30 dní na vrátenie</span><span>Doprava zadarmo nad 70 €</span><span>Platba na dobierku</span></p>
+    <h2 class="nwc-h2 nwc-h2--c">Изпробвайте го <em>без притеснение.</em></h2>
+    <p class="nwc-sub">Изстудете първата бутилка и се убедете в разликата. Ако не сте доволни, имате <strong>30 дни за връщане на парите</strong>.</p>
+    <p class="nwc-trust"><span>30 дни за връщане</span><span>Doprava zadarmo nad 70 €</span><span>Platba na dobierku</span></p>
   </div>
 </section>
 

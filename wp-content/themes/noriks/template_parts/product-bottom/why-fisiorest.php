@@ -7,41 +7,41 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 // 1) "Vedecky podložené" — 4 karty.
 $fis_science = array(
-    array( 'title' => 'Hrb na krku',       'text' => 'Trakcia <strong>uvoľní tlak a obnoví správne držanie tela</strong>, aby zmiernila hrb spôsobený technologickým krkom.' ),
-    array( 'title' => 'Bolesti krku',      'text' => '<strong>Zmierňuje svalové uzly a stuhnutosť</strong> a <strong>opäť zarovnáva krivku krku</strong> pre rýchlu úľavu od bolesti.' ),
-    array( 'title' => 'Kvalitný spánok',   'text' => 'Upokojujúca terapia <strong>uvoľní krk a chrbticu</strong> pre hlboký a osviežujúci spánok.' ),
-    array( 'title' => 'Uvoľnenie stresu',  'text' => 'Teplá masáž a naťahovanie <strong>uvoľnia nahromadené napätie</strong> pre väčšie pohodlie.' ),
+    array( 'title' => 'Hrb na krku',       'text' => 'Тракцията <strong>освобождава натиска и възстановява правилната стойка</strong>, за да облекчи гърбицата от „технологична шия".' ),
+    array( 'title' => 'Bolesti krku',      'text' => '<strong>Облекчава мускулните възли и сковаността</strong> и <strong>подрежда отново кривината на шията</strong> за бързо облекчение на болката.' ),
+    array( 'title' => 'Качествен сън',   'text' => 'Успокояващата терапия <strong>отпуска шията и гръбнака</strong> за дълбок и освежаващ сън.' ),
+    array( 'title' => 'Освобождаване от стреса',  'text' => 'Топлият масаж и разтягането <strong>освобождават натрупаното напрежение</strong> за по-голям комфорт.' ),
 );
 $fis_v = get_template_directory_uri() . '/img/fisiorest-videos/';
 $fis_i = get_template_directory_uri() . '/img/fisiorest/';
 $fis_ver = '?v=20261027c';
 $fis_hero_video = $fis_v . 'hero-v2.mp4' . $fis_ver;
 
-// 3) Odporúčajú odborníci
+// 3) Препоръчано от специалисти
 $fis_experts = array(
-    array( 'img' => $fis_i.'fis-strucnjak-1.jpg', 'name' => 'Martina Nováková', 'role' => 'Certifikovaná masážna terapeutka', 'org' => '' ),
-    array( 'img' => $fis_i.'fis-strucnjak-2.jpg', 'name' => 'Anna Kováčová', 'role' => 'Fyzioterapeutka', 'org' => '' ),
-    array( 'img' => $fis_i.'fis-strucnjak-3.jpg', 'name' => 'Jana Horváthová', 'role' => 'Chiropraktička', 'org' => '' ),
+    array( 'img' => $fis_i.'fis-strucnjak-1.jpg', 'name' => 'Мартина Николова', 'role' => 'Сертифициран масажен терапевт', 'org' => '' ),
+    array( 'img' => $fis_i.'fis-strucnjak-2.jpg', 'name' => 'Анна Ковачева', 'role' => 'Fyzioterapeutka', 'org' => '' ),
+    array( 'img' => $fis_i.'fis-strucnjak-3.jpg', 'name' => 'Яна Христова', 'role' => 'Хиропрактик', 'org' => '' ),
 );
 // 4) Skúsenosti používateľov
 $fis_ugc = array(
-    array( 'img' => $fis_i.'fis-uporaba-1.jpg', 'cap' => '„Prvýkrát po dlhom čase som konečne bez bolesti…"' ),
-    array( 'img' => $fis_i.'fis-uporaba-2.jpg', 'cap' => '„Vankúš NORIKS je moja nová každodenná nevyhnutnosť…"' ),
-    array( 'img' => $fis_i.'fis-uporaba-3.jpg', 'cap' => '„Ak ste sa práve stali mamou, toto by mohlo byť presne to, čo potrebujete…"' ),
-    array( 'img' => $fis_i.'fis-uporaba-4.jpg', 'cap' => '„Veľmi mi pomáha zmierniť napätie v krku a ramenách."' ),
+    array( 'img' => $fis_i.'fis-uporaba-1.jpg', 'cap' => '„За първи път от дълго време най-накрая съм без болка…"' ),
+    array( 'img' => $fis_i.'fis-uporaba-2.jpg', 'cap' => '„Възглавницата NORIKS е новата ми всекидневна необходимост…"' ),
+    array( 'img' => $fis_i.'fis-uporaba-3.jpg', 'cap' => '„Ако току-що сте станали майка, това може да е точно каквото ви трябва…"' ),
+    array( 'img' => $fis_i.'fis-uporaba-4.jpg', 'cap' => '„Много ми помага да облекча напрежението в шията и раменете."' ),
 );
 // 5) ThermoTrac 3-v-1
 $fis_thermo = array(
     array( 'vid' => $fis_v.'v10.mp4' . $fis_ver, 'title' => 'Terapia trakciou' ),
-    array( 'vid' => $fis_v.'v07.mp4' . $fis_ver, 'title' => 'Terapia vibráciou' ),
+    array( 'vid' => $fis_v.'v07.mp4' . $fis_ver, 'title' => 'Терапия с вибрация' ),
     array( 'vid' => $fis_v.'v05.mp4' . $fis_ver, 'title' => 'Terapia teplom' ),
 );
 // 6) Štyri vylepšenia
 $fis_upgrades = array(
-    array( 't' => 'Nabíjateľná batéria',    'd' => 'Vezmite ho kamkoľvek — batéria 2500 mAh vydrží až 2 hodiny.' , 'ico' => 'battery-v2.png?v=20261027' ),
-    array( 't' => 'Poťah z morušového hodvábu', 'd' => 'Zabalený do chladivého hodvábu pre mäkký, luxusný pocit.' , 'ico' => 'silk-v2.png?v=20261027' ),
-    array( 't' => 'Vypnutie po 30 min',     'd' => 'Štyri sedenia po 30 minútach na jedno nabitie, bez starostí.' , 'ico' => 'timer-v2.png?v=20261027' ),
-    array( 't' => 'Regulované teplo',        'd' => 'Ohrev na 50 °C s pokročilou technológiou ThermoTrac.' , 'ico' => 'heat-v2.png?v=20261027' ),
+    array( 't' => 'Презареждаема батерия',    'd' => 'Вземете го навсякъде — батерия 2500 mAh издържа до 2 часа.' , 'ico' => 'battery-v2.png?v=20261027' ),
+    array( 't' => 'Калъф от копринен сатен', 'd' => 'Обвит в хладна коприна за меко, луксозно усещане.' , 'ico' => 'silk-v2.png?v=20261027' ),
+    array( 't' => 'Изключване след 30 мин',     'd' => 'Четири сесии по 30 минути с едно зареждане, без грижи.' , 'ico' => 'timer-v2.png?v=20261027' ),
+    array( 't' => 'Регулирана топлина',        'd' => 'Нагряване до 50 °C с усъвършенствана технология ThermoTrac.' , 'ico' => 'heat-v2.png?v=20261027' ),
 );
 ?>
 
@@ -49,7 +49,7 @@ $fis_upgrades = array(
 <section class="fis-science">
   <div class="fis-wrap">
     <div class="fis-box">
-      <h2 class="fis-title">Vedecky podložené: preukázaná úľava pri starostlivosti o krk</h2>
+      <h2 class="fis-title">Научно обосновано: доказано облекчение при грижата за шията</h2>
       <div class="fis-grid">
         <?php foreach ( $fis_science as $fis_c ) : ?>
           <div class="fis-card">
@@ -67,18 +67,18 @@ $fis_upgrades = array(
   <video class="fis-hero-vid" src="<?php echo esc_url( $fis_hero_video ); ?>" muted autoplay loop playsinline preload="metadata"></video>
   <div class="fis-hero-overlay"></div>
   <div class="fis-hero-inner">
-    <h2 class="fis-hero-title">Odomknite hlboký reset spojenou silou zarovnania a uvoľnenia</h2>
+    <h2 class="fis-hero-title">Отключете дълбок рестарт със съчетаната сила на подреждането и отпускането</h2>
   </div>
 </section>
 
-<!-- ============ 3) Odporúčajú odborníci ============ -->
+<!-- ============ 3) Препоръчано от специалисти ============ -->
 <section class="fis-experts">
   <div class="fis-wrap fis-exp-grid">
     <div class="fis-exp-quote">
-      <h2 class="fis-h2">Odporúčajú odborníci</h2>
-      <p>„NORIKS je jeden z najlepších vankúšov na krk, aké sú momentálne na trhu. Keďže som vo wellness komunite už viac ako 25 rokov, vyskúšala som rôzne vankúše na krk a to, čím NORIKS vyniká, je funkcia trakcie…</p>
-      <p>Ak máte predsunutú hlavu alebo „zhrbené držanie tela", trakcia môže pomôcť opäť zarovnať stavce a plne podoprieť telo. Sama ho používam a odporúčam svojim klientom!"</p>
-      <p class="fis-exp-author"><strong>Martina Nováková</strong><br>Certifikovaná masážna terapeutka</p>
+      <h2 class="fis-h2">Препоръчано от специалисти</h2>
+      <p>„NORIKS е една от най-добрите възглавници за шия на пазара в момента. Тъй като съм в уелнес средата от над 25 години, съм пробвала различни възглавници за шия, а това, с което NORIKS се откроява, е функцията за тракция…</p>
+      <p>Ако имате изнесена напред глава или „прегърбена стойка", тракцията може да помогне да се подредят отново прешлените и тялото да получи пълна опора. Сама я използвам и я препоръчвам на клиентите си!"</p>
+      <p class="fis-exp-author"><strong>Мартина Николова</strong><br>Сертифициран масажен терапевт</p>
     </div>
     <div class="fis-exp-cards">
       <?php foreach ( $fis_experts as $e ) : ?>
@@ -112,8 +112,8 @@ $fis_upgrades = array(
 <!-- ============ 5) ThermoTrac 3-v-1 ============ -->
 <section class="fis-thermo">
   <div class="fis-wrap">
-    <p class="fis-eyebrow"><strong>ThermoTrac™</strong> technológia</p>
-    <h2 class="fis-h2 fis-center">Zažite 3-v-1 terapiu pre krk</h2>
+    <p class="fis-eyebrow"><strong>ThermoTrac™</strong> технология</p>
+    <h2 class="fis-h2 fis-center">Изпитайте 3-в-1 терапия за шията</h2>
     <div class="fis-thermo-grid">
       <?php foreach ( $fis_thermo as $t ) : ?>
         <div class="fis-thermo-card">
@@ -128,7 +128,7 @@ $fis_upgrades = array(
 <!-- ============ 6) Štyri vylepšenia ============ -->
 <section class="fis-upg">
   <div class="fis-wrap">
-    <h2 class="fis-h2 fis-center">Štyri veľké vylepšenia</h2>
+    <h2 class="fis-h2 fis-center">Четири големи подобрения</h2>
     <div class="fis-upg-grid">
       <?php foreach ( $fis_upgrades as $g ) : ?>
         <div class="fis-upg-card">
@@ -145,8 +145,8 @@ $fis_upgrades = array(
 <section class="fis-eng">
   <div class="fis-wrap fis-row2">
     <div class="fis-row2-copy">
-      <h2 class="fis-h2">Navrhnuté inžiniermi. Vyrobené podľa štandardov fyzioterapie</h2>
-      <p>Investovali sme viac ako 50 000 € a 2 roky vývoja, aby NORIKS nebol len masážny prístroj na krk. Je to komplexné zariadenie na terapiu krku, ktoré skutočne lieči príčinu. Každá objednávka prechádza dôkladnou kontrolou kvality, aby dorazila v perfektnom stave.</p>
+      <h2 class="fis-h2">Проектирано от инженери. Изработено по стандартите на физиотерапията</h2>
+      <p>Инвестирахме над 50 000 € и 2 години разработка, за да не е NORIKS просто масажор за шия. Това е комплексно устройство за терапия на шията, което действа върху причината. Всяка поръчка преминава през щателен контрол на качеството, за да пристигне в перфектно състояние.</p>
     </div>
     <div class="fis-row2-media"><video src="<?php echo esc_url( $fis_v.'hero-v2.mp4' . $fis_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video></div>
   </div>
@@ -157,9 +157,9 @@ $fis_upgrades = array(
   <div class="fis-wrap fis-row2">
     <div class="fis-row2-media"><img src="<?php echo esc_url( $fis_i.'fis-produkt-kvadrat.jpg' . $fis_ver ); ?>" alt="NORIKS NeckRelax" loading="lazy"></div>
     <div class="fis-row2-copy">
-      <p class="fis-eyebrow">BEZPEČNÁ A UVOĽŇUJÚCA TERAPIA</p>
-      <h2 class="fis-h2">14× lacnejšie ako týždenné sedenia</h2>
-      <p>NORIKS sa oplatí v dňoch, nie v mesiacoch. Odporúčaný terapeutmi, poskytuje jemnú úľavu bez hrubého tlaku alebo rizikových zákrokov. Používajte ho každý večer. Bez objednávania. Bez cestovania. Bez opakovaných nákladov — len bezpečná, dôsledná starostlivosť o krk, kedykoľvek ju potrebujete.</p>
+      <p class="fis-eyebrow">БЕЗОПАСНА И ОТПУСКАЩА ТЕРАПИЯ</p>
+      <h2 class="fis-h2">14× по-евтино от седмични сесии</h2>
+      <p>NORIKS се изплаща за дни, не за месеци. Препоръчан от терапевти, дава нежно облекчение без груб натиск или рискови процедури. Използвайте го всяка вечер. Без записване на час. Без пътуване. Без повтарящи се разходи — само безопасна, последователна грижа за шията, когато ви е нужна.</p>
     </div>
   </div>
 </section>
