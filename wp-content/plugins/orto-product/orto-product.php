@@ -208,6 +208,47 @@ function gck_attr_group_token( string $label, string $type ) : string {
 }
 
 /**
+ * Barvni krogci na bolgarskem trgu.
+ *
+ * sanitize_title() cirilice ne prepise v latinico, ampak jo odstotkovno
+ * zakodira: "Черна" -> "%d1%87%d0%b5%d1%80%d0%bd%d0%b0". Razred je zato
+ * color-%d1%87..., CSS pa takih pravil nima in krogci ostanejo prazni.
+ * Tu bolgarska imena barv preslikamo na ze obstojece latinicne razrede.
+ */
+function noriks_bg_color_slug( $val ) {
+    static $map = array(
+        'черна'      => 'cierna',
+        'черно'      => 'cierna',
+        'бяла'       => 'biela',
+        'бели'       => 'biela',
+        'бяло'       => 'biela',
+        'сива'       => 'siva',
+        'тъмносива'  => 'tmavosiva',
+        'сиво'       => 'siva',
+        'синя'       => 'modra',
+        'синьо'      => 'modra',
+        'тъмносиня'  => 'tmavomodra',
+        'тъмно синя' => 'tmavomodra',
+        'зелена'     => 'zelena',
+        'зелено'     => 'zelena',
+        'червена'    => 'cervena',
+        'червено'    => 'cervena',
+        'бежова'     => 'bezova',
+        'бежово'     => 'bezova',
+        'кафява'     => 'hneda',
+        'кафяво'     => 'hneda',
+        'телесна'    => 'telova',
+        'лилава'     => 'fialova',
+        'фуксия'     => 'fuchsiova',
+        'слива'      => 'slivkova',
+        'розова'     => 'ruzova',
+    );
+    $k = trim( mb_strtolower( (string) $val, 'UTF-8' ) );
+    if ( isset( $map[ $k ] ) ) { return $map[ $k ]; }
+    return sanitize_title( $val );
+}
+
+/**
  * Pair color + size into logical rows:
  * Prefer matching tokens, fallback by index.
  */
@@ -1990,7 +2031,7 @@ function gck_render_bundle_selector() {
                                     <div class="color-swatches"
                                          data-attr-key="<?php echo esc_attr( $sec['ckey'] ); ?>"
                                          data-name="pairs[<?php echo esc_attr( $offer_id ); ?>][<?php echo (int) $gck_run; ?>][<?php echo esc_attr( $sec['ckey'] ); ?>]">
-                                        <?php foreach ( $colors_use as $val ) : $slug = sanitize_title( $val ); ?>
+                                        <?php foreach ( $colors_use as $val ) : $slug = noriks_bg_color_slug( $val ); ?>
                                             <div class="swatch" data-value="<?php echo esc_attr( $val ); ?>" title="<?php echo esc_attr( $val ); ?>">
                                                 <span class="swatch-circle color-<?php echo esc_attr( $slug ); ?>"></span>
                                             </div>
@@ -2092,7 +2133,7 @@ function gck_render_bundle_selector() {
                                              data-name="pairs[<?php echo esc_attr( $offer_id ); ?>][<?php echo $i; ?>][<?php echo esc_attr( $target_color_field_key ); ?>]">
 
                                             <?php foreach ( $color_values as $val ) :
-                                                $slug = sanitize_title( $val ); ?>
+                                                $slug = noriks_bg_color_slug( $val ); ?>
                                                 <div class="swatch" data-value="<?php echo esc_attr( $val ); ?>" title="<?php echo esc_attr( $val ); ?>">
                                                     <span class="swatch-circle color-<?php echo esc_attr( $slug ); ?>"></span>
                                                 </div>
