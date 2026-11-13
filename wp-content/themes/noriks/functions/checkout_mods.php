@@ -733,6 +733,8 @@ add_filter('woocommerce_checkout_posted_data', function($data){
  * Validate billing_address_2 (kućni broj) is required
  */
 add_action('woocommerce_checkout_process', function(){
+    // pri izbranem prevzemnem mestu je polje skrito in prazno — hisna stevilka ni potrebna
+    if ( function_exists( 'noriks_econt_izbran' ) && noriks_econt_izbran() ) { return; }
     if ( empty( $_POST['billing_address_2'] ) ) {
         wc_add_notice( 'Моля, въведете номер на сграда.', 'error' );
     }

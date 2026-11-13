@@ -45,14 +45,27 @@ defined( 'ABSPATH' ) || exit;
 
       <!-- Shipping -->
       <div class="c--darkgray review-section-container review-addons shipping_order_review">
-        <div class="review-addons-title"><div>Доставка – GLS</div></div>
+        <div class="review-addons-title"><div><?php
+          /* Napis sledi dejansko izbranemu nacinu dostave. */
+          $necont = function_exists( 'noriks_econt_izbran' ) && noriks_econt_izbran();
+          if ( $necont ) {
+            echo 'Офис на Еконт';
+            $eid = function_exists( 'noriks_econt_seja_id' ) ? noriks_econt_seja_id() : '';
+            $em  = $eid !== '' ? noriks_econt_mesto( $eid ) : null;
+            if ( $em ) {
+              echo '<br><small>' . esc_html( $em['naziv'] ) . ', ' . esc_html( $em['naslov'] ) . '</small>';
+            }
+          } else {
+            echo 'Доставка до дома – Еконт';
+          }
+        ?></div></div>
         <div class="review-addons-price review-sale-price" id="noriks-shipping-price">
           <?php
             $ship = (float) WC()->cart->get_shipping_total();
             if ( $ship > 0 ) {
               echo wc_price( $ship );
             } else {
-              echo '<span class="shipping-free-badge">Zadarmo</span>';
+              echo '<span class="shipping-free-badge">Безплатно</span>';
             }
           ?>
         </div>

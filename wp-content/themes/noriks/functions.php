@@ -9,6 +9,8 @@ include(get_template_directory() . '/functions/product-type.php');
 include(get_template_directory() . '/functions/pack-switcher.php'); // vyber velkosti balenia + ine kombinacie farieb (X-ks balenia)
 include(get_template_directory() . '/functions/flash-deals-banner.php'); // traka sezonske rasprodaje
 include(get_template_directory() . '/functions/size-chart-once.php'); // tabela velikosti samo enkrat
+include(get_template_directory() . '/functions/econt-stikalo.php'); // stikalo za prevzemna mesta Econt
+include(get_template_directory() . '/functions/econt.php'); // prevzemna mesta Econt na blagajni
 include(get_template_directory() . '/functions/checkout_mods.php');
 include(get_template_directory() . '/functions/klaviyo-email-links.php'); // Klaviyo maili: obnova kosarice + samodejni kupon
 include(get_template_directory() . '/functions/cart-choice-guard.php'); // izdelek s ponudbami ne sme v blagajno brez izbire

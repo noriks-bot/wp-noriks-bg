@@ -34,6 +34,14 @@ if ( WC()->cart->is_empty() ) return;
         <?php WC()->cart->calculate_totals(); ?>
         <div id="custom_shipping">
           <h3>Доставка</h3>
+          <?php
+          /* Nacini dostave: prevzemno mesto Econt (privzeto) + dostava na
+             naslov. Logika je v functions/econt.php; ko je modul izklopljen,
+             se izrise natanko ista kartica kot prej. */
+          if ( function_exists( 'noriks_econt_nacini' ) ) {
+            noriks_econt_nacini();
+          } else {
+          ?>
           <ul class="shipping_method_custom">
             <li class="standard-shipping shipping-tab">
               <input name="shipping_method[0]" data-index="0" id="shipping_method_0_standard_custom"
@@ -45,13 +53,14 @@ if ( WC()->cart->is_empty() ) return;
                     <strong class="hs-custom-date" id="js-delivery-dates"></strong>
                   </div>
                   <div class="inner-wrapper-img">
-                    <span class="shipping_method_delivery_price tag tag--red"><?php $ship = (float) WC()->cart->get_shipping_total(); echo $ship > 0 ? wc_price($ship) : 'Zadarmo'; ?></span>
-                    <span class="delivery_img"><img decoding="async" class="slovenska_posta standard" src="https://images.vigo-shop.com/general/curriers/gls.png" alt="GLS"/></span>
+                    <span class="shipping_method_delivery_price tag tag--red"><?php $ship = (float) WC()->cart->get_shipping_total(); echo $ship > 0 ? wc_price($ship) : 'Безплатно'; ?></span>
+                    <span class="delivery_img"><img decoding="async" class="econt standard" src="https://images.vigo-shop.com/general/curriers/econt.png" alt="Еконт"/></span>
                   </div>
                 </div>
               </label>
             </li>
           </ul>
+          <?php } ?>
           <div class="delivery-from-eu-warehouse">
             <img decoding="async" class="delivery-from-eu-warehouse__icon" src="https://images.vigo-shop.com/general/flags/eu-warehouse.svg">
             <span class="delivery-from-eu-warehouse__text">Склад в ЕС</span>
