@@ -243,55 +243,7 @@ function is_active_menu_item( $path ) {
 <!-- SECOND LEVEL MENU -->
 
 <!-- BANNER DESKTOP + MOBILE -->
-<section class="one-banner-shop" style="position: relative; margin: 0 auto; padding: 0;">
-
-  <img
-    src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/brand/shop.jpg"
-    style="display:block; width:100%; min-height:105px; border-radius:0;"
-    alt=""
-  >
-
-  <?php
-  // Default title for shop
-  $banner_title = 'NORIKS';
-
-  // Product category archive
-  if ( is_product_category() ) {
-      $term = get_queried_object();
-
-      if ( $term && ! is_wp_error( $term ) ) {
-
-          // Walk up to the top parent
-          while ( $term->parent !== 0 ) {
-              $term = get_term( $term->parent, 'product_cat' );
-          }
-
-          $banner_title = $term->name;
-      }
-  }
-  ?>
-
-  <h1
-    class="h1"
-    style="
-      position:absolute;
-      top:50%;
-      left:50%;
-      transform:translate(-50%, -50%);
-      font-size:2.5rem;
-      font-weight:800;
-      width:100%;
-      font-family:'Barlow', sans-serif;
-      letter-spacing:0.5px;
-      color:white;
-      text-align:center;
-      text-transform: uppercase;
-    "
-  >
-    <?php echo esc_html( $banner_title ); ?>
-  </h1>
-
-</section>
+<?php if ( function_exists( 'noriks_bg_glava_trgovine' ) ) { noriks_bg_glava_trgovine(); } ?>
 
 
 
@@ -348,54 +300,7 @@ function is_product_category_or_child( $parent_slug ) {
 $shop_filter_fields = get_field("shop_filter_fields", "option");
 ?>
 
-<section class="shop-filter-buttons">
-    <div>
-        <div>
-
-          <?php
-// SHOP PAGE (/shop)
-if ( is_shop() ) {
-
-    noriks_shop_filter_links();
-
-// CATEGORY: /bokserice + ALL CHILD CATEGORIES
-} elseif ( is_product_category_or_child('boxerky') ) {
-
-    noriks_shop_filter_links();
-
-// CATEGORY GROUP
-} elseif (
-    is_product_category_or_child('bestsellers') ||
-    is_product_category_or_child('veliki-paketi') ||
-    is_product_category_or_child('starter-paketi')
-) {
-
-    noriks_shop_filter_links();
-
-// CATEGORY: /majice + children
-} elseif ( is_product_category_or_child('tricka') ) {
-
-    noriks_shop_filter_links();
-
-// CATEGORY: /kompleti + children
-} elseif ( is_product_category_or_child('sady') ) {
-
-    noriks_shop_filter_links();
-
-// CATEGORY: /carape + children
-} elseif ( is_product_category_or_child('ponozky') ) {
-
-    noriks_shop_filter_links();
-
-// FALLBACK for any other product category
-} elseif ( is_product_category() ) {
-
-    noriks_shop_filter_links();
-}
-?>
-        </div>
-    </div>
-</section>
+<?php if ( function_exists( 'noriks_bg_filtri' ) ) { noriks_bg_filtri(); } ?>
 
 
 

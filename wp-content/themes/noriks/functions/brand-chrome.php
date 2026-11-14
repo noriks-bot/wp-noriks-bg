@@ -351,3 +351,358 @@ add_action( 'wp_footer', function () {
 </script>
 	<?php
 }, 30 );
+
+/* =====================================================================
+ * NORIKS BG: glava trgovine in kategorij, filtri, drobtinice, izdelki po
+ * kategorijah na domaci strani. Vse funkcije so varne: ce WooCommerce ali
+ * podatkov ni, ne izpisejo nicesar.
+ * ===================================================================== */
+
+/** Postavke glavnega menija (ACF): array( link, text ). */
+function noriks_bg_meni() {
+	$m = function_exists( 'get_field' ) ? get_field( 'mainheader_menu', 'option' ) : array();
+	return is_array( $m ) ? $m : array();
+}
+
+/** Slug kategorije iz povezave menija; '' ce povezava ni kategorija. */
+function noriks_bg_slug_povezave( $link ) {
+	return preg_match( '#product-category/([^/?]+)/?$#', (string) $link, $m ) ? $m[1] : '';
+}
+
+/** Najvisji prednik kategorije. */
+function noriks_bg_vrh( $term ) {
+	$n = 0;
+	while ( $term && ! is_wp_error( $term ) && ! empty( $term->parent ) && $n++ < 6 ) {
+		$term = get_term( $term->parent, 'product_cat' );
+	}
+	return ( $term && ! is_wp_error( $term ) ) ? $term : null;
+}
+
+/** Napis in povezava trgovine: prva postavka menija, ki kaze na /shop. */
+function noriks_bg_trgovina() {
+	$url  = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/shop/' );
+	$ime  = '';
+	foreach ( noriks_bg_meni() as $el ) {
+		if ( ! empty( $el['link'] ) && preg_match( '#/shop/?$#', (string) $el['link'] ) ) {
+			$ime = isset( $el['text'] ) ? (string) $el['text'] : '';
+			break;
+		}
+	}
+	if ( '' === $ime && function_exists( 'wc_get_page_id' ) ) {
+		$ime = (string) get_the_title( wc_get_page_id( 'shop' ) );
+	}
+	return array( $ime, $url );
+}
+
+/** Drobtinice: array( array( napis, url ali '' ) ). */
+function noriks_bg_drobtine( $deli, $razred = '' ) {
+	$deli = array_values( array_filter( $deli, function ( $d ) {
+		return is_array( $d ) && isset( $d[0] ) && '' !== trim( (string) $d[0] );
+	} ) );
+	if ( count( $deli ) < 2 ) {
+		return;
+	}
+	echo '<nav class="nb nb-drobtine' . ( $razred ? ' ' . esc_attr( $razred ) : '' ) . '" aria-label="breadcrumb">';
+	$zadnji = count( $deli ) - 1;
+	foreach ( $deli as $i => $d ) {
+		if ( $i ) {
+			echo '<span class="nb-drobtine__loc" aria-hidden="true">/</span>';
+		}
+		if ( $i < $zadnji && ! empty( $d[1] ) ) {
+			echo '<a href="' . esc_url( $d[1] ) . '">' . esc_html( $d[0] ) . '</a>';
+		} else {
+			echo '<span' . ( $i === $zadnji ? ' aria-current="page"' : '' ) . '>' . esc_html( $d[0] ) . '</span>';
+		}
+	}
+	echo '</nav>';
+}
+
+/** Glava trgovine / kategorije: fotografija, drobtinice, naslov, podnaslov, zavihki kategorij. */
+function noriks_bg_glava_trgovine() {
+	if ( ! function_exists( 'is_product_category' ) ) {
+		return;
+	}
+	// Podnaslovi so besedila s kartic kolekcij na domaci strani.
+	$podnaslovi = array(
+		'teniski'   => 'Комфорт през целия ден. Без стягане.',
+		'boksarki'  => 'Меки. Дишащи. Надеждни.',
+		'komplekti' => 'Най-добра стойност в пакет.',
+	);
+	list( $trg_ime, $trg_url ) = noriks_bg_trgovina();
+	$term   = is_product_category() ? get_queried_object() : null;
+	$vrh    = $term ? noriks_bg_vrh( $term ) : null;
+	$naslov = $term && ! empty( $term->name ) ? $term->name : $trg_ime;
+	$pod    = '';
+	$slika  = 'kat-shop';
+	$drob   = array( array( 'NORIKS', home_url( '/' ) ), array( $trg_ime, $trg_url ) );
+	if ( $term && $vrh ) {
+		$pod = isset( $podnaslovi[ $vrh->slug ] ) ? $podnaslovi[ $vrh->slug ] : trim( wp_strip_all_tags( (string) $vrh->description ) );
+		if ( file_exists( get_template_directory() . '/img/brand/kat-' . $vrh->slug . '.jpg' ) ) {
+			$slika = 'kat-' . $vrh->slug;
+		}
+		if ( $vrh->term_id !== $term->term_id ) {
+			$l      = get_term_link( $vrh );
+			$drob[] = array( $vrh->name, is_wp_error( $l ) ? '' : $l );
+		}
+		$drob[] = array( $term->name, '' );
+	}
+	$vrh_slug = $vrh ? $vrh->slug : '';
+	?>
+<section class="nb nb-kat">
+	<div class="nb-kat__slika" aria-hidden="true"><img src="<?php echo esc_url( get_template_directory_uri() . '/img/brand/' . $slika . '.jpg' ); ?>" alt=""></div>
+	<div class="nb-kat__in">
+		<?php noriks_bg_drobtine( $drob ); ?>
+		<h1 class="nb-kat__naslov"><?php echo esc_html( $naslov ); ?></h1>
+		<?php if ( '' !== $pod ) : ?><p class="nb-kat__pod"><?php echo esc_html( $pod ); ?></p><?php endif; ?>
+		<div class="nb-kat__zavihki">
+			<?php
+			foreach ( noriks_bg_meni() as $el ) {
+				if ( empty( $el['link'] ) || empty( $el['text'] ) ) {
+					continue;
+				}
+				$s      = noriks_bg_slug_povezave( $el['link'] );
+				$izbran = $term ? ( '' !== $s && $s === $vrh_slug ) : ( '' === $s && preg_match( '#/shop/?$#', (string) $el['link'] ) );
+				echo '<a href="' . esc_url( $el['link'] ) . '"' . ( $izbran ? ' class="je-izbran" aria-current="true"' : '' ) . '>' . esc_html( $el['text'] ) . '</a>';
+			}
+			?>
+		</div>
+	</div>
+</section>
+	<?php
+}
+
+/** Vrstni red podkategorij: najprej paketi po stevilu kosov (1, 3, 6, 9 ...), nato ostale. */
+function noriks_bg_uredi_podkategorije( $a, $b ) {
+	$na = preg_match( '/^(\d+)/', $a->name, $ma ) ? (int) $ma[1] : 100000;
+	$nb = preg_match( '/^(\d+)/', $b->name, $mb ) ? (int) $mb[1] : 100000;
+	if ( $na !== $nb ) {
+		return $na < $nb ? -1 : 1;
+	}
+	return strcmp( $a->name, $b->name );
+}
+
+/** Vrstica filtrov pod glavo: cipi podkategorij, stevilo izdelkov, razvrscanje. */
+function noriks_bg_filtri() {
+	if ( ! function_exists( 'is_product_category' ) ) {
+		return;
+	}
+	$cipi = array();
+	$term = is_product_category() ? get_queried_object() : null;
+	if ( $term ) {
+		$vrh = noriks_bg_vrh( $term );
+		if ( $vrh ) {
+			$l = get_term_link( $vrh );
+			if ( ! is_wp_error( $l ) ) {
+				$cipi[] = array( $vrh->name, $l, $vrh->term_id === $term->term_id );
+			}
+			$otroci = get_terms( array( 'taxonomy' => 'product_cat', 'parent' => $vrh->term_id, 'hide_empty' => true ) );
+			if ( is_array( $otroci ) ) {
+				usort( $otroci, 'noriks_bg_uredi_podkategorije' );
+				foreach ( $otroci as $o ) {
+					$l = get_term_link( $o );
+					if ( ! is_wp_error( $l ) ) {
+						$cipi[] = array( $o->name, $l, $o->term_id === $term->term_id || (int) $term->parent === (int) $o->term_id );
+					}
+				}
+			}
+		}
+	} else {
+		list( $trg_ime, $trg_url ) = noriks_bg_trgovina();
+		$cipi[] = array( $trg_ime, $trg_url, true );
+		foreach ( array( 'nai-prodavani', 'startovi-paketi', 'golemi-paketi' ) as $slug ) {
+			$t = get_term_by( 'slug', $slug, 'product_cat' );
+			if ( $t && ! is_wp_error( $t ) && ! empty( $t->count ) ) {
+				$l = get_term_link( $t );
+				if ( ! is_wp_error( $l ) ) {
+					$cipi[] = array( $t->name, $l, false );
+				}
+			}
+		}
+	}
+	$stevilo = isset( $GLOBALS['wp_query'] ) && isset( $GLOBALS['wp_query']->found_posts ) ? (int) $GLOBALS['wp_query']->found_posts : 0;
+	?>
+<section class="nb nb-filtri">
+	<div class="nb-filtri__in">
+		<div class="nb-filtri__cipi">
+			<?php
+			if ( count( $cipi ) > 1 ) {
+				foreach ( $cipi as $c ) {
+					echo '<a class="nb-cip' . ( $c[2] ? ' je-izbran' : '' ) . '" href="' . esc_url( $c[1] ) . '">' . esc_html( $c[0] ) . '</a>';
+				}
+			}
+			?>
+		</div>
+		<div class="nb-filtri__desno">
+			<?php if ( $stevilo > 0 ) : ?><span class="nb-filtri__st"><b><?php echo (int) $stevilo; ?></b> продукта</span><?php endif; ?>
+			<?php
+			if ( function_exists( 'woocommerce_catalog_ordering' ) ) {
+				woocommerce_catalog_ordering();
+			}
+			?>
+		</div>
+	</div>
+</section>
+	<?php
+}
+
+// Razvrscanje v bolgarscini (WooCommerce na tej strani nima prevoda teh napisov).
+add_filter( 'woocommerce_catalog_orderby', function ( $moznosti ) {
+	$bg = array(
+		'menu_order' => 'По подразбиране',
+		'popularity' => 'Най-популярни',
+		'rating'     => 'Най-висока оценка',
+		'date'       => 'Най-нови',
+		'price'      => 'Цена: ниска към висока',
+		'price-desc' => 'Цена: висока към ниска',
+	);
+	foreach ( (array) $moznosti as $k => $v ) {
+		if ( isset( $bg[ $k ] ) ) {
+			$moznosti[ $k ] = $bg[ $k ];
+		}
+	}
+	return $moznosti;
+}, 20 );
+
+// Drobtinice na strani izdelka.
+add_action( 'woocommerce_before_single_product', function () {
+	global $product;
+	if ( ! $product || ! is_object( $product ) || ! method_exists( $product, 'get_id' ) ) {
+		return;
+	}
+	list( $trg_ime, $trg_url ) = noriks_bg_trgovina();
+	$drob = array( array( 'NORIKS', home_url( '/' ) ), array( $trg_ime, $trg_url ) );
+	foreach ( noriks_bg_meni() as $el ) {
+		$s = isset( $el['link'] ) ? noriks_bg_slug_povezave( $el['link'] ) : '';
+		if ( '' !== $s && has_term( $s, 'product_cat', $product->get_id() ) ) {
+			$drob[] = array( isset( $el['text'] ) ? $el['text'] : '', $el['link'] );
+			break;
+		}
+	}
+	$drob[] = array( trim( (string) preg_replace( '/\s*\|.*$/u', '', $product->get_name() ) ), '' );
+	noriks_bg_drobtine( $drob, 'nb-drobtine--izdelek' );
+}, 4 );
+
+/** Kartica izdelka (drsniki na domaci strani). */
+function noriks_bg_kartica( $p ) {
+	if ( ! $p || ! is_object( $p ) || ! method_exists( $p, 'get_id' ) ) {
+		return '';
+	}
+	$id  = (int) $p->get_id();
+	$ime = trim( (string) preg_replace( '/\s*\|.*$/u', '', $p->get_name() ) );
+	if ( $p->is_type( 'variable' ) ) {
+		$redna  = (float) $p->get_variation_regular_price( 'min', true );
+		$znizan = (float) $p->get_variation_sale_price( 'min', true );
+	} else {
+		$redna  = (float) $p->get_regular_price();
+		$znizan = (float) $p->get_sale_price();
+	}
+	$popust = ( $znizan > 0 && $redna > $znizan ) ? (int) round( ( $redna - $znizan ) / $redna * 100 ) : 0;
+	$prva   = $p->get_image_id() ? wp_get_attachment_image_url( $p->get_image_id(), 'woocommerce_thumbnail' ) : '';
+	$gal    = $p->get_gallery_image_ids();
+	$druga  = ! empty( $gal ) ? wp_get_attachment_image_url( $gal[0], 'woocommerce_thumbnail' ) : '';
+	$gumb   = function_exists( 'brand_chrome_domaca' ) ? brand_chrome_domaca() : array();
+	$gumb   = isset( $gumb['izdelki']['gumb'] ) ? (string) $gumb['izdelki']['gumb'] : '';
+
+	$h  = '<a class="nb-izd" href="' . esc_url( get_permalink( $id ) ) . '">';
+	$h .= '<span class="nb-izd__slika">';
+	if ( $popust ) {
+		$h .= '<span class="nb-izd__popust">-' . $popust . '%</span>';
+	}
+	if ( $prva ) {
+		$h .= '<img src="' . esc_url( $prva ) . '" alt="' . esc_attr( $ime ) . '" loading="lazy">';
+	}
+	if ( $druga && $druga !== $prva ) {
+		$h .= '<img class="nb-izd__druga" src="' . esc_url( $druga ) . '" alt="" loading="lazy">';
+	}
+	if ( '' !== $gumb ) {
+		$h .= '<span class="nb-izd__gumb">' . esc_html( $gumb ) . '</span>';
+	}
+	$h .= '</span>';
+	$h .= '<span class="nb-izd__ime">' . esc_html( $ime ) . '</span>';
+	$h .= '<span class="nb-izd__cena">';
+	if ( $popust ) {
+		$h .= '<b>' . wc_price( $znizan ) . '</b><s>' . wc_price( $redna ) . '</s>';
+	} elseif ( $redna > 0 ) {
+		$h .= '<b>' . wc_price( $redna ) . '</b>';
+	} else {
+		$h .= '<b>' . $p->get_price_html() . '</b>';
+	}
+	$h .= '</span></a>';
+	return $h;
+}
+
+/** Domaca stran: izdelki po kategorijah iz glavnega menija (zavihki + drsnik). */
+function noriks_bg_po_kategorijah() {
+	if ( ! function_exists( 'wc_get_products' ) || ! function_exists( 'wc_price' ) ) {
+		return;
+	}
+	$zav = array();
+	foreach ( noriks_bg_meni() as $el ) {
+		$s = isset( $el['link'] ) ? noriks_bg_slug_povezave( $el['link'] ) : '';
+		if ( '' === $s ) {
+			continue;
+		}
+		$t = get_term_by( 'slug', $s, 'product_cat' );
+		if ( ! $t || is_wp_error( $t ) ) {
+			continue;
+		}
+		$izd = wc_get_products( array( 'status' => 'publish', 'limit' => 10, 'category' => array( $s ), 'orderby' => 'menu_order', 'order' => 'ASC' ) );
+		if ( ! $izd ) {
+			continue;
+		}
+		$kartice = '';
+		foreach ( $izd as $p ) {
+			$kartice .= noriks_bg_kartica( $p );
+		}
+		if ( '' !== $kartice ) {
+			$zav[] = array( $t->name, $el['link'], $kartice );
+		}
+	}
+	if ( ! $zav ) {
+		return;
+	}
+	$pusc_l = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>';
+	$pusc_d = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+	echo '<section class="nb nb-kategorije"><div class="nb-ovoj">';
+	echo '<div class="nb-kategorije__glava"><div class="nb-kategorije__zavihki" role="tablist">';
+	foreach ( $zav as $i => $z ) {
+		echo '<button type="button" class="nb-zavihek' . ( 0 === $i ? ' je-izbran' : '' ) . '" role="tab" aria-selected="' . ( 0 === $i ? 'true' : 'false' ) . '" data-i="' . (int) $i . '">' . esc_html( $z[0] ) . '</button>';
+	}
+	echo '</div><div class="nb-kategorije__nav">';
+	echo '<button type="button" class="nb-pusc nb-pusc--temna" data-trak=".nb-kategorije .nb-trak:not([hidden])" data-smer="-1" aria-label="Назад">' . $pusc_l . '</button>';
+	echo '<button type="button" class="nb-pusc nb-pusc--temna" data-trak=".nb-kategorije .nb-trak:not([hidden])" data-smer="1" aria-label="Напред">' . $pusc_d . '</button>';
+	echo '</div></div>';
+	foreach ( $zav as $i => $z ) {
+		echo '<div class="nb-trak" data-i="' . (int) $i . '"' . ( 0 === $i ? '' : ' hidden' ) . '>' . $z[2];
+		echo '<a class="nb-izd nb-izd--vse" href="' . esc_url( $z[1] ) . '"><span class="nb-izd__vse"><b>' . esc_html( $z[0] ) . '</b>' . $pusc_d . '</span></a>';
+		echo '</div>';
+	}
+	echo '</div></section>';
+}
+
+// Drsniki in zavihki (ena skripta za vse).
+add_action( 'wp_footer', function () {
+	?>
+<script>
+(function () {
+	document.addEventListener('click', function (e) {
+		if (!e.target.closest) { return; }
+		var b = e.target.closest('.nb-pusc');
+		if (b) {
+			var g = document.querySelector(b.getAttribute('data-trak'));
+			if (!g || !g.firstElementChild) { return; }
+			var w = g.firstElementChild.getBoundingClientRect().width + 18;
+			g.scrollBy({ left: w * 2 * parseInt(b.getAttribute('data-smer'), 10), behavior: 'smooth' });
+			return;
+		}
+		var z = e.target.closest('.nb-zavihek');
+		if (z) {
+			var s = z.closest('.nb-kategorije'), i = z.getAttribute('data-i');
+			Array.prototype.forEach.call(s.querySelectorAll('.nb-zavihek'), function (x) { x.classList.toggle('je-izbran', x === z); x.setAttribute('aria-selected', x === z ? 'true' : 'false'); });
+			Array.prototype.forEach.call(s.querySelectorAll('.nb-trak'), function (t) { t.hidden = t.getAttribute('data-i') !== i; });
+		}
+	});
+})();
+</script>
+	<?php
+}, 32 );

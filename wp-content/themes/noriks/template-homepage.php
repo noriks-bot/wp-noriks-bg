@@ -62,10 +62,10 @@ get_header(); ?>
       <h2 class="nb-h2">4 разлики, които забелязваш веднага</h2>
     </div>
     <div class="nb-razlike__mreza">
-      <div class="nb-razlika"><span class="nb-razlika__st">01</span><h3>Коремът остава покрит</h3><p>По-дълга кройка — коремът остава покрит, дори когато се наведеш или вдигнеш ръце.</p></div>
-      <div class="nb-razlika"><span class="nb-razlika__st">02</span><h3>Рамене без стягане</h3><p>По-широка кройка в гърдите и раменете подчертава фигурата без опъване под мишниците.</p></div>
-      <div class="nb-razlika"><span class="nb-razlika__st">03</span><h3>Форма и след пране</h3><p>Не се свива и не се разтяга, деколтето остава право.</p></div>
-      <div class="nb-razlika"><span class="nb-razlika__st">04</span><h3>Нищо не драска</h3><p>Отпечатан етикет вместо зашит, нежно за кожата цял ден.</p></div>
+      <div class="nb-razlika"><div class="nb-razlika__vrh"><span class="nb-razlika__ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4"/></svg></span><span class="nb-razlika__st">01</span></div><h3>Коремът остава покрит</h3><p>По-дълга кройка — коремът остава покрит, дори когато се наведеш или вдигнеш ръце.</p></div>
+      <div class="nb-razlika"><div class="nb-razlika__vrh"><span class="nb-razlika__ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/></svg></span><span class="nb-razlika__st">02</span></div><h3>Рамене без стягане</h3><p>По-широка кройка в гърдите и раменете подчертава фигурата без опъване под мишниците.</p></div>
+      <div class="nb-razlika"><div class="nb-razlika__vrh"><span class="nb-razlika__ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 6.3M20 5v6h-6"/></svg></span><span class="nb-razlika__st">03</span></div><h3>Форма и след пране</h3><p>Не се свива и не се разтяга, деколтето остава право.</p></div>
+      <div class="nb-razlika"><div class="nb-razlika__vrh"><span class="nb-razlika__ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 3.8a5.5 5.5 0 0 0-7.8 0L5 11.2V19h7.8l7.4-7.4a5.5 5.5 0 0 0 0-7.8zM16 8L3 21M17.5 15H9"/></svg></span><span class="nb-razlika__st">04</span></div><h3>Нищо не драска</h3><p>Отпечатан етикет вместо зашит, нежно за кожата цял ден.</p></div>
     </div>
   </div>
 </section>
@@ -664,6 +664,8 @@ a:hover {
 }
 </style>
 
+<?php if ( function_exists( 'noriks_bg_po_kategorijah' ) ) { noriks_bg_po_kategorijah(); } ?>
+
 <section class="most-popular">
   <div style="max-width: 1800px;" class="container">
 
@@ -681,6 +683,7 @@ a:hover {
     </a>
   </div>
 
+    <div class="nb nb-priljubljeni__nav"><button type="button" class="nb-pusc nb-pusc--temna" data-trak=".most-popular .products-grid" data-smer="-1" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" class="nb-pusc nb-pusc--temna" data-trak=".most-popular .products-grid" data-smer="1" aria-label="Напред"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
     <div class="products-grid slider-mobile2">
       <?php foreach ( $products as $index => $product ): ?>
 
@@ -882,6 +885,23 @@ a:hover {
   </div>
 </section>
 
+<section class="nb nb-zgodba nb-zgodba--temna">
+  <div class="nb-ovoj nb-zgodba__mreza">
+    <div class="nb-zgodba__slika"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/noriks-boksarice.jpeg" alt="" loading="lazy" /></div>
+    <div class="nb-zgodba__besedilo">
+      <p class="nb-nadnaslov">NORIKS</p>
+      <h2 class="nb-h2">Боксерки, за които забравяш. От сутрин до вечер.</h2>
+      <ul class="nb-tocke">
+        <li><b>Не миришат</b><span>Modal забавя размножаването на бактерии, така че остават свежи и след дълъг ден.</span></li>
+        <li><b>Не се набират</b><span>Крачолите остават на място, и при ходене, клек или тренировка.</span></li>
+        <li><b>Коланът не стяга</b><span>Мекият ластик държи, но не притиска и след пране не губи еластичност.</span></li>
+        <li><b>Нищо не драска</b><span>Отпечатан етикет и плоски шевове, нежни за кожата цял ден.</span></li>
+      </ul>
+      <a class="nb-gumb nb-gumb--svetel" href="/bg/product-category/boksarki/">Боксерки</a>
+    </div>
+  </div>
+</section>
+
 <section class="nb nb-primerjava">
   <div class="nb-ovoj nb-primerjava__mreza">
     <div class="nb-primerjava__levo">
@@ -923,6 +943,7 @@ a:hover {
     <h2 class="collections__title" style="text-align: left;font-size: clamp(28px, 2.5vw, 40px);
     margin-bottom: 13px;"><?php echo get_field("homepage_section_3_t2"); ?></h2>
 
+    <div class="nb nb-mnenja__nav"><button type="button" class="nb-pusc" data-trak=".reviews-grid" data-smer="-1" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" class="nb-pusc" data-trak=".reviews-grid" data-smer="1" aria-label="Напред"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
     <div class="reviews-grid">
 
     <?php 
