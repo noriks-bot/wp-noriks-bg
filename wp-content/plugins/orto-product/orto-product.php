@@ -2718,7 +2718,7 @@ function gck_shgifts_free_gifts_notice() {
         <div class="gck-fg__grid">
             <?php foreach ( $gifts as $g ) : ?>
                 <div class="gck-fg__card">
-                    <span class="gck-fg__badge">Zadarmo</span>
+                    <span class="gck-fg__badge">Безплатно</span>
                     <img class="gck-fg__img" src="<?php echo esc_url( $g['img'] ); ?>" alt="<?php echo esc_attr( $g['label'] ); ?>" loading="lazy">
                     <div class="gck-fg__label"><?php echo esc_html( $g['label'] ); ?></div>
                     <div class="gck-fg__price"><s><?php echo esc_html( $g['price'] ); ?></s></div>

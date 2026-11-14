@@ -203,9 +203,9 @@ body.woocommerce-checkout #payment .wc_payment_method > label img {
   width: auto !important;
   margin-left: 8px !important;
 }
-/* Fee badges — "Zadarmo" for card & PayPal, price for COD */
+/* Fee badges — "Безплатно" for card & PayPal, price for COD */
 body.woocommerce-checkout #payment .wc_payment_method > label::after {
-  content: 'Zadarmo' !important;
+  content: 'Безплатно' !important;
   display: inline-block !important;
   padding: 3px 10px !important;
   margin-left: auto !important;

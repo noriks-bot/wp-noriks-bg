@@ -122,7 +122,7 @@ if ( WC()->cart->is_empty() ) return;
 <script>
 jQuery(function($){
   /* Delivery dates — same logic as product page (meta.php) */
-  var days=['неделя','pondelok','utorok','streda','четвъртък','piatok','sobota'];
+  var days=['неделя','понеделник','вторник','сряда','четвъртък','петък','събота'];
   function addBiz(d,n){var r=new Date(d);while(n>0){r.setDate(r.getDate()+1);if(r.getDay()!==0&&r.getDay()!==6)n--;}return r;}
   var now=new Date(),from=addBiz(now,2),to=addBiz(now,5);
   $('#js-delivery-dates').text(days[from.getDay()]+', '+from.getDate()+'.'+(from.getMonth()+1)+'. - '+days[to.getDay()]+', '+to.getDate()+'.'+(to.getMonth()+1)+'.');
