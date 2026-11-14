@@ -34,24 +34,39 @@ get_header(); ?>
 			
 			
 			
-			<section class="hero">
+			<section class="hero nb-hero">
   <div class="hero__media" aria-hidden="true">
-    <!-- Replace with your image -->
-    <img
-      src="<?php echo get_template_directory_uri(); ?>/img/noriks-hero.jpeg"
-      alt=""
-    />
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/brand/hero.jpg" alt="" fetchpriority="high" />
   </div>
-
   <div class="hero__overlay" aria-hidden="true"></div>
-
   <div class="hero__content">
-    <!--<p class="hero__eyebrow">NOVO: NORIKS </p>-->
-    <h1 class="hero__title">Тениската, която решава всички проблеми.
-</h1>
+    <p class="nb-nadnaslov">Създадени за истински мъже</p>
+    <h1 class="hero__title">Тениската, която решава всички проблеми.</h1>
+    <p class="nb-hero__pod">Тениска, която най-накрая стои добре. От сутрин до вечер.</p>
+    <div class="nb-hero__gumbi">
+      <a class="hero__btn" href="/bg/shop">Пазарувай сега</a>
+      <a class="nb-hero__drugi" href="/bg/product-category/komplekti/">Комплекти</a>
+    </div>
+    <ul class="nb-hero__dejstva">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Безплатна доставка за поръчки над 70 €</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>30 дни без риск</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Размери S–4XL</li>
+    </ul>
+  </div>
+</section>
 
-    <a class="hero__btn" href="/bg/shop">КУПЕТЕ СЕГА
-</a>
+<section class="nb nb-razlike">
+  <div class="nb-ovoj">
+    <div class="nb-razlike__glava">
+      <p class="nb-nadnaslov">NORIKS</p>
+      <h2 class="nb-h2">4 разлики, които забелязваш веднага</h2>
+    </div>
+    <div class="nb-razlike__mreza">
+      <div class="nb-razlika"><span class="nb-razlika__st">01</span><h3>Коремът остава покрит</h3><p>По-дълга кройка — коремът остава покрит, дори когато се наведеш или вдигнеш ръце.</p></div>
+      <div class="nb-razlika"><span class="nb-razlika__st">02</span><h3>Рамене без стягане</h3><p>По-широка кройка в гърдите и раменете подчертава фигурата без опъване под мишниците.</p></div>
+      <div class="nb-razlika"><span class="nb-razlika__st">03</span><h3>Форма и след пране</h3><p>Не се свива и не се разтяга, деколтето остава право.</p></div>
+      <div class="nb-razlika"><span class="nb-razlika__st">04</span><h3>Нищо не драска</h3><p>Отпечатан етикет вместо зашит, нежно за кожата цял ден.</p></div>
+    </div>
   </div>
 </section>
 
@@ -182,7 +197,7 @@ get_header(); ?>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="/bg/product-category/tricka/">
+    <a class="collection-card" href="/bg/product-category/teniski/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
@@ -205,7 +220,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="/bg/product-category/boxerky/">
+    <a class="collection-card" href="/bg/product-category/boksarki/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -229,7 +244,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 3 -->
-    <a class="collection-card" href="/bg/product-category/sady/">
+    <a class="collection-card" href="/bg/product-category/komplekti/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-kompleti.jpeg"
@@ -253,7 +268,7 @@ get_header(); ?>
     </a>
     
     <!-- Card 3 -->
-    <a class="collection-card" href="https://noriks.com/bg/product-category/startovaci-balicek/">
+    <a class="collection-card" href="/bg/product-category/startovi-paketi/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"
@@ -850,6 +865,45 @@ a:hover {
 
 
 	
+<section class="nb nb-zgodba">
+  <div class="nb-ovoj nb-zgodba__mreza">
+    <div class="nb-zgodba__slika"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/noriks-hero.jpeg" alt="" loading="lazy" /></div>
+    <div class="nb-zgodba__besedilo">
+      <p class="nb-nadnaslov">NORIKS</p>
+      <h2 class="nb-h2">Разработени за мъжката фигура. Изпробвани в ежедневието.</h2>
+      <p>Доработвахме кройката върху мъже с всякакви фигури, от S до 4XL, докато започна да стои без опъване на гърдите и без да се вдига над талията. Всяка поръчка проверяваме преди изпращане, за да пристигне без дефект.</p>
+      <ul class="nb-zgodba__tri">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>По-дълга кройка</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>По-широки рамене</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Не се мачка</li>
+      </ul>
+      <a class="nb-gumb" href="/bg/product-category/teniski/">Тениски</a>
+    </div>
+  </div>
+</section>
+
+<section class="nb nb-primerjava">
+  <div class="nb-ovoj nb-primerjava__mreza">
+    <div class="nb-primerjava__levo">
+      <div>
+        <p class="nb-nadnaslov">NORIKS срещу другите марки</p>
+        <h2 class="nb-h2">Не всички тениски са еднакви.</h2>
+        <p>Ето защо нашите си заслужават.</p>
+      </div>
+      <div><a class="nb-gumb nb-gumb--svetel" href="/bg/shop">Пазарувай сега</a></div>
+    </div>
+    <div class="nb-primerjava__tabela">
+      <div class="nb-vrsta nb-vrsta--glava"><span></span><span>NORIKS</span><span>Други марки</span></div>
+      <div class="nb-vrsta"><span>Ласкава кройка за гърдите и раменете</span><span><i class="nb-da"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></span><span><i class="nb-ne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></i></span></div>
+      <div class="nb-vrsta"><span>Допълнителна дължина, за да остане коремът покрит</span><span><i class="nb-da"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></span><span><i class="nb-ne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></i></span></div>
+      <div class="nb-vrsta"><span>Супер мек плат — лек, дишащ и невероятно удобен</span><span><i class="nb-da"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></span><span><i class="nb-ne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></i></span></div>
+      <div class="nb-vrsta"><span>Запазва формата си и след много пранета</span><span><i class="nb-da"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></span><span><i class="nb-ne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></i></span></div>
+      <div class="nb-vrsta"><span>Без дразнещи, сърбящи етикети на шията</span><span><i class="nb-da"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></span><span><i class="nb-ne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></i></span></div>
+      <div class="nb-vrsta"><span>Гаранция за перфектно прилягане</span><span><i class="nb-da"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></span><span><i class="nb-ne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></i></span></div>
+    </div>
+  </div>
+</section>
+
   <section class="reviews-section">
       
       
