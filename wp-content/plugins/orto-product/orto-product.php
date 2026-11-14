@@ -2038,9 +2038,9 @@ function gck_render_bundle_selector() {
                         );
                         $cv = $c ? array_values( array_filter( array_map( 'strval', (array) ( $c['values'] ?? array() ) ), 'strlen' ) ) : array();
                         $sv = $s ? array_values( array_filter( array_map( 'strval', (array) ( $s['values'] ?? array() ) ), 'strlen' ) ) : array();
-                        if ( strpos( $hay, 'majic' ) !== false )        { $gck_real['majica']    = array( 'colors' => $cv, 'sizes' => $sv ); }
-                        elseif ( strpos( $hay, 'bokseric' ) !== false ) { $gck_real['bokserica'] = array( 'colors' => $cv, 'sizes' => $sv ); }
-                        elseif ( strpos( $hay, 'carap' ) !== false )    { $gck_real['carapa']    = array( 'colors' => $cv, 'sizes' => $sv ); }
+                        if ( strpos( $hay, 'majic' ) !== false || strpos( $hay, 'тениск' ) !== false )         { $gck_real['majica']    = array( 'colors' => $cv, 'sizes' => $sv ); }
+                        elseif ( strpos( $hay, 'bokseric' ) !== false || strpos( $hay, 'боксерк' ) !== false ) { $gck_real['bokserica'] = array( 'colors' => $cv, 'sizes' => $sv ); }
+                        elseif ( strpos( $hay, 'carap' ) !== false || strpos( $hay, 'чорап' ) !== false )      { $gck_real['carapa']    = array( 'colors' => $cv, 'sizes' => $sv ); }
                     }
 
                     $gck_run = 0;
@@ -2462,10 +2462,11 @@ function gck_build_shgifts_lines( array $pairs_data ) : array {
 
         $label = '';
         foreach ( array_keys( $attrs ) as $k ) {
-            $kl = gck_lower( (string) $k );
-            if ( strpos( $kl, 'majic' ) !== false )    { $label = 'Тениска';  break; }
-            if ( strpos( $kl, 'bokseric' ) !== false ) { $label = 'Боксерки'; break; }
-            if ( strpos( $kl, 'carap' ) !== false )    { $label = 'Чорапи'; break; }
+            // Kljuci polj so pri cirilicnih atributih odstotkovno zakodirani ("%d1%82%d0%b5...").
+            $kl = gck_lower( rawurldecode( (string) $k ) );
+            if ( strpos( $kl, 'majic' ) !== false || strpos( $kl, 'тениск' ) !== false )    { $label = 'Тениска';  break; }
+            if ( strpos( $kl, 'bokseric' ) !== false || strpos( $kl, 'боксерк' ) !== false ) { $label = 'Боксерки'; break; }
+            if ( strpos( $kl, 'carap' ) !== false || strpos( $kl, 'чорап' ) !== false )     { $label = 'Чорапи'; break; }
         }
 
         $clean = [];
