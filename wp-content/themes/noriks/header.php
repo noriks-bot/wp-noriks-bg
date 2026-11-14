@@ -428,6 +428,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <span><?php echo get_field("webshop_language", "options"); ?></span>
       </div>
 
+      <?php if ( function_exists( 'brand_chrome_racun' ) ) { brand_chrome_racun(); } ?>
       <div class="cart-auto-icon">
           
           

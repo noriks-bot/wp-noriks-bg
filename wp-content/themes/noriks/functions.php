@@ -27,6 +27,7 @@ include(get_template_directory() . '/functions/options.php');
 include(get_template_directory() . '/functions/single_product_mods.php');
 include(get_template_directory() . '/functions/discounts.php');
 include(get_template_directory() . '/functions/fb_attribution.php');
+include(get_template_directory() . '/functions/brand-chrome.php'); // glava, noga, meni, trgovina, domaca stran (premium)
 
 /**
  * Auto-apply coupon from URL parameter on checkout

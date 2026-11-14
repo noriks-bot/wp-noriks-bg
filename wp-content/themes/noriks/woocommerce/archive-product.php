@@ -246,7 +246,7 @@ function is_active_menu_item( $path ) {
 <section class="one-banner-shop" style="position: relative; margin: 0 auto; padding: 0;">
 
   <img
-    src="/hr/wp-content/themes/noriks/img/noriks-shop.png"
+    src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/noriks-shop.png"
     style="display:block; width:100%; min-height:105px; border-radius:0;"
     alt=""
   >

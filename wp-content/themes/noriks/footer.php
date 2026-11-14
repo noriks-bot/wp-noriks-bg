@@ -66,6 +66,7 @@
 		$nf_brand = 'NORIKS е европейска марка продукти за всекидневна употреба. Фокусираме се върху качеството, комфорта и честните цени — вече над 120 000 клиенти ни се доверяват.';
 	}
 	$nf_bg      = get_field( 'footer_bg_image', 'option' ); // background photo behind the brand band
+	if ( ! $nf_bg && function_exists( 'brand_noga_slika' ) ) { $nf_bg = brand_noga_slika(); }
 	$nf_legal   = get_field( 'footer_legal_text', 'option' );
 	if ( ! $nf_legal ) {
 		$nf_legal = 'NORIKS BRAND. Всички права запазени. Цените включват ДДС. Изображенията са илюстративни.';
@@ -105,6 +106,7 @@
 			<div class="nf-wrap nf-main-grid">
 
 				<div class="nf-brand-col">
+					<?php if ( function_exists( 'brand_noga_geslo' ) && '' !== brand_noga_geslo() ) : ?><h3 class="nf-brand-tagline"><?php echo esc_html( brand_noga_geslo() ); ?></h3><?php endif; ?>
 					<p class="nf-brand-desc"><?php echo esc_html( $nf_brand ); ?></p>
 					<a class="nf-btn nf-btn-outline" href="/bg/shop">Пазарувай сега</a>
 				</div>
