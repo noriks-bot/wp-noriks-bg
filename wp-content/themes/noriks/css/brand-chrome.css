@@ -604,3 +604,45 @@ body.home .review-product{order:3;margin:14px 0 0!important;padding:8px 10px;bor
 body.home .review-product a{color:#fff!important;font-size:12.5px!important}
 @media (max-width:1100px){body.home .review-card{flex-basis:calc((100vw - 52px - 36px)/3.2)}}
 @media (max-width:768px){body.home .review-card{flex-basis:72vw}}
+
+/* ===== stran izdelka: mnenja v slogu ameriskih trgovin (zid kartic s fotografijami) ===== */
+body.single-product .comparison-section-gray,body.single-product .comparison-intro-gray{max-width:1320px!important;margin:0 auto!important;padding:0 26px!important;box-sizing:border-box;text-align:left!important}
+body.single-product .comparison-intro-gray{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+body.single-product .comparison-intro-gray h1{margin:0 0 10px!important;font-family:var(--ch-disp)!important;font-size:clamp(26px,2.8vw,40px)!important;line-height:1.08!important;font-weight:800!important;letter-spacing:-.03em!important;color:#0B0B0B!important;text-align:left!important;max-width:24ch}
+body.single-product .comparison-intro-gray .note{margin:0!important;max-width:74ch;font-family:var(--ch-body)!important;font-size:16px!important;line-height:1.5!important;color:#5F5B54!important;text-align:left!important}
+body.single-product #reviews-section,body.single-product #reviews-section *{font-family:var(--ch-body)!important}
+body.single-product #reviews-section .basic-reviews-section-container{max-width:1320px!important;padding-left:26px!important;padding-right:26px!important;box-sizing:border-box}
+/* zavihka */
+body.single-product #reviews-section .reviews-tabs{gap:8px!important;border-bottom:0!important;margin:6px 0 22px!important;flex-wrap:wrap}
+body.single-product #reviews-section .reviews-tab{height:42px;padding:0 16px!important;border:1px solid rgba(11,11,11,.18)!important;border-radius:4px!important;background:#fff!important;color:#0B0B0B!important;font-size:13.5px!important;font-weight:700!important;cursor:pointer;transition:background-color .15s ease,color .15s ease,border-color .15s ease}
+body.single-product #reviews-section .reviews-tab:hover{border-color:#0B0B0B!important}
+body.single-product #reviews-section .reviews-tab.is-active{background:#0B0B0B!important;border-color:#0B0B0B!important;color:#fff!important}
+/* zid kartic */
+body.single-product #reviews-section .reviews-grid:not([style*="none"]){display:block!important;column-count:4;column-gap:16px}
+body.single-product #reviews-section .review-card{display:flex;flex-direction:column;width:100%;height:auto!important;margin:0 0 16px!important;padding:0!important;break-inside:avoid;-webkit-column-break-inside:avoid;border:1px solid rgba(11,11,11,.1)!important;border-radius:8px!important;background:#fff!important;box-shadow:none!important;overflow:hidden;box-sizing:border-box}
+body.single-product #reviews-section .review-card .identity{order:1;display:flex;flex-wrap:wrap;align-items:center;gap:0 8px;margin:0!important;padding:0 16px}
+body.single-product #reviews-section .review-card .avatar{display:none}
+body.single-product #reviews-section .review-card .avatar:has(img){display:block;order:-1;flex:0 0 calc(100% + 32px);width:calc(100% + 32px);height:auto;aspect-ratio:1/1;margin:0 -16px;border:0!important;border-radius:0!important;background:#EFEDE8}
+body.single-product #reviews-section .review-card .avatar img{width:100%;height:100%;object-fit:cover;display:block;border-radius:0!important}
+body.single-product #reviews-section .review-card .name{margin-top:14px;font-size:15px!important;font-weight:800!important;color:#0B0B0B!important}
+body.single-product #reviews-section .review-card .verified{display:inline-flex;align-items:center;gap:5px;margin:14px 0 0!important;padding:0!important;background:none!important;color:#1E7A46!important;font-size:12px!important;font-weight:700!important;line-height:1.2}
+body.single-product #reviews-section .review-card .verified::before{content:"";width:14px;height:14px;border-radius:50%;background:#1E7A46 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/10px no-repeat}
+body.single-product #reviews-section .review-card .stars{order:2;margin:8px 0 0!important;padding:0 16px;color:#F5A623!important;font-size:16px!important;letter-spacing:2px!important;line-height:1}
+body.single-product #reviews-section .review-card .content{order:3;margin:0!important;padding:10px 16px 16px;color:#0B0B0B!important;font-size:15px!important;line-height:1.5!important}
+body.single-product #reviews-section .review-card .card-top{order:4;display:flex;align-items:center;justify-content:space-between;gap:10px;margin:auto 0 0!important;padding:11px 16px;border-top:1px solid rgba(11,11,11,.08);background:#FAF9F7}
+body.single-product #reviews-section .review-card .product-title{margin:0!important;font-size:12.5px!important;font-weight:600!important;line-height:1.3!important;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body.single-product #reviews-section .review-card .product-title a{color:#5F5B54!important;text-decoration:none!important}
+body.single-product #reviews-section .review-card .date{margin:0!important;color:#958F86!important;font-size:12px!important;white-space:nowrap}
+body.single-product #reviews-section .cta-button2{display:inline-flex!important;align-items:center;justify-content:center;height:52px;padding:0 32px!important;border-radius:4px!important;background:#0B0B0B!important;color:#fff!important;font-size:13px!important;font-weight:700!important;letter-spacing:.1em;text-transform:uppercase!important;text-decoration:none!important;transition:background-color .16s ease,color .16s ease}
+body.single-product #reviews-section .cta-button2:hover{background:#F5A623!important;color:#0B0B0B!important}
+@media (max-width:1100px){body.single-product #reviews-section .reviews-grid:not([style*="none"]){column-count:3}}
+@media (max-width:768px){
+  body.single-product .comparison-section-gray,body.single-product #reviews-section .basic-reviews-section-container{padding-left:15px!important;padding-right:15px!important}
+  body.single-product #reviews-section .reviews-grid:not([style*="none"]){column-count:2;column-gap:10px}
+  body.single-product #reviews-section .review-card{margin-bottom:10px!important}
+  body.single-product #reviews-section .review-card .content{font-size:14px!important;padding:8px 12px 12px}
+  body.single-product #reviews-section .review-card .identity,body.single-product #reviews-section .review-card .stars{padding-left:12px;padding-right:12px}
+  body.single-product #reviews-section .review-card .avatar:has(img){flex-basis:calc(100% + 24px);width:calc(100% + 24px);margin:0 -12px}
+  body.single-product #reviews-section .review-card .card-top{padding:9px 12px;flex-direction:column;align-items:flex-start;gap:2px}
+  body.single-product #reviews-section .reviews-tab{flex:1 1 auto;font-size:12.5px!important;padding:0 10px!important}
+}
