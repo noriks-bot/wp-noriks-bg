@@ -852,7 +852,7 @@ body ul.products li.product{padding:0 0 12px!important;overflow:hidden}
 body ul.products li.product a.woocommerce-loop-product__link img{border-radius:0!important;width:100%!important}
 body ul.products li.product .woocommerce-loop-product__title,body ul.products li.product .price,body ul.products li.product .ch-opis{padding-left:14px!important;padding-right:14px!important}
 body ul.products li.product .ch-vec{margin:12px 14px 2px!important}
-body ul.products li.product .badge{top:10px!important;right:10px!important}
+body ul.products li.product .badge{top:10px!important;left:10px!important;right:auto!important;border-radius:3px!important}
 @media (max-width:768px){
   .nb-drobtine--izdelek{padding:12px 15px 0}
   .nb-izd__telo{padding:12px 10px 10px}

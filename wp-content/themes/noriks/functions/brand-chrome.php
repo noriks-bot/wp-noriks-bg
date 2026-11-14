@@ -1014,6 +1014,58 @@ add_filter( 'gettext', function ( $prevod, $izvirnik, $domena ) {
 	return isset( $bg[ $izvirnik ] ) ? $bg[ $izvirnik ] : $prevod;
 }, 30, 3 );
 
+// Stranska kosarica (vticnik nima bolgarskega prevoda): nizi, ki jih vidi kupec.
+add_filter( 'gettext', function ( $prevod, $izvirnik, $domena ) {
+	if ( 'side-cart-woocommerce' !== $domena ) {
+		return $prevod;
+	}
+	static $bg = array(
+		'Price: '                 => 'Цена: ',
+		'Price:'                  => 'Цена:',
+		'Qty:'                    => 'Кол.:',
+		'Total'                   => 'Общо',
+		'Tax'                     => 'ДДС',
+		'Shipping'                => 'Доставка',
+		'Discount'                => 'Отстъпка',
+		'Free Gift'               => 'Подарък',
+		'Add'                     => 'Добави',
+		'Add to Cart'             => 'Добави в количката',
+		'Apply'                   => 'Приложи',
+		'Apply Coupon'            => 'Приложи купон',
+		'Have a Promo Code?'      => 'Имате промо код?',
+		'Enter Promo Code'        => 'Въведете промо код',
+		'Please enter promo code' => 'Моля, въведете промо код',
+		'Empty Cart'              => 'Изпразни количката',
+		'Cart Emptied'            => 'Количката е изпразнена',
+		'Save for Later'          => 'Запази за по-късно',
+		'Saved'                   => 'Запазено',
+		'[Remove]'                => '[Премахни]',
+		'Undo?'                   => 'Отмяна?',
+		'View'                    => 'Виж',
+		'Submit'                  => 'Изпрати',
+		'Calculate'               => 'Изчисли',
+		'Calculate Shipping'      => 'Изчисли доставката',
+		'Item updated'            => 'Продуктът е обновен',
+		'Item removed'            => 'Продуктът е премахнат',
+		'Item added back'         => 'Продуктът е върнат',
+		'Item added to cart'      => 'Продуктът е добавен в количката',
+		'Item added to cart.'     => 'Продуктът е добавен в количката.',
+		'Something went wrong'    => 'Нещо се обърка',
+		'Coupon has been removed' => 'Купонът е премахнат',
+		'%s applied successfully' => '%s е приложен успешно',
+		'Shipping updated'        => 'Доставката е обновена',
+		'Address updated'         => 'Адресът е обновен',
+		'Only %s% in stock'       => 'Само %s% налични',
+		'Quantity can only be purchased in multiple of %s%' => 'Количеството може да се поръчва само кратно на %s%',
+		'Please use checkout form to calculate shipping'    => 'Доставката се изчислява при плащане',
+		'Shipping costs are calculated during checkout.'    => 'Цената на доставката се изчислява при плащане.',
+		'Shipping options will be updated during checkout.' => 'Начините на доставка се обновяват при плащане.',
+		'Congratulations! Free gift has been added to your cart.' => 'Поздравления! Подаръкът е добавен в количката.',
+		'Free gift has been removed from your cart.'              => 'Подаръкът е премахнат от количката.',
+	);
+	return isset( $bg[ $izvirnik ] ) ? $bg[ $izvirnik ] : $prevod;
+}, 30, 3 );
+
 add_filter( 'wpcf7_form_elements', function ( $html ) {
 	return strtr( (string) $html, array(
 		'Vaše ime i prezime' => 'Вашето име и фамилия',
