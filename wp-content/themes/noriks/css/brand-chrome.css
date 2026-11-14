@@ -757,3 +757,86 @@ body .info-banner .phone-footer-checkout{justify-content:flex-start!important;ma
 .ch-dd .ch-dd__povezave a:hover{color:#B5730E!important;padding-left:6px}
 .ch-dd .ch-dd__povezave a:hover::after{opacity:1;right:-2px}
 .ch-dd .ch-dd__naslov{font-size:30px}
+
+/* ===== stran izdelka: ista pisava, barve in zaobljenosti kot domaca stran ===== */
+body.single-product #primary,body.single-product #primary *:not(svg):not(path):not(i):not([class*="icon"]):not([class*="star"]):not([class*="fa-"]):not([class*="dashicons"]):not([class*="xoo-"]){font-family:var(--ch-body)!important}
+body.single-product .product_title{color:#0B0B0B!important;font-weight:800!important;letter-spacing:-.03em!important;line-height:1.08!important;font-size:clamp(28px,2.7vw,40px)!important}
+body.single-product .woocommerce-product-details__short-description,body.single-product .woocommerce-product-details__short-description p{color:#5F5B54!important;font-size:16px!important}
+body.single-product .summary .price,body.single-product .whole-price-block .price{display:flex;align-items:baseline;gap:10px;color:#0B0B0B!important}
+body.single-product .summary .price del,body.single-product .summary .price del *{color:#8B867E!important;font-weight:400!important;font-size:18px!important}
+body.single-product .summary .price ins,body.single-product .summary .price ins *{color:#0B0B0B!important;font-weight:800!important;text-decoration:none!important;background:none!important;font-size:26px!important;letter-spacing:-.02em}
+body.single-product .summary .price>.amount,body.single-product .summary .price>.amount *{color:#0B0B0B!important;font-weight:800!important;font-size:26px!important}
+/* izbirniki: paket, barva, velikost */
+body.single-product .npk-label,body.single-product .option-title,body.single-product .size-chart-left>span:first-child,body.single-product table.variations th.label,body.single-product table.variations th.label label{color:#0B0B0B!important;font-size:13px!important;font-weight:700!important;letter-spacing:.1em!important;text-transform:uppercase!important}
+body.single-product .npk-size{border:1px solid rgba(11,11,11,.18)!important;border-radius:6px!important;background:#fff!important;color:#0B0B0B!important;box-shadow:none!important;transition:border-color .15s ease,background-color .15s ease,color .15s ease}
+body.single-product .npk-size:hover{border-color:#0B0B0B!important}
+body.single-product .npk-size.is-active{background:#0B0B0B!important;border-color:#0B0B0B!important;color:#fff!important}
+body.single-product .npk-size.is-active *{color:#fff!important}
+body.single-product .npk-size-n{font-weight:800!important;letter-spacing:-.01em}
+body.single-product .npk-color{border:1px solid rgba(11,11,11,.14)!important;border-radius:6px!important;overflow:hidden;box-shadow:none!important;transition:border-color .15s ease,box-shadow .15s ease}
+body.single-product .npk-color img{border-radius:0!important}
+body.single-product .npk-color:hover{border-color:#0B0B0B!important}
+body.single-product .npk-color.is-active{border-color:#0B0B0B!important;box-shadow:0 0 0 1px #0B0B0B!important}
+body.single-product .variation-button{border:1px solid rgba(11,11,11,.18)!important;border-radius:6px!important;background:#fff!important;color:#0B0B0B!important;font-weight:700!important;transition:border-color .15s ease,background-color .15s ease,color .15s ease}
+body.single-product .variation-button:hover{border-color:#0B0B0B!important}
+body.single-product .variation-button.active{background:#0B0B0B!important;border-color:#0B0B0B!important;color:#fff!important}
+body.single-product .variation-button.disabled{opacity:.4}
+/* glavni gumb: isti kot na domaci strani */
+body.single-product .single_add_to_cart_button,body.single-product button.single_add_to_cart_button.alt{min-height:58px;border:0!important;border-radius:6px!important;background:#F5A623!important;color:#0B0B0B!important;font-size:15px!important;font-weight:800!important;letter-spacing:.06em!important;text-transform:uppercase!important;box-shadow:none!important;transition:background-color .16s ease,color .16s ease}
+body.single-product .single_add_to_cart_button:hover,body.single-product button.single_add_to_cart_button.alt:hover{background:#0B0B0B!important;border-color:#0B0B0B!important;color:#fff!important}
+body.single-product .single_add_to_cart_button .amount,body.single-product .single_add_to_cart_button *{color:inherit!important}
+/* jamstva, dostava, znacilnosti */
+body.single-product .features .feature__text{color:#3B3833!important;font-size:13.5px!important;font-weight:500}
+body.single-product .info-box{border:0!important;border-radius:6px!important;background:#F5F3EF!important;color:#0B0B0B!important}
+body.single-product .feature-card{border:0!important;border-radius:6px!important;background:#F5F3EF!important;box-shadow:none!important}
+body.single-product .feature-card p{color:#0B0B0B!important;font-weight:600!important}
+body.single-product .accordion-item{border-color:rgba(11,11,11,.12)!important}
+body.single-product .accordion-header h3{color:#0B0B0B!important;font-size:15.5px!important;font-weight:700!important;letter-spacing:0!important}
+body.single-product .woocommerce-product-gallery__image img,body.single-product .woocommerce-product-gallery .flex-control-thumbs img{border-radius:6px!important}
+body.single-product .summary .badge,body.single-product .badge-on-img .badge{background:#F5A623!important;color:#0B0B0B!important;border-radius:3px!important;font-weight:700!important}
+/* why sekcije */
+body.single-product .fis-h2,body.single-product .fis-hero-title,body.single-product .fis-wrap h2,body.single-product .fis-wrap h3,body.single-product .fis-card-title,body.single-product .fis-upg-title,body.single-product .fis-exp-name,body.single-product .fis-thermo-label{font-family:var(--ch-disp)!important;letter-spacing:-.025em!important}
+body.single-product .fis-h2,body.single-product .fis-wrap h2{color:#0B0B0B;font-weight:800!important;line-height:1.08!important}
+body.single-product .fis-hero-title{font-weight:800!important;letter-spacing:-.035em!important;line-height:1.05!important;text-shadow:none!important}
+body.single-product .fis-eyebrow{font-size:12px!important;font-weight:700!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:#B5730E!important}
+body.single-product .fis-eyebrow strong{color:inherit!important}
+body.single-product .fis-ugc{background:#0B0B0B!important}
+body.single-product .fis-thermo,body.single-product .fis-cheaper{background:#F5F3EF!important}
+body.single-product .fis-card,body.single-product .nk-col{border-radius:6px!important}
+body.single-product .nk-col{background:#F5F3EF!important}
+body.single-product .fis-exp-card,body.single-product .fis-ugc-media,body.single-product .fis-thermo-card,body.single-product .fis-row2-media{border-radius:8px!important}
+body.single-product .nk-cmp-card{border-radius:8px!important;border-color:rgba(11,11,11,.1)!important;box-shadow:none!important}
+body.single-product .nk-cmp-row>div:nth-child(2){background:#F5F3EF!important}
+body.single-product .nk-cmp-head>div:nth-child(2){background:#0B0B0B!important;color:#fff!important}
+body.single-product .nk-cmp-head>div:nth-child(2) .nk-cmp-price,body.single-product .nk-yes{color:#F5A623!important}
+body.single-product .nk-yes{background:#0B0B0B!important;border-radius:4px!important}
+body.single-product .nk-no{border-radius:4px!important;background:transparent!important;border:1px solid rgba(11,11,11,.2)}
+body.single-product .nk-cmp-head>div:nth-child(3){background:#fff!important}
+@media (max-width:768px){
+  body.single-product .single_add_to_cart_button,body.single-product button.single_add_to_cart_button.alt{font-size:14px!important;letter-spacing:.04em!important}
+  body.single-product .summary .price ins,body.single-product .summary .price ins *{font-size:23px!important}
+}
+
+/* ===== mreza trgovine: ista kartica kot na domaci strani ===== */
+body ul.products li.product{padding:8px 8px 12px!important;border:1px solid rgba(11,11,11,.1)!important;border-radius:8px!important;background:#fff!important;box-sizing:border-box;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+body ul.products li.product:hover{transform:translateY(-4px);border-color:rgba(11,11,11,.2)!important;box-shadow:0 20px 38px -20px rgba(11,11,11,.3)!important}
+body ul.products li.product a.woocommerce-loop-product__link img{border-radius:5px!important;margin-bottom:12px!important}
+body ul.products li.product .woocommerce-loop-product__title,body ul.products li.product .price,body ul.products li.product .ch-opis{padding-left:6px!important;padding-right:6px!important}
+body ul.products li.product .woocommerce-loop-product__title{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;font-size:15.5px!important;line-height:1.3!important}
+body ul.products li.product .price ins,body ul.products li.product .price ins *,body ul.products li.product .price>.amount{font-size:18px!important;font-weight:800!important;color:#0B0B0B!important;text-decoration:none!important}
+body ul.products li.product .ch-vec{display:flex!important;align-items:center;justify-content:center;gap:10px;height:42px;margin:12px 6px 0!important;border-radius:4px;background:#0B0B0B;color:#fff!important;font-size:12px!important;font-weight:700!important;letter-spacing:.1em;text-transform:uppercase;transition:background-color .18s ease,color .18s ease}
+body ul.products li.product .ch-vec svg{width:15px;height:15px;transition:transform .18s ease}
+body ul.products li.product:hover .ch-vec{background:#F5A623;color:#0B0B0B!important}
+body ul.products li.product:hover .ch-vec svg{transform:translateX(4px)}
+body ul.products li.product .badge{top:16px!important;right:16px!important}
+@media (max-width:768px){
+  body ul.products li.product{padding:6px 6px 10px!important}
+  body ul.products li.product .ch-vec{height:38px;font-size:11px!important;letter-spacing:.05em;margin:10px 2px 0!important}
+  body ul.products li.product .woocommerce-loop-product__title{font-size:14px!important}
+}
+
+/* ===== nezno pojavljanje sekcij ob drsenju (samo ce skripta tece) ===== */
+@media (prefers-reduced-motion:no-preference){
+  html.nb-anim .nb-pojavi{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+  html.nb-anim .nb-pojavi.nb-vidno{opacity:1;transform:none}
+}

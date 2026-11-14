@@ -852,6 +852,21 @@ add_action( 'wp_footer', function () {
 	?>
 <script>
 (function () {
+	// Nezno pojavljanje sekcij: brez podpore ali ob napaki ostane vse vidno.
+	try {
+		if ('IntersectionObserver' in window) {
+			var deli = document.querySelectorAll('.nb-razlike__glava, .nb-razlika, .nb-glava, .nb-kol, .nb-kategorije__glava, .nb-zgodba__slika, .nb-zgodba__besedilo, .nb-primerjava__levo, .nb-primerjava__tabela, body.home .most-popular .collections__header, body.home .reviews-section .collections__title, body .info-banner .info-item');
+			if (deli.length) {
+				document.documentElement.classList.add('nb-anim');
+				var op = new IntersectionObserver(function (vnosi) {
+					vnosi.forEach(function (v) { if (v.isIntersecting) { v.target.classList.add('nb-vidno'); op.unobserve(v.target); } });
+				}, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+				Array.prototype.forEach.call(deli, function (d, i) { d.classList.add('nb-pojavi'); d.style.transitionDelay = ((i % 4) * 60) + 'ms'; op.observe(d); });
+				// varovalka: po 4 s pokazi vse, kar bi ostalo skrito
+				setTimeout(function () { Array.prototype.forEach.call(deli, function (d) { d.classList.add('nb-vidno'); }); }, 4000);
+			}
+		}
+	} catch (e) { document.documentElement.classList.remove('nb-anim'); }
 	document.addEventListener('click', function (e) {
 		if (!e.target.closest) { return; }
 		var b = e.target.closest('.nb-pusc');

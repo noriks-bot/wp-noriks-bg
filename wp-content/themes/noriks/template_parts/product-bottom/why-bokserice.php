@@ -26,7 +26,7 @@ $bx_col = get_template_directory_uri() . '/img/boksarice-barve/';
 <p class="fis-exp-author"><strong>Платът отблизо</strong><br>Виж как са направени боксерките.</p></div>
 <div class="fis-exp-cards">
 <div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-fabric.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Мек модал</div><div class="fis-exp-role">По-мек от памука</div></div></div>
-<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-stretch.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Vracia sa do tvaru</div><div class="fis-exp-role">От носене не се разтяга</div></div></div>
+<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-stretch.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Връща се във формата си</div><div class="fis-exp-role">От носене не се разтяга</div></div></div>
 <div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-waist.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Мек колан</div><div class="fis-exp-role">Държи, но не стяга</div></div></div>
 </div></div></section>
 
@@ -44,7 +44,7 @@ $bx_col = get_template_directory_uri() . '/img/boksarice-barve/';
 </style>
 <section class="nk-colors"><div class="fis-wrap"><h2 class="fis-h2 fis-center">5 цвята за всеки ден</h2><p class="nk-colors-sub">Цветовете не избледняват и не се изпират дори след много пранета.</p>
 <div class="nk-col-grid"><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-crna.jpg' . $bx_ver ); ?>" alt="NORIKS боксерки черни" loading="lazy"><span>Черни</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-temnomodra.jpg' . $bx_ver ); ?>" alt="NORIKS боксерки тъмносини" loading="lazy"><span>Тъмносини</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-rdeca.jpg' . $bx_ver ); ?>" alt="NORIKS боксерки червени" loading="lazy"><span>Червени</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-siva.jpg' . $bx_ver ); ?>" alt="NORIKS боксерки сиви" loading="lazy"><span>Сиви</span></div><div class="nk-col"><img src="<?php echo esc_url( $bx_col . 'boksarice-barva-zelena.jpg' . $bx_ver ); ?>" alt="NORIKS боксерки зелени" loading="lazy"><span>Зелени</span></div></div>
-<div class="nk-col-note"><span>✔ Farba nevybledne</span><span>✔ Коланът остава черен</span><span>✔ Всички размери S–5XL</span></div>
+<div class="nk-col-note"><span>✔ Цветът не избледнява</span><span>✔ Коланът остава черен</span><span>✔ Всички размери S–5XL</span></div>
 
 </div></section>
 
@@ -55,7 +55,7 @@ $bx_col = get_template_directory_uri() . '/img/boksarice-barve/';
 <div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-kupec-4.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Най-добрите боксерки за моята фигура.“</p></div>
 </div></div></section>
 
-<section class="fis-thermo"><div class="fis-wrap"><p class="fis-eyebrow"><strong>NORIKS</strong> strih</p><h2 class="fis-h2 fis-center">3 неща, които правят разликата</h2><div class="fis-thermo-grid">
+<section class="fis-thermo"><div class="fis-wrap"><p class="fis-eyebrow"><strong>NORIKS</strong> кройка</p><h2 class="fis-h2 fis-center">3 неща, които правят разликата</h2><div class="fis-thermo-grid">
 <div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-squat.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Държат на място</div></div>
 <div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-pouch.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Място там, където ти трябва</div></div>
 <div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $bx_vid . 'boksarice-wash.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Изсъхват бързо</div></div>
@@ -70,7 +70,7 @@ $bx_col = get_template_directory_uri() . '/img/boksarice-barve/';
 
 <section class="fis-eng"><div class="fis-wrap fis-row2"><div class="fis-row2-copy"><h2 class="fis-h2">Разработени за всеки ден. Изпробвани върху мъже с всякакви фигури.</h2><p>Доработвахме кройката върху мъже с всякакви фигури, от S до 5XL, докато станаха удобни от сутрин до вечер: коланът не стяга, крачолите остават на място. Всяка поръчка проверяваме преди изпращане, за да пристигне без дефект.</p></div><div class="fis-row2-media nk-media nk-wide"><video src="<?php echo esc_url( $bx_vid . 'boksarice-pack.mp4' . $bx_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video></div></div></section>
 
-<section class="fis-cheaper"><div class="fis-wrap fis-row2"><div class="fis-row2-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-8-za-ceno-3.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><div class="fis-row2-copy"><p class="fis-eyebrow">УМНА ПОКУПКА</p><h2 class="fis-h2">8 boxeriek za cenu troch z obchodu</h2><p>Едни качествени модални боксерки струват в магазина 15–20 €. В пакета NORIKS 4+4 ПОДАРЪК получаваш осем боксерки за 59,99 €, или 7,50 € за бройка. Без компромис в кройката или материала и с 30 дни за замяна на размера.</p></div></div></section>
+<section class="fis-cheaper"><div class="fis-wrap fis-row2"><div class="fis-row2-media nk-media"><img src="<?php echo esc_url( $bx_img . 'boksarice-8-za-ceno-3.jpg' . $bx_ver ); ?>" alt="" loading="lazy"></div><div class="fis-row2-copy"><p class="fis-eyebrow">УМНА ПОКУПКА</p><h2 class="fis-h2">8 боксерки на цената на три от магазина</h2><p>Едни качествени модални боксерки струват в магазина 15–20 €. В пакета NORIKS 4+4 ПОДАРЪК получаваш осем боксерки за 59,99 €, или 7,50 € за бройка. Без компромис в кройката или материала и с 30 дни за замяна на размера.</p></div></div></section>
 
 <style>
 .nk-cmp{padding:48px 0;background:#fff}

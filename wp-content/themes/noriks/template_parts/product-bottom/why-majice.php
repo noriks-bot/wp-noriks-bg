@@ -12,16 +12,16 @@ $mj_ico = get_template_directory_uri() . '/img/majica-icons/';
 $mj_col = get_template_directory_uri() . '/img/majica-barve/';
 ?>
 <section class="fis-science"><div class="fis-wrap"><div class="fis-box"><h2 class="fis-title">Създадени за истински мъже: 4 разлики, които забелязваш веднага</h2><div class="fis-grid">
-<div class="fis-card"><h3 class="fis-card-title">Коремът остава покрит</h3><p class="fis-card-text">По-дълга кройка <strong>zostane dole</strong>, дори когато се наведеш или вдигнеш ръце.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Коремът остава покрит</h3><p class="fis-card-text">По-дълга кройка <strong>остава на място</strong>, дори когато се наведеш или вдигнеш ръце.</p></div>
 <div class="fis-card"><h3 class="fis-card-title">Рамене без стягане</h3><p class="fis-card-text">По-широка кройка в гърдите и раменете <strong>подчертава фигурата</strong> без опъване под мишниците.</p></div>
-<div class="fis-card"><h3 class="fis-card-title">Форма и след пране</h3><p class="fis-card-text">Ringspun bavlna <strong>не се свива и не се разтяга</strong>, деколтето остава право.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Форма и след пране</h3><p class="fis-card-text">Ringspun памукът <strong>не се свива и не се разтяга</strong>, деколтето остава право.</p></div>
 <div class="fis-card"><h3 class="fis-card-title">Нищо не драска</h3><p class="fis-card-text">Отпечатан етикет вместо зашит, <strong>нежно за кожата</strong> цял ден.</p></div>
 </div></div></div></section>
 
 <section class="fis-hero"><video class="fis-hero-vid" src="<?php echo esc_url( $mj_vid . 'majica-hero.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-hero-overlay"></div><div class="fis-hero-inner"><h2 class="fis-hero-title">Тениска, която най-накрая стои добре. От сутрин до вечер.</h2></div></section>
 
 <section class="fis-experts"><div class="fis-wrap fis-exp-grid"><div class="fis-exp-quote"><h2 class="fis-h2">Материал, който усещаш</h2>
-<p>Изработени от <strong>ringspun bavlny</strong>, която е по-мека и по-здрава от обикновения памук. Тениската е дишаща, държи формата си и не се мачка.</p>
+<p>Изработени от <strong>ringspun памук</strong>, който е по-мек и по-здрав от обикновения памук. Тениската е дишаща, държи формата си и не се мачка.</p>
 <p>✔ Плътен, а при това лек плат<br>✔ Не прозира, дори бялата<br>✔ Цветът остава жив и след пране</p>
 <p class="fis-exp-author"><strong>Платът отблизо</strong><br>Виж как е направена тениската.</p></div>
 <div class="fis-exp-cards">
@@ -45,14 +45,14 @@ $mj_col = get_template_directory_uri() . '/img/majica-barve/';
 <section class="nk-colors"><div class="fis-wrap"><h2 class="fis-h2 fis-center">7 цвята, които остават като нови</h2><p class="nk-colors-sub">Цветовете не избледняват и не се изпират дори след много пранета.</p>
 <div class="nk-col-grid">
 <div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-crna.jpg' . $mj_ver ); ?>" alt="NORIKS тениска черна" loading="lazy"><span>Черна</span></div>
-<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-bela.jpg' . $mj_ver ); ?>" alt="NORIKS тениска бяла" loading="lazy"><span>Biela</span></div>
+<div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-bela.jpg' . $mj_ver ); ?>" alt="NORIKS тениска бяла" loading="lazy"><span>Бяла</span></div>
 <div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-siva.jpg' . $mj_ver ); ?>" alt="NORIKS тениска сива" loading="lazy"><span>Сива</span></div>
 <div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-bez.jpg' . $mj_ver ); ?>" alt="NORIKS тениска бежова" loading="lazy"><span>Бежова</span></div>
 <div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-temnomodra.jpg' . $mj_ver ); ?>" alt="NORIKS тениска тъмносиня" loading="lazy"><span>Тъмносиня</span></div>
 <div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-rjava.jpg' . $mj_ver ); ?>" alt="NORIKS тениска кафява" loading="lazy"><span>Кафява</span></div>
 <div class="nk-col"><img src="<?php echo esc_url( $mj_col . 'majica-barva-zelena.jpg' . $mj_ver ); ?>" alt="NORIKS тениска зелена" loading="lazy"><span>Зелена</span></div>
 </div>
-<div class="nk-col-note"><span>✔ Farba nevybledne</span><span>✔ Biela zostane biela</span><span>✔ Черната остава черна</span></div>
+<div class="nk-col-note"><span>✔ Цветът не избледнява</span><span>✔ Бялата остава бяла</span><span>✔ Черната остава черна</span></div>
 </div></section>
 
 <section class="fis-ugc"><div class="fis-wrap"><div class="fis-ugc-grid">
@@ -62,14 +62,14 @@ $mj_col = get_template_directory_uri() . '/img/majica-barve/';
 <div class="fis-ugc-card"><div class="fis-ugc-media nk-media"><img src="<?php echo esc_url( $mj_img . 'majica-kupec-4.jpg' . $mj_ver ); ?>" alt="" loading="lazy"></div><p class="fis-ugc-cap">„Кройката наистина е сполучлива, нито твърде тясна, нито твърде широка.“</p></div>
 </div></div></section>
 
-<section class="fis-thermo"><div class="fis-wrap"><p class="fis-eyebrow"><strong>NORIKS</strong> strih</p><h2 class="fis-h2 fis-center">3 неща, които правят разликата</h2><div class="fis-thermo-grid">
+<section class="fis-thermo"><div class="fis-wrap"><p class="fis-eyebrow"><strong>NORIKS</strong> кройка</p><h2 class="fis-h2 fis-center">3 неща, които правят разликата</h2><div class="fis-thermo-grid">
 <div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-arms.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">По-дълга кройка</div></div>
 <div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-shelf.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">По-широки рамене</div></div>
 <div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $mj_vid . 'majica-wash.mp4' . $mj_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">Не се мачка</div></div>
 </div></div></section>
 
 <section class="fis-upg"><div class="fis-wrap"><h2 class="fis-h2 fis-center">Четири детайла, които имат значение</h2><div class="fis-upg-grid">
-<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-1.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Ringspun bavlna</div><p class="fis-upg-text">По-мек и по-издръжлив от обикновения памук, така че тениската дълго изглежда като нова.</p></div>
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-1.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Ringspun памук</div><p class="fis-upg-text">По-мек и по-издръжлив от обикновения памук, така че тениската дълго изглежда като нова.</p></div>
 <div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-2.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Без зашит етикет</div><p class="fis-upg-text">Отпечатан етикет, който не драска на шията.</p></div>
 <div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-3.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Странични шевове</div><p class="fis-upg-text">Кройката следва тялото и не се извърта около талията.</p></div>
 <div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $mj_ico . 'ikona-4.svg' . $mj_ver ); ?>"><div class="fis-upg-title">Размери S–4XL</div><p class="fis-upg-text">Постоянни размери и замяна до 30 дни.</p></div>

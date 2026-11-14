@@ -190,7 +190,7 @@ function noriks_render_pack_switcher() {
 
         <?php if ( $shown > 1 ) : ?>
         <div class="npk-block">
-            <div class="npk-label"><?php esc_html_e( 'Vyber balenie', 'noriks' ); ?></div>
+            <div class="npk-label"><?php esc_html_e( 'Избери пакет', 'noriks' ); ?></div>
             <div class="npk-scroll">
             <div class="npk-sizes">
                 <?php foreach ( $sizes as $s => $list ) :
@@ -207,11 +207,11 @@ function noriks_render_pack_switcher() {
                        <?php echo $is_cur ? 'aria-current="true"' : ''; ?>>
                         <span class="npk-size-n"><?php
                             if ( (int) $s === 1 ) {
-                                esc_html_e( '1 ks', 'noriks' );
+                                esc_html_e( '1 бр.', 'noriks' );
                             } else {
-                                echo (int) $s; ?> <?php esc_html_e( 'ks', 'noriks' );
+                                echo (int) $s; ?> <?php esc_html_e( 'бр.', 'noriks' );
                             } ?></span>
-                        <span class="npk-size-p"><?php echo wp_kses_post( wc_price( $ppu ) ); ?><span class="npk-size-u"><?php esc_html_e( '/ ks', 'noriks' ); ?></span></span>
+                        <span class="npk-size-p"><?php echo wp_kses_post( wc_price( $ppu ) ); ?><span class="npk-size-u"><?php esc_html_e( '/ бр.', 'noriks' ); ?></span></span>
                     </a>
                 <?php endforeach; ?>
             </div>
@@ -222,7 +222,7 @@ function noriks_render_pack_switcher() {
 
         <?php if ( count( $same ) > 1 ) : ?>
         <div class="npk-block">
-            <div class="npk-label"><?php esc_html_e( 'Farba', 'noriks' ); ?></div>
+            <div class="npk-label"><?php esc_html_e( 'Цвят', 'noriks' ); ?></div>
             <div class="npk-scroll">
             <div class="npk-colors">
                 <?php foreach ( $same as $p ) :
