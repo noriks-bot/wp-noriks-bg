@@ -251,6 +251,25 @@ function noriks_bg_color_slug( $val ) {
         'фуксия'     => 'fuchsiova',
         'слива'      => 'slivkova',
         'розова'     => 'ruzova',
+        // moski spol in mnozina (darila v paketih, nogavice)
+        'черен'      => 'cierna',
+        'черни'      => 'cierna',
+        'бял'        => 'biela',
+        'сив'        => 'siva',
+        'сиви'       => 'siva',
+        'тъмносив'   => 'tmavosiva',
+        'син'        => 'modra',
+        'сини'       => 'modra',
+        'тъмносин'   => 'tmavomodra',
+        'тъмносини'  => 'tmavomodra',
+        'зелен'      => 'zelena',
+        'зелени'     => 'zelena',
+        'червен'     => 'cervena',
+        'червени'    => 'cervena',
+        'бежов'      => 'bezova',
+        'бежови'     => 'bezova',
+        'кафяв'      => 'hneda',
+        'кафяви'     => 'hneda',
     );
     $k = trim( mb_strtolower( (string) $val, 'UTF-8' ) );
     if ( isset( $map[ $k ] ) ) { return $map[ $k ]; }
