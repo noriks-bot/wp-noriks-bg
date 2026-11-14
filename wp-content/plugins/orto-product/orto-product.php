@@ -967,7 +967,7 @@ function gck_render_bundle_selector() {
             <?php endif; ?>
 
             <li><strong>✔ Премиум материали</strong></li>
-            <li><strong>✔ Pohodlie bez kompromisov</strong></li>
+            <li><strong>✔ Комфорт без компромиси</strong></li>
 
             <?php if ( has_term( array( 'orto-starter' ), 'product_cat', $product_id ) ) : ?>
                 <li style="color: #c00;"><strong>✔ Стартовият пакет е достъпен само веднъж на човек</strong></li>
@@ -993,7 +993,7 @@ function gck_render_bundle_selector() {
             
             <div class="gck-divider">
            <!-- <span>Više komada, veća ušteda!</span>-->
-           <span>Uzmite svoj ekskluzivni<br/> starter paket</span>
+           <span>Вземете своя ексклузивен<br/> стартов пакет</span>
         </div>
         
         
@@ -1006,7 +1006,7 @@ function gck_render_bundle_selector() {
                 <span class="dev-banner__icon">📦</span>
                 <span>Ограничено количество <b class="sold">0</b> / <b class="total">0</b> (Остават <b class="remain">0</b> бр.)</span>
             </div>
-            <div class="dev-banner__bar" aria-label="Sales progress">
+            <div class="dev-banner__bar" aria-label="Продадено количество">
                 <div class="dev-banner__fill"></div>
             </div>
         </div>
@@ -1935,14 +1935,14 @@ function gck_render_bundle_selector() {
 
                 <!--
                 <div class="bundle-total-line">
-                    <span style="font-weight:normal;">Ukupno:</span>
+                    <span style="font-weight:normal;">Общо:</span>
                     <span class="line-total"><?php echo number_format( (float) $data['total'], 2 ); ?>€</span>
                 </div>
 
 -->
 
 <div class="bundle-total-line">
-    <span style="font-weight:normal;">Celkom:</span>
+    <span style="font-weight:normal;">Общо:</span>
 
     <?php if ( ! empty($data['regular']) && (float)$data['regular'] > (float)$data['total'] ) : ?>
         <span class="gck-regular-price">
@@ -2082,7 +2082,7 @@ function gck_render_bundle_selector() {
                         <?php endif; ?>
                     <?php for ( $i = 1; $i <= $pairs; $i++ ) : ?>
                         <?php if ( $gck_pass['group'] === null && $gck_show_sections && $gck_paid > 0 && $i === 1 ) : ?>
-                            <div class="gck-pair-label">Vyber <?php echo (int) $gck_paid; ?> <?php echo esc_html( gck_sk_majice_phrase( $gck_paid, false, $gck_garment ) ); ?></div>
+                            <div class="gck-pair-label">Изберете <?php echo (int) $gck_paid; ?> <?php echo esc_html( gck_sk_majice_phrase( $gck_paid, false, $gck_garment ) ); ?></div>
                         <?php endif; ?>
                         <?php if ( $gck_pass['group'] === null && $gck_show_sections && $gck_free > 0 && $i === ( $gck_paid + 1 ) ) : ?>
                             <div class="gck-pair-label is-gratis">Изберете още <?php echo (int) $gck_free; ?> <?php echo esc_html( gck_sk_majice_phrase( $gck_free, true, $gck_garment ) ); ?></div>
