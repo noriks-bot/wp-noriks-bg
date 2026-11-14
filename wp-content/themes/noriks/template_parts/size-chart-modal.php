@@ -198,7 +198,7 @@
   <div  style="<?php if ( has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', get_the_ID() ) ): ?>  display: block; <?php endif; ?>"
         class="size-chart-left">
       
-      <?php if ( has_term( array( 'boxerky', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() )   && 
+      <?php if ( has_term( array( 'boksarki', 'boxerky', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() )   && 
        !has_term( 'black-friday', 'product_cat', get_the_ID() )   ): ?>
       
     
@@ -256,7 +256,7 @@
         Препоръчваме да изберете размер според обиколката на прасеца, а не според обичайния размер обувки.
       </div>
 
-      <?php elseif ( has_term( array( 'ponozky', 'zimske-carape	' ), 'product_cat', get_the_ID() ) ): ?>
+      <?php elseif ( has_term( array( 'chorapi', 'zimni-chorapi', 'ponozky', 'zimske-carape	' ), 'product_cat', get_the_ID() ) ): ?>
       
       
        <img

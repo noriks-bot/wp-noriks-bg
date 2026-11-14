@@ -22,13 +22,13 @@ if ( ! function_exists( 'noriks_product_type_map' ) ) :
 function noriks_product_type_map() : array {
     return array(
         // --- primary product types (order = resolution priority) ---
-        'starter'   => array( 'startovaci-balicek', 'starter-paketi', 'orto-starter', 'orto-majica-bokserica' ),
-        'majice'    => array( 'tricka', 'majice', 'orto-tricka', 'orto-majice' ),
-        'bokserice' => array( 'boxerky', 'bokserice', 'orto-boxerky', 'orto-bokserice', 'bokserice-sastavi-paket' ),
-        'carape'    => array( 'ponozky', 'orto-kompresijske-carape' ),
+        'starter'   => array( 'startovi-paketi', 'startovaci-balicek', 'starter-paketi', 'orto-starter', 'orto-majica-bokserica' ),
+        'majice'    => array( 'teniski', 'tricka', 'majice', 'orto-tricka', 'orto-majice' ),
+        'bokserice' => array( 'boksarki', 'boxerky', 'bokserice', 'orto-boxerky', 'orto-bokserice', 'bokserice-sastavi-paket' ),
+        'carape'    => array( 'chorapi', 'ponozky', 'orto-kompresijske-carape' ),
 
         // --- sub-variants / special buckets ---
-        'kompresijske-nogavice'   => array( 'ponozky', 'orto-kompresijske-carape' ),
+        'kompresijske-nogavice'   => array( 'chorapi', 'ponozky', 'orto-kompresijske-carape' ),
         'ortopas'                 => array( 'orto-ortopas', 'ortopas' ),
         // KneeFix ortopedska steznica za koljeno.
         'kneefix'                 => array( 'orto-kneefix' ),
@@ -45,7 +45,7 @@ function noriks_product_type_map() : array {
         'ortopedski-jastuk'       => array( 'orto-ortopedski-jastuk', 'ortopedski-jastuk' ),
 
         'majica-darila'           => array( 'orto-majica-darila', 'majica-darila' ),
-        'majice-bokserice-paketi' => array( 'sady', 'kompleti', 'majice-i-bokserice-paketi' ),
+        'majice-bokserice-paketi' => array( 'komplekti', 'sady', 'kompleti', 'majice-i-bokserice-paketi' ),
         'black-friday'            => array( 'black-friday' ),
         // Polar NORIKS Cloth — krpa za ciscenje (bez atributa)
         'cloath'                  => array( 'orto-cloath' ),

@@ -168,7 +168,7 @@ function brand_chrome_slika( $p ) {
 
 function brand_chrome_izdelki( $args, &$vsi ) {
 	$ids = array();
-	foreach ( wc_get_products( $args + array( 'status' => 'publish', 'orderby' => 'menu_order', 'order' => 'ASC' ) ) as $p ) {
+	foreach ( wc_get_products( $args + array( 'status' => 'publish', 'orderby' => 'menu_order', 'order' => 'ASC', 'exclude' => function_exists( 'noriks_bg_skriti' ) ? noriks_bg_skriti() : array() ) ) as $p ) {
 		$id = (int) $p->get_id();
 		if ( ! isset( $vsi[ $id ] ) ) {
 			$vsi[ $id ] = array(
@@ -188,7 +188,7 @@ function brand_chrome_meni() {
 	if ( ! function_exists( 'wc_get_products' ) || ! taxonomy_exists( 'product_cat' ) ) {
 		return array();
 	}
-	$ven = get_transient( 'brand_chrome_meni_v3' );
+	$ven = get_transient( 'brand_chrome_meni_v4' );
 	if ( is_array( $ven ) ) {
 		return $ven;
 	}
@@ -227,13 +227,13 @@ function brand_chrome_meni() {
 		$m[ brand_chrome_pot( wc_get_page_permalink( 'shop' ) ) ] = $v;
 	}
 	$ven = $m ? array( 'i' => $izd, 'm' => $m, 'v' => $v ) : array();
-	set_transient( 'brand_chrome_meni_v3', $ven, HOUR_IN_SECONDS );
+	set_transient( 'brand_chrome_meni_v4', $ven, HOUR_IN_SECONDS );
 	return $ven;
 }
 
 foreach ( array( 'save_post_product', 'woocommerce_update_product', 'edited_product_cat', 'created_product_cat', 'after_switch_theme' ) as $brand_chrome_kavelj ) {
 	add_action( $brand_chrome_kavelj, function () {
-		delete_transient( 'brand_chrome_meni_v3' );
+		delete_transient( 'brand_chrome_meni_v4' );
 	} );
 }
 
@@ -358,6 +358,25 @@ add_action( 'wp_footer', function () {
  * podatkov ni, ne izpisejo nicesar.
  * ===================================================================== */
 
+// Povezave v temi in meniju so pisane za produkcijo (noriks.com/bg/...). Kjer WordPress tece v korenu
+// domene (razvojna stran), predpona /bg ne obstaja in bi povezava vrnila 404: preusmeri na isto pot brez nje.
+add_action( 'template_redirect', function () {
+	if ( ! is_404() ) {
+		return;
+	}
+	$dom = trim( (string) wp_parse_url( home_url(), PHP_URL_PATH ), '/' );
+	$uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '';
+	if ( '' === $dom && preg_match( '#^/bg(/.*)?$#', $uri, $m ) ) {
+		wp_safe_redirect( home_url( isset( $m[1] ) && '' !== $m[1] ? $m[1] : '/' ), 301 );
+		exit;
+	}
+}, 1 );
+
+/** Kategorije, ki so filtri celotne trgovine (niso v glavnem meniju). */
+function noriks_bg_skupine_trgovine() {
+	return array( 'nai-prodavani', 'startovi-paketi', 'golemi-paketi' );
+}
+
 /** Postavke glavnega menija (ACF): array( link, text ). */
 function noriks_bg_meni() {
 	$m = function_exists( 'get_field' ) ? get_field( 'mainheader_menu', 'option' ) : array();
@@ -447,6 +466,12 @@ function noriks_bg_glava_trgovine() {
 		$drob[] = array( $term->name, '' );
 	}
 	$vrh_slug = $vrh ? $vrh->slug : '';
+	$v_meniju = false;
+	foreach ( noriks_bg_meni() as $el ) {
+		if ( '' !== $vrh_slug && isset( $el['link'] ) && noriks_bg_slug_povezave( $el['link'] ) === $vrh_slug ) {
+			$v_meniju = true;
+		}
+	}
 	?>
 <section class="nb nb-kat">
 	<div class="nb-kat__slika" aria-hidden="true"><img src="<?php echo esc_url( get_template_directory_uri() . '/img/brand/' . $slika . '.jpg' ); ?>" alt=""></div>
@@ -461,7 +486,8 @@ function noriks_bg_glava_trgovine() {
 					continue;
 				}
 				$s      = noriks_bg_slug_povezave( $el['link'] );
-				$izbran = $term ? ( '' !== $s && $s === $vrh_slug ) : ( '' === $s && preg_match( '#/shop/?$#', (string) $el['link'] ) );
+				$je_trg = ( '' === $s && preg_match( '#/shop/?$#', (string) $el['link'] ) );
+				$izbran = ( $term && $v_meniju ) ? ( '' !== $s && $s === $vrh_slug ) : $je_trg;
 				echo '<a href="' . esc_url( $el['link'] ) . '"' . ( $izbran ? ' class="je-izbran" aria-current="true"' : '' ) . '>' . esc_html( $el['text'] ) . '</a>';
 			}
 			?>
@@ -488,33 +514,33 @@ function noriks_bg_filtri() {
 	}
 	$cipi = array();
 	$term = is_product_category() ? get_queried_object() : null;
-	if ( $term ) {
-		$vrh = noriks_bg_vrh( $term );
-		if ( $vrh ) {
+	$vrh  = $term ? noriks_bg_vrh( $term ) : null;
+	if ( $vrh && ! in_array( $vrh->slug, noriks_bg_skupine_trgovine(), true ) ) {
+		$otroci = get_terms( array( 'taxonomy' => 'product_cat', 'parent' => $vrh->term_id, 'hide_empty' => true ) );
+		if ( is_array( $otroci ) && $otroci ) {
 			$l = get_term_link( $vrh );
 			if ( ! is_wp_error( $l ) ) {
 				$cipi[] = array( $vrh->name, $l, $vrh->term_id === $term->term_id );
 			}
-			$otroci = get_terms( array( 'taxonomy' => 'product_cat', 'parent' => $vrh->term_id, 'hide_empty' => true ) );
-			if ( is_array( $otroci ) ) {
-				usort( $otroci, 'noriks_bg_uredi_podkategorije' );
-				foreach ( $otroci as $o ) {
-					$l = get_term_link( $o );
-					if ( ! is_wp_error( $l ) ) {
-						$cipi[] = array( $o->name, $l, $o->term_id === $term->term_id || (int) $term->parent === (int) $o->term_id );
-					}
+			usort( $otroci, 'noriks_bg_uredi_podkategorije' );
+			foreach ( $otroci as $o ) {
+				$l = get_term_link( $o );
+				if ( ! is_wp_error( $l ) ) {
+					$cipi[] = array( $o->name, $l, $o->term_id === $term->term_id || (int) $term->parent === (int) $o->term_id );
 				}
 			}
 		}
-	} else {
+	}
+	if ( ! $cipi ) {
+		// trgovina in kategorije brez podkategorij: vse + skupine trgovine
 		list( $trg_ime, $trg_url ) = noriks_bg_trgovina();
-		$cipi[] = array( $trg_ime, $trg_url, true );
-		foreach ( array( 'nai-prodavani', 'startovi-paketi', 'golemi-paketi' ) as $slug ) {
+		$cipi[] = array( $trg_ime, $trg_url, ! $term );
+		foreach ( noriks_bg_skupine_trgovine() as $slug ) {
 			$t = get_term_by( 'slug', $slug, 'product_cat' );
 			if ( $t && ! is_wp_error( $t ) && ! empty( $t->count ) ) {
 				$l = get_term_link( $t );
 				if ( ! is_wp_error( $l ) ) {
-					$cipi[] = array( $t->name, $l, false );
+					$cipi[] = array( $t->name, $l, $vrh && $vrh->term_id === $t->term_id );
 				}
 			}
 		}
@@ -582,7 +608,51 @@ add_action( 'woocommerce_before_single_product', function () {
 	noriks_bg_drobtine( $drob, 'nb-drobtine--izdelek' );
 }, 4 );
 
-/** Kartica izdelka (drsniki na domaci strani). */
+/** Izdelki, ki so samo dodatna ponudba (Mystery majica) in ne sodijo v prikaze. */
+function noriks_bg_skriti() {
+	$ids = get_transient( 'noriks_bg_skriti_v1' );
+	if ( is_array( $ids ) ) {
+		return $ids;
+	}
+	$ids = array();
+	foreach ( get_posts( array( 'post_type' => 'product', 'post_status' => 'publish', 's' => 'Mystery', 'fields' => 'ids', 'posts_per_page' => 30 ) ) as $id ) {
+		if ( false !== stripos( (string) get_the_title( $id ), 'mystery' ) ) {
+			$ids[] = (int) $id;
+		}
+	}
+	set_transient( 'noriks_bg_skriti_v1', $ids, HOUR_IN_SECONDS );
+	return $ids;
+}
+add_action( 'save_post_product', function () {
+	delete_transient( 'noriks_bg_skriti_v1' );
+} );
+// Tudi v mrezi trgovine in kategorij.
+add_action( 'woocommerce_product_query', function ( $q ) {
+	$skriti = noriks_bg_skriti();
+	if ( $skriti && is_object( $q ) && method_exists( $q, 'set' ) ) {
+		$q->set( 'post__not_in', array_merge( (array) $q->get( 'post__not_in' ), $skriti ) );
+	}
+} );
+
+/** Cena na kos za pakete - isti izracun in napisi kot na strani izdelka. */
+function noriks_bg_cena_na_kos( $p, $cena ) {
+	if ( ! function_exists( 'get_field' ) || $cena <= 0 ) {
+		return '';
+	}
+	$n = (int) get_field( 'number_of_shirts_in_this_product', $p->get_id() );
+	if ( $n < 2 ) {
+		return '';
+	}
+	$pred = trim( (string) get_field( 'singlepp_priceper_before', 'options' ) );
+	$po   = trim( (string) get_field( 'singlepp_priceper_after', 'options' ) );
+	if ( '' === $pred && '' === $po ) {
+		return '';
+	}
+	$kos = ceil( $cena / $n * 100 ) / 100;
+	return trim( $pred . ' ' . number_format( $kos, 2, ',', '.' ) . ' ' . $po );
+}
+
+/** Kartica izdelka (drsniki na domaci strani): slika z drugo sliko ob prehodu, popust, stevilo kosov, cena, prihranek, cena na kos, gumb. */
 function noriks_bg_kartica( $p ) {
 	if ( ! $p || ! is_object( $p ) || ! method_exists( $p, 'get_id' ) ) {
 		return '';
@@ -597,16 +667,23 @@ function noriks_bg_kartica( $p ) {
 		$znizan = (float) $p->get_sale_price();
 	}
 	$popust = ( $znizan > 0 && $redna > $znizan ) ? (int) round( ( $redna - $znizan ) / $redna * 100 ) : 0;
+	$cena   = $popust ? $znizan : $redna;
 	$prva   = $p->get_image_id() ? wp_get_attachment_image_url( $p->get_image_id(), 'woocommerce_thumbnail' ) : '';
 	$gal    = $p->get_gallery_image_ids();
 	$druga  = ! empty( $gal ) ? wp_get_attachment_image_url( $gal[0], 'woocommerce_thumbnail' ) : '';
 	$gumb   = function_exists( 'brand_chrome_domaca' ) ? brand_chrome_domaca() : array();
 	$gumb   = isset( $gumb['izdelki']['gumb'] ) ? (string) $gumb['izdelki']['gumb'] : '';
+	$kosov  = function_exists( 'get_field' ) ? (int) get_field( 'number_of_shirts_in_this_product', $id ) : 0;
+	$na_kos = noriks_bg_cena_na_kos( $p, $cena );
+	$pusc   = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
 
 	$h  = '<a class="nb-izd" href="' . esc_url( get_permalink( $id ) ) . '">';
 	$h .= '<span class="nb-izd__slika">';
 	if ( $popust ) {
 		$h .= '<span class="nb-izd__popust">-' . $popust . '%</span>';
+	}
+	if ( $kosov > 1 ) {
+		$h .= '<span class="nb-izd__kosov">' . $kosov . ' бр.</span>';
 	}
 	if ( $prva ) {
 		$h .= '<img src="' . esc_url( $prva ) . '" alt="' . esc_attr( $ime ) . '" loading="lazy">';
@@ -614,20 +691,35 @@ function noriks_bg_kartica( $p ) {
 	if ( $druga && $druga !== $prva ) {
 		$h .= '<img class="nb-izd__druga" src="' . esc_url( $druga ) . '" alt="" loading="lazy">';
 	}
-	if ( '' !== $gumb ) {
-		$h .= '<span class="nb-izd__gumb">' . esc_html( $gumb ) . '</span>';
-	}
 	$h .= '</span>';
+	$h .= '<span class="nb-izd__telo">';
 	$h .= '<span class="nb-izd__ime">' . esc_html( $ime ) . '</span>';
 	$h .= '<span class="nb-izd__cena">';
 	if ( $popust ) {
-		$h .= '<b>' . wc_price( $znizan ) . '</b><s>' . wc_price( $redna ) . '</s>';
+		$h .= '<b>' . wc_price( $znizan ) . '</b><s>' . wc_price( $redna ) . '</s><em>-' . wc_price( $redna - $znizan ) . '</em>';
 	} elseif ( $redna > 0 ) {
 		$h .= '<b>' . wc_price( $redna ) . '</b>';
 	} else {
 		$h .= '<b>' . $p->get_price_html() . '</b>';
 	}
+	$h .= '</span>';
+	$h .= '<span class="nb-izd__kos">' . ( '' !== $na_kos ? esc_html( $na_kos ) : '&nbsp;' ) . '</span>';
+	if ( '' !== $gumb ) {
+		$h .= '<span class="nb-izd__gumb">' . esc_html( $gumb ) . $pusc . '</span>';
+	}
 	$h .= '</span></a>';
+	return $h;
+}
+
+/** Domaca stran: kartice za rocno izbrane izdelke (ACF seznam "najbolj priljubljeni"). */
+function noriks_bg_kartice( $izdelki ) {
+	$skriti = noriks_bg_skriti();
+	$h      = '';
+	foreach ( (array) $izdelki as $p ) {
+		if ( is_object( $p ) && method_exists( $p, 'get_id' ) && ! in_array( (int) $p->get_id(), $skriti, true ) ) {
+			$h .= noriks_bg_kartica( $p );
+		}
+	}
 	return $h;
 }
 
@@ -646,7 +738,7 @@ function noriks_bg_po_kategorijah() {
 		if ( ! $t || is_wp_error( $t ) ) {
 			continue;
 		}
-		$izd = wc_get_products( array( 'status' => 'publish', 'limit' => 10, 'category' => array( $s ), 'orderby' => 'menu_order', 'order' => 'ASC' ) );
+		$izd = wc_get_products( array( 'status' => 'publish', 'limit' => 12, 'category' => array( $s ), 'orderby' => 'menu_order', 'order' => 'ASC', 'exclude' => noriks_bg_skriti() ) );
 		if ( ! $izd ) {
 			continue;
 		}

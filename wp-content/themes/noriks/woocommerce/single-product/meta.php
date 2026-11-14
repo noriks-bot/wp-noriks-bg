@@ -209,11 +209,11 @@ global $product;
 
 $is_singles_boxers = has_term( 'singles-boxers', 'product_cat', $current_product_id );
 
-$is_boxers = has_term( array( 'boxerky','1-ks-boxerky','orto-bokserice','balicek-3-ks-boxerky','balicek-5-ks-boxerky' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday' ), 'product_cat', $current_product_id );
+$is_boxers = has_term( array( 'boksarki','1-broy-boksarki','komplekt-3-boksarki','komplekt-5-boksarki','boxerky','1-ks-boxerky','orto-bokserice','balicek-3-ks-boxerky','balicek-5-ks-boxerky' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday' ), 'product_cat', $current_product_id );
 
-$is_carape = has_term( array( 'ponozky' ), 'product_cat', $current_product_id );
+$is_carape = has_term( array( 'chorapi', 'ponozky' ), 'product_cat', $current_product_id );
 
-$is_mixed_bundle = has_term( array( 'sady','orto-starter','orto-majica-bokserica','startovaci-balicek' ), 'product_cat', $current_product_id );
+$is_mixed_bundle = has_term( array( 'komplekti','startovi-paketi','sady','orto-starter','orto-majica-bokserica','startovaci-balicek' ), 'product_cat', $current_product_id );
 
 ?>
 

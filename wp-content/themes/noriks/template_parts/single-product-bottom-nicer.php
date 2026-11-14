@@ -56,7 +56,7 @@ if ( function_exists( 'noriks_is_type' ) ) {
 }
 ?>
 <?php
-if (  has_term( array( 'startovaci-balicek','orto-starter' ), 'product_cat', get_the_id() )  )   :
+if (  has_term( array( 'startovi-paketi', 'startovaci-balicek','orto-starter' ), 'product_cat', get_the_id() )  )   :
 ?>
 
 
@@ -246,7 +246,7 @@ if (  has_term( array( 'startovaci-balicek','orto-starter' ), 'product_cat', get
 
 
 <?php 
-if (  has_term( array( 'tricka',  'orto-tricka', 'orto-majica-darila' ), 'product_cat', get_the_id() )  ||  has_term( 'sady', 'product_cat', get_the_id() )) : 
+if (  has_term( array( 'teniski', 'tricka',  'orto-tricka', 'orto-majica-darila' ), 'product_cat', get_the_id() )  ||  has_term( array( 'komplekti', 'sady' ), 'product_cat', get_the_id() )) : 
 ?>
     <?php // Nove sekcije (2026-10-28); pogoj ostaja nespremenjen.
     include get_template_directory() . '/template_parts/product-bottom/why-majice.php'; ?>
@@ -260,7 +260,7 @@ if (  has_term( array( 'tricka',  'orto-tricka', 'orto-majica-darila' ), 'produc
 
 <!-- here we include new file BOXERIRICE-->
 
-<?php if ( has_term( array( 'boxerky', 'orto-boxerky' ), 'product_cat', get_the_ID() )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
+<?php if ( has_term( array( 'boksarki', 'boxerky', 'orto-boxerky' ), 'product_cat', get_the_ID() )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
     <?php // Nove sekcije (2026-10-28); pogoj ostaja nespremenjen.
     include get_template_directory() . '/template_parts/product-bottom/why-bokserice.php'; ?>
 <?php endif; ?>
@@ -674,7 +674,7 @@ if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
       } elseif ( $is_norikshers ) {
           $args['category'] = [ 'orto-norikshers', 'orto-noriks-hers' ];
       } elseif ( $is_bokserice ) {
-          $args['category'] = [ 'boxerky' ];
+          $args['category'] = [ 'boksarki', 'boxerky' ];
       } elseif ( $is_fisiorest ) {
         $args['category'] = [ 'orto-fisiorest', 'fisiorest' ];
     } elseif ( $is_bunion ) {
@@ -682,7 +682,7 @@ if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
     } elseif ( $is_ortopas ) {
         $args['category'] = [ 'orto-ortopas', 'ortopas' ];
     } elseif ( $is_nogavice ) {
-        $args['category'] = [ 'ponozky', 'orto-kompresijske-carape' ];
+        $args['category'] = [ 'chorapi', 'ponozky', 'orto-kompresijske-carape' ];
     } elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $product_id) ) {
         $args['category'] = [ 'orto-kneefix' ];
       } elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro', $product_id) ) {
@@ -695,7 +695,7 @@ if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
           // Stranice majica: bazen SAMO iz kategorije majica (s podkategorijama).
           // Prije je uzimao sve osim bokserica, pa su recenzije o majicama
           // zavrsavale pod orto proizvodima (Cloth XXL, Cool Curl…).
-          $args['category'] = [ 'tricka' ];
+          $args['category'] = [ 'teniski', 'tricka' ];
       }
 
       $ids = wc_get_products( $args );
@@ -966,9 +966,9 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
   // fotografije osoba: samo na odjeci (majice, bokserice, kompleti), ne na ortopedskim pomagalima
   // MAJICE i BOKSERICE: recenzije BEZ fotografija - isti uvjet kao nove why sekcije.
   $noriks_no_photos = $noriks_no_photos
-    || has_term( array( 'tricka', 'orto-tricka', 'orto-majica-darila' ), 'product_cat', get_the_ID() )
-    || has_term( 'sady', 'product_cat', get_the_ID() )
-    || has_term( array( 'boxerky', 'orto-boxerky' ), 'product_cat', get_the_ID() );
+    || has_term( array( 'teniski', 'tricka', 'orto-tricka', 'orto-majica-darila' ), 'product_cat', get_the_ID() )
+    || has_term( array( 'komplekti', 'sady' ), 'product_cat', get_the_ID() )
+    || has_term( array( 'boksarki', 'boxerky', 'orto-boxerky' ), 'product_cat', get_the_ID() );
   $avatar_pool = $noriks_no_photos ? array() : get_review_avatar_pool($avatar_type);
 
   // On single-product landing pages (leak boxers / kompresijske majice) the cards should

@@ -517,7 +517,7 @@ body.post-type-archive-product ul.products,body.tax-product_cat ul.products{marg
 @media (max-width:768px){
   .nb-izd,body.home .most-popular .product-card{flex-basis:62%}
   .nb-trak,body.home .most-popular .products-grid{gap:12px!important;margin-right:-18px!important;padding-right:18px!important}
-  .nb-izd__gumb,body.home .most-popular .image-wrapper::after{display:none}
+  body.home .most-popular .image-wrapper::after{display:none}
   .nb-kategorije__nav,.nb-priljubljeni__nav{display:none}
   body.home .most-popular .collections__header{padding-right:0!important}
   .nb-kategorije__glava{margin-bottom:20px}
@@ -535,3 +535,72 @@ body.post-type-archive-product ul.products,body.tax-product_cat ul.products{marg
   .nb-filtri__cipi{margin-right:-18px;padding-right:18px}
   .nb-filtri__desno{justify-content:space-between}
 }
+
+/* ===== drsniki segajo cez desni rob (videz "se vec izdelkov") ===== */
+.nb-kategorije,body.home .most-popular,body.home .reviews-section{overflow:hidden}
+.nb-trak,body.home .most-popular .products-grid,body.home .reviews-grid{margin-right:calc(50% - 50vw)!important;padding-right:26px!important;scroll-padding-left:0}
+.nb-izd,body.home .most-popular .product-card{flex-basis:calc((min(100vw,1320px) - 52px - 72px)/4.3)}
+body.home .review-card{flex-basis:calc((min(100vw,1320px) - 52px - 54px)/3.3)}
+/* ===== kartica izdelka: bolj dodelana ===== */
+.nb-izd{position:relative;display:flex;flex-direction:column;padding:8px;border:1px solid rgba(11,11,11,.1);border-radius:8px;background:#fff;box-sizing:border-box;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.nb-izd:hover{transform:translateY(-4px);border-color:rgba(11,11,11,.2);box-shadow:0 20px 38px -20px rgba(11,11,11,.3)}
+.nb-izd .nb-izd__slika{margin:0!important;border-radius:5px!important;flex:0 0 auto}
+.nb-izd__kosov{position:absolute;z-index:3;top:10px;right:10px;padding:5px 8px;border-radius:3px;background:#fff;color:#0B0B0B;font-size:12px;font-weight:700;line-height:1.2;box-shadow:0 1px 2px rgba(11,11,11,.12)}
+.nb-izd__telo{display:flex;flex-direction:column;flex:1 1 auto;padding:14px 8px 8px}
+.nb-izd .nb-izd__ime{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;margin:0 0 10px!important;font-size:15.5px!important;line-height:1.3!important}
+.nb-izd__cena{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 9px;font-size:16px}
+.nb-izd__cena b{font-size:19px;font-weight:800;letter-spacing:-.01em;color:#0B0B0B}
+.nb-izd__cena s{color:#8B867E;font-size:14px;font-weight:400}
+.nb-izd__cena em{margin-left:auto;padding:3px 7px;border-radius:3px;background:#FBEBCB;color:#7A4A00;font-size:12px;font-weight:700;font-style:normal;white-space:nowrap}
+.nb-izd__kos{position:static;display:block;margin:6px 0 0;padding:0;background:none;color:#6B675F;font-size:12.5px;font-weight:500;line-height:1.3;min-height:1.3em}
+.nb-izd:hover .nb-izd__kos{opacity:1}
+.nb-izd .nb-izd__gumb{position:static;display:flex;align-items:center;justify-content:center;gap:10px;height:44px;margin:14px 0 0;border-radius:4px;background:#0B0B0B;color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:1;transform:none;transition:background-color .18s ease,color .18s ease}
+.nb-izd .nb-izd__gumb svg{width:16px;height:16px;transition:transform .18s ease}
+.nb-izd:hover .nb-izd__gumb{background:#F5A623;color:#0B0B0B}
+.nb-izd:hover .nb-izd__gumb svg{transform:translateX(4px)}
+.nb-izd--vse{padding:0;border:0;background:none}
+.nb-izd--vse:hover{box-shadow:none}
+.nb-izd--vse .nb-izd__vse{height:100%;aspect-ratio:auto;min-height:100%;border-radius:8px}
+.nb-trak{padding-top:6px!important;padding-bottom:30px!important;margin-bottom:-28px!important}
+body.home .most-popular .nb-trak{margin-top:0}
+@media (max-width:1100px){
+  .nb-izd,body.home .most-popular .product-card{flex-basis:calc((100vw - 52px - 36px)/3.3)}
+  body.home .review-card{flex-basis:calc((100vw - 52px - 36px)/2.3)}
+}
+@media (max-width:768px){
+  .nb-izd,body.home .most-popular .product-card{flex-basis:64vw}
+  body.home .review-card{flex-basis:80vw}
+  .nb-trak,body.home .most-popular .products-grid,body.home .reviews-grid{margin-right:-18px!important;padding-right:18px!important}
+  .nb-izd__cena b{font-size:17px}
+  .nb-izd__cena em{display:none}
+  .nb-izd .nb-izd__gumb{height:40px;font-size:11.5px;letter-spacing:.06em}
+}
+
+/* ===== izbrani zavihek: bolj oznacen ===== */
+.nb-kategorije__glava{border-bottom:2px solid rgba(11,11,11,.12)}
+.nb-kategorije__zavihki{margin-bottom:-2px}
+.nb-zavihek{padding-bottom:18px}
+.nb-zavihek::after{bottom:0;height:4px;background:#0B0B0B}
+.nb-kat__zavihki a{border-bottom-width:4px;padding-bottom:12px}
+.nb-kat__zavihki a.je-izbran{font-weight:800;border-bottom-color:#F5A623}
+.nb-drobtine [aria-current]{font-weight:700}
+/* zastava: bel pas se na beli glavi ni videl */
+body .header .navbar-right>.language-selector img.flag,body .header .language-selector img.flag{box-shadow:0 0 0 1px rgba(11,11,11,.22)}
+/* ===== mnenja na domaci strani: visoke kartice s fotografijo ===== */
+body.home .reviews-section{background:#F5F3EF!important}
+body.home .reviews-section .collections__title{color:#0B0B0B!important}
+body.home .reviews-section .nb-pusc{border-color:rgba(11,11,11,.22);color:#0B0B0B}
+body.home .reviews-section .nb-pusc:hover{background:#0B0B0B;border-color:#0B0B0B;color:#fff}
+body.home .review-card{position:relative;flex-basis:calc((min(100vw,1320px) - 52px - 72px)/4.3);aspect-ratio:3/4.4;border-radius:8px!important;background:#0B0B0B!important;overflow:hidden}
+body.home .review-card img.review-image{position:absolute;inset:0;width:100%!important;height:100%!important;aspect-ratio:auto;object-fit:cover;object-position:center 18%;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+body.home .review-card:hover img.review-image{transform:scale(1.04)}
+body.home .review-content{position:absolute;inset:auto 0 0 0;display:flex;flex-direction:column;padding:90px 18px 16px!important;background:linear-gradient(0deg,rgba(11,11,11,.94) 0,rgba(11,11,11,.82) 52%,rgba(11,11,11,0) 100%)}
+body.home .review-text{order:2;padding:0;color:#fff!important;font-size:15.5px!important;line-height:1.45!important;font-weight:500!important;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+body.home .review-text::before{display:none}
+body.home .review-meta{order:1;margin:0 0 10px!important;padding:0;justify-content:flex-start;gap:8px 10px}
+body.home .review-name{color:#fff!important;font-size:15px!important}
+body.home .verified{padding:3px 7px;border-radius:3px;background:#F5A623;color:#0B0B0B!important;font-size:10.5px!important;letter-spacing:.02em}
+body.home .review-product{order:3;margin:14px 0 0!important;padding:8px 10px;border-radius:4px;background:rgba(255,255,255,.12);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+body.home .review-product a{color:#fff!important;font-size:12.5px!important}
+@media (max-width:1100px){body.home .review-card{flex-basis:calc((100vw - 52px - 36px)/3.2)}}
+@media (max-width:768px){body.home .review-card{flex-basis:72vw}}
