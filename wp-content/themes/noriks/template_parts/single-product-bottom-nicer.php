@@ -611,7 +611,7 @@ if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
    * Build/caches a pool of products: [['title'=>..., 'url'=>...], ...]
    */
   function get_wc_product_pool(
-      $transient_key = 'reviews_product_pool_cache_v4',
+      $transient_key = 'reviews_product_pool_cache_v4_bg2',
       $ttl = 12 * HOUR_IN_SECONDS
   ) {
       if ( ! function_exists( 'wc_get_products' ) ) {
@@ -698,6 +698,8 @@ if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
           $args['category'] = [ 'teniski', 'tricka' ];
       }
 
+      // BG: izdelki, ki so samo dodatna ponudba (Mystery), ne sodijo med imena izdelkov v mnenjih
+      if ( function_exists( 'noriks_bg_skriti' ) ) { $args['exclude'] = noriks_bg_skriti(); }
       $ids = wc_get_products( $args );
 
       $pool = [];

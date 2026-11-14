@@ -781,10 +781,6 @@ body.single-product .variation-button{border:1px solid rgba(11,11,11,.18)!import
 body.single-product .variation-button:hover{border-color:#0B0B0B!important}
 body.single-product .variation-button.active{background:#0B0B0B!important;border-color:#0B0B0B!important;color:#fff!important}
 body.single-product .variation-button.disabled{opacity:.4}
-/* glavni gumb: isti kot na domaci strani */
-body.single-product .single_add_to_cart_button,body.single-product button.single_add_to_cart_button.alt{min-height:58px;border:0!important;border-radius:6px!important;background:#F5A623!important;color:#0B0B0B!important;font-size:15px!important;font-weight:800!important;letter-spacing:.06em!important;text-transform:uppercase!important;box-shadow:none!important;transition:background-color .16s ease,color .16s ease}
-body.single-product .single_add_to_cart_button:hover,body.single-product button.single_add_to_cart_button.alt:hover{background:#0B0B0B!important;border-color:#0B0B0B!important;color:#fff!important}
-body.single-product .single_add_to_cart_button .amount,body.single-product .single_add_to_cart_button *{color:inherit!important}
 /* jamstva, dostava, znacilnosti */
 body.single-product .features .feature__text{color:#3B3833!important;font-size:13.5px!important;font-weight:500}
 body.single-product .info-box{border:0!important;border-radius:6px!important;background:#F5F3EF!important;color:#0B0B0B!important}
@@ -813,7 +809,6 @@ body.single-product .nk-yes{background:#0B0B0B!important;border-radius:4px!impor
 body.single-product .nk-no{border-radius:4px!important;background:transparent!important;border:1px solid rgba(11,11,11,.2)}
 body.single-product .nk-cmp-head>div:nth-child(3){background:#fff!important}
 @media (max-width:768px){
-  body.single-product .single_add_to_cart_button,body.single-product button.single_add_to_cart_button.alt{font-size:14px!important;letter-spacing:.04em!important}
   body.single-product .summary .price ins,body.single-product .summary .price ins *{font-size:23px!important}
 }
 
@@ -839,4 +834,116 @@ body ul.products li.product .badge{top:16px!important;right:16px!important}
 @media (prefers-reduced-motion:no-preference){
   html.nb-anim .nb-pojavi{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
   html.nb-anim .nb-pojavi.nb-vidno{opacity:1;transform:none}
+}
+
+/* ===== popravki detajlov ===== */
+/* drobtinice poravnane z vsebino izdelka (ovoj 1440 px, odmik 20 px) */
+.nb-drobtine--izdelek{max-width:1440px;padding:14px 20px 6px}
+/* cena in znacka ponudbe v isti vrsti */
+body.single-product .whole-price-block{display:flex!important;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:6px 0 4px!important}
+body.single-product .whole-price-block .price{margin:0!important}
+body.single-product .whole-price-block .price-badge{margin:0!important;border-radius:4px!important;font-family:var(--ch-body)!important;font-weight:700!important;letter-spacing:.02em}
+/* kartica izdelka: slika do roba kartice */
+.nb-izd{padding:0;overflow:hidden}
+.nb-izd .nb-izd__slika{border-radius:0!important}
+.nb-izd__telo{padding:14px 14px 14px}
+.nb-izd--vse .nb-izd__vse{border-radius:8px}
+body ul.products li.product{padding:0 0 12px!important;overflow:hidden}
+body ul.products li.product a.woocommerce-loop-product__link img{border-radius:0!important;width:100%!important}
+body ul.products li.product .woocommerce-loop-product__title,body ul.products li.product .price,body ul.products li.product .ch-opis{padding-left:14px!important;padding-right:14px!important}
+body ul.products li.product .ch-vec{margin:12px 14px 2px!important}
+body ul.products li.product .badge{top:10px!important;right:10px!important}
+@media (max-width:768px){
+  .nb-drobtine--izdelek{padding:12px 15px 0}
+  .nb-izd__telo{padding:12px 10px 10px}
+  body ul.products li.product .woocommerce-loop-product__title,body ul.products li.product .price,body ul.products li.product .ch-opis{padding-left:10px!important;padding-right:10px!important}
+  body ul.products li.product .ch-vec{margin:10px 10px 0!important}
+}
+
+/* ===== mnenja na strani izdelka: eno mnenje na vrstico, povzetek ocene, razvrscanje ===== */
+.nb-ocene{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:18px 0 6px;padding:20px 24px;border:1px solid rgba(11,11,11,.1);border-radius:8px;background:#fff}
+.nb-ocene__levo{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.nb-ocene__levo b{font-size:44px;line-height:1;font-weight:800;letter-spacing:-.04em;color:#0B0B0B}
+.nb-ocene__zv{color:#F5A623;font-size:22px;letter-spacing:3px;line-height:1}
+.nb-ocene__st{color:#5F5B54;font-size:14.5px;font-weight:500}
+.nb-ocene__vrsta{display:flex;align-items:center;gap:10px;margin:0;color:#5F5B54;font-size:13.5px;font-weight:600}
+.nb-ocene__vrsta select{height:42px;padding:0 34px 0 12px;border:1px solid rgba(11,11,11,.18);border-radius:4px;background-color:#fff;color:#0B0B0B;font-size:13.5px;font-weight:600;cursor:pointer}
+body.single-product #reviews-section .reviews-grid:not([style*="none"]){display:flex!important;flex-direction:column;gap:0!important;column-count:auto!important;border:1px solid rgba(11,11,11,.1);border-radius:8px;background:#fff;overflow:hidden}
+body.single-product #reviews-section .review-card{display:grid!important;grid-template-columns:230px minmax(0,1fr) auto;grid-template-rows:auto auto 1fr;column-gap:30px;margin:0!important;padding:22px 24px!important;border:0!important;border-bottom:1px solid rgba(11,11,11,.09)!important;border-radius:0!important;overflow:visible}
+body.single-product #reviews-section .review-card:last-child{border-bottom:0!important}
+body.single-product #reviews-section .review-card .identity{display:contents}
+body.single-product #reviews-section .review-card .name{grid-column:1;grid-row:1;margin:0!important;font-size:15.5px!important}
+body.single-product #reviews-section .review-card .verified{grid-column:1;grid-row:2;align-self:start;margin:6px 0 0!important}
+body.single-product #reviews-section .review-card .card-top{grid-column:1;grid-row:3;display:block;margin:10px 0 0!important;padding:0!important;border:0!important;background:none!important}
+body.single-product #reviews-section .review-card .product-title{white-space:normal!important;overflow:visible}
+body.single-product #reviews-section .review-card .date{margin:3px 0 0!important}
+body.single-product #reviews-section .review-card .stars{grid-column:2;grid-row:1;margin:2px 0 0!important;padding:0!important}
+body.single-product #reviews-section .review-card .content{grid-column:2;grid-row:2 / span 2;margin:0!important;padding:8px 0 0!important;font-size:16px!important;line-height:1.55!important}
+body.single-product #reviews-section .review-card .avatar:has(img){grid-column:3;grid-row:1 / span 3;flex:none!important;width:104px!important;height:104px!important;margin:0!important;aspect-ratio:1/1;border-radius:6px!important;overflow:hidden}
+@media (max-width:768px){
+  .nb-ocene{padding:14px 16px;margin-top:12px}
+  .nb-ocene__levo b{font-size:34px}
+  .nb-ocene__zv{font-size:18px}
+  .nb-ocene__vrsta{width:100%;justify-content:space-between}
+  body.single-product #reviews-section .reviews-grid:not([style*="none"]){column-count:auto!important}
+  body.single-product #reviews-section .review-card{grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto;column-gap:14px;padding:16px!important}
+  body.single-product #reviews-section .review-card .name{grid-column:1;grid-row:1}
+  body.single-product #reviews-section .review-card .verified{grid-column:1;grid-row:2}
+  body.single-product #reviews-section .review-card .stars{grid-column:1;grid-row:3;margin-top:8px!important}
+  body.single-product #reviews-section .review-card .content{grid-column:1 / span 2;grid-row:4;font-size:15px!important;padding:8px 0 0!important}
+  body.single-product #reviews-section .review-card .card-top{grid-column:1 / span 2;grid-row:5;display:flex;flex-direction:row;justify-content:space-between;gap:10px;margin-top:10px!important}
+  body.single-product #reviews-section .review-card .date{margin:0!important}
+  body.single-product #reviews-section .review-card .avatar:has(img){grid-column:2;grid-row:1 / span 3;width:68px!important;height:68px!important}
+}
+
+/* ===== "4 разлики": strnjen pas (naslov levo, stiri tocke v vrsti) ===== */
+.nb-razlike{background:#F5F3EF;padding:clamp(30px,3.2vw,46px) 0!important;border-bottom:1px solid rgba(11,11,11,.08)}
+.nb-razlike .nb-ovoj{display:grid;grid-template-columns:minmax(210px,250px) minmax(0,1fr);gap:clamp(24px,3.4vw,56px);align-items:center}
+.nb-razlike__glava{margin:0!important;max-width:none}
+.nb-razlike__glava .nb-h2{font-size:clamp(22px,2vw,28px)!important;line-height:1.12!important}
+.nb-razlike__mreza{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:0!important}
+.nb-razlika,.nb-razlika+.nb-razlika{display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:14px;align-content:start;padding:4px 22px!important;border-radius:0!important;background:none!important;border-left:1px solid rgba(11,11,11,.12)!important}
+.nb-razlika__vrh{grid-row:1 / span 2;display:block;margin:0!important}
+.nb-razlika__ik{width:44px;height:44px;border-radius:6px}
+.nb-razlika__ik svg{width:22px;height:22px}
+.nb-razlika .nb-razlika__st{display:none}
+.nb-razlika h3{margin:0 0 5px!important;font-size:16px!important;line-height:1.2!important;letter-spacing:-.01em!important}
+.nb-razlika p{font-size:13.5px!important;line-height:1.45!important}
+@media (max-width:1100px){
+  .nb-razlike .nb-ovoj{grid-template-columns:1fr;gap:20px}
+  .nb-razlike__mreza{grid-template-columns:repeat(2,minmax(0,1fr))!important;row-gap:20px!important}
+  .nb-razlika:nth-child(odd){border-left:0!important;padding-left:0!important}
+}
+@media (max-width:768px){
+  .nb-razlike__mreza{grid-template-columns:1fr!important;row-gap:14px!important}
+  .nb-razlika,.nb-razlika+.nb-razlika{border-left:0!important;padding:0!important}
+}
+
+/* ===== prijava na novice: temen pas s fotografijo in prelivom ===== */
+body .nf .nf-signup{position:relative;overflow:hidden;background:#110D09 url("../img/brand/kat-komplekti.jpg") right center/auto 118% no-repeat!important;padding:clamp(44px,4.6vw,70px) 0!important}
+body .nf .nf-signup::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#110D09 0,#110D09 34%,rgba(17,13,9,.88) 56%,rgba(17,13,9,.55) 78%,rgba(17,13,9,.35) 100%);pointer-events:none}
+body .nf .nf-signup::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,#F5A623 0,#F5A623 22%,rgba(245,166,35,0) 70%)}
+body .nf .nf-signup .nf-wrap{position:relative;z-index:1}
+body .nf .nf-signup-title{color:#fff!important}
+body .nf .nf-signup-title::before{content:"NORIKS";display:flex;align-items:center;margin:0 0 14px;padding-left:36px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:.16em;color:#F5A623;background:linear-gradient(#F5A623,#F5A623) left center/26px 2px no-repeat}
+body .nf .nf-signup-sub{color:rgba(255,255,255,.78)!important}
+body .nf .nf-signup .nf-field-label{color:rgba(255,255,255,.7)!important}
+body .nf .nf-signup .nf-input{height:54px;border:1px solid rgba(255,255,255,.28)!important;background:rgba(255,255,255,.08)!important;color:#fff!important;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+body .nf .nf-signup .nf-input::placeholder{color:rgba(255,255,255,.55)!important}
+body .nf .nf-signup .nf-input:focus{border-color:#F5A623!important;outline:0}
+body .nf .nf-signup .nf-btn{height:54px;background:#F5A623!important;color:#0B0B0B!important;border:0!important;font-weight:800!important;transition:background-color .16s ease}
+body .nf .nf-signup .nf-btn:hover{background:#fff!important}
+body .nf .nf-signup-note,body .nf .nf-signup-note a{color:rgba(255,255,255,.6)!important}
+@media (max-width:768px){
+  body .nf .nf-signup{background-size:auto 60%!important;background-position:right bottom!important}
+  body .nf .nf-signup::before{background:linear-gradient(180deg,#110D09 0,rgba(17,13,9,.93) 55%,rgba(17,13,9,.72) 100%)}
+}
+body.single-product table.variations th.label a,body.single-product .size-chart-titlebar a{font-size:14px!important;font-weight:600!important;letter-spacing:0!important;text-transform:none!important}
+/* mnenja: izdelek in datum pod besedilom, vrstica nizja */
+@media (min-width:769px){
+  body.single-product #reviews-section .review-card{grid-template-rows:auto auto auto;padding:18px 24px!important}
+  body.single-product #reviews-section .review-card .content{grid-row:2;padding-top:6px!important}
+  body.single-product #reviews-section .review-card .card-top{grid-column:2;grid-row:3;display:flex!important;flex-direction:row-reverse;justify-content:flex-end;align-items:center;gap:8px;margin:8px 0 0!important}
+  body.single-product #reviews-section .review-card .card-top .date::after{content:"·";margin-left:8px;color:#958F86}
+  body.single-product #reviews-section .review-card .date{margin:0!important}
 }

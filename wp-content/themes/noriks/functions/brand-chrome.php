@@ -867,6 +867,41 @@ add_action( 'wp_footer', function () {
 			}
 		}
 	} catch (e) { document.documentElement.classList.remove('nb-anim'); }
+	// Stran izdelka: povzetek ocene (stevilke z vrha strani) in razvrscanje mnenj.
+	try {
+		var rs = document.getElementById('reviews-section'), zav = rs ? rs.querySelector('.reviews-tabs') : null;
+		if (rs && zav) {
+			var vir = document.querySelector('.summary .rating .reviews a'), bes = vir ? vir.textContent : '';
+			var oc = (bes.match(/(\d[.,]\d)/) || [])[1], st = (bes.match(/(\d+)\s*отзив/) || [])[1];
+			var gl = document.createElement('div'); gl.className = 'nb nb-ocene';
+			gl.innerHTML = '<div class="nb-ocene__levo">' + (oc ? '<b>' + oc + '</b><span class="nb-ocene__zv">★★★★★</span>' : '') + (st ? '<span class="nb-ocene__st">' + st + ' отзива</span>' : '') + '</div>' +
+				'<label class="nb-ocene__vrsta"><span>Подреди</span><select><option value="novi">Най-нови</option><option value="stari">Най-стари</option><option value="slike">Със снимка</option></select></label>';
+			zav.parentNode.insertBefore(gl, zav);
+			var izb = gl.querySelector('select'), teci = false;
+			var datum = function (k) { var m = ((k.querySelector('.date') || {}).textContent || '').match(/(\d+)\.(\d+)\.(\d+)/); return m ? new Date(+m[3], +m[2] - 1, +m[1]).getTime() : 0; };
+			var uredi = function () {
+				teci = true;
+				Array.prototype.forEach.call(rs.querySelectorAll('.reviews-grid'), function (g) {
+					var k = Array.prototype.slice.call(g.querySelectorAll('.review-card'));
+					k.forEach(function (x, i) { if (!x.getAttribute('data-nb-i')) { x.setAttribute('data-nb-i', i); } });
+					k.sort(function (a, b) {
+						var ia = +a.getAttribute('data-nb-i'), ib = +b.getAttribute('data-nb-i');
+						if (izb.value === 'slike') { var d = (b.querySelector('.avatar img') ? 1 : 0) - (a.querySelector('.avatar img') ? 1 : 0); if (d) { return d; } }
+						if (izb.value === 'stari') { return (datum(a) - datum(b)) || (ib - ia); }
+						return (datum(b) - datum(a)) || (ia - ib);
+					});
+					k.forEach(function (x) { g.appendChild(x); });
+				});
+				setTimeout(function () { teci = false; }, 0);
+			};
+			izb.addEventListener('change', uredi);
+			if ('MutationObserver' in window) {
+				Array.prototype.forEach.call(rs.querySelectorAll('.reviews-grid'), function (g) {
+					new MutationObserver(function () { if (!teci && izb.value !== 'novi') { uredi(); } }).observe(g, { childList: true });
+				});
+			}
+		}
+	} catch (e) {}
 	document.addEventListener('click', function (e) {
 		if (!e.target.closest) { return; }
 		var b = e.target.closest('.nb-pusc');
