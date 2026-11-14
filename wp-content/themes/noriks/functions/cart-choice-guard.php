@@ -39,7 +39,7 @@ function noriks_cart_choice_guard() {
 				/* translators: 1: ime izdelka, 2: povezava do izdelka */
 				__( 'При продукта %1$s трябва да изберете пакет и цвят/размер. %2$s', 'noriks' ),
 				esc_html( $ime ),
-				$link ? '<a href="' . esc_url( $link ) . '">' . esc_html__( 'Vyberte tu', 'noriks' ) . '</a>' : ''
+				$link ? '<a href="' . esc_url( $link ) . '">' . esc_html__( 'Изберете тук', 'noriks' ) . '</a>' : ''
 			),
 			'error'
 		);
