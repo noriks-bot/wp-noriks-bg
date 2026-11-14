@@ -707,7 +707,7 @@ $is_mixed_bundle = has_term( array( 'komplekti','startovi-paketi','sady','orto-s
 
 
 
-          <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/bg/wp-content/uploads/2026/02/boxers_size_sk.png">
+          <?php include get_template_directory() . '/template_parts/size-chart-boksarki.php'; ?>
 
 
 
@@ -724,7 +724,7 @@ $is_mixed_bundle = has_term( array( 'komplekti','startovi-paketi','sady','orto-s
         <?php elseif(  $is_carape ): ?>
 
 
-                  <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/bg/wp-content/uploads/2026/02/Nogavice_tabela_velikosti_sk.png">
+                  <?php include get_template_directory() . '/template_parts/size-chart-chorapi.php'; ?>
 
     <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slim', $current_product_id) ): ?>
 
@@ -853,14 +853,14 @@ $is_mixed_bundle = has_term( array( 'komplekti','startovi-paketi','sady','orto-s
 
         <?php elseif(  $is_mixed_bundle ): ?>
 
-     <img class="js-open-size-chart" style="cursor:pointer;" src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
+     <?php include get_template_directory() . '/template_parts/size-chart-majice.php'; ?>
 
-        <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/bg/wp-content/uploads/2026/02/boxers_size_sk.png">
+        <?php include get_template_directory() . '/template_parts/size-chart-boksarki.php'; ?>
 
           <?php else: ?>
 
 
-       <img class="js-open-size-chart" style="cursor:pointer;" src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
+       <?php include get_template_directory() . '/template_parts/size-chart-majice.php'; ?>
 
 
         <?php endif; ?>

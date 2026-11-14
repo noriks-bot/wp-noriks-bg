@@ -587,7 +587,7 @@ add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
  * Billing title
  */
 add_action( 'woocommerce_before_checkout_billing_form', function() {
-    echo '<h3 class="checkout-billing-title">Platba a doprava</h3>';
+    echo '<h3 class="checkout-billing-title">Плащане и доставка</h3>';
 });
 
 add_filter( 'default_checkout_billing_country', function() { return 'BG'; });

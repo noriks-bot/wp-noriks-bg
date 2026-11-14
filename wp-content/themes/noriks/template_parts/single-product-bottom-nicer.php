@@ -67,7 +67,7 @@ if (  has_term( array( 'startovi-paketi', 'startovaci-balicek','orto-starter' ),
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="" src="https://noriks.com/bg/wp-content/uploads/2026/02/starter-1_sk.png">
+          <img style="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg/starter-1.jpg" alt="" loading="lazy">
       </div>
     </div>
 
@@ -130,7 +130,7 @@ if (  has_term( array( 'startovi-paketi', 'startovaci-balicek','orto-starter' ),
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-           <img style="" src="https://noriks.com/bg/wp-content/uploads/2026/02/starter-2_sk.png">
+           <img style="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg/starter-2.jpg" alt="" loading="lazy">
       </div>
     </div>
 
@@ -187,7 +187,7 @@ if (  has_term( array( 'startovi-paketi', 'startovaci-balicek','orto-starter' ),
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="" src="https://noriks.com/bg/wp-content/uploads/2026/02/starter-3_sk.png">
+          <img style="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg/starter-3.jpg" alt="" loading="lazy">
       </div>
     </div>
 
@@ -246,7 +246,7 @@ if (  has_term( array( 'startovi-paketi', 'startovaci-balicek','orto-starter' ),
 
 
 <?php 
-if (  has_term( array( 'teniski', 'tricka',  'orto-tricka', 'orto-majica-darila' ), 'product_cat', get_the_id() )  ||  has_term( array( 'komplekti', 'sady' ), 'product_cat', get_the_id() )) : 
+if (  ( function_exists( 'noriks_is_type' ) && ( noriks_is_type( 'majice' ) || noriks_is_type( 'majica-darila' ) ) ) || has_term( array( 'teniski', 'tricka',  'orto-tricka', 'orto-majica-darila' ), 'product_cat', get_the_id() )  ||  has_term( array( 'komplekti', 'sady' ), 'product_cat', get_the_id() )) : 
 ?>
     <?php // Nove sekcije (2026-10-28); pogoj ostaja nespremenjen.
     include get_template_directory() . '/template_parts/product-bottom/why-majice.php'; ?>
@@ -260,7 +260,7 @@ if (  has_term( array( 'teniski', 'tricka',  'orto-tricka', 'orto-majica-darila'
 
 <!-- here we include new file BOXERIRICE-->
 
-<?php if ( has_term( array( 'boksarki', 'boxerky', 'orto-boxerky' ), 'product_cat', get_the_ID() )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
+<?php if ( ( ( function_exists( 'noriks_is_type' ) && noriks_is_type( 'bokserice' ) ) || has_term( array( 'boksarki', 'boxerky', 'orto-boxerky' ), 'product_cat', get_the_ID() ) )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
     <?php // Nove sekcije (2026-10-28); pogoj ostaja nespremenjen.
     include get_template_directory() . '/template_parts/product-bottom/why-bokserice.php'; ?>
 <?php endif; ?>

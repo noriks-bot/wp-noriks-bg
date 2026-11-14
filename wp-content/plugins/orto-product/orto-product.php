@@ -112,6 +112,15 @@ function gck_is_orto_bundle_enabled( $product_id ) : bool {
 // ATTRIBUTE HELPERS (supports 2 attrs OR 4 attrs)
 // ============================================================
 
+/**
+ * Male crke tudi za cirilico in grscino. strtolower() pretvarja samo ASCII, zato "Цвят" (velika zacetnica)
+ * ni bil prepoznan kot barva: skupina barv je ostala prazna in izbirnik ponudb se sploh ni izrisal.
+ */
+function gck_lower( $s ) : string {
+    $s = (string) $s;
+    return function_exists( 'mb_strtolower' ) ? mb_strtolower( $s, 'UTF-8' ) : strtolower( $s );
+}
+
 function gck_get_custom_attributes_in_order( $product ) : array {
     $attributes   = $product->get_attributes();
     $custom_attrs = [];
@@ -132,7 +141,7 @@ function gck_split_attrs_color_size( array $custom_attrs ) : array {
     foreach ( $custom_attrs as $key => $attr ) {
         $label = method_exists($attr, 'get_name') ? (string) $attr->get_name() : (string) $key;
 
-        $hay = strtolower( $key . ' ' . $label );
+        $hay = gck_lower( $key . ' ' . $label );
 
         $is_color = ( strpos($hay, 'strana') !== false || strpos($hay, 'boja') !== false || strpos($hay, 'barva') !== false || strpos($hay, 'farb') !== false || strpos($hay, 'culoare') !== false || strpos($hay, 'color') !== false || strpos($hay, 'colour') !== false || strpos($hay, 'colore') !== false || strpos($hay, 'kolor') !== false || strpos($hay, 'szín') !== false || strpos($hay, 'szin') !== false || strpos($hay, 'ρώμ') !== false || strpos($hay, 'цвят') !== false );
         $is_size = ( strpos($hay, 'veľkos') !== false || strpos($hay, 'velkos') !== false || strpos($hay, 'vel') !== false || strpos($hay, 'size') !== false || strpos($hay, 'marime') !== false || strpos($hay, 'mărime') !== false || strpos($hay, 'rozmiar') !== false || strpos($hay, 'taglia') !== false || strpos($hay, 'größe') !== false || strpos($hay, 'grosse') !== false || strpos($hay, 'groesse') !== false || strpos($hay, 'meret') !== false || strpos($hay, 'méret') !== false || strpos($hay, 'εγεθ') !== false || strpos($hay, 'азмер') !== false || strpos($hay, 'размер') !== false );
@@ -195,7 +204,7 @@ function gck_split_attrs_color_size( array $custom_attrs ) : array {
 }
 
 function gck_attr_group_token( string $label, string $type ) : string {
-    $l = strtolower( trim( $label ) );
+    $l = gck_lower( trim( $label ) );
 
     if ( $type === 'color' ) {
         $l = str_replace(['farba', 'color', 'colour', 'Цвят', 'цвят', ':'], ' ', $l);
@@ -1903,14 +1912,14 @@ function gck_render_bundle_selector() {
                         <?php if ( $per_regular > (float) $data['per'] ) : ?>
                             <span class="gck-per-old"><?php echo number_format( $per_regular, 2 ); ?>€</span>
                         <?php endif; ?>
-                        <span class="gck-per-new"><?php echo number_format( $gck_per_new, 2 ); ?>€ / ks</span>
+                        <span class="gck-per-new"><?php echo number_format( $gck_per_new, 2 ); ?>€ / бр.</span>
                     </span>
                     <?php if ( $discount_pct > 0 ) : ?>
                         <span class="gck-discount-badge">−<?php echo (int) $discount_pct; ?>%</span>
                     <?php endif; ?>
                     </span><!-- /.gck-offer-prices -->
                 <?php else : ?>
-                    — <span class="bundle-option-title"><?php echo number_format( $gck_per_new, 2 ); ?>€ / ks</span>
+                    — <span class="bundle-option-title"><?php echo number_format( $gck_per_new, 2 ); ?>€ / бр.</span>
                 <?php endif; ?>
                 
                 
@@ -1982,7 +1991,7 @@ function gck_render_bundle_selector() {
                             'sizes'   => array( 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL' ),
                         ),
                         array(
-                            'label'   => 'Vyber 1 boxerky zdarma',
+                            'label'   => 'Изберете 1 боксерки безплатно',
                             'gratis'  => true, 'count' => 1, 'gg' => 1, 'garment' => 'bokserica',
                             'ckey'    => 'bokserica_color', 'skey' => 'bokserica_size',
                             'colors'  => array( 'Черен', 'Син', 'Сив', 'Зелен', 'Червен' ),
@@ -2003,7 +2012,7 @@ function gck_render_bundle_selector() {
                     foreach ( (array) $attr_groups as $grp ) {
                         $c   = $grp['color'] ?? null;
                         $s   = $grp['size'] ?? null;
-                        $hay = strtolower(
+                        $hay = gck_lower(
                             (string) ( $c['label'] ?? '' ) . ' ' . (string) ( $c['key'] ?? '' ) . ' ' .
                             (string) ( $s['label'] ?? '' ) . ' ' . (string) ( $s['key'] ?? '' ) . ' ' .
                             (string) ( $grp['token'] ?? '' )
@@ -2060,7 +2069,7 @@ function gck_render_bundle_selector() {
                     <?php
                     if ( $gck_split_garments ) {
                         $gck_passes = array(
-                            array( 'group' => 0, 'label' => 'Vyber ' . (int) $pairs . ' ' . gck_sk_majice_phrase( $pairs, false, 'majica' ), 'gratis' => false ),
+                            array( 'group' => 0, 'label' => 'Изберете ' . (int) $pairs . ' ' . gck_sk_majice_phrase( $pairs, false, 'majica' ), 'gratis' => false ),
                             array( 'group' => 1, 'label' => 'Изберете още ' . (int) $pairs . ' ' . gck_sk_majice_phrase( $pairs, true, 'bokserica' ), 'gratis' => true ),
                         );
                     } else {
@@ -2434,9 +2443,9 @@ function gck_build_shgifts_lines( array $pairs_data ) : array {
 
         $label = '';
         foreach ( array_keys( $attrs ) as $k ) {
-            $kl = strtolower( (string) $k );
+            $kl = gck_lower( (string) $k );
             if ( strpos( $kl, 'majic' ) !== false )    { $label = 'Тениска';  break; }
-            if ( strpos( $kl, 'bokseric' ) !== false ) { $label = 'Boxerky'; break; }
+            if ( strpos( $kl, 'bokseric' ) !== false ) { $label = 'Боксерки'; break; }
             if ( strpos( $kl, 'carap' ) !== false )    { $label = 'Чорапи'; break; }
         }
 

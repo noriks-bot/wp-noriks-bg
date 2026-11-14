@@ -1192,7 +1192,7 @@ img.emoji {
           if (!res.ok || data?.error) {
             checkbox.checked = false;
             syncAddedUI(false);
-            alert('Ne mogu dodati proizvod. Provjeri odabrane opcije (varijacije) i dostupnost.');
+            alert('Продуктът не може да бъде добавен. Провери избраните опции и наличността.');
             setBusy(false);
             return;
           }
