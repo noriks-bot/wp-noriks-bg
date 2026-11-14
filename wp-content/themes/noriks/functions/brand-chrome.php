@@ -1010,6 +1010,16 @@ add_filter( 'gettext', function ( $prevod, $izvirnik, $domena ) {
 		"You're viewing:"       => 'Разглеждате:',
 		'Select options'        => 'Избор',
 		'Out of stock'          => 'Изчерпан',
+		'Oops! That page can&rsquo;t be found.' => 'Страницата не е намерена.',
+		'Nothing was found at this location. Try searching, or check out the links below.' => 'Тук няма нищо. Опитайте с търсене или разгледайте продуктите по-долу.',
+		'Search Results for: %s' => 'Резултати от търсенето за: %s',
+		'Search'                => 'Търсене',
+		'Popular Products'      => 'Най-популярни продукти',
+		'Promoted Products'     => 'Препоръчани продукти',
+		'Product Categories'    => 'Категории',
+		'Search products&hellip;' => 'Търсене на продукти&hellip;',
+		'Nothing Found'         => 'Няма намерени резултати',
+		'Sorry, but nothing matched your search terms. Please try again with some different keywords.' => 'Няма резултати за това търсене. Опитайте с други думи.',
 	);
 	return isset( $bg[ $izvirnik ] ) ? $bg[ $izvirnik ] : $prevod;
 }, 30, 3 );

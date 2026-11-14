@@ -700,7 +700,7 @@ body.woocommerce-order-received .woocommerce {
                     <div class="ty-upsell-status" id="ty-upsell-status"></div>
 
                     <div class="buttons-section">
-                        <a class="pass-btn" id="ty-btn-skip">Nechcem</a>
+                        <a class="pass-btn" id="ty-btn-skip">Не, благодаря</a>
                         <div class="buy-btn" id="ty-btn-add" data-product-id="<?php echo esc_attr( $upsell_product_id ); ?>">ДОБАВИ КЪМ ПОРЪЧКАТА</div>
                     </div>
                 </div>
@@ -750,7 +750,7 @@ body.woocommerce-order-received .woocommerce {
                     ?>
                     <div class="ty-grid-item">
                         <img src="<?php echo esc_url( $gp_img_url ); ?>" alt="<?php echo esc_attr( $gp->get_name() ); ?>">
-                        <div class="g-category">BOKSERICE</div>
+                        <div class="g-category"><?php echo has_term( 'teniski', 'product_cat', $gp->get_id() ) && ! has_term( 'boksarki', 'product_cat', $gp->get_id() ) ? 'ТЕНИСКИ' : ( has_term( 'boksarki', 'product_cat', $gp->get_id() ) ? 'БОКСЕРКИ' : 'NORIKS' ); ?></div>
                         <div class="g-name"><?php echo esc_html( $gp->get_name() ); ?></div>
                         <div class="g-price-old"><?php echo number_format( $gp_price, 2, ',', '.' ); ?>€</div>
                         <div class="g-price-new"><?php echo number_format( $gp_sale, 2, ',', '.' ); ?>€</div>
@@ -770,7 +770,7 @@ body.woocommerce-order-received .woocommerce {
                     <?php endforeach; ?>
                 </div>
                 <div class="buttons-section">
-                    <a class="pass-btn" id="ty-grid-close">Nechcem</a>
+                    <a class="pass-btn" id="ty-grid-close">Не, благодаря</a>
                     <div class="buy-btn" id="ty-grid-add-all">ДОБАВИ КЪМ ПОРЪЧКАТА</div>
                 </div>
                 </div><!-- /ty-section-body-inner -->
@@ -829,9 +829,9 @@ body.woocommerce-order-received .woocommerce {
             </div>
             <div class="ty-section-body open">
                 <div class="ty-section-body-inner">
-                    <div class="ty-row"><span class="ty-row-label">Meno</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() ); ?></span></div>
-                    <div class="ty-row"><span class="ty-row-label">Adresa</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_address_1() . ' ' . $order->get_billing_address_2() ); ?></span></div>
-                    <div class="ty-row"><span class="ty-row-label">Mesto</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_postcode() . ' ' . $order->get_billing_city() ); ?></span></div>
+                    <div class="ty-row"><span class="ty-row-label">Име</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() ); ?></span></div>
+                    <div class="ty-row"><span class="ty-row-label">Адрес</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_address_1() . ' ' . $order->get_billing_address_2() ); ?></span></div>
+                    <div class="ty-row"><span class="ty-row-label">Град</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_postcode() . ' ' . $order->get_billing_city() ); ?></span></div>
                     <?php if ( $order->get_billing_phone() ) : ?>
                     <div class="ty-row"><span class="ty-row-label">Телефон</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_phone() ); ?></span></div>
                     <?php endif; ?>
