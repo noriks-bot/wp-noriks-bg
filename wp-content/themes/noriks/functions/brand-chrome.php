@@ -1024,6 +1024,62 @@ add_filter( 'gettext', function ( $prevod, $izvirnik, $domena ) {
 	return isset( $bg[ $izvirnik ] ) ? $bg[ $izvirnik ] : $prevod;
 }, 30, 3 );
 
+// Mobilni meni: razsirljive podkategorije (isti podatki kot spustni meni na racunalniku) in dejstva na dnu.
+add_action( 'wp_footer', function () {
+	?>
+<script>
+(function () {
+	var meni = document.getElementById('mobileMenu'), el = document.getElementById('ch-meni');
+	if (!meni || !window.matchMedia || !window.matchMedia('(max-width:768px)').matches) { return; }
+	var data = {};
+	try { data = el ? JSON.parse(el.textContent) : {}; } catch (e) { data = {}; }
+	function pot(h) { try { return new URL(h, location.href).pathname.replace(/^\/[a-z]{2}(?=\/)/, '').replace(/\/+$/, ''); } catch (e) { return ''; } }
+	var plus = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>';
+	var pusc = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+	Array.prototype.forEach.call(meni.querySelectorAll('a.nav-link:not(.nav-link--pill)'), function (a) {
+		var pv = (data.p || {})[pot(a.getAttribute('href') || '')];
+		if (!pv || !pv.length) { return; }
+		var vrsta = document.createElement('div'); vrsta.className = 'nb-mm-vrsta';
+		a.parentNode.insertBefore(vrsta, a); vrsta.appendChild(a);
+		var b = document.createElement('button'); b.type = 'button'; b.className = 'nb-mm-vec'; b.innerHTML = plus;
+		b.setAttribute('aria-expanded', 'false'); b.setAttribute('aria-label', a.textContent.trim());
+		vrsta.appendChild(b);
+		var pod = document.createElement('div'); pod.className = 'nb-mm-pod';
+		var vse = document.createElement('a'); vse.className = 'nb-mm-vse'; vse.href = a.href; vse.innerHTML = '<span></span>' + pusc; vse.firstChild.textContent = a.textContent.trim(); pod.appendChild(vse);
+		pv.forEach(function (x) { var l = document.createElement('a'); l.href = x[1]; l.textContent = x[0]; pod.appendChild(l); });
+		vrsta.parentNode.insertBefore(pod, vrsta.nextSibling);
+		b.addEventListener('click', function (e) {
+			e.preventDefault(); e.stopPropagation();
+			var odprt = pod.classList.toggle('nb-odprt'); b.setAttribute('aria-expanded', odprt ? 'true' : 'false');
+		});
+	});
+	// dejstva z vrha strani (ista besedila kot v traku nad glavo)
+	var trak = document.querySelectorAll('.top-header .ch-tb__i, .top-header .marquee-content span, .top-header span');
+	var videno = {}, dejstva = [];
+	Array.prototype.forEach.call(trak, function (t) {
+		var x = (t.textContent || '').replace(/\s+/g, ' ').trim();
+		if (x && x.length > 6 && x.length < 70 && !videno[x] && !t.querySelector('span')) { videno[x] = 1; dejstva.push(x); }
+	});
+	var mail = meni.querySelector('a.mobile-only-menu-item');
+	if (dejstva.length && mail) {
+		var ul = document.createElement('ul'); ul.className = 'nb-mm-dno';
+		dejstva.slice(0, 2).forEach(function (x) {
+			var li = document.createElement('li');
+			li.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span></span>';
+			li.lastChild.textContent = x; ul.appendChild(li);
+		});
+		mail.parentNode.insertBefore(ul, mail);
+		meni.classList.add('nb-mm-pripravljen');
+	}
+	// klik zunaj menija ga zapre
+	document.addEventListener('click', function (e) {
+		if (meni.classList.contains('active') && !meni.contains(e.target) && !(e.target.closest && e.target.closest('.mobile-menu-toggle'))) { meni.classList.remove('active'); }
+	});
+})();
+</script>
+	<?php
+}, 30 );
+
 // Stranska kosarica (vticnik nima bolgarskega prevoda): nizi, ki jih vidi kupec.
 add_filter( 'gettext', function ( $prevod, $izvirnik, $domena ) {
 	if ( 'side-cart-woocommerce' !== $domena ) {
