@@ -67,7 +67,7 @@ if (  has_term( array( 'startovi-paketi', 'startovaci-balicek','orto-starter' ),
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg/starter-1.jpg" alt="" loading="lazy">
+          <img style="" src="<?php echo esc_url( content_url( '/uploads/2026/04/starter-1_bg.png' ) ); ?>" alt="" loading="lazy">
       </div>
     </div>
 
@@ -130,7 +130,7 @@ if (  has_term( array( 'startovi-paketi', 'startovaci-balicek','orto-starter' ),
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-           <img style="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg/starter-2.jpg" alt="" loading="lazy">
+           <img style="" src="<?php echo esc_url( content_url( '/uploads/2026/04/starter-2_bg.png' ) ); ?>" alt="" loading="lazy">
       </div>
     </div>
 
@@ -187,7 +187,7 @@ if (  has_term( array( 'startovi-paketi', 'startovaci-balicek','orto-starter' ),
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg/starter-3.jpg" alt="" loading="lazy">
+          <img style="" src="<?php echo esc_url( content_url( '/uploads/2026/04/starter-3_bg.png' ) ); ?>" alt="" loading="lazy">
       </div>
     </div>
 
