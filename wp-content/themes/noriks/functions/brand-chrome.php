@@ -172,7 +172,7 @@ function brand_chrome_izdelki( $args, &$vsi ) {
 		$id = (int) $p->get_id();
 		if ( ! isset( $vsi[ $id ] ) ) {
 			$vsi[ $id ] = array(
-				'n' => trim( preg_replace( '/\\s*\\|.*$/u', '', $p->get_name() ) ),
+				'n' => function_exists( 'noriks_bg_ime' ) ? noriks_bg_ime( $p->get_name() ) : '',
 				'u' => $p->get_permalink(),
 				'i' => brand_chrome_slika( $p ),
 				'c' => $p->get_price_html(),
@@ -188,7 +188,7 @@ function brand_chrome_meni() {
 	if ( ! function_exists( 'wc_get_products' ) || ! taxonomy_exists( 'product_cat' ) ) {
 		return array();
 	}
-	$ven = get_transient( 'brand_chrome_meni_v4' );
+	$ven = get_transient( 'brand_chrome_meni_v6' );
 	if ( is_array( $ven ) ) {
 		return $ven;
 	}
@@ -226,14 +226,32 @@ function brand_chrome_meni() {
 	if ( $v && function_exists( 'wc_get_page_permalink' ) ) {
 		$m[ brand_chrome_pot( wc_get_page_permalink( 'shop' ) ) ] = $v;
 	}
-	$ven = $m ? array( 'i' => $izd, 'm' => $m, 'v' => $v ) : array();
-	set_transient( 'brand_chrome_meni_v4', $ven, HOUR_IN_SECONDS );
+	// NORIKS BG: levi del plosce (povezave) in izdelki "vseh izdelkov" iz kategorij menija
+	$pov = array();
+	if ( function_exists( 'noriks_bg_meni_povezave' ) ) {
+		$pov = noriks_bg_meni_povezave();
+		$iz_kategorij = array();
+		for ( $i = 0; $i < 2; $i++ ) {
+			foreach ( (array) $meni as $m_el ) {
+				$pot_k = isset( $m_el['link'] ) ? brand_chrome_pot( $m_el['link'] ) : '';
+				if ( '' !== $pot_k && isset( $m[ $pot_k ][ $i ] ) && ! in_array( $m[ $pot_k ][ $i ], $iz_kategorij, true ) && preg_match( '#product-category/#', $pot_k ) ) {
+					$iz_kategorij[] = $m[ $pot_k ][ $i ];
+				}
+			}
+		}
+		if ( count( $iz_kategorij ) >= 4 && function_exists( 'wc_get_page_permalink' ) ) {
+			$v = $iz_kategorij;
+			$m[ brand_chrome_pot( wc_get_page_permalink( 'shop' ) ) ] = $v;
+		}
+	}
+	$ven = $m ? array( 'i' => $izd, 'm' => $m, 'v' => $v, 'p' => $pov ) : array();
+	set_transient( 'brand_chrome_meni_v6', $ven, HOUR_IN_SECONDS );
 	return $ven;
 }
 
 foreach ( array( 'save_post_product', 'woocommerce_update_product', 'edited_product_cat', 'created_product_cat', 'after_switch_theme' ) as $brand_chrome_kavelj ) {
 	add_action( $brand_chrome_kavelj, function () {
-		delete_transient( 'brand_chrome_meni_v4' );
+		delete_transient( 'brand_chrome_meni_v6' );
 	} );
 }
 
@@ -327,6 +345,8 @@ add_action( 'wp_footer', function () {
 		var n = el_('a', 'ch-dd__naslov'); n.href = a.href; n.textContent = a.textContent.trim(); g.appendChild(n);
 		var vse = el_('a', 'ch-dd__vse'); vse.href = a.href; vse.setAttribute('aria-label', n.textContent);
 		vse.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'; g.appendChild(vse);
+		var pv = (data.p || {})[pot(a.getAttribute('href') || '')];
+		if (pv && pv.length) { var sez = el_('div', 'ch-dd__povezave'); pv.forEach(function (x) { var l = el_('a'); l.href = x[1]; l.textContent = x[0]; sez.appendChild(l); }); g.insertBefore(sez, vse); }
 		ids.forEach(function (id) { var k = kartica(id); if (k) { m.appendChild(k); } });
 		telo.appendChild(m);
 		// malo izdelkov v kategoriji: pod njimi se ostali izdelki trgovine
@@ -375,6 +395,61 @@ add_action( 'template_redirect', function () {
 /** Kategorije, ki so filtri celotne trgovine (niso v glavnem meniju). */
 function noriks_bg_skupine_trgovine() {
 	return array( 'nai-prodavani', 'startovi-paketi', 'golemi-paketi' );
+}
+
+/** Ime izdelka za kartice: brez dodatka za "|"; pri "NORIKS | ime" ostane ime, ne znamka. */
+function noriks_bg_ime( $ime ) {
+	$ime = trim( (string) $ime );
+	if ( preg_match( '/^noriks\s*\|\s*(.+)$/iu', $ime, $m ) ) {
+		$ime = $m[1];
+	}
+	return trim( (string) preg_replace( '/\s*\|.*$/u', '', $ime ) );
+}
+
+/** Povezave v levem delu spustnega menija: pot povezave v meniju => array( array( napis, url ) ). */
+function noriks_bg_meni_povezave() {
+	$ven = array();
+	$kat = array();
+	foreach ( noriks_bg_meni() as $el ) {
+		$s = isset( $el['link'] ) ? noriks_bg_slug_povezave( $el['link'] ) : '';
+		if ( '' === $s || empty( $el['text'] ) ) {
+			continue;
+		}
+		$kat[] = array( (string) $el['text'], (string) $el['link'] );
+		$t     = get_term_by( 'slug', $s, 'product_cat' );
+		if ( ! $t || is_wp_error( $t ) ) {
+			continue;
+		}
+		$otroci = get_terms( array( 'taxonomy' => 'product_cat', 'parent' => $t->term_id, 'hide_empty' => true ) );
+		if ( ! is_array( $otroci ) || ! $otroci ) {
+			continue;
+		}
+		usort( $otroci, 'noriks_bg_uredi_podkategorije' );
+		$sez = array();
+		foreach ( array_slice( $otroci, 0, 7 ) as $o ) {
+			$l = get_term_link( $o );
+			if ( ! is_wp_error( $l ) ) {
+				$sez[] = array( $o->name, $l );
+			}
+		}
+		if ( $sez && function_exists( 'brand_chrome_pot' ) ) {
+			$ven[ brand_chrome_pot( $el['link'] ) ] = $sez;
+		}
+	}
+	// vsi izdelki: kategorije menija + skupine trgovine
+	foreach ( noriks_bg_skupine_trgovine() as $slug ) {
+		$t = get_term_by( 'slug', $slug, 'product_cat' );
+		if ( $t && ! is_wp_error( $t ) && ! empty( $t->count ) ) {
+			$l = get_term_link( $t );
+			if ( ! is_wp_error( $l ) ) {
+				$kat[] = array( $t->name, $l );
+			}
+		}
+	}
+	if ( $kat && function_exists( 'brand_chrome_pot' ) && function_exists( 'wc_get_page_permalink' ) ) {
+		$ven[ brand_chrome_pot( wc_get_page_permalink( 'shop' ) ) ] = $kat;
+	}
+	return $ven;
 }
 
 /** Postavke glavnega menija (ACF): array( link, text ). */
@@ -604,7 +679,7 @@ add_action( 'woocommerce_before_single_product', function () {
 			break;
 		}
 	}
-	$drob[] = array( trim( (string) preg_replace( '/\s*\|.*$/u', '', $product->get_name() ) ), '' );
+	$drob[] = array( noriks_bg_ime( $product->get_name() ), '' );
 	noriks_bg_drobtine( $drob, 'nb-drobtine--izdelek' );
 }, 4 );
 
@@ -658,7 +733,7 @@ function noriks_bg_kartica( $p ) {
 		return '';
 	}
 	$id  = (int) $p->get_id();
-	$ime = trim( (string) preg_replace( '/\s*\|.*$/u', '', $p->get_name() ) );
+	$ime = noriks_bg_ime( $p->get_name() );
 	if ( $p->is_type( 'variable' ) ) {
 		$redna  = (float) $p->get_variation_regular_price( 'min', true );
 		$znizan = (float) $p->get_variation_sale_price( 'min', true );
