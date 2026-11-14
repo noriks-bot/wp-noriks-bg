@@ -646,3 +646,103 @@ body.single-product #reviews-section .cta-button2:hover{background:#F5A623!impor
   body.single-product #reviews-section .review-card .card-top{padding:9px 12px;flex-direction:column;align-items:flex-start;gap:2px}
   body.single-product #reviews-section .reviews-tab{flex:1 1 auto;font-size:12.5px!important;padding:0 10px!important}
 }
+
+/* ===== skupna glava sekcije ===== */
+.nb-glava{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin:0 0 30px}
+.nb-obroba{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 20px;border:1px solid #0B0B0B;border-radius:4px;color:#0B0B0B!important;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none!important;white-space:nowrap;transition:background-color .16s ease,color .16s ease}
+.nb-obroba svg{width:16px;height:16px;transition:transform .16s ease}
+.nb-obroba:hover{background:#0B0B0B;color:#fff!important}
+.nb-obroba:hover svg{transform:translateX(4px)}
+/* nadnaslov nad naslovoma teme */
+body.home .most-popular .collections__title::before,body.home .reviews-section .collections__title::before{content:"NORIKS";display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:.16em;color:#B5730E;background:linear-gradient(#F5A623,#F5A623) left center/26px 2px no-repeat;padding-left:36px}
+
+/* ===== kolekcije: dve veliki, tri manjse ploscice ===== */
+.nb-kolekcije{background:#fff;padding:clamp(52px,5.4vw,84px) 0}
+.nb-kolekcije__mreza{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
+.nb-kol{position:relative;grid-column:span 2;display:block;aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#110D09;color:#fff!important;text-decoration:none!important;isolation:isolate}
+.nb-kol--velika{grid-column:span 3;aspect-ratio:3/2}
+.nb-kol img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:0!important;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.nb-kol:hover img{transform:scale(1.045)}
+.nb-kol::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(11,11,11,.86) 0,rgba(11,11,11,.28) 42%,rgba(11,11,11,0) 64%)}
+.nb-kol--velika::after{background:linear-gradient(90deg,rgba(11,11,11,.72) 0,rgba(11,11,11,.2) 46%,rgba(11,11,11,0) 66%),linear-gradient(0deg,rgba(11,11,11,.7) 0,rgba(11,11,11,0) 46%)}
+.nb-kol__st{position:absolute;z-index:2;top:18px;left:20px;font-size:12px;font-weight:700;letter-spacing:.14em;color:rgba(255,255,255,.72)}
+.nb-kol__stevilo{position:absolute;z-index:2;top:14px;right:14px;padding:6px 10px;border-radius:3px;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:12px;font-weight:600;line-height:1.2}
+.nb-kol__spodaj{position:absolute;z-index:2;left:0;right:0;bottom:0;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;padding:22px}
+.nb-kol__besedilo{display:block;min-width:0}
+.nb-kol__besedilo b{display:block;font-size:clamp(22px,2vw,30px);line-height:1.05;font-weight:800;letter-spacing:-.03em;color:#fff}
+.nb-kol--velika .nb-kol__besedilo b{font-size:clamp(28px,3vw,44px)}
+.nb-kol__besedilo i{display:block;margin-top:8px;font-style:normal;font-size:14.5px;line-height:1.4;color:rgba(255,255,255,.82)}
+.nb-kol__pusc{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:46px;height:46px;border-radius:50%;background:#fff;color:#0B0B0B;transition:background-color .18s ease,transform .18s ease}
+.nb-kol__pusc svg{width:18px;height:18px}
+.nb-kol:hover .nb-kol__pusc{background:#F5A623;transform:translateX(3px)}
+
+/* ===== tekoci trak kategorij ===== */
+.nb-trakec{overflow:hidden;background:#F5A623;border-top:1px solid rgba(11,11,11,.12);border-bottom:1px solid rgba(11,11,11,.12)}
+.nb-trakec__in{display:flex;align-items:center;gap:26px;width:max-content;padding:13px 0;animation:nb-tece 46s linear infinite}
+.nb-trakec:hover .nb-trakec__in{animation-play-state:paused}
+.nb-trakec a{color:#0B0B0B!important;font-size:14px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;text-decoration:none!important;white-space:nowrap}
+.nb-trakec a:hover{text-decoration:underline!important;text-underline-offset:4px}
+.nb-trakec span{color:#0B0B0B;font-size:12px;opacity:.6}
+@keyframes nb-tece{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.nb-trakec__in,.nb-znak svg{animation:none!important}}
+
+/* ===== hero: okrogel znak in ikone dejstev ===== */
+.nb-hero__dejstva svg{width:19px;height:19px}
+.nb-znak{position:absolute;z-index:3;right:clamp(20px,3.4vw,56px);bottom:clamp(20px,3vw,48px);width:128px;height:128px;border-radius:50%;background:rgba(11,11,11,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18)}
+.nb-znak svg{position:absolute;inset:4px;width:120px;height:120px;animation:nb-vrti 22s linear infinite}
+.nb-znak text{fill:#fff;font-size:9.6px;font-weight:700;font-family:var(--ch-body)}
+.nb-znak span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#F5A623}
+.nb-znak span svg{position:static;width:34px;height:34px;animation:none}
+@keyframes nb-vrti{to{transform:rotate(360deg)}}
+
+/* ===== zavihki s stevilom, barvne pike, ikone tock ===== */
+.nb-zavihek sup{margin-left:6px;font-size:13px;font-weight:700;letter-spacing:0;color:#A29D95;vertical-align:top;position:relative;top:.2em}
+.nb-zavihek.je-izbran sup{color:#B5730E}
+.nb-barve{display:flex;align-items:center;gap:14px;margin:0 0 30px}
+.nb-barve__pike{display:flex}
+.nb-pika{width:26px;height:26px;margin-left:-6px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(11,11,11,.16)}
+.nb-pika:first-child{margin-left:0}
+.nb-barve__napis{color:#3B3833;font-size:14px;font-weight:600}
+.nb-barve--temna .nb-pika{border-color:#0B0B0B;box-shadow:0 0 0 1px rgba(255,255,255,.3)}
+.nb-barve--temna .nb-barve__napis{color:rgba(255,255,255,.82)}
+.nb-zgodba__tri{margin-bottom:20px}
+.nb-tocke{margin-bottom:26px}
+.nb-tocke__ik{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;margin:0 0 14px;border-radius:6px;background:rgba(255,255,255,.1);color:#F5A623}
+.nb-tocke__ik svg{width:21px;height:21px}
+.nb-tocke li{padding-top:20px}
+
+/* ===== pas z jamstvi nad nogo: kartice z ikono v krogu ===== */
+body .info-banner .info-items-container{gap:18px;padding-top:40px;padding-bottom:40px}
+body .info-banner .info-item{padding:26px 24px!important;border:0!important;border-radius:8px;background:#F5F3EF;text-align:left!important}
+body .info-banner .info-item img.info-icon{display:block;width:52px!important;height:52px!important;margin:0 0 18px!important;padding:11px;box-sizing:border-box;border-radius:50%;background:#fff;object-fit:contain}
+body .info-banner .info-item h3{margin:0 0 8px!important;text-align:left!important}
+body .info-banner .info-item p{text-align:left!important;margin:0!important}
+body .info-banner .phone-footer-checkout{justify-content:flex-start!important;margin-top:10px}
+
+@media (max-width:1100px){
+  .nb-kol{grid-column:span 3}
+  .nb-kol--velika{grid-column:span 6;aspect-ratio:16/9}
+  .nb-kol:last-child{grid-column:span 6;aspect-ratio:16/7}
+}
+@media (max-width:768px){
+  .nb-glava{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:22px}
+  .nb-kolekcije__mreza{gap:12px}
+  .nb-kol--velika{aspect-ratio:4/3}
+  .nb-kol:last-child{aspect-ratio:16/9}
+  .nb-kol__spodaj{padding:14px}
+  .nb-kol__besedilo i{display:none}
+  .nb-kol--velika .nb-kol__besedilo i{display:block}
+  .nb-kol__pusc{width:36px;height:36px}
+  .nb-kol__stevilo{top:10px;right:10px;font-size:11px;padding:5px 8px}
+  .nb-kol__st{top:12px;left:14px}
+  .nb-znak{display:none}
+  .nb-trakec a{font-size:12.5px}
+  .nb-trakec__in{gap:18px;padding:10px 0}
+  .nb-barve{flex-wrap:wrap}
+  body .info-banner .info-items-container{gap:12px}
+}
+
+.nb-kategorije__zavihki{padding-top:12px}
+
+.nb-zgodba--temna .nb-zgodba__slika img{object-position:88% center}
+@media (max-width:768px){.nb-kol:not(.nb-kol--velika) .nb-kol__besedilo b{font-size:17px;letter-spacing:-.02em}.nb-kol:not(.nb-kol--velika) .nb-kol__pusc{width:30px;height:30px}.nb-kol:not(.nb-kol--velika) .nb-kol__pusc svg{width:14px;height:14px}}

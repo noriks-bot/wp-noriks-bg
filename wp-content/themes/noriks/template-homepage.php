@@ -48,12 +48,18 @@ get_header(); ?>
       <a class="nb-hero__drugi" href="/bg/product-category/komplekti/">Комплекти</a>
     </div>
     <ul class="nb-hero__dejstva">
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Безплатна доставка за поръчки над 70 €</li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>30 дни без риск</li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Размери S–4XL</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3v3h-7z"/><circle cx="6.5" cy="17.5" r="1.7"/><circle cx="17" cy="17.5" r="1.7"/></svg>Безплатна доставка за поръчки над 70 €</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2.2 2.2L15 10.5"/></svg>30 дни без риск</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15L15 4l5 5L9 20z"/><path d="M8 11l1.6 1.6M11 8l1.6 1.6M14 5l1.6 1.6"/></svg>Размери S–4XL</li>
     </ul>
   </div>
+  <div class="nb-znak" aria-hidden="true">
+    <svg viewBox="0 0 120 120"><defs><path id="nb-krog" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#nb-krog" textLength="284" lengthAdjust="spacing">30 ДНИ БЕЗ РИСК ✦ 30 ДНИ БЕЗ РИСК ✦ </textPath></text></svg>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2.2 2.2L15 10.5"/></svg></span>
+  </div>
 </section>
+
+<?php if ( function_exists( 'noriks_bg_trak_kategorij' ) ) { noriks_bg_trak_kategorij(); } ?>
 
 <section class="nb nb-razlike">
   <div class="nb-ovoj">
@@ -186,116 +192,7 @@ get_header(); ?>
   
   
   
-  <section class="collections">
-  <div class="collections__header">
-    <h2 class="collections__title">Пазарувайте по колекция</h2>
-
-    <a class="collections__cta" href="/bg/shop">
-      Всички продукти<span aria-hidden="true">›</span>
-    </a>
-  </div>
-
-  <div class="collections__grid">
-    <!-- Card 1 -->
-    <a class="collection-card" href="/bg/product-category/teniski/">
-      <div class="collection-card__media">
-        <img
-          src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
-          alt="Crew neck t-shirt"
-        />
-      </div>
-
-      <div class="collection-card__body">
-        <div class="collection-card__text">
-          <div class="collection-card__topline">
-            <h3 class="collection-card__name">Тениски</h3>
-          </div>
-          <p class="collection-card__desc">
-           Комфорт през целия ден. Без стягане.
-          </p>
-        </div>
-
-        <span class="collection-card__arrow" aria-hidden="true">›</span>
-      </div>
-    </a>
-
-    <!-- Card 2 -->
-    <a class="collection-card" href="/bg/product-category/boksarki/">
-      <div class="collection-card__media">
-        <img
-          src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
-          alt="V-neck t-shirt"
-        />
-      </div>
-
-      <div class="collection-card__body">
-        <div class="collection-card__text">
-          <div class="collection-card__topline">
-            <h3 class="collection-card__name">Боксерки</h3>
-          </div>
-          <p class="collection-card__desc">
-          Меки. Дишащи. Надеждни.
-
-          </p>
-        </div>
-
-        <span class="collection-card__arrow" aria-hidden="true">›</span>
-      </div>
-    </a>
-
-    <!-- Card 3 -->
-    <a class="collection-card" href="/bg/product-category/komplekti/">
-      <div class="collection-card__media">
-        <img
-          src="<?php echo get_template_directory_uri(); ?>/img/noriks-kompleti.jpeg"
-          alt="Long sleeve shirt"
-        />
-      </div>
-
-      <div class="collection-card__body">
-        <div class="collection-card__text">
-          <div class="collection-card__topline">
-            <h3 class="collection-card__name">Комплекти</h3>
-       
-          </div>
-          <p class="collection-card__desc">
-Най-добра стойност в пакет.
-          </p>
-        </div>
-
-        <span class="collection-card__arrow" aria-hidden="true">›</span>
-      </div>
-    </a>
-    
-    <!-- Card 3 -->
-    <a class="collection-card" href="/bg/product-category/startovi-paketi/">
-      <div class="collection-card__media">
-        <img
-          src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"
-          alt="Long sleeve shirt"
-        />
-      </div>
-
-      <div class="collection-card__body">
-        <div class="collection-card__text">
-          <div class="collection-card__topline">
-            <h3 class="collection-card__name">Стартов пакет</h3>
-           
-           
-          </div>
-          <p class="collection-card__desc">
-Опитайте NORIKS на по-изгодна цена.
-
-          </p>
-        </div>
-
-        <span class="collection-card__arrow" aria-hidden="true">›</span>
-      </div>
-    </a>
-
-   
-  </div>
-</section>
+  <?php if ( function_exists( 'noriks_bg_kolekcije' ) ) { noriks_bg_kolekcije(); } ?>
 
 
 <style>/* ---- Section ---- */
@@ -719,6 +616,7 @@ a:hover {
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>По-широки рамене</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Не се мачка</li>
       </ul>
+      <div class="nb-barve"><span class="nb-barve__pike"><span class="nb-pika" style="background:#111111" title="Черна"></span><span class="nb-pika" style="background:#FFFFFF" title="Бяла"></span><span class="nb-pika" style="background:#8A8A8A" title="Сива"></span><span class="nb-pika" style="background:#D9C9A8" title="Бежова"></span><span class="nb-pika" style="background:#1F2A44" title="Тъмносиня"></span><span class="nb-pika" style="background:#7A4A2A" title="Кафява"></span><span class="nb-pika" style="background:#55602F" title="Зелена"></span></span><span class="nb-barve__napis">7 цвята, които остават като нови</span></div>
       <a class="nb-gumb" href="/bg/product-category/teniski/">Тениски</a>
     </div>
   </div>
@@ -726,16 +624,17 @@ a:hover {
 
 <section class="nb nb-zgodba nb-zgodba--temna">
   <div class="nb-ovoj nb-zgodba__mreza">
-    <div class="nb-zgodba__slika"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/noriks-boksarice.jpeg" alt="" loading="lazy" /></div>
+    <div class="nb-zgodba__slika"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/brand/kol-boksarki.jpg" alt="" loading="lazy" /></div>
     <div class="nb-zgodba__besedilo">
       <p class="nb-nadnaslov">NORIKS</p>
       <h2 class="nb-h2">Боксерки, за които забравяш. От сутрин до вечер.</h2>
       <ul class="nb-tocke">
-        <li><b>Не миришат</b><span>Modal забавя размножаването на бактерии, така че остават свежи и след дълъг ден.</span></li>
-        <li><b>Не се набират</b><span>Крачолите остават на място, и при ходене, клек или тренировка.</span></li>
-        <li><b>Коланът не стяга</b><span>Мекият ластик държи, но не притиска и след пране не губи еластичност.</span></li>
-        <li><b>Нищо не драска</b><span>Отпечатан етикет и плоски шевове, нежни за кожата цял ден.</span></li>
+        <li><i class="nb-tocke__ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h8a2.5 2.5 0 1 1-2.5 2.5"/></svg></i><b>Не миришат</b><span>Modal забавя размножаването на бактерии, така че остават свежи и след дълъг ден.</span></li>
+        <li><i class="nb-tocke__ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 11h12v9H6zM9 11V8a3 3 0 0 1 6 0v3"/></svg></i><b>Не се набират</b><span>Крачолите остават на място, и при ходене, клек или тренировка.</span></li>
+        <li><i class="nb-tocke__ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0"/></svg></i><b>Коланът не стяга</b><span>Мекият ластик държи, но не притиска и след пране не губи еластичност.</span></li>
+        <li><i class="nb-tocke__ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 3.8a5.5 5.5 0 0 0-7.8 0L5 11.2V19h7.8l7.4-7.4a5.5 5.5 0 0 0 0-7.8zM16 8L3 21M17.5 15H9"/></svg></i><b>Нищо не драска</b><span>Отпечатан етикет и плоски шевове, нежни за кожата цял ден.</span></li>
       </ul>
+      <div class="nb-barve nb-barve--temna"><span class="nb-barve__pike"><span class="nb-pika" style="background:#111111" title="Черни"></span><span class="nb-pika" style="background:#1F2A44" title="Тъмносини"></span><span class="nb-pika" style="background:#B3261E" title="Червени"></span><span class="nb-pika" style="background:#8A8A8A" title="Сиви"></span><span class="nb-pika" style="background:#1F5A3A" title="Зелени"></span></span><span class="nb-barve__napis">5 цвята за всеки ден</span></div>
       <a class="nb-gumb nb-gumb--svetel" href="/bg/product-category/boksarki/">Боксерки</a>
     </div>
   </div>

@@ -747,7 +747,7 @@ function noriks_bg_po_kategorijah() {
 			$kartice .= noriks_bg_kartica( $p );
 		}
 		if ( '' !== $kartice ) {
-			$zav[] = array( $t->name, $el['link'], $kartice );
+			$zav[] = array( $t->name, $el['link'], $kartice, (int) $t->count );
 		}
 	}
 	if ( ! $zav ) {
@@ -758,7 +758,7 @@ function noriks_bg_po_kategorijah() {
 	echo '<section class="nb nb-kategorije"><div class="nb-ovoj">';
 	echo '<div class="nb-kategorije__glava"><div class="nb-kategorije__zavihki" role="tablist">';
 	foreach ( $zav as $i => $z ) {
-		echo '<button type="button" class="nb-zavihek' . ( 0 === $i ? ' je-izbran' : '' ) . '" role="tab" aria-selected="' . ( 0 === $i ? 'true' : 'false' ) . '" data-i="' . (int) $i . '">' . esc_html( $z[0] ) . '</button>';
+		echo '<button type="button" class="nb-zavihek' . ( 0 === $i ? ' je-izbran' : '' ) . '" role="tab" aria-selected="' . ( 0 === $i ? 'true' : 'false' ) . '" data-i="' . (int) $i . '">' . esc_html( $z[0] ) . ( ! empty( $z[3] ) ? '<sup>' . (int) $z[3] . '</sup>' : '' ) . '</button>';
 	}
 	echo '</div><div class="nb-kategorije__nav">';
 	echo '<button type="button" class="nb-pusc nb-pusc--temna" data-trak=".nb-kategorije .nb-trak:not([hidden])" data-smer="-1" aria-label="Назад">' . $pusc_l . '</button>';
@@ -798,3 +798,63 @@ add_action( 'wp_footer', function () {
 </script>
 	<?php
 }, 32 );
+
+/** Domaca stran: kolekcije (dve veliki, tri manjse ploscice) s stevilom izdelkov. Besedila so s prejsnjih kartic. */
+function noriks_bg_kolekcije() {
+	$plosce = array(
+		array( 'teniski', 'Тениски', 'Комфорт през целия ден. Без стягане.', 'kol-teniski', true ),
+		array( 'boksarki', 'Боксерки', 'Меки. Дишащи. Надеждни.', 'kol-boksarki', true ),
+		array( 'komplekti', 'Комплекти', 'Най-добра стойност в пакет.', 'kol-komplekti', false ),
+		array( 'chorapi', 'Чорапи', '', 'kol-chorapi', false ),
+		array( 'startovi-paketi', 'Стартов пакет', 'Опитайте NORIKS на по-изгодна цена.', 'kol-starter', false ),
+	);
+	list( $trg_ime, $trg_url ) = noriks_bg_trgovina();
+	$pusc = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+	$h    = '';
+	$n    = 0;
+	foreach ( $plosce as $pl ) {
+		$t = get_term_by( 'slug', $pl[0], 'product_cat' );
+		if ( ! $t || is_wp_error( $t ) ) {
+			continue;
+		}
+		$l = get_term_link( $t );
+		if ( is_wp_error( $l ) || ! file_exists( get_template_directory() . '/img/brand/' . $pl[3] . '.jpg' ) ) {
+			continue;
+		}
+		$n++;
+		$ime = ( 'chorapi' === $pl[0] ) ? $t->name : $pl[1];
+		$h  .= '<a class="nb-kol' . ( $pl[4] ? ' nb-kol--velika' : '' ) . '" href="' . esc_url( $l ) . '">';
+		$h  .= '<img src="' . esc_url( get_template_directory_uri() . '/img/brand/' . $pl[3] . '.jpg' ) . '" alt="' . esc_attr( $ime ) . '" loading="lazy">';
+		$h  .= '<span class="nb-kol__st">0' . $n . '</span>';
+		if ( ! empty( $t->count ) ) {
+			$h .= '<span class="nb-kol__stevilo">' . (int) $t->count . ' продукта</span>';
+		}
+		$h  .= '<span class="nb-kol__spodaj"><span class="nb-kol__besedilo"><b>' . esc_html( $ime ) . '</b>' . ( '' !== $pl[2] ? '<i>' . esc_html( $pl[2] ) . '</i>' : '' ) . '</span><span class="nb-kol__pusc">' . $pusc . '</span></span>';
+		$h  .= '</a>';
+	}
+	if ( '' === $h ) {
+		return;
+	}
+	echo '<section class="nb nb-kolekcije"><div class="nb-ovoj">';
+	echo '<div class="nb-glava"><div><p class="nb-nadnaslov">NORIKS</p><h2 class="nb-h2">Пазарувайте по колекция</h2></div>';
+	echo '<a class="nb-obroba" href="' . esc_url( $trg_url ) . '">' . esc_html( $trg_ime ) . $pusc . '</a></div>';
+	echo '<div class="nb-kolekcije__mreza">' . $h . '</div></div></section>';
+}
+
+/** Domaca stran: tekoci trak z imeni kategorij iz menija (okras). */
+function noriks_bg_trak_kategorij() {
+	$imena = array();
+	foreach ( noriks_bg_meni() as $el ) {
+		if ( ! empty( $el['text'] ) && isset( $el['link'] ) && '' !== noriks_bg_slug_povezave( $el['link'] ) ) {
+			$imena[] = array( (string) $el['text'], (string) $el['link'] );
+		}
+	}
+	if ( count( $imena ) < 2 ) {
+		return;
+	}
+	$del = '';
+	foreach ( $imena as $i ) {
+		$del .= '<a href="' . esc_url( $i[1] ) . '">' . esc_html( $i[0] ) . '</a><span aria-hidden="true">✦</span>';
+	}
+	echo '<div class="nb nb-trakec"><div class="nb-trakec__in">' . str_repeat( $del, 6 ) . '</div></div>';
+}
