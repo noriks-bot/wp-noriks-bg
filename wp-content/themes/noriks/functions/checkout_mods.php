@@ -576,7 +576,7 @@ add_filter( 'woocommerce_get_country_locale', function( $locale ) {
  */
 add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
     if ( $key === 'billing_last_name' ) {
-        $field .= '<div class="form-row form-row-wide col-xs-12">Zadajte adresu, na ktorej budete <b>medzi 8:00 a 16:00</b>.</div>';
+        $field .= '<div class="form-row form-row-wide col-xs-12">Въведете адрес, на който ще бъдете <b>между 8:00 и 16:00</b>.</div>';
     }
     return $field;
 }, 10, 2 );
