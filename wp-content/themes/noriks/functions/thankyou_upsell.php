@@ -339,11 +339,11 @@ function noriks_handle_add_upsell() {
     // ─── Detect product type: exact same logic as frontend thankyou.php ───
     $_detect_id = $product_id ?: $product->get_id();
     $_detect_prod = wc_get_product( $_detect_id );
-    $name = strtolower( $_detect_prod ? $_detect_prod->get_name() : '' );
+    $name = mb_strtolower( $_detect_prod ? $_detect_prod->get_name() : '' );
     $sku = strtolower( $_detect_prod ? $_detect_prod->get_sku() : '' );
     $cats = wp_get_post_terms( $_detect_id, 'product_cat', array( 'fields' => 'slugs' ) );
     $cat_str = is_array( $cats ) ? strtolower( implode( ' ', $cats ) ) : '';
-    $is_majice = ( strpos($cat_str, 'orto-majice') !== false || strpos($cat_str, 'orto-tricka') !== false || strpos($cat_str, 'tricka') !== false || strpos($name, 'тениски') !== false || strpos($name, 'tričk') !== false || strpos($cat_str, 'majic') !== false || strpos($name, 'majic') !== false );
+    $is_majice = ( strpos($cat_str, 'teniski') !== false || strpos($name, 'тениск') !== false || strpos($cat_str, 'orto-majice') !== false || strpos($cat_str, 'orto-tricka') !== false || strpos($cat_str, 'tricka') !== false || strpos($name, 'тениски') !== false || strpos($name, 'tričk') !== false || strpos($cat_str, 'majic') !== false || strpos($name, 'majic') !== false );
     $qty_prices = $is_majice ? $majice_prices : $bokserice_prices;
     $total_price = isset( $qty_prices[$quantity] ) ? $qty_prices[$quantity] : $active_price;
     $upsell_price = $total_price / $quantity;

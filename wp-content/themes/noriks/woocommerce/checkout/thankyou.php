@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 $has_only_bokserice = true;
 $has_bokserice = false;
 foreach ( $order->get_items() as $item ) {
-    $name = strtolower( $item->get_name() );
+    $name = mb_strtolower( $item->get_name() );
     $product = $item->get_product();
     $sku = $product ? strtolower( $product->get_sku() ) : '';
     // Check if item is majica
@@ -26,11 +26,11 @@ foreach ( $order->get_items() as $item ) {
     $cats = wp_get_post_terms( $item->get_product_id(), 'product_cat', array('fields' => 'slugs') );
     $cat_str = is_array($cats) ? strtolower(implode(' ', $cats)) : '';
     // Majica: category has "majic" OR name has "majic"
-    $is_majica = ( strpos($cat_str, 'orto-majice') !== false || strpos($cat_str, 'orto-tricka') !== false || strpos($cat_str, 'tricka') !== false || strpos($name, 'тениски') !== false || strpos($name, 'tričk') !== false || strpos($cat_str, 'majic') !== false || strpos($name, 'majic') !== false );
+    $is_majica = ( strpos($cat_str, 'teniski') !== false || strpos($name, 'тениск') !== false || strpos($cat_str, 'orto-majice') !== false || strpos($cat_str, 'orto-tricka') !== false || strpos($cat_str, 'tricka') !== false || strpos($name, 'тениски') !== false || strpos($name, 'tričk') !== false || strpos($cat_str, 'majic') !== false || strpos($name, 'majic') !== false );
     // Bokserice: category has "boxer/bokser/orto" OR SKU has "box" OR name has "bokser/airflow"
-    $is_boks = ( strpos($cat_str, 'boxer') !== false || strpos($cat_str, 'bokser') !== false || strpos($cat_str, 'orto') !== false || strpos($sku, 'box') !== false || strpos($name, 'bokser') !== false || strpos($name, 'airflow') !== false );
+    $is_boks = ( strpos($cat_str, 'boksarki') !== false || strpos($name, 'боксерк') !== false || strpos($cat_str, 'boxer') !== false || strpos($cat_str, 'bokser') !== false || strpos($cat_str, 'orto') !== false || strpos($sku, 'box') !== false || strpos($name, 'bokser') !== false || strpos($name, 'airflow') !== false );
     // Komplet
-    $is_komplet = ( strpos($cat_str, 'sady') !== false || strpos($name, 'sada') !== false || strpos($cat_str, 'orto-starter') !== false || strpos($cat_str, 'orto-majica-bokserica') !== false || strpos($name, 'komplet') !== false || strpos($cat_str, 'komplet') !== false );
+    $is_komplet = ( strpos($cat_str, 'komplekti') !== false || strpos($cat_str, 'startovi-paketi') !== false || strpos($name, 'комплект') !== false || strpos($cat_str, 'sady') !== false || strpos($name, 'sada') !== false || strpos($cat_str, 'orto-starter') !== false || strpos($cat_str, 'orto-majica-bokserica') !== false || strpos($name, 'komplet') !== false || strpos($cat_str, 'komplet') !== false );
     if ( $is_boks ) $has_bokserice = true;
     if ( $is_majica || $is_komplet ) $has_only_bokserice = false;
 }
@@ -51,7 +51,7 @@ if ( $upsell_is_majice ) {
     );
     $upsell_title_text = 'Добавете тениски сега – 50% отстъпка';
 } else {
-    $upsell_product_id = 3175; // Сиви боксерки (siva verzija, ista struktura kot crna)
+    $upsell_product_id = 2829; // Сиви боксерки (siva verzija, ista struktura kot crna)
     $upsell_name       = 'Сиви боксерки';
     $upsell_qty_prices = array( 1 => 4.99, 3 => 14.97, 5 => 24.95 );
     $upsell_qty_names  = array( 1 => '1x Сиви боксерки', 3 => '3x Сиви боксерки', 5 => '5x Сиви боксерки' );
@@ -252,7 +252,7 @@ $grid_args = array(
 
 // Try bokserice/majice categories first
 $grid_products = array();
-foreach ( array( 'bokserice', 'boxerice', 'majice', 'majica' ) as $cat_slug ) {
+foreach ( array( 'boksarki', 'teniski', 'bokserice', 'boxerice', 'majice', 'majica' ) as $cat_slug ) {
     $cat = get_term_by( 'slug', $cat_slug, 'product_cat' );
     if ( $cat ) {
         $grid_args['category'] = array( $cat_slug );

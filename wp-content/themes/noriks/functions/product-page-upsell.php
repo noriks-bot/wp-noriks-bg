@@ -72,7 +72,7 @@ function noriks_pp_upsell_register_fields() {
  * ============================================================ */
 function noriks_pp_upsell_config() {
 	return apply_filters( 'noriks_pp_upsell_config', array(
-		'product_id' => 3153,                    // Plave Bokserice (varijabilni proizvod)
+		'product_id' => 2793,                    // Сини Боксерки (varijabilni proizvod)
 		'qty'        => 4,                       // uvijek 4 komada, iste veličine
 		'total'      => 19.99,                   // ista cijena kao thank you upsell (4 komada)
 		'title'      => '4x Сини боксерки',
@@ -842,7 +842,7 @@ function noriks_pp_upsell_styles() {
 
 function noriks_pp_upsell3_config() {
 	return apply_filters( 'noriks_pp_upsell3_config', array(
-		'product_id' => 7242,   // NORIKS FIT kompresijska majica (jednostavan proizvod)
+		'product_id' => 6706,   // NORIKS FIT Компресивна тениска (jednostavan proizvod)
 		'total'      => 17.99,  // cijena za 1 komad
 		'title'      => 'Компресионна тениска NORIKS FIT',
 		'desc'       => 'Оформя силуета и подкрепя стойката — добави я към поръчката с %s%% отстъпка.',
