@@ -957,3 +957,6 @@ body.home .site-main,body.home #primary,body.home .content-area{margin-bottom:0!
 body.home .site-content>.col-full{margin-bottom:0!important}
 body.home .info-banner{border-top:0!important}
 .nb-primerjava__tabela{display:flex;flex-direction:column;justify-content:center}
+/* spustni meni: gumb z imenom kategorije namesto same puscice */
+.ch-dd a.ch-dd__vse{width:auto!important;padding:0 18px;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;text-decoration:none!important}
+.ch-dd a.ch-dd__vse::before{content:attr(aria-label)}
