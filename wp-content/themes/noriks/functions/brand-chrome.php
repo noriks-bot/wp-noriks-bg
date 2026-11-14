@@ -1022,11 +1022,43 @@ add_filter( 'wpcf7_form_elements', function ( $html ) {
 	) );
 }, 20 );
 
-// Naslovi strani (Yoast): brez angleskega "Archives" in "Homepage".
-add_filter( 'wpseo_title', function ( $naslov ) {
+// Naslovi sistemskih strani, ki so v bazi se v anglescini (Shop, My account, Checkout).
+// Prevede se samo, dokler je naslov se angleski - ko ga kdo v skrbniku preimenuje, velja njegov.
+function noriks_bg_naslovi_strani() {
+	return array(
+		'Shop'       => 'Магазин',
+		'My account' => 'Моят профил',
+		'Checkout'   => 'Плащане',
+		'Cart'       => 'Количка',
+		'Homepage'   => 'Начало',
+	);
+}
+add_filter( 'the_title', function ( $naslov, $id = 0 ) {
+	if ( is_admin() || ! $id || 'page' !== get_post_type( $id ) ) {
+		return $naslov;
+	}
+	$m = noriks_bg_naslovi_strani();
+	return isset( $m[ $naslov ] ) ? $m[ $naslov ] : $naslov;
+}, 10, 2 );
+add_filter( 'woocommerce_page_title', function ( $naslov ) {
+	$m = noriks_bg_naslovi_strani();
+	return isset( $m[ $naslov ] ) ? $m[ $naslov ] : $naslov;
+} );
+
+// Naslovi strani (Yoast): brez angleskega "Archives", "Homepage", "Shop", "My account".
+function noriks_bg_seo_naslov( $naslov ) {
 	$naslov = (string) $naslov;
 	if ( function_exists( 'is_front_page' ) && is_front_page() ) {
 		return 'NORIKS – ' . ( function_exists( 'brand_noga_geslo' ) ? brand_noga_geslo() : '' );
 	}
-	return trim( str_replace( array( ' Archives', 'Archives ' ), array( '', '' ), $naslov ) );
-}, 20 );
+	$naslov = trim( str_replace( array( ' Archives', 'Archives ' ), array( '', '' ), $naslov ) );
+	foreach ( noriks_bg_naslovi_strani() as $en => $bg ) {
+		if ( 0 === strpos( $naslov, $en . ' ' ) ) {
+			return $bg . substr( $naslov, strlen( $en ) );
+		}
+	}
+	return $naslov;
+}
+add_filter( 'wpseo_title', 'noriks_bg_seo_naslov', 20 );
+add_filter( 'wpseo_opengraph_title', 'noriks_bg_seo_naslov', 20 );
+add_filter( 'wpseo_twitter_title', 'noriks_bg_seo_naslov', 20 );

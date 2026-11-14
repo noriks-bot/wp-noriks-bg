@@ -417,7 +417,7 @@ body .info-banner .phone-footer-checkout svg{width:16px!important;height:16px!im
 .nb-pusc--temna:hover{background:#0B0B0B;border-color:#0B0B0B;color:#fff}
 
 /* ===== kartica izdelka (drsniki) ===== */
-.nb-trak,body.home .most-popular .products-grid{display:flex!important;flex-wrap:nowrap!important;gap:18px!important;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0!important;padding:0 0 2px!important;grid-template-columns:none!important}
+.nb-trak,body.home .most-popular .products-grid{display:flex!important;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:18px!important;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0!important;padding:0 0 2px!important;grid-template-columns:none!important}
 .nb-trak::-webkit-scrollbar,body.home .most-popular .products-grid::-webkit-scrollbar{display:none}
 .nb-trak[hidden]{display:none!important}
 .nb-izd,body.home .most-popular .product-card{flex:0 0 calc((100% - 54px)/4);scroll-snap-align:start;min-width:0;width:auto!important;max-width:none!important;margin:0!important}
@@ -947,3 +947,13 @@ body.single-product table.variations th.label a,body.single-product .size-chart-
   body.single-product #reviews-section .review-card .card-top .date::after{content:"·";margin-left:8px;color:#958F86}
   body.single-product #reviews-section .review-card .date{margin:0!important}
 }
+
+/* primerjava: dejstva v crni kartici; brez belega pasu pod mnenji */
+.nb-primerjava__levo{gap:28px}
+.nb-primerjava__dejstva{list-style:none;margin:auto 0 0;padding:22px 0 0;border-top:1px solid rgba(255,255,255,.14);display:grid;gap:12px}
+.nb-primerjava__dejstva li{display:flex;align-items:center;gap:12px;margin:0;color:rgba(255,255,255,.9);font-size:14.5px;line-height:1.35;font-weight:600}
+.nb-primerjava__dejstva svg{flex:0 0 auto;width:34px;height:34px;padding:8px;box-sizing:border-box;border-radius:4px;background:rgba(255,255,255,.08);color:#F5A623}
+body.home .site-main,body.home #primary,body.home .content-area{margin-bottom:0!important;padding-bottom:0!important}
+body.home .site-content>.col-full{margin-bottom:0!important}
+body.home .info-banner{border-top:0!important}
+.nb-primerjava__tabela{display:flex;flex-direction:column;justify-content:center}

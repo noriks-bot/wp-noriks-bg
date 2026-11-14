@@ -648,6 +648,11 @@ a:hover {
         <h2 class="nb-h2">Не всички тениски са еднакви.</h2>
         <p>Ето защо нашите си заслужават.</p>
       </div>
+      <ul class="nb-primerjava__dejstva">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2.2 2.2L15 10.5"/></svg>30 дни без риск</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15L15 4l5 5L9 20z"/><path d="M8 11l1.6 1.6M11 8l1.6 1.6M14 5l1.6 1.6"/></svg>Размери S–4XL</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3v3h-7z"/><circle cx="6.5" cy="17.5" r="1.7"/><circle cx="17" cy="17.5" r="1.7"/></svg>Безплатна доставка за поръчки над 70 €</li>
+      </ul>
       <div><a class="nb-gumb nb-gumb--svetel" href="/bg/shop">Пазарувай сега</a></div>
     </div>
     <div class="nb-primerjava__tabela">
