@@ -32,7 +32,7 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
     <div class="nrd-intro__top">
       <div class="nrd-intro__img"><?php echo $rd_img( 'red-meet.jpg', 'Лента за китка NORIKS RedRelief с червена светлина' ); ?></div>
       <div class="nrd-intro__text">
-        <p class="nrd-kicker">Spoznajte NORIKS RedRelief</p>
+        <p class="nrd-kicker">Запознайте се с NORIKS RedRelief</p>
         <h2 class="nrd-h2">Помощ, която е насочена към причината, не само към симптома.</h2>
         <p>NORIKS RedRelief насочва червена и инфрачервена светлина с двойна дължина на вълната точно в областта на средния нерв — там, където възниква възпалението, стоящо зад болката в китката.</p>
         <p>Същата терапия с червена светлина е изследвана по отношение на подпомагането на производството на клетъчна енергия (ATP), възстановяването на кръвотока и доставката на кислород до тъканта — за да може тялото да върши своята работа.</p>
@@ -53,7 +53,7 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
 <section class="nrd-steps">
   <div class="nrd-wrap">
     <p class="nrd-kicker nrd-center">По-лесно не може</p>
-    <h2 class="nrd-h2 nrd-center">Tri kroky k sedeniu</h2>
+    <h2 class="nrd-h2 nrd-center">Три стъпки до сеанса</h2>
     <p class="nrd-sub">Без записване на час и без настройки. Само поставяте, натискате и се отпускате.</p>
     <div class="nrd-steps__grid">
       <div class="nrd-steps__step">
@@ -137,7 +137,7 @@ $rd_vid = function( $file, $poster, $alt ) use ( $rd, $rd_path ) {
       <div class="nrd-tl__content">
         <div class="nrd-tl__eyebrow">1-ва седмица</div>
         <h3 class="nrd-tl__name">Първи признаци на облекчение</h3>
-        <ul><li>Възпалението около средния нерв започва да отстъпва</li><li>Китката се усеща по-лека и разтоварена</li><li>Menej rannej stuhnutosti</li><li>По-лесно хващане на чаша или волан</li></ul>
+        <ul><li>Възпалението около средния нерв започва да отстъпва</li><li>Китката се усеща по-лека и разтоварена</li><li>По-малко сутрешна скованост</li><li>По-лесно хващане на чаша или волан</li></ul>
       </div>
     </div>
 

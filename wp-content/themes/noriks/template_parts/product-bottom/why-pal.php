@@ -27,7 +27,7 @@ $pl_img  = function( $file, $alt, $cls = '' ) use ( $pl, $pl_path ) {
     <div class="npl-media"><?php echo $pl_img( 'pal-rucke.jpg', 'Ортопедични ръкохватки за опора' ); ?></div>
     <div class="npl-copy">
       <p class="npl-kicker">Втората ръкохватка</p>
-      <h2 class="npl-h2">Opora presne tam, kde ju potrebujete</h2>
+      <h2 class="npl-h2">Опора точно там, където ви е нужна</h2>
       <p>Освен горната ръкохватка бастунът има и <strong>втора ръкохватка по-долу</strong>. За нея се хващате, когато се изправяте от фотьойл, от леглото или от нисък стол.</p>
       <p>Натискът отива вертикално надолу, в стабилната основа — не напред, където би ви извадил от равновесие. Затова се изправяте с едно движение, без да се навеждате и без чужда помощ.</p>
       <ul class="npl-check">
@@ -35,7 +35,7 @@ $pl_img  = function( $file, $alt, $cls = '' ) use ( $pl, $pl_path ) {
         <li>Ръкохватките не ожулват ръката дори след по-дълго ходене</li>
         <li>Без да чакате някой да ви помогне</li>
       </ul>
-      <a class="npl-cta" href="#bundle-selector">Pozrite si ponuku</a>
+      <a class="npl-cta" href="#bundle-selector">Вижте офертата</a>
     </div>
   </div>
 </section>
@@ -44,7 +44,7 @@ $pl_img  = function( $file, $alt, $cls = '' ) use ( $pl, $pl_path ) {
 <section class="npl-sec">
   <div class="npl-wrap npl-row2 npl-row2--rev">
     <div class="npl-copy">
-      <p class="npl-kicker">Stabilita</p>
+      <p class="npl-kicker">Стабилност</p>
       <h2 class="npl-h2">Стои сама — не се налага да се навеждате за бастуна</h2>
       <p>Четири гумени крачета държат бастуна изправен, когато го пуснете. Не пада на земята до дивана, до масата, нито в чакалнята, така че не се навеждате за него.</p>
       <p>Това е дребно нещо, което забелязвате още първия ден: бастунът ви чака там, където сте го оставили.</p>
@@ -63,9 +63,9 @@ $pl_img  = function( $file, $alt, $cls = '' ) use ( $pl, $pl_path ) {
       <div class="npl-points">
         <div class="npl-point"><h3>Две ръкохватки</h3><p>Горната за ходене, долната за изправяне.</p></div>
         <div class="npl-point"><h3>Четири крачета</h3><p>Бастунът стои сам и не пада на земята.</p></div>
-        <div class="npl-point"><h3>Svietidlo</h3><p>Осветява пътя пред вас в тъмното.</p></div>
-        <div class="npl-point"><h3>Alarm</h3><p>Силен сигнал, който близките чуват.</p></div>
-        <div class="npl-point"><h3>Skladacia verzia</h3><p>Влиза в чанта и в жабката на колата.</p></div>
+        <div class="npl-point"><h3>Фенерче</h3><p>Осветява пътя пред вас в тъмното.</p></div>
+        <div class="npl-point"><h3>Аларма</h3><p>Силен сигнал, който близките чуват.</p></div>
+        <div class="npl-point"><h3>Сгъваема версия</h3><p>Влиза в чанта и в жабката на колата.</p></div>
       </div>
     </div>
   </div>
@@ -147,7 +147,7 @@ $pl_img  = function( $file, $alt, $cls = '' ) use ( $pl, $pl_path ) {
 <section class="npl-sec npl-tint">
   <div class="npl-wrap npl-row2 npl-row2--rev">
     <div class="npl-copy">
-      <p class="npl-kicker">Rozdiel</p>
+      <p class="npl-kicker">Разликата</p>
       <h2 class="npl-h2">От „имам нужда от помощ” към „тръгвам сам”</h2>
       <p>Разликата не е в силата на краката, а в това, че има за какво да се хванете. Втората ръкохватка носи тежестта вместо раменете и китките ви.</p>
       <p class="npl-strong">Самостоятелно изправяне, а и разходка в парка.</p>

@@ -41,14 +41,14 @@ $kw_img  = function( $file, $alt, $cls = '' ) use ( $kw, $kw_path ) {
 <section class="nkw-sec">
   <div class="nkw-wrap nkw-row2 nkw-row2--rev">
     <div class="nkw-copy">
-      <p class="nkw-kicker">Rozdiel</p>
+      <p class="nkw-kicker">Разликата</p>
       <h2 class="nkw-h2">Защо обикновената компресия не работи</h2>
       <p>Класическите стягащи тениски притискат в една линия. Резултатът е издутина над ръба, гънки на раменете и ръб, който се вижда под облеклото.</p>
       <p>При нас релефът е <strong>вплетен в плата</strong> и разпределен на ширина, така че натискът се разлива, вместо да се събира.</p>
       <ul class="nkw-vs">
         <li class="is-yes">3D технология, вплетена в плетката</li>
         <li class="is-yes">Нежна 360° компресия без издутини</li>
-        <li class="is-yes">Podopiera driek</li>
+        <li class="is-yes">Поддържа кръста</li>
         <li class="is-no">Обикновена компресия, която създава издутини</li>
         <li class="is-no">Материалът се навива през деня</li>
         <li class="is-no">Ръб, който се вижда под облеклото</li>
@@ -110,7 +110,7 @@ $kw_img  = function( $file, $alt, $cls = '' ) use ( $kw, $kw_path ) {
   <div class="nkw-wrap nkw-row2">
     <div class="nkw-media"><?php echo $kw_img( 'kwm-drzanje.jpg', 'По-тясна талия и изправена стойка' ); ?></div>
     <div class="nkw-copy">
-      <p class="nkw-kicker">Tri veci naraz</p>
+      <p class="nkw-kicker">Три неща наведнъж</p>
       <h2 class="nkw-h2">Чувствайте се <em>уверени в кожата си</em></h2>
       <div class="nkw-points">
         <div class="nkw-point"><h3>По-тясна талия</h3><p>3D линиите оформят талията и изглаждат издутините над панталона или полата.</p></div>
@@ -161,7 +161,7 @@ $kw_img  = function( $file, $alt, $cls = '' ) use ( $kw, $kw_path ) {
 <section class="nkw-sec">
   <div class="nkw-wrap nkw-row2 nkw-row2--rev">
     <div class="nkw-copy">
-      <p class="nkw-kicker">Tri farby</p>
+      <p class="nkw-kicker">Три цвята</p>
       <h2 class="nkw-h2">Черно, тъмносиво и <em>розово</em></h2>
       <p>Черно под всичко, тъмносиво за всекидневно носене, розово, когато искате нещо по-топло. И трите имат същата плетка и същия релеф.</p>
       <p>Цветът и размерът се избират на тази страница, преди добавяне в количката.</p>

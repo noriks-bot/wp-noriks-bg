@@ -48,7 +48,7 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
 <!-- 2) ONE GOVORE SAME — videi -->
 <section class="nsl-sec nsl-vids">
   <div class="nsl-wrap">
-    <h2 class="nsl-h2" style="text-align:center">Hovoria <em>samy za seba</em></h2>
+    <h2 class="nsl-h2" style="text-align:center">Говорят <em>сами за себе си</em></h2>
     <div class="nsl-vids__strip">
       <figure class="nsl-vids__card">
         <video src="<?php echo esc_url( $sl . 'slm-vid-1.mp4' ); ?>" poster="<?php echo esc_url( $sl . 'slm-vid-1.jpg' ); ?>"
@@ -67,7 +67,7 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
   <div class="nsl-wrap nsl-row2 nsl-row2--rev">
     <div class="nsl-copy">
       <p class="nsl-kicker">От сутрин до вечер</p>
-      <h2 class="nsl-h2">Чувствайте се красиви <em>a sebavedomo</em></h2>
+      <h2 class="nsl-h2">Чувствайте се красиви <em>и уверени</em></h2>
       <div class="nsl-points">
         <div class="nsl-point"><h3>Без гънки</h3><p>Кръстосаният колан изглажда корема и не се измества, когато седнете, станете или се наведете.</p></div>
         <div class="nsl-point"><h3>Оформена талия и седалище</h3><p>Анатомичната кройка следва линията на тялото — талията изглежда по-тясна, а седалището по-повдигнато.</p></div>
@@ -104,7 +104,7 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
       <h2 class="nsl-h2">Високоеластично <em>оформяне</em></h2>
       <p>Платът се разтяга във всички посоки и се връща във формата си — държи стабилно, а при това се движи с вас, когато седите, ходите или вдигате дете.</p>
       <ul class="nsl-check">
-        <li><strong>Kontrola brucha</strong> — коремът е подкрепен цял ден</li>
+        <li><strong>Контрол на корема</strong> — коремът е подкрепен цял ден</li>
         <li><strong>Гладка талия</strong> — без издутина над панталона или полата</li>
         <li><strong>Не се плъзга</strong> — остава на място, дори когато седнете</li>
         <li><strong>Невидими</strong> — под прилепнали рокли, дънки и клинове</li>
@@ -184,7 +184,7 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
           <tr><th scope="row">По-евтино от операция</th><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
           <tr><th scope="row">Удобни цял ден</th><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__da">✓</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
           <tr><th scope="row">Ефект още първия ден</th><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__da is-us">✓</td></tr>
-          <tr><th scope="row">Podopiera brucho v 360°</th><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__da is-us">✓</td></tr>
+          <tr><th scope="row">Поддържа корема на 360°</th><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__ne">✕</td><td class="nsl-cmp__pol">–</td><td class="nsl-cmp__da is-us">✓</td></tr>
         </tbody>
       </table>
     </div>

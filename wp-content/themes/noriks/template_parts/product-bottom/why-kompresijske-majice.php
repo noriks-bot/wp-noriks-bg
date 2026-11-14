@@ -17,7 +17,7 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
     <div class="kmf-media"><video src="<?php echo esc_url( $kmv.'demo.mp4' ); ?>" autoplay muted loop playsinline preload="metadata"></video></div>
     <div class="kmf-copy">
       <p class="kmf-eyebrow">Мигновен ефект</p>
-      <h2 class="kmf-h2">Tvaruje siluetu, <em>още щом я облечете</em></h2>
+      <h2 class="kmf-h2">Оформя силуета, <em>още щом я облечете</em></h2>
       <p>Прицелената компресия равномерно прибира корема и кръста, изглажда „гумите“ отстрани и изправя стойката — без стягане, което ограничава дишането или движението.</p>
       <ul class="kmf-check">
         <li>Изгладен корем и гърди</li>
@@ -48,7 +48,7 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
     <h2 class="kmf-h2 kmf-center kmf-upper">Новото ви тайно оръжие срещу бирено коремче</h2>
     <div class="kmf-weapon-grid">
       <div class="kmf-feat-col">
-        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Zbohom „dad bod“.</p></div>
+        <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Сбогом на „dad bod“.</p></div>
         <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Бирено коремче? Няма го.</p></div>
         <div class="kmf-feat"><span class="kmf-feat-ic">✓</span><p>Гънките? Заключени.</p></div>
       </div>
@@ -67,7 +67,7 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
   <div class="kmf-wrap kmf-row2">
     <div class="kmf-copy">
       <p class="kmf-eyebrow">Видима разлика</p>
-      <h2 class="kmf-h2">Pred a po NORIKS FIT</h2>
+      <h2 class="kmf-h2">Преди и след NORIKS FIT</h2>
       <p>По-изправена стойка, изгладен корем и по-изчистен силует — още щом я облечете.</p>
       <ul class="kmf-check">
         <li>Видимо по-изправена стойка</li>
@@ -76,7 +76,7 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
       </ul>
       <a class="kmf-cta" href="#bundle-selector">Изберете своя размер →</a>
     </div>
-    <div class="kmf-media"><img src="<?php echo esc_url( $km.'ks-sk-04.webp' ); ?>" alt="Pred a po NORIKS FIT" loading="lazy"></div>
+    <div class="kmf-media"><img src="<?php echo esc_url( $km.'ks-sk-04.webp' ); ?>" alt="Преди и след NORIKS FIT" loading="lazy"></div>
   </div>
 </section>
 
@@ -141,7 +141,7 @@ $kmv = get_template_directory_uri() . '/img/kompsfit-videos/';
       <div class="kmf-rev-card">
         <div class="kmf-rev-photo"><img src="<?php echo esc_url( $km.'persona.webp' ); ?>" alt="NORIKS FIT отзив на клиент" loading="lazy"></div>
         <p class="kmf-rev-txt">„Цял ден седя на бюро. Прегърбен, подут, без самочувствие. NORIKS буквално ме накара да седя изправен без никакво усилие. За 10 дни напрежението в гърба изчезна и ризите започнаха да стоят по-добре. Сега я нося в офиса — дискретна е, дишаща и честно? Спрях да се крия от камерите.“</p>
-        <div class="kmf-rev-foot"><span class="kmf-rev-badge">★★★★★ Проверен</span><span class="kmf-rev-name">Marek P. — 42 r.</span></div>
+        <div class="kmf-rev-foot"><span class="kmf-rev-badge">★★★★★ Проверен</span><span class="kmf-rev-name">Марек П. — 42 г.</span></div>
       </div>
       <div class="kmf-rev-card">
         <div class="kmf-rev-photo"><img src="<?php echo esc_url( $km.'hero.webp' ); ?>" alt="NORIKS FIT отзив на клиент" loading="lazy"></div>

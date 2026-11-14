@@ -43,7 +43,7 @@ $cd_img = function( $file, $alt ) use ( $cd, $cd_path ) {
     <div class="ncd-copy">
       <h2 class="ncd-h2">Разликата, която ще усетите още първата нощ</h2>
       <p><strong>Без възглавница:</strong> горният крак пада през долния, тазът се извива, а натискът отива в кръста и в коленете.</p>
-      <p><strong>S NORIKS Cloudom:</strong> краката остават в линия с бедрата, тежестта се разпределя и точките на натиск изчезват.</p>
+      <p><strong>С NORIKS Cloud:</strong> краката остават в линия с бедрата, тежестта се разпределя и точките на натиск изчезват.</p>
       <ul class="ncd-check">
         <li>Бедра и колене в естествена линия</li>
         <li>По-малък натиск върху кръста</li>
@@ -65,7 +65,7 @@ $cd_steps = array(
 <section class="ncd-sec">
   <div class="ncd-wrap ncd-center">
     <h2 class="ncd-h2">Започнете да спите по-добре още тази вечер</h2>
-    <p class="ncd-sub">Лесна за употреба. <strong>По-добър сън</strong> od prvej noci.</p>
+    <p class="ncd-sub">Лесна за употреба. <strong>По-добър сън</strong> от първата нощ.</p>
   </div>
   <div class="ncd-wrap">
     <div class="ncd-steps4">
@@ -73,7 +73,7 @@ $cd_steps = array(
         <div class="ncd-step4">
           <div class="ncd-step4-ic">
             <?php echo $cd_img( $st[0], $st[1] ); ?>
-            <span class="ncd-step4-b">Krok <?php echo (int) $i + 1; ?></span>
+            <span class="ncd-step4-b">Стъпка <?php echo (int) $i + 1; ?></span>
           </div>
           <h3 class="ncd-step4-t"><?php echo esc_html( $st[1] ); ?></h3>
           <p class="ncd-step4-p"><?php echo esc_html( $st[2] ); ?></p>
@@ -95,7 +95,7 @@ $cd_revs = array(
 <section class="ncd-sec ncd-dark">
   <div class="ncd-wrap ncd-center">
     <h2 class="ncd-h2">Защо с NORIKS Cloud се будите различно</h2>
-    <p class="ncd-sub ncd-rate"><span class="ncd-stars">★★★★★</span> Hodnotenie <strong>4,8/5</strong> хиляди доволни клиенти</p>
+    <p class="ncd-sub ncd-rate"><span class="ncd-stars">★★★★★</span> Оценка <strong>4,8/5</strong> хиляди доволни клиенти</p>
   </div>
   <div class="ncd-wrap">
     <div class="ncd-revs">
@@ -186,7 +186,7 @@ $cd_cases = array(
       <ul class="ncd-check">
         <li><strong>Перящ се калъф</strong> — дишащ плат, щадящ кожата</li>
         <li><strong>Перфорации</strong> държат пяната свежа цяла нощ</li>
-        <li><strong>Запазва формата</strong> roky, nesplasne</li>
+        <li><strong>Запазва формата</strong> с години, не се сплесква</li>
       </ul>
     </div>
     <div class="ncd-media"><?php echo $cd_img('cld-pjena.webp','Дишаща пяна с памет с перфорации'); ?></div>
@@ -202,7 +202,7 @@ $cd_cases = array(
       <ul class="ncd-vs">
         <li class="is-no"><strong>Без лента</strong><span>изпада веднага, щом се обърнете</span></li>
         <li class="is-no"><strong>Централен отвор</strong><span>пречи на кръвообращението</span></li>
-        <li class="is-no"><strong>Splasne</strong><span>за няколко седмици</span></li>
+        <li class="is-no"><strong>Сплесква се</strong><span>за няколко седмици</span></li>
         <li class="is-yes"><strong>Регулируема лента</strong><span>остава точно там, където трябва</span></li>
         <li class="is-yes"><strong>Плътна, ергономична форма</strong><span>без дупки и празни места</span></li>
         <li class="is-yes"><strong>Пяна с медицинско качество</strong><span>запазва формата си години</span></li>

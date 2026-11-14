@@ -105,7 +105,7 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
 <section class="nhs-cmp">
   <div class="nhs-wrap-narrow">
     <h2 class="nhs-h2 nhs-center">По-здравият начин да изгладите бръчки и белези, <em>без игли</em></h2>
-    <p class="nhs-cmp-if">Ако искате безопасна и нежна алтернатива на ботокса, не понасяте дразненето от агресивни съставки като ретинол или киселини и искате да изглеждате свежи — и все пак като себе си… <strong>potom si zamilujete NORIKS HERS!</strong></p>
+    <p class="nhs-cmp-if">Ако искате безопасна и нежна алтернатива на ботокса, не понасяте дразненето от агресивни съставки като ретинол или киселини и искате да изглеждате свежи — и все пак като себе си… <strong>тогава ще обикнете NORIKS HERS!</strong></p>
     <div class="nhs-cmp-scroll">
       <table class="nhs-cmp-table">
         <thead><tr><th></th><th class="nhs-us">NORIKS HERS</th><th>Botox</th><th>Евтини копия</th></tr></thead>
@@ -115,7 +115,7 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
           <tr><td>Безопасно за чувствителна кожа</td><td class="us ok">✓</td><td class="mid">риск от дразнене</td><td class="mid">агресивно лепило</td></tr>
           <tr><td>Ползи от колагена</td><td class="us ok">✓</td><td class="no">✕</td><td class="no">✕</td></tr>
           <tr><td>Действа и върху бръчки, и върху белези</td><td class="us ok">✓</td><td class="no">✕</td><td class="no">✕</td></tr>
-          <tr><td>Изгодно</td><td class="us ok">✓ opakovane</td><td class="mid">300 – 600 €</td><td class="mid">ниско качество</td></tr>
+          <tr><td>Изгодно</td><td class="us ok">✓ многократно</td><td class="mid">300 – 600 €</td><td class="mid">ниско качество</td></tr>
           <tr><td>Естествен вид</td><td class="us ok">✓</td><td class="mid">„замразено"</td><td class="mid">опъва кожата</td></tr>
         </tbody>
       </table>

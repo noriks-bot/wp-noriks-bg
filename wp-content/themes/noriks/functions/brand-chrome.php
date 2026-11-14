@@ -983,3 +983,50 @@ function noriks_bg_trak_kategorij() {
 	}
 	echo '<div class="nb nb-trakec"><div class="nb-trakec__in">' . str_repeat( $del, 6 ) . '</div></div>';
 }
+
+/* ---------- drobni prevodi in povezave ---------- */
+
+/** Povezava izdelka iz mnenja na domaci strani: stare povezave (drug trg, preimenovan izdelek) vodijo v kategorijo. */
+function noriks_bg_povezava_izdelka( $url, $napis = '' ) {
+	$url  = (string) $url;
+	$pot  = (string) wp_parse_url( $url, PHP_URL_PATH );
+	$slug = preg_match( '#/product/([^/]+)/?$#', $pot, $m ) ? $m[1] : '';
+	if ( '' !== $slug ) {
+		$p = get_page_by_path( $slug, OBJECT, 'product' );
+		if ( $p && 'publish' === $p->post_status ) {
+			return get_permalink( $p );
+		}
+	}
+	$kat = ( false !== mb_stripos( (string) $napis, 'боксерк' ) ) ? 'boksarki' : 'teniski';
+	$t   = get_term_by( 'slug', $kat, 'product_cat' );
+	$l   = $t ? get_term_link( $t ) : '';
+	return ( $l && ! is_wp_error( $l ) ) ? $l : home_url( '/shop/' );
+}
+
+// Nizi teme Storefront in obrazca za stik, ki nimajo bolgarskega prevoda.
+add_filter( 'gettext', function ( $prevod, $izvirnik, $domena ) {
+	static $bg = array(
+		'You&#8217;re viewing:' => 'Разглеждате:',
+		"You're viewing:"       => 'Разглеждате:',
+		'Select options'        => 'Избор',
+		'Out of stock'          => 'Изчерпан',
+	);
+	return isset( $bg[ $izvirnik ] ) ? $bg[ $izvirnik ] : $prevod;
+}, 30, 3 );
+
+add_filter( 'wpcf7_form_elements', function ( $html ) {
+	return strtr( (string) $html, array(
+		'Vaše ime i prezime' => 'Вашето име и фамилия',
+		'Vaša e-pošta'       => 'Вашият имейл',
+		'Vaša poruka'        => 'Вашето съобщение',
+	) );
+}, 20 );
+
+// Naslovi strani (Yoast): brez angleskega "Archives" in "Homepage".
+add_filter( 'wpseo_title', function ( $naslov ) {
+	$naslov = (string) $naslov;
+	if ( function_exists( 'is_front_page' ) && is_front_page() ) {
+		return 'NORIKS – ' . ( function_exists( 'brand_noga_geslo' ) ? brand_noga_geslo() : '' );
+	}
+	return trim( str_replace( array( ' Archives', 'Archives ' ), array( '', '' ), $naslov ) );
+}, 20 );

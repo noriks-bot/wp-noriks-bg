@@ -44,10 +44,10 @@ $bw_img  = function( $file, $alt ) use ( $bw, $bw_path ) {
       <p class="nbw-kicker">Всеки детайл има своята цел</p>
       <h2 class="nbw-h2">Създадена <em>според това как кучето яде</em></h2>
       <div class="nbw-facts">
-        <div><span class="nbw-num">15°</span><h3>Sklon misky</h3><p>За по-добро положение на главата и шията при хранене.</p></div>
+        <div><span class="nbw-num">15°</span><h3>Наклон на купата</h3><p>За по-добро положение на главата и шията при хранене.</p></div>
         <div><span class="nbw-num">11 cm</span><h3>Височина на поставката</h3><p>По-малко напрежение в шията, отколкото при купа на пода.</p></div>
         <div><span class="nbw-num">5 cm</span><h3>Плитка купа</h3><p>Мустаците не опират в ръба и храната е лесно достъпна.</p></div>
-        <div><span class="nbw-num">430 ml</span><h3>Objem</h3><p>Диаметър 15 cm — достатъчно за порция или вода за малко куче.</p></div>
+        <div><span class="nbw-num">430 ml</span><h3>Обем</h3><p>Диаметър 15 cm — достатъчно за порция или вода за малко куче.</p></div>
       </div>
     </div>
     <div class="nbw-media"><?php echo $bw_img( 'bwl-10-specifikacije.jpg', 'Спецификации NORIKS Bowl: наклон 15°, височина 11 cm, дълбочина 5 cm' ); ?></div>
@@ -81,7 +81,7 @@ $bw_img  = function( $file, $alt ) use ( $bw, $bw_path ) {
         <li>Дакел</li>
         <li>Френски булдог</li>
         <li>Миниатюрен шнауцер</li>
-        <li>Mops</li>
+        <li>Мопс</li>
         <li>Малтийско болонче</li>
         <li>Джак Ръсел териер</li>
       </ul>
@@ -97,7 +97,7 @@ $bw_img  = function( $file, $alt ) use ( $bw, $bw_path ) {
     <div class="nbw-media"><?php echo $bw_img( 'bwl-06-celik.jpg', 'NORIKS Bowl от неръждаема стомана' ); ?></div>
     <div class="nbw-copy">
       <p class="nbw-kicker">Материал</p>
-      <h2 class="nbw-h2">Стомана вместо <em>plastu</em></h2>
+      <h2 class="nbw-h2">Стомана вместо <em>пластмаса</em></h2>
       <p>Пластмасовите купи с времето се сдобиват с дребни драскотини, в които остават остатъци от храна и миризма. Стоманата остава гладка години.</p>
       <ul class="nbw-vs">
         <li class="is-yes">Неръждаема стомана — купа и поставка</li>
@@ -113,9 +113,9 @@ $bw_img  = function( $file, $alt ) use ( $bw, $bw_path ) {
 <!-- 6) VOLE JE VLASNICI PASA — fotografije kupaca -->
 <section class="nbw-sec nbw-rev">
   <div class="nbw-wrap">
-    <h2 class="nbw-h2" style="text-align:center">Обичат я <em>majitelia psov</em></h2>
+    <h2 class="nbw-h2" style="text-align:center">Обичат я <em>собствениците на кучета</em></h2>
     <p class="nbw-rev__lead">По-добра стойка. По-спокойни хранения.</p>
-    <p class="nbw-rev__rate"><span class="nbw-rev__stars">★★★★★</span> Hodnotenie <strong>4,8/5</strong> на база <strong>1 081 отзива</strong></p>
+    <p class="nbw-rev__rate"><span class="nbw-rev__stars">★★★★★</span> Оценка <strong>4,8/5</strong> на база <strong>1 081 отзива</strong></p>
     <div class="nbw-rev__strip">
         <figure class="nbw-rev__card">
           <?php echo $bw_img( 'bwl-02-jazavcar.jpg', 'Дакел, 6 години при купата NORIKS Bowl' ); ?>

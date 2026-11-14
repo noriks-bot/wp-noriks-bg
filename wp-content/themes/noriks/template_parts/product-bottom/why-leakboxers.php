@@ -46,7 +46,7 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
     <div class="lbx-media"><img src="<?php echo esc_url( $lb.'features.png' ); ?>" alt="NORIKS PureDry — 7-слойна абсорбираща технология" loading="lazy"></div>
     <div class="lbx-copy">
       <p class="lbx-eyebrow">Технология</p>
-      <h2 class="lbx-h2">NORIKS <em>PureDry™</em> — 7 vrstiev ochrany</h2>
+      <h2 class="lbx-h2">NORIKS <em>PureDry™</em> — 7 слоя защита</h2>
       <p>След над 2 години разработка създадохме плат, който веднага поема и заключва влагата дълбоко в ядрото — без обем и без усещане за влага върху кожата.</p>
       <ul class="lbx-check">
         <li>7-слойна абсорбираща технология — до <strong>300 ml</strong></li>
@@ -62,7 +62,7 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
 <section class="lbx-sec lbx-video lbx-alt">
   <div class="lbx-wrap lbx-row2">
     <div class="lbx-copy">
-      <p class="lbx-eyebrow">Rozdiel NORIKS</p>
+      <p class="lbx-eyebrow">Разликата NORIKS</p>
       <h2 class="lbx-h2">Вижте как <em>изчезва</em>. Нула преливания.</h2>
       <p>Външният слой е водоотблъскващ, а абсорбиращото ядро задържа течността вътре. Резултатът: оставате сухи — без петна и без неприятни моменти, на работа, в пътуване и докато спите.</p>
       <div class="lbx-chips"><span>Без преливане</span><span>Без обем</span><span>Без миризма</span></div>
@@ -76,7 +76,7 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
 <!-- ============ 4) 3 kartice — upijaju ============ -->
 <section class="lbx-sec">
   <div class="lbx-wrap">
-    <p class="lbx-eyebrow lbx-center">Zamilujete si ich</p>
+    <p class="lbx-eyebrow lbx-center">Ще ги обикнете</p>
     <h2 class="lbx-h2 lbx-center">Перящи се <em>боксерки при инконтиненция</em></h2>
     <div class="lbx-cards">
       <figure class="lbx-card"><img src="<?php echo esc_url( $lb.'boxer-black.jpg' ); ?>" alt="Елегантна защита" loading="lazy"><figcaption>Елегантна защита</figcaption></figure>
@@ -125,7 +125,7 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
           <tr><td>Перящи се и многократни</td><td class="us ok">✓</td><td class="no">✕</td><td class="ok">✓</td></tr>
           <tr><td>Защита от миризма</td><td class="us ok">✓</td><td class="mid">химикали</td><td class="no">✕</td></tr>
           <tr><td>Годишни разходи</td><td class="us ok">✓ ниски</td><td class="mid">800 €+</td><td class="ok">ниски</td></tr>
-          <tr><td>Екологични</td><td class="us ok">✓</td><td class="no">✕ 250 kg odpadu</td><td class="ok">✓</td></tr>
+          <tr><td>Екологични</td><td class="us ok">✓</td><td class="no">✕ 250 kg отпадъци</td><td class="ok">✓</td></tr>
         </tbody>
       </table>
     </div>

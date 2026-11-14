@@ -706,7 +706,7 @@ a:hover {
           <div class="review-text"><?php echo $item['t2']; ?></div>
           <div class="review-product">
             <img src="<?php echo $item['img2']; ?>" alt="Shirt Pack">
-            <a href="<?php echo $item['link']; ?>"><?php echo $item['t3']; ?></a>
+            <a href="<?php echo esc_url( function_exists( 'noriks_bg_povezava_izdelka' ) ? noriks_bg_povezava_izdelka( $item['link'], $item['t3'] ) : $item['link'] ); ?>"><?php echo $item['t3']; ?></a>
           </div>
         </div>
       </div>
@@ -725,7 +725,7 @@ a:hover {
           <div class="review-text"><?php echo $item['t2']; ?></div>
           <div class="review-product">
             <img src="<?php echo $item['img2']; ?>" alt="Shirt Pack">
-            <a href="<?php echo $item['link']; ?>"><?php echo $item['t3']; ?></a>
+            <a href="<?php echo esc_url( function_exists( 'noriks_bg_povezava_izdelka' ) ? noriks_bg_povezava_izdelka( $item['link'], $item['t3'] ) : $item['link'] ); ?>"><?php echo $item['t3']; ?></a>
           </div>
         </div>
       </div>

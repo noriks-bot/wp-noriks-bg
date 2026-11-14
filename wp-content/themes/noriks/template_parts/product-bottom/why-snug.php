@@ -86,7 +86,7 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
         <li>Бедра и таз в естествена линия</li>
         <li>Разделени колене, без контакт кост в кост</li>
       </ul>
-      <a class="nsg-cta" href="#bundle-selector">Vyberte si svoju farbu</a>
+      <a class="nsg-cta" href="#bundle-selector">Изберете своя цвят</a>
     </div>
     <div class="nsg-media"><?php echo $sg_img( 'sng-usporedba.jpg', 'NORIKS Snug в сравнение с обикновена възглавница' ); ?></div>
   </div>
@@ -108,7 +108,7 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
           <div class="nsg-doc__who">
             <p class="nsg-doc__name">Хиропрактик<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#5b7fa6"/><path d="M5 8l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </p>
-            <p class="nsg-doc__role">12 rokov praxe</p>
+            <p class="nsg-doc__role">12 години практика</p>
           </div>
         </div>
       </article>
@@ -118,9 +118,9 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
           <p class="nsg-doc__lead">„При пациенти, които спят на една страна, проблемът винаги е същият: празното пространство между рамото и коленете.”</p>
           <p class="nsg-doc__p">„Snug е един от малкото продукти, които наистина решават това. Поддържа цялата дължина на тялото, не само една точка на натиск. Пациентите се връщат след две седмици и казват, че утринната скованост е изчезнала.”</p>
           <div class="nsg-doc__who">
-            <p class="nsg-doc__name">Chiropraktik<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#5b7fa6"/><path d="M5 8l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="nsg-doc__name">Хиропрактик<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#5b7fa6"/><path d="M5 8l2 2 4-4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </p>
-            <p class="nsg-doc__role">18 rokov praxe</p>
+            <p class="nsg-doc__role">18 години практика</p>
           </div>
         </div>
       </article>
@@ -134,7 +134,7 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
   <div class="nsg-wrap nsg-row2">
     <div class="nsg-media"><?php echo $sg_img( 'sng-potpore.jpg', 'Три ключови опори: ръце, бедра, колене' ); ?></div>
     <div class="nsg-copy">
-      <p class="nsg-kicker">Tri body opory</p>
+      <p class="nsg-kicker">Три точки на опора</p>
       <h2 class="nsg-h2">Една възглавница вместо три</h2>
       <p>Повечето хора трупат две или три обикновени възглавници, за да получат опората, която Snug дава сама — и после цяла нощ ги местят.</p>
       <p>Snug държи и трите точки наведнъж, така че не се будите, за да я оправяте.</p>
@@ -170,11 +170,11 @@ $sg_img  = function( $file, $alt, $cls = '' ) use ( $sg, $sg_path ) {
   <div class="nsg-wrap nsg-row2">
     <div class="nsg-media"><?php echo $sg_img( 'sng-boje.jpg', 'Шест налични цвята' ); ?></div>
     <div class="nsg-copy">
-      <p class="nsg-kicker">Vyberte farbu</p>
+      <p class="nsg-kicker">Изберете цвят</p>
       <h2 class="nsg-h2">Шест цвята за всяка спалня</h2>
       <p>Синьо, розово, сиво, зелено, лилаво и тъмносиньо — цветът се избира на тази страница, преди добавяне в количката.</p>
       <p>Всички нюанси имат същия хладен плат и същия пълнеж; различава се само цветът на калъфа.</p>
-      <a class="nsg-cta" href="#bundle-selector">Vyberte si svoju farbu</a>
+      <a class="nsg-cta" href="#bundle-selector">Изберете своя цвят</a>
     </div>
   </div>
 </section>
